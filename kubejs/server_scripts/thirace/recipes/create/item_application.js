@@ -37,7 +37,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}mechanical_saw`
         },
         {
-            ingredients: [{ item: 'kubejs:andesite_chassis' }, { item: 'tfc_ie_addon:drillhead_black_steel' }],
+            ingredients: [{ item: 'kubejs:andesite_chassis' }, { item: 'immersiveengineering:drillhead_steel' }],
             results: [{ item: 'create:mechanical_drill' }],
             id: `${id_prefix}mechanical_drill`
         },

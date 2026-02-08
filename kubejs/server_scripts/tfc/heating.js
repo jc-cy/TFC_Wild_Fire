@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
     { name: 'kubejs:unfinished/double_ingot/stainless_steel', number: 200, metal: "stainless_steel" },
     { name: 'kubejs:unfinished/hot_double_ingot/stainless_steel', number: 200, metal: "stainless_steel" },
 
-    // ========== 双板相关 (number: 400) ==========
+    // ========== 双层薄板相关 (number: 400) ==========
     { name: 'kubejs:unfinished/double_sheet/bismuth_bronze', number: 400, metal: "bismuth_bronze" },
     { name: 'kubejs:unfinished/hot_double_sheet/bismuth_bronze', number: 400, metal: "bismuth_bronze" },
     { name: 'kubejs:unfinished/double_sheet/black_bronze', number: 400, metal: "black_bronze" },

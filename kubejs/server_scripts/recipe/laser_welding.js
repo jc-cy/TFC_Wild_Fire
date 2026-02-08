@@ -193,7 +193,7 @@ ServerEvents.recipes(event => {
 
 
 
-    //激光焊接-板>双板
+    //激光焊接-板>双层薄板
     /*
         double_ingots.forEach(di => {
             const input1 = `tfc:metal/sheet/${di}`

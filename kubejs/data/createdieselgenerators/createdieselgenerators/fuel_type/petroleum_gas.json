@@ -16,5 +16,5 @@
     "strength": 210.0,
     "burn_rate": 0.05
   },
-  "burner_multiplier": 2
+  "burner_multiplier": 1.3
 }

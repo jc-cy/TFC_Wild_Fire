@@ -255,8 +255,8 @@ StartupEvents.registry("item", event => {  //半成品
     allmetal.forEach(metal => {
         event.create(`kubejs:unfinished/double_ingot/${metal}`).tag("kubejs:2ingot"); // 激光焊接半成品-双锭
         event.create(`kubejs:unfinished/hot_double_ingot/${metal}`).tag("kubejs:2ingot"); // 激光焊接半成品-热双锭
-        event.create(`kubejs:unfinished/double_sheet/${metal}`).tag("kubejs:4ingot"); // 激光焊接半成品-双板
-        event.create(`kubejs:unfinished/hot_double_sheet/${metal}`).tag("kubejs:4ingot"); // 激光焊接半成品-热双板
+        event.create(`kubejs:unfinished/double_sheet/${metal}`).tag("kubejs:4ingot"); // 激光焊接半成品-双层薄板
+        event.create(`kubejs:unfinished/hot_double_sheet/${metal}`).tag("kubejs:4ingot"); // 激光焊接半成品-热双层薄板
     })
     // 未完成部件
     event.create('kubejs:advanced_plating_unfinished').texture('kubejs:item/ad/advanced_plating_unfinished'); // 高级镀层_未完成

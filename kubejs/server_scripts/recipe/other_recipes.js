@@ -744,9 +744,88 @@ ServerEvents.recipes(event => {
         { "fluid": "immersiveengineering:creosote", "amount": 50 }, { "tag": "tfc:lumber" }],
       "results": [{ "item": "tfc_ie_addon:treated_wood_lumber" }]
     })
+//压缩抽屉配方
+//金属粉末
+  const ore_dust =
+    [
+      { mod: 'tfc_ie_addon', type: '/type_', ore: 'uraninite' },
+      { mod: 'tfc_ie_addon', type: '/type_', ore: 'galena', },
+      { mod: 'tfc_ie_addon', type: '/type_', ore: 'bauxite' },
+      { mod: 'firmalife', type: '/type_', ore: 'chromite' },
+      { mod: 'tfc', type: '/type_', ore: 'limonite' },
+      { mod: 'tfc', type: '/type_', ore: 'magnetite' },
+      { mod: 'tfc', type: '/type_', ore: 'hematite' },
+      { mod: 'tfc', type: '/type_', ore: 'native_copper' },
+      { mod: 'tfc', type: '/type_', ore: 'native_gold' },
+      { mod: 'tfc', type: '/type_', ore: 'native_silver' },
+      { mod: 'tfc', type: '/type_', ore: 'tetrahedrite' },
+      { mod: 'tfc', type: '/type_', ore: 'sphalerite' },
+      { mod: 'tfc', type: '/type_', ore: 'cassiterite' },
+      { mod: 'tfc', type: '/type_', ore: 'bismuthinite' },
+      { mod: 'tfc', type: '/type_', ore: 'malachite' },
+    ];
+  ore_dust.forEach(ore => {
+    event.custom(
+      {
+        "type": "functionalstorage:custom_compacting",
+        "higher_input": { "count": 1, "item": `kubejs:item/ore/dirty_dust/${ore.ore}` },
+        "lower_input": { "count": 4, "item": `kubejs:item/ore/dirty_pile/${ore.ore}` }
+      }
+    ),
+      event.custom(
+        {
+          "type": "functionalstorage:custom_compacting",
+          "higher_input": { "count": 1, "item": `kubejs:item/ore/dust_lump/${ore.ore}` },
+          "lower_input": { "count": 4, "item": `${ore.mod}:powder/${ore.ore}` }
+        }
+      ),
+      event.custom(
+        {
+          "type": "functionalstorage:custom_compacting",
+          "higher_input": { "count": 1, "item": `kubejs:item/ore/dust_lump/${ore.ore}` },
+          "lower_input": { "count": 4, "item": `kubejs:item/ore/purified_dust/${ore.ore}` }
+        }
+      ),
+      event.custom(
+        {
+          "type": "functionalstorage:custom_compacting",
+          "higher_input": { "count": 1, "item": `kubejs:item/ore/dust_lump/${ore.ore}` },
+          "lower_input": { "count": 2, "item": `kubejs:item/ore/refined_dust/${ore.ore}` }
+        }
+      ),
+      event.custom(
+        {
+          "type": "functionalstorage:custom_compacting",
+          "higher_input": { "count": 1, "item": `kubejs:item/ore/dust_clump/${ore.ore}` },
+          "lower_input": { "count": 4, "item": `kubejs:item/ore/dust_lump/${ore.ore}` }
+        }
+      ),
+      event.custom(
+        {
+          "type": "functionalstorage:custom_compacting",
+          "higher_input": { "count": 1, "item": `kubejs:item/ore/dust_brick/${ore.ore}` },
+          "lower_input": { "count": 9, "item": `kubejs:item/ore/dust_clump/${ore.ore}` },
+        }
+      )
 
-
-
+  })
+  //非金属粉末
+  const ore_dust_2 =
+    [
+      { ore2: 'sulfur' },
+      { ore2: 'graphite' },
+      { ore2: 'cryolite' },
+      { ore2: 'cinnabar' }
+    ];
+  ore_dust_2.forEach(ore => {
+    event.custom(
+      {
+        "type": "functionalstorage:custom_compacting",
+        "higher_input": { "count": 1, "item": `kubejs:item/ore/dirty_dust/${ore.ore2}` },
+        "lower_input": { "count": 4, "item": `kubejs:item/ore/dirty_pile/${ore.ore2}` }
+      }
+    )
+  })
 //激光焊接脆钢
   const weak_metal =
     [
