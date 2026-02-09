@@ -804,7 +804,7 @@ ServerEvents.recipes(event => {
         {
           "type": "functionalstorage:custom_compacting",
           "higher_input": { "count": 1, "item": `kubejs:item/ore/dust_brick/${ore.ore}` },
-          "lower_input": { "count": 9, "item": `kubejs:item/ore/dust_clump/${ore.ore}` },
+          "lower_input": { "count": 9, "item": `kubejs:item/ore/refined_dust/${ore.ore}` },
         }
       )
 
