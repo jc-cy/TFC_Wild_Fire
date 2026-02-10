@@ -1,5 +1,5 @@
 {
-  "cooldownTicks": 0,
+  "cooldownTicks": 45,
   "speedFactor": 0.2,
   "parryDamage": 0.30,
   "parryTicks": 1,

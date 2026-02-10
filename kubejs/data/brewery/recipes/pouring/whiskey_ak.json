@@ -2,9 +2,8 @@
   "type": "brewinandchewin:keg_pouring",
   "amount": 250,
   "container": {
-    "item": "firmalife:empty_olivine_wine_bottle"
+    "item": "brewinandchewin:tankard"
   },
-  "filling": true,
   "filling": true,
   "fluid": "kubejs:whiskey_ak",
   "output": {

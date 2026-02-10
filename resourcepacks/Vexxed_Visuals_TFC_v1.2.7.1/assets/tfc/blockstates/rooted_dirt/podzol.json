@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/rooted_dirt/podzol"
+      },
+      {
+        "model": "tfc:block/rooted_dirt/podzol",
+        "y": 90
+      },
+      {
+        "model": "tfc:block/rooted_dirt/podzol",
+        "y": 180
+      },
+      {
+        "model": "tfc:block/rooted_dirt/podzol",
+        "y": 270
+      }
+    ]
+  }
+}

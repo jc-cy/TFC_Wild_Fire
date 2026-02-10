@@ -1,0 +1,1 @@
+{"variants":{"part=top,mature=true":{"model":"tfc:block/wild_crop/green_bean_top"},"part=top,mature=false":{"model":"tfc:block/wild_crop/dead/green_bean_top"},"part=bottom,mature=true":{"model":"tfc:block/wild_crop/green_bean_bottom"},"part=bottom,mature=false":{"model":"tfc:block/wild_crop/dead/green_bean_bottom"}}}

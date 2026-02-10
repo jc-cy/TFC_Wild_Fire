@@ -1,7 +1,7 @@
 {
 	"parent": "tfc:block/wood/support/connection_vex",
 	"textures": {
-		"texture": 	"tfc:block/wood/support/horizontal/sycamore",
-		"top": 		"tfc:block/wood/support/top/sycamore"
+		"texture": 	"tfc:block/wood/stripped_log/sycamore",
+		"top": 		"tfc:block/wood/stripped_log_top/sycamore"
 	}
 }

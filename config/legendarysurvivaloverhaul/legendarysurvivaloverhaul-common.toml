@@ -239,7 +239,7 @@
 			# Maximum amount of temperature the player's temperature can be modified at each temperature tick time.
 			# Correspond to the amount of temperature given when temperature difference is maximum, meaning 40.
 			#Range: 0.1 ~ 2.147483647E9
-			"Maximum Temperature Modification" = 0.6
+			"Maximum Temperature Modification" = 4.0
 			# Minimum amount of temperature the player's temperature can be modified at each temperature tick time.
 			# Correspond to the amount of temperature given when there is no temperature difference
 			#Range: 0.1 ~ 2.147483647E9

@@ -1,7 +1,7 @@
 {
 	"parent": "tfc:block/wood/support/vertical_vex",
 	"textures": {
-		"texture": 	"tfc:block/wood/support/vertical/acacia",
-		"top": 		"tfc:block/wood/support/top/acacia"
+		"texture": 	"tfc:block/wood/stripped_log/acacia",
+		"top": 		"tfc:block/wood/stripped_log_top/acacia"
 	}
 }

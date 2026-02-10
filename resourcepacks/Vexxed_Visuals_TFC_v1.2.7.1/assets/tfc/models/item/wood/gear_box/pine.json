@@ -2,7 +2,7 @@
   "__comment__": "This file was automatically created by mcresources",
   "parent": "tfc:block/ore",
   "textures": {
-    "all": "tfc:block/wood/axle_planks/pine",
+    "all": "tfc:block/wood/sheet/pine",
     "overlay": "tfc:block/axle_casing_front"
   }
 }

@@ -7,7 +7,7 @@
     }
   ],
   "heatRequirement": "superheated",
-  "processingTime": 100,
+  "processingTime": 70,
   "results": [
     {
       "fluid": "kubejs:heavy_oil",

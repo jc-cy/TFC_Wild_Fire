@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/coarse_dirt/entisol"
+      },
+      {
+        "model": "tfc:block/coarse_dirt/entisol",
+        "y": 90
+      },
+      {
+        "model": "tfc:block/coarse_dirt/entisol",
+        "y": 180
+      },
+      {
+        "model": "tfc:block/coarse_dirt/entisol",
+        "y": 270
+      }
+    ]
+  }
+}

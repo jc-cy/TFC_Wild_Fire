@@ -1,9 +1,11 @@
 {
+	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
 		"2": "tfc:block/devices/firepit/firepit_fire",
 		"3": "tfc:block/devices/firepit/stones",
+		"particle": "tfc:block/devices/firepit/base_lit",
 		"coals": "tfc:block/devices/firepit/base_lit"
 	},
 	"elements": [
@@ -20,6 +22,7 @@
 			"name": "fireeast",
 			"from": [10, 1, 2],
 			"to": [10, 9, 14],
+			"shade": false,
 			"rotation": {"angle": -22.5, "axis": "z", "origin": [8, 0, 8]},
 			"faces": {
 				"east": {"uv": [2, 0, 14, 8], "texture": "#2"},
@@ -30,6 +33,7 @@
 			"name": "firewest",
 			"from": [6, 1, 2],
 			"to": [6, 9, 14],
+			"shade": false,
 			"rotation": {"angle": 22.5, "axis": "z", "origin": [8, 0, 8]},
 			"faces": {
 				"east": {"uv": [2, 0, 14, 8], "texture": "#2"},
@@ -40,6 +44,7 @@
 			"name": "firesouth",
 			"from": [2, 1, 10],
 			"to": [14, 9, 10],
+			"shade": false,
 			"rotation": {"angle": 22.5, "axis": "x", "origin": [8, 0, 8]},
 			"faces": {
 				"north": {"uv": [2, 0, 14, 8], "texture": "#2"},
@@ -50,6 +55,7 @@
 			"name": "firenorth",
 			"from": [2, 1, 6],
 			"to": [14, 9, 6],
+			"shade": false,
 			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 0, 8]},
 			"faces": {
 				"north": {"uv": [2, 0, 14, 8], "texture": "#2"},
@@ -288,6 +294,7 @@
 			"name": "fire2",
 			"from": [2, 0, 8],
 			"to": [14, 6, 8],
+			"shade": false,
 			"rotation": {"angle": 45, "axis": "y", "origin": [8, 0, 8]},
 			"faces": {
 				"north": {"uv": [2, 0, 14, 6], "texture": "#2"},
@@ -298,6 +305,7 @@
 			"name": "fire1",
 			"from": [8, 0, 2],
 			"to": [8, 6, 14],
+			"shade": false,
 			"rotation": {"angle": 45, "axis": "y", "origin": [8, 0, 8]},
 			"faces": {
 				"east": {"uv": [2, 0, 14, 6], "texture": "#2"},
@@ -321,7 +329,7 @@
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"firstperson_lefthand": {
-			"rotation": [0, 225, 0],
+			"rotation": [0, -135, 0],
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"ground": {
@@ -329,7 +337,7 @@
 			"scale": [0.25, 0.25, 0.25]
 		},
 		"gui": {
-			"rotation": [30, 225, 0],
+			"rotation": [30, -135, 0],
 			"scale": [0.625, 0.625, 0.625]
 		},
 		"head": {

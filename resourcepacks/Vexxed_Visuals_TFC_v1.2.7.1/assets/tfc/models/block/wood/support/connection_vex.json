@@ -1,4 +1,5 @@
 {
+	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
 	"parent": "block/block",
 	"textures": {
 		"particle": "#texture"
@@ -8,12 +9,12 @@
 			"from": [11, 10, 5],
 			"to": [16, 16, 11],
 			"faces": {
-				"north": {"uv": [0, 5, 5, 11], "texture": "#texture"},
+				"north": {"uv": [5, 0, 11, 5], "rotation": 90, "texture": "#texture"},
 				"east": {"uv": [5, 5, 11, 11], "texture": "#top"},
-				"south": {"uv": [11, 5, 16, 11], "texture": "#texture"},
+				"south": {"uv": [5, 11, 11, 16], "rotation": 90, "texture": "#texture"},
 				"west": {"uv": [5, 5, 11, 11], "texture": "#top"},
-				"up": {"uv": [0, 5, 5, 11], "rotation": 180, "texture": "#texture"},
-				"down": {"uv": [0, 5, 5, 11], "rotation": 180, "texture": "#texture"}
+				"up": {"uv": [5, 0, 11, 5], "rotation": 270, "texture": "#texture"},
+				"down": {"uv": [5, 0, 11, 5], "rotation": 270, "texture": "#texture"}
 			}
 		}
 	]

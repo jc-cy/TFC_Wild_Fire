@@ -261,9 +261,9 @@ ServerEvents.recipes(a => {
     { mod: "kubejs:", weaponname: "greatsword_weapon_part", metalnumber: "triple_", a1: "hit_third_last", a2: "draw_second_last", a3: "upset_last" },//大剑(三锭)
     { mod: "kubejs:", weaponname: "battle_hammer_weapon_part", metalnumber: "triple_", a1: "shrink_third_last", a2: "hit_second_last", a3: "hit_any" },//战锤(三锭)
     { mod: "kubejs:", weaponname: "battleaxe_weapon_part", metalnumber: "triple_", a1: "hit_third_last", a2: "draw_last", a3: "upset_any" },//战斧(三锭)
-    { mod: "tfc:metal/", weaponname: "lance_weapon_part", metalnumber: "double_sheet/", a1: "draw_third_last", a2: "draw_last", a3: "hit_second_last" },//骑枪（双板）
-    { mod: "tfc:metal/", weaponname: "halberd_weapon_partt", metalnumber: "double_sheet/", a1: "shrink_second_last", a2: "bend_last", a3: "upset_any" },//战戟（双板）
-    { mod: "tfc:metal/", weaponname: "scythe_weapon_part", metalnumber: "double_sheet/", a1: "bend_last", a2: "draw_second_last", a3: "draw_any" },//镰刀（双板）
+    { mod: "tfc:metal/", weaponname: "lance_weapon_part", metalnumber: "double_sheet/", a1: "draw_third_last", a2: "draw_last", a3: "hit_second_last" },//骑枪（双层薄板）
+    { mod: "tfc:metal/", weaponname: "halberd_weapon_partt", metalnumber: "double_sheet/", a1: "shrink_second_last", a2: "bend_last", a3: "upset_any" },//战戟（双层薄板）
+    { mod: "tfc:metal/", weaponname: "scythe_weapon_part", metalnumber: "double_sheet/", a1: "bend_last", a2: "draw_second_last", a3: "draw_any" },//镰刀（双层薄板）
     { mod: "tfc:metal/", weaponname: "tomahawk_weapon_part", metalnumber: "ingot/", a1: "upset_last", a2: "hit_any", a3: "draw_second_last" },//印第安投斧(单锭)
     { mod: "tfc:metal/", weaponname: "throwing_knife_weapon_part", metalnumber: "ingot/", a1: "draw_second_last", a2: "draw_last", a3: "hit_any" },//飞刀（单锭）
     { mod: "tfc:metal/", weaponname: "dagger_weapon_part", metalnumber: "ingot/", a1: "hit_last", a2: "hit_third_last", a3: "hit_any" },//匕首刀（单锭）
@@ -282,7 +282,7 @@ ServerEvents.recipes(a => {
     weapon.forEach(abc => {
       tfc.anvil(
         `kubejs:${abc.name}_${abd.weaponname}`,
-        `${abd.mod}${abd.metalnumber}${abc.name}`,//double_sheet(双板)sheet(单板)ingot(单锭)double_ingot(双锭)triple(三锭)
+        `${abd.mod}${abd.metalnumber}${abc.name}`,//double_sheet(双层薄板)sheet(单板)ingot(单锭)double_ingot(双锭)triple(三锭)
         [
           `${abd.a1}`,
           `${abd.a2}`,

@@ -1,7 +1,11 @@
 {
     "custom.metal_pipe": {
-        "sounds": [  
-                 "tfc:custom/metal_pipe_close"
+        "sounds": [
+            {
+                "name": "tfc:custom/metal_pipe_close",
+                "volume":1,
+                "stream":true
+            }
         ]
     }
 }

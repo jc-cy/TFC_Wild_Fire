@@ -1,0 +1,24 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
+	"parent": "tfc:block/cube_column_overlay",
+	"textures": {
+		"particle": "tfc:block/wattle/wattle_sides_woven",
+		"overlay": "tfc:block/wattle/wattle_sides_woven",
+		"overlay_end": "tfc:block/wattle/end_woven"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#overlay"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#overlay"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#overlay"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#overlay"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#overlay_end"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#overlay_end"}
+			}
+		}
+	]
+}

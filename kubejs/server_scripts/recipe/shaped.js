@@ -640,7 +640,7 @@ ServerEvents.recipes(event => {
         a: 'farmersdelight:rope',
     })//藤蔓套索
 
-    event.shaped('moreburners:copper_coil', [
+    event.shaped('3x moreburners:copper_coil', [
         ' a ',
         'aba',
         ' a '

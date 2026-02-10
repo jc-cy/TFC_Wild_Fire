@@ -21,6 +21,7 @@
 			"name": "fire1",
 			"from": [8, 0, 2],
 			"to": [8, 10, 14],
+          "shade": false,
 			"rotation": {"angle": 45, "axis": "y", "origin": [8, 0, 8]},
 			"faces": {
 				"east": {"uv": [2, 0, 14, 10], "texture": "#2"},
@@ -31,6 +32,7 @@
 			"name": "fire2",
 			"from": [2, 0, 8],
 			"to": [14, 10, 8],
+          "shade": false,
 			"rotation": {"angle": 45, "axis": "y", "origin": [8, 0, 8]},
 			"faces": {
 				"north": {"uv": [2, 0, 14, 10], "texture": "#2"},

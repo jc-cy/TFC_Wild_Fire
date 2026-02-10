@@ -26,40 +26,7 @@
 "block.tfc.powderkeg": 								"Powder Keg",
 "tfc.block_entity.powderkeg": 						"Powder Keg",
 
-"tfc.enum.forgingbonus.modestly_forged": 			"Crudely Forged",
-"tfc.enum.forgingbonus.perfectly_forged": 			"Masterfully Forged",
-
-"config.jade.plugin_tfc.lamp": "Lantern",
-"item.tfc.metal.unfinished_lamp.bismuth_bronze": "Bismuth Bronze Unfinished Lantern",
-"block.tfc.metal.lamp.bismuth_bronze": "Bismuth Bronze Lantern",
-"block.tfc.metal.lamp.bismuth_bronze.filled": "Bismuth Bronze Lantern (Filled)",
-"item.tfc.metal.unfinished_lamp.black_bronze": "Black Bronze Unfinished Lantern",
-"block.tfc.metal.lamp.black_bronze": "Black Bronze Lantern",
-"block.tfc.metal.lamp.black_bronze.filled": "Black Bronze Lantern (Filled)",
-"item.tfc.metal.unfinished_lamp.bronze": "Bronze Unfinished Lantern",
-"block.tfc.metal.lamp.bronze": "Bronze Lantern",
-"block.tfc.metal.lamp.bronze.filled": "Bronze Lantern (Filled)",
-"item.tfc.metal.unfinished_lamp.copper": "Copper Unfinished Lantern",
-"block.tfc.metal.lamp.copper": "Copper Lantern",
-"block.tfc.metal.lamp.copper.filled": "Copper Lantern (Filled)",
-"item.tfc.metal.unfinished_lamp.wrought_iron": "Wrought Iron Unfinished Lantern",
-"block.tfc.metal.lamp.wrought_iron": "Wrought Iron Lantern",
-"block.tfc.metal.lamp.wrought_iron.filled": "Wrought Iron Lantern (Filled)",
-"item.tfc.metal.unfinished_lamp.steel": "Steel Unfinished Lantern",
-"block.tfc.metal.lamp.steel": "Steel Lantern",
-"block.tfc.metal.lamp.steel.filled": "Steel Lantern (Filled)",
-"item.tfc.metal.unfinished_lamp.black_steel": "Black Steel Unfinished Lantern",
-"block.tfc.metal.lamp.black_steel": "Black Steel Lantern",
-"block.tfc.metal.lamp.black_steel.filled": "Black Steel Lantern (Filled)",
-"item.tfc.metal.unfinished_lamp.red_steel": "Red Steel Unfinished Lantern",
-"block.tfc.metal.lamp.red_steel": "Red Steel Lantern",
-"block.tfc.metal.lamp.red_steel.filled": "Red Steel Lantern (Filled)",
-"item.tfc.metal.unfinished_lamp.blue_steel": "Blue Steel Unfinished Lantern",
-"block.tfc.metal.lamp.blue_steel": "Blue Steel Lantern",
-"block.tfc.metal.lamp.blue_steel.filled": "Blue Steel Lantern (Filled)",
-"item.tfc.lamp_glass": "Lantern Glass",
-"tfc.block_entity.lamp": "Lantern",
-"tfc.advancements.world.lava_lamp.description": "Light a lantern that glows eternal"
+"tfc.enum.forgingbonus.perfectly_forged": 			"Masterfully Forged"
 
 
 }

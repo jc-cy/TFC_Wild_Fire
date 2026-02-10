@@ -1,6 +1,6 @@
 {
 	"parent": "tfc:block/wood/support/horizontal_vex",
 	"textures": {
-		"texture": 	"tfc:block/wood/support/horizontal/douglas_fir"
+		"texture": 	"tfc:block/wood/stripped_log/douglas_fir"
 	}
 }

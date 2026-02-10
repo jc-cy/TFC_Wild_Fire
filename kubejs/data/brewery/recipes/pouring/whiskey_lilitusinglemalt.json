@@ -2,7 +2,7 @@
   "type": "brewinandchewin:keg_pouring",
   "amount": 250,
   "container": {
-    "item": "firmalife:empty_hematitic_wine_bottle"
+    "item": "brewinandchewin:tankard"
   },
   "filling": true,
   "filling": true,

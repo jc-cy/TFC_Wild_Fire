@@ -1,7 +1,7 @@
 {
 	"parent": "tfc:block/wood/support/connection_vex",
 	"textures": {
-		"texture": 	"tfc:block/wood/support/horizontal/aspen",
-		"top": 		"tfc:block/wood/support/top/aspen"
+		"texture": 	"tfc:block/wood/stripped_log/aspen",
+		"top": 		"tfc:block/wood/stripped_log_top/aspen"
 	}
 }

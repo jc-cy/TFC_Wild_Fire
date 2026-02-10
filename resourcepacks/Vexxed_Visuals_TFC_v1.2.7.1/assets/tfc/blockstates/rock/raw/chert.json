@@ -1,9 +1,20 @@
 {
-	"variants": {
-		"": [
-			{
-				"model": "tfc:block/rock/raw/chert"
-			}
-		]
-	}
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/rock/raw/chert"
+      },
+      {
+        "model": "tfc:block/rock/raw/chert_mirrored"
+      },
+      {
+        "model": "tfc:block/rock/raw/chert",
+        "y": 180
+      },
+      {
+        "model": "tfc:block/rock/raw/chert_mirrored",
+        "y": 180
+      }
+    ]
+  }
 }

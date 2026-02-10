@@ -1,8 +1,8 @@
 {
     
-  "create.recipe.heat_requirement.heated": " ≥530°C",
+  "create.recipe.heat_requirement.heated": " ≥1350°C",
   "create.recipe.heat_requirement.none": " 无需加热",
-  "create.recipe.heat_requirement.superheated": " ≥1600°C",
+  "create.recipe.heat_requirement.superheated": " ≥2000°C",
   "block.create.millstone": "安山岩石磨",
   "block.create.crushing_wheel": "安山岩粉碎轮",
   

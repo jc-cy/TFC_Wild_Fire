@@ -2,7 +2,7 @@
   "__comment__": "This file was automatically created by mcresources",
   "parent": "tfc:block/gear_box_face",
   "textures": {
-    "all": "tfc:block/wood/axle_planks/oak",
+    "all": "tfc:block/wood/sheet/oak",
     "overlay": "tfc:block/axle_casing_round"
   }
 }

@@ -1,6 +1,6 @@
 {
 	"parent": "tfc:block/wood/support/horizontal_vex",
 	"textures": {
-		"texture": 	"tfc:block/wood/support/horizontal/mangrove"
+		"texture": 	"tfc:block/wood/stripped_log/mangrove"
 	}
 }

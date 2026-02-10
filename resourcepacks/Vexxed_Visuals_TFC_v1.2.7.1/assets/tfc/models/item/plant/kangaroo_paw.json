@@ -1,7 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "tfc:block/plant/kangaroo_paw/kangaroo_paw_0",
-		"layer1": "tfc:block/plant/kangaroo_paw/kangaroo_paw_0b"
+		"layer0": "tfc:item/plant/kangaroo_paw"
 	}
 }

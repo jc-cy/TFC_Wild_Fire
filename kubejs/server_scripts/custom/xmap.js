@@ -1,5 +1,7 @@
+var mittens2 = /**@type {Internal.ItemStack} */ (null)
 PlayerEvents.tick(event => {
     const { player } = event
+
 
     let playerData2 = player.persistentData
     if (!playerData2.mapTimer) playerData2.mapTimer = 0
@@ -9,7 +11,10 @@ PlayerEvents.tick(event => {
     const waypoints = ['minecraft:compass']
     const minimap = ['minecraft:spyglass']
     //!player.mainHandItem.isEmpty() 
-
+   /* $CuriosApi.getCuriosHelper().findFirstCurio(player, 'kubejs:glove').ifPresent(slot => {
+        mittens2 = slot.stack()
+    })
+    player.tell(`${mittens2}`)*/
     if (!player.isCreative() && !player.isSpectator()) {//没有任何地图
 
         player.potionEffects.add('xaerominimap:no_cave_maps', -1, 1, false, false)//禁用洞穴地图

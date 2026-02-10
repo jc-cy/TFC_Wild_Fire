@@ -2,7 +2,7 @@
 	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
 	"parent": "tfc:block/groundcover/template/ore_0",
 	"textures": {
-		"texture": "tfc:item/ore/rich_native_silver"
+		"texture": "tfc:item/ore/small_native_silver"
 	},
 	"elements": [
 		{
