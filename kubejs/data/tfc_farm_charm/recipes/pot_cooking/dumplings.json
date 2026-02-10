@@ -10,7 +10,7 @@
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "tfc:food/cabbage"
+				"tag": "forge:crops/cabbage"
 			}
 		}
 	],

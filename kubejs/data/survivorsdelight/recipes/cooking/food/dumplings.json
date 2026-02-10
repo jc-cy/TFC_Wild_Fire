@@ -18,7 +18,7 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "tfc:foods/cabbage"
+        "tag": "tfc:foods/vegetables"
       }
     }
   ],

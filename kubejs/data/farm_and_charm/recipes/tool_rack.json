@@ -6,7 +6,7 @@
 	],
 	"key": {
 		"i": {
-			"item": "tfc:metal/rod/wrought_iron"
+			"item": "tfc:metal/rod/cast_iron"
 		},
 		"/": {
 			"item": "minecraft:stick"
@@ -14,6 +14,6 @@
 	},
 	"result": {
 		"item": "farm_and_charm:tool_rack",
-		"count": 3
+		"count": 6
 	}
 }

@@ -1,5 +1,5 @@
 {
-  "type": "bakery:pot_cooking",
+  "type": "farm_and_charm:pot_cooking",
   "ingredients": [
     {
       "type": "tfc:not_rotten",
@@ -24,18 +24,12 @@
       "ingredient": {
       "item": "tfc:food/strawberry"
       }
-    },
-    {
-      "type": "tfc:not_rotten",
-      "ingredient": {
-      "tag": "tfc:sweetener"
-      }
     }
   ],
   "container": {
-    "item": "bakery:jar"
+    "item": "tfc:empty_jar"
   },
   "result": {
-    "item": "bakery:strawberry_jam"
+    "item": "tfc_farm_charm:strawberry_jam"
   }
 }

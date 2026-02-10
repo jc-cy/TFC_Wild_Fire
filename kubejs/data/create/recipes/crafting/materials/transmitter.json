@@ -3,21 +3,25 @@
   "category": "misc",
   "key": {
     "L": {
-      "tag": "forge:plates/copper"
+      "tag": "forge:wires/copper"
     },
     "N": {
-      "item": "minecraft:lightning_rod"
+      "item": "minecraft:redstone_torch"
     },
     "R": {
       "tag": "forge:dusts/redstone"
+    },
+    "A": {
+      "tag": "forge:sheets/copper"
     }
   },
   "pattern": [
     " N ",
-    "LLL",
+    "LAL",
     " R "
   ],
   "result": {
+    "count": 4,
     "item": "create:transmitter"
   },
   "show_notification": true

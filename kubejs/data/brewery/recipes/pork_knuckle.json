@@ -6,7 +6,7 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-      "item": "tfc:food/pork"
+      "tag": "forge:raw_pork"
       }
     },
     {

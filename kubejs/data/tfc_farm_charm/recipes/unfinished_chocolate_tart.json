@@ -8,12 +8,21 @@
 			}
 		},
 		{
-			"item": "farm_and_charm:yeast"
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "bakery:chocolate"
+			}
 		},
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "bakery:sweet_dough"
+				"tag": "tfc:sweetener"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "bakery:dough"
 			}
 		}
 	],

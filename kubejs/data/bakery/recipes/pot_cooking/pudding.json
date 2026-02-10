@@ -1,5 +1,5 @@
 {
-  "type": "bakery:pot_cooking",
+  "type": "farm_and_charm:pot_cooking",
   "ingredients": [
     {
       "type": "tfc:not_rotten",
@@ -11,6 +11,12 @@
       "type": "tfc:not_rotten",
       "ingredient": {
       "tag": "tfc:foods/preserves"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "tag": "tfc:sweetener"
       }
     },
     {
@@ -27,7 +33,7 @@
     "item": "minecraft:bowl"
   },
   "result": {
-    "item": "bakery:pudding",
+    "item": "tfc_farm_charm:pudding",
     "count": 1
   }
 }

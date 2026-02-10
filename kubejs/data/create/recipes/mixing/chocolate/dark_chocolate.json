@@ -1,0 +1,24 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+            "fluidTag": "tfc:milks",
+            "amount": 1000
+    },
+    {
+      "item": "firmalife:food/cocoa_powder"
+    },
+    {
+      "item": "firmalife:food/cocoa_powder"
+    },
+    {
+      "tag": "tfc:sweetener"
+    }
+  ],
+  "results": [
+    {
+      "count": 6,
+      "item": "firmalife:food/dark_chocolate_blend"
+    }
+  ]
+}

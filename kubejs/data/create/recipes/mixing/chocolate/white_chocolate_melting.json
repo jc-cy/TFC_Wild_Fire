@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "firmalife:food/white_chocolate"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "tfcchallencasting:white_chocolate"
+    }
+  ]
+}

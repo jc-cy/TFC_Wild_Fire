@@ -2,7 +2,6 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "   ",
     "BEB",
     " A "
   ],
@@ -19,7 +18,7 @@
   },
   "result": {
     "item": "design_decor:brass_floodlight",
-    "count": 2
+    "count": 4
 
 
   }

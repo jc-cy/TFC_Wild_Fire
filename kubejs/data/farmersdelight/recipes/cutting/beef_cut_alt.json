@@ -1,0 +1,30 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    [
+      {
+      "item": "butcher:raw_rump_steak"
+      },
+      {
+      "item": "butcher:raw_chuck_steak"
+      },
+      {
+      "item": "butcher:raw_sirloin_steak"
+      }
+    ]
+  ],
+  "result": [
+    {
+      "count": 1,
+      "item": "farmersdelight:minced_beef"
+    },
+    {
+      "chance": 0.75,
+      "count": 1,
+      "item": "farmersdelight:minced_beef"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

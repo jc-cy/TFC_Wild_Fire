@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "createmetallurgy:graphite_blank_mold"
+    },
+    "a": {
+      "tag": "tfc:leather_knapping"
+    },
+    "c": {
+      "item": "create:copper_casing"
+    }
+  },
+  "pattern": [
+    "c",
+    "a",
+    "b"
+  ],
+  "result": {
+    "item": "create_enchantment_industry:printer"
+  }
+}

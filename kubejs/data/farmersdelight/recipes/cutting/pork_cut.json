@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    [
+      {
+      "item": "butcher:raw_pork_leg"
+      },
+      {
+      "item": "butcher:raw_pork_belly"
+      }
+    ]
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "farmersdelight:bacon"
+    },
+    {
+      "chance": 0.25,
+      "count": 1,
+      "item": "farmersdelight:bacon"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "type": "create:compacting",
+  "ingredient": {
+    "item": "firmalife:food/dark_chocolate_blend"
+  },
+  "result": "firmalife:food/dark_chocolate"
+}

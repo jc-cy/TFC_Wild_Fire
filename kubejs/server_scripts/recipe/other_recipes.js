@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
   tfc.casting('5x firmaciv:copper_bolt', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/copper', 100), 1)//铜螺栓
 
 
- tfc.casting('tfc:metal/sheet/copper', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/copper', 200), 1)//铜板
+tfc.casting('tfc:metal/sheet/copper', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/copper', 200), 1)//铜板
 tfc.casting('tfc:metal/sheet/nickel', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/nickel', 200), 1)//镍板
 tfc.casting('tfc:metal/sheet/rose_gold', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/rose_gold', 200), 1)//玫瑰金板
 tfc.casting('tfc:metal/sheet/silver', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/silver', 200), 1)//银板
@@ -18,11 +18,11 @@ tfc.casting('tfc:metal/sheet/brass', 'kubejs:mold_sheet', TFC.fluidStackIngredie
 tfc.casting('tfc:metal/sheet/bronze', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/bronze', 200), 1)//青铜板
 tfc.casting('tfc:metal/sheet/bismuth_bronze', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/bismuth_bronze', 200), 1)//铋青铜板
 
- tfc.casting("tfc:metal/rod/copper", 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/copper', 50), 1)//铜棒
-  tfc.casting("tfc:metal/rod/bronze", 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/bronze', 50), 1)//青铜棒
-  tfc.casting('tfc:metal/rod/nickel', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/nickel', 50), 1)//镍棒
-  tfc.casting('tfc:metal/rod/rose_gold', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/rose_gold', 50), 1)//玫瑰金棒
-  tfc.casting('tfc:metal/rod/silver', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/silver', 50), 1)//银棒
+tfc.casting("tfc:metal/rod/copper", 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/copper', 50), 1)//铜棒
+tfc.casting("tfc:metal/rod/bronze", 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/bronze', 50), 1)//青铜棒
+tfc.casting('tfc:metal/rod/nickel', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/nickel', 50), 1)//镍棒
+tfc.casting('tfc:metal/rod/rose_gold', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/rose_gold', 50), 1)//玫瑰金棒
+tfc.casting('tfc:metal/rod/silver', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/silver', 50), 1)//银棒
 tfc.casting('tfc:metal/rod/tin', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/tin', 50), 1)//锡棒
 tfc.casting('tfc:metal/rod/zinc', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/zinc', 50), 1)//锌棒
 tfc.casting('tfc:metal/rod/black_bronze', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/black_bronze', 50), 1)//黑青铜棒
@@ -935,50 +935,78 @@ ServerEvents.recipes(event => {
 })
 //沃土系数更改
 ServerEvents.recipes(e => {
-  const CROP_GROWTH_TIME_MULTIPLIER = 0.8;// 沃土加速系数，暂定 0.8
-  const BASE_GROWTH_TIME = 50000;// 基础生长时间
-  const ADJUSTED_GROWTH_TIME = BASE_GROWTH_TIME * CROP_GROWTH_TIME_MULTIPLIER;// 计算调整后的生长时间
+  const CROP_GROWTH_TIME_MULTIPLIER = 0.8;// 沃土加速系数，暂定 1
+  const BASE_GROWTH_TIME = 45000;// 基础生长时间
+  const ADJUSTED_GROWTH_TIME = BASE_GROWTH_TIME * CROP_GROWTH_TIME_MULTIPLIER;// 计算调整后的生长时间  不是哥们这一开始写的意义是什么
   const RICH_SOIL = 'farmersdelight:rich_soil';// 沃土土壤类型
 
   const crops = [// 定义作物列表，每个作物包含名称、产出物品、种子物品和作物方块
-    { name: 'wheat', product: 'tfc:food/wheat', seed: 'tfc:seeds/wheat', cropBlock: 'tfc:crop/wheat' },
-    { name: 'tomato', product: 'tfc:food/tomato', seed: 'tfc:seeds/tomato', cropBlock: 'tfc:crop/tomato' },
-    { name: 'sugarcane', product: 'tfc:food/sugarcane', seed: 'tfc:seeds/sugarcane', cropBlock: 'tfc:crop/sugarcane' },
-    { name: 'squash', product: 'tfc:food/squash', seed: 'tfc:seeds/squash', cropBlock: 'tfc:crop/squash' },
-    { name: 'soybean', product: 'tfc:food/soybean', seed: 'tfc:seeds/soybean', cropBlock: 'tfc:crop/soybean' },
-    { name: 'rye', product: 'tfc:food/rye', seed: 'tfc:seeds/rye', cropBlock: 'tfc:crop/rye' },
-    { name: 'rice', product: 'tfc:food/rice', seed: 'tfc:seeds/rice', cropBlock: 'tfc:crop/rice' },
-    { name: 'pumpkin', product: 'tfc:pumpkin', seed: 'tfc:seeds/pumpkin', cropBlock: 'tfc:crop/pumpkin' },
-    { name: 'potato', product: 'tfc:food/potato', seed: 'tfc:seeds/potato', cropBlock: 'tfc:crop/potato' },
-    { name: 'onion', product: 'tfc:food/onion', seed: 'tfc:seeds/onion', cropBlock: 'tfc:crop/onion' },
-    { name: 'oat', product: 'tfc:food/oat', seed: 'tfc:seeds/oat', cropBlock: 'tfc:crop/oat' },
-    { name: 'melon', product: 'tfc:melon', seed: 'tfc:seeds/melon', cropBlock: 'tfc:crop/melon' },
-    { name: 'maize', product: 'tfc:food/maize', seed: 'tfc:seeds/maize', cropBlock: 'tfc:crop/maize' },
-    { name: 'jute', product: 'tfc:jute', seed: 'tfc:seeds/jute', cropBlock: 'tfc:crop/jute' },
-    { name: 'green_bean', product: 'tfc:food/green_bean', seed: 'tfc:seeds/green_bean', cropBlock: 'tfc:crop/green_bean' },
-    { name: 'garlic', product: 'tfc:food/garlic', seed: 'tfc:seeds/garlic', cropBlock: 'tfc:crop/garlic' },
-    { name: 'carrot', product: 'tfc:food/carrot', seed: 'tfc:seeds/carrot', cropBlock: 'tfc:crop/carrot' },
-    { name: 'cabbage', product: 'tfc:food/cabbage', seed: 'tfc:seeds/cabbage', cropBlock: 'tfc:crop/cabbage' },
-    { name: 'beet', product: 'tfc:food/beet', seed: 'tfc:seeds/beet', cropBlock: 'tfc:crop/beet' },
-    { name: 'barley', product: 'tfc:food/barley', seed: 'tfc:seeds/barley', cropBlock: 'tfc:crop/barley' },
+    { name: 'wheat', product: 'tfc:food/wheat', count: 2, seed: 'tfc:seeds/wheat', cropBlock: 'tfc:crop/wheat', type: 'crop' },
+    { name: 'tomato', product: 'tfc:food/tomato', count: 2, seed: 'tfc:seeds/tomato', cropBlock: 'tfc:crop/tomato', type: 'crop' },
+    { name: 'sugarcane', product: 'tfc:food/sugarcane', count: 2, seed: 'tfc:seeds/sugarcane', cropBlock: 'tfc:crop/sugarcane', type: 'crop' },
+    { name: 'squash', product: 'tfc:food/squash', count: 2, seed: 'tfc:seeds/squash', cropBlock: 'tfc:crop/squash', type: 'crop' },
+    { name: 'soybean', product: 'tfc:food/soybean', count: 2, seed: 'tfc:seeds/soybean', cropBlock: 'tfc:crop/soybean', type: 'crop' },
+    { name: 'rye', product: 'tfc:food/rye', count: 2, seed: 'tfc:seeds/rye', cropBlock: 'tfc:crop/rye', type: 'crop' },
+    { name: 'rice', product: 'tfc:food/rice', count: 2, seed: 'tfc:seeds/rice', cropBlock: 'tfc:crop/rice', type: 'crop' },
+    { name: 'pumpkin', product: 'tfc:pumpkin', count: 2, seed: 'tfc:seeds/pumpkin', cropBlock: 'tfc:crop/pumpkin', type: 'crop' },
+    { name: 'potato', product: 'tfc:food/potato', count: 2, seed: 'tfc:seeds/potato', cropBlock: 'tfc:crop/potato', type: 'crop' },
+    { name: 'onion', product: 'tfc:food/onion', count: 2, seed: 'tfc:seeds/onion', cropBlock: 'tfc:crop/onion', type: 'crop' },
+    { name: 'oat', product: 'tfc:food/oat', count: 2, seed: 'tfc:seeds/oat', cropBlock: 'tfc:crop/oat', type: 'crop' },
+    { name: 'melon', product: 'tfc:melon', count: 2, seed: 'tfc:seeds/melon', cropBlock: 'tfc:crop/melon', type: 'crop' },
+    { name: 'maize', product: 'tfc:food/maize', count: 2, seed: 'tfc:seeds/maize', cropBlock: 'tfc:crop/maize', type: 'crop' },
+    { name: 'jute', product: 'tfc:jute', count: 3, seed: 'tfc:seeds/jute', cropBlock: 'tfc:crop/jute', type: 'crop' },
+    { name: 'green_bean', product: 'tfc:food/green_bean', count: 2, seed: 'tfc:seeds/green_bean', type: 'tfc:crop/green_bean', type: 'crop' },
+    { name: 'garlic', product: 'tfc:food/garlic', count: 2, seed: 'tfc:seeds/garlic', cropBlock: 'tfc:crop/garlic', type: 'crop' },
+    { name: 'carrot', product: 'tfc:food/carrot', count: 2, seed: 'tfc:seeds/carrot', cropBlock: 'tfc:crop/carrot', type: 'crop' },
+    { name: 'cabbage', product: 'tfc:food/cabbage', count: 2, seed: 'tfc:seeds/cabbage', cropBlock: 'tfc:crop/cabbage', type: 'crop' },
+    { name: 'beet', product: 'tfc:food/beet', count: 2, seed: 'tfc:seeds/beet', cropBlock: 'tfc:crop/beet', type: 'crop' },
+    { name: 'barley', product: 'tfc:food/barley', count: 2, seed: 'tfc:seeds/barley', cropBlock: 'tfc:crop/barley', type: 'crop' },
+    { name: 'papyrus', product: 'tfc:papyrus', count: 3, seed: 'tfc:seeds/papyrus', cropBlock: 'tfc:crop/papyrus', type: 'crop' },
 
-    { name: 'white_grape', product: 'firmalife:food/white_grapes', seed: 'firmalife:seeds/white_grape', cropBlock: 'firmalife:plant/wild_white_grapes' },
-    { name: 'red_grape', product: 'firmalife:food/red_grapes', seed: 'firmalife:seeds/red_grape', cropBlock: 'firmalife:plant/wild_red_grapes' },
-    { name: 'flax', product: 'textile:flax', seed: 'textile:seeds/flax', cropBlock: 'textile:crop/flax' },
-    { name: 'cotton', product: 'textile:cotton_ball', seed: 'textile:seeds/cotton', cropBlock: 'textile:crop/cotton' }
+    { name: 'flax', product: 'textile:flax', count: 4, seed: 'textile:seeds/flax', cropBlock: 'textile:crop/flax', type: 'crop' },
+    { name: 'cotton', product: 'textile:cotton_ball', count: 4, seed: 'textile:seeds/cotton', cropBlock: 'textile:crop/cotton', type: 'crop' },
+
+    { name: 'white_grape', product: 'firmalife:food/white_grapes', count: 3, seed: 'firmalife:seeds/white_grape', cropBlock: 'firmalife:plant/wild_white_grapes', type: 'generic' },
+    { name: 'red_grape', product: 'firmalife:food/red_grapes', count: 3, seed: 'firmalife:seeds/red_grape', cropBlock: 'firmalife:plant/wild_red_grapes', type: 'generic' },
+    { name: 'snowberry', product: 'tfc:food/snowberry', count: 4, seed: 'tfc:plant/snowberry_bush', cropBlock: 'tfc:plant/snowberry_bush', type: 'generic' },
+    { name: 'bunchberry', product: 'tfc:food/bunchberry', count: 4, seed: 'tfc:plant/bunchberry_bush', cropBlock: 'tfc:plant/bunchberry_bush', type: 'generic' },
+    { name: 'gooseberry', product: 'tfc:food/gooseberry', count: 4, seed: 'tfc:plant/gooseberry_bush', cropBlock: 'tfc:plant/gooseberry_bush', type: 'generic' },
+    { name: 'cloudberry', product: 'tfc:food/cloudberry', count: 4, seed: 'tfc:plant/cloudberry_bush', cropBlock: 'tfc:plant/cloudberry_bush', type: 'generic' },
+    { name: 'strawberry', product: 'tfc:food/strawberry', count: 4, seed: 'tfc:plant/strawberry_bush', cropBlock: 'tfc:plant/strawberry_bush', type: 'generic' },
+    { name: 'cranberry', product: 'tfc:food/cranberry', count: 4, seed: 'tfc:plant/cranberry_bush', cropBlock: 'tfc:plant/cranberry_bush', type: 'generic' },
+
+    { name: 'blackberry', product: 'tfc:food/blackberry', count: 4, seed: 'tfc:plant/blackberry_bush', cropBlock: 'tfc:plant/blackberry_bush', type: 'generic' },
+    { name: 'raspberry', product: 'tfc:food/raspberry', count: 4, seed: 'tfc:plant/raspberry_bush', cropBlock: 'tfc:plant/raspberry_bush', type: 'generic' },
+    { name: 'elderberry', product: 'tfc:food/elderberry', count: 4, seed: 'tfc:plant/elderberry_bush', cropBlock: 'tfc:plant/elderberry_bush', type: 'generic' },
+    { name: 'blueberry', product: 'tfc:food/blueberry', count: 4, seed: 'tfc:plant/blueberry_bush', cropBlock: 'tfc:plant/blueberry_bush', type: 'generic' },
+
+    { name: 'pineaple', product: 'firmalife:food/pineaple', count: 3, seed: 'firmalife:plant/pineaple_bush', cropBlock: 'firmalife:plant/pineaple_bush', type: 'generic' },
+    { name: 'wintergreen_berry', product: 'tfc:food/wintergreen_berry', count: 4, seed: 'tfc:plant/wintergreen_berry_bush', cropBlock: 'tfc:plant/wintergreen_berry_bush', type: 'generic' },
+
+    { name: 'cherry', product: 'tfc:food/cherry', count: 4, seed: 'tfc:plant/cherry_sapling', cropBlock: 'tfc:plant/cherry_sapling', type: 'generic' },
+    { name: 'green_apple', product: 'tfc:food/green_apple', count: 4, seed: 'tfc:plant/green_apple_sapling', cropBlock: 'tfc:plant/green_apple_sapling', type: 'generic' },
+    { name: 'lemon', product: 'tfc:food/lemon', count: 4, seed: 'tfc:plant/lemon_sapling', cropBlock: 'tfc:plant/lemon_sapling', type: 'generic' },
+    { name: 'olive', product: 'tfc:food/olive', count: 4, seed: 'tfc:plant/olive_sapling', cropBlock: 'tfc:plant/olive_sapling', type: 'generic' },
+    { name: 'orange', product: 'tfc:food/orange', count: 4, seed: 'tfc:plant/orange_sapling', cropBlock: 'tfc:plant/orange_sapling', type: 'generic' },
+    { name: 'peach', product: 'tfc:food/peach', count: 4, seed: 'tfc:plant/peach_sapling', cropBlock: 'tfc:plant/peach_sapling', type: 'generic' },
+    { name: 'plum', product: 'tfc:food/plum', count: 4, seed: 'tfc:plant/plum_sapling', cropBlock: 'tfc:plant/plum_sapling', type: 'generic' },
+    { name: 'red_apple', product: 'tfc:food/red_apple', count: 4, seed: 'tfc:plant/red_apple_sapling', cropBlock: 'tfc:plant/red_apple_sapling', type: 'generic' },
+    { name: 'banana', product: 'alexsmobs:banana', count: 4, seed: 'tfc:plant/banana_sapling', cropBlock: 'tfc:plant/banana_sapling', type: 'generic' },
+    { name: 'cocoa', product: 'firmalife:food/cocoa_beans', count: 4, seed: 'firmalife:plant/cocoa_sapling', cropBlock: 'firmalife:plant/cocoa_sapling', type: 'generic' },
+    { name: 'fig', product: 'firmalife:food/fig', count: 4, seed: 'firmalife:plant/fig_sapling', cropBlock: 'firmalife:plant/fig_sapling', type: 'generic' }
   ];
 
   crops.forEach(crop => {
     e.custom({
       "type": "immersiveengineering:cloche",
       "results": [
-        { "item": crop.product, "count": 2 },
+        { "item": crop.product, "count": crop.count },
         { "item": crop.seed, "count": 1 }
       ],
       "input": { "item": crop.seed },
       "soil": { "item": RICH_SOIL },
       "time": ADJUSTED_GROWTH_TIME,
-      "render": { "type": "crop", "block": crop.cropBlock }
+      "render": { "type": crop.type, "block": crop.cropBlock }
     });
     console.log(`为 ${crop.name} 创建了种植配方`);
   });

@@ -1,0 +1,24 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:pot",
+  "ingredients": [
+    {
+      "item": "firmalife:raw_honey"
+    },
+    {
+      "item": "firmalife:raw_honey"
+    },
+    {
+      "item": "firmalife:raw_honey"
+    },
+    {
+      "item": "firmalife:raw_honey"
+    }
+  ],
+  "duration": 3000,
+  "temperature": 200,
+  "fluid_output": {
+    "fluid": "brewinandchewin:honey",
+    "amount": 250
+  }
+}

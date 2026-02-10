@@ -27,7 +27,7 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-      "tag": "c:dough"
+      "tag": "bakery:dough"
       }
     }
   ],

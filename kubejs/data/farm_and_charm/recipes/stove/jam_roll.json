@@ -10,7 +10,7 @@
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "bakery:sweet_dough"
+				"tag": "forge:dough"
 			}
 		},
 		{

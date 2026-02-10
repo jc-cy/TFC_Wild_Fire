@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "firmalife:food/dark_chocolate"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "tfcchallencasting:dark_chocolate"
+    }
+  ]
+}

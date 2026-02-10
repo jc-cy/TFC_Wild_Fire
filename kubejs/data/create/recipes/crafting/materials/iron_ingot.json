@@ -1,0 +1,15 @@
+{
+	"type":"vintageimprovements:coiling",
+	"springColor": "828282",
+	"ingredients": [ {
+      "tag": "forge:rods/wrought_iron"
+    }
+  ],
+	"results": [
+		{
+			"item": "vintageimprovements:iron_spring",
+			"count": 1
+		}
+	],
+  "processingTime": 120,
+}

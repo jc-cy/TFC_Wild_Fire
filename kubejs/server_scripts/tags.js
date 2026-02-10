@@ -161,6 +161,10 @@ ServerEvents.tags("block", event => {
         event.add('tfc:usable_on_tool_rack', 'butcher:boneskinningknife')
         event.add('tfc:sharp_tools', 'butcher:boneskinningknife')
 
+        event.add('tfc_farm_charm:raw_dough', 'tfc_farm_charm:unfinished_croissant')
+        event.add('tfc_farm_charm:raw_dough', 'tfc_farm_charm:unfinished_braided_bread')
+        event.add('tfc_farm_charm:bread', '#tfc:foods/breads')
+
         event.add('kubejs:tongs', 'create:extendo_grip')//机械臂
 
         event.add('kubejs:wild_mushroom', 'kubejs:wild_red_mushroom')//机械臂

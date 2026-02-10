@@ -1,0 +1,9 @@
+
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "tfc:metal/sheet/brass"
+  },
+  "result": "create:crafter_slot_cover",
+  "count": 8
+}

@@ -7,11 +7,34 @@ ServerEvents.recipes(e => {
   e.remove({ mod: 'scguns' })
 
   const iddd = [
+    'petrolsparts:crafting/pneumatic_tube',
+    'artisanal:mixing_bowl/dark_chocolate_blend',
+    'artisanal:mixing_bowl/white_chocolate_blend',
+    'artisanal:mixing_bowl/milk_chocolate_blend',
+    'farm_and_carm:crafting_bowl/sweet_dough',
+    'farm_and_carm:pot_cooking/beetroot_soup',
+    'farmersdelight:cooking/apple_cider',
+    'farmersdelight:cooking/cooked_rice',
+    'farmersdelight:cooking/dumplings',
+    'farmersdelight:cooking/beetroot_soup',
+    'farmersdelight:roasted_mutton_chops',
+    'farmersdelight:cooking/ratatouille',
+    'farmersdelight:cooking/noodle_soup',
+    'farmersdelight:cooking/hot_cocoa',
+    'survivorsdelight:cooking/apple_cider',
+    'survivorsdelight:cooking/cabbage_rolls',
+    'sliceanddice:cooking/farmersdelight/cooking/hot_cocoa_1',
+    'sliceanddice:cooking/farmersdelight/cooking/hot_cocoa_0',
+    'butcher:roastedmuttonchopsrecipe',
+    'farm_and_carm:crafting_bowl/dough',
+    'create_enchantment_industry:crafting/printer',
     'createdieselgenerators:crafting/entity_filter',
+    'woodencog:crafting/kinetics/crafter_slot_cover',
     'woodencog:crafting/kinetics/filter',
     'woodencog:crafting/kinetics/attribute_filter',
     'tfc:crafting/fire_clay_recycle_1',
     'vintageimprovements:pressing/andesite_alloy',
+    'create:cutting/compact/immersiveengineering/wire_copper',
     'immersiveengineering:crafting/wire_aluminum',
     'immersiveengineering:crafting/wire_electrum',
     'immersiveengineering:crafting/wire_lead',
@@ -40,6 +63,7 @@ ServerEvents.recipes(e => {
     "create:crafting/kinetics/propeller",//扇叶
     "create:crafting/kinetics/whisk",//搅拌头
     "butcher:hook_recipe",//恶性bug钩子
+    "butcher:lamb_leg_cut",
     "butcher:cleaverknapping",
     "butcher:plierknapping",
     "butcher:skinningknifeknapping",

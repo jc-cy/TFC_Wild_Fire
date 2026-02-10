@@ -1,0 +1,15 @@
+{
+	"type":"vintageimprovements:coiling",
+	"springColor": "C15A36",
+	"ingredients": [ {
+      "item": "vintageimprovements:copper_spring"
+    }
+  ],
+	"results": [
+		{
+			"item": "immersiveengineering:wire_copper",
+			"count": 2
+		}
+	],
+  "processingTime": 60,
+}

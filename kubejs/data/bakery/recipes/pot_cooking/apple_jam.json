@@ -1,5 +1,5 @@
 {
-  "type": "bakery:pot_cooking",
+  "type": "farm_and_charm:pot_cooking",
   "ingredients": [
     {
       "type": "tfc:not_rotten",
@@ -21,9 +21,9 @@
     }
   ],
   "container": {
-    "item": "bakery:jar"
+    "item": "tfc:empty_jar"
   },
   "result": {
-    "item": "bakery:apple_jam"
+    "item": "tfc_farm_charm:apple_jam"
   }
 }

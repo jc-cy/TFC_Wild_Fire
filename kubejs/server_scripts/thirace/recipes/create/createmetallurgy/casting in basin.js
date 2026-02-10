@@ -50,7 +50,11 @@ ServerEvents.recipes((event) => {
     // ==========================================
     
     // 玻璃 (无模具，纯流体)
-    addCasting('minecraft:glass', 'kubejs:molten_glass', 1000, 180, null, 'glass_foundry');
+    addCasting('minecraft:glass', 'kubejs:molten_glass', 250, 80, null, 'glass_foundry');
+
+    addCasting('design_decor:copper_gas_tank', 'tfc:metal/copper', 150, 100, '#tfc:barrels', 'copper_gas_tank_foundry');
+
+    addCasting('design_decor:gas_tank', 'tfc:metal/cast_iron', 150, 100, '#tfc:barrels', 'gas_tank_foundry');
 
     // TFC 坩埚 (需要模具)
     addCasting('tfc:crucible', 'kubejs:molten_corundum', 1000, 640, 'kubejs:crucible_mold', 'molten_corundum_crucible');

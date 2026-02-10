@@ -9,13 +9,25 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "tfc:soups"
+        "tag": "tfc:foods/vegetables"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "forge:raw_pork"
       }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
         "item": "farmersdelight:raw_pasta"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "farmersdelight:fried_egg"
       }
     },
     {

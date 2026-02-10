@@ -88,6 +88,20 @@ StartupEvents.registry('item', event => {
 		foodBuilder.saturation(0.05)
 	})
 
+	event.create("repas_de_survie:minced_pork")
+    .texture("kubejs:item/food/minced_pork")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(4)
+		foodBuilder.saturation(0.05)
+	})
+
+	event.create("repas_de_survie:cooked_minced_pork")
+    .texture("kubejs:item/food/cooked_minced_pork")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(6)
+		foodBuilder.saturation(0.15)
+	})
+
 	event.create("repas_de_survie:cooked_rat")
     .texture("kubejs:item/food/cooked_rat")
 	.food(foodBuilder=>{

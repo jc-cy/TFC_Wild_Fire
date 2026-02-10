@@ -1,0 +1,15 @@
+{
+	"type":"vintageimprovements:coiling",
+	"springColor": "C15A36",
+	"ingredients": [ {
+      "item": "tfc:metal/rod/copper"
+    }
+  ],
+	"results": [
+		{
+			"item": "vintageimprovements:copper_spring",
+			"count": 1
+		}
+	],
+  "processingTime": 60,
+}

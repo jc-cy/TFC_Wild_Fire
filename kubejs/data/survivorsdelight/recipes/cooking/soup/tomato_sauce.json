@@ -17,9 +17,16 @@
       "ingredient": {
         "item": "tfc:food/tomato"
       }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "tfc:food/tomato"
+      }
     }
   ],
   "result": {
+    "count": 2,
     "item": "farmersdelight:tomato_sauce"
   }
 }

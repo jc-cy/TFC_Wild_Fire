@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "KMK",
+      "KPK",
+      "ICI"
+    ],
+    "key": {
+      "K": [
+      {
+        "item": "minecraft:leather"
+      },
+      {
+        "item": "afc:rubber_bar"
+      }
+    ],
+      "M": {
+        "item": "create:precision_mechanism"
+      },
+      "P": {
+        "item": "create:propeller"
+      },
+      "C": {
+        "item": "create:cogwheel"
+      },
+      "I": {
+        "tag": "forge:plates/iron"
+      }
+    },
+    "result": {
+      "item": "petrolsparts:pneumatic_tube",
+      "count": 8
+    }
+  }

@@ -1,22 +1,22 @@
 {
-  "type": "bakery:pot_cooking",
+  "type": "farm_and_charm:pot_cooking",
   "ingredients": [
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-      "tag": "tfc:sweetener"
+      "item": "tfc:food/cranberry"
       }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-      "tag": "forge:fruits/berries"
+      "item": "tfc:food/cranberry"
       }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-      "tag": "forge:fruits/berries"
+      "item": "tfc:food/cranberry"
       }
     },
     {
@@ -27,9 +27,9 @@
     }
   ],
   "container": {
-    "item": "bakery:jar"
+    "item": "tfc:empty_jar"
   },
   "result": {
-    "item": "bakery:sweetberry_jam"
+    "item": "tfc_farm_charm:sweetberry_jam"
   }
 }

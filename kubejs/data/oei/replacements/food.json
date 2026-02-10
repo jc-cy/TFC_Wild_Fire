@@ -9,6 +9,8 @@
         "matchItems": [
             "create:dough",
             "farmersdelight:wheat_dough",
+            "farm_and_charm:dough",
+            "bakery:sweet_dough",
             "refurbished_furniture:dough"
         ],
         "resultItems": "firmalife:food/wheat_dough"
@@ -18,6 +20,60 @@
             "minecraft:glow_berries"
         ],
         "resultItems": "tfc:food/cloudberry"
+    },
+    {
+        "matchItems": [
+            "bakery:crusty_bread"
+        ],
+        "resultItems": "tfc_farm_charm:crusty_bread"
+    },
+    {
+        "matchItems": [
+            "bakery:baguette"
+        ],
+        "resultItems": "tfc_farm_charm:baguette"
+    },
+    {
+        "matchItems": [
+            "bakery:toast"
+        ],
+        "resultItems": "tfc_farm_charm:toast"
+    },
+    {
+        "matchItems": [
+            "bakery:braided_bread"
+        ],
+        "resultItems": "tfc_farm_charm:braided_bread"
+    },
+    {
+        "matchItems": [
+            "bakery:bun"
+        ],
+        "resultItems": "tfc_farm_charm:bun"
+    },
+    {
+        "matchItems": [
+            "bakery:bundt_cake"
+        ],
+        "resultItems": "tfc_farm_charm:bundt_cake"
+    },
+    {
+        "matchItems": [
+            "bakery:linzer_tart"
+        ],
+        "resultItems": "tfc_farm_charm:linzer_tart"
+    },
+    {
+        "matchItems": [
+            "bakery:apple_pie"
+        ],
+        "resultItems": "tfc_farm_charm:apple_pie"
+    },
+    {
+        "matchItems": [
+            "bakery:bread"
+        ],
+        "resultItems": "tfc_farm_charm:bread"
     },
     {
         "matchItems": [

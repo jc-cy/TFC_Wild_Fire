@@ -437,16 +437,6 @@ ServerEvents.recipes(event => {
             c: '#tfc:barrels'
         }
     ) //燃油储罐
-    event.shaped('design_decor:gas_tank',
-        [
-            'b',
-            'c'
-        ],
-        {
-            b: 'tfc:metal/sheet/wrought_iron',
-            c: '#tfc:barrels'
-        }
-    ) //小型铁流体储罐
     event.shaped('kubejs:peel',
         [
             'b',

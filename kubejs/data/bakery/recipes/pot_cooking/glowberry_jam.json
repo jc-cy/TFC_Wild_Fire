@@ -1,19 +1,22 @@
 {
-  "type": "bakery:pot_cooking",
+  "type": "farm_and_charm:pot_cooking",
   "ingredients": [
-    {
-      "item": "minecraft:glowstone_dust"
-    },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-      "tag": "forge:fruits/berries"
+      "item": "tfc:food/cloudberry"
       }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-      "tag": "forge:fruits/berries"
+      "item": "tfc:food/cloudberry"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "item": "tfc:food/cloudberry"
       }
     },
     {
@@ -24,9 +27,9 @@
     }
   ],
   "container": {
-    "item": "bakery:jar"
+    "item": "tfc:empty_jar"
   },
   "result": {
-    "item": "bakery:glowberry_jam"
+    "item": "tfc_farm_charm:glowberry_jam"
   }
 }

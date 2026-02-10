@@ -11,7 +11,7 @@
     }
   ],
   "mold_consumed": true,
-  "processingTime": 60,
+  "processingTime": 30,
   "result": {
     "item": "design_decor:copper_lamp"
   }
