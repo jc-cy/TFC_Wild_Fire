@@ -98,7 +98,7 @@ ServerEvents.recipes((event) => {
 
         //生铁
         {
-            ingredients: [{ item: `tfc:metal/ingots/pig_iron` }],
+            ingredients: [{ item: `tfc:metal/ingot/pig_iron` }],
             heatRequirement: 'superheated',
             processingTime: 60,
             results: [{ amount: 100, fluid: `tfc:metal/pig_iron` }],

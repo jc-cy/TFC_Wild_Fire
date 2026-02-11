@@ -1,0 +1,8 @@
+{
+    "parent": "tfc:block/ore",
+    "textures": {
+        "all": "tfc:block/rock/gravel/andesite",
+        "overlay": "kubejs:block/ore/rich_native_vanadium"
+    },
+    "render_type": "minecraft:cutout"
+}

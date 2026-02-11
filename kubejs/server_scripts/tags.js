@@ -32,7 +32,10 @@ deposit.forEach(deposit => {
 
 
             event.add(tag,
-                `kubejs:deposit/gem_gravel/${deposit}`
+                [
+                    `kubejs:deposit/gem_gravel/${deposit}`,
+                    `kubejs:deposit/manganese/${deposit}`
+                ]
             )
         })
     })
@@ -704,23 +707,23 @@ ServerEvents.tags("item", event => {
     event.remove('tfc:lumber', 'tfc_ie_addon:treated_wood_lumber'
     ),
 
-    event.remove('tfcchannelcasting:accepted_in_mold_table', [
-        'tfcscraping:ceramic/scraping_knife_blade_mold',
-        'tfc:ceramic/javelin_head_mold',
-        'tfc:ceramic/shovel_head_mold',
-        'tfc:ceramic/hoe_head_mold',
-        'tfc:ceramic/hammer_head_mold',
-        'tfc:ceramic/axe_head_mold',
-        'tfc:ceramic/pickaxe_head_mold',
-        'tfc:ceramic/saw_blade_mold',
-        'tfc:ceramic/propick_head_mold',
-        'tfc:ceramic/chisel_head_mold',
-        'tfcscraping:ceramic/scraping_knife_blade_mold',
-        'tfc:ceramic/scythe_blade_mold',
-        'tfc:ceramic/knife_blade_mold',
-        'tfc:ceramic/mace_head_mold'
-    ]
-    ),
+        event.remove('tfcchannelcasting:accepted_in_mold_table', [
+            'tfcscraping:ceramic/scraping_knife_blade_mold',
+            'tfc:ceramic/javelin_head_mold',
+            'tfc:ceramic/shovel_head_mold',
+            'tfc:ceramic/hoe_head_mold',
+            'tfc:ceramic/hammer_head_mold',
+            'tfc:ceramic/axe_head_mold',
+            'tfc:ceramic/pickaxe_head_mold',
+            'tfc:ceramic/saw_blade_mold',
+            'tfc:ceramic/propick_head_mold',
+            'tfc:ceramic/chisel_head_mold',
+            'tfcscraping:ceramic/scraping_knife_blade_mold',
+            'tfc:ceramic/scythe_blade_mold',
+            'tfc:ceramic/knife_blade_mold',
+            'tfc:ceramic/mace_head_mold'
+        ]
+        ),
 
         event.remove('sns:allowed_in_ore_sack', [
             "tfc:ore/rich_cassiterite",

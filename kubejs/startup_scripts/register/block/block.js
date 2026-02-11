@@ -87,7 +87,9 @@ StartupEvents.registry('item', event => {
                 new $ItemProperties()
         ))
 })
-const deposit = [
+StartupEvents.registry("block", event => {
+    //注册宝石砂    
+    const deposits = [
         'andesite',
         'basalt',
         'chalk',
@@ -108,11 +110,95 @@ const deposit = [
         'schist',
         'shale',
         'slate'
-];
-deposit.forEach(deposit => {
-        StartupEvents.registry("block", event => {
-                event.create(`kubejs:deposit/gem_gravel/${deposit}`, "basic")
-                .model(`kubejs:block/deposit/gem_gravel/${deposit}`)
-                .tagBlock('forge:gravel')
-        })
+    ]
+
+    deposits.forEach(deposit => {
+        //宝石砂
+        event.create(`kubejs:deposit/gem_gravel/${deposit}`)
+        .gravelSoundType()
+        .model(`kubejs:block/deposit/gem_gravel/${deposit}`)
+        .tag('forge:gravel')
+        .tagBlock('minecraft:mineable/shovel')
+        //锰结核砂
+        event.create(`kubejs:deposit/manganese/${deposit}`)
+        .gravelSoundType()
+        .model(`kubejs:block/deposit/manganese/${deposit}`)
+        .tag('forge:gravel')
+        .tagBlock('minecraft:mineable/shovel')
+
+        //钛铁矿
+        event.create(`kubejs:ore/poor_lmenite/${deposit}`)
+        .model(`kubejs:block/ore/poor_lmenite/${deposit}`)
+        .tag('forge:ores')
+        .tag('forge:ores/lmenite')
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_diamond_tool')
+        .hardness(12)
+
+        event.create(`kubejs:ore/lmenite/${deposit}`)
+        .model(`kubejs:block/ore/lmenite/${deposit}`)
+        .tag('forge:ores')
+        .tag('forge:ores/lmenite')
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_diamond_tool')
+        .hardness(12)
+
+        event.create(`kubejs:ore/rich_lmenite/${deposit}`)
+        .model(`kubejs:block/ore/rich_lmenite/${deposit}`)
+        .tag('forge:ores')
+        .tag('forge:ores/lmenite')
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_diamond_tool')
+        .hardness(12)
+
+        //原生钒矿
+        event.create(`kubejs:ore/poor_native_vanadium/${deposit}`)
+        .model(`kubejs:block/ore/poor_native_vanadium/${deposit}`)
+        .tag('forge:ores')
+        .tag('forge:ores/native_vanadium')
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_stone_tool')
+        .hardness(5)
+
+        event.create(`kubejs:ore/native_vanadium/${deposit}`)
+        .model(`kubejs:block/ore/native_vanadium/${deposit}`)
+        .tag('forge:ores')
+        .tag('forge:ores/native_vanadium')
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_stone_tool')
+        .hardness(5)
+
+        event.create(`kubejs:ore/rich_native_vanadium/${deposit}`)
+        .model(`kubejs:block/ore/rich_native_vanadium/${deposit}`)
+        .tag('forge:ores')
+        .tag('forge:ores/native_vanadium')
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_stone_tool')
+        .hardness(5)
+
+        //锰结核
+        event.create(`kubejs:ore/poor_manganese/${deposit}`)
+        .model(`kubejs:block/ore/poor_manganese/${deposit}`)
+        .tag('forge:ores')
+        .tag('forge:ores/manganese')
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_diamond_tool')
+        .hardness(12)
+
+        event.create(`kubejs:ore/manganese/${deposit}`)
+        .model(`kubejs:block/ore/manganese/${deposit}`)
+        .tag('forge:ores')
+        .tag('forge:ores/manganese')
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_diamond_tool')
+        .hardness(12)
+
+        event.create(`kubejs:ore/rich_manganese/${deposit}`)
+        .model(`kubejs:block/ore/rich_manganese/${deposit}`)
+        .tag('forge:ores')
+        .tag('forge:ores/manganese')
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_diamond_tool')
+        .hardness(12)
+    })
 })

@@ -1,14 +1,18 @@
 {
     
-  "create.recipe.heat_requirement.heated": " ≥1350°C",
+  "create.recipe.heat_requirement.heated": " ≥530°C",
   "create.recipe.heat_requirement.none": " 无需加热",
-  "create.recipe.heat_requirement.superheated": " ≥2000°C",
+  "create.recipe.heat_requirement.superheated": " ≥1600°C",
   "block.create.millstone": "安山岩石磨",
   "block.create.crushing_wheel": "安山岩粉碎轮",
   
+  "advancement.create.diving_suit.desc": "装备氧气面罩和铜背罐，然后跳进水里",
+  "advancement.create.diving_suit_lava.desc": "尝试穿着下界合金氧气套装潜入熔岩中",
+  "create.subtitle.copper_armor_equip": "氧气装备：铿锵",
+  "item.create.copper_diving_helmet": "铜氧气面罩",
+  "item.create.netherite_diving_helmet": "下界合金氧气头盔",
+
   "block.create.copper_valve_handle": "黄铜阀门",
   "create.ponder.encased_fluid_pipe.text_1": "黄铜管道机壳可以用于装饰流体管道",
-  "block.create.copper_casing": "黄铜管道机壳",
-  
-  "item.create.empty_blaze_burner": "燃烧室框架"
+  "block.create.copper_casing": "黄铜管道机壳"
 }
