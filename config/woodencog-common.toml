@@ -1,7 +1,7 @@
 
 [woodencog]
 	#Change netherite divingGear to look like red steel armor. (wearing netherite pants disables re-skin)
-	netherite_reskin = true
+	netherite_reskin = false
 
 	[woodencog.temperature]
 		#Should create handle temperature ?

@@ -268,6 +268,9 @@ StartupEvents.registry("item", event => {  //半成品
     event.create('kubejs:venus_plating_unfinished').texture('kubejs:item/ad/venus_plating_unfinished'); // 金星镀层_未完成
 
 
+})
+
+StartupEvents.registry("item", event => {   //新金属
     //太空金属锭
     const molten_metal = [
         { id: 'titanium_alloy' },
@@ -276,10 +279,27 @@ StartupEvents.registry("item", event => {  //半成品
         { id: 'manganese' }
     ]
     molten_metal.forEach(metal => {
-        event.create(`kubejs:metal/ingot/${metal.id}`).texture(`kubejs:item/metal/ingot/${metal.id}`);
-        event.create(`kubejs:metal/double_ingot/${metal.id}`).texture(`kubejs:item/double_ingot/ingot/${metal.id}`);
-        event.create(`kubejs:metal/sheet/${metal.id}`).texture(`kubejs:item/metal/sheet/${metal.id}`);
-        event.create(`kubejs:metal/double_sheet/${metal.id}`).texture(`kubejs:item/metal/double_sheet/${metal.id}`);
+        event.create(`kubejs:metal/ingot/${metal.id}`).texture(`kubejs:item/metal/ingot/${metal.id}`)
+        .tag('balm:ingots')
+        .tag(`forge:ingots`)
+        .tag('tfc:pileable_ingots')
+        .tag(`forge:ingots/${metal.id}`)
+        .tag(`tfc:metal_item/${metal.id}`)
+        event.create(`kubejs:metal/double_ingot/${metal.id}`).texture(`kubejs:item/double_ingot/ingot/${metal.id}`)
+        .tag('tfc:pileable_double_ingots')
+        .tag('tfc:pileable_sheets')
+        .tag(`forge:double_ingots`)
+        .tag(`forge:double_ingots/${metal.id}`)
+        .tag(`tfc:metal_item/${metal.id}`)
+        event.create(`kubejs:metal/sheet/${metal.id}`).texture(`kubejs:item/metal/sheet/${metal.id}`)
+        .tag('tfc:pileable_sheets')
+        .tag(`forge:sheets`)
+        .tag(`forge:sheets/${metal.id}`)
+        .tag(`tfc:metal_item/${metal.id}`)
+        event.create(`kubejs:metal/double_sheet/${metal.id}`).texture(`kubejs:item/metal/double_sheet/${metal.id}`)
+        .tag(`forge:double_sheets`)
+        .tag(`forge:double_sheets/${metal.id}`)
+        .tag(`tfc:metal_item/${metal.id}`)
 
     })
     //矿物
@@ -290,8 +310,12 @@ StartupEvents.registry("item", event => {  //半成品
 
     ]
     ore.forEach(ore => {
-        event.create(`kubejs:ore/rich_${ore}}`).texture(`kubejs:item/ore/rich_${ore}`);
-        event.create(`kubejs:ore/${ore}}`).texture(`kubejs:item/ore/${ore}`);
-        event.create(`kubejs:ore/poor_${ore}}`).texture(`kubejs:item/ore/poor_${ore}`);
+        event.create(`kubejs:ore/rich_${ore}`).texture(`kubejs:item/ore/rich_${ore}`)
+        .tag('tfc:ore_pieces')
+        event.create(`kubejs:ore/${ore}`).texture(`kubejs:item/ore/${ore}`)
+        .tag('tfc:ore_pieces')
+        event.create(`kubejs:ore/poor_${ore}`).texture(`kubejs:item/ore/poor_${ore}`)
+        .tag('tfc:ore_pieces')
     })
-})
+
+})  

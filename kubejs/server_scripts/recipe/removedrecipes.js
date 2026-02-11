@@ -840,6 +840,7 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'siegemachines:barrel' })  
   e.remove({ id: 'immersiveengineering:blueprint/banner_ornate' })  
   e.remove({ id: 'tfc:crafting/fire_clay_recycle_5' })  
+  e.remove({ id: 'farmersdelight:cutting/bricks' })  
 
   //删除ie左轮手枪及其相关组件配方
   e.remove({ id: 'immersiveengineering:crafting/toolupgrade_revolver_magazine' })

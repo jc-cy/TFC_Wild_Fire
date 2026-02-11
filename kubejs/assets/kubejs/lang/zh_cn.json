@@ -1227,7 +1227,7 @@
   "item.kubejs.warm_warmer": "暖手宝",
   "item.kubejs.heating_warmer": "发热暖手宝",
   "item.kubejs.stone_arrow": "石箭头",
-  
+
   "item.kubejs.metal.ingot.titanium_alloy": "钛合金锭",
   "item.kubejs.metal.double_ingot.titanium_alloy": "钛合金双锭",
   "item.kubejs.metal.sheet.titanium_alloy": "钛合金板",
@@ -1247,14 +1247,14 @@
 
 
   "item.kubejs.ore.lmenite": "钛铁矿",
-  "item.kubejs.ore.native_vanadium": "锰结核矿",
-  "item.kubejs.ore.manganese": "原生钒",
+  "item.kubejs.ore.native_vanadium": "原生钒",
+  "item.kubejs.ore.manganese": "锰结核矿",
   "item.kubejs.ore.rich_lmenite": "富集钛铁矿",
-  "item.kubejs.ore.rich_native_vanadium": "富集锰结核矿",
-  "item.kubejs.ore.rich_manganese": "富集原生钒",
+  "item.kubejs.ore.rich_native_vanadium": "富集原生钒",
+  "item.kubejs.ore.rich_manganese": "富集锰结核矿",
   "item.kubejs.ore.poor_lmenite": "贫瘠钛铁矿",
-  "item.kubejs.ore.poor_native_vanadium": "贫瘠锰结核矿",
-  "item.kubejs.ore.poor_manganese": "贫瘠原生钒",
+  "item.kubejs.ore.poor_native_vanadium": "贫瘠原生钒",
+  "item.kubejs.ore.poor_manganese": "贫瘠锰结核矿",
 
   "item.kubejs.copper_arrow": "铜箭头",
   "item.kubejs.wrought_iron_arrow": "锻铁箭头",

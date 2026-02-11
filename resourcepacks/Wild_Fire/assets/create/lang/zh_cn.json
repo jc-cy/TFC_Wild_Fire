@@ -12,6 +12,13 @@
   "item.create.copper_diving_helmet": "铜氧气面罩",
   "item.create.netherite_diving_helmet": "下界合金氧气头盔",
 
+  "block.create.andesite_encased_cogwheel": "安山齿轮箱",
+  "block.create.andesite_encased_large_cogwheel": "安山大齿轮箱",
+  "block.create.brass_encased_cogwheel": "黄铜齿轮箱",
+  "block.create.brass_encased_large_cogwheel": "黄铜大齿轮箱",
+  "block.create.cogwheel": "安山合金齿轮",
+  "block.create.large_cogwheel": "安山合金大齿轮",
+
   "block.create.copper_valve_handle": "黄铜阀门",
   "create.ponder.encased_fluid_pipe.text_1": "黄铜管道机壳可以用于装饰流体管道",
   "block.create.copper_casing": "黄铜管道机壳"
