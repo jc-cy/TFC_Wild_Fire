@@ -65,11 +65,12 @@ const rock = [
 const ore_tag = [
     'tfc:can_trigger_collapse',
     'tfc:can_start_collapse',
-    'tfc:can_collapse'
+    'tfc:can_collapse',
+    'tfc:prospectable'
 ];
-rock.forEach(rock => {
-    ore_tag.forEach(tag => {
-        ServerEvents.tags("block", event => {
+ServerEvents.tags("block", event => {
+    rock.forEach(rock => {
+        ore_tag.forEach(tag => {
 
 
             event.add(tag,

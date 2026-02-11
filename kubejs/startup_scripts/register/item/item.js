@@ -267,21 +267,31 @@ StartupEvents.registry("item", event => {  //半成品
     event.create('kubejs:moon_crystal_panel_unfinished').texture('kubejs:item/ad/moon_crystal_panel_unfinished'); // 月球水晶面板_未完成
     event.create('kubejs:venus_plating_unfinished').texture('kubejs:item/ad/venus_plating_unfinished'); // 金星镀层_未完成
 
-});
 
-
-const molten_metal = [
-    { id: 'titanium_alloy', Temperature: 1700, tier: 4 },
-    { id: 'titanium', Temperature: 1668, tier: 3 },
-    { id: 'vanadium', Temperature: 1910, tier: 2 },
-    { id: 'manganese', Temperature: 1246, tier: 3 }
-]
-
+    //太空金属锭
+    const molten_metal = [
+        { id: 'titanium_alloy' },
+        { id: 'titanium' },
+        { id: 'vanadium' },
+        { id: 'manganese' }
+    ]
     molten_metal.forEach(metal => {
+        event.create(`kubejs:metal/ingot/${metal.id}`).texture(`kubejs:item/metal/ingot/${metal.id}`);
+        event.create(`kubejs:metal/double_ingot/${metal.id}`).texture(`kubejs:item/double_ingot/ingot/${metal.id}`);
+        event.create(`kubejs:metal/sheet/${metal.id}`).texture(`kubejs:item/metal/sheet/${metal.id}`);
+        event.create(`kubejs:metal/double_sheet/${metal.id}`).texture(`kubejs:item/metal/double_sheet/${metal.id}`);
 
-    event.create(`kubejs:metal/ingot/${metal.id}`).texture(`kubejs:item/metal/ingot/${metal.id}`);
-    event.create(`kubejs:metal/double_ingot/${metal.id}`).texture(`kubejs:item/double_ingot/ingot/${metal.id}`);
-    event.create(`kubejs:metal/sheet/${metal.id}`).texture(`kubejs:item/metal/sheet/${metal.id}`);
-    event.create(`kubejs:metal/double_sheet/${metal.id}`).texture(`kubejs:item/metal/double_sheet/${metal.id}`);
-        
+    })
+    //矿物
+    const ore = [
+        'lmenite',
+        'native_vanadium',
+        'manganese'
+
+    ]
+    ore.forEach(ore => {
+        event.create(`kubejs:ore/rich_${ore}}`).texture(`kubejs:item/ore/rich_${ore}`);
+        event.create(`kubejs:ore/${ore}}`).texture(`kubejs:item/ore/${ore}`);
+        event.create(`kubejs:ore/poor_${ore}}`).texture(`kubejs:item/ore/poor_${ore}`);
+    })
 })
