@@ -50,3 +50,18 @@ BlockEntityEvents.tick(event => {
         }
     })
 })
+//熔融金属流体燃烧事件
+MEJSEvents.standOnFluid(event=>{
+    let fluidIdList = [
+        'kubejs:molten_glass',
+        'kubejs:molten_corundum',
+        'kubejs:molten_manganese',
+        'kubejs:molten_titanium',
+        'kubejs:molten_vanadium',
+        'kubejs:molten_titanium_alloy'
+    ]
+    fluidIdList.forEach(fluidid=>{
+        if (event.fluidState.fluidType != Fluid.of(fluidid).fluid.fluidType) return;
+        event.entity.setRemainingFireTicks(20)
+    })
+})

@@ -224,13 +224,13 @@
 		{
 			dependencies: ["6AB49CFCB58E3D6B"]
 			description: [
-				"我们接下来需要制作更高级的金属：黑钢"
-				"黑钢首先需要先合金制作"
+				"我们接下来需要制作更高级的金属：锰钢"
+				"锰钢首先需要先合金制作"
 				"而他的材料需要&7镍&r和&5黑铜&r"
 				""
 				"镍是必需品"
 				""
-				"&n[在制作黑钢前建议先去发展工业、有助于更好的发展主线、当然、想和原版群峦的制作也是可以的]&r"
+				"&n[在制作锰钢前建议先去发展工业、有助于更好的发展主线、当然、想和原版群峦的制作也是可以的]&r"
 			]
 			hide_until_deps_visible: true
 			icon: {
@@ -402,7 +402,7 @@
 		}
 		{
 			dependencies: ["58B1D2FE24BF1134"]
-			description: ["将脆钢锭和生铁锭焊接在一起可以得到高碳黑钢锭，锻打高碳黑钢锭即可得到黑钢锭。黑钢锭是五级金属，除了锻造黑钢工具以外几乎没有别的用途，最大的用途还是用于锻造红蓝钢。"]
+			description: ["将脆钢锭和生铁锭焊接在一起可以得到高碳锰钢锭，锻打高碳锰钢锭即可得到锰钢锭。锰钢锭是五级金属，除了锻造锰钢工具以外几乎没有别的用途，最大的用途还是用于锻造红蓝钢。"]
 			hide_until_deps_visible: true
 			id: "4DFF7818B50623B5"
 			optional: true
@@ -427,7 +427,7 @@
 					advancement: "tfc:story/black_steel"
 					criterion: ""
 					id: "63CF296A1ADA80A4"
-					title: "获得黑钢[或黑钢制品]"
+					title: "获得锰钢[或锰钢制品]"
 					type: "advancement"
 				}
 			]
@@ -453,7 +453,7 @@
 		}
 		{
 			dependencies: ["446F9DA4F13E0AA6"]
-			description: ["制作蓝钢需要先制作脆蓝钢，一种黑钢、钢、铋铜和纹银的合金。"]
+			description: ["制作蓝钢需要先制作脆蓝钢，一种锰钢、钢、铋铜和纹银的合金。"]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			icon: {
@@ -506,7 +506,7 @@
 		}
 		{
 			dependencies: ["419D1651505D2B46"]
-			description: ["将黑钢、钢、铋铜和纹银按照一定比例混合就可以得到劣等秘银"]
+			description: ["将锰钢、钢、铋铜和纹银按照一定比例混合就可以得到劣等秘银"]
 			hide_until_deps_visible: true
 			id: "7BED755237B36ACA"
 			shape: "hexagon"
@@ -531,7 +531,7 @@
 		}
 		{
 			dependencies: ["7BED755237B36ACA"]
-			description: ["将劣等秘银锭和黑钢锭焊接在一起可以得到高碳秘银锭，锻打高碳秘银锭即可得到&b秘银&r锭。&b秘银&r是最高级的六级金属，可以制造最高等级的装备和武器，并拥有一些新配方。性能与&6精金&r并无太大差别。"]
+			description: ["将劣等秘银锭和锰钢锭焊接在一起可以得到高碳秘银锭，锻打高碳秘银锭即可得到&b秘银&r锭。&b秘银&r是最高级的六级金属，可以制造最高等级的装备和武器，并拥有一些新配方。性能与&6精金&r并无太大差别。"]
 			hide_until_deps_complete: true
 			id: "16ED3FE9D5BD6956"
 			shape: "gear"
@@ -556,7 +556,7 @@
 		}
 		{
 			dependencies: ["446F9DA4F13E0AA6"]
-			description: ["制作红钢需要先制作劣等精金，一种黑钢、钢、黄铜和玫瑰金的合金。"]
+			description: ["制作红钢需要先制作劣等精金，一种锰钢、钢、黄铜和玫瑰金的合金。"]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			icon: {
@@ -609,7 +609,7 @@
 		}
 		{
 			dependencies: ["0CB5C3D905F4A3F1"]
-			description: ["将黑钢、钢、黄铜和玫瑰金按照一定比例混合就可以得到劣等精金。"]
+			description: ["将锰钢、钢、黄铜和玫瑰金按照一定比例混合就可以得到劣等精金。"]
 			hide_until_deps_visible: true
 			id: "4153C222DFD9B0D9"
 			shape: "hexagon"
@@ -634,7 +634,7 @@
 		}
 		{
 			dependencies: ["4153C222DFD9B0D9"]
-			description: ["将劣等精金锭和黑钢锭焊接在一起可以得到高碳精金锭，锻打高碳精金锭即可得到&6精金&r锭。&6精金&r是最高级的六级金属，可以制造最高等级的装备和武器，并拥有一些新配方。性能与&b秘银&r并无太大差别。"]
+			description: ["将劣等精金锭和锰钢锭焊接在一起可以得到高碳精金锭，锻打高碳精金锭即可得到&6精金&r锭。&6精金&r是最高级的六级金属，可以制造最高等级的装备和武器，并拥有一些新配方。性能与&b秘银&r并无太大差别。"]
 			hide_until_deps_complete: true
 			id: "4390977A27252D9E"
 			shape: "gear"
@@ -1789,7 +1789,7 @@
 			description: [
 				"采矿机械钻是高级手持挖掘工具，效率比群峦的工具高许多。机械钻有多种材质的钻头可以安装、不同材质的钻头带来的效率和范围也不同。采矿机械钻的燃料为生物柴油。"
 				""
-				"钻头共分为三个等级。铁制钻头一次性可以挖掘2×2×1的区域，钢和黑钢钻头一次性可以挖掘3×3×1的区域，秘银和精金钻头一次性可以挖掘5×5×1的区域。"
+				"钻头共分为三个等级。铁制钻头一次性可以挖掘2×2×1的区域，钢和锰钢钻头一次性可以挖掘3×3×1的区域，秘银和精金钻头一次性可以挖掘5×5×1的区域。"
 				""
 				"[详情介绍看下页]"
 				"{@pagebreak}"

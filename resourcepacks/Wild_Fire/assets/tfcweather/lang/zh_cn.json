@@ -23,7 +23,7 @@
   "block.tfcweather.metal.anemometer.cast_iron": "铸铁风速计",
   "block.tfcweather.metal.anemometer.pig_iron": "生铁风速计",
   "block.tfcweather.metal.anemometer.steel": "钢风速计",
-  "block.tfcweather.metal.anemometer.black_steel": "黑钢风速计",
+  "block.tfcweather.metal.anemometer.black_steel": "锰钢风速计",
   "block.tfcweather.metal.anemometer.blue_steel": "秘银风速计",
   "block.tfcweather.metal.anemometer.red_steel": "精金风速计",
   "block.tfcweather.metal.wind_vane.bismuth": "铋风向标",
@@ -43,7 +43,7 @@
   "block.tfcweather.metal.wind_vane.cast_iron": "铸铁风向标",
   "block.tfcweather.metal.wind_vane.pig_iron": "生铁风向标",
   "block.tfcweather.metal.wind_vane.steel": "钢风向标",
-  "block.tfcweather.metal.wind_vane.black_steel": "黑钢风向标",
+  "block.tfcweather.metal.wind_vane.black_steel": "锰钢风向标",
   "block.tfcweather.metal.wind_vane.blue_steel": "秘银风向标",
   "block.tfcweather.metal.wind_vane.red_steel": "精金风向标"
 }

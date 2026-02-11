@@ -324,7 +324,7 @@ create.sandpaper_polishing("kubejs:steel_needle","tfc:metal/rod/steel")
   farmersdelight_cutting(`kubejs:red_steel_fragments`, 'tfc:metal/ingot/red_steel', 5, 'tfc:hammers', `kubejs:cutting_reciped_red_steel_fragments`)// 精金锭 →
   farmersdelight_cutting(`kubejs:steel_fragments`, 'tfc:metal/ingot/steel', 5, 'tfc:hammers', `kubejs:cutting_reciped_steel_fragments`)// 钢锭 → 5个钢碎片
   farmersdelight_cutting(`kubejs:wrought_iron_fragments`, 'tfc:metal/ingot/wrought_iron', 5, 'tfc:hammers', `kubejs:cutting_reciped_wrought_iron_fragments`)// 锻铁锭 → 5个熟铁碎片
-  farmersdelight_cutting(`kubejs:black_steel_fragments`, 'tfc:metal/ingot/black_steel', 5, 'tfc:hammers', `kubejs:cutting_reciped_black_steel_fragments`)// 黑钢锭 → 5个黑钢碎片
+  farmersdelight_cutting(`kubejs:black_steel_fragments`, 'tfc:metal/ingot/black_steel', 5, 'tfc:hammers', `kubejs:cutting_reciped_black_steel_fragments`)// 锰钢锭 → 5个锰钢碎片
   farmersdelight_cutting(`kubejs:blue_steel_fragments`, 'tfc:metal/ingot/blue_steel', 5, 'tfc:hammers', `kubejs:cutting_reciped_blue_steel_fragments`)// 秘银锭 → 5个秘银碎片
 
   // 皮毛/皮革 JS 数组

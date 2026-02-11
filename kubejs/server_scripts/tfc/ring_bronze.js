@@ -28,7 +28,7 @@ ServerEvents.recipes(e => {
             `shiny_ornaments:${item.name}_ring`,       // 输出
             `shiny_ornaments:${item.name}_ring_base`,
             `shiny_ornaments:${item.name}_ring_base`,
-            1 // 砧等级 0是石头 1铜 2铜合金 3锻铁 4钢 5黑钢 6红秘银
+            1 // 砧等级 0是石头 1铜 2铜合金 3锻铁 4钢 5锰钢 6红秘银
         );
 
 

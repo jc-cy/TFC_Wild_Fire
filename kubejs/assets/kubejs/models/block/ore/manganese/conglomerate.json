@@ -1,1 +1,1 @@
-{"parent":"tfc:block/ore","textures":{"all":"tfc:block/rock/gravel/conglomerate","overlay":"kubejs:block/ore/manganese"},"render_type":"minecraft:cutout"}
+{"parent":"tfc:block/ore","textures":{"all":"tfc:block/rock/raw/conglomerate","overlay":"kubejs:block/ore/manganese"},"render_type":"minecraft:cutout"}

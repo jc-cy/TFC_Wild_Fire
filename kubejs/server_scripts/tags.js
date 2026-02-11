@@ -40,6 +40,54 @@ deposit.forEach(deposit => {
         })
     })
 })
+const rock = [
+    'andesite',
+    'basalt',
+    'chalk',
+    'chert',
+    'claystone',
+    'conglomerate',
+    'dacite',
+    'diorite',
+    'dolomite',
+    'gabbro',
+    'gneiss',
+    'granite',
+    'limestone',
+    'marble',
+    'phyllite',
+    'quartzite',
+    'rhyolite',
+    'schist',
+    'shale',
+    'slate'
+];
+const ore_tag = [
+    'tfc:can_trigger_collapse',
+    'tfc:can_start_collapse',
+    'tfc:can_collapse'
+];
+rock.forEach(rock => {
+    ore_tag.forEach(tag => {
+        ServerEvents.tags("block", event => {
+
+
+            event.add(tag,
+                [
+                    `kubejs:ore/rich_manganese/${rock}`,
+                    `kubejs:ore/manganese/${rock}`,
+                    `kubejs:ore/poor_manganese/${rock}`,
+                    `kubejs:ore/rich_lmenite/${rock}`,
+                    `kubejs:ore/lmenite/${rock}`,
+                    `kubejs:ore/poor_lmenite/${rock}`,
+                    `kubejs:ore/rich_native_vanadium/${rock}`,
+                    `kubejs:ore/native_vanadium/${rock}`,
+                    `kubejs:ore/poor_native_vanadium/${rock}`,
+                ]
+            )
+        })
+    })
+})
 ServerEvents.tags("block", event => {
 
 
@@ -260,7 +308,7 @@ ServerEvents.tags("block", event => {
         // 将手套加入进饰品tag
         event.add('kubejs:tongs', 'kubejs:wooden_tong')
         event.add('curios:hands', 'kubejs:glove')
-        // 熔岩桶和熔融桶是烫的物品
+        // 熔岩桶和熔融桶是烫手的物品
         event.add('kubejs:hot_items',
             [
                 'minecraft:lava_bucket',
@@ -302,7 +350,11 @@ ServerEvents.tags("block", event => {
                 "kubejs:molten_corundum_bucket",
                 "kubejs:molten_glass_bucket",
                 "survivorsaquaculture:bucket/metal/neptunian_steel",
-                "survivorsaquaculture:bucket/metal/neptunium"
+                "survivorsaquaculture:bucket/metal/neptunium",
+                "kubejs:molten_manganese_bucket",
+                "kubejs:molten_titanium_bucket",
+                "kubejs:molten_vanadium_bucket",
+                "kubejs:molten_titanium_alloy_bucket"
             ])
 
         // 灼热的物品

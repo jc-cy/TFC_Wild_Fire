@@ -1,1 +1,1 @@
-{"parent":"tfc:block/ore","textures":{"all":"tfc:block/rock/gravel/granite","overlay":"kubejs:block/ore/rich_native_vanadium"},"render_type":"minecraft:cutout"}
+{"parent":"tfc:block/ore","textures":{"all":"tfc:block/rock/raw/granite","overlay":"kubejs:block/ore/rich_native_vanadium"},"render_type":"minecraft:cutout"}

@@ -27,7 +27,7 @@
   "item.tfchotornot.tongs.cast_iron": "铸铁钳",
   "item.tfchotornot.tongs.pig_iron": "生铁钳",
   "item.tfchotornot.tongs.steel": "钢钳",
-  "item.tfchotornot.tongs.black_steel": "黑钢钳",
+  "item.tfchotornot.tongs.black_steel": "锰钢钳",
   "item.tfchotornot.tongs.blue_steel": "秘银钳",
   "item.tfchotornot.tongs.red_steel": "精金钳",
   "item.tfchotornot.tong_part.bismuth": "铋钳部件",
@@ -47,7 +47,7 @@
   "item.tfchotornot.tong_part.cast_iron": "铸铁钳部件",
   "item.tfchotornot.tong_part.pig_iron": "生铁钳部件",
   "item.tfchotornot.tong_part.steel": "钢钳部件",
-  "item.tfchotornot.tong_part.black_steel": "黑钢钳部件",
+  "item.tfchotornot.tong_part.black_steel": "锰钢钳部件",
   "item.tfchotornot.tong_part.blue_steel": "秘银钳部件",
   "item.tfchotornot.tong_part.red_steel": "精金钳部件"
 }

@@ -138,7 +138,7 @@ event.shaped('vc_gliders:reinforced_paper_netherite',
         },
         a:"vc_gliders:reinforced_paper_diamond",
         b:'vintageimprovements:steel_wire'
-    })//黑钢的    
+    })//锰钢的    
 event.shaped('vc_gliders:copper_upgrade', 
     ['b b',
      'aca',

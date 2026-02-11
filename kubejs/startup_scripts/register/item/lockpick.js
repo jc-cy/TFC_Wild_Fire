@@ -36,7 +36,7 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:black_steel_lockpick')
         .texture('kubejs:item/black_steel_lockpick')
-        .displayName("黑钢开锁器")
+        .displayName("锰钢开锁器")
         .maxDamage(500)
 
     event.create('kubejs:homemade_lockpick')
@@ -56,7 +56,7 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:black_steel_crowbar')
         .texture('kubejs:item/black_steel_crowbar')
-        .displayName("黑钢撬棍")
+        .displayName("锰钢撬棍")
         .maxDamage(65)
 
     event.create('kubejs:old_key')

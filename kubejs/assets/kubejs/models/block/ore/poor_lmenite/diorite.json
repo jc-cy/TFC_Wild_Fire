@@ -1,1 +1,1 @@
-{"parent":"tfc:block/ore","textures":{"all":"tfc:block/rock/gravel/diorite","overlay":"kubejs:block/ore/poor_lmenite"},"render_type":"minecraft:cutout"}
+{"parent":"tfc:block/ore","textures":{"all":"tfc:block/rock/raw/diorite","overlay":"kubejs:block/ore/poor_lmenite"},"render_type":"minecraft:cutout"}

@@ -119,12 +119,14 @@ StartupEvents.registry("block", event => {
         .model(`kubejs:block/deposit/gem_gravel/${deposit}`)
         .tag('forge:gravel')
         .tagBlock('minecraft:mineable/shovel')
+        .requiresTool()
         //锰结核砂
         event.create(`kubejs:deposit/manganese/${deposit}`)
         .gravelSoundType()
         .model(`kubejs:block/deposit/manganese/${deposit}`)
         .tag('forge:gravel')
         .tagBlock('minecraft:mineable/shovel')
+        .requiresTool()
 
         //钛铁矿
         event.create(`kubejs:ore/poor_lmenite/${deposit}`)
@@ -134,6 +136,7 @@ StartupEvents.registry("block", event => {
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_diamond_tool')
         .hardness(12)
+        .requiresTool()
 
         event.create(`kubejs:ore/lmenite/${deposit}`)
         .model(`kubejs:block/ore/lmenite/${deposit}`)
@@ -142,6 +145,7 @@ StartupEvents.registry("block", event => {
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_diamond_tool')
         .hardness(12)
+        .requiresTool()
 
         event.create(`kubejs:ore/rich_lmenite/${deposit}`)
         .model(`kubejs:block/ore/rich_lmenite/${deposit}`)
@@ -150,6 +154,7 @@ StartupEvents.registry("block", event => {
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_diamond_tool')
         .hardness(12)
+        .requiresTool()
 
         //原生钒矿
         event.create(`kubejs:ore/poor_native_vanadium/${deposit}`)
@@ -159,6 +164,7 @@ StartupEvents.registry("block", event => {
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_stone_tool')
         .hardness(5)
+        .requiresTool()
 
         event.create(`kubejs:ore/native_vanadium/${deposit}`)
         .model(`kubejs:block/ore/native_vanadium/${deposit}`)
@@ -167,6 +173,7 @@ StartupEvents.registry("block", event => {
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_stone_tool')
         .hardness(5)
+        .requiresTool()
 
         event.create(`kubejs:ore/rich_native_vanadium/${deposit}`)
         .model(`kubejs:block/ore/rich_native_vanadium/${deposit}`)
@@ -175,6 +182,7 @@ StartupEvents.registry("block", event => {
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_stone_tool')
         .hardness(5)
+        .requiresTool()
 
         //锰结核
         event.create(`kubejs:ore/poor_manganese/${deposit}`)
@@ -184,6 +192,7 @@ StartupEvents.registry("block", event => {
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_diamond_tool')
         .hardness(12)
+        .requiresTool()
 
         event.create(`kubejs:ore/manganese/${deposit}`)
         .model(`kubejs:block/ore/manganese/${deposit}`)
@@ -192,6 +201,7 @@ StartupEvents.registry("block", event => {
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_diamond_tool')
         .hardness(12)
+        .requiresTool()
 
         event.create(`kubejs:ore/rich_manganese/${deposit}`)
         .model(`kubejs:block/ore/rich_manganese/${deposit}`)
@@ -200,5 +210,6 @@ StartupEvents.registry("block", event => {
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_diamond_tool')
         .hardness(12)
+        .requiresTool()
     })
 })
