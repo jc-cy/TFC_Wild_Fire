@@ -4,7 +4,8 @@
 	"parent": "create:block/large_cogwheel",
 	"texture_size": [64, 64],
 	"textures": {
-		"5": "createcasing:block/large_cogwheel/acacia"
+		"5": "createcasing:block/large_cogwheel/acacia",
+		"particle": "createcasing:block/cogwheel/acacia"
 	},
 	"elements": [
 		{

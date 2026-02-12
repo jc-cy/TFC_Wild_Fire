@@ -5,7 +5,7 @@
 	"texture_size": [32, 32],
 	"textures": {
 		"4": "createcasing:block/large_cogwheel/warped",
-		"particle": "block/stripped_spruce_log"
+		"particle": "createcasing:block/cogwheel/warped"
 	},
 	"elements": [
 		{

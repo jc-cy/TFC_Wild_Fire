@@ -304,7 +304,7 @@ StartupEvents.registry("item", event => {   //新金属
     })
     //矿物
     const ore = [
-        'lmenite',
+        'ilmenite',
         'native_vanadium',
         'manganese'
 

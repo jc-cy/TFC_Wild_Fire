@@ -1,0 +1,5 @@
+{
+    "type": "tfc:collapse",
+    "ingredient": "kubejs:ore/rich_ilmenite/andesite",
+    "result": "kubejs:ore/ilmenite/andesite"
+}
