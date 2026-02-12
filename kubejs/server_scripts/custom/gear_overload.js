@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    let Config = Java.loadClass("org.create_power.Config");
+  /*  let Config = Java.loadClass("org.create_power.Config");
     Config.setPower({
         "petrolsparts:coaxial_gear": 16384, // 同轴齿轮
         "petrolsparts:large_coaxial_gear": 16384, // 大型同轴齿轮
@@ -98,6 +98,6 @@ ServerEvents.recipes(event => {
             'immersiveengineering:treated_wood_horizontal': [2, 4]
 
         },
-    })
+    })*/
 
 });

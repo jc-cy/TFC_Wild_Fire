@@ -1,6 +1,6 @@
 ServerEvents.tags('minecraft:block', event => {//
 
-
+    event.add('kubejs:polisher', '#forge:sandstone');//给所有沙岩打上抛光标签
     event.add('tfc:mineable_with_glass_saw', 'minecraft:ice');//玻璃
 
 
@@ -39,7 +39,7 @@ ServerEvents.tags('minecraft:item', event => {//
     event.add('tfc:scrapable', 'textile:crocodile_leather');//鳄鱼皮
 
 
-    const ore = ["tfc_ie_addon:powder/galena",'tfc:powder/sphalerite', 'tfc:powder/native_copper', 'tfc:powder/native_gold', 'tfc:powder/hematite', 'tfc:powder/native_silver', 'tfc:powder/cassiterite', 'tfc:powder/bismuthinite', 'tfc:powder/garnierite', 'tfc:powder/malachite', 'tfc:powder/magnetite', 'tfc:powder/tetrahedrite', 'tfc:powder/limonite']
+    const ore = ["tfc_ie_addon:powder/galena", 'tfc:powder/sphalerite', 'tfc:powder/native_copper', 'tfc:powder/native_gold', 'tfc:powder/hematite', 'tfc:powder/native_silver', 'tfc:powder/cassiterite', 'tfc:powder/bismuthinite', 'tfc:powder/garnierite', 'tfc:powder/malachite', 'tfc:powder/magnetite', 'tfc:powder/tetrahedrite', 'tfc:powder/limonite']
 
     ore.forEach(item => {
         event.add('kubejs:ore', item);//热矿粉

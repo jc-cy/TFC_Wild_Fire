@@ -1,32 +1,32 @@
 
 ["Possibility_of_Actions(Some_do_not_have_to_work)"]
-	can_BreakfallReady = true
+	can_BreakfallReady = false
 	can_CatLeap = true
 	can_ChargeJump = true
 	can_ClimbPoles = true
 	can_ClimbUp = true
 	can_ClingToCliff = true
-	can_HideInBlock = true
+	can_HideInBlock = false
 	can_Crawl = true
-	can_Dive = true
-	can_Dodge = true
+	can_Dive = false
+	can_Dodge = false
 	can_FastRun = true
 	can_FastSwim = true
-	can_Flipping = true
+	can_Flipping = false
 	can_HangDown = true
-	can_HorizontalWallRun = true
-	can_JumpFromBar = true
+	can_HorizontalWallRun = false
+	can_JumpFromBar = false
 	can_QuickTurn = true
-	can_RideZipline = true
-	can_Roll = true
-	can_SkyDive = true
-	can_Slide = true
-	can_Tap = true
-	can_Vault = true
-	can_VerticalWallRun = true
-	can_WallJump = true
-	can_WallSlide = true
-	can_StartSwimByCrawl = true
+	can_RideZipline = false
+	can_Roll = false
+	can_SkyDive = false
+	can_Slide = false
+	can_Tap = false
+	can_Vault = false
+	can_VerticalWallRun = false
+	can_WallJump = false
+	can_WallSlide = false
+	can_StartSwimByCrawl = false
 
 [Stamina_HUD_Configuration]
 	#Allowed Values: Normal, Light, Hide
