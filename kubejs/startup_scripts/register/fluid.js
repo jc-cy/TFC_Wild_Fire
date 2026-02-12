@@ -21,11 +21,12 @@ StartupEvents.registry("fluid", event => {
     // 人造刚玉
 })
 StartupEvents.registry("fluid", event => {
-    
+
     event.create("kubejs:petroleum_gas")//石油气
         .thinTexture(0Xffffff)
         .noBlock()
         .noBucket()
+        .gaseous()
 
     event.create("kubejs:pulp")//纸浆
         .thinTexture(0Xd4cbb5)
@@ -144,4 +145,25 @@ StartupEvents.registry("fluid", event => {
         .flowingTexture('kubejs:fluid/glass/molten_glass_flowing')
         .noBlock()
     //熔融玻璃
+
+    event.create("kubejs:molten_manganese")
+        .stillTexture('kubejs:fluid/molten/molten_manganese_still')
+        .flowingTexture('kubejs:fluid/molten/molten_manganese_flowing')
+    //熔融锰
+
+    event.create("kubejs:molten_titanium")
+        .stillTexture('kubejs:fluid/molten/molten_titanium_still')
+        .flowingTexture('kubejs:fluid/molten/molten_titanium_flowing')
+    //熔融钛
+
+    event.create("kubejs:molten_vanadium")
+        .stillTexture('kubejs:fluid/molten/molten_vanadium_still')
+        .flowingTexture('kubejs:fluid/molten/molten_vanadium_flowing')
+    //熔融钒
+
+    event.create("kubejs:molten_titanium_alloy")
+        .stillTexture('kubejs:fluid/molten/molten_titanium_alloy_still')
+        .flowingTexture('kubejs:fluid/molten/molten_titanium_alloy_flowing')
+    //熔融钛合金
+
 })

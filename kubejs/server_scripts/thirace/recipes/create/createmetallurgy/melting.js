@@ -98,7 +98,7 @@ ServerEvents.recipes((event) => {
 
         //生铁
         {
-            ingredients: [{ item: `tfc:metal/ingots/pig_iron` }],
+            ingredients: [{ item: `tfc:metal/ingot/pig_iron` }],
             heatRequirement: 'superheated',
             processingTime: 60,
             results: [{ amount: 100, fluid: `tfc:metal/pig_iron` }],
@@ -122,14 +122,14 @@ ServerEvents.recipes((event) => {
         {
             ingredients: [{ tag: 'forge:sand' }],
             heatRequirement: 'heated',
-            processingTime: 240,
-            results: [{ amount: 50, fluid: 'kubejs:molten_glass' }],
+            processingTime: 40,
+            results: [{ amount: 25, fluid: 'kubejs:molten_glass' }],
             id: `${id_prefix}molten_glass_from_sand`
         },
         {
             ingredients: [{ tag: 'tfc:glass_batches' }],
             heatRequirement: 'heated',
-            processingTime: 100,
+            processingTime: 60,
             results: [{ amount: 250, fluid: 'kubejs:molten_glass' }],
             id: `${id_prefix}molten_glass_from_batches`
         },

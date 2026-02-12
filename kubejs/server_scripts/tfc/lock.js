@@ -20,7 +20,7 @@ ServerEvents.recipes(e => {
         { name: 'cast_iron', number: 2 },      // 铸铁开锁器（kubejs:cast_iron_lockpick）
         { name: 'wrought_iron', number: 3 },   // 锻铁开锁器（kubejs:wrought_iron_lockpick）
         { name: 'steel', number: 4 },          // 钢制开锁器（kubejs:steel_lockpick）
-        { name: 'black_steel', number: 5 },    // 黑钢开锁器（kubejs:black_steel_lockpick）
+        { name: 'black_steel', number: 5 },    // 锰钢开锁器（kubejs:black_steel_lockpick）
         // { name: 'homemade', number: 1 },// 自制开锁器
     ];
 
@@ -28,7 +28,7 @@ ServerEvents.recipes(e => {
     const crowbars = [
         { name: 'wrought_iron', number: 3 },   // 锻铁撬棍（kubejs:wrought_iron_crowbar）
         { name: 'steel', number: 4 },          // 钢撬棍（kubejs:steel_crowbar）
-        { name: 'black_steel', number: 5 }     // 黑钢撬棍（kubejs:black_steel_crowbar）
+        { name: 'black_steel', number: 5 }     // 锰钢撬棍（kubejs:black_steel_crowbar）
     ];
 
 

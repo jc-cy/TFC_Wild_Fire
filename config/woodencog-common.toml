@@ -13,7 +13,7 @@
 		blaze_burner_smouldering = 80.0
 		blaze_burner_fading = 750.0
 		blaze_burner_kindled = 1350.0
-		blaze_burner_seething = 2000.0
+		blaze_burner_seething = 1800.0
 
 	[woodencog.stress]
 		#Stress impact of the transformer

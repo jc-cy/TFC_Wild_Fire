@@ -13,7 +13,7 @@ ServerEvents.tags('block', event => {
     event.add('tfc:toughness_2', 'kubejs:wrought_iron_support_horizontal')
     event.add('tfc:toughness_2', 'kubejs:steel_support') // 钢
     event.add('tfc:toughness_2', 'kubejs:steel_support_horizontal')
-    event.add('tfc:toughness_3', 'kubejs:black_steel_support') // 黑钢
+    event.add('tfc:toughness_3', 'kubejs:black_steel_support') // 锰钢
     event.add('tfc:toughness_3', 'kubejs:black_steel_support_horizontal')
     event.add('tfc:toughness_3', 'kubejs:galvanized_steel_support') // 镀锌方钢
     event.add('tfc:toughness_3', 'kubejs:galvanized_steel_support_horizontal')

@@ -1,0 +1,5 @@
+{
+    "type": "tfc:collapse",
+    "ingredient": "kubejs:ore/rich_manganese/andesite",
+    "result": "kubejs:ore/manganese/andesite"
+}

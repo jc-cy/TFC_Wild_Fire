@@ -199,9 +199,9 @@ ServerEvents.recipes(e => {
     "vintageimprovements:small_pig_iron_spring",
     "vintageimprovements:sulfur_chunk",
     "vintageimprovements:sulfur_block",
-    "vintageimprovements:vanadium_sheet",
+    "vintageimprovements:native_vanadium_sheet",
     "vintageimprovements:uranium_wire",
-    "vintageimprovements:vanadium_wire",
+    "vintageimprovements:native_vanadium_wire",
     "vintageimprovements:small_uranium_spring",
     "vintageimprovements:small_tin_spring",
     "vintageimprovements:small_rose_gold_spring",
@@ -226,7 +226,7 @@ ServerEvents.recipes(e => {
     "design_decor:pig_iron_large_chain",
     "design_decor:mithril_large_chain",
     "design_decor:nethersteel_large_chain",
-    "vintageimprovements:small_vanadium_spring",
+    "vintageimprovements:small_native_vanadium_spring",
     "vintageimprovements:pig_iron_sheet",
     "vintageimprovements:pig_iron_rod",
     "vintageimprovements:pig_iron_wire",
@@ -839,6 +839,8 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'woodencog:crafting/sequenced_assembly/precision_mechanism' })  
   e.remove({ id: 'siegemachines:barrel' })  
   e.remove({ id: 'immersiveengineering:blueprint/banner_ornate' })  
+  e.remove({ id: 'tfc:crafting/fire_clay_recycle_5' })  
+  e.remove({ id: 'farmersdelight:cutting/bricks' })  
 
   //删除ie左轮手枪及其相关组件配方
   e.remove({ id: 'immersiveengineering:crafting/toolupgrade_revolver_magazine' })
@@ -934,8 +936,8 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'immersiveengineering:crafting/nugget_silver_to_ingot_silver' })
   e.remove({ id: 'immersiveengineering:crafting/ingot_silver_to_nugget_silver' })
   e.remove({ id: 'immersiveengineering:crafting/nugget_lead_to_ingot_lead' })
-  e.remove({ id: 'vintageimprovements:craft/vanadium_ingot_to_nuggets' })
-  e.remove({ id: 'vintageimprovements:craft/vanadium_nuggets_to_ingot' })
+  e.remove({ id: 'vintageimprovements:craft/native_vanadium_ingot_to_nuggets' })
+  e.remove({ id: 'vintageimprovements:craft/native_vanadium_nuggets_to_ingot' })
   e.remove({ id: 'immersiveengineering:crafting/ingot_constantan_to_nugget_constantan' })
   e.remove({ id: 'immersiveengineering:crafting/nugget_constantan_to_ingot_constantan' })
   e.remove({ id: 'immersiveengineering:crafting/ingot_uranium_to_nugget_uranium' })

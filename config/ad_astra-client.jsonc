@@ -1,5 +1,5 @@
 {
-    "showOxygenDistributorArea": false,
+    "showOxygenDistributorArea": true,
     "showGravityNormalizerArea": false,
     "jetSuitEnabled": true,
     // Type: Integer

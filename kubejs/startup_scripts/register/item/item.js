@@ -37,14 +37,14 @@ StartupEvents.registry('item', event => {
     event.create('rock_powder', 'tfc:mold').capacity(100)//岩石粉末模具
     event.create('trachyandesite_alloy', 'basic').texture('kubejs:item/create/trachyandesite_alloy')//粗安山合金
     event.create('wrought_iron_double_rod', 'basic').texture('kubejs:item/create/wrought_iron_double_rod');// 锻铁双棒
-    event.create('black_steel_double_rod', 'basic').texture('kubejs:item/create/black_steel_double_rod');// 黑钢双棒
+    event.create('black_steel_double_rod', 'basic').texture('kubejs:item/create/black_steel_double_rod');// 锰钢双棒
     event.create('fan_blade_blank', 'basic').texture('kubejs:item/create/fan_blade_blank');// 扇叶半成品
     event.create('fan_blade_blank_part', 'basic').texture('kubejs:item/create/fan_blade_blank_part');// 扇叶片
     event.create('whisk_stirrer_head_blank', 'basic').texture('kubejs:item/create/whisk_stirrer_head_blank');// 搅拌头半成品
-    event.create('whisk_black_steel_head_blank', 'basic').texture('kubejs:item/create/whisk_black_steel_head_blank');// 黑钢搅拌头半成品
+    event.create('whisk_black_steel_head_blank', 'basic').texture('kubejs:item/create/whisk_black_steel_head_blank');// 锰钢搅拌头半成品
     event.create('material_component_wrought_iron', 'basic').texture('kubejs:item/create/material_component_wrought_iron');// 锻铁零件
     event.create('material_component_steel', 'basic').texture('kubejs:item/create/material_component_steel');// 钢制零件
-    event.create('material_component_black_steel', 'basic').texture('kubejs:item/create/material_component_black_steel');// 黑钢零件
+    event.create('material_component_black_steel', 'basic').texture('kubejs:item/create/material_component_black_steel');// 锰钢零件
     event.create('rotten_meat', 'basic').texture('kubejs:item/rotten_meat');// 注册腐烂的肉
     event.create('rotten_fish', 'basic').texture('kubejs:item/rotten_fish');// 注册腐烂的鱼
     event.create('rotten_vegetables', 'basic').texture('kubejs:item/rotten_vegetables');// 注册腐烂的蔬菜
@@ -192,7 +192,7 @@ StartupEvents.registry("item", event => {//航空/航天相关部件
     event.create('kubejs:copper_arrow').texture('kubejs:item/tfc/copper_arrow'); // 铜箭头
     event.create('kubejs:wrought_iron_arrow').texture('kubejs:item/tfc/wrought_iron_arrow'); // 锻铁箭头
     event.create('kubejs:steel_arrow').texture('kubejs:item/tfc/steel_arrow'); // 钢箭头
-    event.create('kubejs:black_steel_arrow').texture('kubejs:item/tfc/black_steel_arrow'); // 黑钢箭头
+    event.create('kubejs:black_steel_arrow').texture('kubejs:item/tfc/black_steel_arrow'); // 锰钢箭头
     event.create('kubejs:gps').texture('kubejs:item/gps').maxStackSize(1); // 全球定位器
 
 
@@ -267,4 +267,55 @@ StartupEvents.registry("item", event => {  //半成品
     event.create('kubejs:moon_crystal_panel_unfinished').texture('kubejs:item/ad/moon_crystal_panel_unfinished'); // 月球水晶面板_未完成
     event.create('kubejs:venus_plating_unfinished').texture('kubejs:item/ad/venus_plating_unfinished'); // 金星镀层_未完成
 
+
 })
+
+StartupEvents.registry("item", event => {   //新金属
+    //太空金属锭
+    const molten_metal = [
+        { id: 'titanium_alloy' },
+        { id: 'titanium' },
+        { id: 'vanadium' },
+        { id: 'manganese' }
+    ]
+    molten_metal.forEach(metal => {
+        event.create(`kubejs:metal/ingot/${metal.id}`).texture(`kubejs:item/metal/ingot/${metal.id}`)
+        .tag('balm:ingots')
+        .tag(`forge:ingots`)
+        .tag('tfc:pileable_ingots')
+        .tag(`forge:ingots/${metal.id}`)
+        .tag(`tfc:metal_item/${metal.id}`)
+        event.create(`kubejs:metal/double_ingot/${metal.id}`).texture(`kubejs:item/double_ingot/ingot/${metal.id}`)
+        .tag('tfc:pileable_double_ingots')
+        .tag('tfc:pileable_sheets')
+        .tag(`forge:double_ingots`)
+        .tag(`forge:double_ingots/${metal.id}`)
+        .tag(`tfc:metal_item/${metal.id}`)
+        event.create(`kubejs:metal/sheet/${metal.id}`).texture(`kubejs:item/metal/sheet/${metal.id}`)
+        .tag('tfc:pileable_sheets')
+        .tag(`forge:sheets`)
+        .tag(`forge:sheets/${metal.id}`)
+        .tag(`tfc:metal_item/${metal.id}`)
+        event.create(`kubejs:metal/double_sheet/${metal.id}`).texture(`kubejs:item/metal/double_sheet/${metal.id}`)
+        .tag(`forge:double_sheets`)
+        .tag(`forge:double_sheets/${metal.id}`)
+        .tag(`tfc:metal_item/${metal.id}`)
+
+    })
+    //矿物
+    const ore = [
+        'lmenite',
+        'native_vanadium',
+        'manganese'
+
+    ]
+    ore.forEach(ore => {
+        event.create(`kubejs:ore/rich_${ore}`).texture(`kubejs:item/ore/rich_${ore}`)
+        .tag('tfc:ore_pieces')
+        event.create(`kubejs:ore/${ore}`).texture(`kubejs:item/ore/${ore}`)
+        .tag('tfc:ore_pieces')
+        event.create(`kubejs:ore/poor_${ore}`).texture(`kubejs:item/ore/poor_${ore}`)
+        .tag('tfc:ore_pieces')
+    })
+
+})  

@@ -17,7 +17,7 @@ ServerEvents.recipes(e => {
       `kubejs:triple_${item.name}`,       // 输出
       `tfc:metal/double_ingot/${item.name}`,
       `tfc:metal/ingot/${item.name}`,
-      item.number // 砧等级 0是石头 1铜 2铜合金 3锻铁 4钢 5黑钢 6红秘银
+      item.number // 砧等级 0是石头 1铜 2铜合金 3锻铁 4钢 5锰钢 6红秘银
     ).id(`kubejs:tfc/anvil/triple_${item.name}`);;
   });
    tfc.anvil(
@@ -98,7 +98,7 @@ ServerEvents.recipes(e => {
     [
       'hit_any',
     ]
-  ).tier(5).bonus(false).id("kubejs:tfc/anvil/black_steel_arrow/anvil")//黑钢箭头
+  ).tier(5).bonus(false).id("kubejs:tfc/anvil/black_steel_arrow/anvil")//锰钢箭头
   tfc.anvil(
     'create:andesite_alloy',
     'kubejs:trachyandesite_alloy',
@@ -130,7 +130,7 @@ ServerEvents.recipes(e => {
     ]
   ).tier(3).bonus(false).id("kubejs:tfc/anvil/whisk_stirrer_head_blank/anvil")
 
-  tfc.anvil(//黑钢搅拌头半成品
+  tfc.anvil(//锰钢搅拌头半成品
     'kubejs:whisk_black_steel_head_blank',
     'kubejs:black_steel_double_rod',
     [
@@ -169,7 +169,7 @@ ServerEvents.recipes(e => {
   ).tier(4).bonus(false).id("kubejs:tfc/anvil/material_component_steel/anvil");
 
 
-  tfc.anvil(// 黑钢零件的铁砧配方
+  tfc.anvil(// 锰钢零件的铁砧配方
     '2x kubejs:material_component_black_steel',
     'tfc:metal/ingot/black_steel',
     [
@@ -216,7 +216,7 @@ ServerEvents.recipes(e => {
     'tfc:metal/sheet/wrought_iron',
     3
   ).id(`kubejs:tfc/anvil/whisk`);
-  tfc.welding(//黑钢搅拌头焊接
+  tfc.welding(//锰钢搅拌头焊接
     'createmetallurgy:sturdy_whisk',
     'kubejs:whisk_black_steel_head_blank',
     'tfc:metal/sheet/black_steel',
