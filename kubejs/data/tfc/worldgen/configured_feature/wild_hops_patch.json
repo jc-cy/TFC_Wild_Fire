@@ -1,0 +1,33 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 5,
+    "xz_spread": 7,
+    "y_spread": 1,
+    "feature": "tfc:wild_hops",
+    "placement": [
+        {
+          "predicate": {
+            "predicates": [
+              {
+                "blocks": "minecraft:air",
+                "type": "minecraft:matching_blocks"
+              },
+              {
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ],
+                "direction": "up",
+                "type": "minecraft:has_sturdy_face"
+              }
+            ],
+            "type": "minecraft:all_of"
+          },
+          "type": "minecraft:block_predicate_filter"
+        }
+      ]
+    }
+  }

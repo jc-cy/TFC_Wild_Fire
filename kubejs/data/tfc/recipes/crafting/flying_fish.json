@@ -1,0 +1,19 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:damage_inputs_shapeless_crafting",
+  "recipe": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "tag": "tfc:knives"
+      },
+      {
+        "item": "alexsmobs:flying_fish"
+      }
+    ],
+    "result": {
+      "item": "aquaculture:fish_fillet_raw",
+      "count": 2
+    }
+  }
+}

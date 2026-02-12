@@ -7,5 +7,6 @@
   "decay_modifier": 1.45,
   "grain": 1.5,
   "vegetables": 1.5,
+  "water": 10,
   "dairy": 1.5
 }

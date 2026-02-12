@@ -2,6 +2,7 @@
   "__comment__": "This file was automatically created by mcresources",
   "replace": false,
   "values": [
+    "tfc:wild_hops_patch",
     "tfc:plant/wild_crop/barley_patch",
     "tfc:plant/wild_crop/oat_patch",
     "tfc:plant/wild_crop/rye_patch",
