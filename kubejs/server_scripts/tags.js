@@ -1,5 +1,94 @@
 // priority: 0
 
+//可用于锻造工具的金属
+const toolMetals = ['bismuth_bronze', 'black_bronze', 'bronze', 'copper', 'wrought_iron', 'steel', 'black_steel', 'blue_steel', 'red_steel'];
+
+// 工具头可淬火
+ServerEvents.tags("item", event => {
+    // 1. 定义基础数据：工具头模板（金属名用 {metal} 占位） + 金属列表
+    const toolHeadTemplates = [
+        'tfc_hammer_time:metal/excavator_head/{metal}',
+        'kubejs:{metal}_glaive_weapon_part',
+        'kubejs:{metal}_halberd_weapon_part',
+        'kubejs:{metal}_lance_weapon_part',
+        'kubejs:{metal}_scythe_weapon_part',
+        'tfc:metal/sword_blade/{metal}',
+        'kubejs:{metal}_greatsword_weapon_part',
+        'kubejs:{metal}_flanged_mace_weapon_part',
+        'kubejs:{metal}_battleaxe_weapon_part',
+        'tfc:metal/javelin_head/{metal}',
+        'tfc:metal/scythe_blade/{metal}',
+        'tfc:metal/knife_blade/{metal}',
+        'tfc:metal/saw_blade/{metal}',
+        'tfc:metal/hoe_head/{metal}',
+        'kubejs:{metal}_saber_weapon_part',
+        'tfc:metal/pickaxe_head/{metal}',
+        'tfc:metal/shovel_head/{metal}',
+        'tfc:metal/axe_head/{metal}',
+        'kubejs:{metal}_throwing_knife_weapon_part',
+        'kubejs:{metal}_dagger_weapon_part',
+        'kubejs:{metal}_katana_weapon_part',
+        'kubejs:{metal}_rapier_weapon_part',
+        'kubejs:{metal}_tomahawk_weapon_part',
+        'kubejs:{metal}_longsword_weapon_part'
+    ];
+
+    toolMetals.forEach(metal => {
+        toolHeadTemplates.forEach(template => {
+            // 替换模板中的 {metal} 为当前金属名（生成完整的物品ID）
+            const toolHeadId = template.replace(/{metal}/g, metal);
+            event.add(`kubejs:tool_head`, toolHeadId);
+            //console.log(`已给物品 ${toolHeadId} 添加标签 kubejs:tool_head`);
+        });
+    });
+});
+//工具应用打磨值
+ServerEvents.tags("item", event => {
+
+    const toolItemIds = [
+        'tfc:metal/axe/bismuth_bronze',
+        'kubejs:bismuth_bronze_battleaxe',
+        'tfc:metal/pickaxe/bismuth_bronze',
+        'tfc:metal/shovel/bismuth_bronze',
+        'tfc:metal/hoe/bismuth_bronze',
+        'tfc:metal/saw/bismuth_bronze',
+        'tfc:metal/knife/bismuth_bronze',
+        'tfc:metal/scythe/bismuth_bronze',
+        'tfc:metal/javelin/bismuth_bronze',
+        'tfc:metal/sword/bismuth_bronze',
+        'kubejs:bismuth_bronze_tomahawk',
+        'kubejs:bismuth_bronze_throwing_knife',
+        'kubejs:bismuth_bronze_parrying_dagger',
+        'kubejs:bismuth_bronze_dagger',
+        'kubejs:bismuth_bronze_katana',
+        'kubejs:bismuth_bronze_rapier',
+        'kubejs:bismuth_bronze_saber',
+        'kubejs:bismuth_bronze_longsword',
+        'kubejs:bismuth_bronze_glaive',
+        'kubejs:bismuth_bronze_pike',
+        'kubejs:bismuth_bronze_javelin',
+        'kubejs:bismuth_bronze_spear',
+        'kubejs:bismuth_bronze_halberd',
+        'kubejs:bismuth_bronze_lance',
+        'kubejs:bismuth_bronze_greatsword',
+        'kubejs:bismuth_bronze_scythe'
+    ];
+    // 金属列表
+    toolMetals.forEach(metal => {
+        toolItemIds.forEach(itemId => {
+            // 替换物品ID中的 bismuth_bronze 为当前金属名
+            const targetItemId = itemId.replace('bismuth_bronze', metal);
+            event.add('kubejs:polish', targetItemId);
+            //console.log(`已给物品 ${targetItemId} 添加标签 kubejs:polish`);
+        });
+    });
+});
+
+
+
+
+
+
 const deposit = [
     'andesite',
     'basalt',
@@ -92,6 +181,7 @@ ServerEvents.tags("block", event => {
 ServerEvents.tags("block", event => {
 
 
+
     event.add('create:chest_mounted_storage',
         [
             "afc:wood/chest/baobab",
@@ -168,6 +258,7 @@ ServerEvents.tags("block", event => {
         event.add('kubejs:petroleum_gas', 'kubejs:petroleum_gas')
     }),
     ServerEvents.tags("item", event => {
+        
         event.add('forge:tools/hammers', '#tfc:hammers')
 
         const metals = [

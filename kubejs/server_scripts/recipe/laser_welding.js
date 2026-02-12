@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
         const typemap = {
             "1": { in: `kubejs:unfinished/double_ingot/${input}`, out: `tfc:metal/double_ingot/${input}` },
             "2": { in: `kubejs:unfinished/double_ingot/${input}`, out: `firmalife:metal/double_ingot/${input}` },
-            "3": { in: `kubejs:unfinished/double_ingot/${input}`, out: `tfc:metal/double_ingot/${input}` }
+            "3": { in: `kubejs:unfinished/double_ingot/${input}`, out: `tfc_ie_addon:metal/double_ingot/${input}` }
         }[type]
         if (typemap) {
 
@@ -137,7 +137,7 @@ ServerEvents.recipes(event => {
         const typemap = {
             "1": { in: `kubejs:unfinished/double_sheet/${input}`, out: `tfc:metal/double_sheet/${input}` },
             "2": { in: `kubejs:unfinished/double_sheet/${input}`, out: `firmalife:metal/double_sheet/${input}` },
-            "3": { in: `kubejs:unfinished/double_sheet/${input}`, out: `immersiveengineering:double_sheet_${input}` }
+            "3": { in: `kubejs:unfinished/double_sheet/${input}`, out: `tfc_ie_addon:metal/double_sheet/${input}` }
         }[type]
         if (typemap) {
           

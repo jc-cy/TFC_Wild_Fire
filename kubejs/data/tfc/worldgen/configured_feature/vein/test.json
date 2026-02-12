@@ -1,0 +1,236 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:disc_vein",
+  "config": {
+    "rarity": 100,
+    "density": 0.3,
+    "min_y": 35,
+    "max_y": 60,
+    "biomes": "#tfc:is_ocean",
+    "size": 16,
+    "height": 12,
+    "random_name": "test",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/shale"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/claystone"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/limestone"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/conglomerate"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dolomite"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chert"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chalk"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/rhyolite"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/andesite"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/gravel/shale"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/gravel/claystone"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/gravel/limestone"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/gravel/conglomerate"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/gravel/dolomite"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/gravel/chert"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/gravel/chalk"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/gravel/rhyolite"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/gravel/basalt"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/gravel/andesite"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dacite"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/gravel/dacite"
+        ],
+        "with": [
+          {
+            "block": "minecraft:obsidian"
+          }
+        ]
+      }
+    ]
+  }
+}

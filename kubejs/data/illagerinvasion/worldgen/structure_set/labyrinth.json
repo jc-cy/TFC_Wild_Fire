@@ -1,18 +1,20 @@
 {
-  "placement": {
-    "type": "minecraft:random_spread",
-    "exclusion_zone": {
-      "chunk_count": 12,
-      "other_set": "minecraft:villages"
-    },
-    "salt": 169476079,
-    "separation": 40,
-    "spacing": 52
-  },
   "structures": [
     {
       "structure": "illagerinvasion:labyrinth",
       "weight": 1
     }
-  ]
+  ],
+  "placement": {
+    "type": "tfc:climate",
+    "climate": {
+	  	"min_temperature": -20,
+	  	"max_temperature": -10,
+	  	"min_rainfall": 100,
+	  	"max_rainfall": 450
+	  },
+    "spacing": 60,
+    "separation": 30,
+    "salt": 415936066
+  }
 }
