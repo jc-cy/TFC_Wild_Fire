@@ -211,5 +211,5 @@ StartupEvents.registry("block", event => {
         .tagBlock('minecraft:needs_diamond_tool')
         .hardness(12)
         .requiresTool()
-    })
+        })
 })

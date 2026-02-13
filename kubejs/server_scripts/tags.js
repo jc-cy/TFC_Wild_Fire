@@ -394,6 +394,25 @@ ServerEvents.tags("block", event => {
                 "minecraft:slime_ball"
             ])
 
+        event.add('kubejs:ore/ilmenite',
+            [
+                "kubejs:ore/poor_ilmenite",
+                "kubejs:ore/ilmenite",
+                "kubejs:ore/rich_ilmenite"
+            ])
+        event.add('kubejs:ore/manganese',
+            [
+                "kubejs:ore/poor_manganese",
+                "kubejs:ore/manganese",
+                "kubejs:ore/rich_manganese"
+            ])
+        event.add('kubejs:ore/vanadium',
+            [
+                "kubejs:ore/poor_vanadium",
+                "kubejs:ore/vanadium",
+                "kubejs:ore/rich_vanadium"
+            ])
+
 
 
 

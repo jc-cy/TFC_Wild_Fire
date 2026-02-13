@@ -1,0 +1,37 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:world/volcano",
+  "criteria": {
+    "manganese": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "kubejs:ore/manganese"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "kubejs:ore/rich_manganese"
+    },
+    "title": {
+      "translate": "tfc.advancements.world.manganese.title"
+    },
+    "description": {
+      "translate": "tfc.advancements.world.manganese.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "tfc:textures/block/mud/silt.png"
+  },
+  "requirements": [
+    [
+      "manganese"
+    ]
+  ]
+}

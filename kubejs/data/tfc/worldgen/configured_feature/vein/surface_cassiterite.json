@@ -2,11 +2,11 @@
   "__comment__": "This file was automatically created by mcresources",
   "type": "tfc:cluster_vein",
   "config": {
-    "rarity": 5,
-    "density": 0.4,
-    "min_y": 75,
-    "max_y": 180,
-    "size": 15,
+    "rarity": 8,
+    "density": 0.5,
+    "min_y": 65,
+    "max_y": 150,
+    "size": 20,
     "random_name": "surface_cassiterite",
     "blocks": [
       {

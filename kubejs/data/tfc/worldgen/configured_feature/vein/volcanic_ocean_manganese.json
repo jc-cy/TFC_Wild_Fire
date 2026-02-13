@@ -2,13 +2,13 @@
   "__comment__": "This file was automatically created by mcresources",
   "type": "tfc:cluster_vein",
   "config": {
-    "rarity": 30,
-    "density": 0.5,
-    "min_y": 15,
-    "max_y": 65,
-    "biomes": "#tfc:is_ocean",
-    "size": 16,
-    "random_name": "ocean_floor_manganese",
+    "rarity": 35,
+    "density": 0.2,
+    "min_y": 55,
+    "max_y": 15,
+    "biomes": "#tfc:is_volcanic",
+    "size": 12,
+    "random_name": "volcanic_ocean_manganese",
     "blocks": [
       {
         "replace": [
@@ -16,15 +16,15 @@
         ],
         "with": [
           {
-            "weight": 20,
+            "weight": 40,
             "block": "kubejs:ore/poor_manganese/shale"
           },
           {
-            "weight": 30,
+            "weight": 25,
             "block": "kubejs:ore/manganese/shale"
           },
           {
-            "weight": 25,
+            "weight": 10,
             "block": "kubejs:ore/rich_manganese/shale"
           },
           {
@@ -39,15 +39,15 @@
         ],
         "with": [
           {
-            "weight": 20,
+            "weight": 40,
             "block": "kubejs:ore/poor_manganese/claystone"
           },
           {
-            "weight": 30,
+            "weight": 25,
             "block": "kubejs:ore/manganese/claystone"
           },
           {
-            "weight": 25,
+            "weight": 10,
             "block": "kubejs:ore/rich_manganese/claystone"
           },
           {
@@ -62,15 +62,15 @@
         ],
         "with": [
           {
-            "weight": 20,
+            "weight": 40,
             "block": "kubejs:ore/poor_manganese/limestone"
           },
           {
-            "weight": 30,
+            "weight": 25,
             "block": "kubejs:ore/manganese/limestone"
           },
           {
-            "weight": 25,
+            "weight": 10,
             "block": "kubejs:ore/rich_manganese/limestone"
           },
           {
@@ -85,15 +85,15 @@
         ],
         "with": [
           {
-            "weight": 20,
+            "weight": 40,
             "block": "kubejs:ore/poor_manganese/conglomerate"
           },
           {
-            "weight": 30,
+            "weight": 25,
             "block": "kubejs:ore/manganese/conglomerate"
           },
           {
-            "weight": 25,
+            "weight": 10,
             "block": "kubejs:ore/rich_manganese/conglomerate"
           },
           {
@@ -108,15 +108,15 @@
         ],
         "with": [
           {
-            "weight": 20,
+            "weight": 40,
             "block": "kubejs:ore/poor_manganese/dolomite"
           },
           {
-            "weight": 30,
+            "weight": 25,
             "block": "kubejs:ore/manganese/dolomite"
           },
           {
-            "weight": 25,
+            "weight": 10,
             "block": "kubejs:ore/rich_manganese/dolomite"
           },
           {
@@ -131,15 +131,15 @@
         ],
         "with": [
           {
-            "weight": 20,
+            "weight": 40,
             "block": "kubejs:ore/poor_manganese/chert"
           },
           {
-            "weight": 30,
+            "weight": 25,
             "block": "kubejs:ore/manganese/chert"
           },
           {
-            "weight": 25,
+            "weight": 10,
             "block": "kubejs:ore/rich_manganese/chert"
           },
           {
@@ -154,15 +154,15 @@
         ],
         "with": [
           {
-            "weight": 20,
+            "weight": 40,
             "block": "kubejs:ore/poor_manganese/chalk"
           },
           {
-            "weight": 30,
+            "weight": 25,
             "block": "kubejs:ore/manganese/chalk"
           },
           {
-            "weight": 25,
+            "weight": 10,
             "block": "kubejs:ore/rich_manganese/chalk"
           },
           {
@@ -177,15 +177,15 @@
         ],
         "with": [
           {
-            "weight": 20,
+            "weight": 40,
             "block": "kubejs:ore/poor_manganese/rhyolite"
           },
           {
-            "weight": 30,
+            "weight": 25,
             "block": "kubejs:ore/manganese/rhyolite"
           },
           {
-            "weight": 25,
+            "weight": 10,
             "block": "kubejs:ore/rich_manganese/rhyolite"
           },
           {
@@ -200,15 +200,15 @@
         ],
         "with": [
           {
-            "weight": 20,
+            "weight": 40,
             "block": "kubejs:ore/poor_manganese/basalt"
           },
           {
-            "weight": 30,
+            "weight": 25,
             "block": "kubejs:ore/manganese/basalt"
           },
           {
-            "weight": 25,
+            "weight": 10,
             "block": "kubejs:ore/rich_manganese/basalt"
           },
           {
@@ -223,15 +223,15 @@
         ],
         "with": [
           {
-            "weight": 20,
+            "weight": 40,
             "block": "kubejs:ore/poor_manganese/andesite"
           },
           {
-            "weight": 30,
+            "weight": 25,
             "block": "kubejs:ore/manganese/andesite"
           },
           {
-            "weight": 25,
+            "weight": 10,
             "block": "kubejs:ore/rich_manganese/andesite"
           },
           {
@@ -246,15 +246,15 @@
         ],
         "with": [
           {
-            "weight": 30,
+            "weight": 25,
             "block": "kubejs:ore/poor_manganese/shale"
           },
           {
-            "weight": 30,
+            "weight": 25,
             "block": "kubejs:ore/manganese/shale"
           },
           {
-            "weight": 25,
+            "weight": 10,
             "block": "kubejs:ore/rich_manganese/shale"
           },
           {
@@ -476,7 +476,7 @@
         ],
         "with": [
           {
-            "weight": 20,
+            "weight": 40,
             "block": "kubejs:ore/poor_manganese/dacite"
           },
           {

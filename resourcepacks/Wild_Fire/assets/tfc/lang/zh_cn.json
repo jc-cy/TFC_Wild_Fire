@@ -503,7 +503,7 @@
     "tfc.commands.locate.invalid_biome_source": "没有在该世界中找到匹配的生物群系",
     "tfc.commands.locate.volcano_not_found": "未能在合理距离内找到火山",
     "tfc.commands.propick.found_blocks": "勘矿扫描结果：%s%s",
-    "tfc.commands.propick.cleared": "已清除%s方块，找到了%s可勘矿方块",
+    "tfc.commands.propick.cleared": "找到了%s可勘矿方块，已清除%s无法勘探的方块",
     "tfc.commands.particle.no_fluid": "未知合金流体: %s",
     "tfc.commands.trim.not_applied": "改变无法应用于该物品",
     "tfc.commands.trim.not_armor": "指定的金属没有对应的护甲",

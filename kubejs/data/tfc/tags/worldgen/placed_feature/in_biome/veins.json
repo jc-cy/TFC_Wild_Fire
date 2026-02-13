@@ -45,6 +45,11 @@
     "tfc:vein/amethyst",
     "tfc:vein/opal",
     "tfc:vein/ocean_floor_manganese",
+    "tfc:vein/volcanic_ocean_manganese",
+    "tfc:vein/normal_ilmenite",
+    "tfc:vein/poor_ilmenite",
+    "tfc:vein/normal_vanadium",
+    "tfc:vein/surface_malachite_alt",
     "tfc:geode"
   ]
 }

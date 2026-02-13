@@ -1,4 +1,8 @@
 {
+  "tfc.advancements.world.manganese.title": "深海重压",
+  "tfc.advancements.world.manganese.description": "获得锰矿石，用来制作强度更高的合金钢",
+  "tfc.advancements.world.ilmenite.title": "空间金属",
+  "tfc.advancements.world.ilmenite.description": "获得钛铁矿，这种金属也许能让你离星星更近一些",
   "block.kubejs.andesite_chassis": "安山机箱",
   "block.kubejs.unfired_crucible_mold": "未硬化的坩埚模具",
   "block.kubejs.crucible_mold": "坩埚模具",
