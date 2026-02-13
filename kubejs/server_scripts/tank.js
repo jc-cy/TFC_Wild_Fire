@@ -55,10 +55,10 @@ MEJSEvents.standOnFluid(event=>{
     let fluidIdList = [
         'kubejs:molten_glass',
         'kubejs:molten_corundum',
-        'kubejs:molten_manganese',
-        'kubejs:molten_titanium',
-        'kubejs:molten_vanadium',
-        'kubejs:molten_titanium_alloy'
+        'tfc:metal/manganese',
+        'tfc:metal/titanium',
+        'tfc:metal/vanadium',
+        'tfc:metal/titanium_alloy'
     ]
     fluidIdList.forEach(fluidid=>{
         if (event.fluidState.fluidType != Fluid.of(fluidid).fluid.fluidType) return;

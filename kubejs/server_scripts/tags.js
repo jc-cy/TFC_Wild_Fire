@@ -258,7 +258,7 @@ ServerEvents.tags("block", event => {
         event.add('kubejs:petroleum_gas', 'kubejs:petroleum_gas')
     }),
     ServerEvents.tags("item", event => {
-        
+
         event.add('forge:tools/hammers', '#tfc:hammers')
 
         const metals = [
@@ -392,25 +392,6 @@ ServerEvents.tags("block", event => {
             [
                 "tfc:glue",
                 "minecraft:slime_ball"
-            ])
-
-        event.add('kubejs:ore/ilmenite',
-            [
-                "kubejs:ore/poor_ilmenite",
-                "kubejs:ore/ilmenite",
-                "kubejs:ore/rich_ilmenite"
-            ])
-        event.add('kubejs:ore/manganese',
-            [
-                "kubejs:ore/poor_manganese",
-                "kubejs:ore/manganese",
-                "kubejs:ore/rich_manganese"
-            ])
-        event.add('kubejs:ore/vanadium',
-            [
-                "kubejs:ore/poor_vanadium",
-                "kubejs:ore/vanadium",
-                "kubejs:ore/rich_vanadium"
             ])
 
 
@@ -597,7 +578,7 @@ ServerEvents.tags("block", event => {
                 "tfc:burlap_cloth"
 
             ])
-            
+
         //宝石原矿
         event.add('tfc:gem_ore',
             [
@@ -634,7 +615,21 @@ ServerEvents.tags("block", event => {
                 "tfc:rock/anvil/andesite",
                 "tfc:rock/anvil/basalt"
             ])
-
+        //给烂菜加堆肥tag
+        event.add('tfc:compost_greens_high',
+            [
+                "kubejs:rotten_vegetables",
+                "kubejs:rotten_fruit",
+                "kubejs:rotten_fruit"
+            ])
+        //给烂肉加烂肥tag
+        event.add('tfc:compost_poisons',
+            [
+                "kubejs:rotten_fish",
+                "kubejs:rotten_meat",
+                "kubejs:rotten_platter"
+            ])
+            
         event.add('sliceanddice:allowed_tools', '#minecraft:tools')
         //石墨铸模
         event.add('forge:graphite_molds',

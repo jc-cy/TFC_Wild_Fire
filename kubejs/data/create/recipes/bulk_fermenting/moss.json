@@ -1,0 +1,28 @@
+{
+  "type": "createdieselgenerators:bulk_fermenting",
+  "ingredients": [
+    {
+      "item": "tfc:plant/moss"
+    },
+    {
+      "item": "kubejs:rot"
+    },
+    {
+      "item": "kubejs:rot"
+    },
+    {
+      "item": "kubejs:rot"
+    }
+  ],
+  "processingTime": 1500,
+  "results": [
+    {
+      "count": 3,
+      "item": "tfc:plant/moss"
+    },
+    {
+      "item": "tfc:plant/moss",
+      "chance": 0.10
+    }
+  ]
+}

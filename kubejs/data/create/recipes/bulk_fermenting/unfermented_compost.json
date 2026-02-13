@@ -1,0 +1,18 @@
+{
+  "type": "createdieselgenerators:bulk_fermenting",
+  "ingredients": [
+    {
+      "item": "tfc:unfermented_compost"
+    }
+  ],
+  "processingTime": 2500,
+  "results": [
+    {
+      "item": "tfc:compost"
+    },
+    {
+      "item": "tfc:compost",
+      "chance": 0.15
+    }
+  ]
+}

@@ -146,22 +146,22 @@ StartupEvents.registry("fluid", event => {
         .noBlock()
     //熔融玻璃
 
-    event.create("kubejs:molten_manganese")
+    event.create("tfc:metal/manganese")
         .stillTexture('kubejs:fluid/molten/molten_manganese_still')
         .flowingTexture('kubejs:fluid/molten/molten_manganese_flowing')
     //熔融锰
 
-    event.create("kubejs:molten_titanium")
+    event.create("tfc:metal/titanium")
         .stillTexture('kubejs:fluid/molten/molten_titanium_still')
         .flowingTexture('kubejs:fluid/molten/molten_titanium_flowing')
     //熔融钛
 
-    event.create("kubejs:molten_vanadium")
+    event.create("tfc:metal/vanadium")
         .stillTexture('kubejs:fluid/molten/molten_vanadium_still')
         .flowingTexture('kubejs:fluid/molten/molten_vanadium_flowing')
     //熔融钒
 
-    event.create("kubejs:molten_titanium_alloy")
+    event.create("tfc:metal/titanium_alloy")
         .stillTexture('kubejs:fluid/molten/molten_titanium_alloy_still')
         .flowingTexture('kubejs:fluid/molten/molten_titanium_alloy_flowing')
     //熔融钛合金

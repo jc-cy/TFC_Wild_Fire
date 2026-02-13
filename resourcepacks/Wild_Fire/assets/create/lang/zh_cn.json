@@ -2,7 +2,7 @@
     
   "create.recipe.heat_requirement.heated": " ≥1350°C",
   "create.recipe.heat_requirement.none": " 无需加热",
-  "create.recipe.heat_requirement.superheated": " 极致燃烧[需要燃气炉与电磁炉]",
+  "create.recipe.heat_requirement.superheated": " 超级加热！",
   "block.create.millstone": "安山岩石磨",
   "block.create.crushing_wheel": "安山岩粉碎轮",
   

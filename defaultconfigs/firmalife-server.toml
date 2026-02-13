@@ -2,10 +2,10 @@
 [general]
 	#Days in a cellar to make cheese Aged.
 	#Range: > 1
-	cheeseAgedDays = 10
+	cheeseAgedDays = 28
 	#Days in a cellar to make cheese Vintage.
 	#Range: > 1
-	cheeseVintageDays = 45
+	cheeseVintageDays = 112
 	#Ticks to dry something on a drying mat (24000 ticks = 1 day)
 	#Range: > 1
 	dryingTicks = 12000
@@ -26,7 +26,7 @@
 	ovenCureTicks = 2000
 	#Minimum temperature for an oven to start the curing process (24000 ticks = 1 day)
 	#Range: > 1
-	ovenCureTemperature = 400
+	ovenCureTemperature = 600
 	#If true, ovens will hurt the player if they touch it without a peel in hand.
 	ovenRequirePeel = true
 	#The chance for fuel burning in an oven to drop an ash block into an ashtray.
@@ -47,16 +47,16 @@
 	cellarLevel3Temperature = -12.0
 	#The average amount of days for a crop in a greenhouse to grow. For normal crops, this is 24 days.
 	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	greenhouseGrowthDays = 12.0
+	greenhouseGrowthDays = 20.0
 	#The average amount of days for a crop in a greenhouse to consume all its water.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	greenhouseWaterDays = 8.0
+	greenhouseWaterDays = 12.0
 	#The average amount of days for a crop to consume all of a nutrient. You should probably not configure this value unless you know what it does in the code. For regular crops this value is 12.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	greenhouseNutrientDays = 8.0
 	#The max bounded distance from the climate station a greenhouse wall can be. Higher numbers = more lag.
 	#Range: 1 ~ 128
-	greenhouseRadius = 15
+	greenhouseRadius = 128
 	#The max bounded distance from the climate station a cellar wall can be. Higher numbers = more lag.
 	#Range: 1 ~ 128
 	cellarRadius = 15
@@ -64,44 +64,47 @@
 	mechanicalPowerCheatMode = false
 	#If false, sprinklers will not accept Firmalife pipes and will instead require something that exposes a fluid capability, eg. a barrel.
 	usePipesForSprinklers = true
+	#Chance (1 / N) for a block during a crop affinity sweep to be affected by a bee.
+	#Range: > 1
+	cropAffinityChance = 40
 
 [foodTraits]
 	#The modifier for the 'Dried' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitDriedModifier = 0.35
+	traitDriedModifier = 0.5
 	#The modifier for the 'Fresh' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitFreshModifier = 0.9
+	traitFreshModifier = 1.100000023841858
 	#The modifier for the 'Aged' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitAgedModifier = 0.71
+	traitAgedModifier = 0.8999999761581421
 	#The modifier for the 'Vintage' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitVintageModifier = 0.11
+	traitVintageModifier = 0.6000000238418579
 	#The modifier for the 'Oven_baked' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitOven_bakedModifier = 0.87
+	traitOven_bakedModifier = 0.8999999761581421
 	#The modifier for the 'Smoked' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitSmokedModifier = 0.61
+	traitSmokedModifier = 0.699999988079071
 	#The modifier for the 'Rancid_smoked' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	traitRancid_smokedModifier = 2.0
 	#The modifier for the 'Shelved' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitShelvedModifier = 0.4
+	traitShelvedModifier = 0.4000000059604645
 	#The modifier for the 'Shelved_2' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitShelved_2Modifier = 0.32
+	traitShelved_2Modifier = 0.3499999940395355
 	#The modifier for the 'Shelved_3' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitShelved_3Modifier = 0.20
+	traitShelved_3Modifier = 0.25
 	#The modifier for the 'Hung' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitHungModifier = 0.33
+	traitHungModifier = 0.3499999940395355
 	#The modifier for the 'Hung_2' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitHung_2Modifier = 0.3
+	traitHung_2Modifier = 0.30000001192092896
 	#The modifier for the 'Hung_3' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	traitHung_3Modifier = 0.25

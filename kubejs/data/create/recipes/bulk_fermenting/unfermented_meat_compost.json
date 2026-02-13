@@ -1,0 +1,22 @@
+{
+  "type": "createdieselgenerators:bulk_fermenting",
+  "ingredients": [
+    {
+      "item": "tfc:unfermented_meat_compost"
+    }
+  ],
+  "processingTime": 2500,
+  "results": [
+    {
+      "item": "tfc:rotten_compost"
+    },
+    {
+      "item": "tfc:rotten_compost",
+      "chance": 0.10
+    },
+    {
+      "item": "alexsmobs:maggot",
+      "chance": 0.005
+    }
+  ]
+}
