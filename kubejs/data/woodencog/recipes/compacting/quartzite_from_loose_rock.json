@@ -1,0 +1,23 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "tfc:rock/loose/quartzite"
+    },
+    {
+      "item": "tfc:rock/loose/quartzite"
+    },
+    {
+      "item": "tfc:rock/loose/quartzite"
+    },
+    {
+      "item": "tfc:rock/loose/quartzite"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:rock/raw/quartzite"
+    }
+  ]
+}

@@ -578,6 +578,21 @@ ServerEvents.tags("block", event => {
                 "tfc:burlap_cloth"
 
             ])
+            
+        //宝石原矿
+        event.add('tfc:gem_ore',
+            [
+                "tfc:ore/amethyst",
+                "tfc:ore/emerald",
+                "tfc:ore/opal",
+                "tfc:ore/pyrite",
+                "tfc:ore/ruby",
+                "tfc:ore/sapphire",
+                "tfc:ore/topaz",
+                "tfc:ore/lapis_lazuli",
+                "tfc:ore/diamond"
+
+            ])
 
         //可以作为杠杆锤的砧的砧
         event.add('vintageimprovements:anvils',

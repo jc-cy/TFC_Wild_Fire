@@ -1,0 +1,23 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "tfc:rock/loose/chert"
+    },
+    {
+      "item": "tfc:rock/loose/chert"
+    },
+    {
+      "item": "tfc:rock/loose/chert"
+    },
+    {
+      "item": "tfc:rock/loose/chert"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:rock/raw/chert"
+    }
+  ]
+}

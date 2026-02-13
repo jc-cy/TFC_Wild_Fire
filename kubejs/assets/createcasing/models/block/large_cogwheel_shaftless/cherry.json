@@ -1,7 +1,6 @@
 {
-	"format_version": "1.21.11",
+	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
-	"parent": "create:block/large_cogwheel",
 	"texture_size": [64, 64],
 	"textures": {
 		"5": "createcasing:block/large_cogwheel/cherry",
@@ -186,5 +185,43 @@
 				"down": {"uv": [3.5, 0.75, 11, 0], "rotation": 90, "texture": "#5"}
 			}
 		}
-	]
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [48, 0, 0],
+			"translation": [0, 1.5, 1],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [48, 0, 0],
+			"translation": [0, 1.5, 1],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 45.75, 0],
+			"translation": [-0.25, 1.5, 2.75],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 45.75, 0],
+			"translation": [-0.25, 1.5, 2.75],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"rotation": [0, 0, 90],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"gui": {
+			"rotation": [30.5, 22.5, 13],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"head": {
+			"rotation": [0, 0, -90],
+			"translation": [0, 8.5, -4.5]
+		},
+		"fixed": {
+			"rotation": [0, 0, 90],
+			"scale": [0.6, 0.6, 0.6]
+		}
+	}
 }

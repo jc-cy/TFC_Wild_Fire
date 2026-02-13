@@ -1,0 +1,23 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "tfc:rock/loose/schist"
+    },
+    {
+      "item": "tfc:rock/loose/schist"
+    },
+    {
+      "item": "tfc:rock/loose/schist"
+    },
+    {
+      "item": "tfc:rock/loose/schist"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:rock/raw/schist"
+    }
+  ]
+}

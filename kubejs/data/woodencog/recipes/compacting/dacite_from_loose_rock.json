@@ -1,0 +1,23 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "tfc:rock/loose/dacite"
+    },
+    {
+      "item": "tfc:rock/loose/dacite"
+    },
+    {
+      "item": "tfc:rock/loose/dacite"
+    },
+    {
+      "item": "tfc:rock/loose/dacite"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:rock/raw/dacite"
+    }
+  ]
+}

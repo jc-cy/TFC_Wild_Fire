@@ -1,0 +1,23 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "tfc:rock/loose/gabbro"
+    },
+    {
+      "item": "tfc:rock/loose/gabbro"
+    },
+    {
+      "item": "tfc:rock/loose/gabbro"
+    },
+    {
+      "item": "tfc:rock/loose/gabbro"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:rock/raw/gabbro"
+    }
+  ]
+}

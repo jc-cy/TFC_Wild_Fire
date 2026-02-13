@@ -1,0 +1,23 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "tfc:rock/loose/conglomerate"
+    },
+    {
+      "item": "tfc:rock/loose/conglomerate"
+    },
+    {
+      "item": "tfc:rock/loose/conglomerate"
+    },
+    {
+      "item": "tfc:rock/loose/conglomerate"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:rock/raw/conglomerate"
+    }
+  ]
+}
