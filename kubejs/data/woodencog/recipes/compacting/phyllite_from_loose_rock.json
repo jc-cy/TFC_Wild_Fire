@@ -1,0 +1,23 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "tfc:rock/loose/phyllite"
+    },
+    {
+      "item": "tfc:rock/loose/phyllite"
+    },
+    {
+      "item": "tfc:rock/loose/phyllite"
+    },
+    {
+      "item": "tfc:rock/loose/phyllite"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:rock/raw/phyllite"
+    }
+  ]
+}

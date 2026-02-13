@@ -1,0 +1,23 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "tfc:rock/loose/basalt"
+    },
+    {
+      "item": "tfc:rock/loose/basalt"
+    },
+    {
+      "item": "tfc:rock/loose/basalt"
+    },
+    {
+      "item": "tfc:rock/loose/basalt"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:rock/raw/basalt"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "tfc:rock/loose/chalk"
+    },
+    {
+      "item": "tfc:rock/loose/chalk"
+    },
+    {
+      "item": "tfc:rock/loose/chalk"
+    },
+    {
+      "item": "tfc:rock/loose/chalk"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:rock/raw/chalk"
+    }
+  ]
+}

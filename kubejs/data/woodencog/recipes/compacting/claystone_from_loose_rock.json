@@ -1,0 +1,23 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "tfc:rock/loose/claystone"
+    },
+    {
+      "item": "tfc:rock/loose/claystone"
+    },
+    {
+      "item": "tfc:rock/loose/claystone"
+    },
+    {
+      "item": "tfc:rock/loose/claystone"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:rock/raw/claystone"
+    }
+  ]
+}

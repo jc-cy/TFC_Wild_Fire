@@ -1,0 +1,23 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item": "tfc:rock/loose/granite"
+    },
+    {
+      "item": "tfc:rock/loose/granite"
+    },
+    {
+      "item": "tfc:rock/loose/granite"
+    },
+    {
+      "item": "tfc:rock/loose/granite"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:granite"
+    }
+  ]
+}

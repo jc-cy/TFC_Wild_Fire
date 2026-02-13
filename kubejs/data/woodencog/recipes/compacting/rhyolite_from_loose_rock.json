@@ -1,0 +1,23 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "tfc:rock/loose/rhyolite"
+    },
+    {
+      "item": "tfc:rock/loose/rhyolite"
+    },
+    {
+      "item": "tfc:rock/loose/rhyolite"
+    },
+    {
+      "item": "tfc:rock/loose/rhyolite"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:rock/raw/rhyolite"
+    }
+  ]
+}

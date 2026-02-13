@@ -1,0 +1,23 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "tfc:rock/loose/shale"
+    },
+    {
+      "item": "tfc:rock/loose/shale"
+    },
+    {
+      "item": "tfc:rock/loose/shale"
+    },
+    {
+      "item": "tfc:rock/loose/shale"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:rock/raw/shale"
+    }
+  ]
+}
