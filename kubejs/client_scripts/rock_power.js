@@ -51,7 +51,7 @@ MafuyuEvents.modifyVariedModel(event => {
 
 MafuyuEvents.modifyVariedModel(event => {
     const itemStack = event.getItemStack();
-    if (itemStack.isEnpty()) return; // 物品堆不存在时直接返回
+    if (itemStack.isEmpty()) return; // 物品堆不存在时直接返回
 
     if (!itemStack.id.includes('kubejs:heating_warmer')) return;
 
