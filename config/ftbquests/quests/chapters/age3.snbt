@@ -18,11 +18,9 @@
 			id: "77700D34A512DA4D"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "6BBD37886F288F61"
-				title: "关于大口黑鲈的了解"
-				type: "custom"
+				id: "58773342A7FE45A2"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇大口黑鲈或提供经验来解锁]&r&r"
 			tasks: [
@@ -67,6 +65,11 @@
 				id: "tfc:food/largemouth_bass"
 			}
 			id: "18F17B8B1C5F2E83"
+			rewards: [{
+				id: "5ABAD5D9A84CEF59"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀大口黑鲈或提供经验来解锁更多信息]&r&r"
@@ -102,11 +105,9 @@
 			id: "2125C5AD9EEE28BA"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "0522B61CFE4C1388"
-				title: "关于小口黑鲈的了解"
-				type: "custom"
+				id: "387736A15AA144F9"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇小口黑鲈或提供经验来解锁]&r&r"
 			tasks: [
@@ -151,6 +152,11 @@
 				id: "tfc:food/smallmouth_bass"
 			}
 			id: "10B3C78A3D408F7C"
+			rewards: [{
+				id: "3463E1EC936D5C6F"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀小口黑鲈或提供经验来解锁更多信息]&r&r"
@@ -186,11 +192,9 @@
 			id: "74D47496C221135F"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "5510A136AC1A64C9"
-				title: "关于小龙虾的了解"
-				type: "custom"
+				id: "787C887140E8D56B"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇小龙虾或提供经验来解锁]&r&r"
 			tasks: [
@@ -235,6 +239,11 @@
 				id: "tfc:food/shellfish"
 			}
 			id: "25607769712D477C"
+			rewards: [{
+				id: "44C0AE7D2A85EB28"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀小龙虾或提供经验来解锁更多信息]&r&r"
@@ -270,11 +279,9 @@
 			id: "00C3EE6C40995DA0"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "6BF154FB378129D5"
-				title: "关于弹涂鱼的了解"
-				type: "custom"
+				id: "371BA187AF160327"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇弹涂鱼或提供经验来解锁]&r&r"
 			tasks: [
@@ -306,6 +313,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:mudskipper_bucket"
 			id: "4A18577D0156049E"
+			rewards: [{
+				id: "5A269498C8156A0B"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀弹涂鱼或提供经验来解锁更多信息]&r&r"
@@ -341,11 +353,9 @@
 			id: "0574F4CA09A931AC"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "7F357D6801390A7E"
-				title: "关于海蜇的了解"
-				type: "custom"
+				id: "184E290F18503CF7"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇海蜇或提供经验来解锁]&r&r"
 			tasks: [
@@ -377,6 +387,11 @@
 			hide_until_deps_complete: true
 			icon: "tfc:bucket/jellyfish"
 			id: "780EB2EA1EC2CD48"
+			rewards: [{
+				id: "095263B4AA124FD6"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀水母或提供经验来解锁更多信息]&r&r"
@@ -412,11 +427,9 @@
 			id: "2FF2C7ACC57C62F7"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "4BC6CFB4FA3C4AF9"
-				title: "关于海牛的了解"
-				type: "custom"
+				id: "67D678F720FEE872"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇海牛或提供经验来解锁]&r&r"
 			tasks: [
@@ -448,6 +461,11 @@
 			hide_until_deps_complete: true
 			icon: "tfc:plant/manatee_grass"
 			id: "2EEA0125E4FC5A82"
+			rewards: [{
+				id: "26E3D3850F0D9305"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀海牛或提供经验来解锁更多信息]&r&r"
@@ -483,11 +501,9 @@
 			id: "081FFC1A5396C635"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "3308E0257450A0FC"
-				title: "关于湖鳟的了解"
-				type: "custom"
+				id: "4900DD94F5D00A62"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇湖鳟或提供经验来解锁]&r&r"
 			tasks: [
@@ -532,6 +548,11 @@
 				id: "tfc:food/lake_trout"
 			}
 			id: "4CA94CB99C1A21E9"
+			rewards: [{
+				id: "32A49F72EFF345F5"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀湖鳟或提供经验来解锁更多信息]&r&r"
@@ -567,11 +588,9 @@
 			id: "641C617A321348CF"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "22B5FF931832F5C3"
-				title: "关于等足虫的了解"
-				type: "custom"
+				id: "0615F06F2218F741"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇等足虫或提供经验来解锁]&r&r"
 			tasks: [
@@ -603,6 +622,11 @@
 			hide_until_deps_complete: true
 			icon: "tfc:spawn_egg/isopod"
 			id: "52F66C505C81A2A4"
+			rewards: [{
+				id: "5430471C5C56D04C"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀等足虫或提供经验来解锁更多信息]&r&r"
@@ -638,11 +662,9 @@
 			id: "461EFF7C729E94DE"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "71F506961B1DAB66"
-				title: "关于莓鲈的了解"
-				type: "custom"
+				id: "3D8DB328B2E8830C"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇莓鲈或提供经验来解锁]&r&r"
 			tasks: [
@@ -687,6 +709,11 @@
 				id: "tfc:food/crappie"
 			}
 			id: "586DF046CE110427"
+			rewards: [{
+				id: "17AB10DE8B755B06"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀莓鲈或提供经验来解锁更多信息]&r&r"
@@ -722,11 +749,9 @@
 			id: "4F2CF2EACC99CD82"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "76711057662E97F9"
-				title: "关于蓝鳃鱼的了解"
-				type: "custom"
+				id: "04155B095CB10371"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇蓝鳃鱼或提供经验来解锁]&r&r"
 			tasks: [
@@ -771,6 +796,11 @@
 				id: "tfc:food/bluegill"
 			}
 			id: "3CBD2EC6F4FA2E0D"
+			rewards: [{
+				id: "461D8DFE0A993020"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀蓝鳃鱼或提供经验来解锁更多信息]&r&r"
@@ -806,11 +836,9 @@
 			id: "6D154D92577983E3"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "6AECDA647D5A0650"
-				title: "关于虹鳟鱼的了解"
-				type: "custom"
+				id: "012FDA4322C8294F"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇虹鳟鱼或提供经验来解锁]&r&r"
 			tasks: [
@@ -855,6 +883,11 @@
 				id: "tfc:food/rainbow_trout"
 			}
 			id: "0BA9E7439BC5380A"
+			rewards: [{
+				id: "2FF739C483928247"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀虹鳟鱼或提供经验来解锁更多信息]&r&r"
@@ -890,11 +923,9 @@
 			id: "5CAAD502EB1B8F9F"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "065C1BFD3264CA8B"
-				title: "关于鲈鱼的了解"
-				type: "custom"
+				id: "771A61CC6317D45C"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇鲈鱼或提供经验来解锁]&r&r"
 			tasks: [
@@ -926,6 +957,11 @@
 			hide_until_deps_complete: true
 			icon: "naturalist:bass_bucket"
 			id: "057052842578B8ED"
+			rewards: [{
+				id: "361B4B7B6CAD8C24"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀鲈鱼或提供经验来解锁更多信息]&r&r"
@@ -961,11 +997,9 @@
 			id: "50890C1DF4B493C4"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "45F38F9EEA42B5AE"
-				title: "关于鲎的了解"
-				type: "custom"
+				id: "328E7C8DBF826E10"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇鲎或提供经验来解锁]&r&r"
 			tasks: [
@@ -997,6 +1031,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:triops_eggs"
 			id: "36794FB61916DE35"
+			rewards: [{
+				id: "33C9AB92159C0975"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀鲎或提供经验来解锁更多信息]&r&r"
@@ -1032,11 +1071,9 @@
 			id: "132F60951639D821"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "5E1BD2BC5E53D5FD"
-				title: "关于龙虾的了解"
-				type: "custom"
+				id: "0DFD0B238CFB7EA4"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇龙虾或提供经验来解锁]&r&r"
 			tasks: [
@@ -1081,6 +1118,11 @@
 				id: "tfc:food/cooked_shellfish"
 			}
 			id: "29CC745B3988E59D"
+			rewards: [{
+				id: "34E96D9BB11FEF9F"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀龙虾或提供经验来解锁更多信息]&r&r"
@@ -1116,11 +1158,9 @@
 			id: "74821EAAC7F37686"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "25EB1D9568229485"
-				title: "关于龟的了解"
-				type: "custom"
+				id: "39B33D56B8FD37A2"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇海龟或提供经验来解锁]&r&r"
 			tasks: [
@@ -1165,6 +1205,11 @@
 				id: "tfc:food/turtle"
 			}
 			id: "7744506C7A0F7785"
+			rewards: [{
+				id: "4C4F6AEEE73A8A02"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀海龟或提供经验来解锁更多信息]&r&r"
@@ -1201,11 +1246,9 @@
 			invisible: true
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "62488F2C5B38B2A0"
-				title: "关于大王乌贼的了解"
-				type: "custom"
+				id: "494FA3FE7B6809CA"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇&3大王乌贼&8来解锁]&r&r"
 			tasks: [{
@@ -1228,6 +1271,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:lost_tentacle"
 			id: "452E309D564EB089"
+			rewards: [{
+				id: "6893A1B4DE67C7E2"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀大王乌贼或提供经验来解锁更多信息]&r&r"
@@ -1264,11 +1312,9 @@
 			invisible: true
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "5A0FAB229CAB15F7"
-				title: "关于抹香鲸的了解"
-				type: "custom"
+				id: "63C69E7095C37705"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇&3抹香鲸&8来解锁]&r&r"
 			tasks: [{
@@ -1291,6 +1337,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:cachalot_whale_tooth"
 			id: "68F516C02E2EDCBB"
+			rewards: [{
+				id: "3C84443950DBA73E"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀抹香鲸或来解锁更多信息]&r&r"
@@ -1317,11 +1368,9 @@
 			id: "524F2A5BA9E8C2D1"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "26BE3F58BFF5C1FD"
-				title: "关于水滴鱼的了解"
-				type: "custom"
+				id: "647BFE5097419D00"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇水滴鱼或提供经验来解锁]&r&r"
 			tasks: [
@@ -1353,6 +1402,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:blobfish"
 			id: "4506F9A3FC9BAB57"
+			rewards: [{
+				id: "2C79EC5B0E3F6246"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀水滴鱼或提供经验来解锁更多信息]&r&r"
@@ -1388,11 +1442,9 @@
 			id: "398E6C3283BAF08C"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "1FEFB51EA0D9AACA"
-				title: "关于皱鳃鲨的了解"
-				type: "custom"
+				id: "112074B5B6FBF1C2"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇皱鳃鲨或提供经验来解锁]&r&r"
 			tasks: [
@@ -1424,6 +1476,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:frilled_shark_bucket"
 			id: "62EFFDCAAD85988B"
+			rewards: [{
+				id: "4A2B9AD610D3E8A3"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀皱鳃鲨或提供经验来解锁更多信息]&r&r"
@@ -1459,11 +1516,9 @@
 			id: "52A2C31AADA5BCA7"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "4CC30153C3E4630A"
-				title: "关于虎鲸的了解"
-				type: "custom"
+				id: "6F21DEF3DCF32489"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇虎鲸或提供经验来解锁]&r&r"
 			tasks: [
@@ -1495,6 +1550,11 @@
 			hide_until_deps_complete: true
 			icon: "tfc:blubber"
 			id: "43133DEC627E78E8"
+			rewards: [{
+				id: "5E1AD8B4621B4EE5"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀虎鲸或提供经验来解锁更多信息]&r&r"
@@ -1530,11 +1590,9 @@
 			id: "5FC57699AE0D6808"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "2EC351F607472EF3"
-				title: "关于锤头鲨的了解"
-				type: "custom"
+				id: "41F88B9509C325DD"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇锤头鲨或提供经验来解锁]&r&r"
 			tasks: [
@@ -1566,6 +1624,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:shark_tooth"
 			id: "1EE806393729A352"
+			rewards: [{
+				id: "60B4DEFB6048A2E3"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀锤头鲨或提供经验来解锁更多信息]&r&r"
@@ -1601,11 +1664,9 @@
 			id: "228611F6F2F1EF43"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "47B7578FD813ECBB"
-				title: "关于飞鱼的了解"
-				type: "custom"
+				id: "5F516D8ED66C3665"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇飞鱼或提供经验来解锁]&r&r"
 			tasks: [
@@ -1637,6 +1698,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:flying_fish"
 			id: "78580D328EB48297"
+			rewards: [{
+				id: "1482BC005A8C41B4"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀飞鱼或提供经验来解锁更多信息]&r&r"
@@ -1677,11 +1743,9 @@
 			id: "02C9D9FDB0C0FD4B"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "0BA8A3B15007762F"
-				title: "关于骷髅剑鱼的了解"
-				type: "custom"
+				id: "6E6A11322EEFE90C"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇骷髅剑鱼或提供经验来解锁]&r&r"
 			tasks: [
@@ -1719,6 +1783,11 @@
 				}
 			}
 			id: "10EC2DE14071B461"
+			rewards: [{
+				id: "2E0DE115BC228EC3"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀骷髅剑鱼或提供经验来解锁更多信息]&r&r"
@@ -1754,11 +1823,9 @@
 			id: "34814B035548D51D"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "37D799D2F47C5880"
-				title: "关于孔雀的了解"
-				type: "custom"
+				id: "570538BF6FDDE9C3"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇孔雀或提供经验来解锁]&r&r"
 			tasks: [
@@ -1799,6 +1866,11 @@
 				id: "tfc:ore/small_malachite"
 			}
 			id: "5F05BB7BDDF7FA39"
+			rewards: [{
+				id: "5772968C9E39C7C0"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀孔雀或提供经验来解锁更多信息]&r&r"
@@ -1834,11 +1906,9 @@
 			id: "08316896ACB94B56"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "3C8B007275B3F5CD"
-				title: "关于松鸡的了解"
-				type: "custom"
+				id: "2480D932B9B00D62"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇松鸡或提供经验来解锁]&r&r"
 			tasks: [
@@ -1883,6 +1953,11 @@
 				id: "tfc:food/grouse"
 			}
 			id: "4D5DC889525C092E"
+			rewards: [{
+				id: "2089ADB57D3AB53B"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀松鸡或提供经验来解锁更多信息]&r&r"
@@ -1918,11 +1993,9 @@
 			id: "247EC75FFC7EFDA5"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "3BE37C82F0BD1287"
-				title: "关于火鸡的了解"
-				type: "custom"
+				id: "5F29BCD2275156BD"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇火鸡或提供经验来解锁]&r&r"
 			tasks: [
@@ -1967,6 +2040,11 @@
 				id: "tfc:food/turkey"
 			}
 			id: "583149A00F7F646E"
+			rewards: [{
+				id: "216AD4F1FFA96BA9"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀火鸡或提供经验来解锁更多信息]&r&r"
@@ -2002,11 +2080,9 @@
 			id: "26BAB4CEFD8AA28C"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "2DFF498BC55DC889"
-				title: "关于雉鸡的了解"
-				type: "custom"
+				id: "44E292BF60D163CF"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇雉鸡或提供经验来解锁]&r&r"
 			tasks: [
@@ -2051,6 +2127,11 @@
 				id: "tfc:food/pheasant"
 			}
 			id: "00FAC390119FBAE1"
+			rewards: [{
+				id: "3F0784E2551A82BF"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀雉鸡或提供经验来解锁更多信息]&r&r"
@@ -2086,11 +2167,9 @@
 			id: "46DF51E19E25E6C9"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "1562FA49559FF967"
-				title: "关于鸡的了解"
-				type: "custom"
+				id: "2C8BA204A5C73250"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇鸡或提供经验来解锁]&r&r"
 			tasks: [
@@ -2135,6 +2214,11 @@
 				id: "tfc:food/chicken"
 			}
 			id: "013A2054AB857410"
+			rewards: [{
+				id: "1C2093B97147F3E3"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀鸡或提供经验来解锁更多信息]&r&r"
@@ -2170,11 +2254,9 @@
 			id: "6D0140140FD21ED3"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "7B0F043EDBB5A0A1"
-				title: "关于鹌鹑的了解"
-				type: "custom"
+				id: "77BEBAAB101A0BE2"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇鹌鹑或提供经验来解锁]&r&r"
 			tasks: [
@@ -2219,6 +2301,11 @@
 				id: "tfc:food/quail"
 			}
 			id: "239C755C1ECD01F8"
+			rewards: [{
+				id: "37D613DF6A3D80C9"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀鹌鹑或提供经验来解锁更多信息]&r&r"
@@ -2254,11 +2341,9 @@
 			id: "5771E693AAC3D5B1"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "371941D18FE45864"
-				title: "关于乌鸦的了解"
-				type: "custom"
+				id: "39BEA2770ADB4FFC"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇乌鸦或提供经验来解锁]&r&r"
 			tasks: [
@@ -2290,6 +2375,11 @@
 			hide_until_deps_complete: true
 			icon: "eidolon:raven_feather"
 			id: "7FDCCD02C4B0E11F"
+			rewards: [{
+				id: "21349F9B58A76F45"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀乌鸦或提供经验来解锁更多信息]&r&r"
@@ -2325,11 +2415,9 @@
 			id: "2480D3759281B3A7"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "089DFA99301A88A5"
-				title: "关于冠蓝鸦的了解"
-				type: "custom"
+				id: "6818B66F2E0BAC84"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇冠蓝鸦或提供经验来解锁]&r&r"
 			tasks: [
@@ -2367,6 +2455,11 @@
 				}
 			}
 			id: "61D0B1A03BD037F8"
+			rewards: [{
+				id: "4536376E7AC9EA7F"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀冠蓝鸦或提供经验来解锁更多信息]&r&r"
@@ -2402,11 +2495,9 @@
 			id: "6DB6ABFCFA39DC76"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "220DAF9808C0B251"
-				title: "关于巨嘴鸟的了解"
-				type: "custom"
+				id: "36EA3F8F48F9E19E"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇巨嘴鸟或提供经验来解锁]&r&r"
 			tasks: [
@@ -2451,6 +2542,11 @@
 				}
 			}
 			id: "7F7FC3329C3A6F62"
+			rewards: [{
+				id: "2328353BF795CF3D"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀巨嘴鸟或提供经验来解锁更多信息]&r&r"
@@ -2486,11 +2582,9 @@
 			id: "181EAE3D1B4D9E7B"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "65F55D558E2AA1AC"
-				title: "关于海鸥的了解"
-				type: "custom"
+				id: "564EC936B7AB8A85"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇海鸥或提供经验来解锁]&r&r"
 			tasks: [
@@ -2531,6 +2625,11 @@
 				id: "tfc:food/baked_potato"
 			}
 			id: "5B40F3F4620B65CB"
+			rewards: [{
+				id: "5B157297CE145930"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀海鸥或提供经验来解锁更多信息]&r&r"
@@ -2566,11 +2665,9 @@
 			id: "3AC19D6A80ACC6EF"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "29DE99239A1FA2EF"
-				title: "关于白头海雕的了解"
-				type: "custom"
+				id: "6CCC9853E9C9141A"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇白头海雕或提供经验来解锁]&r&r"
 			tasks: [
@@ -2602,6 +2699,11 @@
 			hide_until_deps_complete: true
 			icon: "totemic:eagle_feather"
 			id: "5ADE7F8606CA6E5C"
+			rewards: [{
+				id: "3072E0DE316171FF"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀白头海雕或提供经验来解锁更多信息]&r&r"
@@ -2637,11 +2739,9 @@
 			id: "49B8A3A12C05D51A"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "282B4408B17967D2"
-				title: "关于走鹃的了解"
-				type: "custom"
+				id: "1227F0365CAD3E27"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇走鹃或提供经验来解锁]&r&r"
 			tasks: [
@@ -2673,6 +2773,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:roadrunner_feather"
 			id: "5A69F63B9C6F6928"
+			rewards: [{
+				id: "7D872FA77B28A186"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀走鹃或提供经验来解锁更多信息]&r&r"
@@ -2708,11 +2813,9 @@
 			id: "708554740E53B752"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "3F0909E48FE7EE79"
-				title: "关于鲸头鹳的了解"
-				type: "custom"
+				id: "63CDA3B1755F5E60"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇鲸头鹳或提供经验来解锁]&r&r"
 			tasks: [
@@ -2745,6 +2848,11 @@
 			hide_until_deps_complete: true
 			icon: "firmalife:spoon"
 			id: "141CD0723C0CFB61"
+			rewards: [{
+				id: "6F18B3DE1C56A89F"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀鲸头鹳或提供经验来解锁更多信息]&r&r"
@@ -2780,11 +2888,9 @@
 			id: "73269C4BFDB38164"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "2AB596DF0BE1A1BE"
-				title: "关于鸸鹋的了解"
-				type: "custom"
+				id: "18A280E1F979CA04"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇鸸鹋或提供经验来解锁]&r&r"
 			tasks: [
@@ -2817,6 +2923,11 @@
 			icon: "alexsmobs:emu_feather"
 			id: "1483D9967FDB0259"
 			ignore_reward_blocking: true
+			rewards: [{
+				id: "68D17ED3104F68AC"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀鸸鹋或提供经验来解锁更多信息]&r&r"
@@ -2852,11 +2963,9 @@
 			id: "110F269715977C03"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "128D7102A820C104"
-				title: "关于山羊的了解"
-				type: "custom"
+				id: "2F3560DC9A6B067C"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇山羊或提供经验来解锁]&r&r"
 			tasks: [
@@ -2888,6 +2997,11 @@
 			hide_until_deps_complete: true
 			icon: "firmalife:bucket/goat_milk"
 			id: "7C289058C407A6D7"
+			rewards: [{
+				id: "6BD3771DCA9CC034"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀山羊或提供经验来解锁更多信息]&r&r"
@@ -2923,11 +3037,9 @@
 			id: "6BE9F21FA2117902"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "3E71D2C5A4804B7F"
-				title: "关于牛的了解"
-				type: "custom"
+				id: "5BB5795F81B6AABF"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇牛或提供经验来解锁]&r&r"
 			tasks: [
@@ -2959,6 +3071,11 @@
 			hide_until_deps_complete: true
 			icon: "minecraft:milk_bucket"
 			id: "7EAF2671D366A306"
+			rewards: [{
+				id: "2AF236ECA1E4C7C1"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀牛或提供经验来解锁更多信息]&r&r"
@@ -2994,11 +3111,9 @@
 			id: "2B60371A3480C0B5"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "388C94A9F2F9E0B8"
-				title: "关于牦牛的了解"
-				type: "custom"
+				id: "0B5ACB21AF0F1D9A"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇牦牛或提供经验来解锁]&r&r"
 			tasks: [
@@ -3030,6 +3145,11 @@
 			hide_until_deps_complete: true
 			icon: "firmalife:bucket/yak_milk"
 			id: "65EC9C18BAE6999E"
+			rewards: [{
+				id: "7D16C49EF6005F73"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀牦牛或提供经验来解锁更多信息]&r&r"
@@ -3065,11 +3185,9 @@
 			id: "765209D27E8E2FF4"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "4EEBC60DDECE826A"
-				title: "关于猪的了解"
-				type: "custom"
+				id: "54A3BCEBCB2B6E94"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇猪或提供经验来解锁]&r&r"
 			tasks: [
@@ -3114,6 +3232,11 @@
 				id: "tfc:food/pork"
 			}
 			id: "0F18528F1AC1ACBA"
+			rewards: [{
+				id: "7C720AC3DC63AEAC"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀猪或提供经验来解锁更多信息]&r&r"
@@ -3149,11 +3272,9 @@
 			id: "207DAAA4BC5A08D8"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "23C4B2B1927075D6"
-				title: "关于绵羊的了解"
-				type: "custom"
+				id: "5310612E26A7F693"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇绵羊或提供经验来解锁]&r&r"
 			tasks: [
@@ -3185,6 +3306,11 @@
 			hide_until_deps_complete: true
 			icon: "tfc:wool"
 			id: "6DB5CFCEFF3A8973"
+			rewards: [{
+				id: "673F3DC6790E3179"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀绵羊或提供经验来解锁更多信息]&r&r"
@@ -3220,11 +3346,9 @@
 			id: "427BE483ACA4477E"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "47E5C3F06A142347"
-				title: "关于羊驼的了解"
-				type: "custom"
+				id: "1E31A7610A75FA0D"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇羊驼或提供经验来解锁]&r&r"
 			tasks: [
@@ -3256,6 +3380,11 @@
 			hide_until_deps_complete: true
 			icon: "tfc:wool"
 			id: "66E5764B30E1F946"
+			rewards: [{
+				id: "7AB78E820D7B1357"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀羊驼或提供经验来解锁更多信息]&r&r"
@@ -3291,11 +3420,9 @@
 			id: "7E4B5D33C9E86883"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "5DB6D0F0752E4DD3"
-				title: "关于驯鹿的了解"
-				type: "custom"
+				id: "36E7F3C4D05906D3"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇驯鹿或提供经验来解锁]&r&r"
 			tasks: [
@@ -3340,6 +3467,11 @@
 				id: "tfc:food/venison"
 			}
 			id: "1895234D55AFA6A8"
+			rewards: [{
+				id: "61337225E966A62A"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀驯鹿或提供经验来解锁更多信息]&r&r"
@@ -3375,11 +3507,9 @@
 			id: "15928D9D1D156F69"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "0ABE14F169327D9F"
-				title: "关于驼鹿的了解"
-				type: "custom"
+				id: "02AAD61F487B8057"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇驼鹿或提供经验来解锁]&r&r"
 			tasks: [
@@ -3411,6 +3541,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:moose_antler"
 			id: "5C384BA8475E8476"
+			rewards: [{
+				id: "3748DB623BCE471D"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀驼鹿或提供经验来解锁更多信息]&r&r"
@@ -3446,11 +3581,9 @@
 			id: "535FC5B72877EDFB"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "3B3A7423353CA6A0"
-				title: "关于麋鹿的了解"
-				type: "custom"
+				id: "5A9A249EB91EAA57"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇麋鹿或提供经验来解锁]&r&r"
 			tasks: [
@@ -3488,6 +3621,11 @@
 				}
 			}
 			id: "4878A6C016EF9A1A"
+			rewards: [{
+				id: "21622122B198F1F7"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀麋鹿或提供经验来解锁更多信息]&r&r"
@@ -3523,11 +3661,9 @@
 			id: "6AA1E6DA7E30392A"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "6970751B4FA43266"
-				title: "关于麝牛的了解"
-				type: "custom"
+				id: "7171CFF5020D5400"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇麝牛或提供经验来解锁]&r&r"
 			tasks: [
@@ -3559,6 +3695,11 @@
 			hide_until_deps_complete: true
 			icon: "butcher:cowhoof"
 			id: "7EB53AA2F6FB787C"
+			rewards: [{
+				id: "59E44D255354D6F1"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀麝牛或提供经验来解锁更多信息]&r&r"
@@ -3594,11 +3735,9 @@
 			id: "656D0AD7432FC404"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "2A1DFF1142150D5A"
-				title: "关于卷尾猴的了解"
-				type: "custom"
+				id: "344CFCE5A5768C0B"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇卷尾猴或提供经验来解锁]&r&r"
 			tasks: [
@@ -3630,6 +3769,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:sopa_de_macaco"
 			id: "0B5A82E5F2C13FFC"
+			rewards: [{
+				id: "3C5D5A5F0B2FD2F9"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀卷尾猴或提供经验来解锁更多信息]&r&r"
@@ -3665,11 +3809,9 @@
 			id: "0165A28C72D4DF38"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "7B9FCF1A4339EC18"
-				title: "关于大猩猩的了解"
-				type: "custom"
+				id: "243C635C75EA5885"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇大猩猩或提供经验来解锁]&r&r"
 			tasks: [
@@ -3709,6 +3851,11 @@
 				id: "alexsmobs:banana"
 			}
 			id: "0E14CEA22B83FA94"
+			rewards: [{
+				id: "62BFC46F3AB2162A"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀大猩猩或提供经验来解锁更多信息]&r&r"
@@ -3744,11 +3891,9 @@
 			id: "574716506D54E013"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "0CA3046D7C4374EA"
-				title: "关于浣熊的了解"
-				type: "custom"
+				id: "2B94996A2E5BCC75"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇浣熊或提供经验来解锁]&r&r"
 			tasks: [
@@ -3780,6 +3925,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:raccoon_tail"
 			id: "0308F4FBAA5D6E04"
+			rewards: [{
+				id: "654974A0841AB065"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀浣熊或提供经验来解锁更多信息]&r&r"
@@ -3815,11 +3965,9 @@
 			id: "37C93A7C7A3A0773"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "204AAF84EA552038"
-				title: "关于牛羚的了解"
-				type: "custom"
+				id: "45C64889E017FCF1"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇牛羚或提供经验来解锁]&r&r"
 			tasks: [
@@ -3864,6 +4012,11 @@
 				id: "butcher:raw_chuck_steak"
 			}
 			id: "024EE7DCFFCBBFCC"
+			rewards: [{
+				id: "653CDF8FBADFA84E"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀牛羚或提供经验来解锁更多信息]&r&r"
@@ -3899,11 +4052,9 @@
 			id: "7C8905EB4E1E4687"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "14231DF3BF241DCA"
-				title: "关于狮尾狒狒的了解"
-				type: "custom"
+				id: "48FA238F02016B1A"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇狮尾狒狒或提供经验来解锁]&r&r"
 			tasks: [
@@ -3935,6 +4086,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:bear_fur"
 			id: "211C149CD6FF90B4"
+			rewards: [{
+				id: "56AC65FAEF0B6B9E"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀狮尾狒狒或提供经验来解锁更多信息]&r&r"
@@ -3970,11 +4126,9 @@
 			id: "059DDD34B64A0F47"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "71995F597E2F774D"
-				title: "关于瞪羚的了解"
-				type: "custom"
+				id: "62E3B5131FEE8436"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇瞪羚或提供经验来解锁]&r&r"
 			tasks: [
@@ -4007,6 +4161,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:gazelle_horn"
 			id: "679C63A27E40C9F4"
+			rewards: [{
+				id: "5E842AE6F381628E"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀瞪羚或提供经验来解锁更多信息]&r&r"
@@ -4042,11 +4201,9 @@
 			id: "16A5A903AD9DCD42"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "4ABF15290FF27D04"
-				title: "关于紫羚的了解"
-				type: "custom"
+				id: "0A54FCD5BE8F0E0C"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇紫羚或提供经验来解锁]&r&r"
 			tasks: [
@@ -4092,6 +4249,11 @@
 			}
 			id: "6CDC862D5578D5CB"
 			optional: true
+			rewards: [{
+				id: "7EC275ADCA687A05"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀紫羚或提供经验来解锁更多信息]&r&r"
@@ -4127,11 +4289,9 @@
 			id: "7F7CBFC289E9DEBB"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "6832A4C7D9511AF4"
-				title: "关于臭鼬的了解"
-				type: "custom"
+				id: "6790D60C215C06D8"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇臭鼬或提供经验来解锁]&r&r"
 			tasks: [
@@ -4163,6 +4323,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:stink_bottle"
 			id: "5336DA58BEF6E752"
+			rewards: [{
+				id: "41C109FF26EE47BF"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀臭鼬或提供经验来解锁更多信息]&r&r"
@@ -4198,11 +4363,9 @@
 			id: "0B32A4C769006051"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "4569C630FB2CBE3C"
-				title: "关于跳鼠的了解"
-				type: "custom"
+				id: "71C397ACA455736C"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇跳鼠或提供经验来解锁]&r&r"
 			tasks: [
@@ -4234,6 +4397,11 @@
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:wire_electrum"
 			id: "600A20784198A2C0"
+			rewards: [{
+				id: "3BF3FD09D155C35B"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀跳鼠或提供经验来解锁更多信息]&r&r"
@@ -4269,11 +4437,9 @@
 			id: "4608E4854F59AD5A"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "3D4B8D3741DF4E0A"
-				title: "关于食蚁兽的了解"
-				type: "custom"
+				id: "2EDCE0AF7BD459A5"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇食蚁兽或提供经验来解锁]&r&r"
 			tasks: [
@@ -4305,6 +4471,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:leafcutter_ant_chamber"
 			id: "53047746B85CA916"
+			rewards: [{
+				id: "184B3868AF7B692C"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀食蚁兽或提供经验来解锁更多信息]&r&r"
@@ -4340,11 +4511,9 @@
 			id: "5886F3140843DA83"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "0CE9539117C6F435"
-				title: "关于鸭嘴兽的了解"
-				type: "custom"
+				id: "6CCDADD6DB04EA36"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇鸭嘴兽或提供经验来解锁]&r&r"
 			tasks: [
@@ -4376,6 +4545,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:platypus_bucket"
 			id: "00632C8E6EAA31FC"
+			rewards: [{
+				id: "7559BA3708428F05"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀鸭嘴兽或提供经验来解锁更多信息]&r&r"
@@ -4411,11 +4585,9 @@
 			id: "12DEFA182557B071"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "5CD416FA332A335C"
-				title: "关于鹿的了解"
-				type: "custom"
+				id: "2EE9669238CCBCD2"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇鹿或提供经验来解锁]&r&r"
 			tasks: [
@@ -4447,6 +4619,11 @@
 			hide_until_deps_complete: true
 			icon: "naturalist:antler"
 			id: "5777AE139E404492"
+			rewards: [{
+				id: "03374FADE11A4BBB"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀鹿或提供经验来解锁更多信息]&r&r"
@@ -4482,11 +4659,9 @@
 			id: "7A8BE0808F62B3B5"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "63167D3A9282AF75"
-				title: "关于鼠的了解"
-				type: "custom"
+				id: "26366ADB37FA6F39"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇鼠或提供经验来解锁]&r&r"
 			tasks: [
@@ -4519,6 +4694,11 @@
 			icon: "warriorsofpastepoch:rat_carcass"
 			id: "27B323DCC4D84AF1"
 			optional: true
+			rewards: [{
+				id: "2CD3C8DE2C11A8F5"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀鼠或提供经验来解锁更多信息]&r&r"
@@ -4554,11 +4734,9 @@
 			id: "033FE153CEF71DB7"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "71A26736B8A0DFD6"
-				title: "关于企鹅的了解"
-				type: "custom"
+				id: "76F94F7DDAB30E5F"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇企鹅或提供经验来解锁]&r&r"
 			tasks: [
@@ -4590,6 +4768,11 @@
 			hide_until_deps_complete: true
 			icon: "tfc:spawn_egg/penguin"
 			id: "1437ADF4784A6CD9"
+			rewards: [{
+				id: "1172C242B368F364"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀企鹅或提供经验来解锁更多信息]&r&r"
@@ -4625,11 +4808,9 @@
 			id: "7E9EF8F60D1CCC99"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "34F7D7D4343BE1E1"
-				title: "关于凯门鳄的了解"
-				type: "custom"
+				id: "78DBE4AB04A7C1EF"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇凯门鳄或提供经验来解锁]&r&r"
 			tasks: [
@@ -4661,6 +4842,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:caiman_egg"
 			id: "5E1684F389310576"
+			rewards: [{
+				id: "25848AB31A788020"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀凯门鳄或提供经验来解锁更多信息]&r&r"
@@ -4696,11 +4882,9 @@
 			id: "7EB046A24267F537"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "3B468DFF42BA204A"
-				title: "关于切叶蚁的了解"
-				type: "custom"
+				id: "55E5A89FDDD29329"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇切叶蚁或提供经验来解锁]&r&r"
 			tasks: [
@@ -4732,6 +4916,11 @@
 			hide_until_deps_complete: true
 			icon: "firmalife:fruit_leaf"
 			id: "04F2ACD8CD72DB00"
+			rewards: [{
+				id: "06AC259C7ACFE6BB"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀切叶蚁或提供经验来解锁更多信息]&r&r"
@@ -4768,11 +4957,9 @@
 			invisible: true
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "300A5E2027F6199C"
-				title: "关于剑齿虎的了解"
-				type: "custom"
+				id: "73EBDC62F44CC2FE"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇&6剑齿虎&8来解锁]&r&r"
 			tasks: [{
@@ -4795,6 +4982,11 @@
 			hide_until_deps_complete: true
 			icon: "bsa:sabertooth_fang"
 			id: "3B9741D1B579A493"
+			rewards: [{
+				id: "6CEE2767BFA4D84B"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀剑齿虎来解锁更多信息]&r&r"
@@ -4821,11 +5013,9 @@
 			id: "25B90E173CAC87AE"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "70A9856526BA62D3"
-				title: "关于北极熊的了解"
-				type: "custom"
+				id: "0A365330A33AB7BC"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇北极熊或提供经验来解锁]&r&r"
 			tasks: [
@@ -4857,6 +5047,11 @@
 			hide_until_deps_complete: true
 			icon: "textile:polar_bear_fur"
 			id: "3D9BDB36C6E0E580"
+			rewards: [{
+				id: "1FA7E96B1D9608D2"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀北极熊或提供经验来解锁更多信息]&r&r"
@@ -4892,11 +5087,9 @@
 			id: "363D8E7A82F9BF93"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "42DF742C7230FA4F"
-				title: "关于响尾蛇的了解"
-				type: "custom"
+				id: "76C200EB9F86DC88"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇响尾蛇或提供经验来解锁]&r&r"
 			tasks: [
@@ -4928,6 +5121,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:shed_snake_skin"
 			id: "01D2B3C65F255009"
+			rewards: [{
+				id: "34B05691B722D6D1"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀响尾蛇或提供经验来解锁更多信息]&r&r"
@@ -4963,11 +5161,9 @@
 			id: "2EE2AA7519941F3F"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "3E2D18FDE3C9E294"
-				title: "关于大象的了解"
-				type: "custom"
+				id: "10B033AB10ED23D3"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇大象或提供经验来解锁]&r&r"
 			tasks: [
@@ -4999,6 +5195,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:spawn_egg_elephant"
 			id: "71036DB8000CC785"
+			rewards: [{
+				id: "5EC1DBB13D40963C"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀大象或提供经验来解锁更多信息]&r&r"
@@ -5034,11 +5235,9 @@
 			id: "36722C778BD0DE34"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "085C3733A17F1159"
-				title: "关于大鳄龟的了解"
-				type: "custom"
+				id: "086AA70C89D71CC1"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇大鳄龟或提供经验来解锁]&r&r"
 			tasks: [
@@ -5076,6 +5275,11 @@
 				}
 			}
 			id: "2263050B329A2D37"
+			rewards: [{
+				id: "3DAF8E4733B739A1"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀大鳄龟或提供经验来解锁更多信息]&r&r"
@@ -5112,11 +5316,9 @@
 			invisible: true
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "3266356BF2F9A507"
-				title: "关于恐狼的了解"
-				type: "custom"
+				id: "074ADF73425441FB"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇&9恐狼&8来解锁]&r&r"
 			tasks: [{
@@ -5139,6 +5341,11 @@
 			hide_until_deps_complete: true
 			icon: "textile:direwolf_fur"
 			id: "2C4D852FCB0A6B25"
+			rewards: [{
+				id: "6C8F578DAD737CDC"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀恐狼来解锁更多信息]&r&r"
@@ -5165,11 +5372,9 @@
 			id: "59F6C7A61C83C11E"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "3684AFD32957D9CD"
-				title: "关于拟态章鱼的了解"
-				type: "custom"
+				id: "466DC6506EFAEC2B"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇拟态章鱼或提供经验来解锁]&r&r"
 			tasks: [
@@ -5214,6 +5419,11 @@
 				id: "tfc:food/calamari"
 			}
 			id: "3426CB42B0DB26E9"
+			rewards: [{
+				id: "7F3E4556C776B2C5"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀拟态章鱼或提供经验来解锁更多信息]&r&r"
@@ -5249,11 +5459,9 @@
 			id: "5ECC8C2080195FA5"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "63AC50245A0984E6"
-				title: "关于栉水母的了解"
-				type: "custom"
+				id: "551CF24E7BAA145A"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇栉水母或提供经验来解锁]&r&r"
 			tasks: [
@@ -5285,6 +5493,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:comb_jelly_bucket"
 			id: "1F56FEB7F7035433"
+			rewards: [{
+				id: "5ECB745BE0EFDB07"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀栉水母或提供经验来解锁更多信息]&r&r"
@@ -5320,11 +5533,9 @@
 			id: "2193B0D589F37A22"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "18A989058611FD06"
-				title: "关于棕熊的了解"
-				type: "custom"
+				id: "4FD4AB7AE773CBD6"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇棕熊或提供经验来解锁]&r&r"
 			tasks: [
@@ -5356,6 +5567,11 @@
 			hide_until_deps_complete: true
 			icon: "textile:grizzly_bear_fur"
 			id: "5F7640B97607BC3A"
+			rewards: [{
+				id: "6C874E341953B845"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀棕熊或提供经验来解锁更多信息]&r&r"
@@ -5391,11 +5607,9 @@
 			id: "0743B0DD2FA39912"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "78709CE343B56045"
-				title: "关于森蚺的了解"
-				type: "custom"
+				id: "7C251B5449525878"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇森蚺或提供经验来解锁]&r&r"
 			tasks: [
@@ -5429,6 +5643,11 @@
 			icon: "alexsmobs:bone_serpent_tooth"
 			id: "769B5A526380FD47"
 			optional: true
+			rewards: [{
+				id: "57D210DB16E6CD14"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀森蚺或提供经验来解锁更多信息]&r&r"
@@ -5464,11 +5683,9 @@
 			id: "400A3FC2A6BA0F02"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "115DE7F0FA86E23E"
-				title: "关于水龟的了解"
-				type: "custom"
+				id: "2BB1ACD1238A7EFF"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇水龟或提供经验来解锁]&r&r"
 			tasks: [
@@ -5500,6 +5717,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:terrapin_bucket"
 			id: "0890D7A5574F7797"
+			rewards: [{
+				id: "6F1D917A9488A116"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀水龟或提供经验来解锁更多信息]&r&r"
@@ -5535,11 +5757,9 @@
 			id: "30C4D9CCA1265467"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "5E80E3B8F18C114A"
-				title: "关于沙漠蛛蜂的了解"
-				type: "custom"
+				id: "467452282B83CE77"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇沙漠蛛蜂或提供经验来解锁]&r&r"
 			tasks: [
@@ -5577,6 +5797,11 @@
 				}
 			}
 			id: "4DBB6792EC0BF32C"
+			rewards: [{
+				id: "051E33AA6AC6D9AE"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀沙漠蛛蜂或提供经验来解锁更多信息]&r&r"
@@ -5613,11 +5838,9 @@
 			invisible: true
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "413CB8717CF4B1F6"
-				title: "关于河马的了解"
-				type: "custom"
+				id: "323148375478FE99"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇河马或提供经验来解锁]&r&r"
 			tasks: [
@@ -5649,6 +5872,11 @@
 			hide_until_deps_complete: true
 			icon: "naturalist:hippo_spawn_egg"
 			id: "68C1537B034F4103"
+			rewards: [{
+				id: "2DD1008403D01DD0"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀河马或提供经验来解锁更多信息]&r&r"
@@ -5684,11 +5912,9 @@
 			id: "3CF9D8D15DC0D924"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "337A05651207DE93"
-				title: "关于海豹的了解"
-				type: "custom"
+				id: "05795704F2534DC3"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇海豹或提供经验来解锁]&r&r"
 			tasks: [
@@ -5733,6 +5959,11 @@
 				id: "tfc:food/dried_seaweed"
 			}
 			id: "0070C6E82144083D"
+			rewards: [{
+				id: "11115B4EFEC36240"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀海豹或提供经验来解锁更多信息]&r&r"
@@ -5768,11 +5999,9 @@
 			id: "2B217F48C46ED121"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "448BB07904067C35"
-				title: "关于犀牛的了解"
-				type: "custom"
+				id: "5184D71377E5EDF0"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇犀牛或提供经验来解锁]&r&r"
 			tasks: [
@@ -5804,6 +6033,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:spawn_egg_rhinoceros"
 			id: "0196E7A27673A65D"
+			rewards: [{
+				id: "37D83C84C0855F85"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀犀牛或提供经验来解锁更多信息]&r&r"
@@ -5839,11 +6073,9 @@
 			id: "1E2D836D0F44BE0B"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "04D780903B38B661"
-				title: "关于狮子的了解"
-				type: "custom"
+				id: "48044C87C79B4A00"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇狮子或提供经验来解锁]&r&r"
 			tasks: [
@@ -5875,6 +6107,11 @@
 			hide_until_deps_complete: true
 			icon: "textile:lion_fur"
 			id: "35556D4C7F76BB44"
+			rewards: [{
+				id: "20BB324071E96413"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀狮子或提供经验来解锁更多信息]&r&r"
@@ -5910,11 +6147,9 @@
 			id: "76A417C1C70537E9"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "3819184C14AA8C17"
-				title: "关于狼的了解"
-				type: "custom"
+				id: "1A24E06DD428FFF2"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇狼或提供经验来解锁]&r&r"
 			tasks: [
@@ -5959,6 +6194,11 @@
 				id: "tfc:food/wolf"
 			}
 			id: "37B0F87CCB2C1132"
+			rewards: [{
+				id: "01FC107AB28F1FCA"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀狼或提供经验来解锁更多信息]&r&r"
@@ -5994,11 +6234,9 @@
 			id: "4A517EDEE23A5786"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "0D2BF6CF963DD88C"
-				title: "关于獠牙兽的了解"
-				type: "custom"
+				id: "5CB5EED3715573C8"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇獠牙兽或提供经验来解锁]&r&r"
 			tasks: [
@@ -6043,6 +6281,11 @@
 				id: "butcher:raw_pork_belly"
 			}
 			id: "30F230CA4E6242A1"
+			rewards: [{
+				id: "205C2C57DFA13398"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀獠牙兽或提供经验来解锁更多信息]&r&r"
@@ -6078,11 +6321,9 @@
 			id: "7572DBD3FBE8E949"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "608FF325D0CA8872"
-				title: "关于短吻鳄的了解"
-				type: "custom"
+				id: "3D2907881BC4DBD1"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇短吻鳄或提供经验来解锁]&r&r"
 			tasks: [
@@ -6114,6 +6355,11 @@
 			hide_until_deps_complete: true
 			icon: "naturalist:alligator_egg"
 			id: "5A59FB13B69FA32D"
+			rewards: [{
+				id: "0BC860406EA29D3C"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀短吻鳄或提供经验来解锁更多信息]&r&r"
@@ -6149,11 +6395,9 @@
 			id: "3C0235965013A62A"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "5B01181B3D56CC1E"
-				title: "关于秃鹫的了解"
-				type: "custom"
+				id: "58DDD5862323FC2D"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇秃鹫或提供经验来解锁]&r&r"
 			tasks: [
@@ -6185,6 +6429,11 @@
 			hide_until_deps_complete: true
 			icon: "born_in_chaos_v1:smoked_flesh"
 			id: "3447653243BC3CF5"
+			rewards: [{
+				id: "7D2F1822A5BDA850"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀秃鹫或提供经验来解锁更多信息]&r&r"
@@ -6220,11 +6469,9 @@
 			id: "478957EBCF07CB65"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "275D8E4E17DFF54A"
-				title: "关于科莫多巨蜥的了解"
-				type: "custom"
+				id: "73B44B560AE6A722"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇科莫多巨蜥或提供经验来解锁]&r&r"
 			tasks: [
@@ -6256,6 +6503,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:komodo_spit"
 			id: "60BE4FFDB9511878"
+			rewards: [{
+				id: "094472A97FAC9B57"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀科莫多巨蜥或提供经验来解锁更多信息]&r&r"
@@ -6291,11 +6543,9 @@
 			id: "0ACD24127B373E2D"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "13151F225012EC54"
-				title: "关于美洲狮的了解"
-				type: "custom"
+				id: "6E09100C5E89BB31"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇美洲狮或提供经验来解锁]&r&r"
 			tasks: [
@@ -6327,6 +6577,11 @@
 			hide_until_deps_complete: true
 			icon: "textile:cougar_fur"
 			id: "12F7078A8C374995"
+			rewards: [{
+				id: "1454F4EE5FE65FE2"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀美洲狮或提供经验来解锁更多信息]&r&r"
@@ -6362,11 +6617,9 @@
 			id: "59C56C60367AA8B5"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "0C0739405865A763"
-				title: "关于老虎的了解"
-				type: "custom"
+				id: "08CF38C49AFCBB9C"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇老虎或提供经验来解锁]&r&r"
 			tasks: [
@@ -6398,6 +6651,11 @@
 			hide_until_deps_complete: true
 			icon: "textile:tiger_fur"
 			id: "31191CB27A29885D"
+			rewards: [{
+				id: "7F18FA162A8A69FE"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀老虎或提供经验来解锁更多信息]&r&r"
@@ -6433,11 +6691,9 @@
 			id: "507B126D5AC9FBB5"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "653E8D8C52B6FAD8"
-				title: "关于蜗牛的了解"
-				type: "custom"
+				id: "73918C193489C223"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇蜗牛或提供经验来解锁]&r&r"
 			tasks: [
@@ -6469,6 +6725,11 @@
 			hide_until_deps_complete: true
 			icon: "naturalist:snail_shell"
 			id: "41F6972328305793"
+			rewards: [{
+				id: "225D76590A5EA23E"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀蜗牛或提供经验来解锁更多信息]&r&r"
@@ -6504,11 +6765,9 @@
 			id: "1C1BB93DA4ED94E0"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "16F8BFF512588B4D"
-				title: "关于螳螂虾的了解"
-				type: "custom"
+				id: "46948AE8AA315BF9"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇螳螂虾或提供经验来解锁]&r&r"
 			tasks: [
@@ -6540,6 +6799,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:shrimp_fried_rice"
 			id: "4AEC19258A3B917F"
+			rewards: [{
+				id: "4673D905970C3349"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀螳螂虾或提供经验来解锁更多信息]&r&r"
@@ -6575,11 +6839,9 @@
 			id: "74A9ED5FB6B22B3F"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "1332B88F781D64F8"
-				title: "关于袋獾的了解"
-				type: "custom"
+				id: "72230E969FBA185C"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇袋獾或提供经验来解锁]&r&r"
 			tasks: [
@@ -6611,6 +6873,11 @@
 			hide_until_deps_complete: true
 			icon: "majruszsdifficulty:cerberus_fang"
 			id: "2189D81BABCD88AB"
+			rewards: [{
+				id: "71B7762957DD85F0"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀袋獾或提供经验来解锁更多信息]&r&r"
@@ -6646,11 +6913,9 @@
 			id: "31F2369F31926073"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "4A0C852B413E2795"
-				title: "关于袋鼠的了解"
-				type: "custom"
+				id: "74595DE5FFDE3B42"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇袋鼠或提供经验来解锁]&r&r"
 			tasks: [
@@ -6682,6 +6947,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:kangaroo_hide"
 			id: "67A0C29152703D3C"
+			rewards: [{
+				id: "33AF6F07FF6B7168"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀袋鼠或提供经验来解锁更多信息]&r&r"
@@ -6717,11 +6987,9 @@
 			id: "048F5ED40E27A1DE"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "7F4DE825E4D56B03"
-				title: "关于野牛的了解"
-				type: "custom"
+				id: "32E7986B3F555258"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇野牛或提供经验来解锁]&r&r"
 			tasks: [
@@ -6753,6 +7021,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:bison_fur"
 			id: "151A585F06982308"
+			rewards: [{
+				id: "39EB4959CAD58314"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀野牛或提供经验来解锁更多信息]&r&r"
@@ -6788,11 +7061,9 @@
 			id: "1C84C5C51AFDC753"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "6B73532437B1A9CA"
-				title: "关于野猪的了解"
-				type: "custom"
+				id: "30F244AE3648B455"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇野猪或提供经验来解锁]&r&r"
 			tasks: [
@@ -6837,6 +7108,11 @@
 				id: "butcher:raw_pork_shoulder"
 			}
 			id: "07FA87ECFEB8D40F"
+			rewards: [{
+				id: "08BD96FFF3A3E4A6"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀野猪或提供经验来解锁更多信息]&r&r"
@@ -6872,11 +7148,9 @@
 			id: "72635BA95F860F2C"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "3A3CA9493827AC76"
-				title: "关于长颈鹿的了解"
-				type: "custom"
+				id: "1786D5113F116680"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇长颈鹿或提供经验来解锁]&r&r"
 			tasks: [
@@ -6921,6 +7195,11 @@
 				id: "tfc:food/venison"
 			}
 			id: "6E4D64D279798E37"
+			rewards: [{
+				id: "3913815A4C5FB572"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀长颈鹿或提供经验来解锁更多信息]&r&r"
@@ -6956,11 +7235,9 @@
 			id: "4F7CAE77F7EFE58D"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "5324693FED72E180"
-				title: "关于雨蛙的了解"
-				type: "custom"
+				id: "46DBABE045E53202"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇雨蛙或提供经验来解锁]&r&r"
 			tasks: [
@@ -7001,6 +7278,11 @@
 				id: "minecraft:sand"
 			}
 			id: "171AEFEF85B6C529"
+			rewards: [{
+				id: "334CD11F98F081A2"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀雨蛙或提供经验来解锁更多信息]&r&r"
@@ -7036,11 +7318,9 @@
 			id: "2C3013DF847FB380"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "3358C1629C9C86E6"
-				title: "关于雪豹的了解"
-				type: "custom"
+				id: "76F10B9BF28437FB"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇雪豹或提供经验来解锁]&r&r"
 			tasks: [
@@ -7085,6 +7365,11 @@
 				id: "tfc:food/gran_feline"
 			}
 			id: "20CA355D46611B37"
+			rewards: [{
+				id: "2B79D339C2B016CB"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀雪豹或提供经验来解锁更多信息]&r&r"
@@ -7120,11 +7405,9 @@
 			id: "05309284326268A7"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "77C5E773CB820F94"
-				title: "关于香蕉蛞蝓的了解"
-				type: "custom"
+				id: "3B4182ACA3F4275D"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇香蕉蛞蝓或提供经验来解锁]&r&r"
 			tasks: [
@@ -7156,6 +7439,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:banana_slug_slime"
 			id: "59ED70EC1EEDE79E"
+			rewards: [{
+				id: "660000A7FDBD4C01"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀香蕉蛞蝓或提供经验来解锁更多信息]&r&r"
@@ -7191,11 +7479,9 @@
 			id: "627A9DC2BC8BAC75"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "1D2DCCB99A4A6158"
-				title: "关于鬃狼的了解"
-				type: "custom"
+				id: "500D57D328F5F514"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇鬃狼或提供经验来解锁]&r&r"
 			tasks: [
@@ -7227,6 +7513,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:bear_fur"
 			id: "1E40D28A4CE2D735"
+			rewards: [{
+				id: "49AD7904BDA24FCD"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀鬃狼或提供经验来解锁更多信息]&r&r"
@@ -7262,11 +7553,9 @@
 			id: "3998C89A1428772A"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "696EFBA7A18F7BB2"
-				title: "关于鬣狗的了解"
-				type: "custom"
+				id: "02190ACB396EFC31"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇鬣狗或提供经验来解锁]&r&r"
 			tasks: [
@@ -7311,6 +7600,11 @@
 				id: "tfc:food/hyena"
 			}
 			id: "0FE62F3629798DA4"
+			rewards: [{
+				id: "794F52AA9C31B96D"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀鬣狗或提供经验来解锁更多信息]&r&r"
@@ -7346,11 +7640,9 @@
 			id: "51276D6012CABFC5"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "35F2A4100DB93860"
-				title: "关于鲎虫的了解"
-				type: "custom"
+				id: "69D6BE3374E66381"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇鲎虫或提供经验来解锁]&r&r"
 			tasks: [
@@ -7382,6 +7674,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:triops_bucket"
 			id: "53649C4BD9A380D9"
+			rewards: [{
+				id: "14F80494EF88213B"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀鲎虫或提供经验来解锁更多信息]&r&r"
@@ -7417,11 +7714,9 @@
 			id: "73D62D2DEE474D2C"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "6B5D617DD2CE2563"
-				title: "关于鲶鱼的了解"
-				type: "custom"
+				id: "2B31A7397D2BCC79"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇鲶鱼或提供经验来解锁]&r&r"
 			tasks: [
@@ -7453,6 +7748,11 @@
 			hide_until_deps_complete: true
 			icon: "alexsmobs:medium_catfish_bucket"
 			id: "433E8FF8442D74EC"
+			rewards: [{
+				id: "5E7F66608ABE0A4F"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀鲶鱼或提供经验来解锁更多信息]&r&r"
@@ -7488,11 +7788,9 @@
 			id: "14D2185AFB5F4B5F"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "4DEE935EA4CE3516"
-				title: "关于鸭的了解"
-				type: "custom"
+				id: "0207C8C0895AC6F4"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇鸭或提供经验来解锁]&r&r"
 			tasks: [
@@ -7537,6 +7835,11 @@
 				id: "tfc:food/duck"
 			}
 			id: "0372FF4C72EE7C33"
+			rewards: [{
+				id: "194BE09D66E15B72"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀鸭或提供经验来解锁更多信息]&r&r"
@@ -7572,11 +7875,9 @@
 			id: "77E25591765A7A29"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "30C65BB993C918B6"
-				title: "关于黑熊的了解"
-				type: "custom"
+				id: "002F0BBB4FEE1F07"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇黑熊或提供经验来解锁]&r&r"
 			tasks: [
@@ -7608,6 +7909,11 @@
 			hide_until_deps_complete: true
 			icon: "textile:black_bear_fur"
 			id: "564C6998C45A09DE"
+			rewards: [{
+				id: "00333BC58372E904"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀黑熊或提供经验来解锁更多信息]&r&r"
@@ -7643,11 +7949,9 @@
 			id: "4275FFE61F9B83BA"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "2FDFC5A7BBF9FAEB"
-				title: "关于黑豹的了解"
-				type: "custom"
+				id: "3AAA6E33A4D25B84"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇黑豹或提供经验来解锁]&r&r"
 			tasks: [
@@ -7679,6 +7983,11 @@
 			hide_until_deps_complete: true
 			icon: "textile:panther_fur"
 			id: "0717F6D86E46B894"
+			rewards: [{
+				id: "316BEC70FC823971"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀黑豹或提供经验来解锁更多信息]&r&r"
@@ -7714,11 +8023,9 @@
 			id: "7BDBCE1CB8BA0630"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "2454112680E36C00"
-				title: "关于凯门鳄的了解"
-				type: "custom"
+				id: "250CF40BEFF40F2F"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇大鳄鱼或提供经验来解锁]&r&r"
 			tasks: [
@@ -7751,6 +8058,11 @@
 			icon: "alexsmobs:crocodile_egg"
 			id: "0D6C30FAC504DFA0"
 			optional: true
+			rewards: [{
+				id: "3DA822FA39009919"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀大鳄鱼或提供经验来解锁更多信息]&r&r"
@@ -7786,11 +8098,9 @@
 			id: "1BA061908DA5B255"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "5ACAD5A214977F25"
-				title: "关于大口黑鲈的了解"
-				type: "custom"
+				id: "10DC648A2735B97D"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇三文鱼或提供经验来解锁]&r&r"
 			tasks: [
@@ -7848,6 +8158,11 @@
 				id: "tfc:food/salmon"
 			}
 			id: "062938D7F7959D1F"
+			rewards: [{
+				id: "43E72F1C0E0A68DC"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀大口黑鲈或提供经验来解锁更多信息]&r&r"
@@ -7883,11 +8198,9 @@
 			id: "55EF684B9642D23E"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "4C8495F97535ADE9"
-				title: "关于跳鼠的了解"
-				type: "custom"
+				id: "3DFC7AC6B9A49E55"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇兔子或提供经验来解锁]&r&r"
 			tasks: [
@@ -7919,6 +8232,11 @@
 			hide_until_deps_complete: true
 			icon: "minecraft:rabbit_hide"
 			id: "0B2D15421602109F"
+			rewards: [{
+				id: "104992306BFE99FB"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀跳鼠或提供经验来解锁更多信息]&r&r"
@@ -7963,11 +8281,9 @@
 			id: "3FCE566608798F42"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "7BAFFB014C854369"
-				title: "关于大口黑鲈的了解"
-				type: "custom"
+				id: "5E32EB78EA96422A"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇三文鱼或提供经验来解锁]&r&r"
 			tasks: [
@@ -8025,6 +8341,11 @@
 				id: "tfc:food/cod"
 			}
 			id: "4896C4690CB7074C"
+			rewards: [{
+				id: "599AB0F2FEDD7046"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀大口黑鲈或提供经验来解锁更多信息]&r&r"
@@ -8082,6 +8403,11 @@
 				id: "tfc:food/tropical_fish"
 			}
 			id: "2C500CB98A138A2A"
+			rewards: [{
+				id: "2168BE40EA35754B"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀热带鱼或提供经验来解锁更多信息]&r&r"
@@ -8117,11 +8443,9 @@
 			id: "545D145004E45E6A"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "019EC9F98BC14725"
-				title: "关于大口黑鲈的了解"
-				type: "custom"
+				id: "755693CB54A83D58"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇热带鱼或提供经验来解锁]&r&r"
 			tasks: [
@@ -8170,11 +8494,9 @@
 			id: "53B5566655DB826C"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "36BC29C120CCDF77"
-				title: "关于大口黑鲈的了解"
-				type: "custom"
+				id: "2548A8C3B6783FEA"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇河豚或提供经验来解锁]&r&r"
 			tasks: [
@@ -8210,11 +8532,9 @@
 			id: "5F190606233262D8"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "42CE2EB6C6CF1D81"
-				title: "关于大口黑鲈的了解"
-				type: "custom"
+				id: "6ED936A53E98A4E3"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇青蛙或提供经验来解锁]&r&r"
 			tasks: [
@@ -8246,6 +8566,11 @@
 			hide_until_deps_complete: true
 			icon: "minecraft:pufferfish"
 			id: "25245F127AC57867"
+			rewards: [{
+				id: "23FA6E21C31FA948"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀河豚或提供经验来解锁更多信息]&r&r"
@@ -8290,6 +8615,11 @@
 				id: "butcher:frogsleg"
 			}
 			id: "64DC8E49A804C884"
+			rewards: [{
+				id: "192821C87F40F046"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀青蛙或提供经验来解锁更多信息]&r&r"
@@ -8325,11 +8655,9 @@
 			id: "68DBFE6B97991532"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "3B9F1B6CEDD68778"
-				title: "关于麝牛的了解"
-				type: "custom"
+				id: "580C86703D42ADF9"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇麝牛或提供经验来解锁]&r&r"
 			tasks: [
@@ -8374,6 +8702,11 @@
 				id: "tfc:food/horse_meat"
 			}
 			id: "05ABC1CDC132EE64"
+			rewards: [{
+				id: "5795CB2B837E3A02"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀马或提供经验来解锁更多信息]&r&r"
@@ -8422,11 +8755,9 @@
 			id: "2CF3AFB707273599"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "6E936C9B501F2CDC"
-				title: "关于麝牛的了解"
-				type: "custom"
+				id: "7EC0BAAFE1FE8C30"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇麝牛或提供经验来解锁]&r&r"
 			tasks: [
@@ -8471,6 +8802,11 @@
 				id: "tfc:food/horse_meat"
 			}
 			id: "09845D82B52C1F9E"
+			rewards: [{
+				id: "227ED64D63C7056D"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀马或提供经验来解锁更多信息]&r&r"
@@ -8517,6 +8853,11 @@
 			icon: "minecraft:feather"
 			id: "1AB20AD4E4D44848"
 			require_sequential_tasks: true
+			rewards: [{
+				id: "2FE111AA9F6B5FB3"
+				type: "xp"
+				xp: 25
+			}]
 			size: 1.5d
 			tasks: [{
 				advancement: "tfc:story/root"
@@ -8535,6 +8876,11 @@
 			hide_dependent_lines: true
 			icon: "eidolon:notetaking_tools"
 			id: "6250AFE313FA45C2"
+			rewards: [{
+				id: "395111B1260A135C"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "rsquare"
 			size: 3.0d
 			tasks: [{
@@ -8563,6 +8909,11 @@
 			}
 			id: "7657DB921591A63F"
 			require_sequential_tasks: true
+			rewards: [{
+				id: "07EC1E3ADA4AB1FB"
+				type: "xp"
+				xp: 25
+			}]
 			size: 1.5d
 			tasks: [{
 				advancement: "tfc:story/root"
@@ -8584,6 +8935,11 @@
 			icon: "butcher:cowhoof"
 			id: "5CECA5CEE11AFB8F"
 			require_sequential_tasks: true
+			rewards: [{
+				id: "64B5697F847908B6"
+				type: "xp"
+				xp: 25
+			}]
 			size: 1.5d
 			tasks: [{
 				advancement: "tfc:story/root"
@@ -8605,6 +8961,11 @@
 			icon: "alexsmobs:dropbear_claw"
 			id: "71ADD85B45024121"
 			require_sequential_tasks: true
+			rewards: [{
+				id: "3C9B56E602B454D2"
+				type: "xp"
+				xp: 25
+			}]
 			size: 1.5d
 			tasks: [{
 				advancement: "tfc:story/root"
@@ -8626,6 +8987,11 @@
 			icon: "tfc:plant/pistia"
 			id: "01439E173B19ED26"
 			require_sequential_tasks: true
+			rewards: [{
+				id: "2951D5AE85D7E53F"
+				type: "xp"
+				xp: 25
+			}]
 			size: 1.5d
 			tasks: [{
 				advancement: "tfc:story/root"
@@ -8656,6 +9022,11 @@
 			}
 			id: "00DFB3F12E61B6F3"
 			require_sequential_tasks: true
+			rewards: [{
+				id: "3E6FA3A93AFA3ADF"
+				type: "xp"
+				xp: 25
+			}]
 			size: 1.5d
 			tasks: [{
 				advancement: "tfc:story/root"
@@ -8677,6 +9048,11 @@
 			icon: "naturalist:lizard_tail"
 			id: "57BAF7C92DCE66B9"
 			require_sequential_tasks: true
+			rewards: [{
+				id: "62ABC2F0B925C255"
+				type: "xp"
+				xp: 25
+			}]
 			size: 1.5d
 			tasks: [{
 				advancement: "tfc:story/root"
@@ -8698,6 +9074,11 @@
 			icon: "born_in_chaos_v1:fried_maggot"
 			id: "728B350B98915D16"
 			require_sequential_tasks: true
+			rewards: [{
+				id: "3684B88E7E2D25A1"
+				type: "xp"
+				xp: 25
+			}]
 			size: 1.5d
 			tasks: [{
 				advancement: "tfc:story/root"
@@ -8721,11 +9102,9 @@
 			id: "16200431F6ECA5C2"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "657E962939839839"
-				title: "关于海猪的了解"
-				type: "custom"
+				id: "42AC449D7C8DCF80"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇海猪或提供经验来解锁]&r&r"
 			tasks: [
@@ -8761,11 +9140,9 @@
 			id: "3D860632DBED1F36"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "7BA31DE8BFC66DE5"
-				title: "关于三脚鱼的了解"
-				type: "custom"
+				id: "09BF95802DFC5323"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇三脚鱼或提供经验来解锁]&r&r"
 			tasks: [
@@ -8802,11 +9179,9 @@
 			invisible: true
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "499BF7DC9342E25B"
-				title: "关于碎船兽的了解"
-				type: "custom"
+				id: "17C094BCED6033D2"
+				type: "xp"
+				xp: 25
 			}]
 			size: 1.5d
 			subtitle: "&8&l[通过遭遇&3碎船兽&8来解锁]&r&r"
@@ -8834,11 +9209,9 @@
 			id: "25B77160F5429201"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "7436525EA3611E86"
-				title: "关于浮蚕的了解"
-				type: "custom"
+				id: "1658B1963A3B3F53"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇浮蚕或提供经验来解锁]&r&r"
 			tasks: [
@@ -8874,11 +9247,9 @@
 			id: "5DDD18BFD0D4F87E"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "49BEC39663BA51C1"
-				title: "关于灯笼鱼的了解"
-				type: "custom"
+				id: "053D672702D5A6C8"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇灯笼鱼或提供经验来解锁]&r&r"
 			tasks: [
@@ -8910,6 +9281,11 @@
 			hide_until_deps_complete: true
 			icon: "alexscaves:sea_pig_bucket"
 			id: "47A53CA2BBC0C44E"
+			rewards: [{
+				id: "69CE5CDDEFB3FE28"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀海猪或提供经验来解锁更多信息]&r&r"
@@ -8941,6 +9317,11 @@
 			hide_until_deps_complete: true
 			icon: "alexscaves:tripodfish"
 			id: "35492AA7965C19C2"
+			rewards: [{
+				id: "085F05906825F98D"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀三脚鱼或提供经验来解锁更多信息]&r&r"
@@ -8972,6 +9353,11 @@
 			hide_until_deps_complete: true
 			icon: "alexscaves:gossamer_worm_bucket"
 			id: "66E1BC086C9822F0"
+			rewards: [{
+				id: "6171D1257F7DC4F4"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀浮蚕或提供经验来解锁更多信息]&r&r"
@@ -9003,6 +9389,11 @@
 			hide_until_deps_complete: true
 			icon: "alexscaves:lanternfish_bucket"
 			id: "79425AE7C2DD62E5"
+			rewards: [{
+				id: "36531F472C5428A3"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀灯笼鱼或提供经验来解锁更多信息]&r&r"
@@ -9034,6 +9425,11 @@
 			hide_until_deps_complete: true
 			icon: "alexscaves:immortal_embryo"
 			id: "15658396E5C5BB12"
+			rewards: [{
+				id: "730E0E00C8512A3C"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀&3碎船兽&8来解锁更多信息]&r&r"
@@ -9064,6 +9460,11 @@
 			}
 			id: "26792A6C0C62BB38"
 			require_sequential_tasks: true
+			rewards: [{
+				id: "3B89E03963E9E548"
+				type: "xp"
+				xp: 25
+			}]
 			size: 1.5d
 			tasks: [{
 				advancement: "alexscaves:alexscaves/discover_primordial_caves"
@@ -9085,11 +9486,9 @@
 			id: "233F5D8A3BB5F733"
 			optional: true
 			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "204A84BC5B015A26"
-				title: "关于狐狸的了解"
-				type: "custom"
+				id: "0DE6DD71B94FD75E"
+				type: "xp"
+				xp: 25
 			}]
 			subtitle: "&8&l[通过遭遇狐狸或提供经验来解锁]&r&r"
 			tasks: [
@@ -9121,6 +9520,11 @@
 			hide_until_deps_complete: true
 			icon: "butcher:foxfur"
 			id: "4C3B5C8614278527"
+			rewards: [{
+				id: "00683637BA77757C"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			size: 0.8d
 			subtitle: "&8&l[通过击杀狐狸或提供经验来解锁更多信息]&r&r"

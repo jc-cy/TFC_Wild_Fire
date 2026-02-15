@@ -20,7 +20,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["252AB0346BFE9A57"]
 			description: ["你应该猜到了，铁的下一级金属——就是钢。铸造钢需要更高的温度，更复杂的工艺和更多的耐心。寻找高岭土和石墨更是对于你锻造、烹饪、勘矿、跑图能力的综合考验。这场旅程注定不会轻松，而我会随时在这里为你答疑解惑。"]
 			hide_dependency_lines: true
 			icon: {
@@ -34,13 +33,28 @@
 				id: "tfc:metal/ingot/wrought_iron"
 			}
 			id: "78E74E2634CAD705"
+			invisible: true
+			rewards: [{
+				id: "1851303EDBE43E4F"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			size: 1.75d
 			subtitle: "最折磨的一段来了"
 			tasks: [{
-				id: "4FEA04E850FDB7F6"
-				title: "请在阅读以下内容后点击确认"
-				type: "checkmark"
+				id: "6510FA9EC8946E6C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/ingot/wrought_iron"
+				}
+				type: "item"
 			}]
 			title: "第三章：铁砂与红土"
 			x: 0.0d
@@ -51,23 +65,50 @@
 			description: ["是的，还是砧，要想加工金属就离不开砧，所以再准备14个铁锭吧。"]
 			hide_until_deps_complete: true
 			id: "4B6AF4B789E7C1C7"
+			rewards: [{
+				id: "25F0BA4D429822F4"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			size: 1.3d
 			subtitle: "这里没有附魔书"
-			tasks: [{
-				id: "2A07326B0583641B"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
+			tasks: [
+				{
+					id: "2A07326B0583641B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
 						}
+						id: "tfc:metal/anvil/wrought_iron"
 					}
-					id: "tfc:metal/anvil/wrought_iron"
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/anvil/wrought_iron"
+					}
+					id: "54A9E470493D1636"
+					observe_type: 0
+					optional_task: true
+					timer: 0L
+					title: "或：观察锻铁砧"
+					to_observe: "tfc:metal/anvil/wrought_iron"
+					type: "observation"
+				}
+			]
 			x: 1.6973164490876158d
 			y: 4.786405684200247d
 		}
@@ -86,6 +127,11 @@
 			id: "5E9051E49C388834"
 			progression_mode: "linear"
 			require_sequential_tasks: false
+			rewards: [{
+				id: "3AB25EED0EFA0C0D"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "这将是一场漫长的征程"
 			tasks: [
@@ -239,6 +285,11 @@
 				}
 			}
 			id: "4DD0871B568BFD54"
+			rewards: [{
+				id: "7301A4F125F498FC"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			size: 1.0d
 			subtitle: "可以安心的走出家门了"
@@ -274,6 +325,11 @@
 				id: "tfc:kaolin_clay"
 			}
 			id: "3E7E9BF7BA7E8598"
+			rewards: [{
+				id: "3B0E4FC50EC0898D"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "作者的又一大恶意"
 			tasks: [
@@ -310,6 +366,11 @@
 			hide_until_deps_complete: true
 			icon: "firmaciv:small_triangular_sail"
 			id: "156A7DC07864D46E"
+			rewards: [{
+				id: "5FF03624F8947ECD"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "跨洋！"
 			tasks: [{
 				id: "195CDB5745DF8F84"
@@ -339,6 +400,11 @@
 			hide_until_deps_complete: true
 			icon: "firmaciv:rowboat_icon_only"
 			id: "1A6D539F01A6A5BA"
+			rewards: [{
+				id: "15DF63C37780605C"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "circle"
 			subtitle: "就算没人陪你坐，还有箱子可以"
 			tasks: [
@@ -381,6 +447,11 @@
 			icon: "firmaciv:sloop_icon_only"
 			id: "3933AA974EAACD79"
 			optional: true
+			rewards: [{
+				id: "5A5DD506C97FE9D5"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "gear"
 			subtitle: "为了远航，这是[不是]必要的"
 			tasks: [
@@ -440,6 +511,11 @@
 			hide_until_deps_visible: false
 			icon: "tfc:fire_clay"
 			id: "5D9E196F63C8F953"
+			rewards: [{
+				id: "5E735CFE5DB42AF0"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -464,26 +540,54 @@
 		}
 		{
 			dependencies: ["4B6AF4B789E7C1C7"]
-			description: ["高炉的建造需要最多68张锻铁薄板，所以说这锻铁你还得炼。"]
+			description: ["建造高炉至少需要20张锻铁薄板！请先准备好这些薄板~"]
 			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/sheet/wrought_iron"
+			}
 			id: "68B0C82BB12377DE"
+			rewards: [{
+				id: "1A088472C2EDAEC4"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "接着炼铁接着打"
-			tasks: [{
-				count: 32L
-				id: "22B47384C000F96A"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
+			tasks: [
+				{
+					count: 20L
+					id: "22B47384C000F96A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
 						}
+						id: "tfc:metal/sheet/wrought_iron"
 					}
-					id: "tfc:metal/sheet/wrought_iron"
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					disable_toast: true
+					icon: "design_decor:arrow_right_sign"
+					id: "5E75C1A28020D61E"
+					optional_task: true
+					points: false
+					title: "我已了解：跳过&8[消耗1级经验]"
+					type: "xp"
+					value: 1L
+				}
+			]
 			title: "更多锻铁"
 			x: 4.0d
 			y: 5.5d
@@ -492,47 +596,97 @@
 			dependencies: ["68B0C82BB12377DE"]
 			description: ["制造高炉需要的另一样物品是鼓风口，只有鼓风口被放在高炉方块内高炉才能正常工作。"]
 			hide_until_deps_complete: true
-			id: "3CE25BF30E03A669"
-			shape: "hexagon"
-			subtitle: "本质是为了增加高炉的复杂程度"
-			tasks: [{
-				id: "76515DBFA49FA3D5"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/tuyere/wrought_iron"
-					tag: {
-						Damage: 0
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
 					}
 				}
-				type: "item"
+				id: "tfc:metal/tuyere/wrought_iron"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3CE25BF30E03A669"
+			rewards: [{
+				id: "28EB689B78003964"
+				type: "xp"
+				xp: 25
 			}]
+			shape: "hexagon"
+			subtitle: "本质是为了增加高炉的复杂程度"
+			tasks: [
+				{
+					id: "76515DBFA49FA3D5"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/tuyere/wrought_iron"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: "design_decor:arrow_right_sign"
+					id: "16A23ABEF04F88F0"
+					observe_type: 0
+					optional_task: true
+					timer: 0L
+					title: "已有高炉？"
+					to_observe: "tfc:blast_furnace"
+					type: "observation"
+				}
+			]
 			x: 5.5d
 			y: 5.5d
 		}
 		{
 			dependencies: [
 				"0B73FDEF3EF6266A"
-				"366E98E912E04672"
 				"1A7E7EB359A970F3"
+				"50430371417350B8"
 			]
 			dependency_requirement: "one_completed"
-			description: ["高炉方块由耐火砖和锻铁薄板制成，是高炉多方块结构的核心。"]
+			description: ["高炉需要熔铸盖与坩埚共同合成、是炼钢高炉的核心方块"]
 			hide_until_deps_complete: true
+			icon: "tfc:blast_furnace"
 			id: "6051F874C8283B67"
-			min_required_dependencies: 2
+			min_required_dependencies: 1
+			rewards: [{
+				id: "71CA15FEA5831780"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "超热话题"
-			tasks: [{
-				id: "21899A1BB34EA1D4"
-				item: "tfc:blast_furnace"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "21899A1BB34EA1D4"
+					item: "tfc:blast_furnace"
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: "tfc:blast_furnace"
+					id: "58BC592778AAE2E2"
+					observe_type: 0
+					optional_task: true
+					timer: 0L
+					title: "或：观察高炉"
+					to_observe: "tfc:blast_furnace"
+					type: "observation"
+				}
+			]
 			x: 9.5d
 			y: 3.5d
 		}
@@ -541,11 +695,19 @@
 			description: [
 				"手持五个耐火黏土即可塑形物品，塑形出的物品跟黏土制的一样，都需要经过烧制才能使用。"
 				""
-				"坩埚是群峦原版最高阶的冶金方块，需要被放置在木炭炉上以使用，坩埚拥有九个冶炼槽，能够储存4000mb熔融金属的存量，以及一个模具槽。它的温度继承自其下方木炭炉的温度，也同样可以通过风箱加热到炽白。"
+				"坩埚是群峦原版最高阶的冶金方块，需要被放置在木炭炉上以使用"
+				"坩埚拥有九个冶炼槽，能够储存&n4000mb&r熔融金属的存量"
 				""
-				"在坩埚中熔化的金属会被储存在坩埚中，此时将模具或小缸放在最右侧栏位即可装填熔融金属。如果坩埚中装入了不同种的熔融金属，它们就会自行进行合金。不要害怕产生未知合金，在金属冷凝或者装进其他容器之前，只要将比例调整正确，它们还是会正确地形成合金，除非合金后还是会有两种不会形成合金的熔融金属存在。"
+				"以及一个模具槽。它的温度继承自其下方木炭炉的温度，也同样可以通过风箱加热到炽白。"
+				"{@pagebreak}"
+				"在坩埚中熔化的金属会被储存在坩埚中，此时将模具或小缸放在最右侧栏位即可装填熔融金属。"
+				"如果坩埚中装入了不同种的熔融金属，它们就会自行进行合金。"
 				""
-				"举例：在坩埚中同时熔化铜、银、金、黑铜，只要铜银金的比例正确，最终产物就还会是黑铜。但一旦向坩埚中加入别的金属，例如锌，就会全部变为未知合金，而且再也救不回来了。"
+				"不要害怕产生未知合金"
+				"在金属冷凝或者装进其他容器之前，只要将比例调整正确，它们还是会正确地形成合金，除非合金后还是会有两种不会形成合金的熔融金属存在。"
+				""
+				"举例：在坩埚中同时熔化铜、银、金、黑铜，只要铜银金的比例正确，最终产物就还会是黑铜。"
+				"但一旦向坩埚中加入别的金属，例如锌，就会全部变为未知合金，而且再也救不回来了。"
 				""
 				"火锭模具是一种比陶制锭模具高级的模具，它的损坏概率很低，因此很耐用。"
 			]
@@ -553,6 +715,11 @@
 			icon: "tfc:crucible"
 			id: "0B73FDEF3EF6266A"
 			optional: true
+			rewards: [{
+				id: "411FA03DB5B9072B"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "再见了，所有的制陶术"
 			tasks: [
@@ -608,6 +775,11 @@
 			icon: "tfc:fire_bricks"
 			id: "03FA731C116C90F7"
 			optional: true
+			rewards: [{
+				id: "55E0684EDBEA330B"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "物竞天择的选择"
 			tasks: [{
@@ -622,14 +794,25 @@
 		{
 			dependencies: ["03FA731C116C90F7"]
 			description: [
-				"铸造输送管道与浇筑桌为附属模组加入的方块，借由使用这两种方块，能够实现坩埚的快速浇筑。"
+				"你可以用耐火黏土制作浇筑管道与浇筑桌"
+				"这两种方块都需要塑形后烧制获得"
 				""
-				"这两种方块都由耐火黏土塑形后烧制获得，要使用它们，需要将铸造输送管道的一头连接坩埚，另一头连接浇筑桌，浇筑桌中需要放入模具。当坩埚内具有熔融金属时，为铸造输送管道下面的方块赋予一个红石信号会使管道开始向浇筑桌输送熔融金属直到坩埚内金属耗尽或所有的浇筑桌都被充满，熔融金属在模具内冷却后就会转化为相应的物品，对浇筑桌使用风箱能够使其更快地冷却。由于铸造输送管道能够一次性为多个浇筑桌输送熔融金属且浇筑桌能够运用物流方法输出，自动铸造金属也便有了方案。"
+				"要使用它们，需要将铸造输送管道的一头连接坩埚，另一头连接浇筑桌，浇筑桌中需要放入模具。"
+				""
+				"当坩埚内具有熔融金属时，为铸造输送管道面的方块赋予一个红石信号或手动右键会使管道开始向浇筑桌输送熔融金属，直到坩埚内金属耗尽或所有的浇筑桌都被充满，"
+				""
+				"熔融金属在模具内冷却后就会转化为相应的物品，对浇筑桌使用风箱能够使其更快地冷却。"
+				"由于铸造输送管道能够一次性为多个浇筑桌输送熔融金属且浇筑桌能够运用物流方法输出，自动铸造金属也便有了方案。"
 			]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			icon: "tfcchannelcasting:mold_table"
 			id: "5B149F321FE450F7"
+			rewards: [{
+				id: "5ED5C41CA34E4586"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "冒牌匠魂"
 			tasks: [
 				{
@@ -701,6 +884,11 @@
 			id: "6817416877252461"
 			invisible_until_tasks: 2
 			min_required_dependencies: 2
+			rewards: [{
+				id: "12FD9A1E342AD895"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			size: 1.3d
 			tasks: [{
@@ -728,6 +916,11 @@
 			}
 			id: "4A96D0BED6BD4151"
 			min_required_dependencies: 2
+			rewards: [{
+				id: "26E59D7956232581"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "就像对生铁方坯那样"
 			tasks: [
@@ -774,6 +967,11 @@
 				id: "tfc:metal/ingot/high_carbon_steel"
 			}
 			id: "320016DCB488E572"
+			rewards: [{
+				id: "1E4D83A113FFE144"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "最后的一点碳"
 			tasks: [
@@ -811,6 +1009,11 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "4A6067EFAE9D19C1"
+			rewards: [{
+				id: "48A64AF419EE76D7"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "上帝通过铁器创造了我们。然后他升高温度，将其中一些铸造成钢。——玛莉·奥斯蒙"
@@ -854,6 +1057,11 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "085B4365FC8CB0D4"
+			rewards: [{
+				id: "669E2B76DB8A7A1D"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "gear"
 			subtitle: "肆意的击杀那些野兽吧"
 			tasks: [{
@@ -872,6 +1080,11 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			id: "3C599FF1AC04E8C6"
+			rewards: [{
+				id: "69F63A3C6660A1FC"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "秘制小烧烤"
 			tasks: [{
 				id: "558A9F26B45FF908"
@@ -898,6 +1111,11 @@
 			]
 			hide_until_deps_complete: true
 			id: "5DB9C3E0DA3A253B"
+			rewards: [{
+				id: "0DCFEFFC73598B5A"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "并不能提供什么热量"
 			tasks: [{
 				id: "50F11E74A0F71580"
@@ -912,6 +1130,11 @@
 			description: ["厨锅是烹饪菜肴所需要用到的方块，需要被放置在炉灶上。这些菜肴遵循着特定的配方。当你将满足配方的食物放到锅中的时候，它就会开始自己烹饪菜肴，在锅中放入木碗即可将菜肴盛出。这些菜肴有着自己的营养值和保质期，与你放入的烹饪材料没有关系。"]
 			hide_until_deps_complete: true
 			id: "6639AF3A0D4459F0"
+			rewards: [{
+				id: "3E021ED2F9A8AF81"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "3379FCC025080E04"
 				item: "farmersdelight:cooking_pot"
@@ -923,13 +1146,18 @@
 		{
 			dependencies: ["44D3A350F6971830"]
 			description: [
-				"堆肥滚筒是堆肥桶的升级版，需要通过接入动力来工作。堆肥滚筒的容量是堆肥桶的两倍，且能稍微容纳一点肉和骨头还不生成烂肥。堆肥滚筒只有在不接入动力的时候才能放入物品，只有在接入动力的时候才会转化堆肥，因此你可以考虑用一个离合器与其连接。"
+				"堆肥滚筒是堆肥桶的升级版，需要通过接入动力来工作。堆肥滚筒的容量是堆肥桶的两倍，且能稍微容纳一点肉和骨头还不生成腐烂堆肥。堆肥滚筒只有在不接入动力的时候才能放入物品，只有在接入动力的时候才会转化堆肥，因此你可以考虑用一个离合器与其连接。"
 				""
 				"一段时间后堆肥就会转化完成，如果你放入了总共32单位的物品，就会生成3个堆肥，16单位及以上是两个，8单位及以上就只有一个了。"
 			]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			id: "0481BF73F5D224F1"
+			rewards: [{
+				id: "5A7B0ECF6712DC3A"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "更多的堆肥"
 			tasks: [{
 				id: "3E30DC0F98ACCD6A"
@@ -948,6 +1176,11 @@
 			]
 			hide_until_deps_complete: true
 			id: "3509BD616E13F664"
+			rewards: [{
+				id: "36800764D947B628"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "树也没说它有意见"
 			tasks: [{
 				id: "7014D4E929E77EA4"
@@ -963,6 +1196,11 @@
 			description: ["树液需要被浓缩成糖浆以制作糖，浓缩糖浆在大锅中进行，你必须在锅中放一根木棍，否则大锅不会沸腾。树液需要被浓缩两次才能变成糖浆，枫树汁的浓缩的比例为1:50，桦树的为1:100。这代表如果你想浓缩糖浆，你就需要同时抽取很多棵树的树液。"]
 			hide_until_deps_visible: false
 			id: "1989C3DA31D6C8E3"
+			rewards: [{
+				id: "504265D2BE5013D2"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "产率不算高，不过也可以接受"
 			tasks: [{
 				id: "37AC840BC636543E"
@@ -1017,6 +1255,11 @@
 				id: "afc:maple_sugar"
 			}
 			id: "4F57A53AD659837D"
+			rewards: [{
+				id: "2848FC7152429A2B"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "注：目前本配方有bug，可以自由选择产率高或产率低的配方"
 			tasks: [{
 				id: "47A64DBBAA660F77"
@@ -1062,6 +1305,11 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			id: "5700C8A7697A4AAC"
+			rewards: [{
+				id: "490D97F4525D7CF2"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "宝石粉的第二种用途"
 			tasks: [{
 				id: "21B118AE1BEB10AD"
@@ -1132,6 +1380,11 @@
 			}
 			id: "22D0B839C9E27B02"
 			optional: true
+			rewards: [{
+				id: "6DB14836640E8E19"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "向残暴的原住民进发"
 			tasks: [{
 				entity: "minecraft:pillager"
@@ -1161,6 +1414,11 @@
 			}
 			id: "589B144F016BAA2B"
 			invisible: true
+			rewards: [{
+				id: "012D7DE6168F2F21"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "铁之魔法书"
 			tasks: [{
 				id: "69136E036D9D34BE"
@@ -1241,6 +1499,11 @@
 			}
 			id: "36FC0C8085D52613"
 			invisible: true
+			rewards: [{
+				id: "4E91F098D2634DD4"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "gear"
 			subtitle: "诡异的巫术高塔"
 			tasks: [{
@@ -1308,6 +1571,11 @@
 			hide_until_deps_complete: true
 			icon: "minecraft:stone_bricks"
 			id: "1001B1A653E27055"
+			rewards: [{
+				id: "16A415BAC6A5C0E5"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "只是他们的其中之一"
 			title: "残虐的城堡"
 			x: -3.5d
@@ -1324,6 +1592,11 @@
 			]
 			hide_until_deps_complete: true
 			id: "05E29E0D8A02857D"
+			rewards: [{
+				id: "1C36DE7559A515D6"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "飞空"
 			tasks: [{
 				id: "32B89CBF23A70C40"
@@ -1352,6 +1625,11 @@
 				}
 			}
 			id: "4707B36EA81D518A"
+			rewards: [{
+				id: "6A4C4E6ED2E513A6"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "放心……他们无法认出你"
 			tasks: [{
 				advancement: "butcher:pillagersdisguise"
@@ -1374,6 +1652,11 @@
 			]
 			hide_until_deps_complete: true
 			id: "34FD8426B43F0C71"
+			rewards: [{
+				id: "2C4F8CC7B68F82FA"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "空中特技"
 			tasks: [{
 				id: "7B586A8F6EFC689D"
@@ -1392,6 +1675,11 @@
 			]
 			hide_until_deps_complete: true
 			id: "70F2810DCD2E4E07"
+			rewards: [{
+				id: "27D4BCDC3269EDC7"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "飞“艇”环游记"
 			tasks: [
 				{
@@ -1419,6 +1707,11 @@
 			hide_until_deps_visible: true
 			icon: "createdieselgenerators:bulk_fermenter"
 			id: "50EFCD7C10FA0994"
+			rewards: [{
+				id: "1E56991FE408AA29"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					id: "7193FCEDEC4E6BB6"
@@ -1441,6 +1734,11 @@
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
 			id: "2D8EE1518B0C8834"
+			rewards: [{
+				id: "02167A8ADC892700"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "6D31250B8CDD2A7A"
 				item: "createdieselgenerators:burner"
@@ -1455,6 +1753,11 @@
 			hide_dependent_lines: true
 			hide_details_until_startable: true
 			id: "620FE34A0406DCFE"
+			rewards: [{
+				id: "2B2648DF94B261E1"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "7C3CF115FD78425F"
 				item: "createdieselgenerators:basin_lid"
@@ -1469,6 +1772,11 @@
 			hide_details_until_startable: true
 			icon: "create:basin"
 			id: "1B31D6B48235E998"
+			rewards: [{
+				id: "0F20300AEEBE80BE"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "43103C4AC7244298"
 				title: "我已了解"
@@ -1481,6 +1789,11 @@
 		{
 			dependencies: ["0E70116419066DC5"]
 			id: "15186E203391A83E"
+			rewards: [{
+				id: "728B749E1862F473"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "0B56B2A5C98EA2B2"
 				item: "farm_and_charm:cooking_pot"
@@ -1492,6 +1805,11 @@
 		{
 			dependencies: ["5DB9C3E0DA3A253B"]
 			id: "0E70116419066DC5"
+			rewards: [{
+				id: "13EEA8BB7A4C9A97"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "47A2FCBDE0840678"
 				item: {
@@ -1511,6 +1829,11 @@
 		{
 			dependencies: ["5DB9C3E0DA3A253B"]
 			id: "01BEF37417DBCD5C"
+			rewards: [{
+				id: "750CB521009EFADB"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "73F5BCD6DF7E6440"
 				item: "farm_and_charm:stove"
@@ -1530,6 +1853,11 @@
 				}
 			}
 			id: "44D3A350F6971830"
+			rewards: [{
+				id: "3759D87B87C4B80C"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "63E656E62F45D0C6"
 				type: "checkmark"
@@ -1543,6 +1871,11 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "68A6EACF1D98B640"
+			rewards: [{
+				id: "59541A006B57078B"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "05CA7A7A41A293EE"
 				item: {
@@ -1561,6 +1894,11 @@
 			dependencies: ["4DD0871B568BFD54"]
 			hide_until_deps_complete: true
 			id: "00E05E64E05C86F2"
+			rewards: [{
+				id: "2016A46662C101B7"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "5E8C2E94CB44A1DB"
 				item: "siegemachines:siege_workbench"
@@ -1573,6 +1911,11 @@
 			dependencies: ["00E05E64E05C86F2"]
 			hide_until_deps_complete: true
 			id: "3B6DFF9245C3B9C4"
+			rewards: [{
+				id: "3E434E2C2A99AF89"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					id: "6161E3F48D848891"
@@ -1592,6 +1935,11 @@
 			dependencies: ["3B6DFF9245C3B9C4"]
 			hide_until_deps_complete: true
 			id: "6906CED860C07E93"
+			rewards: [{
+				id: "2C3641B37DCCD0F8"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "19B6031700F745E2"
 				item: "siegemachines:catapult"
@@ -1604,6 +1952,11 @@
 			dependencies: ["00E05E64E05C86F2"]
 			hide_until_deps_complete: true
 			id: "285A19CDC61F971F"
+			rewards: [{
+				id: "62AD85229DF37587"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "31C65C27CAFEB7A5"
 				item: "siegemachines:mortar"
@@ -1616,6 +1969,11 @@
 			dependencies: ["285A19CDC61F971F"]
 			hide_until_deps_complete: true
 			id: "7020A15262E94B94"
+			rewards: [{
+				id: "543BE8F7D158E4EA"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "010583AEEF74FB3B"
 				item: "siegemachines:culverin"
@@ -1628,6 +1986,11 @@
 			dependencies: ["6906CED860C07E93"]
 			hide_until_deps_complete: true
 			id: "0D2A0C7A580F1607"
+			rewards: [{
+				id: "6C0E0766B9532328"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "2DECDAB09497F091"
 				item: "siegemachines:trebuchet"
@@ -1640,6 +2003,11 @@
 			dependencies: ["4DD0871B568BFD54"]
 			hide_until_deps_complete: true
 			id: "495978E05556FF4E"
+			rewards: [{
+				id: "0D8F8BA73AA40624"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "0823C13ABB6D4544"
 				item: "scguns:gun_bench"
@@ -1653,6 +2021,11 @@
 			hide_until_deps_complete: true
 			id: "6B6F63F8512E41D7"
 			optional: true
+			rewards: [{
+				id: "6098BCE1997A2409"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "6D888B2275EBF59E"
 				item: {
@@ -1675,6 +2048,11 @@
 			hide_until_deps_complete: true
 			id: "0B979758AA16D413"
 			optional: true
+			rewards: [{
+				id: "75EE280DAEA1356F"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "7E349DC575CECF41"
 				item: {
@@ -1697,6 +2075,11 @@
 			hide_until_deps_complete: true
 			id: "5838C7D9A75C66CE"
 			optional: true
+			rewards: [{
+				id: "3C56272F48CF4BBE"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "390BA8066A512EBF"
 				item: {
@@ -1719,6 +2102,11 @@
 			hide_until_deps_complete: true
 			id: "426B7B37A7C78D06"
 			optional: true
+			rewards: [{
+				id: "2DE68965DFFA26C1"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "45926D27E7FDA4BE"
 				item: {
@@ -1743,6 +2131,11 @@
 			dependencies: ["495978E05556FF4E"]
 			hide_until_deps_complete: true
 			id: "096AD15B81CCD5D5"
+			rewards: [{
+				id: "3E296F496204BAC9"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "409199C13B275F2B"
 				item: "scguns:antique_blueprint"
@@ -1766,6 +2159,11 @@
 				id: "vintageimprovements:spring_coiling_machine"
 			}
 			id: "6A1737D3FC3C7C70"
+			rewards: [{
+				id: "103759ACF4DB8581"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					id: "11DEAE78D2622897"
@@ -1804,6 +2202,11 @@
 			dependencies: ["6A1737D3FC3C7C70"]
 			hide_details_until_startable: true
 			id: "000395E91FAB75F5"
+			rewards: [{
+				id: "5EF62CAC1ECF8E2F"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "5D50986FC1AA0536"
 				item: {
@@ -1836,6 +2239,11 @@
 				id: "tfc:raw_iron_bloom"
 			}
 			id: "2792072751116772"
+			rewards: [{
+				id: "796E2820901D8A1E"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "467A5D6DC661714F"
 				title: "我已知晓"
@@ -1847,10 +2255,19 @@
 		}
 		{
 			dependencies: ["78E74E2634CAD705"]
+			description: [
+				"拥有了更好的金属材料“锻铁”后、同样我们需要处理材料的的方式也要革新"
+				"接下来步入铁工业时期吧！"
+			]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: "design_decor:industrial_gear_large"
 			id: "5ABCEA9D66EB2104"
+			rewards: [{
+				id: "5101CEF8047AD49D"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "6FA94AE66E21ED33"
@@ -1866,6 +2283,11 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "5B73DEA756F9A843"
+			rewards: [{
+				id: "2948C44E59E6EC98"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "44BF3B5E0B04D76D"
 				item: "create:fluid_tank"
@@ -1879,6 +2301,11 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "12AFE28BA017BFB8"
+			rewards: [{
+				id: "5F487AE7ED2F9DD9"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "107D091E76100E81"
 				item: "design_decor:industrial_gear"
@@ -1905,6 +2332,11 @@
 			icon: "scguns:scorched_block"
 			id: "71E483F24F891577"
 			ignore_reward_blocking: true
+			rewards: [{
+				id: "68DB208649456146"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "40EA7F474ADFA7C8"
@@ -1919,6 +2351,11 @@
 			dependencies: ["620FE34A0406DCFE"]
 			hide_until_deps_complete: true
 			id: "51F1B6E1ADD3C703"
+			rewards: [{
+				id: "073763EFB0A5DF05"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "矿物处理γ最终步"
 			tasks: [{
 				icon: {
@@ -1951,6 +2388,11 @@
 			hide_dependent_lines: true
 			hide_details_until_startable: true
 			id: "4CA199D5CDE2C4F3"
+			rewards: [{
+				id: "6840DBE064EB7F54"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "circle"
 			tasks: [{
 				id: "66C39F3FBD30EF59"
@@ -1974,10 +2416,22 @@
 			dependencies: ["71E483F24F891577"]
 			description: [
 				"刚玉线是我们包做的另外一种耐火路线"
-				"是需要通过提炼铝和铬来制作人造刚玉[人造红宝石]来代替耐火砖块的路线"
+				"是需要通过提炼&4铝&r和&f铬&r"
+				"来制作人造刚玉&n[人造红宝石]&r以代替耐火砖块的路线"
 				""
-				"如果你的家附近有铝土矿和铬铁矿！那么可以尝试走一下这个虽然步骤稍显繁琐但也不会和高岭土一样难找的路线！"
-				"哪怕是附近没有、随便走走看看用勘探工具查看一下、也许就能找到铝土和铬铁了呢！"
+				"如果你的家附近有铝土矿和铬铁矿！那么可以尝试走一下这个虽然步骤稍显繁琐但也不会和高岭土一样难找的路线"
+				"哪怕是附近没有、随便走走看看用勘探工具查看一下、也许就能找到铝土和铬铁了呢"
+				""
+				"&e&n[翻页以查看铝土和铬铁的详细信息]&r&r"
+				"{@pagebreak}"
+				"&4铝土&r和&f铬铁&r他们的生成条件对高度没有要求、可以在海拔任意或深度任意的地质上生成"
+				"不过、他们需要的环境地质不同"
+				""
+				"&4铝土&r必须要在沉积岩与变质岩的地质下才能形成"
+				""
+				"&f铬铁&r必须要在侵入岩和变质岩的地质下才能形成"
+				""
+				"请好好查看你所在附近的地质、如果非此类地质那么是无法找到它们的！"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -1991,27 +2445,52 @@
 				id: "tfc_ie_addon:ore/rich_bauxite"
 			}
 			id: "1562D3568E1D5CB0"
+			rewards: [{
+				id: "1606A95B98634AA5"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "另一种耐火路线"
 			tasks: [
 				{
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc_ie_addon:ore/rich_bauxite"
+					}
 					id: "78D07937D3DFE763"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(tfc_ie_addon:ore/small_bauxite)item(tfc_ie_addon:ore/rich_bauxite)item(tfc_ie_addon:ore/normal_bauxite)item(tfc_ie_addon:ore/poor_bauxite)item(tfc_ie_addon:powder/bauxite))"
+							"ftbfiltersystem:filter": "or(item(tfc_ie_addon:ore/rich_bauxite)item(tfc_ie_addon:ore/normal_bauxite)item(tfc_ie_addon:ore/poor_bauxite)item(tfc_ie_addon:ore/small_bauxite)item(kubejs:item/ore/rocky_chunks/bauxite)item(kubejs:item/ore/chunks/bauxite)item(kubejs:item/ore/dirty_dust/bauxite)item(kubejs:item/ore/dirty_pile/bauxite)item(tfc_ie_addon:powder/bauxite))"
 						}
 					}
 					title: "是否有铝？"
 					type: "item"
 				}
 				{
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "firmalife:ore/rich_chromite"
+					}
 					id: "6719A76724B35A29"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(firmalife:powder/chromite)item(firmalife:ore/small_chromite)item(firmalife:ore/poor_chromite)item(firmalife:ore/normal_chromite)item(firmalife:ore/rich_chromite))"
+							"ftbfiltersystem:filter": "or(item(firmalife:ore/small_chromite)item(firmalife:ore/poor_chromite)item(firmalife:ore/normal_chromite)item(firmalife:ore/rich_chromite)item(kubejs:item/ore/rocky_chunks/chromite)item(kubejs:item/ore/chunks/chromite)item(kubejs:item/ore/dirty_dust/chromite)item(kubejs:item/ore/dirty_pile/chromite)item(firmalife:powder/chromite))"
 						}
 					}
 					title: "是否有铬？"
@@ -2047,6 +2526,11 @@
 			}
 			id: "258E524CDB34C6F2"
 			invisible_until_tasks: 1
+			rewards: [{
+				id: "7BAA0FF297606435"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "其次"
 			tasks: [
 				{
@@ -2101,6 +2585,11 @@
 			}
 			id: "66869DA16F071393"
 			invisible_until_tasks: 1
+			rewards: [{
+				id: "464705E49F017C8A"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					id: "19683C31255F2715"
@@ -2132,6 +2621,11 @@
 			hide_until_deps_complete: true
 			icon: "kubejs:bauxite_clinker"
 			id: "17BAEA1D12BEA711"
+			rewards: [{
+				id: "58983133DE48EA23"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					id: "2DE33847CACACC44"
@@ -2165,18 +2659,14 @@
 			]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "kubejs:corundum_brick"
-			}
+			icon: "kubejs:corundum_brick"
 			id: "053D26E611D4FC35"
 			min_required_dependencies: 1
+			rewards: [{
+				id: "3680C1CB595E1C28"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "红宝石"
 			tasks: [
 				{
@@ -2219,6 +2709,11 @@
 			]
 			hide_until_deps_complete: true
 			id: "797E70374DC5D08D"
+			rewards: [{
+				id: "547C0F693400E832"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -2241,6 +2736,11 @@
 			dependencies: ["4B6AF4B789E7C1C7"]
 			hide_until_deps_complete: true
 			id: "4FAE1CF04EF95651"
+			rewards: [{
+				id: "70E04EC73FC50BAB"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -2273,8 +2773,14 @@
 		}
 		{
 			dependencies: ["797E70374DC5D08D"]
+			description: ["当作燃料使用会有&4&l剧毒气体&r&r产生，请谨慎使用"]
 			icon: "immersiveengineering:creosote_bucket"
 			id: "50E3DC2119EEF05E"
+			rewards: [{
+				id: "20D5343892103823"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "701C4B3A95E6E26C"
@@ -2298,6 +2804,11 @@
 			hide_until_deps_visible: true
 			id: "20951DCB9E381CAD"
 			optional: true
+			rewards: [{
+				id: "64ACE0FA7C18C513"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "不畏高温"
 			tasks: [{
@@ -2319,6 +2830,11 @@
 			icon: "kubejs:molten_corundum_bucket"
 			id: "1A7E7EB359A970F3"
 			optional: true
+			rewards: [{
+				id: "21A1EBBF8FB4B3E2"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "黏土坩埚代替品"
 			tasks: [
 				{
@@ -2342,18 +2858,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["3CE25BF30E03A669"]
-			id: "366E98E912E04672"
-			shape: "hexagon"
-			tasks: [{
-				id: "386E127A4ECE9321"
-				item: "createmetallurgy:foundry_lid"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 5.5d
-		}
-		{
 			dependencies: [
 				"4B6AF4B789E7C1C7"
 				"5ABCEA9D66EB2104"
@@ -2362,6 +2866,11 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "74BA3E29A92B1D60"
+			rewards: [{
+				id: "08A64670394CC606"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "这里没有奶昔"
 			tasks: [
 				{
@@ -2392,6 +2901,11 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "6EDE7AE43DA1D146"
+			rewards: [{
+				id: "0D2F87AC00A663BA"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					id: "48F69E47750C4251"
@@ -2421,6 +2935,11 @@
 			]
 			description: ["防腐木板是用于制作沉浸工程各项木质结构以及工作方块的基础。首先需要将木材放进有杂酚油的大桶内浸泡8分钟变成防腐木材，4个防腐木材可以合成防腐木板。每一个普通木材变成防腐木材需要消耗50mb杂酚油。"]
 			id: "23773F37400D8ACB"
+			rewards: [{
+				id: "682AF9C3CCCC8FC7"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "0999B7E2C84E86E4"
@@ -2433,6 +2952,11 @@
 		{
 			dependencies: ["23773F37400D8ACB"]
 			id: "6F2BAE4FB297345F"
+			rewards: [{
+				id: "4F6DAC8BF2C4DF1D"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "10AA7565AA9082BA"
 				item: "create:item_vault"
@@ -2444,6 +2968,11 @@
 		{
 			dependencies: ["23773F37400D8ACB"]
 			id: "57E2F4EB034F0B32"
+			rewards: [{
+				id: "0FA3ABCA6568A4DB"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "3D63B72EE246EB3A"
 				item: {
@@ -2464,6 +2993,11 @@
 		{
 			dependencies: ["23773F37400D8ACB"]
 			id: "1B6700966885A071"
+			rewards: [{
+				id: "7638A1934CD2EF83"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "21975364EE0016C6"
 				item: "immersiveengineering:crate"
@@ -2475,6 +3009,11 @@
 		{
 			dependencies: ["23773F37400D8ACB"]
 			id: "685F566B1282431D"
+			rewards: [{
+				id: "5ED68CEEC32D4A42"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "71BB05BAB279B959"
 				item: "create:large_water_wheel"
@@ -2482,6 +3021,54 @@
 			}]
 			x: 11.0d
 			y: 7.0d
+		}
+		{
+			dependencies: ["3CE25BF30E03A669"]
+			description: [
+				"熔铸盖是高炉核心方块的重要配件"
+				""
+				"不过后面他仍然有更多用途……"
+			]
+			hide_until_deps_complete: true
+			icon: "createmetallurgy:foundry_lid"
+			id: "50430371417350B8"
+			tasks: [
+				{
+					id: "1AA0B8E383FAF4E7"
+					item: "createmetallurgy:foundry_lid"
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: "design_decor:arrow_right_sign"
+					id: "7930B9DA0892F09F"
+					observe_type: 0
+					optional_task: true
+					timer: 0L
+					title: "已有高炉？"
+					to_observe: "tfc:blast_furnace"
+					type: "observation"
+				}
+			]
+			x: 7.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"3C497ADF6020F77E"
+				"78E74E2634CAD705"
+			]
+			description: ["利用一些氧化反应做成的持续发热的暖宝宝，右键开封，适合出门携带很多进行保暖"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: false
+			id: "6082A8E82897D601"
+			tasks: [{
+				id: "2329600FAD96C03A"
+				item: "kubejs:warm_warmer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
 		}
 	]
 	title: "第三章：铁沙与红土"
