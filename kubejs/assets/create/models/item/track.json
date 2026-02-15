@@ -1,0 +1,65 @@
+{
+  "parent": "create:item/template_track",
+  "textures": {
+    "particle": "create:item/standard_track/standard_track"
+  },
+
+  "gui_light": "front",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "create:item/template_track",
+    "textures": {
+      "0": "create:item/standard_track/standard_track"
+    }
+  },
+  "perspectives": {
+    "thirdperson_righthand": {
+      "parent": "create:item/template_track",
+      "textures": {
+        "0": "create:item/standard_track/standard_track"
+      }
+    },
+    "thirdperson_lefthand": {
+      "parent": "create:item/template_track",
+      "textures": {
+        "0": "create:item/standard_track/standard_track"
+      }
+    },
+    "firstperson_righthand": {
+      "parent": "create:item/template_track",
+      "textures": {
+        "0": "create:item/standard_track/standard_track"
+      }
+    },
+    "firstperson_lefthand": {
+      "parent": "create:item/template_track",
+      "textures": {
+        "0": "create:item/standard_track/standard_track"
+      }
+    },
+    "head": {
+      "parent": "create:item/template_track",
+      "textures": {
+        "0": "create:item/standard_track/standard_track"
+      }
+    },
+    "gui": {
+      "parent": "create:item/track_chibbi",
+      "textures": {
+        "0": "create:item/standard_track_chibbi/standard_track_chibbi"
+      }
+    },
+    "ground": {
+      "parent": "create:item/template_track",
+      "textures": {
+        "0": "create:item/standard_track/standard_track"
+      }
+    },
+    "fixed": {
+      "parent": "create:item/template_track",
+      "textures": {
+        "0": "create:item/standard_track/standard_track"
+      }
+    }
+  }
+}

@@ -755,6 +755,7 @@ ServerEvents.recipes(event => {
     { item: 'artisanal:ceramic/dirty_small_pot', item2: 'artisanal:ceramic/small_pot' },
     { item: 'artisanal:metal/dirty_tin_can', item2: 'artisanal:metal/tin_can' },
     { item: 'artisanal:metal/dirty_dented_tin_can', item2: 'artisanal:metal/dented_tin_can' },
+    
   ]
   dirty.forEach(dirty => {
     create.sequenced_assembly(`${dirty.item2}`, `${dirty.item}`,
@@ -769,15 +770,38 @@ ServerEvents.recipes(event => {
     ).transitionalItem(`${dirty.item}`).loops(1)
     create.sequenced_assembly(`${dirty.item2}`, dirty.item,
       [
-        create.filling(`${dirty.item}`, [`${dirty.item}`, Fluid.of('artisanal:soapy_water', 25)]),
-        create.filling(`${dirty.item}`, [`${dirty.item}`, Fluid.of('artisanal:soapy_water', 25)])
+        create.filling(`${dirty.item}`, [`${dirty.item}`, Fluid.of('artisanal:soapy_water', 5)]),
+        create.filling(`${dirty.item}`, [`${dirty.item}`, Fluid.of('minecraft:water', 25)])
       ]
     ).transitionalItem(`${dirty.item}`).loops(1)
     create.mixing(Item.of(`${dirty.item2}`), [`${dirty.item}`,Fluid.of('minecraft:water', 1000)])
-    create.mixing(Item.of(`${dirty.item2}`), [`${dirty.item}`,Fluid.of('artisanal:soapy_water', 40)])
+    create.mixing(Item.of(`${dirty.item2}`), [`${dirty.item}`,Fluid.of('artisanal:soapy_water', 10),Fluid.of('minecraft:water', 150)])
   })
-  //加压处理
-  /*
+  
+  const component = [
+    { item1: 'tfc:metal/rod/wrought_iron', item2: 'kubejs:material_component_wrought_iron' },
+    { item1: 'tfc:metal/rod/steel', item2: 'kubejs:material_component_steel' },
+    { item1: 'tfc:metal/rod/black_steel', item2: 'kubejs:material_component_black_steel' },
+    
+  ]
+  component.forEach(item => {
+    create.sequenced_assembly(`${item.item2}`, `${item.item1}`,
+      [
+        create.cutting(`${item.item1}`, `${item.item1}`),
+        create.cutting(`${item.item1}`, `${item.item1}`),
+        create.pressing(`${item.item1}`, `${item.item1}`),
+        event.custom({
+          "type": "vintageimprovements:curving",
+          "itemAsHead": "immersiveengineering:mold_mechanical",
+          "ingredients": [ {"item": `${item.item1}`}],
+          "results": [{"item": `${item.item1}`,"count": 1}]}),
+        create.pressing(`${item.item1}`, `${item.item1}`)
+      ]
+    ).transitionalItem(`${item.item1}`).loops(1)
+  
+  })
+      //加压处理
+  /*  
   
     {
       "type": "vintageimprovements:pressurizing",
@@ -1013,9 +1037,9 @@ ServerEvents.recipes(event => {
       create.deploying(gold_sheet, ['create:incomplete_precision_mechanism', 'petrolsparts:large_coaxial_gear']),
       create.deploying(gold_sheet, ['create:incomplete_precision_mechanism', 'create:shaft']),
       create.deploying(gold_sheet, ['create:incomplete_precision_mechanism', 'kubejs:wrought_iron_fragments']),
-      create.deploying(gold_sheet, ['create:incomplete_precision_mechanism', 'design_decor:industrial_gear_large'])
+      create.deploying(gold_sheet, ['create:incomplete_precision_mechanism', 'tfc:brass_mechanisms'])
     ]
-  ).transitionalItem(gold_sheet).loops(2)//精密构建
+  ).transitionalItem('create:incomplete_precision_mechanism').loops(2)//精密构建
 
   const inputcailiao = 'tfc:metal/sheet/black_steel'
   create.sequenced_assembly('kubejs:basic_crystal_pannel', 'tfc:metal/sheet/black_steel',

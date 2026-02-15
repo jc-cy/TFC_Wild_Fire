@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "tfc:temperate",
+        "tfc:tropical",
+        "tfc:small_world",
+        "tfc:big_world",
+        "tfc:freezing_world",
+        "tfc:drought_world"
+    ]
+}

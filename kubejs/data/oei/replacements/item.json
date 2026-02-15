@@ -421,5 +421,17 @@
             "tfc:ceramic/bowl"
         ],
         "resultItems": "minecraft:bowl"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:component_iron"
+        ],
+        "resultItems": "kubejs:material_component_wrought_iron"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:component_steel"
+        ],
+        "resultItems": "kubejs:material_component_steel"
     }
 ]

@@ -273,7 +273,7 @@ ServerEvents.recipes(event => {
         ['aa',
             ' a'],
         {
-            a: '#tfc:loose_rocks'
+            a: '#tfc:any_knapping'
         })//石箭头
     event.shaped('minecraft:bucket',
         ['cbc',

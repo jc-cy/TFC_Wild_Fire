@@ -1,6 +1,12 @@
 BlockEvents.placed(event => {
     banPlacePartner(event, 'tfc:crucible', 'fluid:fluid_interface')
     banPlacePartner(event, 'tfc:crucible', 'fluid:smart_fluid_interface')
+    banPlacePartner(event, 'tfcchannelcasting:mold_table', 'create:brass_funnel')
+    banPlacePartner(event, 'tfcchannelcasting:mold_table', 'create:andesite_funnel')
+    banPlacePartner(event, 'tfcchannelcasting:mold_table', 'create:mechanical_pump')
+    banPlacePartner(event, 'tfcchannelcasting:mold_table', 'create:fluid_pipe')
+    banPlacePartner(event, 'tfcchannelcasting:mold_table', 'create:smart_fluid_pipe')
+    banPlacePartner(event, 'tfcchannelcasting:mold_table', 'copycats:copycat_fluid_pipe')
 })
 function banPlacePartner(event, block1, block2) {
     let block = event.block

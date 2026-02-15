@@ -83,7 +83,7 @@
     "createmetallurgy.ponder.casting_blocks.text_2": "铸造盆用于铸造完整的块",
     "createmetallurgy.ponder.casting_blocks.text_3": "而铸造台使用石墨铸模铸造物品",
     "createmetallurgy.ponder.casting_blocks.text_4": "如果使用漏斗而不是手动输出...",
-    "createmetallurgy.ponder.casting_blocks.text_5": "...可能需要黄铜漏斗来防止输出铸模",
+    "createmetallurgy.ponder.casting_blocks.text_5": "...可能需要金属漏斗来防止输出铸模",
     "createmetallurgy.ponder.foundry_basin.header": "使用熔铸盆来熔炼金属",
     "createmetallurgy.ponder.foundry_basin.text_1": "熔铸盆与工作盆类似...",
     "createmetallurgy.ponder.foundry_basin.text_2": "...但是，它只能容纳9个同种物品",

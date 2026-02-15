@@ -1803,6 +1803,15 @@
   "item.kubejs.mold_sheet": "板模具",
   "item.kubejs.unfired_mold_sheet": "未烧制的板模具",
   
+  "item.immersiveengineering.mold_mechanical": "金属冲压模具：零件",
+
+  "generator.tfc.temperate":"温带出生点",
+  "generator.tfc.tropical":"热带出生点",
+  "generator.tfc.big_world":"大尺度世界",
+  "generator.tfc.small":"小尺度世界",
+  "generator.tfc.freezing_world":"冻结之地",
+  "generator.tfc.drought_world":"干旱之地",
+  
   "item.tfc.unfermented_compost": "未发酵的堆肥",
   "item.tfc.unfermented_meat_compost": "未发酵的肉堆肥"
 }

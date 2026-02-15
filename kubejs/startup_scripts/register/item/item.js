@@ -270,6 +270,9 @@ StartupEvents.registry("item", event => {  //半成品
 
     event.create('tfc:unfermented_compost').texture('kubejs:item/unfermented_compost'); //未发酵的堆肥
     event.create('tfc:unfermented_meat_compost').texture('kubejs:item/unfermented_meat_compost'); //未发酵的肉堆肥
+    event.create('immersiveengineering:mold_mechanical').texture('kubejs:item/mold_mechanical')//零件冲压头
+        .tag('vintageimprovements:curving_heads')
+        .tag('tfc_ie_addon:molds')
 })
 
 StartupEvents.registry("item", event => {   //新金属
@@ -286,26 +289,26 @@ StartupEvents.registry("item", event => {   //新金属
         .tag(`forge:ingots`)
         .tag('tfc:pileable_ingots')
         .tag(`forge:ingots/${metal.id}`)
-        .tag(`tfc:metal_item/${metal.id}`)
+        .tag(`tfc:metal_item/${metal.id}`);
         event.create(`tfc:metal/double_ingot/${metal.id}`).texture(`kubejs:item/metal/double_ingot/${metal.id}`)
         .tag('tfc:pileable_double_ingots')
         .tag('tfc:pileable_sheets')
         .tag(`forge:double_ingots`)
         .tag(`forge:double_ingots/${metal.id}`)
-        .tag(`tfc:metal_item/${metal.id}`)
+        .tag(`tfc:metal_item/${metal.id}`);
         event.create(`tfc:metal/sheet/${metal.id}`).texture(`kubejs:item/metal/sheet/${metal.id}`)
         .tag('tfc:pileable_sheets')
         .tag(`forge:sheets`)
         .tag(`forge:sheets/${metal.id}`)
-        .tag(`tfc:metal_item/${metal.id}`)
+        .tag(`tfc:metal_item/${metal.id}`);
         event.create(`tfc:metal/double_sheet/${metal.id}`).texture(`kubejs:item/metal/double_sheet/${metal.id}`)
         .tag(`forge:double_sheets`)
         .tag(`forge:double_sheets/${metal.id}`)
-        .tag(`tfc:metal_item/${metal.id}`)
+        .tag(`tfc:metal_item/${metal.id}`);
         event.create(`tfc:metal/rod/${metal.id}`).texture(`kubejs:item/metal/rod/${metal.id}`)
         .tag(`forge:rods`)
         .tag(`forge:rods/${metal.id}`)
-        .tag(`tfc:metal_item/${metal.id}`)
+        .tag(`tfc:metal_item/${metal.id}`);
 
     })  
     //矿物
@@ -317,11 +320,11 @@ StartupEvents.registry("item", event => {   //新金属
     ]
     ore.forEach(ore => {
         event.create(`tfc:ore/rich_${ore}`).texture(`kubejs:item/ore/rich_${ore}`)
-        .tag('tfc:ore_pieces')
+        .tag('tfc:ore_pieces');
         event.create(`tfc:ore/${ore}`).texture(`kubejs:item/ore/${ore}`)
-        .tag('tfc:ore_pieces')
+        .tag('tfc:ore_pieces');
         event.create(`tfc:ore/poor_${ore}`).texture(`kubejs:item/ore/poor_${ore}`)
-        .tag('tfc:ore_pieces')
+        .tag('tfc:ore_pieces');
     })
 
 })  

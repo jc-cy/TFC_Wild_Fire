@@ -842,6 +842,8 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'tfc:crafting/fire_clay_recycle_5' })  
   e.remove({ id: 'farmersdelight:cutting/bricks' })  
   e.remove({ id: 'tfc:crafting/vanilla/bowl' })  
+  e.remove({ id: 'woodencog:crushing/milling_fluxstone' })
+  e.remove({ id: 'create:crafting/kinetics/copper_door' })
 
   //删除ie左轮手枪及其相关组件配方
   e.remove({ id: 'immersiveengineering:crafting/toolupgrade_revolver_magazine' })
@@ -917,12 +919,6 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'precisionprospecting:heating/metal/prospector_hammer/black_steel' })
   e.remove({ id: 'precisionprospecting:heating/metal/prospector_hammer_head/red_steel' })
   e.remove({ id: 'tfc_hammer_time:heating/excavator_head/red_steel' })
-  e.remove({ id: '11111111111111111111111' })
-  e.remove({ id: '11111111111111111111111' })
-  e.remove({ id: '11111111111111111111111' })
-  e.remove({ id: '11111111111111111111111' })
-  e.remove({ id: '11111111111111111111111' })
-  e.remove({ id: '11111111111111111111111' })
 
 
 

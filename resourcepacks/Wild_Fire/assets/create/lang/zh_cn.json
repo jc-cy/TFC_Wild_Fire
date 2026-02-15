@@ -19,6 +19,23 @@
   "block.create.cogwheel": "安山合金齿轮",
   "block.create.large_cogwheel": "安山合金大齿轮",
 
+  "create.ponder.brass_funnel.header": "金属漏斗",
+  "create.ponder.brass_funnel.text_2": "锻铁漏斗可以一次提取一组物品",
+  "create.ponder.brass_funnel.text_3": "使用面板可以精确调节锻铁漏斗的提取数量。",
+  "create.ponder.mechanical_arm_filtering.text_5": "然而，若将锻铁漏斗作为目标，则漏斗的过滤槽可以应用至动力臂上",
+  "block.create.brass_funnel": "金属漏斗",
+  "block.create.brass_belt_funnel": "金属传送带漏斗",
+  
+  "block.create.brass_tunnel": "黄铜隧道",
+  "create.ponder.brass_tunnel.header": "黄铜隧道用法",
+  "create.ponder.brass_tunnel.text_1": "黄铜隧道可以遮掩住你的传送带",
+  "create.ponder.brass_tunnel.text_6": "连接了平行传送带的黄铜隧道，会将隧道、传送带组成一个组",
+  "create.ponder.brass_tunnel_modes.header": "黄铜隧道的分配模式",
+  "create.ponder.brass_tunnel_modes.text_1": "黄铜隧道的分配模式可以调节",
+  "create.ponder.brass_tunnel_modes.text_10": "“同步输入”是黄铜隧道的一种特殊设定",
+  "create.ponder.weighted_ejector_tunnel.text_1": "与黄铜隧道搭配使用时，弹射置物台可以将物品以特定数量进行分流",
+  "create.ponder.weighted_ejector_tunnel.text_2": "首先，将黄铜隧道调整为“最近优先”模式，从而让它优先侧面输出",
+
   "block.create.copper_valve_handle": "黄铜阀门",
   "create.ponder.encased_fluid_pipe.text_1": "黄铜管道机壳可以用于装饰流体管道",
   "block.create.copper_casing": "黄铜管道机壳"

@@ -7,7 +7,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "kubejs:ore/ilmenite"
+            "tag": "tfc:ore/ilmenite"
           }
         ]
       }
@@ -15,7 +15,7 @@
   },
   "display": {
     "icon": {
-      "item": "kubejs:ore/rich_ilmenite"
+      "item": "tfc:ore/rich_ilmenite"
     },
     "title": {
       "translate": "tfc.advancements.world.ilmenite.title"
