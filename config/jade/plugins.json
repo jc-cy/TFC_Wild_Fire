@@ -67,6 +67,9 @@
   "immersiveengineering": {
     "multiblock_icon": true
   },
+  "mbd2thread": {
+    "recipe_thread_hud": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
