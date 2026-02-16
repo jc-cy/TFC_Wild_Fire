@@ -111,6 +111,14 @@ ServerEvents.recipes(event => {
     { name: 'kubejs:unfinished/hot_double_ingot/zinc', number: 200, metal: "zinc" },
     { name: 'kubejs:unfinished/double_ingot/stainless_steel', number: 200, metal: "stainless_steel" },
     { name: 'kubejs:unfinished/hot_double_ingot/stainless_steel', number: 200, metal: "stainless_steel" },
+    { name: 'kubejs:unfinished/double_ingot/titanium_alloy', number: 200, metal: "titanium_alloy" },
+    { name: 'kubejs:unfinished/hot_double_ingot/titanium_alloy', number: 200, metal: "titanium_alloy" },
+    { name: 'kubejs:unfinished/double_ingot/titanium', number: 200, metal: "titanium" },
+    { name: 'kubejs:unfinished/hot_double_ingot/titanium', number: 200, metal: "titanium" },
+    { name: 'kubejs:unfinished/double_ingot/vanadium', number: 200, metal: "vanadium" },
+    { name: 'kubejs:unfinished/hot_double_ingot/vanadium', number: 200, metal: "vanadium" },
+    { name: 'kubejs:unfinished/double_ingot/manganese', number: 200, metal: "manganese" },
+    { name: 'kubejs:unfinished/hot_double_ingot/manganese', number: 200, metal: "manganese" },
 
     // ========== 双层薄板相关 (number: 400) ==========
     { name: 'kubejs:unfinished/double_sheet/bismuth_bronze', number: 400, metal: "bismuth_bronze" },
@@ -164,7 +172,15 @@ ServerEvents.recipes(event => {
     { name: 'kubejs:unfinished/double_sheet/zinc', number: 400, metal: "zinc" },
     { name: 'kubejs:unfinished/hot_double_sheet/zinc', number: 400, metal: "zinc" },
     { name: 'kubejs:unfinished/double_sheet/stainless_steel', number: 400, metal: "stainless_steel" },
-    { name: 'kubejs:unfinished/hot_double_sheet/stainless_steel', number: 400, metal: "stainless_steel" }
+    { name: 'kubejs:unfinished/hot_double_sheet/stainless_steel', number: 400, metal: "stainless_steel" },
+    { name: 'kubejs:unfinished/double_sheet/titanium_alloy', number: 400, metal: "titanium_alloy" },
+    { name: 'kubejs:unfinished/hot_double_sheet/titanium_alloy', number: 400, metal: "titanium_alloy" },
+    { name: 'kubejs:unfinished/double_sheet/titanium', number: 400, metal: "titanium" },
+    { name: 'kubejs:unfinished/hot_double_sheet/titanium', number: 400, metal: "titanium" },
+    { name: 'kubejs:unfinished/double_sheet/vanadium', number: 400, metal: "vanadium" },
+    { name: 'kubejs:unfinished/hot_double_sheet/vanadium', number: 400, metal: "vanadium" },
+    { name: 'kubejs:unfinished/double_sheet/manganese', number: 400, metal: "manganese" },
+    { name: 'kubejs:unfinished/hot_double_sheet/manganese', number: 400, metal: "manganese" }
   ];
 
 

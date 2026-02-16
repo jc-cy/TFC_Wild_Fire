@@ -55,12 +55,12 @@
 		[types.wood_type.born_in_chaos_v1]
 			scorched = true
 
-		[types.wood_type.alexscaves]
-			pewen = true
-			thornwood = false
-
 		[types.wood_type.eidolon]
 			illwood = true
+
+		[types.wood_type.alexscaves]
+			pewen = true
+			thornwood = true
 
 	[types.leaves_type]
 
@@ -72,11 +72,11 @@
 			dark_cherry = true
 			apple = true
 
-		[types.leaves_type.alexscaves]
-			ancient = true
-
 		[types.leaves_type.eidolon]
 			illwood = true
+
+		[types.leaves_type.alexscaves]
+			ancient = true
 
 #Disables specific entries
 [entries]

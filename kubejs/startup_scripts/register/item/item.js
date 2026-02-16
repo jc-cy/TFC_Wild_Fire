@@ -251,7 +251,12 @@ StartupEvents.registry("item", event => {  //半成品
         "nickel",
         "chromium",
         "zinc",
-        "stainless_steel"]
+        "stainless_steel",
+        "titanium_alloy",
+        "titanium",
+        "vanadium",
+        "manganese"
+    ]
     allmetal.forEach(metal => {
         event.create(`kubejs:unfinished/double_ingot/${metal}`).tag("kubejs:2ingot"); // 激光焊接半成品-双锭
         event.create(`kubejs:unfinished/hot_double_ingot/${metal}`).tag("kubejs:2ingot"); // 激光焊接半成品-热双锭
@@ -273,6 +278,7 @@ StartupEvents.registry("item", event => {  //半成品
     event.create('immersiveengineering:mold_mechanical').texture('kubejs:item/mold_mechanical')//零件冲压头
         .tag('vintageimprovements:curving_heads')
         .tag('tfc_ie_addon:molds')
+    event.create('tfc:arm_clip').texture('kubejs:item/arm_clip'); //动力臂夹子
 })
 
 StartupEvents.registry("item", event => {   //新金属

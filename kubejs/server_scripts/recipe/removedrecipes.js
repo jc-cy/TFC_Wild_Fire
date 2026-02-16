@@ -844,6 +844,11 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'tfc:crafting/vanilla/bowl' })  
   e.remove({ id: 'woodencog:crushing/milling_fluxstone' })
   e.remove({ id: 'create:crafting/kinetics/copper_door' })
+  e.remove({ id: 'woodencog:crafting/logistics/brass_funnel' })
+  e.remove({ id: 'create:crafting/logistics/brass_funnel' })
+  e.remove({ id: 'create:crafting/kinetics/flywheel' })
+  e.remove({ id: 'create:crafting/kinetics/rotation_speed_controller' })
+  e.remove({ id: 'create:crafting/kinetics/mechanical_crafter' })
 
   //删除ie左轮手枪及其相关组件配方
   e.remove({ id: 'immersiveengineering:crafting/toolupgrade_revolver_magazine' })
