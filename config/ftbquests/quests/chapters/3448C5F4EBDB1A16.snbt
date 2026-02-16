@@ -44,7 +44,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["4A6067EFAE9D19C1"]
 			description: [
 				"钢铁时代是一个重要的飞跃点、在这个阶段需要的材料和需要建造的机器会变得多很多！"
 				"但与此同时、这个阶段生活质量也会大大改变、很多事情会变大比较轻松、"
@@ -64,13 +63,28 @@
 				id: "tfc:metal/ingot/steel"
 			}
 			id: "72432121EE248C7B"
+			invisible: true
+			rewards: [{
+				id: "64E1CC73F03C9B87"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			size: 1.75d
 			subtitle: "完成了最大的挑战，后续的事情就比较简单了"
 			tasks: [{
-				id: "657D2F8A4D02137F"
-				title: "请在阅读以下内容后点击确认"
-				type: "checkmark"
+				id: "0760F5D9A1D917E3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/ingot/steel"
+				}
+				type: "item"
 			}]
 			title: "第四章：钢铁之魂"
 			x: 14.535714285714292d
@@ -99,6 +113,11 @@
 				id: "firmaciv:sextant"
 			}
 			id: "6222CD178F9A72B5"
+			rewards: [{
+				id: "3D6992020604F608"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "世界上某些地方人类无法靠近，但帆船却可以。——艾伦·维利耶"
 			tasks: [{
 				icon: "firmaciv:cannon"
@@ -111,7 +130,7 @@
 			}]
 			title: "船坚炮利"
 			x: 18.0d
-			y: -6.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["7D7A0D519A2C0B53"]
@@ -126,6 +145,11 @@
 			hide_until_deps_complete: true
 			icon: "tfc:steel_pump"
 			id: "68180ECE6863FA8B"
+			rewards: [{
+				id: "239173450E3EFEB4"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "群峦本体唯一搬运流体源的方式"
 			tasks: [
 				{
@@ -150,22 +174,49 @@
 			]
 			hide_until_deps_complete: true
 			id: "6AB49CFCB58E3D6B"
+			rewards: [{
+				id: "2E88EAD61A236246"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "你该学会预判了"
-			tasks: [{
-				id: "3448A564C61BF56D"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
+			tasks: [
+				{
+					id: "3448A564C61BF56D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
 						}
+						id: "tfc:metal/anvil/steel"
 					}
-					id: "tfc:metal/anvil/steel"
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/anvil/steel"
+					}
+					id: "33ACB7DBAC512263"
+					observe_type: 0
+					optional_task: true
+					timer: 0L
+					title: "或：观察钢砧"
+					to_observe: "tfc:metal/anvil/steel"
+					type: "observation"
+				}
+			]
 			x: 9.0d
 			y: -5.0d
 		}
@@ -175,6 +226,11 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "0448F81C69D7FCA5"
+			rewards: [{
+				id: "01EB4C934A47BFC6"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "你怎么才来？"
 			tasks: [{
 				id: "4E9A859A547E0F1D"
@@ -188,7 +244,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: -5.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["7D7A0D519A2C0B53"]
@@ -196,6 +252,11 @@
 			hide_dependency_lines: true
 			icon: "tfc:crankshaft"
 			id: "0B1668F8FF1ECD7B"
+			rewards: [{
+				id: "45AF8268CF76FBC9"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "一些简单的机械原理"
 			tasks: [
 				{
@@ -224,13 +285,13 @@
 		{
 			dependencies: ["6AB49CFCB58E3D6B"]
 			description: [
-				"我们接下来需要制作更高级的金属：锰钢"
-				"锰钢首先需要先合金制作"
+				"我们接下来需要制作更高级的金属：黑钢"
+				"黑钢首先需要先合金制作"
 				"而他的材料需要&7镍&r和&5黑铜&r"
 				""
 				"镍是必需品"
 				""
-				"&n[在制作锰钢前建议先去发展工业、有助于更好的发展主线、当然、想和原版群峦的制作也是可以的]&r"
+				"&n[在制作黑钢前建议先去发展工业、有助于更好的发展主线、当然、想和原版群峦的制作也是可以的]&r"
 			]
 			hide_until_deps_visible: true
 			icon: {
@@ -244,6 +305,11 @@
 				id: "tfc:metal/ingot/nickel"
 			}
 			id: "75223535BFA1B142"
+			rewards: [{
+				id: "59EADC12BD7910D0"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -272,6 +338,13 @@
 					type: "xp"
 					value: 1L
 				}
+				{
+					advancement: "tfc:story/black_steel"
+					criterion: ""
+					id: "1CB49D67A74575C6"
+					title: "获得黑钢[或黑钢制品]"
+					type: "advancement"
+				}
 			]
 			title: "镍锭"
 			x: 9.0d
@@ -297,6 +370,11 @@
 				id: "firmalife:metal/ingot/chromium"
 			}
 			id: "0C2E97A138486954"
+			rewards: [{
+				id: "172BC33A75828C69"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					count: 10L
@@ -326,7 +404,7 @@
 				}
 			]
 			title: "铬锭"
-			x: 10.5d
+			x: 10.0d
 			y: -6.0d
 		}
 		{
@@ -335,6 +413,11 @@
 			hide_dependency_lines: false
 			hide_until_deps_visible: false
 			id: "418943718040C326"
+			rewards: [{
+				id: "62FA84E6B4111F18"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "不生锈是唯一的价值"
 			tasks: [{
 				id: "74811A37276979D8"
@@ -350,7 +433,7 @@
 				}
 				type: "item"
 			}]
-			x: 12.5d
+			x: 11.0d
 			y: -6.5d
 		}
 		{
@@ -368,6 +451,11 @@
 				id: "tfc:metal/ingot/weak_steel"
 			}
 			id: "58B1D2FE24BF1134"
+			rewards: [{
+				id: "068E6387A2B64C41"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -395,17 +483,29 @@
 					type: "xp"
 					value: 1L
 				}
+				{
+					advancement: "tfc:story/black_steel"
+					criterion: ""
+					id: "6CA0EE61FCF80599"
+					title: "获得黑钢[或黑钢制品]"
+					type: "advancement"
+				}
 			]
 			title: "脆弱的金属"
-			x: 10.0d
-			y: -8.5d
+			x: 9.000000000000014d
+			y: -8.31d
 		}
 		{
 			dependencies: ["58B1D2FE24BF1134"]
-			description: ["将脆钢锭和生铁锭焊接在一起可以得到高碳锰钢锭，锻打高碳锰钢锭即可得到锰钢锭。锰钢锭是五级金属，除了锻造锰钢工具以外几乎没有别的用途，最大的用途还是用于锻造红蓝钢。"]
+			description: ["将脆钢锭和生铁锭焊接在一起可以得到高碳黑钢锭，锻打高碳黑钢锭即可得到黑钢锭。黑钢锭是五级金属，除了锻造黑钢工具以外几乎没有别的用途，最大的用途还是用于锻造红蓝钢。"]
 			hide_until_deps_visible: true
 			id: "4DFF7818B50623B5"
 			optional: true
+			rewards: [{
+				id: "10F82BB601DAABEF"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "gear"
 			tasks: [
 				{
@@ -427,7 +527,7 @@
 					advancement: "tfc:story/black_steel"
 					criterion: ""
 					id: "63CF296A1ADA80A4"
-					title: "获得锰钢[或锰钢制品]"
+					title: "获得黑钢[或黑钢制品]"
 					type: "advancement"
 				}
 			]
@@ -440,6 +540,11 @@
 			hide_until_deps_complete: true
 			icon: "tfc:crucible"
 			id: "446F9DA4F13E0AA6"
+			rewards: [{
+				id: "73707BE151A08EB5"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "gear"
 			size: 1.5d
 			subtitle: "准备好迎来最复杂的合金配方"
@@ -453,7 +558,7 @@
 		}
 		{
 			dependencies: ["446F9DA4F13E0AA6"]
-			description: ["制作蓝钢需要先制作脆蓝钢，一种锰钢、钢、铋铜和纹银的合金。"]
+			description: ["制作蓝钢需要先制作脆蓝钢，一种黑钢、钢、铋铜和纹银的合金。"]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			icon: {
@@ -467,28 +572,18 @@
 				id: "tfc:metal/ingot/sterling_silver"
 			}
 			id: "419D1651505D2B46"
+			rewards: [{
+				id: "659A42E7DF370AC8"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
 					count: 10L
-					id: "03406F5786149A47"
+					id: "376B9BB234CF95E2"
 					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/ingot/bismuth_bronze"
-					}
-					type: "item"
-				}
-				{
-					count: 10L
-					id: "751189AEB0002AB5"
-					item: {
-						Count: 1
+						Count: 10
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -497,45 +592,97 @@
 						}
 						id: "tfc:metal/ingot/sterling_silver"
 					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: "design_decor:arrow_right_sign"
+					id: "1F74FC611A3744A9"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item_tag(tfc:metal_item/blue_steel))"
+						}
+					}
+					optional_task: true
+					title: "已获得秘银？自动跳过"
 					type: "item"
 				}
 			]
-			title: "纹银锭"
+			title: "传说金属-秘银的合金材料"
 			x: 3.042942431602377d
 			y: -9.0d
 		}
 		{
 			dependencies: ["419D1651505D2B46"]
-			description: ["将锰钢、钢、铋铜和纹银按照一定比例混合就可以得到劣等秘银"]
+			description: ["将黑钢、钢、铋铜和纹银按照一定比例混合就可以得到劣等秘银"]
 			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/ingot/weak_blue_steel"
+			}
 			id: "7BED755237B36ACA"
+			rewards: [{
+				id: "78FEB86F78049B42"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "秘银青春版"
-			tasks: [{
-				id: "1400DE394149402F"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
+			tasks: [
+				{
+					id: "1400DE394149402F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/weak_blue_steel"
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: "design_decor:arrow_right_sign"
+					id: "1E9B527F90059AF4"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item_tag(tfc:metal_item/blue_steel))"
 						}
 					}
-					id: "tfc:metal/ingot/weak_blue_steel"
+					optional_task: true
+					title: "已获得秘银？自动跳过"
+					type: "item"
 				}
-				type: "item"
-			}]
+			]
 			title: "劣等秘银"
 			x: 1.542942431602377d
 			y: -9.0d
 		}
 		{
 			dependencies: ["7BED755237B36ACA"]
-			description: ["将劣等秘银锭和锰钢锭焊接在一起可以得到高碳秘银锭，锻打高碳秘银锭即可得到&b秘银&r锭。&b秘银&r是最高级的六级金属，可以制造最高等级的装备和武器，并拥有一些新配方。性能与&6精金&r并无太大差别。"]
+			description: ["将劣等秘银锭和黑钢锭焊接在一起可以得到高碳秘银锭，锻打高碳秘银锭即可得到&b秘银&r锭。&b秘银&r是最高级的六级金属，可以制造最高等级的装备和武器，并拥有一些新配方。性能与&6精金&r并无太大差别。"]
 			hide_until_deps_complete: true
 			id: "16ED3FE9D5BD6956"
+			rewards: [{
+				id: "6FE22C1C503FCE7A"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "gear"
-			subtitle: "&b蓝色是冷漠"
+			subtitle: "&b冷洁的灵魂"
 			tasks: [{
 				id: "33CB50C3834DE3A5"
 				item: {
@@ -556,7 +703,7 @@
 		}
 		{
 			dependencies: ["446F9DA4F13E0AA6"]
-			description: ["制作红钢需要先制作劣等精金，一种锰钢、钢、黄铜和玫瑰金的合金。"]
+			description: ["制作红钢需要先制作劣等精金，一种黑钢、钢、黄铜和玫瑰金的合金。"]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			icon: {
@@ -570,23 +717,13 @@
 				id: "tfc:metal/ingot/rose_gold"
 			}
 			id: "0CB5C3D905F4A3F1"
+			rewards: [{
+				id: "4EC62C5944F832C3"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			tasks: [
-				{
-					count: 10L
-					id: "4031C7CAB7F455F3"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/ingot/brass"
-					}
-					type: "item"
-				}
 				{
 					count: 10L
 					id: "3860E2631128CE9A"
@@ -600,6 +737,21 @@
 						}
 						id: "tfc:metal/ingot/rose_gold"
 					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: "design_decor:arrow_right_sign"
+					id: "387F0CB2734141EA"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "and(item_tag(tfc:metal_item/red_steel))"
+						}
+					}
+					optional_task: true
+					title: "已获得精金？自动跳过"
 					type: "item"
 				}
 			]
@@ -609,36 +761,73 @@
 		}
 		{
 			dependencies: ["0CB5C3D905F4A3F1"]
-			description: ["将锰钢、钢、黄铜和玫瑰金按照一定比例混合就可以得到劣等精金。"]
+			description: ["将黑钢、钢、黄铜和玫瑰金按照一定比例混合就可以得到劣等精金。"]
 			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/ingot/weak_red_steel"
+			}
 			id: "4153C222DFD9B0D9"
+			rewards: [{
+				id: "5BD7F8CF8C2EFF9E"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "精金青春版"
-			tasks: [{
-				id: "191E34BAACFD9796"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
+			tasks: [
+				{
+					id: "191E34BAACFD9796"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/weak_red_steel"
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: "design_decor:arrow_right_sign"
+					id: "26775151F698BBDB"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "and(item_tag(tfc:metal_item/red_steel))"
 						}
 					}
-					id: "tfc:metal/ingot/weak_red_steel"
+					optional_task: true
+					title: "已获得精金？自动跳过"
+					type: "item"
 				}
-				type: "item"
-			}]
+			]
 			title: "劣等精金"
 			x: 1.542942431602377d
 			y: -7.5d
 		}
 		{
 			dependencies: ["4153C222DFD9B0D9"]
-			description: ["将劣等精金锭和锰钢锭焊接在一起可以得到高碳精金锭，锻打高碳精金锭即可得到&6精金&r锭。&6精金&r是最高级的六级金属，可以制造最高等级的装备和武器，并拥有一些新配方。性能与&b秘银&r并无太大差别。"]
+			description: ["将劣等精金锭和黑钢锭焊接在一起可以得到高碳精金锭，锻打高碳精金锭即可得到&6精金&r锭。&6精金&r是最高级的六级金属，可以制造最高等级的装备和武器，并拥有一些新配方。性能与&b秘银&r并无太大差别。"]
 			hide_until_deps_complete: true
 			id: "4390977A27252D9E"
+			rewards: [{
+				id: "277838FC57D2F020"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "gear"
-			subtitle: "&c红色是毁灭"
+			subtitle: "&c炙热的灵魂"
 			tasks: [{
 				id: "08BFEF0AD62DEDEF"
 				item: {
@@ -653,7 +842,7 @@
 				}
 				type: "item"
 			}]
-			title: "&4如烈日般灿烂"
+			title: "&6如烈日般灿烂"
 			x: 0.357516451062871d
 			y: -7.0d
 		}
@@ -667,6 +856,11 @@
 			hide_until_deps_complete: true
 			icon: "functionalstorage:oak_1"
 			id: "5ECF9093FFEE6BC6"
+			rewards: [{
+				id: "0B105CAB14D1BFAD"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "打破堆叠限制"
 			tasks: [{
 				id: "16CACEDC366917FA"
@@ -691,6 +885,11 @@
 			hide_until_deps_visible: false
 			icon: "functionalstorage:fluid_1"
 			id: "0DCF5F18439C773F"
+			rewards: [{
+				id: "5F2212D925C76CED"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "那个机械什么的储罐真不熟"
 			tasks: [{
 				id: "46FACBF3AC33B976"
@@ -708,6 +907,11 @@
 			hide_until_deps_visible: false
 			icon: "functionalstorage:copper_upgrade"
 			id: "751B81E18D2089CB"
+			rewards: [{
+				id: "1E5E6805D52C0EC0"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "大大大！"
 			tasks: [{
 				id: "4BC7273F34D80924"
@@ -724,6 +928,11 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "61925C98524F93F2"
+			rewards: [{
+				id: "20320B9966828B27"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "百事和可口相比，我觉得冰镇更好"
 			tasks: [{
 				id: "334B9F22089202AA"
@@ -731,14 +940,19 @@
 				type: "item"
 			}]
 			title: "冰箱？太好辣"
-			x: 14.0d
-			y: -9.375d
+			x: 17.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["751B81E18D2089CB"]
 			description: ["这是你可以获得的最强升级了，装上之后你的抽屉都不一定有装满的那一天"]
 			hide_until_deps_complete: true
 			id: "2BEB019453D0D72E"
+			rewards: [{
+				id: "2CAA988F1069B22D"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "pentagon"
 			subtitle: "目前可以得到的最强升级"
 			tasks: [{
@@ -762,27 +976,37 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "67B82C65D10099EB"
+			rewards: [{
+				id: "10ACA810E9EC01F0"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "可以煮火锅，可以"
 			tasks: [{
 				id: "0AA85A62BC75BB5D"
 				item: "moreburners:electric_burner"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -9.5d
+			x: 12.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["67B82C65D10099EB"]
 			description: ["热量升级能让电磁炉成为可以以200fe/t消耗电量而持续不断超级加热的发热猛兽"]
 			id: "4215B01BAA98CCCD"
+			rewards: [{
+				id: "27E5196B02B4000E"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "更好的内核"
 			tasks: [{
 				id: "0140E3F410163FBF"
 				item: "moreburners:heat_upgrade"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -10.5d
+			x: 12.5d
+			y: -9.5d
 		}
 		{
 			dependencies: [
@@ -790,6 +1014,11 @@
 				"16ED3FE9D5BD6956"
 			]
 			id: "583ECBD21EE506B5"
+			rewards: [{
+				id: "3DED5893B2CED161"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "整合包现阶段只制作到此"
 			tasks: [{
@@ -805,6 +1034,11 @@
 			dependencies: ["7D7A0D519A2C0B53"]
 			description: ["马口铁是一个非常轻薄的金属，虽然成本较高，但是他的卫生程度不是陶器可以比拟的"]
 			id: "30BE0FFFDCBE95A7"
+			rewards: [{
+				id: "15DD9D2BF76061AF"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "食品级金属！"
 			tasks: [{
 				id: "78FAF1E33C2D586A"
@@ -834,6 +1068,11 @@
 				"&n如果要说他唯一的缺点就是密封之后需要开罐器才能食用&r"
 			]
 			id: "29F332E1454FED83"
+			rewards: [{
+				id: "66288AC56CE0F42F"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "罐头食品！"
 			tasks: [{
 				id: "29A1B015DB01EA09"
@@ -871,6 +1110,11 @@
 				id: "artisanal:metal/dented_tin_can"
 			}
 			id: "5B19B23180359500"
+			rewards: [{
+				id: "0A784527B0CB3962"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "毕竟是金属做的，浪费太不值了"
 			tasks: [{
 				id: "0B9B65A8FB60E744"
@@ -888,6 +1132,11 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			id: "2578A42ACFFDE9A1"
+			rewards: [{
+				id: "436C366805F62F35"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "这份力量本不属于群峦星人"
 			tasks: [{
 				id: "6A3CF892AFE145B1"
@@ -915,8 +1164,13 @@
 			hide_until_deps_complete: true
 			icon: "refurbished_furniture:oak_kitchen_sink"
 			id: "7D7A0D519A2C0B53"
+			rewards: [{
+				id: "7369108DA1863282"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
-				advancement: "createmetallurgy:steel_age"
+				advancement: "tfc:story/iron_age"
 				criterion: ""
 				icon: "design_decor:arrow_right_sign"
 				id: "2CE792E69EC21BDE"
@@ -932,10 +1186,15 @@
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:component_steel"
 			id: "6A3789FBED7462BD"
+			rewards: [{
+				id: "304B5F3997A91CA3"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "铿锵之声"
 			tasks: [{
-				advancement: "createmetallurgy:steel_age"
+				advancement: "tfc:story/iron_age"
 				criterion: ""
 				icon: "design_decor:arrow_right_sign"
 				id: "224D1BDCC55F2F96"
@@ -954,27 +1213,42 @@
 			hide_until_deps_complete: true
 			icon: "firmalife:stainless_steel_greenhouse_wall"
 			id: "37A28CF1E9EB324D"
+			rewards: [{
+				id: "0F6C9A745188F8CD"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "永不腐坏"
 			title: "不锈钢温室"
-			x: 12.5d
+			x: 11.0d
 			y: -8.0d
 		}
 		{
 			dependencies: ["418943718040C326"]
 			hide_until_deps_complete: true
 			id: "567A472092A56011"
+			rewards: [{
+				id: "35303FEF91BE702C"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "5ACA9782BD2A5669"
 				item: "firmalife:vat"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -9.375d
+			x: 11.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["418943718040C326"]
 			hide_until_deps_complete: true
 			id: "6128136E0038CA4C"
+			rewards: [{
+				id: "039CAB001665F43E"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "41349D12FC1968FF"
 				item: {
@@ -986,8 +1260,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.5d
-			y: -10.375d
+			x: 11.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["366FC1B30FB2EF18"]
@@ -1003,6 +1277,11 @@
 				id: "immersiveengineering:toolbox"
 			}
 			id: "7B1D01476090D426"
+			rewards: [{
+				id: "752543263A6D41D4"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "真正的重工业"
 			tasks: [
@@ -1062,6 +1341,11 @@
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:metal_press"
 			id: "18800A96A310D2AD"
+			rewards: [{
+				id: "6979DE95FB726498"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "极致锻压"
 			tasks: [
@@ -1098,6 +1382,11 @@
 			hide_until_deps_visible: true
 			icon: "immersiveengineering:diesel_generator"
 			id: "30DCEA23B7A342E0"
+			rewards: [{
+				id: "5F2A10D149DC1238"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "轰鸣"
 			tasks: [
 				{
@@ -1127,6 +1416,11 @@
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:lightning_rod"
 			id: "0350A7ECD7634DCC"
+			rewards: [{
+				id: "44E16EDC408F8285"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "雷霆之声"
 			tasks: [
 				{
@@ -1156,6 +1450,11 @@
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:tank"
 			id: "3F599974C2D05568"
+			rewards: [{
+				id: "5CB4492B554F3011"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: "design_decor:gear_sign"
 				id: "49797D5504DDD389"
@@ -1173,6 +1472,11 @@
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:silo"
 			id: "496C9F6F617DE0C7"
+			rewards: [{
+				id: "67AA0B1FD80BAFF5"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: "design_decor:gear_sign"
 				id: "0CB7EC45AC42AFE5"
@@ -1190,6 +1494,11 @@
 			hide_until_deps_complete: true
 			icon: "createdieselgenerators:biodiesel_bucket"
 			id: "1EB9A09DF84AB945"
+			rewards: [{
+				id: "3649F025B479A209"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					id: "7BD829D9C516EDBE"
@@ -1212,6 +1521,11 @@
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:refinery"
 			id: "2ABFF323B5CA1EAA"
+			rewards: [{
+				id: "73A5D6D3FED371CB"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "炼制的其他方式"
 			tasks: [
 				{
@@ -1241,6 +1555,11 @@
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:bottling_machine"
 			id: "4848F0FD593930E7"
+			rewards: [{
+				id: "45E2BA724C1EB96D"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					icon: "design_decor:gear_sign"
@@ -1270,6 +1589,11 @@
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:squeezer"
 			id: "0CFA0C1750E3F0B7"
+			rewards: [{
+				id: "417C41A389D1CAE2"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "无尽的压榨"
 			tasks: [
@@ -1300,6 +1624,11 @@
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:mixer"
 			id: "0FBD02051EA19ACF"
+			rewards: [{
+				id: "14AA2B3533F5D398"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					icon: "design_decor:gear_sign"
@@ -1328,6 +1657,11 @@
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:assembler"
 			id: "6C32B2D27B58CB19"
+			rewards: [{
+				id: "5A56EBAB27F48E33"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					icon: "design_decor:gear_sign"
@@ -1356,6 +1690,11 @@
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:sawmill"
 			id: "41BBD2EED501D890"
+			rewards: [{
+				id: "0B9FFAA5CFD8F886"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					icon: "design_decor:gear_sign"
@@ -1384,6 +1723,11 @@
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:auto_workbench"
 			id: "11BEBA7BDA77BC1C"
+			rewards: [{
+				id: "7167D14916E23D5D"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					icon: "design_decor:gear_sign"
@@ -1412,6 +1756,11 @@
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:crusher"
 			id: "7572E39DE6877473"
+			rewards: [{
+				id: "4615BE934C074E2F"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "彻底粉碎！"
 			tasks: [
@@ -1444,6 +1793,11 @@
 			icon: "immersiveengineering:bucket_wheel"
 			icon_scale: 1.5d
 			id: "1B2E0ABE2B928B12"
+			rewards: [{
+				id: "4A493645CA041657"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "none"
 			size: 1.5d
 			subtitle: "开采地脉之手"
@@ -1476,6 +1830,11 @@
 			icon: "immersiveengineering:excavator"
 			icon_scale: 1.2d
 			id: "163E9EA062C87DE2"
+			rewards: [{
+				id: "0D38B02F6C7CF76C"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "none"
 			size: 1.5d
 			subtitle: "承担万钧之臂"
@@ -1505,6 +1864,11 @@
 		{
 			dependencies: ["7B1D01476090D426"]
 			id: "38AB235E2F464D21"
+			rewards: [{
+				id: "7B33C16968F6CB30"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "2848D295242EC618"
@@ -1518,6 +1882,11 @@
 			dependencies: ["4485027AFE920134"]
 			icon: "immersiveengineering:arc_furnace"
 			id: "32A00AE94CED5549"
+			rewards: [{
+				id: "06BDB99F0FA5BC0A"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "最终的炼炉"
@@ -1557,6 +1926,11 @@
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:connector_mv_relay"
 			id: "4531DD18E00408D5"
+			rewards: [{
+				id: "43983B0F7E329692"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "&m以及怎么不变成焦炭"
 			tasks: [
 				{
@@ -1623,13 +1997,31 @@
 			dependencies: ["6A3789FBED7462BD"]
 			icon: "immersiveengineering:circuit_table"
 			id: "366FC1B30FB2EF18"
+			rewards: [{
+				id: "6C25ADA4BF571103"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "真正的重工业"
-			tasks: [{
-				id: "2CCCFB6468A905DC"
-				item: "immersiveengineering:manual"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2CCCFB6468A905DC"
+					item: "immersiveengineering:manual"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					icon: "design_decor:arrow_right_sign"
+					id: "5C62F4073CB9B776"
+					optional_task: true
+					points: false
+					title: "我已了解：跳过"
+					type: "xp"
+					value: 1L
+				}
+			]
 			title: "沉浸工程"
 			x: 10.0d
 			y: -3.0d
@@ -1639,6 +2031,11 @@
 			description: ["蓄电池是沉浸工程的储能方块，低压蓄电池储存的最少，高压的则最多。蓄电池可以通过用工程师锤改变电力的输入输出，其自身输出电力的速度跟同等级的电线是相等的。"]
 			hide_until_deps_complete: true
 			id: "74085A375E21EAC8"
+			rewards: [{
+				id: "58EA3EBCC169E7A3"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					id: "3C6F819CBC51B441"
@@ -1669,6 +2066,11 @@
 			]
 			hide_until_deps_complete: true
 			id: "057BEF0337676DE1"
+			rewards: [{
+				id: "4A758FC0766D7CF9"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "木炭炉是什么?"
 			tasks: [{
 				id: "3E735ACE1A6488B8"
@@ -1681,7 +2083,7 @@
 		{
 			dependencies: ["366FC1B30FB2EF18"]
 			description: [
-				"&e&o【如果没有在锻铁时代制作&n&f防腐木&r&r&e&o请点击任务图标右上角的放大镜快捷跳转至任务】&r"
+				"{ \"text\": \"【如没有制作过防腐木请点击跳转】\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"23773F37400D8ACB\" } }"
 				""
 				"工程师装配台的做法详见jei，需要防腐木台阶，防腐木棍，防腐木栅栏以及锻铁锭制作。"
 				""
@@ -1692,6 +2094,11 @@
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:workbench"
 			id: "53CF01B3B600F9A3"
+			rewards: [{
+				id: "4BC1707AEA91C782"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					id: "49AF340D3AB6990C"
@@ -1746,6 +2153,11 @@
 			]
 			hide_until_deps_complete: true
 			id: "6EA3EF811D571804"
+			rewards: [{
+				id: "149E7F86D52C0FEB"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "circle"
 			subtitle: "腥风血雨"
 			tasks: [{
@@ -1775,6 +2187,11 @@
 			]
 			hide_until_deps_complete: true
 			id: "19163959B4058062"
+			rewards: [{
+				id: "73716593E28FD896"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "电力种菜"
 			tasks: [{
 				id: "63CA479B9F4822D0"
@@ -1789,7 +2206,7 @@
 			description: [
 				"采矿机械钻是高级手持挖掘工具，效率比群峦的工具高许多。机械钻有多种材质的钻头可以安装、不同材质的钻头带来的效率和范围也不同。采矿机械钻的燃料为生物柴油。"
 				""
-				"钻头共分为三个等级。铁制钻头一次性可以挖掘2×2×1的区域，钢和锰钢钻头一次性可以挖掘3×3×1的区域，秘银和精金钻头一次性可以挖掘5×5×1的区域。"
+				"钻头共分为三个等级。铁制钻头一次性可以挖掘2×2×1的区域，钢和黑钢钻头一次性可以挖掘3×3×1的区域，秘银和精金钻头一次性可以挖掘5×5×1的区域。"
 				""
 				"[详情介绍看下页]"
 				"{@pagebreak}"
@@ -1815,6 +2232,11 @@
 			]
 			hide_until_deps_complete: true
 			id: "4013FFAD595B3D2A"
+			rewards: [{
+				id: "00AF03279D145506"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "オレを谁だとおもってやがる！！"
 			tasks: [
 				{
@@ -1854,6 +2276,11 @@
 			hide_until_deps_complete: true
 			icon: "createmetallurgy:foundry_mixer"
 			id: "7B28F5976252FE5C"
+			rewards: [{
+				id: "04845062B2FC0FD8"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "以更方便的方式加工金属"
 			tasks: [
 				{
@@ -1875,6 +2302,11 @@
 			dependencies: ["7B28F5976252FE5C"]
 			hide_until_deps_visible: true
 			id: "4E457280D1D6C97D"
+			rewards: [{
+				id: "2FF3EB765B436176"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					id: "08E78625FFE93DAD"
@@ -1894,6 +2326,11 @@
 		{
 			dependencies: ["4E457280D1D6C97D"]
 			id: "15D0812270DDDA8F"
+			rewards: [{
+				id: "61A74E4009E4649D"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "不是匠魂"
 			tasks: [
 				{
@@ -1929,6 +2366,11 @@
 				id: "vintageimprovements:lathe"
 			}
 			id: "5CEF137954ABF0EF"
+			rewards: [{
+				id: "7EBCC186D0E3DA12"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "74D577FD1BEAFDF3"
 				item: {
@@ -1949,6 +2391,11 @@
 		{
 			dependencies: ["15D0812270DDDA8F"]
 			id: "41ED82DF5F917316"
+			rewards: [{
+				id: "2FA48315C1A19BAE"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "更简易的制作玻璃"
 			tasks: [{
 				id: "510FB6829BFC2965"
@@ -1965,6 +2412,11 @@
 				"41ED82DF5F917316"
 			]
 			id: "30103E144FF2B213"
+			rewards: [{
+				id: "7F52D714E91996D5"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "更简易的制作玻璃制品"
 			tasks: [{
 				id: "1C4DF5A0BFE04B50"
@@ -1977,22 +2429,59 @@
 		}
 		{
 			dependencies: ["4DFF7818B50623B5"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/anvil/black_steel"
+			}
 			id: "5BF2B6A71C84907B"
+			rewards: [{
+				id: "2672E5E04140B8FD"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "再来！"
-			tasks: [{
-				id: "41C9EDB800DB1714"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/anvil/black_steel"
+					}
+					id: "13B063C8B1495566"
+					observe_type: 0
+					optional_task: true
+					timer: 0L
+					title: "观察黑钢砧"
+					to_observe: "tfc:metal/anvil/black_steel"
+					type: "observation"
+				}
+				{
+					icon: "design_decor:arrow_right_sign"
+					id: "3EC37C05E05B9AB6"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfc:metal/anvil/red_steel)item(tfc:metal/anvil/blue_steel)item(tfc:metal/ingot/blue_steel)item(tfc:metal/ingot/red_steel)item_tag(tfc:metal_item/red_steel)item_tag(tfc:metal_item/blue_steel))"
 						}
 					}
-					id: "tfc:metal/anvil/black_steel"
+					optional_task: true
+					title: "过阶段了？自动跳过"
+					type: "item"
 				}
-				type: "item"
-			}]
+			]
+			title: "黑钢砧"
 			x: 6.0d
 			y: -8.315336310921857d
 		}
@@ -2006,6 +2495,11 @@
 				}
 			}
 			id: "4485027AFE920134"
+			rewards: [{
+				id: "180A72DFA89E19C0"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					id: "26F81924C584D215"

@@ -22,6 +22,11 @@
 			icon_scale: 1.3d
 			id: "09EEA60B10948B0E"
 			optional: true
+			rewards: [{
+				id: "35D625DA9CAF968C"
+				type: "xp"
+				xp: 25
+			}]
 			size: 1.2d
 			tasks: [
 				{
@@ -56,6 +61,11 @@
 				}
 			}
 			id: "6B36071A17B179D5"
+			rewards: [{
+				id: "50B6254E5EFBE138"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "刀锋利刃"
 			tasks: [{
 				id: "32573CCB8B8012F0"
@@ -82,6 +92,11 @@
 				}
 			}
 			id: "4DA79A2BB466C9B4"
+			rewards: [{
+				id: "5E2DE45840A16C8E"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "硬碰硬"
 			tasks: [{
 				id: "3441EE26EF178368"
@@ -108,6 +123,11 @@
 				}
 			}
 			id: "0DA1E7DE85A0F39D"
+			rewards: [{
+				id: "34B64FA2C3B516B1"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "穿肠破肚"
 			tasks: [{
 				id: "0DDA795EFECB35BA"
@@ -134,6 +154,11 @@
 				}
 			}
 			id: "710B6A4EC435C6C4"
+			rewards: [{
+				id: "0F0D4EE5E3A1E329"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -179,6 +204,11 @@
 				}
 			}
 			id: "56C7A384B5BADC4D"
+			rewards: [{
+				id: "73FF4919FF24F0FD"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -224,6 +254,11 @@
 				}
 			}
 			id: "750A70062E2FCFED"
+			rewards: [{
+				id: "63268EF275ED4B39"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -269,6 +304,11 @@
 				}
 			}
 			id: "0167EF953F12AEE3"
+			rewards: [{
+				id: "18C5217DA68DA562"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -314,6 +354,11 @@
 				}
 			}
 			id: "5828E70C6CA3772F"
+			rewards: [{
+				id: "0D4C8B2BD68DBDFB"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -359,6 +404,11 @@
 				}
 			}
 			id: "719081A06117ECF9"
+			rewards: [{
+				id: "09BE9A1B05292227"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -404,6 +454,11 @@
 				}
 			}
 			id: "092D3381ED59C2FC"
+			rewards: [{
+				id: "37AF920019FE0C1F"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -450,6 +505,11 @@
 			}
 			id: "6691362A057566EF"
 			ignore_reward_blocking: true
+			rewards: [{
+				id: "51D2A19D1108CA6F"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -495,6 +555,11 @@
 				}
 			}
 			id: "4BA7885FA291E37E"
+			rewards: [{
+				id: "7AF413C4F7094AC3"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -528,6 +593,11 @@
 			dependencies: ["4DA79A2BB466C9B4"]
 			id: "2546589506380CC8"
 			optional: true
+			rewards: [{
+				id: "44458268B6FD7437"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -547,7 +617,7 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(kubejs:copper_warhammer)item(kubejs:bronze_warhammer)item(kubejs:bismuth_bronze_warhammer)item(kubejs:black_bronze_warhammer)item(kubejs:wrought_iron_warhammer)item(kubejs:steel_warhammer)item(kubejs:black_steel_warhammer)item(kubejs:blue_steel_warhammer)item(kubejs:red_steel_warhammer))"
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_flanged_mace)item(kubejs:bronze_flanged_mace)item(kubejs:bismuth_bronze_flanged_mace)item(kubejs:black_bronze_flanged_mace)item(kubejs:wrought_iron_flanged_mace)item(kubejs:steel_flanged_mace)item(kubejs:black_steel_flanged_mace)item(kubejs:blue_steel_flanged_mace)item(kubejs:red_steel_flanged_mace))"
 					}
 				}
 				title: "制作一把页锤"
@@ -573,6 +643,11 @@
 				}
 			}
 			id: "7BBA77BBEA699212"
+			rewards: [{
+				id: "2B0C22D7FF5C51A8"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -618,6 +693,11 @@
 				}
 			}
 			id: "5F5ECE09C1DDB344"
+			rewards: [{
+				id: "5F8B95B6F0CBEE3D"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -663,6 +743,11 @@
 				}
 			}
 			id: "6B4B42A8EAEE6C19"
+			rewards: [{
+				id: "108D35351193710E"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -708,6 +793,11 @@
 				}
 			}
 			id: "5A8BA36BF04DEBFE"
+			rewards: [{
+				id: "4A12422297CE6A7D"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -753,6 +843,11 @@
 				}
 			}
 			id: "42C490F442425AC2"
+			rewards: [{
+				id: "51EA6BFFCFC830BB"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -798,6 +893,11 @@
 				}
 			}
 			id: "2ADCD90B65B9BFD8"
+			rewards: [{
+				id: "2BBAABA1B5AC693A"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -843,6 +943,11 @@
 				}
 			}
 			id: "40C5748AD346560E"
+			rewards: [{
+				id: "1D7C28652F85DBC3"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -888,6 +993,11 @@
 				}
 			}
 			id: "3FBA992B15ADEBD1"
+			rewards: [{
+				id: "7B267955D72674B4"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -933,6 +1043,11 @@
 				}
 			}
 			id: "38F9FF588C994C0C"
+			rewards: [{
+				id: "0BE3DB2AFFC8DC15"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -978,6 +1093,11 @@
 				}
 			}
 			id: "7B7DB29269859589"
+			rewards: [{
+				id: "4D9D017A4FEA59E4"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1023,6 +1143,11 @@
 				}
 			}
 			id: "7062EADD4F67C38E"
+			rewards: [{
+				id: "28B01151FFE9C253"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					id: "4946D19A1817CFA5"
@@ -1100,6 +1225,11 @@
 		{
 			dependencies: ["09EEA60B10948B0E"]
 			id: "5FC1159E4EB78AF7"
+			rewards: [{
+				id: "145BFEDCED0109DC"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "056FACB10A36295D"
 				item: {
@@ -1130,6 +1260,11 @@
 				}
 			}
 			id: "33B34F6D9DD02476"
+			rewards: [{
+				id: "1562FEA597351168"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				advancement: "tfc:story/shield"
 				criterion: ""
@@ -1157,6 +1292,11 @@
 		{
 			dependencies: ["5FC1159E4EB78AF7"]
 			id: "02D48785883A0E08"
+			rewards: [{
+				id: "6DA225BCA85A811C"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "4710A8684F3733DA"
 				item: {
@@ -1174,6 +1314,11 @@
 		{
 			dependencies: ["5FC1159E4EB78AF7"]
 			id: "2F2D9988FD70AF5C"
+			rewards: [{
+				id: "05AEE77C06AC0F8B"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "3B809A028356688D"
 				item: {
@@ -1191,6 +1336,11 @@
 		{
 			dependencies: ["5FC1159E4EB78AF7"]
 			id: "63D2718DBDF5460C"
+			rewards: [{
+				id: "3459E922D18CF679"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "35EFB62BFFFAAEFA"
 				item: "spartanweaponry:wooden_arrow"
@@ -1202,6 +1352,11 @@
 		{
 			dependencies: ["5FC1159E4EB78AF7"]
 			id: "2A9BF434AFD4D065"
+			rewards: [{
+				id: "1D40146DF5B17347"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "3383FD96ED773458"
 				item: "spartanweaponry:bolt"
@@ -1217,6 +1372,11 @@
 			]
 			hide_dependency_lines: true
 			id: "53D3646734DA08F6"
+			rewards: [{
+				id: "62E660328A173B7C"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "6D4704FDF18FE75C"
 				item: "siegemachines:ballista"
@@ -1228,6 +1388,11 @@
 		{
 			dependencies: ["2F2D9988FD70AF5C"]
 			id: "1288A88CDE17FC9C"
+			rewards: [{
+				id: "145E0D676914FD19"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "655B957DF4243195"
 				item: {
@@ -1245,6 +1410,11 @@
 		{
 			dependencies: ["53D3646734DA08F6"]
 			id: "3441DBACC1DC425D"
+			rewards: [{
+				id: "7603330D7C35B65D"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "69088F1A2B2F9A2B"
 				item: "siegemachines:giant_arrow"
@@ -1273,11 +1443,15 @@
 			}
 			id: "65C1803A10147342"
 			rewards: [{
-				id: "4CFA18E2050E2C6E"
+				id: "555CA6604B1D7D05"
 				type: "xp"
-				xp: 20
+				xp: 25
 			}]
 			subtitle: "硬邦邦"
+			tasks: [{
+				id: "78867E86DCC13F4B"
+				type: "checkmark"
+			}]
 			title: "&e真正的防护"
 			x: 3.5d
 			y: 2.0d
@@ -1298,6 +1472,11 @@
 				}
 			}
 			id: "1AB4B88DE07CD0A2"
+			rewards: [{
+				id: "1F7E431B26EEB929"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1343,6 +1522,11 @@
 				}
 			}
 			id: "22D946C002021CA7"
+			rewards: [{
+				id: "3665FA064C270538"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1388,6 +1572,11 @@
 				}
 			}
 			id: "157AB930B9CD0AE9"
+			rewards: [{
+				id: "03A3A2A28559CC01"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1433,6 +1622,11 @@
 				}
 			}
 			id: "211456A825E947C4"
+			rewards: [{
+				id: "0DA4D50D434E44F4"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1465,6 +1659,11 @@
 		{
 			dependencies: ["4DA79A2BB466C9B4"]
 			id: "469DEFD306D6A53F"
+			rewards: [{
+				id: "164A1187D8DDE0B8"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "348C72C1B4BAD8AB"
 				item: {
@@ -1502,6 +1701,11 @@
 				}
 			}
 			id: "37A4FF0BD82E029E"
+			rewards: [{
+				id: "1B5F4CE5CE64B74D"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1530,6 +1734,26 @@
 			title: "武器类型：巨镰"
 			x: -6.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["65C1803A10147342"]
+			description: ["又想要保暖，又想要防御，你需要给你的盔甲缝一个内衬"]
+			id: "56E1C7A9039D5850"
+			tasks: [
+				{
+					id: "2843D17E15990E9D"
+					item: "legendarysurvivaloverhaul:heating_coat_2"
+					type: "item"
+				}
+				{
+					id: "71BAF73A4FEA2667"
+					item: "legendarysurvivaloverhaul:sewing_table"
+					type: "item"
+				}
+			]
+			title: "铁甲柔情"
+			x: 5.5d
+			y: 2.0d
 		}
 	]
 	title: "锻造大师"

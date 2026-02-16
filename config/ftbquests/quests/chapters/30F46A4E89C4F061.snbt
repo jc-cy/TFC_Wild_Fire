@@ -26,6 +26,11 @@
 			hide_until_deps_visible: false
 			icon: "ad_astra:earth_globe"
 			id: "55A7A71E11F88C31"
+			rewards: [{
+				id: "60993161460F1060"
+				type: "xp"
+				xp: 25
+			}]
 			size: 3.0d
 			subtitle: "并不是拥有翅膀才能飞翔"
 			tasks: [{
@@ -40,6 +45,11 @@
 		{
 			dependencies: ["55A7A71E11F88C31"]
 			id: "7AB58E87CFDADBB6"
+			rewards: [{
+				id: "43E7B14039FF904D"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "3205770E620CA983"
 				item: "kubejs:basic_plating"
@@ -52,6 +62,11 @@
 		{
 			dependencies: ["55A7A71E11F88C31"]
 			id: "72FCF7BDEAF4FDE5"
+			rewards: [{
+				id: "3A2A6BAD1388F8F3"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "5FA490726F00C694"
 				item: "kubejs:basic_propeller"
@@ -64,6 +79,11 @@
 		{
 			dependencies: ["55A7A71E11F88C31"]
 			id: "2F9BA9331A4507DA"
+			rewards: [{
+				id: "2B1FB6386C12D21C"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "23B39C84CF09B170"
 				item: "ad_astra:steel_engine"
@@ -75,6 +95,11 @@
 		{
 			dependencies: ["55A7A71E11F88C31"]
 			id: "33C46EC413094CBB"
+			rewards: [{
+				id: "386D93BF974AFDC4"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "4A328CED857DE6EE"
 				item: "ad_astra:rocket_nose_cone"
@@ -86,6 +111,11 @@
 		{
 			dependencies: ["55A7A71E11F88C31"]
 			id: "421831E172A19BC5"
+			rewards: [{
+				id: "0D7CCF8C1520ED1C"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "02087BA95579707A"
 				item: "ad_astra:steel_tank"
@@ -102,6 +132,11 @@
 			]
 			hide_dependent_lines: true
 			id: "47DB3C957606EEFB"
+			rewards: [{
+				id: "1D461EB1EA0F1037"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "这个劲啊，柴油机喝了都顶不住"
 			tasks: [{
 				id: "5CBE01E924A07956"
@@ -123,6 +158,11 @@
 			hide_until_deps_visible: false
 			icon: "artisanal:bucket/petroleum"
 			id: "507A81C4A836ED05"
+			rewards: [{
+				id: "49C48EC7E8EFA8E5"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "在老鹰看不见的地方"
 			tasks: [{
 				id: "0373699190E62234"
@@ -135,6 +175,11 @@
 		{
 			dependencies: ["55A7A71E11F88C31"]
 			id: "16E00CF99140A8E4"
+			rewards: [{
+				id: "359E0CA00B5C7723"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					id: "66D132D0D0D367FE"
@@ -165,6 +210,11 @@
 		{
 			dependencies: ["55A7A71E11F88C31"]
 			id: "20ADAF95320BEB6B"
+			rewards: [{
+				id: "50149D5E5E1343AA"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "2AAC70AF75793084"
 				item: "ad_astra:oxygen_bucket"
@@ -176,6 +226,11 @@
 		{
 			dependencies: ["55A7A71E11F88C31"]
 			id: "6CD157B12B1B4EAD"
+			rewards: [{
+				id: "5895D3BF442EB131"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "6AED3C9EF817BAD7"
 				type: "item"
@@ -186,6 +241,11 @@
 		{
 			dependencies: ["55A7A71E11F88C31"]
 			id: "6BDCADA456D21403"
+			rewards: [{
+				id: "65B581973C773334"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "50A2B676B210B8F4"
 				item: {
@@ -201,6 +261,11 @@
 		{
 			dependencies: ["7AB58E87CFDADBB6"]
 			id: "6079DA481486CC22"
+			rewards: [{
+				id: "39036C3E98C5126B"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "301D7041EA07A8E9"
 				item: "kubejs:basic_cabin"
@@ -213,6 +278,11 @@
 		{
 			dependencies: ["55A7A71E11F88C31"]
 			id: "2A098B45CE50C921"
+			rewards: [{
+				id: "57F3F85675E48405"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "429ED4AD2BCE1885"
 				item: "kubejs:basic_crystal_pannel"
@@ -238,6 +308,11 @@
 				"47DB3C957606EEFB"
 			]
 			id: "6221C1869FAF9383"
+			rewards: [{
+				id: "435AAA002EF52CF9"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
@@ -255,6 +330,11 @@
 		{
 			dependencies: ["6221C1869FAF9383"]
 			id: "07CAE5A7D37874B7"
+			rewards: [{
+				id: "5D8265B2EAA00F91"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "人类的一小步"
@@ -271,6 +351,11 @@
 		{
 			dependencies: ["07CAE5A7D37874B7"]
 			id: "119AE35E9BA24F04"
+			rewards: [{
+				id: "54D72A0003B69762"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				dimension: "ad_astra:earth_orbit"
 				icon: "ad_astra:steel_sliding_door"
@@ -285,6 +370,11 @@
 		{
 			dependencies: ["07CAE5A7D37874B7"]
 			id: "62AF798B3EC657B7"
+			rewards: [{
+				id: "01528E5E3AFDE3C3"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "52399A4A51582966"
 				item: "ad_astra:lunarian_spawn_egg"
@@ -297,6 +387,11 @@
 			dependencies: ["62AF798B3EC657B7"]
 			id: "5A74707B6A23686E"
 			invisible: true
+			rewards: [{
+				id: "492B4D11E56B71B7"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "gear"
 			tasks: [{
 				id: "5D476FC021FC1D4A"
@@ -319,6 +414,11 @@
 		{
 			dependencies: ["07CAE5A7D37874B7"]
 			id: "7BCC2021B52711F1"
+			rewards: [{
+				id: "5E7A79385703086B"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "0D1A0805BB1BDD65"
 				item: "ae2:certus_quartz_crystal"
@@ -331,6 +431,11 @@
 			dependencies: ["7BCC2021B52711F1"]
 			icon: "ae2:mysterious_cube"
 			id: "18A299DF88ABE835"
+			rewards: [{
+				id: "330C1423F79C7FAA"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "33338AB899377164"
 				item: "ae2:mysterious_cube"
@@ -344,6 +449,11 @@
 			dependencies: ["07CAE5A7D37874B7"]
 			description: ["这个时候，常规的熔炼方式已经无法熔炼外星金属了！所以这个时候我们需要电弧炉对粗戴斯矿物进行一个加工！"]
 			id: "3A590DC66B0BD664"
+			rewards: [{
+				id: "211A414F001E2B62"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "外星金属"
 			tasks: [{
 				id: "54DB951C7A1068E3"
@@ -358,6 +468,11 @@
 			dependencies: ["3A590DC66B0BD664"]
 			description: ["戴斯管道可以无动力抽取容器里面的液体，只需要使用ad星际自带的扳手即可确定管道的流向"]
 			id: "302C78DC5D750475"
+			rewards: [{
+				id: "6092C7D4015BC4A9"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "太好了是无动力管道我们压缩产线有救了"
 			tasks: [
 				{
@@ -388,6 +503,11 @@
 				tag: { }
 			}
 			id: "17A1BC8ECD139173"
+			rewards: [{
+				id: "32D00060FCE45F39"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "gear"
 			size: 2.0d
 			tasks: [
@@ -409,6 +529,11 @@
 		{
 			dependencies: ["3A590DC66B0BD664"]
 			id: "05B65935B813718B"
+			rewards: [{
+				id: "4A76DFD4876E8C1F"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					id: "4FDFD499D58EDAF6"
@@ -429,6 +554,11 @@
 			dependencies: ["55A7A71E11F88C31"]
 			description: ["这本书是Ad！astra！的帕秋莉手册，记录着基础知识，不过我们魔改内容比较多，一些书的内容并不一样，所以这本书你其实做完领个奖励就行了，"]
 			id: "7CD24CFA5E003D9D"
+			rewards: [{
+				id: "49A246B8DEAB67A5"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "每个星际公民必备的一本书"
 			tasks: [{
 				id: "24CAF83614B7C2B7"
@@ -447,6 +577,11 @@
 			icon: "majruszsdifficulty:advancement_expert"
 			id: "4669E8604CE0841E"
 			invisible: true
+			rewards: [{
+				id: "3121BDE8679E8D98"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "你成功了"
 			tasks: [{
 				advancement: "minecraft:adventure/hero_of_the_village"
@@ -461,6 +596,11 @@
 		{
 			dependencies: ["3A590DC66B0BD664"]
 			id: "4A4417169A78116A"
+			rewards: [{
+				id: "321AE9BFAC33E155"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "68801505A483AFA7"
 				item: "kubejs:moon_propeller"
@@ -473,6 +613,11 @@
 		{
 			dependencies: ["3A590DC66B0BD664"]
 			id: "190F7C437722D241"
+			rewards: [{
+				id: "2176975E65599B97"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "6B7CD9C56F96C818"
 				item: "ad_astra:desh_engine"
@@ -484,6 +629,11 @@
 		{
 			dependencies: ["3A590DC66B0BD664"]
 			id: "5D65C2526363C750"
+			rewards: [{
+				id: "5C566EFEFF7A4D20"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "5D801E6B39E3AF71"
 				item: "kubejs:advanced_cabin"
@@ -498,25 +648,11 @@
 			description: ["你对挖矿的执着已经超越了矮人，你才是真正的矿业大亨。"]
 			icon: "tfc:gem/diamond"
 			id: "668ECBCC3C1866F4"
-			rewards: [
-				{
-					id: "7DD5D50F163A0CED"
-					type: "xp"
-					xp: 100
-				}
-				{
-					count: 9
-					id: "71F3E95FD8B71532"
-					item: "minecraft:netherite_ingot"
-					type: "item"
-				}
-				{
-					count: 9
-					id: "42E4C7488C274B35"
-					item: "minecraft:netherite_upgrade_smithing_template"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "6294406C48BA9A9E"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "gear"
 			tasks: [
 				{
@@ -547,9 +683,9 @@
 			description: ["一个好农夫必定是一个好厨子，一个好厨子也必定是一个好农夫。"]
 			id: "53EDAB616FD9C044"
 			rewards: [{
-				id: "379FA1450C2D7B60"
+				id: "751203EA067D1E3F"
 				type: "xp"
-				xp: 1000
+				xp: 25
 			}]
 			shape: "gear"
 			tasks: [{
@@ -567,24 +703,11 @@
 			description: ["我的天，你竟然已经全都走过了一遍，看起来你是真的很喜欢群峦的地形。"]
 			icon: "artifacts:running_shoes"
 			id: "48B3CD1F9AB2055D"
-			rewards: [
-				{
-					id: "347807B65AA13B30"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "3AC533A96C437238"
-					item: {
-						Count: 1
-						id: "minecraft:elytra"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "125ED4C8E10461F8"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "gear"
 			subtitle: "旅行的意义"
 			tasks: [{
@@ -601,28 +724,11 @@
 			dependencies: ["55A7A71E11F88C31"]
 			description: ["当营养值拉满时，你的血量上限大约会是2500左右，相当于原版的两管半血量。"]
 			id: "26F27FD932580E54"
-			rewards: [
-				{
-					id: "3895532B9381EAE8"
-					type: "xp"
-					xp: 100
-				}
-				{
-					count: 64
-					id: "30670EE47474BF48"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:food": {
-								creationDate: 407976000L
-								traits: [ ]
-							}
-						}
-						id: "farmersdelight:honey_glazed_ham_block"
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "3CCF34C82DE8B77D"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "gear"
 			subtitle: "吃得好，吃得饱"
 			tasks: [{
@@ -640,9 +746,9 @@
 			description: ["你就是群峦世界的麦哲伦"]
 			id: "3051A5BE7ACEB506"
 			rewards: [{
-				id: "7CCC90896112EAE1"
+				id: "6CD3E0D15D2124FE"
 				type: "xp"
-				xp: 1000
+				xp: 25
 			}]
 			shape: "gear"
 			tasks: [{
@@ -660,9 +766,9 @@
 			description: ["你对彩色玻璃的掌握让你能够造出教堂彩绘玻璃一样的杰作"]
 			id: "2B7CFB21CD34A4D2"
 			rewards: [{
-				id: "3EC4F64D102FBDBB"
+				id: "622BC3DAE077E3D6"
 				type: "xp"
-				xp: 1000
+				xp: 25
 			}]
 			shape: "gear"
 			tasks: [{
@@ -687,6 +793,11 @@
 				"&e汽油&r是蒸汽引擎最主要的燃料，也是&e烈焰人燃烧室&r可以变成&b超级加热&r的物品，可是一个地方的石油终归是有限的，汽油最好先制作&c火箭燃料&r再去考虑其他方面的用途！"
 			]
 			id: "669205800834EF52"
+			rewards: [{
+				id: "32A6091F2137F1D5"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "95号的，得劲"
 			tasks: [{
 				id: "57382027019658F9"
@@ -733,6 +844,11 @@
 				"&n极端的难度。灾厄村民们将发挥极端水平。&r"
 			]
 			id: "0CD6401580E28CCF"
+			rewards: [{
+				id: "7A4306FC04A55DD4"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "掠夺者最喜欢的酒，因为充盈着“侵略性”的味道"
 			tasks: [{
 				id: "19F571CA6AD9777B"
