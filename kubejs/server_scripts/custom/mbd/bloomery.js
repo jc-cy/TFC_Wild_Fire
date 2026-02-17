@@ -9,31 +9,21 @@ let messageCooldown = {}
 let lastCleanupTime = Date.now()
 const CLEANUP_INTERVAL = 5 * 60 * 1000 // 每5分钟清理一次
 const ENTRY_MAX_AGE = 10 * 60 * 1000  // 条目最大存活时间10分钟
-const MAX_BURN_TIME = 864000 // 12小时最大燃烧时间
-const MIN_EXTRACT_TIME = 12000 // 10分钟 = 10 * 60 * 20 = 12000 tick（铲子提取的最小时间）
+const MAX_BURN_TIME = 24000 // 20分钟最大燃烧时间（20 * 60 * 20 = 24000）
 
-//可使用打火石ID列表
+
+// 燃料配置
+const FUEL_CONFIG = {
+    // 燃料ID: 每单位增加的燃烧时间(tick)
+    "immersiveengineering:coal_coke": 1200, // 1分钟 = 1200 tick
+
+}
+
+// 点火配置
 const FLINT_AND_STEEL_IDS = [
     "minecraft:flint_and_steel",
     "immersiveengineering:lighter",
     "tfc:flint_and_steel"
-]
-
-//可使用铲子ID列表
-const SHOVEL_IDS = [
-    "minecraft:iron_shovel",
-    "minecraft:diamond_shovel",
-    "minecraft:netherite_shovel",
-    "minecraft:golden_shovel",
-    "minecraft:stone_shovel",
-    "minecraft:wooden_shovel",
-    "tfc:metal/shovel/copper",
-    "tfc:metal/shovel/bronze",
-    "tfc:metal/shovel/wrought_iron",
-    "tfc:metal/shovel/steel",
-    "tfc:metal/shovel/black_steel",
-    "tfc:metal/shovel/blue_steel",
-    "tfc:metal/shovel/red_steel"
 ]
 
 function canMeltToCastIron(stack) {
@@ -62,9 +52,14 @@ function isFlintAndSteel(stack) {
     if (stack.isEmpty()) return false
     return FLINT_AND_STEEL_IDS.includes(stack.id.toString())
 }
-function isShovel(stack) {
+function isFuelItem(stack) {
     if (stack.isEmpty()) return false
-    return SHOVEL_IDS.includes(stack.id.toString())
+    return FUEL_CONFIG.hasOwnProperty(stack.id.toString())
+}
+function getFuelBurnTime(stack) {
+    if (stack.isEmpty()) return 0
+    let fuelId = stack.id.toString()
+    return FUEL_CONFIG[fuelId] || 0
 }
 
 // 清理过期的冷却记录
@@ -116,14 +111,22 @@ MBDMachineEvents.onStructureFormed("mbd2:bloomery", e => {
     
     /**@type {Internal.ItemSlotCapabilityTrait} */
     let inputTrait = machine.getTraitByName("item_input_slot")
+    /**@type {Internal.ItemSlotCapabilityTrait} */
+    let fuelTrait = machine.getTraitByName("coal_coke_input_slot")
     /**@type {Internal.FluidTankCapabilityTrait} */
     let inputFluidTrait = machine.getTraitByName("fluid_tank")
 
     let storage = inputTrait.storage
+    let fuelStorage = fuelTrait ? fuelTrait.storage : null
     let fluidStorage = inputFluidTrait.storages[0]
 
     // 设置物品过滤器：只允许可加热为铸铁液的物品
     storage.setFilter((stack) => canMeltToCastIron(stack))
+    
+    // 设置燃料槽过滤器：只允许燃料物品
+    if (fuelStorage) {
+        fuelStorage.setFilter((stack) => isFuelItem(stack))
+    }
 })
 
 MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
@@ -156,22 +159,21 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
         // 直接发送消息，不使用防重复
         if (burnTime > 0) {
             player.sendSystemMessage(`锻铁炉剩余燃烧时间: ${minutes}分${seconds}秒`)
-        } else {
-            player.sendSystemMessage("锻铁炉未点燃")
-        }
+        } 
         player.swing()
         return
     }
     
-    // 2. 处理焦煤添加燃料
-    if (isCoke(heldItem)) {
+    // 2. 处理燃料添加
+    if (isFuelItem(heldItem)) {
         let currentBurnTime = customData.getInt("burn_time") || 0
-        let cokeCount = heldItem.count
-        let addedTime = cokeCount * 1200 // 每个焦煤增加1分钟（1200tick = 60秒）
+        let fuelCount = heldItem.count
+        let fuelBurnTime = getFuelBurnTime(heldItem)
+        let addedTime = fuelCount * fuelBurnTime
 
         // 检查加入后是否会超出上限
         if (currentBurnTime + addedTime > MAX_BURN_TIME) {
-            sendCooldownMessage(player, `添加${cokeCount}个焦煤会导致燃烧时间超过上限！`)
+            sendCooldownMessage(player, `添加燃料会导致燃烧时间超过上限！`)
             player.swing()
             return
         }
@@ -180,59 +182,34 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
         let newBurnTime = Math.min(currentBurnTime + addedTime, MAX_BURN_TIME)
         customData.putInt("burn_time", newBurnTime) 
         
-        // 消耗所有焦煤
-        heldItem.shrink(cokeCount)
+        // 消耗所有燃料
+        heldItem.shrink(fuelCount)
 
         // 显示添加燃料后的燃烧时间
         let burnSeconds = Math.floor(newBurnTime / 20)
         let minutes = Math.floor(burnSeconds / 60)
         let seconds = burnSeconds % 60
-        sendCooldownMessage(player, `添加${cokeCount}个焦煤，增加${cokeCount}分钟燃烧时间`)
+        let addedSeconds = Math.floor(addedTime / 20)
+        let addedMinutes = Math.floor(addedSeconds / 60)
+        let remainingSeconds = addedSeconds % 60
+        sendCooldownMessage(player, `添加${fuelCount}个燃料，增加${addedMinutes}分${remainingSeconds}秒燃烧时间`)
         player.swing()
         return
-        
-        
     }
     
-    // 3. 处理铲子提取焦煤（去掉耐久检查）
-    if (isShovel(heldItem)) {
-        // 获取当前燃烧时间
-        let currentBurnTime = customData.getInt("burn_time") || 0
-        
-        // 检查是否至少有10分钟燃烧时间
-        if (currentBurnTime < MIN_EXTRACT_TIME) {
-            sendCooldownMessage(player, `剩余燃烧时间小于10分钟，无法再取出焦煤`)
-            player.swing()
-            return
-        }
-        
-        // 扣除10分钟燃烧时间
-        let newBurnTime = currentBurnTime - MIN_EXTRACT_TIME
-        customData.putInt("burn_time", newBurnTime)
-        
-        // 消耗铲子1耐久
-        heldItem.hurtAndBreak(1, player, (player) => {
-            // 铲子损坏时的回调
-            player.broadcastBreakEvent(player.getUsedItemHand())
-        })
-
-        // 显示提取后的燃烧时间
-        let burnSeconds = Math.floor(newBurnTime / 20)
-        let minutes = Math.floor(burnSeconds / 60)
-        let seconds = burnSeconds % 60
-        player.give(Item.of("immersiveengineering:coal_coke", 10))
-        sendCooldownMessage(player, `提取10个焦煤成功`)
-        player.swing()
-        return
-        
-
-    }
-    
-    // 4. 处理打火石点火
+    // 3. 处理打火石点火
     if (isFlintAndSteel(heldItem)) {
         // 防止重复启动（检查机器是否正在加热或熔化）
         if (customData.getInt("heat_time") > 0 || customData.getBoolean("is_melting")) {
             sendCooldownMessage(player, "锻铁炉已经在运行中")
+            player.swing()
+            return
+        }
+        
+        let currentBurnTime = customData.getInt("burn_time") || 0
+        if (currentBurnTime <= 0) {
+            sendCooldownMessage(player, "没有剩余燃料，请先在燃料槽中添加燃料")
+            player.playSound("minecraft:block.fire.extinguish")
             player.swing()
             return
         }
@@ -250,23 +227,7 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
                 break
             }
         }
-        
-        if (!hasMeltableItem) {
-            sendCooldownMessage(player, "锻铁炉中没有可以熔化的物品")
-            player.playSound("minecraft:block.fire.extinguish")
-            player.swing()
-            return
-        }
-        
-        // 检查当前是否有燃烧时间
-        let currentBurnTime = customData.getInt("burn_time") || 0
-        if (currentBurnTime <= 0) {
-            sendCooldownMessage(player, "没有剩余燃料，请先添加焦煤")
-            player.playSound("minecraft:block.fire.extinguish")
-            player.swing()
-            return
-        }
-        
+       
         // 消耗打火石1耐久
         heldItem.hurtAndBreak(1, player, (player) => {
             // 打火石损坏时的回调
@@ -288,8 +249,8 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
         return
     }
     
-    // 如果既不是木棍、焦煤、铲子也不是打火石，显示提示
-    sendCooldownMessage(player, "使用木棍查看剩余燃烧时间，手持焦煤右键增加燃烧时间，使用铲子提取燃料，使用任意打火石点火开始熔炼")
+    // 如果既不是木棍、燃料也不是打火石，显示提示
+    sendCooldownMessage(player, "使用木棍查看剩余燃烧时间，手持燃料右键增加燃烧时间，使用任意打火石点火开始熔炼。燃料会自动从燃料槽中吸取。")
     player.swing()
 })
 
@@ -300,10 +261,13 @@ MBDMachineEvents.onTick("mbd2:bloomery", e => {
     
     /**@type {Internal.ItemSlotCapabilityTrait} */
     let inputTrait = machine.getTraitByName("item_input_slot")
+    /**@type {Internal.ItemSlotCapabilityTrait} */
+    let fuelTrait = machine.getTraitByName("coal_coke_input_slot")
     /**@type {Internal.FluidTankCapabilityTrait} */
     let inputFluidTrait = machine.getTraitByName("fluid_tank")
 
     let storage = inputTrait.storage
+    let fuelStorage = fuelTrait ? fuelTrait.storage : null
     let fluidStorage = inputFluidTrait.storages[0]
     
     let heatTime = customData.getInt("heat_time")
@@ -311,6 +275,35 @@ MBDMachineEvents.onTick("mbd2:bloomery", e => {
     let meltingTimer = customData.getInt("melting_timer")
     let burnTime = customData.getInt("burn_time") || 0
     let burnStarted = customData.getBoolean("burn_started") || false
+    let fuelCheckTimer = customData.getInt("fuel_check_timer") || 0
+    
+    // 燃料检查计时器 - 每20tick（1秒）执行一次
+    fuelCheckTimer++
+    if (fuelCheckTimer >= 20) {
+        fuelCheckTimer = 0
+        
+        // 如果燃料槽存在，并且燃烧时间未满，尝试从燃料槽自动吸取燃料
+        if (fuelStorage && burnTime < MAX_BURN_TIME) {
+            // 检查燃料槽中是否有燃料
+            for (let i = 0; i < fuelStorage.getSlots(); i++) {
+                let fuelStack = fuelStorage.getStackInSlot(i)
+                if (isFuelItem(fuelStack)) {
+                    let fuelBurnTime = getFuelBurnTime(fuelStack)
+                    let spaceLeft = MAX_BURN_TIME - burnTime
+                    
+                    // 如果这个燃料能增加的时间不超过剩余空间
+                    if (fuelBurnTime <= spaceLeft) {
+                        // 消耗一个燃料
+                        fuelStorage.extractItem(i, 1, false)
+                        burnTime += fuelBurnTime
+                        customData.putInt("burn_time", burnTime)
+                        break
+                    }
+                }
+            }
+        }
+    }
+    customData.putInt("fuel_check_timer", fuelCheckTimer)
     
     // 如果燃烧已经开始，并且燃烧时间大于0，则减少燃烧时间
     if (burnStarted && burnTime > 0) {
