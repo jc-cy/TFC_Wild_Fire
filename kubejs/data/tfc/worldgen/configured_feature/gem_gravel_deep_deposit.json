@@ -8,83 +8,83 @@
         "states": [
             {
                 "replace": "tfc:rock/raw/granite",
-                "with": "kubejs:deposit/gem_gravel/granite"
+                "with": "tfc:deposit/gem_gravel/granite"
             },
             {
                 "replace": "tfc:rock/raw/diorite",
-                "with": "kubejs:deposit/gem_gravel/diorite"
+                "with": "tfc:deposit/gem_gravel/diorite"
             },
             {
                 "replace": "tfc:rock/raw/gabbro",
-                "with": "kubejs:deposit/gem_gravel/gabbro"
+                "with": "tfc:deposit/gem_gravel/gabbro"
             },
             {
                 "replace": "tfc:rock/raw/shale",
-                "with": "kubejs:deposit/gem_gravel/shale"
+                "with": "tfc:deposit/gem_gravel/shale"
             },
             {
                 "replace": "tfc:rock/raw/claystone",
-                "with": "kubejs:deposit/gem_gravel/claystone"
+                "with": "tfc:deposit/gem_gravel/claystone"
             },
             {
                 "replace": "tfc:rock/raw/limestone",
-                "with": "kubejs:deposit/gem_gravel/limestone"
+                "with": "tfc:deposit/gem_gravel/limestone"
             },
             {
                 "replace": "tfc:rock/raw/conglomerate",
-                "with": "kubejs:deposit/gem_gravel/conglomerate"
+                "with": "tfc:deposit/gem_gravel/conglomerate"
             },
             {
                 "replace": "tfc:rock/raw/dolomite",
-                "with": "kubejs:deposit/gem_gravel/dolomite"
+                "with": "tfc:deposit/gem_gravel/dolomite"
             },
             {
                 "replace": "tfc:rock/raw/chert",
-                "with": "kubejs:deposit/gem_gravel/chert"
+                "with": "tfc:deposit/gem_gravel/chert"
             },
             {
                 "replace": "tfc:rock/raw/chalk",
-                "with": "kubejs:deposit/gem_gravel/chalk"
+                "with": "tfc:deposit/gem_gravel/chalk"
             },
             {
                 "replace": "tfc:rock/raw/rhyolite",
-                "with": "kubejs:deposit/gem_gravel/rhyolite"
+                "with": "tfc:deposit/gem_gravel/rhyolite"
             },
             {
                 "replace": "tfc:rock/raw/basalt",
-                "with": "kubejs:deposit/gem_gravel/basalt"
+                "with": "tfc:deposit/gem_gravel/basalt"
             },
             {
                 "replace": "tfc:rock/raw/andesite",
-                "with": "kubejs:deposit/gem_gravel/andesite"
+                "with": "tfc:deposit/gem_gravel/andesite"
             },
             {
                 "replace": "tfc:rock/raw/dacite",
-                "with": "kubejs:deposit/gem_gravel/dacite"
+                "with": "tfc:deposit/gem_gravel/dacite"
             },
             {
                 "replace": "tfc:rock/raw/quartzite",
-                "with": "kubejs:deposit/gem_gravel/quartzite"
+                "with": "tfc:deposit/gem_gravel/quartzite"
             },
             {
                 "replace": "tfc:rock/raw/slate",
-                "with": "kubejs:deposit/gem_gravel/slate"
+                "with": "tfc:deposit/gem_gravel/slate"
             },
             {
                 "replace": "tfc:rock/raw/phyllite",
-                "with": "kubejs:deposit/gem_gravel/phyllite"
+                "with": "tfc:deposit/gem_gravel/phyllite"
             },
             {
                 "replace": "tfc:rock/raw/schist",
-                "with": "kubejs:deposit/gem_gravel/schist"
+                "with": "tfc:deposit/gem_gravel/schist"
             },
             {
                 "replace": "tfc:rock/raw/gneiss",
-                "with": "kubejs:deposit/gem_gravel/gneiss"
+                "with": "tfc:deposit/gem_gravel/gneiss"
             },
             {
                 "replace": "tfc:rock/raw/marble",
-                "with": "kubejs:deposit/gem_gravel/marble"
+                "with": "tfc:deposit/gem_gravel/marble"
             }
         ]
     }

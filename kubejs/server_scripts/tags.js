@@ -122,8 +122,8 @@ deposit.forEach(deposit => {
 
             event.add(tag,
                 [
-                    `kubejs:deposit/gem_gravel/${deposit}`,
-                    `kubejs:deposit/manganese/${deposit}`
+                    `tfc:deposit/gem_gravel/${deposit}`,
+                    `tfc:deposit/manganese/${deposit}`
                 ]
             )
         })
@@ -164,15 +164,15 @@ ServerEvents.tags("block", event => {
 
             event.add(tag,
                 [
-                    `kubejs:ore/rich_manganese/${rock}`,
-                    `kubejs:ore/manganese/${rock}`,
-                    `kubejs:ore/poor_manganese/${rock}`,
-                    `kubejs:ore/rich_ilmenite/${rock}`,
-                    `kubejs:ore/ilmenite/${rock}`,
-                    `kubejs:ore/poor_ilmenite/${rock}`,
-                    `kubejs:ore/rich_native_vanadium/${rock}`,
-                    `kubejs:ore/native_vanadium/${rock}`,
-                    `kubejs:ore/poor_native_vanadium/${rock}`,
+                    `tfc:ore/rich_manganese/${rock}`,
+                    `tfc:ore/manganese/${rock}`,
+                    `tfc:ore/poor_manganese/${rock}`,
+                    `tfc:ore/rich_ilmenite/${rock}`,
+                    `tfc:ore/ilmenite/${rock}`,
+                    `tfc:ore/poor_ilmenite/${rock}`,
+                    `tfc:ore/rich_native_vanadium/${rock}`,
+                    `tfc:ore/native_vanadium/${rock}`,
+                    `tfc:ore/poor_native_vanadium/${rock}`,
                 ]
             )
         })
@@ -396,21 +396,21 @@ ServerEvents.tags("block", event => {
 
         event.add('kubejs:ore/ilmenite',
             [
-                "kubejs:ore/poor_ilmenite",
-                "kubejs:ore/ilmenite",
-                "kubejs:ore/rich_ilmenite"
+                "tfc:ore/poor_ilmenite",
+                "tfc:ore/ilmenite",
+                "tfc:ore/rich_ilmenite"
             ])
         event.add('kubejs:ore/manganese',
             [
-                "kubejs:ore/poor_manganese",
-                "kubejs:ore/manganese",
-                "kubejs:ore/rich_manganese"
+                "tfc:ore/poor_manganese",
+                "tfc:ore/manganese",
+                "tfc:ore/rich_manganese"
             ])
         event.add('kubejs:ore/vanadium',
             [
-                "kubejs:ore/poor_vanadium",
-                "kubejs:ore/vanadium",
-                "kubejs:ore/rich_vanadium"
+                "tfc:ore/poor_vanadium",
+                "tfc:ore/vanadium",
+                "tfc:ore/rich_vanadium"
             ])
 
 

@@ -17,19 +17,19 @@
         "with": [
           {
             "weight": 40,
-            "block": "kubejs:ore/poor_manganese/shale"
+            "block": "tfc:ore/poor_manganese/shale"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/shale"
+            "block": "tfc:ore/manganese/shale"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/shale"
+            "block": "tfc:ore/rich_manganese/shale"
           },
           {
             "weight": 25,
-            "block": "kubejs:deposit/manganese/shale"
+            "block": "tfc:deposit/manganese/shale"
           }
         ]
       },
@@ -40,19 +40,19 @@
         "with": [
           {
             "weight": 40,
-            "block": "kubejs:ore/poor_manganese/claystone"
+            "block": "tfc:ore/poor_manganese/claystone"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/claystone"
+            "block": "tfc:ore/manganese/claystone"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/claystone"
+            "block": "tfc:ore/rich_manganese/claystone"
           },
           {
             "weight": 25,
-            "block": "kubejs:deposit/manganese/claystone"
+            "block": "tfc:deposit/manganese/claystone"
           }
         ]
       },
@@ -63,19 +63,19 @@
         "with": [
           {
             "weight": 40,
-            "block": "kubejs:ore/poor_manganese/limestone"
+            "block": "tfc:ore/poor_manganese/limestone"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/limestone"
+            "block": "tfc:ore/manganese/limestone"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/limestone"
+            "block": "tfc:ore/rich_manganese/limestone"
           },
           {
             "weight": 25,
-            "block": "kubejs:deposit/manganese/limestone"
+            "block": "tfc:deposit/manganese/limestone"
           }
         ]
       },
@@ -86,19 +86,19 @@
         "with": [
           {
             "weight": 40,
-            "block": "kubejs:ore/poor_manganese/conglomerate"
+            "block": "tfc:ore/poor_manganese/conglomerate"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/conglomerate"
+            "block": "tfc:ore/manganese/conglomerate"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/conglomerate"
+            "block": "tfc:ore/rich_manganese/conglomerate"
           },
           {
             "weight": 25,
-            "block": "kubejs:deposit/manganese/conglomerate"
+            "block": "tfc:deposit/manganese/conglomerate"
           }
         ]
       },
@@ -109,19 +109,19 @@
         "with": [
           {
             "weight": 40,
-            "block": "kubejs:ore/poor_manganese/dolomite"
+            "block": "tfc:ore/poor_manganese/dolomite"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/dolomite"
+            "block": "tfc:ore/manganese/dolomite"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/dolomite"
+            "block": "tfc:ore/rich_manganese/dolomite"
           },
           {
             "weight": 25,
-            "block": "kubejs:deposit/manganese/dolomite"
+            "block": "tfc:deposit/manganese/dolomite"
           }
         ]
       },
@@ -132,19 +132,19 @@
         "with": [
           {
             "weight": 40,
-            "block": "kubejs:ore/poor_manganese/chert"
+            "block": "tfc:ore/poor_manganese/chert"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/chert"
+            "block": "tfc:ore/manganese/chert"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/chert"
+            "block": "tfc:ore/rich_manganese/chert"
           },
           {
             "weight": 25,
-            "block": "kubejs:deposit/manganese/chert"
+            "block": "tfc:deposit/manganese/chert"
           }
         ]
       },
@@ -155,19 +155,19 @@
         "with": [
           {
             "weight": 40,
-            "block": "kubejs:ore/poor_manganese/chalk"
+            "block": "tfc:ore/poor_manganese/chalk"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/chalk"
+            "block": "tfc:ore/manganese/chalk"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/chalk"
+            "block": "tfc:ore/rich_manganese/chalk"
           },
           {
             "weight": 25,
-            "block": "kubejs:deposit/manganese/chalk"
+            "block": "tfc:deposit/manganese/chalk"
           }
         ]
       },
@@ -178,19 +178,19 @@
         "with": [
           {
             "weight": 40,
-            "block": "kubejs:ore/poor_manganese/rhyolite"
+            "block": "tfc:ore/poor_manganese/rhyolite"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/rhyolite"
+            "block": "tfc:ore/manganese/rhyolite"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/rhyolite"
+            "block": "tfc:ore/rich_manganese/rhyolite"
           },
           {
             "weight": 25,
-            "block": "kubejs:deposit/manganese/rhyolite"
+            "block": "tfc:deposit/manganese/rhyolite"
           }
         ]
       },
@@ -201,19 +201,19 @@
         "with": [
           {
             "weight": 40,
-            "block": "kubejs:ore/poor_manganese/basalt"
+            "block": "tfc:ore/poor_manganese/basalt"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/basalt"
+            "block": "tfc:ore/manganese/basalt"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/basalt"
+            "block": "tfc:ore/rich_manganese/basalt"
           },
           {
             "weight": 25,
-            "block": "kubejs:deposit/manganese/basalt"
+            "block": "tfc:deposit/manganese/basalt"
           }
         ]
       },
@@ -224,19 +224,19 @@
         "with": [
           {
             "weight": 40,
-            "block": "kubejs:ore/poor_manganese/andesite"
+            "block": "tfc:ore/poor_manganese/andesite"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/andesite"
+            "block": "tfc:ore/manganese/andesite"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/andesite"
+            "block": "tfc:ore/rich_manganese/andesite"
           },
           {
             "weight": 25,
-            "block": "kubejs:deposit/manganese/andesite"
+            "block": "tfc:deposit/manganese/andesite"
           }
         ]
       },
@@ -247,19 +247,19 @@
         "with": [
           {
             "weight": 25,
-            "block": "kubejs:ore/poor_manganese/shale"
+            "block": "tfc:ore/poor_manganese/shale"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/shale"
+            "block": "tfc:ore/manganese/shale"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/shale"
+            "block": "tfc:ore/rich_manganese/shale"
           },
           {
             "weight": 40,
-            "block": "kubejs:deposit/manganese/shale"
+            "block": "tfc:deposit/manganese/shale"
           }
         ]
       },
@@ -270,19 +270,19 @@
         "with": [
           {
             "weight": 25,
-            "block": "kubejs:ore/poor_manganese/claystone"
+            "block": "tfc:ore/poor_manganese/claystone"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/claystone"
+            "block": "tfc:ore/manganese/claystone"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/claystone"
+            "block": "tfc:ore/rich_manganese/claystone"
           },
           {
             "weight": 40,
-            "block": "kubejs:deposit/manganese/claystone"
+            "block": "tfc:deposit/manganese/claystone"
           }
         ]
       },
@@ -293,19 +293,19 @@
         "with": [
           {
             "weight": 25,
-            "block": "kubejs:ore/poor_manganese/limestone"
+            "block": "tfc:ore/poor_manganese/limestone"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/limestone"
+            "block": "tfc:ore/manganese/limestone"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/limestone"
+            "block": "tfc:ore/rich_manganese/limestone"
           },
           {
             "weight": 40,
-            "block": "kubejs:deposit/manganese/limestone"
+            "block": "tfc:deposit/manganese/limestone"
           }
         ]
       },
@@ -316,19 +316,19 @@
         "with": [
           {
             "weight": 25,
-            "block": "kubejs:ore/poor_manganese/conglomerate"
+            "block": "tfc:ore/poor_manganese/conglomerate"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/conglomerate"
+            "block": "tfc:ore/manganese/conglomerate"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/conglomerate"
+            "block": "tfc:ore/rich_manganese/conglomerate"
           },
           {
             "weight": 40,
-            "block": "kubejs:deposit/manganese/conglomerate"
+            "block": "tfc:deposit/manganese/conglomerate"
           }
         ]
       },
@@ -339,19 +339,19 @@
         "with": [
           {
             "weight": 25,
-            "block": "kubejs:ore/poor_manganese/dolomite"
+            "block": "tfc:ore/poor_manganese/dolomite"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/dolomite"
+            "block": "tfc:ore/manganese/dolomite"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/dolomite"
+            "block": "tfc:ore/rich_manganese/dolomite"
           },
           {
             "weight": 40,
-            "block": "kubejs:deposit/manganese/dolomite"
+            "block": "tfc:deposit/manganese/dolomite"
           }
         ]
       },
@@ -362,19 +362,19 @@
         "with": [
           {
             "weight": 25,
-            "block": "kubejs:ore/poor_manganese/chert"
+            "block": "tfc:ore/poor_manganese/chert"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/chert"
+            "block": "tfc:ore/manganese/chert"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/chert"
+            "block": "tfc:ore/rich_manganese/chert"
           },
           {
             "weight": 40,
-            "block": "kubejs:deposit/manganese/chert"
+            "block": "tfc:deposit/manganese/chert"
           }
         ]
       },
@@ -385,19 +385,19 @@
         "with": [
           {
             "weight": 25,
-            "block": "kubejs:ore/poor_manganese/chalk"
+            "block": "tfc:ore/poor_manganese/chalk"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/chalk"
+            "block": "tfc:ore/manganese/chalk"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/chalk"
+            "block": "tfc:ore/rich_manganese/chalk"
           },
           {
             "weight": 40,
-            "block": "kubejs:deposit/manganese/chalk"
+            "block": "tfc:deposit/manganese/chalk"
           }
         ]
       },
@@ -408,19 +408,19 @@
         "with": [
           {
             "weight": 25,
-            "block": "kubejs:ore/poor_manganese/rhyolite"
+            "block": "tfc:ore/poor_manganese/rhyolite"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/rhyolite"
+            "block": "tfc:ore/manganese/rhyolite"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/rhyolite"
+            "block": "tfc:ore/rich_manganese/rhyolite"
           },
           {
             "weight": 40,
-            "block": "kubejs:deposit/manganese/rhyolite"
+            "block": "tfc:deposit/manganese/rhyolite"
           }
         ]
       },
@@ -431,19 +431,19 @@
         "with": [
           {
             "weight": 25,
-            "block": "kubejs:ore/poor_manganese/basalt"
+            "block": "tfc:ore/poor_manganese/basalt"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/basalt"
+            "block": "tfc:ore/manganese/basalt"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/basalt"
+            "block": "tfc:ore/rich_manganese/basalt"
           },
           {
             "weight": 40,
-            "block": "kubejs:deposit/manganese/basalt"
+            "block": "tfc:deposit/manganese/basalt"
           }
         ]
       },
@@ -454,19 +454,19 @@
         "with": [
           {
             "weight": 25,
-            "block": "kubejs:ore/poor_manganese/andesite"
+            "block": "tfc:ore/poor_manganese/andesite"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/andesite"
+            "block": "tfc:ore/manganese/andesite"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/andesite"
+            "block": "tfc:ore/rich_manganese/andesite"
           },
           {
             "weight": 40,
-            "block": "kubejs:deposit/manganese/andesite"
+            "block": "tfc:deposit/manganese/andesite"
           }
         ]
       },
@@ -477,19 +477,19 @@
         "with": [
           {
             "weight": 40,
-            "block": "kubejs:ore/poor_manganese/dacite"
+            "block": "tfc:ore/poor_manganese/dacite"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/dacite"
+            "block": "tfc:ore/manganese/dacite"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/dacite"
+            "block": "tfc:ore/rich_manganese/dacite"
           },
           {
             "weight": 25,
-            "block": "kubejs:deposit/manganese/dacite"
+            "block": "tfc:deposit/manganese/dacite"
           }
         ]
       },
@@ -500,19 +500,19 @@
         "with": [
           {
             "weight": 25,
-            "block": "kubejs:ore/poor_manganese/dacite"
+            "block": "tfc:ore/poor_manganese/dacite"
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/dacite"
+            "block": "tfc:ore/manganese/dacite"
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/rich_manganese/dacite"
+            "block": "tfc:ore/rich_manganese/dacite"
           },
           {
             "weight": 40,
-            "block": "kubejs:deposit/manganese/dacite"
+            "block": "tfc:deposit/manganese/dacite"
           }
         ]
       }

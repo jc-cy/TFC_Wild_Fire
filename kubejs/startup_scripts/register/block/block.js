@@ -114,14 +114,14 @@ StartupEvents.registry("block", event => {
 
     deposits.forEach(deposit => {
         //宝石砂
-        event.create(`kubejs:deposit/gem_gravel/${deposit}`)
+        event.create(`tfc:deposit/gem_gravel/${deposit}`)
         .gravelSoundType()
         .model(`kubejs:block/deposit/gem_gravel/${deposit}`)
         .tag('forge:gravel')
         .tagBlock('minecraft:mineable/shovel')
         .requiresTool()
         //锰结核砂
-        event.create(`kubejs:deposit/manganese/${deposit}`)
+        event.create(`tfc:deposit/manganese/${deposit}`)
         .gravelSoundType()
         .model(`kubejs:block/deposit/manganese/${deposit}`)
         .tag('forge:gravel')
@@ -129,7 +129,7 @@ StartupEvents.registry("block", event => {
         .requiresTool()
 
         //钛铁矿
-        event.create(`kubejs:ore/poor_ilmenite/${deposit}`)
+        event.create(`tfc:ore/poor_ilmenite/${deposit}`)
         .model(`kubejs:block/ore/poor_ilmenite/${deposit}`)
         .tag('forge:ores')
         .tag('forge:ores/ilmenite')
@@ -138,7 +138,7 @@ StartupEvents.registry("block", event => {
         .hardness(12)
         .requiresTool()
 
-        event.create(`kubejs:ore/ilmenite/${deposit}`)
+        event.create(`tfc:ore/ilmenite/${deposit}`)
         .model(`kubejs:block/ore/ilmenite/${deposit}`)
         .tag('forge:ores')
         .tag('forge:ores/ilmenite')
@@ -147,7 +147,7 @@ StartupEvents.registry("block", event => {
         .hardness(12)
         .requiresTool()
 
-        event.create(`kubejs:ore/rich_ilmenite/${deposit}`)
+        event.create(`tfc:ore/rich_ilmenite/${deposit}`)
         .model(`kubejs:block/ore/rich_ilmenite/${deposit}`)
         .tag('forge:ores')
         .tag('forge:ores/ilmenite')
@@ -157,7 +157,7 @@ StartupEvents.registry("block", event => {
         .requiresTool()
 
         //原生钒矿
-        event.create(`kubejs:ore/poor_native_vanadium/${deposit}`)
+        event.create(`tfc:ore/poor_native_vanadium/${deposit}`)
         .model(`kubejs:block/ore/poor_native_vanadium/${deposit}`)
         .tag('forge:ores')
         .tag('forge:ores/native_vanadium')
@@ -166,7 +166,7 @@ StartupEvents.registry("block", event => {
         .hardness(5)
         .requiresTool()
 
-        event.create(`kubejs:ore/native_vanadium/${deposit}`)
+        event.create(`tfc:ore/native_vanadium/${deposit}`)
         .model(`kubejs:block/ore/native_vanadium/${deposit}`)
         .tag('forge:ores')
         .tag('forge:ores/native_vanadium')
@@ -175,7 +175,7 @@ StartupEvents.registry("block", event => {
         .hardness(5)
         .requiresTool()
 
-        event.create(`kubejs:ore/rich_native_vanadium/${deposit}`)
+        event.create(`tfc:ore/rich_native_vanadium/${deposit}`)
         .model(`kubejs:block/ore/rich_native_vanadium/${deposit}`)
         .tag('forge:ores')
         .tag('forge:ores/native_vanadium')
@@ -185,7 +185,7 @@ StartupEvents.registry("block", event => {
         .requiresTool()
 
         //锰结核
-        event.create(`kubejs:ore/poor_manganese/${deposit}`)
+        event.create(`tfc:ore/poor_manganese/${deposit}`)
         .model(`kubejs:block/ore/poor_manganese/${deposit}`)
         .tag('forge:ores')
         .tag('forge:ores/manganese')
@@ -194,7 +194,7 @@ StartupEvents.registry("block", event => {
         .hardness(12)
         .requiresTool()
 
-        event.create(`kubejs:ore/manganese/${deposit}`)
+        event.create(`tfc:ore/manganese/${deposit}`)
         .model(`kubejs:block/ore/manganese/${deposit}`)
         .tag('forge:ores')
         .tag('forge:ores/manganese')
@@ -203,7 +203,7 @@ StartupEvents.registry("block", event => {
         .hardness(12)
         .requiresTool()
 
-        event.create(`kubejs:ore/rich_manganese/${deposit}`)
+        event.create(`tfc:ore/rich_manganese/${deposit}`)
         .model(`kubejs:block/ore/rich_manganese/${deposit}`)
         .tag('forge:ores')
         .tag('forge:ores/manganese')

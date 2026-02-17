@@ -15,7 +15,7 @@
   },
   "display": {
     "icon": {
-      "item": "kubejs:ore/rich_manganese"
+      "item": "tfc:ore/rich_manganese"
     },
     "title": {
       "translate": "tfc.advancements.world.manganese.title"
