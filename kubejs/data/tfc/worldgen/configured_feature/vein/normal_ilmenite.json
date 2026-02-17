@@ -16,19 +16,19 @@
         "with": [
           {
             "weight": 30,
-            "block": "tfc:ore/poor_ilmenite/granite"
+            "block": "kubejs:ore/poor_ilmenite/granite"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/ilmenite/granite"
+            "block": "kubejs:ore/ilmenite/granite"
           },
           {
             "weight": 35,
-            "block": "tfc:ore/rich_ilmenite/granite"
+            "block": "kubejs:ore/rich_ilmenite/granite"
           },
           {
             "weight": 5,
-            "block": "tfc:ore/poor_manganese/granite"
+            "block": "kubejs:ore/poor_manganese/granite"
           }
         ]
       },
@@ -39,19 +39,19 @@
         "with": [
           {
             "weight": 34,
-            "block": "tfc:ore/poor_ilmenite/diorite"
+            "block": "kubejs:ore/poor_ilmenite/diorite"
           },
           {
             "weight": 35,
-            "block": "tfc:ore/ilmenite/diorite"
+            "block": "kubejs:ore/ilmenite/diorite"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/rich_ilmenite/diorite"
+            "block": "kubejs:ore/rich_ilmenite/diorite"
           },
           {
             "weight": 1,
-            "block": "tfc:ore/poor_manganese/diorite"
+            "block": "kubejs:ore/poor_manganese/diorite"
           }
         ]
       },
@@ -62,15 +62,15 @@
         "with": [
           {
             "weight": 25,
-            "block": "tfc:ore/poor_ilmenite/gabbro"
+            "block": "kubejs:ore/poor_ilmenite/gabbro"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/ilmenite/gabbro"
+            "block": "kubejs:ore/ilmenite/gabbro"
           },
           {
             "weight": 45,
-            "block": "tfc:ore/rich_ilmenite/gabbro"
+            "block": "kubejs:ore/rich_ilmenite/gabbro"
           }
         ]
       },
@@ -81,15 +81,15 @@
         "with": [
           {
             "weight": 45,
-            "block": "tfc:ore/poor_ilmenite/rhyolite"
+            "block": "kubejs:ore/poor_ilmenite/rhyolite"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/ilmenite/rhyolite"
+            "block": "kubejs:ore/ilmenite/rhyolite"
           },
           {
             "weight": 25,
-            "block": "tfc:ore/rich_ilmenite/rhyolite"
+            "block": "kubejs:ore/rich_ilmenite/rhyolite"
           }
         ]
       },
@@ -100,15 +100,15 @@
         "with": [
           {
             "weight": 40,
-            "block": "tfc:ore/poor_ilmenite/basalt"
+            "block": "kubejs:ore/poor_ilmenite/basalt"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/ilmenite/basalt"
+            "block": "kubejs:ore/ilmenite/basalt"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/rich_ilmenite/basalt"
+            "block": "kubejs:ore/rich_ilmenite/basalt"
           }
         ]
       },
@@ -119,15 +119,15 @@
         "with": [
           {
             "weight": 35,
-            "block": "tfc:ore/poor_ilmenite/andesite"
+            "block": "kubejs:ore/poor_ilmenite/andesite"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/ilmenite/andesite"
+            "block": "kubejs:ore/ilmenite/andesite"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/rich_ilmenite/andesite"
+            "block": "kubejs:ore/rich_ilmenite/andesite"
           },
           {
             "weight": 5,
@@ -142,15 +142,15 @@
         "with": [
           {
             "weight": 35,
-            "block": "tfc:ore/poor_ilmenite/dacite"
+            "block": "kubejs:ore/poor_ilmenite/dacite"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/ilmenite/dacite"
+            "block": "kubejs:ore/ilmenite/dacite"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/rich_ilmenite/dacite"
+            "block": "kubejs:ore/rich_ilmenite/dacite"
           },
           {
             "weight": 5,

@@ -8,83 +8,83 @@
         "states": [
             {
                 "replace": "tfc:rock/gravel/granite",
-                "with": "tfc:deposit/gem_gravel/granite"
+                "with": "kubejs:deposit/gem_gravel/granite"
             },
             {
                 "replace": "tfc:rock/gravel/diorite",
-                "with": "tfc:deposit/gem_gravel/diorite"
+                "with": "kubejs:deposit/gem_gravel/diorite"
             },
             {
                 "replace": "tfc:rock/gravel/gabbro",
-                "with": "tfc:deposit/gem_gravel/gabbro"
+                "with": "kubejs:deposit/gem_gravel/gabbro"
             },
             {
                 "replace": "tfc:rock/gravel/shale",
-                "with": "tfc:deposit/gem_gravel/shale"
+                "with": "kubejs:deposit/gem_gravel/shale"
             },
             {
                 "replace": "tfc:rock/gravel/claystone",
-                "with": "tfc:deposit/gem_gravel/claystone"
+                "with": "kubejs:deposit/gem_gravel/claystone"
             },
             {
                 "replace": "tfc:rock/gravel/limestone",
-                "with": "tfc:deposit/gem_gravel/limestone"
+                "with": "kubejs:deposit/gem_gravel/limestone"
             },
             {
                 "replace": "tfc:rock/gravel/conglomerate",
-                "with": "tfc:deposit/gem_gravel/conglomerate"
+                "with": "kubejs:deposit/gem_gravel/conglomerate"
             },
             {
                 "replace": "tfc:rock/gravel/dolomite",
-                "with": "tfc:deposit/gem_gravel/dolomite"
+                "with": "kubejs:deposit/gem_gravel/dolomite"
             },
             {
                 "replace": "tfc:rock/gravel/chert",
-                "with": "tfc:deposit/gem_gravel/chert"
+                "with": "kubejs:deposit/gem_gravel/chert"
             },
             {
                 "replace": "tfc:rock/gravel/chalk",
-                "with": "tfc:deposit/gem_gravel/chalk"
+                "with": "kubejs:deposit/gem_gravel/chalk"
             },
             {
                 "replace": "tfc:rock/gravel/rhyolite",
-                "with": "tfc:deposit/gem_gravel/rhyolite"
+                "with": "kubejs:deposit/gem_gravel/rhyolite"
             },
             {
                 "replace": "tfc:rock/gravel/basalt",
-                "with": "tfc:deposit/gem_gravel/basalt"
+                "with": "kubejs:deposit/gem_gravel/basalt"
             },
             {
                 "replace": "tfc:rock/gravel/andesite",
-                "with": "tfc:deposit/gem_gravel/andesite"
+                "with": "kubejs:deposit/gem_gravel/andesite"
             },
             {
                 "replace": "tfc:rock/gravel/dacite",
-                "with": "tfc:deposit/gem_gravel/dacite"
+                "with": "kubejs:deposit/gem_gravel/dacite"
             },
             {
                 "replace": "tfc:rock/gravel/quartzite",
-                "with": "tfc:deposit/gem_gravel/quartzite"
+                "with": "kubejs:deposit/gem_gravel/quartzite"
             },
             {
                 "replace": "tfc:rock/gravel/slate",
-                "with": "tfc:deposit/gem_gravel/slate"
+                "with": "kubejs:deposit/gem_gravel/slate"
             },
             {
                 "replace": "tfc:rock/gravel/phyllite",
-                "with": "tfc:deposit/gem_gravel/phyllite"
+                "with": "kubejs:deposit/gem_gravel/phyllite"
             },
             {
                 "replace": "tfc:rock/gravel/schist",
-                "with": "tfc:deposit/gem_gravel/schist"
+                "with": "kubejs:deposit/gem_gravel/schist"
             },
             {
                 "replace": "tfc:rock/gravel/gneiss",
-                "with": "tfc:deposit/gem_gravel/gneiss"
+                "with": "kubejs:deposit/gem_gravel/gneiss"
             },
             {
                 "replace": "tfc:rock/gravel/marble",
-                "with": "tfc:deposit/gem_gravel/marble"
+                "with": "kubejs:deposit/gem_gravel/marble"
             }
         ]
     }

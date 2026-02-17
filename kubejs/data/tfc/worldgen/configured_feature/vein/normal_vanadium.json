@@ -17,15 +17,15 @@
         "with": [
           {
             "weight": 40,
-            "block": "tfc:ore/poor_native_vanadium/claystone"
+            "block": "kubejs:ore/poor_native_vanadium/claystone"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/native_vanadium/claystone"
+            "block": "kubejs:ore/native_vanadium/claystone"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/rich_native_vanadium/claystone"
+            "block": "kubejs:ore/rich_native_vanadium/claystone"
           }
         ]
       },
@@ -36,15 +36,15 @@
         "with": [
           {
             "weight": 35,
-            "block": "tfc:ore/poor_native_vanadium/limestone"
+            "block": "kubejs:ore/poor_native_vanadium/limestone"
           },
           {
             "weight": 25,
-            "block": "tfc:ore/native_vanadium/limestone"
+            "block": "kubejs:ore/native_vanadium/limestone"
           },
           {
             "weight": 25,
-            "block": "tfc:ore/rich_native_vanadium/limestone"
+            "block": "kubejs:ore/rich_native_vanadium/limestone"
           },
           {
             "weight": 15,
@@ -59,15 +59,15 @@
         "with": [
           {
             "weight": 35,
-            "block": "tfc:ore/poor_native_vanadium/conglomerate"
+            "block": "kubejs:ore/poor_native_vanadium/conglomerate"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/native_vanadium/conglomerate"
+            "block": "kubejs:ore/native_vanadium/conglomerate"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/rich_native_vanadium/conglomerate"
+            "block": "kubejs:ore/rich_native_vanadium/conglomerate"
           },
           {
             "weight": 5,
@@ -82,15 +82,15 @@
         "with": [
           {
             "weight":40,
-            "block": "tfc:ore/poor_native_vanadium/dolomite"
+            "block": "kubejs:ore/poor_native_vanadium/dolomite"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/native_vanadium/dolomite"
+            "block": "kubejs:ore/native_vanadium/dolomite"
           },
           {
             "weight": 20,
-            "block": "tfc:ore/rich_native_vanadium/dolomite"
+            "block": "kubejs:ore/rich_native_vanadium/dolomite"
           },
           {
             "weight": 10,
@@ -105,15 +105,15 @@
         "with": [
           {
             "weight":40,
-            "block": "tfc:ore/poor_native_vanadium/chert"
+            "block": "kubejs:ore/poor_native_vanadium/chert"
           },
           {
             "weight": 25,
-            "block": "tfc:ore/native_vanadium/chert"
+            "block": "kubejs:ore/native_vanadium/chert"
           },
           {
             "weight": 10,
-            "block": "tfc:ore/rich_native_vanadium/chert"
+            "block": "kubejs:ore/rich_native_vanadium/chert"
           },
           {
             "weight": 25,
@@ -128,15 +128,15 @@
         "with": [
           {
             "weight":50,
-            "block": "tfc:ore/poor_native_vanadium/chalk"
+            "block": "kubejs:ore/poor_native_vanadium/chalk"
           },
           {
             "weight": 20,
-            "block": "tfc:ore/native_vanadium/chalk"
+            "block": "kubejs:ore/native_vanadium/chalk"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/rich_native_vanadium/chalk"
+            "block": "kubejs:ore/rich_native_vanadium/chalk"
           }
         ]
       },
@@ -147,15 +147,15 @@
         "with": [
           {
             "weight":50,
-            "block": "tfc:ore/poor_native_vanadium/marble"
+            "block": "kubejs:ore/poor_native_vanadium/marble"
           },
           {
             "weight": 20,
-            "block": "tfc:ore/native_vanadium/marble"
+            "block": "kubejs:ore/native_vanadium/marble"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/rich_native_vanadium/marble"
+            "block": "kubejs:ore/rich_native_vanadium/marble"
           }
         ]
       }

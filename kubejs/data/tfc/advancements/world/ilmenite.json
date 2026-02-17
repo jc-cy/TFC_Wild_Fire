@@ -7,7 +7,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "tfc:ore/ilmenite"
+            "tag": "kubejs:ore/ilmenite"
           }
         ]
       }

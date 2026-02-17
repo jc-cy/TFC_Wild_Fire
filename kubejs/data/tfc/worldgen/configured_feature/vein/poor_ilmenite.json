@@ -24,27 +24,27 @@
           },
           {
             "weight": 20,
-            "block": "tfc:ore/poor_ilmenite/rhyolite"
+            "block": "kubejs:ore/poor_ilmenite/rhyolite"
           },
           {
             "weight": 25,
-            "block": "tfc:ore/ilmenite/rhyolite"
+            "block": "kubejs:ore/ilmenite/rhyolite"
           },
           {
             "weight": 15,
-            "block": "tfc:ore/rich_ilmenite/rhyolite"
+            "block": "kubejs:ore/rich_ilmenite/rhyolite"
           },
           {
             "weight": 10,
-            "block": "tfc:ore/poor_native_vanadium/rhyolite"
+            "block": "kubejs:ore/poor_native_vanadium/rhyolite"
           },
           {
             "weight": 10,
-            "block": "tfc:ore/native_vanadium/rhyolite"
+            "block": "kubejs:ore/native_vanadium/rhyolite"
           },
           {
             "weight": 10,
-            "block": "tfc:ore/rich_native_vanadium/rhyolite"
+            "block": "kubejs:ore/rich_native_vanadium/rhyolite"
           }
         ]
       },
@@ -63,27 +63,27 @@
           },
           {
             "weight": 20,
-            "block": "tfc:ore/poor_ilmenite/basalt"
+            "block": "kubejs:ore/poor_ilmenite/basalt"
           },
           {
             "weight": 25,
-            "block": "tfc:ore/ilmenite/basalt"
+            "block": "kubejs:ore/ilmenite/basalt"
           },
           {
             "weight": 15,
-            "block": "tfc:ore/rich_ilmenite/basalt"
+            "block": "kubejs:ore/rich_ilmenite/basalt"
           },
           {
             "weight": 10,
-            "block": "tfc:ore/poor_native_vanadium/basalt"
+            "block": "kubejs:ore/poor_native_vanadium/basalt"
           },
           {
             "weight": 10,
-            "block": "tfc:ore/native_vanadium/basalt"
+            "block": "kubejs:ore/native_vanadium/basalt"
           },
           {
             "weight": 5,
-            "block": "tfc:ore/rich_native_vanadium/basalt"
+            "block": "kubejs:ore/rich_native_vanadium/basalt"
           }
         ]
       },
@@ -106,23 +106,23 @@
           },
           {
             "weight": 20,
-            "block": "tfc:ore/poor_ilmenite/andesite"
+            "block": "kubejs:ore/poor_ilmenite/andesite"
           },
           {
             "weight": 25,
-            "block": "tfc:ore/ilmenite/andesite"
+            "block": "kubejs:ore/ilmenite/andesite"
           },
           {
             "weight": 15,
-            "block": "tfc:ore/rich_ilmenite/andesite"
+            "block": "kubejs:ore/rich_ilmenite/andesite"
           },
           {
             "weight": 5,
-            "block": "tfc:ore/poor_native_vanadium/andesite"
+            "block": "kubejs:ore/poor_native_vanadium/andesite"
           },
           {
             "weight": 5,
-            "block": "tfc:ore/native_vanadium/andesite"
+            "block": "kubejs:ore/native_vanadium/andesite"
           }
         ]
       },
@@ -145,19 +145,19 @@
           },
           {
             "weight": 5,
-            "block": "tfc:ore/poor_ilmenite/claystone"
+            "block": "kubejs:ore/poor_ilmenite/claystone"
           },
           {
             "weight": 10,
-            "block": "tfc:ore/ilmenite/claystone"
+            "block": "kubejs:ore/ilmenite/claystone"
           },
           {
             "weight": 10,
-            "block": "tfc:ore/poor_native_vanadium/claystone"
+            "block": "kubejs:ore/poor_native_vanadium/claystone"
           },
           {
             "weight": 5,
-            "block": "tfc:ore/native_vanadium/claystone"
+            "block": "kubejs:ore/native_vanadium/claystone"
           }
         ]
       },
@@ -180,15 +180,15 @@
           },
           {
             "weight": 5,
-            "block": "tfc:ore/poor_ilmenite/limestone"
+            "block": "kubejs:ore/poor_ilmenite/limestone"
           },
           {
             "weight": 5,
-            "block": "tfc:ore/ilmenite/limestone"
+            "block": "kubejs:ore/ilmenite/limestone"
           },
           {
             "weight": 5,
-            "block": "tfc:ore/poor_native_vanadium/limestone"
+            "block": "kubejs:ore/poor_native_vanadium/limestone"
           }
         ]
       },
@@ -211,15 +211,15 @@
           },
           {
             "weight": 8,
-            "block": "tfc:ore/poor_ilmenite/dolomite"
+            "block": "kubejs:ore/poor_ilmenite/dolomite"
           },
           {
             "weight": 8,
-            "block": "tfc:ore/ilmenite/dolomite"
+            "block": "kubejs:ore/ilmenite/dolomite"
           },
           {
             "weight": 1,
-            "block": "tfc:ore/poor_native_vanadium/dolomite"
+            "block": "kubejs:ore/poor_native_vanadium/dolomite"
           }
         ]
       },
@@ -242,15 +242,15 @@
           },
           {
             "weight": 10,
-            "block": "tfc:ore/poor_ilmenite/chert"
+            "block": "kubejs:ore/poor_ilmenite/chert"
           },
           {
             "weight": 10,
-            "block": "tfc:ore/ilmenite/chert"
+            "block": "kubejs:ore/ilmenite/chert"
           },
           {
             "weight": 2,
-            "block": "tfc:ore/poor_native_vanadium/chalk"
+            "block": "kubejs:ore/poor_native_vanadium/chalk"
           }
         ]
       },
@@ -273,15 +273,15 @@
           },
           {
             "weight": 12,
-            "block": "tfc:ore/poor_ilmenite/chalk"
+            "block": "kubejs:ore/poor_ilmenite/chalk"
           },
           {
             "weight": 10,
-            "block": "tfc:ore/ilmenite/chalk"
+            "block": "kubejs:ore/ilmenite/chalk"
           },
           {
             "weight": 1,
-            "block": "tfc:ore/poor_native_vanadium/chalk"
+            "block": "kubejs:ore/poor_native_vanadium/chalk"
           }
         ]
       },
@@ -304,19 +304,19 @@
           },
           {
             "weight": 10,
-            "block": "tfc:ore/poor_ilmenite/dacite"
+            "block": "kubejs:ore/poor_ilmenite/dacite"
           },
           {
             "weight": 15,
-            "block": "tfc:ore/ilmenite/dacite"
+            "block": "kubejs:ore/ilmenite/dacite"
           },
           {
             "weight": 10,
-            "block": "tfc:ore/rich_ilmenite/dacite"
+            "block": "kubejs:ore/rich_ilmenite/dacite"
           },
           {
             "weight": 5,
-            "block": "tfc:ore/poor_native_vanadium/dacite"
+            "block": "kubejs:ore/poor_native_vanadium/dacite"
           }
         ]
       }
