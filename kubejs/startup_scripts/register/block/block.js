@@ -60,6 +60,24 @@ StartupEvents.registry('block', event => {
                                 entity.getBlock().set('kubejs:tfc/dried_sinew')
                         })
                 })
+                
+        event.create('kubejs:underwater_turbine','cardinal')//水下涡轮
+        .model('kubejs:block/underwater_turbine')
+        .soundType('netherite_block')
+        .hardness(20) // 设置硬度
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('tfc:needs_wrought_iron_tool')
+        .requiresTool()
+        .defaultCutout()
+        
+        event.create('kubejs:submarine_core','cardinal')//潜艇核心
+        .model('kubejs:block/submarine_core')
+        .soundType('copper')
+        .hardness(20) // 设置硬度
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('tfc:needs_copper_tool')
+        .requiresTool()
+        .defaultCutout()
 })
 const $CrucibleBlock = Java.loadClass('net.dries007.tfc.common.blocks.devices.CrucibleBlock')
 const $ExtendedProperties = Java.loadClass('net.dries007.tfc.common.blocks.ExtendedProperties')

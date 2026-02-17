@@ -1,0 +1,10 @@
+{
+  "parent": "create:block/belt_funnel/block_retracted",
+  "textures": {
+    "base": "create:block/funnel/brass_funnel",
+    "block": "create:block/wrought_iron",
+    "direction": "create:block/funnel/brass_funnel_neutral",
+    "particle": "create:block/wrought_iron",
+    "redstone": "create:block/funnel/brass_funnel_powered"
+  }
+}

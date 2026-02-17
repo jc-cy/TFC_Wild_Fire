@@ -26,7 +26,12 @@ ServerEvents.recipes(event => {
         { type: "3", ingot: "uranium" },
         { type: "3", ingot: "constantan" },
         { type: "3", ingot: "electrum" },
-        { type: "3", ingot: "lead" }
+        { type: "3", ingot: "lead" },
+        
+        { type: "1", ingot: "titanium_alloy" },
+        { type: "1", ingot: "titanium" },
+        { type: "1", ingot: "vanadium" },
+        { type: "1", ingot: "manganese" }
     ];
 
 

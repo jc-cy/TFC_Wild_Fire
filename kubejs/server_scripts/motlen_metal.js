@@ -11,14 +11,14 @@ const molten_metal = [
 TFCEvents.data(event => {
     molten_metal.forEach(metal => {
         event.metal(
-            `kubejs:molten_${metal.id}`,
+            `tfc:metal/${metal.id}`,
             metal.Temperature,
             0.00857,
             null,
             null,
             null,
             metal.tier,
-            `kubejs:${metal.id}`
+            `tfc:${metal.id}`
         )
     })
 })

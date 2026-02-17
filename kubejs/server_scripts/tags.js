@@ -122,8 +122,8 @@ deposit.forEach(deposit => {
 
             event.add(tag,
                 [
-                    `tfc:deposit/gem_gravel/${deposit}`,
-                    `tfc:deposit/manganese/${deposit}`
+                    `kubejs:deposit/gem_gravel/${deposit}`,
+                    `kubejs:deposit/manganese/${deposit}`
                 ]
             )
         })
@@ -164,15 +164,15 @@ ServerEvents.tags("block", event => {
 
             event.add(tag,
                 [
-                    `tfc:ore/rich_manganese/${rock}`,
-                    `tfc:ore/manganese/${rock}`,
-                    `tfc:ore/poor_manganese/${rock}`,
-                    `tfc:ore/rich_ilmenite/${rock}`,
-                    `tfc:ore/ilmenite/${rock}`,
-                    `tfc:ore/poor_ilmenite/${rock}`,
-                    `tfc:ore/rich_native_vanadium/${rock}`,
-                    `tfc:ore/native_vanadium/${rock}`,
-                    `tfc:ore/poor_native_vanadium/${rock}`,
+                    `kubejs:ore/rich_manganese/${rock}`,
+                    `kubejs:ore/manganese/${rock}`,
+                    `kubejs:ore/poor_manganese/${rock}`,
+                    `kubejs:ore/rich_ilmenite/${rock}`,
+                    `kubejs:ore/ilmenite/${rock}`,
+                    `kubejs:ore/poor_ilmenite/${rock}`,
+                    `kubejs:ore/rich_native_vanadium/${rock}`,
+                    `kubejs:ore/native_vanadium/${rock}`,
+                    `kubejs:ore/poor_native_vanadium/${rock}`,
                 ]
             )
         })
@@ -258,7 +258,7 @@ ServerEvents.tags("block", event => {
         event.add('kubejs:petroleum_gas', 'kubejs:petroleum_gas')
     }),
     ServerEvents.tags("item", event => {
-        
+
         event.add('forge:tools/hammers', '#tfc:hammers')
 
         const metals = [
@@ -396,21 +396,21 @@ ServerEvents.tags("block", event => {
 
         event.add('kubejs:ore/ilmenite',
             [
-                "tfc:ore/poor_ilmenite",
-                "tfc:ore/ilmenite",
-                "tfc:ore/rich_ilmenite"
+                "kubejs:ore/poor_ilmenite",
+                "kubejs:ore/ilmenite",
+                "kubejs:ore/rich_ilmenite"
             ])
         event.add('kubejs:ore/manganese',
             [
-                "tfc:ore/poor_manganese",
-                "tfc:ore/manganese",
-                "tfc:ore/rich_manganese"
+                "kubejs:ore/poor_manganese",
+                "kubejs:ore/manganese",
+                "kubejs:ore/rich_manganese"
             ])
         event.add('kubejs:ore/vanadium',
             [
-                "tfc:ore/poor_vanadium",
-                "tfc:ore/vanadium",
-                "tfc:ore/rich_vanadium"
+                "kubejs:ore/poor_vanadium",
+                "kubejs:ore/vanadium",
+                "kubejs:ore/rich_vanadium"
             ])
 
 
@@ -597,7 +597,7 @@ ServerEvents.tags("block", event => {
                 "tfc:burlap_cloth"
 
             ])
-            
+
         //宝石原矿
         event.add('tfc:gem_ore',
             [
@@ -634,7 +634,21 @@ ServerEvents.tags("block", event => {
                 "tfc:rock/anvil/andesite",
                 "tfc:rock/anvil/basalt"
             ])
-
+        //给烂菜加堆肥tag
+        event.add('tfc:compost_greens_high',
+            [
+                "kubejs:rotten_vegetables",
+                "kubejs:rotten_fruit",
+                "kubejs:rotten_fruit"
+            ])
+        //给烂肉加烂肥tag
+        event.add('tfc:compost_poisons',
+            [
+                "kubejs:rotten_fish",
+                "kubejs:rotten_meat",
+                "kubejs:rotten_platter"
+            ])
+            
         event.add('sliceanddice:allowed_tools', '#minecraft:tools')
         //石墨铸模
         event.add('forge:graphite_molds',

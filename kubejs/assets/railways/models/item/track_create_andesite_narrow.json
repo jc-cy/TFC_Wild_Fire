@@ -1,0 +1,65 @@
+{
+  "parent": "railways:item/template_track_narrow",
+  "textures": {
+    "particle": "railways:item/standard_track/standard_track"
+  },
+
+  "gui_light": "front",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "railways:item/template_track_narrow",
+    "textures": {
+      "0": "railways:item/standard_track/standard_track"
+    }
+  },
+  "perspectives": {
+    "thirdperson_righthand": {
+      "parent": "railways:item/template_track_narrow",
+      "textures": {
+        "0": "railways:item/standard_track/standard_track"
+      }
+    },
+    "thirdperson_lefthand": {
+      "parent": "railways:item/template_track_narrow",
+      "textures": {
+        "0": "railways:item/standard_track/standard_track"
+      }
+    },
+    "firstperson_righthand": {
+      "parent": "railways:item/template_track_narrow",
+      "textures": {
+        "0": "railways:item/standard_track/standard_track"
+      }
+    },
+    "firstperson_lefthand": {
+      "parent": "railways:item/template_track_narrow",
+      "textures": {
+        "0": "railways:item/standard_track/standard_track"
+      }
+    },
+    "head": {
+      "parent": "railways:item/template_track_narrow",
+      "textures": {
+        "0": "railways:item/standard_track/standard_track"
+      }
+    },
+    "gui": {
+      "parent": "railways:item/track_chibbi_narrow",
+      "textures": {
+        "0": "railways:item/standard_track_chibbi/standard_track_chibbi"
+      }
+    },
+    "ground": {
+      "parent": "railways:item/template_track_narrow",
+      "textures": {
+        "0": "railways:item/standard_track/standard_track"
+      }
+    },
+    "fixed": {
+      "parent": "railways:item/template_track_narrow",
+      "textures": {
+        "0": "railways:item/standard_track/standard_track"
+      }
+    }
+  }
+}

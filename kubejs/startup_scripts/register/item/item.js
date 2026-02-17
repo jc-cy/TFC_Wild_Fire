@@ -251,7 +251,12 @@ StartupEvents.registry("item", event => {  //半成品
         "nickel",
         "chromium",
         "zinc",
-        "stainless_steel"]
+        "stainless_steel",
+        "titanium_alloy",
+        "titanium",
+        "vanadium",
+        "manganese"
+    ]
     allmetal.forEach(metal => {
         event.create(`kubejs:unfinished/double_ingot/${metal}`).tag("kubejs:2ingot"); // 激光焊接半成品-双锭
         event.create(`kubejs:unfinished/hot_double_ingot/${metal}`).tag("kubejs:2ingot"); // 激光焊接半成品-热双锭
@@ -268,6 +273,12 @@ StartupEvents.registry("item", event => {  //半成品
     event.create('kubejs:venus_plating_unfinished').texture('kubejs:item/ad/venus_plating_unfinished'); // 金星镀层_未完成
 
 
+    event.create('tfc:unfermented_compost').texture('kubejs:item/unfermented_compost'); //未发酵的堆肥
+    event.create('tfc:unfermented_meat_compost').texture('kubejs:item/unfermented_meat_compost'); //未发酵的肉堆肥
+    event.create('immersiveengineering:mold_mechanical').texture('kubejs:item/mold_mechanical')//零件冲压头
+        .tag('vintageimprovements:curving_heads')
+        .tag('tfc_ie_addon:molds')
+    event.create('tfc:arm_clip').texture('kubejs:item/arm_clip'); //动力臂夹子
 })
 
 StartupEvents.registry("item", event => {   //新金属
@@ -279,29 +290,33 @@ StartupEvents.registry("item", event => {   //新金属
         { id: 'manganese' }
     ]
     molten_metal.forEach(metal => {
-        event.create(`kubejs:metal/ingot/${metal.id}`).texture(`kubejs:item/metal/ingot/${metal.id}`)
+        event.create(`tfc:metal/ingot/${metal.id}`).texture(`kubejs:item/metal/ingot/${metal.id}`)
         .tag('balm:ingots')
         .tag(`forge:ingots`)
         .tag('tfc:pileable_ingots')
         .tag(`forge:ingots/${metal.id}`)
-        .tag(`tfc:metal_item/${metal.id}`)
-        event.create(`kubejs:metal/double_ingot/${metal.id}`).texture(`kubejs:item/double_ingot/ingot/${metal.id}`)
+        .tag(`tfc:metal_item/${metal.id}`);
+        event.create(`tfc:metal/double_ingot/${metal.id}`).texture(`kubejs:item/metal/double_ingot/${metal.id}`)
         .tag('tfc:pileable_double_ingots')
         .tag('tfc:pileable_sheets')
         .tag(`forge:double_ingots`)
         .tag(`forge:double_ingots/${metal.id}`)
-        .tag(`tfc:metal_item/${metal.id}`)
-        event.create(`kubejs:metal/sheet/${metal.id}`).texture(`kubejs:item/metal/sheet/${metal.id}`)
+        .tag(`tfc:metal_item/${metal.id}`);
+        event.create(`tfc:metal/sheet/${metal.id}`).texture(`kubejs:item/metal/sheet/${metal.id}`)
         .tag('tfc:pileable_sheets')
         .tag(`forge:sheets`)
         .tag(`forge:sheets/${metal.id}`)
-        .tag(`tfc:metal_item/${metal.id}`)
-        event.create(`kubejs:metal/double_sheet/${metal.id}`).texture(`kubejs:item/metal/double_sheet/${metal.id}`)
+        .tag(`tfc:metal_item/${metal.id}`);
+        event.create(`tfc:metal/double_sheet/${metal.id}`).texture(`kubejs:item/metal/double_sheet/${metal.id}`)
         .tag(`forge:double_sheets`)
         .tag(`forge:double_sheets/${metal.id}`)
-        .tag(`tfc:metal_item/${metal.id}`)
+        .tag(`tfc:metal_item/${metal.id}`);
+        event.create(`tfc:metal/rod/${metal.id}`).texture(`kubejs:item/metal/rod/${metal.id}`)
+        .tag(`forge:rods`)
+        .tag(`forge:rods/${metal.id}`)
+        .tag(`tfc:metal_item/${metal.id}`);
 
-    })
+    })  
     //矿物
     const ore = [
         'ilmenite',
@@ -311,11 +326,11 @@ StartupEvents.registry("item", event => {   //新金属
     ]
     ore.forEach(ore => {
         event.create(`tfc:ore/rich_${ore}`).texture(`kubejs:item/ore/rich_${ore}`)
-        .tag('tfc:ore_pieces')
+        .tag('tfc:ore_pieces');
         event.create(`tfc:ore/${ore}`).texture(`kubejs:item/ore/${ore}`)
-        .tag('tfc:ore_pieces')
+        .tag('tfc:ore_pieces');
         event.create(`tfc:ore/poor_${ore}`).texture(`kubejs:item/ore/poor_${ore}`)
-        .tag('tfc:ore_pieces')
+        .tag('tfc:ore_pieces');
     })
 
 })  

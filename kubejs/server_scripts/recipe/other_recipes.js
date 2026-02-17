@@ -603,6 +603,29 @@ ServerEvents.recipes(event => {
 
   //搅拌
   /*create.compacting('minecraft:glass', ['#forge:sand', 'tfc:powder/flux']).heated()//玻璃*/
+  const compost_greens =
+    [
+      { tag: 'tfc:compost_greens_low', number: 8 },
+      { tag: 'tfc:compost_greens', number: 4 },
+      { tag: 'tfc:compost_greens_high', number: 2 },
+    ];
+  const compost_browns =
+    [
+      { tag: 'tfc:compost_browns_low', number: 8 },
+      { tag: 'tfc:compost_browns', number: 4 },
+      { tag: 'tfc:compost_browns_high', number: 2 },
+    ]
+
+  compost_greens.forEach(green => {
+    compost_browns.forEach(brown => {
+      create.mixing('tfc:unfermented_compost', [`${green.number}x #${green.tag}`, `${brown.number}x #${brown.tag}`])
+    })
+  })
+
+  create.mixing('2x tfc:unfermented_meat_compost', ['2x tfc:unfermented_compost', '#tfc:compost_poisons',])
+
+
+
   create.compacting('2x tfc:fire_clay', ['2x tfc:powder/kaolinite', '2x tfc:powder/graphite', 'minecraft:clay_ball']).heated()//耐火粘土
 
   create.mixing('kubejs:trachyandesite_alloy', ['2x kubejs:rock_powder', Fluid.of('tfc:metal/cast_iron', 35)]).heated()//粗安山合金-铸铁
@@ -723,8 +746,62 @@ ServerEvents.recipes(event => {
   //event.recipes.tfc.barrel_sealed(5000).outputItem('tfc:unrefined_paper').inputs('farmersdelight:tree_bark', TFC.fluidStackIngredient('tfc:limewater', 50))//获取未精致纸
   event.recipes.firmalife.vat().outputFluid(Fluid.of('tfc:tallow', 100)).inputs('butcher:animalfat', Fluid.of('minecraft:water', 100))//获取蜡质
 
-  //加压处理
-  /*
+
+
+  //序列洗碗
+  const dirty = [
+    { item: 'artisanal:dirty_bowl', item2: 'minecraft:bowl' },
+    { item: 'artisanal:dirty_jar', item2: 'tfc:empty_jar' },
+    { item: 'artisanal:ceramic/dirty_small_pot', item2: 'artisanal:ceramic/small_pot' },
+    { item: 'artisanal:metal/dirty_tin_can', item2: 'artisanal:metal/tin_can' },
+    { item: 'artisanal:metal/dirty_dented_tin_can', item2: 'artisanal:metal/dented_tin_can' },
+    
+  ]
+  dirty.forEach(dirty => {
+    create.sequenced_assembly(`${dirty.item2}`, `${dirty.item}`,
+      [
+        create.filling(`${dirty.item}`, [`${dirty.item}`, Fluid.of('minecraft:water', 25)]),
+        create.filling(`${dirty.item}`, [`${dirty.item}`, Fluid.of('minecraft:water', 25)]),
+        create.filling(`${dirty.item}`, [`${dirty.item}`, Fluid.of('minecraft:water', 25)]),
+        create.filling(`${dirty.item}`, [`${dirty.item}`, Fluid.of('minecraft:water', 25)]),
+        create.filling(`${dirty.item}`, [`${dirty.item}`, Fluid.of('minecraft:water', 25)]),
+        create.filling(`${dirty.item}`, [`${dirty.item}`, Fluid.of('minecraft:water', 25)])
+      ]
+    ).transitionalItem(`${dirty.item}`).loops(1)
+    create.sequenced_assembly(`${dirty.item2}`, dirty.item,
+      [
+        create.filling(`${dirty.item}`, [`${dirty.item}`, Fluid.of('artisanal:soapy_water', 5)]),
+        create.filling(`${dirty.item}`, [`${dirty.item}`, Fluid.of('minecraft:water', 25)])
+      ]
+    ).transitionalItem(`${dirty.item}`).loops(1)
+    create.mixing(Item.of(`${dirty.item2}`), [`${dirty.item}`,Fluid.of('minecraft:water', 1000)])
+    create.mixing(Item.of(`${dirty.item2}`), [`${dirty.item}`,Fluid.of('artisanal:soapy_water', 10),Fluid.of('minecraft:water', 150)])
+  })
+  
+  const component = [
+    { item1: 'tfc:metal/rod/wrought_iron', item2: 'kubejs:material_component_wrought_iron' },
+    { item1: 'tfc:metal/rod/steel', item2: 'kubejs:material_component_steel' },
+    { item1: 'tfc:metal/rod/black_steel', item2: 'kubejs:material_component_black_steel' },
+    
+  ]
+  component.forEach(item => {
+    create.sequenced_assembly(`${item.item2}`, `${item.item1}`,
+      [
+        create.cutting(`${item.item1}`, `${item.item1}`),
+        create.cutting(`${item.item1}`, `${item.item1}`),
+        create.pressing(`${item.item1}`, `${item.item1}`),
+        event.custom({
+          "type": "vintageimprovements:curving",
+          "itemAsHead": "immersiveengineering:mold_mechanical",
+          "ingredients": [ {"item": `${item.item1}`}],
+          "results": [{"item": `${item.item1}`,"count": 1}]}),
+        create.pressing(`${item.item1}`, `${item.item1}`)
+      ]
+    ).transitionalItem(`${item.item1}`).loops(1)
+  
+  })
+      //加压处理
+  /*  
   
     {
       "type": "vintageimprovements:pressurizing",
@@ -955,14 +1032,14 @@ ServerEvents.recipes(event => {
     Item.of("minecraft:clock").withChance(0.01)
   ], 'tfc:metal/sheet/gold',
     [
-      create.pressing(gold_sheet, gold_sheet),
-      create.deploying(gold_sheet, [gold_sheet, 'petrolsparts:coaxial_gear']),
-      create.deploying(gold_sheet, [gold_sheet, 'petrolsparts:large_coaxial_gear']),
-      create.deploying(gold_sheet, [gold_sheet, 'create:shaft']),
-      create.deploying(gold_sheet, [gold_sheet, 'kubejs:wrought_iron_fragments']),
-      create.deploying(gold_sheet, [gold_sheet, 'design_decor:industrial_gear_large'])
+      create.pressing(gold_sheet, 'create:incomplete_precision_mechanism'),
+      create.deploying(gold_sheet, ['create:incomplete_precision_mechanism', 'petrolsparts:coaxial_gear']),
+      create.deploying(gold_sheet, ['create:incomplete_precision_mechanism', 'petrolsparts:large_coaxial_gear']),
+      create.deploying(gold_sheet, ['create:incomplete_precision_mechanism', 'create:shaft']),
+      create.deploying(gold_sheet, ['create:incomplete_precision_mechanism', 'kubejs:wrought_iron_fragments']),
+      create.deploying(gold_sheet, ['create:incomplete_precision_mechanism', 'tfc:brass_mechanisms'])
     ]
-  ).transitionalItem(gold_sheet).loops(2)//精密构建
+  ).transitionalItem('create:incomplete_precision_mechanism').loops(2)//精密构建
 
   const inputcailiao = 'tfc:metal/sheet/black_steel'
   create.sequenced_assembly('kubejs:basic_crystal_pannel', 'tfc:metal/sheet/black_steel',

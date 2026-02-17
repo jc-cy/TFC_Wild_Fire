@@ -28,6 +28,11 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "137D5FE515108BCF"
+			rewards: [{
+				id: "360D92499A7761F5"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			size: 1.0d
 			subtitle: "很累的"
@@ -63,6 +68,11 @@
 			hide_until_deps_complete: true
 			icon: "tfc:pan/empty"
 			id: "5EF1774178DE574E"
+			rewards: [{
+				id: "17B7067004D2D4A8"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			size: 1.0d
 			subtitle: "河流、是大地之血脉"
@@ -93,8 +103,8 @@
 				}
 			]
 			title: "淘金客"
-			x: -18.499999999999993d
-			y: -5.5d
+			x: -18.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["37097019DD809AF1"]
@@ -113,6 +123,11 @@
 				tag: { }
 			}
 			id: "73ECCFADDD5FD022"
+			rewards: [{
+				id: "0926A69AEE9EBBBB"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "大锅炖"
 			tasks: [
@@ -160,6 +175,11 @@
 				id: "tfc:ceramic/unfired_ingot_mold"
 			}
 			id: "2454FE619EC7E071"
+			rewards: [{
+				id: "189FFFC5CE904103"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "喝汤需要“碗”"
 			tasks: [
@@ -200,32 +220,60 @@
 			]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/ingot/copper"
+			}
 			id: "080CB57CFDDDAC4F"
+			rewards: [{
+				id: "6856C5744E60FE1D"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			size: 1.0d
 			subtitle: "珍贵的东西"
-			tasks: [{
-				icon: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/copper"
+					}
+					id: "6D6C3F31F00E36EF"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfc:metal/ingot/copper)item(tfc:metal/ingot/bismuth_bronze)item(tfc:metal/ingot/black_bronze)item(tfc:metal/ingot/bronze))"
 						}
 					}
-					id: "tfc:metal/ingot/copper"
+					optional_task: true
+					title: "获得一个铜锭"
+					type: "item"
 				}
-				id: "6D6C3F31F00E36EF"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(tfc:metal/ingot/copper)item(tfc:metal/ingot/bismuth_bronze)item(tfc:metal/ingot/black_bronze)item(tfc:metal/ingot/bronze))"
-					}
+				{
+					disable_toast: true
+					icon: "design_decor:arrow_right_sign"
+					id: "0AACFA7D740E4F7C"
+					optional_task: true
+					points: false
+					title: "我已了解：跳过&8[消耗1级经验]"
+					type: "xp"
+					value: 1L
 				}
-				title: "获得一个铜锭"
-				type: "item"
-			}]
+			]
 			x: -20.0d
 			y: -1.0d
 		}
@@ -252,6 +300,11 @@
 				}
 			}
 			id: "2894CF3972892690"
+			rewards: [{
+				id: "0BECB3CE784B2492"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "前提你得找到矿"
 			tasks: [
@@ -281,8 +334,8 @@
 				}
 			]
 			title: "矿镐"
-			x: -22.0d
-			y: -2.5d
+			x: -26.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["2454FE619EC7E071"]
@@ -303,6 +356,11 @@
 				}
 			}
 			id: "406264C3D33FACA8"
+			rewards: [{
+				id: "15C579F3F53962FD"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "为了伐木"
 			tasks: [{
 				id: "5FD18829D3372212"
@@ -340,6 +398,11 @@
 				}
 			}
 			id: "1063BE4F6A66D335"
+			rewards: [{
+				id: "2616EBF0C2B79F48"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "真正的木匠"
 			tasks: [{
@@ -377,6 +440,11 @@
 				}
 			}
 			id: "7F83D1B9298B5393"
+			rewards: [{
+				id: "1DAB02B06375793D"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "收割者"
 			tasks: [{
 				id: "5319EE0BE2BC6488"
@@ -399,28 +467,47 @@
 				"080CB57CFDDDAC4F"
 				"4B4C87358DE1D813"
 			]
-			dependency_requirement: "one_started"
+			dependency_requirement: "one_completed"
 			description: [
 				"砧是锻造业的基础，没有砧，锻造就无法进行。但是你现在掌握不了制作砧的工艺，所以只能找块石头来代替。"
 				""
-				"制作石砧需要你获得一块天然的火成岩（流纹岩、玄武岩、安山岩、英安岩、花岗岩、闪长岩、英安岩），手持石锤敲击其顶面你就获得了石砧。石砧的具体使用方法将在之后讲到。"
+				"石砧需要坚硬的&l&n火成岩&r&r岩石作为基底、其他的岩石不适合作为坚硬的石砧"
+				"要焊接金属，"
 			]
 			hide_dependency_lines: false
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: "tfc:rock/anvil/dacite"
 			id: "1FBB88CD20E47866"
-			shape: "hexagon"
-			subtitle: "到哪都是砧！"
-			tasks: [{
-				advancement: "tfc:story/stone_anvil"
-				criterion: ""
-				icon: "tfc:rock/anvil/dacite"
-				id: "19AC41D8E1ADA6E6"
-				title: "砸出一个石砧"
-				type: "advancement"
+			rewards: [{
+				id: "4BAFCB52B62D37AB"
+				type: "xp"
+				xp: 25
 			}]
-			title: "用锤子敲击石头！"
+			shape: "hexagon"
+			subtitle: "简易砧"
+			tasks: [
+				{
+					advancement: "tfc:story/stone_anvil"
+					criterion: ""
+					icon: "tfc:rock/anvil/dacite"
+					id: "19AC41D8E1ADA6E6"
+					optional_task: true
+					title: "砸出一个石砧"
+					type: "advancement"
+				}
+				{
+					disable_toast: true
+					icon: "design_decor:arrow_right_sign"
+					id: "4E0FAAF35AC569D1"
+					optional_task: true
+					points: false
+					title: "我已了解：跳过&8[消耗1级经验]"
+					type: "xp"
+					value: 1L
+				}
+			]
+			title: "石砧"
 			x: -20.0d
 			y: 1.0d
 		}
@@ -440,6 +527,11 @@
 			hide_until_deps_visible: true
 			icon: "minecraft:charcoal"
 			id: "493A5CFB05F95C24"
+			rewards: [{
+				id: "30F1EAAAA7530250"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "你看这木炭黑的跟你的脸一样"
 			tasks: [
@@ -462,7 +554,7 @@
 			]
 			title: "烧木炭"
 			x: -21.5d
-			y: -5.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["493A5CFB05F95C24"]
@@ -478,6 +570,11 @@
 				"与篝火相同的是，木炭炉会引燃周围的可燃方块，请注意。"
 			]
 			id: "53AE550FCF8D78A9"
+			rewards: [{
+				id: "2CCF52DDEDCA6D9C"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			size: 1.3d
 			subtitle: "暖心的大火炉"
@@ -490,14 +587,23 @@
 			}]
 			title: "雪中送炭炉"
 			x: -23.400000000000002d
-			y: -5.8500000000000005d
+			y: -7.800000000000001d
 		}
 		{
 			dependencies: ["1FBB88CD20E47866"]
 			description: [
-				"或许你自己尝试过加热铜锭，在加热直至其熔化的过程中，你应该发现了其温度后出现了三个阶段：基础阶段、可加工阶段、可焊接阶段，并在其温度后显示“危险！”后继续加热，眼睁睁的看着其熔化并消失不见。所谓铸造金属，就是加热金属使其熔化再使其冷却的过程，而这次，你将学会利用金属锭的可焊接阶段。"
+				"或许你自己尝试过加热铜锭，在加热直至其熔化的过程中"
+				"你应该发现了其温度后出现了三个阶段："
+				"&7基础阶段&r"
+				"&c可加工阶段&r"
+				"&e可焊接阶段&r"
 				""
-				"在焊接金属前，你需要一个内部放有助焊剂的砧，目前我们只有石砧，后面会有更高级的代替。要焊接金属，你需要将两块相同的金属锭加热到可焊接温度，在那之后打开石砧并将两个金属锭放入，随后退出金属砧手持锤子对其潜行右键。当你听到一声敲击声，看到砧上两个金属锭合为一个的时候，焊接就顺利地完成了。两块金属锭焊接在一起之后叫做双锭，你目前只能焊接铜，先焊接一些铜双锭出来吧。"
+				"并在其温度后显示“&c危险！&r”后继续加热，眼睁睁的看着其熔化并消失不见。"
+				"所谓铸造金属，就是加热金属使其熔化再使其冷却的过程，而这次，你将学会利用金属锭的可焊接阶段。"
+				""
+				"你需要将两块相同的金属锭加热到可焊接温度，在那之后打开石砧并将两个金属锭放入，随后退出金属砧手持锤子对其潜行右键。"
+				"当你听到一声敲击声，看到砧上两个金属锭合为一个的时候，焊接就顺利地完成了。"
+				"两块金属锭焊接在一起之后叫做双锭，你目前只能焊接铜，先焊接一些铜双锭出来吧。"
 			]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
@@ -513,6 +619,11 @@
 			}
 			id: "57CDD98BD1458E3F"
 			min_width: 250
+			rewards: [{
+				id: "21D7A11E24F540BB"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "严丝合缝"
@@ -536,25 +647,82 @@
 		{
 			dependencies: ["57CDD98BD1458E3F"]
 			dependency_requirement: "one_started"
-			description: [""]
+			description: [
+				"接下来、如果我们要更精进的制作铜工具和焊接更厉害的金属、那我们就需要用我们所有的铜来做一个&l&n铜砧&r&r"
+				"铜砧需要14个锭焊接成7个双锭来合成！"
+				""
+				"{@pagebreak}"
+				""
+				"当你做出砧后、你会看到这样的面板"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/anvil/copper"
+			}
 			id: "7DD760E18F97ABC9"
+			rewards: [{
+				id: "215C2BC474D233F3"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			size: 1.5d
-			tasks: [{
-				id: "1FC8DD22F6A77942"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
+			tasks: [
+				{
+					id: "1FC8DD22F6A77942"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/anvil/copper"
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/anvil/copper"
+					}
+					id: "268D920CE2F96CC6"
+					observe_type: 0
+					optional_task: true
+					timer: 0L
+					title: "或：观察铜砧"
+					to_observe: "tfc:metal/anvil/copper"
+					type: "observation"
+				}
+				{
+					icon: "design_decor:arrow_right_sign"
+					id: "206138043EAB9276"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfc:metal/double_ingot/bronze)item(tfc:metal/double_ingot/black_bronze)item(tfc:metal/double_ingot/bismuth_bronze))"
 						}
 					}
-					id: "tfc:metal/anvil/copper"
+					optional_task: true
+					title: "不小心跳过了？"
+					type: "item"
 				}
-				optional_task: true
-				type: "item"
-			}]
+			]
 			x: -24.0d
 			y: 0.75d
 		}
@@ -579,6 +747,11 @@
 				id: "tfc:metal/sheet/copper"
 			}
 			id: "4BFB9D9E13DA373B"
+			rewards: [{
+				id: "211D160761207C2C"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "重要的材料"
 			tasks: [
 				{
@@ -614,13 +787,18 @@
 			dependencies: ["4BFB9D9E13DA373B"]
 			dependency_requirement: "one_started"
 			description: [
-				"你制作了铜双层薄板？这就意味着你绝对想要制作一件能够保护你身体的装备了"
+				"你制作了铜双板？这就意味着你绝对想要制作一件能够保护你身体的装备了"
 				"也就是铠甲"
 				""
 				"&l群峦中，铠甲的制作步骤比较复杂，需要先制作未完成的装甲，再焊接板材让他制作完成。虽然制作工序复杂但其实也是相当耐用的"
 			]
 			hide_until_deps_complete: true
 			id: "3195F1931D37ADD0"
+			rewards: [{
+				id: "5842E8BB23442D27"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "很牢固"
 			tasks: [{
 				id: "38933A635F4F3788"
@@ -649,6 +827,11 @@
 			hide_until_deps_visible: true
 			icon: "minecraft:oak_fence"
 			id: "2608FB20E2B5FB63"
+			rewards: [{
+				id: "5F23F004E55FB143"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "此乃可持续发展"
 			tasks: [{
 				id: "4FB7F5B73B8D7E4B"
@@ -669,6 +852,11 @@
 			hide_until_deps_visible: true
 			icon: "tfc:seeds/wheat"
 			id: "69CF401EA3B7A3A8"
+			rewards: [{
+				id: "27C32EF6867B53BE"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "magnet……哦不好意思走错了"
 			tasks: [{
 				id: "45586B4FAACC6D70"
@@ -693,6 +881,11 @@
 			hide_until_deps_visible: true
 			icon: "tfc:wood/lumber/oak"
 			id: "1942F387C2F19008"
+			rewards: [{
+				id: "29451621FF3E5FB1"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "木材万岁"
 			tasks: [{
 				id: "5031571D56B25BC1"
@@ -718,6 +911,11 @@
 			]
 			icon: "minecraft:oak_planks"
 			id: "210AB4533CD5A8A7"
+			rewards: [{
+				id: "77B624F012A0CDAB"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "老友重逢的感觉"
 			tasks: [
 				{
@@ -772,6 +970,11 @@
 			hide_until_deps_complete: true
 			icon: "tfc:wood/trapped_chest/oak"
 			id: "0E4EDC2573553FFB"
+			rewards: [{
+				id: "0F188376DD3CEF55"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "箱子在任何硬核mod里面都逃不掉被砍的命运"
 			tasks: [
 				{
@@ -813,6 +1016,11 @@
 			hide_until_deps_complete: true
 			icon: "tfc:wood/barrel/oak"
 			id: "3CCAB31FBEEE494C"
+			rewards: [{
+				id: "647663E7306E3C00"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "小桶爵士"
 			tasks: [
 				{
@@ -838,25 +1046,51 @@
 		}
 		{
 			dependencies: ["210AB4533CD5A8A7"]
-			description: ["洗矿槽是一种用于清洗沉积物和碎矿中间产物的机器，要使用洗矿槽，需要从一格水源方块引出水流，并将水流干涸前的最后一格下方的方块挖掉，放置洗矿槽使水流的最后一格流在洗矿槽的顶端，若洗矿槽有水流经则代表洗矿槽搭建成功。将沉积物或碎矿中间产物丢在洗矿槽顶部，经过一段时间后清洗产物就会在底部出现，洗矿槽一次只能同时处理一个物品。"]
+			description: [
+				"洗矿槽是一种用于清洗沉积物与洗矿中间产物的工作方块"
+				"要使用洗矿槽，需要从一格水源方块引出水流，并将水流干涸前的最后一格下方的方块挖掉，"
+				"放置洗矿槽使水流的最后一格流在洗矿槽的顶端"
+				"若洗矿槽有水流经则代表洗矿槽搭建成功。"
+				""
+				"将沉积物或碎矿中间产物丢在洗矿槽顶部，经过一段时间后清洗产物就会在底部出现"
+				"洗矿槽一次只能同时处理一个物品。"
+			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "tfc:wood/sluice/oak"
 			id: "4FADA80691359ED3"
+			rewards: [{
+				id: "53206CA539DEB1E6"
+				type: "xp"
+				xp: 25
+			}]
 			size: 1.0d
 			subtitle: "重复劳动的开端"
-			tasks: [{
-				id: "1D4FE9CDA95F3DE3"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "tfc:sluices"
+			tasks: [
+				{
+					id: "1D4FE9CDA95F3DE3"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tfc:sluices"
+						}
 					}
+					optional_task: true
+					title: "任意洗矿槽"
+					type: "item"
 				}
-				title: "任意洗矿槽"
-				type: "item"
-			}]
+				{
+					disable_toast: true
+					icon: "design_decor:arrow_right_sign"
+					id: "67CB1A61E15F63D9"
+					optional_task: true
+					points: false
+					title: "我已了解：跳过&8[消耗1级经验]"
+					type: "xp"
+					value: 1L
+				}
+			]
 			title: "洗矿槽"
 			x: -17.0d
 			y: 2.5d
@@ -870,6 +1104,11 @@
 			]
 			icon: "tfc:wood/planks/hickory_loom"
 			id: "7D97D80EA47C810E"
+			rewards: [{
+				id: "5B6DA3C9CD2E528F"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "芊芊濯方手"
 			tasks: [
 				{
@@ -899,6 +1138,11 @@
 			description: ["终于，你可以做床了。这张床可以正常度过夜晚，也可以保存重生点，除此之外没有别的了。"]
 			hide_until_deps_complete: true
 			id: "1A00219943638F23"
+			rewards: [{
+				id: "07410FCA4EB0BC19"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "晚安，睡个好觉"
 			tasks: [{
 				id: "674982138EDB676D"
@@ -926,6 +1170,11 @@
 				}
 			}
 			id: "0D63792C1A36411F"
+			rewards: [{
+				id: "4B9FD075D3835D65"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "制陶术还在输出"
 			tasks: [
 				{
@@ -977,6 +1226,11 @@
 				}
 			}
 			id: "6608F4D88798BA85"
+			rewards: [{
+				id: "0B5D72C8B68A6543"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "当每个人雕刻石材、竖起石柱、切开琉璃时，我们知道我们在建造一个比我们自己大的多的东西。——伍冰枝"
 			tasks: [{
@@ -1006,6 +1260,11 @@
 			hide_until_deps_visible: true
 			icon: "tfc:rock/raw/dolomite"
 			id: "033192F96A2BE722"
+			rewards: [{
+				id: "2C7920A295BB73E5"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "石头感到寂寞也会死吗？"
 			tasks: [{
 				id: "34B0758CE935637E"
@@ -1020,7 +1279,7 @@
 				type: "item"
 			}]
 			title: "百年孤独"
-			x: -18.0d
+			x: -18.5d
 			y: 0.0d
 		}
 		{
@@ -1032,6 +1291,11 @@
 			]
 			icon: "tfc:rock/smooth/dolomite"
 			id: "04744FD6FEBF2BE0"
+			rewards: [{
+				id: "41A6F2C78428AC13"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "前期最可靠的反重力方块"
 			tasks: [{
 				id: "06374B4978B70C87"
@@ -1058,6 +1322,11 @@
 			]
 			icon: "tfc:quern"
 			id: "144D3D187A5B866C"
+			rewards: [{
+				id: "57432BAE27732F60"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "和磨人的大东西"
 			tasks: [
 				{
@@ -1087,6 +1356,11 @@
 			description: ["助焊剂说白了就是碳酸钙粉末，用石锤砸碎或用手推磨磨碎含有碳酸钙的物品制得。含有碳酸钙的物品包括白垩岩、石灰岩、大理岩、白云岩以及贝壳之类。你也可以用手推磨磨碎硼砂获得助焊剂"]
 			hide_dependent_lines: true
 			id: "4B4C87358DE1D813"
+			rewards: [{
+				id: "2EB3880FE393DC81"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "CaCO3"
 			tasks: [{
 				id: "677E722C1AA77B77"
@@ -1108,9 +1382,22 @@
 		{
 			dependencies: ["74D9BA72E3A53351"]
 			dependency_requirement: "all_started"
-			description: ["将助焊剂与淡水在大桶中混合即可得到石灰水，两原材料比例为1:500mb，石灰水能用于和沙子混合制作砂浆，也可以将兽皮浸泡在其中得到浸泡兽皮。"]
+			description: [
+				"处理皮革我们需要先浸泡软化他、"
+				"那么就需要制作&n石灰水&r了"
+				""
+				"将助焊剂与淡水在大桶中混合即可得到石灰水，"
+				"两原材料比例为1:500mb"
+				""
+				"石灰水也可以用于和沙子混合制作砂浆、用来制作石砖"
+			]
 			icon: "tfc:large_soaked_hide"
 			id: "0D6D7D4274FAB7AF"
+			rewards: [{
+				id: "53E47658DB7E1453"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "也含了点氢氧化钙"
 			tasks: [
 				{
@@ -1165,6 +1452,11 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "170AA7EF27C269F2"
+			rewards: [{
+				id: "473FDA1C3DDBF5C3"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "村口集合，水泥自带"
 			tasks: [{
 				id: "713DA3A4D36BE459"
@@ -1177,12 +1469,29 @@
 		{
 			dependencies: ["1EE460638F892AB5"]
 			description: [
-				"将浸泡兽皮右键放置在原木上，手持小刀对其右键即可刮制兽皮，兽皮经过一定程度的刮制之后会变为刮制兽皮，将其破坏即可取得，将刮制兽皮在淡水中再浸泡一遍即可获得预制兽皮。此时你离取得皮革仅剩最后一步了——鞣酸。"
+				"然后我们把刮制后的兽皮泡在水里以获得预制兽皮"
+				"最后一步！我们将预制兽皮浸泡到鞣酸中就可以制成最终的皮革了！！！"
 				""
-				"鞣酸需要至少1000mb淡水和任意数量的软木，软木包括白桦木、花旗松木、橡木、红杉木、山核桃木、栗木和枫木。每1000mb淡水将消耗一根软木，并生成1000mb的鞣酸。"
+				"制作鞣酸需要至少1000mb淡水和任意数量的软质地木，"
+				""
+				"软质地木有："
+				"白桦木"
+				"花旗松木"
+				"橡木"
+				"红杉木"
+				"山核桃木"
+				"栗木"
+				"枫木"
+				""
+				"每1000mb淡水将消耗一根软木，并生成1000mb的鞣酸。"
 			]
 			icon: "tfc:large_prepared_hide"
 			id: "34AFE36F7F50B21E"
+			rewards: [{
+				id: "758C760B878B5D59"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "泡了又泡，刮了又刮"
 			tasks: [
 				{
@@ -1239,6 +1548,11 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "12A7A0E27F6A5BAE"
+			rewards: [{
+				id: "76CC31649B4CDB26"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "群峦星人是不用上厕所的"
 			tasks: [{
 				id: "0C6CD733A6832CD2"
@@ -1254,6 +1568,11 @@
 			description: ["将骨粉、泥土、树皮结合在一起，就能合成出有机肥料，将有机肥料放置在世界中等待几天，它就会变成一种特殊的泥土：沃土。这种泥土属于农夫乐事mod，能够加快种植在其上方的作物或树苗的成长速度，将群峦的作物种植在其上方，能够使其无视原本长达几年几月的生长周期，快速成长。只不过种植在沃土耕地上的群峦作物的产率会极大降低，成熟一次只能收割一个产物，而种植在沃土的树苗则不受影响，能够正常长大。"]
 			icon: "farmersdelight:organic_compost"
 			id: "70C73D0813322E35"
+			rewards: [{
+				id: "73EBC7E4010D00FB"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "没有想象的那么糟糕"
 			tasks: [
 				{
@@ -1280,6 +1599,11 @@
 			hide_until_deps_complete: true
 			icon: "tfc:rock/aqueduct/dolomite"
 			id: "521642503F94E9AC"
+			rewards: [{
+				id: "46BBD8A61B34EB44"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "至少不用天天浇水"
 			tasks: [{
 				id: "1870FBB44CBD329D"
@@ -1298,7 +1622,8 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["7F83D1B9298B5393"]
+			dependencies: ["34A3E922DB7A6883"]
+			dependency_requirement: "one_completed"
 			description: [
 				"在你抓到了足够多的牲畜，且手里食物足够充裕时，就可以考虑开启畜牧业了。"
 				""
@@ -1308,10 +1633,14 @@
 				"{@pagebreak}"
 				"动物的产出行为只有在达到一定好感度才能进行，当动物的好感度到了30%，给两种性别不同的动物喂食就能使雌性动物怀孕或者使卵生动物下出的蛋受精，怀孕一段时间后就会生出幼年动物，产毛和产奶动物在好感度达到一定程度就能够剪毛和挤奶了。要注意的是，动物在剪毛、挤奶或产崽之后就会衰老，衰老的动物将无法进行任何产出行为，建议卸磨杀驴。所有动物的信息可以通过书得知。"
 			]
-			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "minecraft:lead"
 			id: "6BBB985E7404B527"
+			rewards: [{
+				id: "7BBC73BE479F2F2A"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "我喜欢猪。狗崇拜人类。猫鄙视人类。猪对我们一视同仁。——温斯顿·丘吉尔"
 			tasks: [{
 				id: "02AA5D9670C93E33"
@@ -1323,14 +1652,17 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"6BBB985E7404B527"
-				"210AB4533CD5A8A7"
-			]
+			dependencies: ["210AB4533CD5A8A7"]
+			dependency_requirement: "one_completed"
 			description: ["既然你拥有木板，就不用用两格高的方块将动物围起来了，使用更加便宜的栅栏吧。"]
 			hide_until_deps_complete: true
 			icon: "tfc:wood/planks/hickory_fence"
 			id: "34A3E922DB7A6883"
+			rewards: [{
+				id: "1EE14AB502834C3C"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "掌握之中，岂可逃之？"
 			tasks: [
 				{
@@ -1365,23 +1697,47 @@
 			dependencies: ["34A3E922DB7A6883"]
 			description: ["巢箱是用来使卵生动物下蛋的方块，没有巢箱你家里的鸡就不会下蛋，繁殖也就无从谈起。"]
 			id: "6262C1A5941770C6"
+			rewards: [{
+				id: "72026717BB857983"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "我们家鸽鸽要下蛋了！"
 			tasks: [{
 				id: "028695A07B77952A"
 				item: "tfc:nest_box"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -2.0d
+			x: -8.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["34A3E922DB7A6883"]
 			description: [
-				"蜂箱是一种由Firmalife模组新增加的方块，用于生产蜂蜜和蜂蜡。蜂箱由干草块、木材和由木材制成的巢脾制成，右键蜂箱以打开其GUI，其中四个栏位用于放入巢脾。装有巢脾的蜂箱在附近有花朵的情况下，每天会有概率入住一只蜂王，这个概率在有五十朵花的情况下达到最大，为5%，每个巢脾最多入住一直蜂王。蜂王具有不同的能力，这些能力也有等级大小，蜂王在生产新的蜂王时有概率将能力遗传给下一代，这个概率受到其能力影响。只要蜂箱内入住了蜂王，其每日就会配种并有概率产生一只新的蜂王，同时也有概率生产蜂蜜，这两种概率也受到蜂王的能力影响。蜂箱能否正常工作还受气温的影响，气温过低会导致蜂箱无法正常工作，蜂箱能承受的最低温度同样受蜂王能力的影响。"
+				"想要养蜂吗？试着做蜂箱吧"
+				"蜂箱由干草块、木材和由木材制成的&e巢脾&r制成"
+				"右键蜂箱以打开其GUI，其中四个栏位用于放入巢脾。"
+				"而光有巢脾还不以产出蜂蜜、我们需要养蜂"
+				"{@pagebreak}"
+				"装有巢脾的蜂箱在附近有花朵的情况下，每天会有概率入住一只&e蜂王&r，这个概率在有五十朵花的情况下达到最大，为5%，每个巢脾最多入住一直&e蜂王&r。"
 				""
-				"蜂蜡是一种建设进阶农业设施的关键物品，要想收获蜂箱内的蜂蜡，需要在GUI中用鼠标拿起小刀右键有蜂王的巢脾，这一举动会杀死其中的蜂王。而蜂蜜是一种用于替代糖的物品，收集蜂蜜需要手持玻璃罐右键有蜂蜜的蜂箱以装满蜂蜜，这需要你学会玻璃加工。"
+				"&e蜂王&r具有不同的能力，这些能力也有等级大小，&e蜂王&r在生产新的&e蜂王&r时有概率将能力遗传给下一代，这个概率受到其能力影响。"
+				""
+				"只要蜂箱内入住了&e蜂王&r，其每日就会配种并有概率产生一只新的&e蜂王&r，同时也有概率生产蜂蜜，这两种概率也受到蜂王的能力影响。"
+				"蜂箱能否正常工作还受气温的影响，气温过低会导致蜂箱无法正常工作，蜂箱能承受的最低温度同样受蜂王能力的影响。"
+				"{@pagebreak}"
+				"蜂蜡是一种建设进阶农业设施的关键物品"
+				"要想收获蜂箱内的蜂蜡，需要在GUI中用鼠标拿起小刀右键有蜂王的巢脾"
+				"这一举动会杀死其中的蜂王。"
+				""
+				"而蜂蜜是一种用于替代糖的物品，收集蜂蜜需要手持玻璃罐右键有蜂蜜的蜂箱以装满蜂蜜，这需要你学会玻璃加工。"
 			]
 			id: "6A4BD488B4232501"
+			rewards: [{
+				id: "44A6D50C94224648"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "哈基米~哈基米~哈基米~"
 			tasks: [{
 				id: "0DF7314C6DC4E24D"
@@ -1389,7 +1745,7 @@
 				type: "item"
 			}]
 			title: "养蜂"
-			x: -6.5d
+			x: -7.0d
 			y: -2.5d
 		}
 		{
@@ -1397,6 +1753,11 @@
 			description: ["将砂浆和由石子和凿子合成得到的砖块合成就可以得到石砖了。石砖是不错的反重力方块，也有用于建筑和装饰的价值&m（真的有吗）&r。"]
 			icon: "tfc:rock/bricks/dolomite"
 			id: "4418DAE3A731CDE8"
+			rewards: [{
+				id: "5DE4D8DD0CF005CA"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "哪里需要哪里搬"
 			tasks: [{
 				id: "0C3ED711069AC063"
@@ -1424,6 +1785,11 @@
 			hide_text_until_complete: false
 			hide_until_deps_complete: true
 			id: "41513B8F3A7B3810"
+			rewards: [{
+				id: "2F89ECFD0C59C850"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "真皮的"
 			tasks: [{
 				id: "07F427C13AC407CF"
@@ -1440,6 +1806,11 @@
 			hide_until_deps_visible: false
 			icon: "firmaciv:large_waterproof_hide"
 			id: "022D17994F671052"
+			rewards: [{
+				id: "22E26C7AD73678C2"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "绝对防水"
 			tasks: [
 				{
@@ -1468,6 +1839,11 @@
 				}
 			}
 			id: "7A555A4DE3B89D8B"
+			rewards: [{
+				id: "4BC0BB0376E58268"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "寒冷与酷暑的抵抗的手段"
 			tasks: [
 				{
@@ -1602,13 +1978,25 @@
 		{
 			dependencies: ["41513B8F3A7B3810"]
 			description: [
-				"风箱是一种用于木炭炉的工具类方块，通过正确使用风箱，能让你的木炭炉在使用任意燃料的情况下都能加热到炽白，从而融化和烧制任何物品。"
+				"你可能会发现、目前木炭的燃烧温度完全不足以融化某些矿物、怎么办呢、这个时候需要&f风箱&r了"
+				"风箱可以吹拂木炭炉以让其升温、让木炭炉燃烧至他的燃料原本无法达到的温度"
 				""
-				"风箱由木材和皮革制成，使用风箱时，需要将风箱放置在木炭炉周围四格的圆石上任意一格上，带孔的那一面正对木炭炉木炭部分正上方一格的方块。对风箱按右键会使其工作一次，在风箱正确安装的情况下，风箱每工作一次都会使木炭炉增加温度和消耗燃料的速度加倍树苗，期间内燃料加热的温度上限会被提高到炽白，当木炭炉未处于被风箱强化的状态时，其温度就会从炽白开始下降。"
+				"风箱由木材和皮革制成，使用风箱时，需要将风箱放置在木炭炉周围四格的圆石上任意一格上，"
+				"带孔的那一面正对木炭炉木炭部分正上方一格的方块。"
+				""
+				"对风箱按右键会使其鼓吹一次，在风箱正确安装的情况下，"
+				"风箱每工作一次都会使木炭炉增加温度和消耗燃料的速度加倍，"
+				""
+				"期间内燃料加热的温度上限会逐渐提高，但一旦停止吹拂、原本增强的温度就会逐渐下降直到回到原本的温度"
 			]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			id: "56F4833CBAD60422"
+			rewards: [{
+				id: "36E89C09418FBE99"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "有效的气流交换"
 			tasks: [{
 				id: "743564D52053608E"
@@ -1629,6 +2017,11 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			id: "0BCA62FA74445E3F"
+			rewards: [{
+				id: "3D6D62E7B1D8A4E2"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "参考现实工艺"
 			tasks: [{
 				id: "159FF8618FAA2EC7"
@@ -1672,14 +2065,19 @@
 				}
 			}
 			id: "61E41171C9379CF9"
+			rewards: [{
+				id: "0D52615AF9418861"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "09034110F93ECDB8"
 				title: "请在阅读以下内容后点击确认"
 				type: "checkmark"
 			}]
 			title: "勘矿要诀"
-			x: -23.5d
-			y: -3.5d
+			x: -28.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -1705,6 +2103,11 @@
 			}
 			id: "529ABBB855603108"
 			optional: true
+			rewards: [{
+				id: "12E651CF007E3FF4"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "一个好的开头"
 			tasks: [
 				{
@@ -1732,11 +2135,17 @@
 				}
 			]
 			title: "岩石之痕"
-			x: -24.0d
-			y: -1.5d
+			x: -28.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4FADA80691359ED3"]
+			description: [
+				"在挖掘矿物时通常会掉落一整块矿石、虽然可以直接熔炼、但显然不太值当"
+				"你可以用锤子在&n砧板&r上吧矿石敲碎！"
+				""
+				"敲成多石矿物以更好的处理矿石、也是我们洗矿的第一步"
+			]
 			hide_until_deps_visible: true
 			icon: {
 				Count: 1
@@ -1751,20 +2160,37 @@
 			id: "76F5FA862F96CF4B"
 			min_required_dependencies: 1
 			optional: true
-			subtitle: "矿物处理第一步"
-			tasks: [{
-				id: "582CBFA0C459D51A"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(kubejs:item/ore/rocky_chunks/graphite)item(kubejs:item/ore/rocky_chunks/sulfur)item(kubejs:item/ore/rocky_chunks/malachite)item(kubejs:item/ore/rocky_chunks/garnierite)item(kubejs:item/ore/rocky_chunks/bismuthinite)item(kubejs:item/ore/rocky_chunks/cassiterite)item(kubejs:item/ore/rocky_chunks/sphalerite)item(kubejs:item/ore/rocky_chunks/tetrahedrite)item(kubejs:item/ore/rocky_chunks/native_silver)item(kubejs:item/ore/rocky_chunks/cryolite)item(kubejs:item/ore/rocky_chunks/cinnabar)item(kubejs:item/ore/rocky_chunks/native_gold)item(kubejs:item/ore/rocky_chunks/native_copper)item(kubejs:item/ore/rocky_chunks/hematite)item(kubejs:item/ore/rocky_chunks/magnetite)item(kubejs:item/ore/rocky_chunks/limonite)item(kubejs:item/ore/rocky_chunks/chromite)item(kubejs:item/ore/rocky_chunks/bauxite)item(kubejs:item/ore/rocky_chunks/galena)item(kubejs:item/ore/rocky_chunks/uraninite))"
-					}
-				}
-				optional_task: true
-				title: "任意多石矿碎块"
-				type: "item"
+			rewards: [{
+				id: "42F480641AB27C1A"
+				type: "xp"
+				xp: 25
 			}]
+			subtitle: "矿物处理第一步"
+			tasks: [
+				{
+					id: "582CBFA0C459D51A"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(kubejs:item/ore/rocky_chunks/graphite)item(kubejs:item/ore/rocky_chunks/sulfur)item(kubejs:item/ore/rocky_chunks/malachite)item(kubejs:item/ore/rocky_chunks/garnierite)item(kubejs:item/ore/rocky_chunks/bismuthinite)item(kubejs:item/ore/rocky_chunks/cassiterite)item(kubejs:item/ore/rocky_chunks/sphalerite)item(kubejs:item/ore/rocky_chunks/tetrahedrite)item(kubejs:item/ore/rocky_chunks/native_silver)item(kubejs:item/ore/rocky_chunks/cryolite)item(kubejs:item/ore/rocky_chunks/cinnabar)item(kubejs:item/ore/rocky_chunks/native_gold)item(kubejs:item/ore/rocky_chunks/native_copper)item(kubejs:item/ore/rocky_chunks/hematite)item(kubejs:item/ore/rocky_chunks/magnetite)item(kubejs:item/ore/rocky_chunks/limonite)item(kubejs:item/ore/rocky_chunks/chromite)item(kubejs:item/ore/rocky_chunks/bauxite)item(kubejs:item/ore/rocky_chunks/galena)item(kubejs:item/ore/rocky_chunks/uraninite))"
+						}
+					}
+					optional_task: true
+					title: "任意多石矿碎块"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					icon: "design_decor:arrow_right_sign"
+					id: "3ACA5513A80B7F75"
+					optional_task: true
+					points: false
+					title: "我已了解：跳过&8[消耗1级经验]"
+					type: "xp"
+					value: 1L
+				}
+			]
 			title: "碎矿"
 			x: -18.5d
 			y: 2.5d
@@ -1772,7 +2198,7 @@
 		{
 			dependencies: ["76F5FA862F96CF4B"]
 			dependency_requirement: "one_completed"
-			description: [""]
+			description: ["将多石矿物丢入洗矿槽中洗涤、就可以获得清洗后的碎矿粗块和一些副产物了！"]
 			hide_until_deps_visible: true
 			icon: {
 				Count: 1
@@ -1785,27 +2211,47 @@
 				id: "kubejs:item/ore/chunks/native_copper"
 			}
 			id: "6393FF4A503DDE14"
-			subtitle: "矿物处理第二步"
-			tasks: [{
-				id: "7B7A3342D0548DD3"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(kubejs:item/ore/chunks/native_gold)item(kubejs:item/ore/chunks/native_silver)item(kubejs:item/ore/chunks/tetrahedrite)item(kubejs:item/ore/chunks/sphalerite)item(kubejs:item/ore/chunks/cassiterite)item(kubejs:item/ore/chunks/bismuthinite)item(kubejs:item/ore/chunks/garnierite)item(kubejs:item/ore/chunks/malachite)item(kubejs:item/ore/chunks/sulfur)item(kubejs:item/ore/chunks/graphite)item(kubejs:item/ore/chunks/cryolite)item(kubejs:item/ore/chunks/cinnabar)item(kubejs:item/ore/chunks/native_copper)item(kubejs:item/ore/chunks/hematite)item(kubejs:item/ore/chunks/magnetite)item(kubejs:item/ore/chunks/limonite)item(kubejs:item/ore/chunks/chromite)item(kubejs:item/ore/chunks/bauxite)item(kubejs:item/ore/chunks/galena)item(kubejs:item/ore/chunks/uraninite))"
-					}
-				}
-				optional_task: true
-				title: "任意矿物粗块"
-				type: "item"
+			rewards: [{
+				id: "3761F2285F576A72"
+				type: "xp"
+				xp: 25
 			}]
+			subtitle: "矿物处理第二步"
+			tasks: [
+				{
+					id: "7B7A3342D0548DD3"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(kubejs:item/ore/chunks/native_gold)item(kubejs:item/ore/chunks/native_silver)item(kubejs:item/ore/chunks/tetrahedrite)item(kubejs:item/ore/chunks/sphalerite)item(kubejs:item/ore/chunks/cassiterite)item(kubejs:item/ore/chunks/bismuthinite)item(kubejs:item/ore/chunks/garnierite)item(kubejs:item/ore/chunks/malachite)item(kubejs:item/ore/chunks/sulfur)item(kubejs:item/ore/chunks/graphite)item(kubejs:item/ore/chunks/cryolite)item(kubejs:item/ore/chunks/cinnabar)item(kubejs:item/ore/chunks/native_copper)item(kubejs:item/ore/chunks/hematite)item(kubejs:item/ore/chunks/magnetite)item(kubejs:item/ore/chunks/limonite)item(kubejs:item/ore/chunks/chromite)item(kubejs:item/ore/chunks/bauxite)item(kubejs:item/ore/chunks/galena)item(kubejs:item/ore/chunks/uraninite))"
+						}
+					}
+					optional_task: true
+					title: "任意矿物粗块"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					icon: "design_decor:arrow_right_sign"
+					id: "64DB2FE6D7DCB93F"
+					optional_task: true
+					points: false
+					title: "我已了解：跳过&8[消耗1级经验]"
+					type: "xp"
+					value: 1L
+				}
+			]
 			title: "清洗、剔除废石"
 			x: -20.0d
 			y: 2.5d
 		}
 		{
-			dependencies: ["6393FF4A503DDE14"]
-			description: [""]
+			dependencies: [
+				"6393FF4A503DDE14"
+				"144D3D187A5B866C"
+			]
+			description: ["将粗矿块磨成粉末、得到脏粉、就可以进一步的处理矿物"]
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -1817,27 +2263,44 @@
 				id: "kubejs:item/ore/dirty_dust/native_copper"
 			}
 			id: "43A874DF1D79892D"
-			subtitle: "矿物处理第三步"
-			tasks: [{
-				id: "4B2528F6F016010F"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(kubejs:item/ore/dirty_dust/native_silver)item(kubejs:item/ore/dirty_dust/tetrahedrite)item(kubejs:item/ore/dirty_dust/sphalerite)item(kubejs:item/ore/dirty_dust/cassiterite)item(kubejs:item/ore/dirty_dust/bismuthinite)item(kubejs:item/ore/dirty_dust/garnierite)item(kubejs:item/ore/dirty_dust/malachite)item(kubejs:item/ore/dirty_dust/sulfur)item(kubejs:item/ore/dirty_dust/graphite)item(kubejs:item/ore/dirty_dust/cryolite)item(kubejs:item/ore/dirty_dust/cinnabar)item(kubejs:item/ore/dirty_dust/uraninite)item(kubejs:item/ore/dirty_dust/galena)item(kubejs:item/ore/dirty_dust/bauxite)item(kubejs:item/ore/dirty_dust/chromite)item(kubejs:item/ore/dirty_dust/limonite)item(kubejs:item/ore/dirty_dust/magnetite)item(kubejs:item/ore/dirty_dust/hematite)item(kubejs:item/ore/dirty_dust/native_copper)item(kubejs:item/ore/dirty_dust/native_gold))"
-					}
-				}
-				optional_task: true
-				title: "任意脏矿粉"
-				type: "item"
+			rewards: [{
+				id: "63D5F6AD038F1385"
+				type: "xp"
+				xp: 25
 			}]
+			subtitle: "矿物处理第三步"
+			tasks: [
+				{
+					id: "4B2528F6F016010F"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(kubejs:item/ore/dirty_dust/native_silver)item(kubejs:item/ore/dirty_dust/tetrahedrite)item(kubejs:item/ore/dirty_dust/sphalerite)item(kubejs:item/ore/dirty_dust/cassiterite)item(kubejs:item/ore/dirty_dust/bismuthinite)item(kubejs:item/ore/dirty_dust/garnierite)item(kubejs:item/ore/dirty_dust/malachite)item(kubejs:item/ore/dirty_dust/sulfur)item(kubejs:item/ore/dirty_dust/graphite)item(kubejs:item/ore/dirty_dust/cryolite)item(kubejs:item/ore/dirty_dust/cinnabar)item(kubejs:item/ore/dirty_dust/uraninite)item(kubejs:item/ore/dirty_dust/galena)item(kubejs:item/ore/dirty_dust/bauxite)item(kubejs:item/ore/dirty_dust/chromite)item(kubejs:item/ore/dirty_dust/limonite)item(kubejs:item/ore/dirty_dust/magnetite)item(kubejs:item/ore/dirty_dust/hematite)item(kubejs:item/ore/dirty_dust/native_copper)item(kubejs:item/ore/dirty_dust/native_gold))"
+						}
+					}
+					optional_task: true
+					title: "任意脏矿粉"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					icon: "design_decor:arrow_right_sign"
+					id: "69C8FDFFD28C5673"
+					optional_task: true
+					points: false
+					title: "我已了解：跳过&8[消耗1级经验]"
+					type: "xp"
+					value: 1L
+				}
+			]
 			title: "研磨粗矿"
 			x: -21.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["43A874DF1D79892D"]
-			description: [""]
+			description: ["将脏粉在洗矿槽洗涤、就可以获得洁净矿粉了！"]
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -1849,20 +2312,37 @@
 				id: "tfc:powder/native_copper"
 			}
 			id: "26C27CAED8D101C4"
-			subtitle: "矿物处理最终步"
-			tasks: [{
-				id: "347768330D9DBBCD"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(kubejs:item/ore/dirty_dust/native_silver)item(kubejs:item/ore/dirty_dust/tetrahedrite)item(kubejs:item/ore/dirty_dust/sphalerite)item(kubejs:item/ore/dirty_dust/cassiterite)item(kubejs:item/ore/dirty_dust/bismuthinite)item(kubejs:item/ore/dirty_dust/garnierite)item(kubejs:item/ore/dirty_dust/malachite)item(kubejs:item/ore/dirty_dust/sulfur)item(kubejs:item/ore/dirty_dust/graphite)item(kubejs:item/ore/dirty_dust/cryolite)item(kubejs:item/ore/dirty_dust/cinnabar)item(kubejs:item/ore/dirty_dust/uraninite)item(kubejs:item/ore/dirty_dust/galena)item(kubejs:item/ore/dirty_dust/bauxite)item(kubejs:item/ore/dirty_dust/chromite)item(kubejs:item/ore/dirty_dust/limonite)item(kubejs:item/ore/dirty_dust/magnetite)item(kubejs:item/ore/dirty_dust/hematite)item(kubejs:item/ore/dirty_dust/native_copper)item(kubejs:item/ore/dirty_dust/native_gold))"
-					}
-				}
-				optional_task: true
-				title: "任意脏矿粉"
-				type: "item"
+			rewards: [{
+				id: "2ECF7107C05DA590"
+				type: "xp"
+				xp: 25
 			}]
+			subtitle: "矿物处理最终步"
+			tasks: [
+				{
+					id: "347768330D9DBBCD"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(kubejs:item/ore/dirty_dust/native_silver)item(kubejs:item/ore/dirty_dust/tetrahedrite)item(kubejs:item/ore/dirty_dust/sphalerite)item(kubejs:item/ore/dirty_dust/cassiterite)item(kubejs:item/ore/dirty_dust/bismuthinite)item(kubejs:item/ore/dirty_dust/garnierite)item(kubejs:item/ore/dirty_dust/malachite)item(kubejs:item/ore/dirty_dust/sulfur)item(kubejs:item/ore/dirty_dust/graphite)item(kubejs:item/ore/dirty_dust/cryolite)item(kubejs:item/ore/dirty_dust/cinnabar)item(kubejs:item/ore/dirty_dust/uraninite)item(kubejs:item/ore/dirty_dust/galena)item(kubejs:item/ore/dirty_dust/bauxite)item(kubejs:item/ore/dirty_dust/chromite)item(kubejs:item/ore/dirty_dust/limonite)item(kubejs:item/ore/dirty_dust/magnetite)item(kubejs:item/ore/dirty_dust/hematite)item(kubejs:item/ore/dirty_dust/native_copper)item(kubejs:item/ore/dirty_dust/native_gold))"
+						}
+					}
+					optional_task: true
+					title: "任意脏矿粉"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					icon: "design_decor:arrow_right_sign"
+					id: "1C8DA1842B7874D9"
+					optional_task: true
+					points: false
+					title: "我已了解：跳过&8[消耗1级经验]"
+					type: "xp"
+					value: 1L
+				}
+			]
 			title: "简单洗涤"
 			x: -23.0d
 			y: 2.5d
@@ -1870,127 +2350,50 @@
 		{
 			dependencies: ["5EF1774178DE574E"]
 			description: [
-				"经过千辛万苦，你终于获得了一个铜粉末……"
-				"你以为这就完了吗？"
+				"涮洗砂砾后、你会获得这些多石碎矿"
+				"但只有这些远远不够、一个多石碎矿只能熔融4mb当量的矿物"
 				""
-				"这里有一个坏消息和一个好消息，坏消息是一个铜粉末只含5mb的铜，而一个铜锭或铜制工具头需要100mb的铜；好消息是河床底下应该还有不少砂砾等着你去淘。"
+				"而做出第一个铜工具至少需要100mb、也就是需要20个碎矿"
 				""
-				"加油吧，少年，你还有的是活要忙呢。"
+				"你在涮洗的时候也会得到其他类型的矿物、不要丢掉哦"
 			]
 			hide_until_deps_visible: true
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "tfc:powder/native_copper"
-			}
 			id: "45C21923C740DB27"
+			rewards: [{
+				id: "56417D4CCED2A5BF"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "你还有很长的路要走……"
 			tasks: [{
-				count: 20L
-				id: "6B37C030598AC71B"
+				id: "6948CACE5F7D3ACC"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:item/ore/rocky_chunks/graphite)item(kubejs:item/ore/rocky_chunks/sulfur)item(kubejs:item/ore/rocky_chunks/malachite)item(kubejs:item/ore/rocky_chunks/garnierite)item(kubejs:item/ore/rocky_chunks/bismuthinite)item(kubejs:item/ore/rocky_chunks/cassiterite)item(kubejs:item/ore/rocky_chunks/sphalerite)item(kubejs:item/ore/rocky_chunks/tetrahedrite)item(kubejs:item/ore/rocky_chunks/native_silver)item(kubejs:item/ore/rocky_chunks/cryolite)item(kubejs:item/ore/rocky_chunks/cinnabar)item(kubejs:item/ore/rocky_chunks/native_gold)item(kubejs:item/ore/rocky_chunks/native_copper)item(kubejs:item/ore/rocky_chunks/hematite)item(kubejs:item/ore/rocky_chunks/magnetite)item(kubejs:item/ore/rocky_chunks/limonite)item(kubejs:item/ore/rocky_chunks/chromite)item(kubejs:item/ore/rocky_chunks/bauxite)item(kubejs:item/ore/rocky_chunks/galena)item(kubejs:item/ore/rocky_chunks/uraninite))"
 					}
-					id: "tfc:powder/native_copper"
 				}
+				optional_task: true
+				title: "任意多石矿碎块"
 				type: "item"
 			}]
-			title: "一点粉末"
+			title: "粗碎的矿物"
 			x: -16.999999999999986d
 			y: -5.5d
 		}
 		{
-			dependencies: ["45C21923C740DB27"]
-			description: ["由于小缸能容纳的物品有限，因此如果你想要一次冶炼更多的金属，就需要把矿粉压缩。这些矿块的制作方法很简单，四合一就行。"]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "kubejs:item/ore/dust_clump/native_copper"
-			}
-			id: "685CF927297145D5"
-			optional: true
-			subtitle: "如果你想一口气冶炼更多矿物，那这些就是必不可少的"
-			tasks: [
-				{
-					icon: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "kubejs:item/ore/dust_lump/native_copper"
-					}
-					id: "39DAC1790FB65CD9"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "kubejs:4ore"
-						}
-					}
-					title: "制作任意粉块"
-					type: "item"
-				}
-				{
-					icon: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "kubejs:item/ore/dust_clump/native_copper"
-					}
-					id: "1115AC9FB20CEE4F"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "kubejs:8ore"
-						}
-					}
-					title: "制作任意粉团"
-					type: "item"
-				}
-			]
-			title: "压缩铜粉"
-			x: -15.499999999999986d
-			y: -5.5d
-		}
-		{
-			dependencies: [
-				"7DD760E18F97ABC9"
-				"26C27CAED8D101C4"
-			]
+			dependencies: ["7DD760E18F97ABC9"]
 			dependency_requirement: "one_completed"
 			description: [
 				"群峦传说的金属是有等级之分的，如果铜是一级金属的话，那么二级金属就是铜混合其他金属制成的合金。铜合金具有三种不同的变体，分别为黑铜、青铜和铋铜。除了制成的工具、武器和盔甲在某些属性上略有不同以外，这三种合金用途并没有任何的差别，你完全可以任选一种铜合金作为目标来着重铸造，而不需要三种全部做一遍。"
 				""
 				"注：锡需要在寒冷高山中才会生成，因此不建议做青铜。"
 				""
+				"{@pagebreak}"
 				"铜合金的铸造与铜锭并没有太大差别，唯一的区别是铜合金需要按比例融化两至三种不同的金属。黑铜需要铜、银、金三种不同的金属；青铜需要铜锡两种不同的金属；而铋铜需要铜锌铋三种金属。在小缸中将矿粉或其他能熔化成熔融金属的物品按正确的比例放入，在坑窑或木炭炉中加热。剩下的步骤跟你铸造铜一样，只需要等待金属熔化，将模具放入，在模具盛满之后等待其冷却，再将成品拿出就可以了。"
 				""
 				"如果你发现小缸中没有显示黑铜、青铜、铋铜，而是“未知合金”的话，你的合金铸造就失败了，这代表你没有按正确的比例混合金属。这些未知合金在凝固之前如果不加入熔融金属改正比例进行抢救的话，就再也救不回来了。"
-				""
-				"铸造4个铜合金锭以表明你已掌握了铸造合金的技术。"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -2004,52 +2407,81 @@
 				id: "tfc:metal/ingot/bronze"
 			}
 			id: "0DE526D678470E0E"
+			rewards: [{
+				id: "09300D2742EB2B19"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "青铜器是反射外形的镜子，是反射心灵的酒。——埃斯库罗斯"
-			tasks: [{
-				id: "75518137383D68F8"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
+			tasks: [
+				{
+					id: "75518137383D68F8"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									ForgeCaps: {
+										"tfc:item_heat": {
+											heat: 0.0f
+											ticks: 0L
+										}
 									}
+									id: "tfc:metal/ingot/bronze"
 								}
-								id: "tfc:metal/ingot/bronze"
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
+								{
+									Count: 1b
+									ForgeCaps: {
+										"tfc:item_heat": {
+											heat: 0.0f
+											ticks: 0L
+										}
 									}
+									id: "tfc:metal/ingot/bismuth_bronze"
 								}
-								id: "tfc:metal/ingot/bismuth_bronze"
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
+								{
+									Count: 1b
+									ForgeCaps: {
+										"tfc:item_heat": {
+											heat: 0.0f
+											ticks: 0L
+										}
 									}
+									id: "tfc:metal/ingot/black_bronze"
 								}
-								id: "tfc:metal/ingot/black_bronze"
-							}
-						]
+							]
+						}
 					}
+					optional_task: true
+					title: "任意铜合金"
+					type: "item"
 				}
-				title: "任意铜合金"
-				type: "item"
-			}]
+				{
+					advancement: "tfc:story/bronze_age"
+					criterion: ""
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/sword/bronze"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "35F55D461CBF0254"
+					optional_task: true
+					title: "进入青铜时代"
+					type: "advancement"
+				}
+			]
 			title: "铜合金"
 			x: -27.0d
 			y: 3.0d
@@ -2070,6 +2502,11 @@
 				id: "tfc:ore/rich_native_copper"
 			}
 			id: "37097019DD809AF1"
+			rewards: [{
+				id: "52FE5F6CB29348D5"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			size: 1.75d
 			tasks: [{
@@ -2086,6 +2523,11 @@
 			description: ["无论有没有使用锻造辅助，我想你已经学会了如何锻造完美工具了。恭喜，这是给你的奖励。"]
 			id: "434A607E06CE44E6"
 			invisible: true
+			rewards: [{
+				id: "7117903F164462FC"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "gear"
 			subtitle: "Perfect！"
 			tasks: [{
@@ -2105,7 +2547,8 @@
 			]
 			dependency_requirement: "all_started"
 			description: [
-				"众所周知，群峦世界中的方块大部分都受到重力的影响，岩石也不例外。"
+				"群峦中的大部分方块都受到重力的影响，最主要的是岩石"
+				""
 				"当你在地下挖矿时，岩石自身的稳定性让其能够承受一定程度上的悬空，但一旦你开凿出过大的空洞，岩石就将受到重力影响而下落，且这种下落不单是一个方块的下落，而是影响一片区域的塌方！"
 				""
 				"塌方具有巨大的危害，抛开岩石方块砸在身上会造成巨大伤害不谈，塌方还会形成碎石掩埋原本平整的矿道"
@@ -2113,21 +2556,37 @@
 				"在你尝试清理时引发连带塌方造成更大的损害。"
 				""
 				"最严重的是，被碎石砸中的矿物方块等级将会下降一级，例如从富集下降到普通，如果是贫瘠矿物，则会直接变成岩石！"
-				""
-				""
 				"{@pagebreak}"
 				"正因塌方带来的危害如此巨大，预防塌方才会显得如此必要。"
 				""
-				"要想预防塌方，则需要一种由原木加工得到的方块：支撑梁。当你手持三个以上支撑梁将其放置在地面上的时候，就会消耗三根支撑梁形成一根三格高的支撑柱。而当你在支撑柱侧面放置支撑梁的时候，它就会在前后左右四个方向的六格内寻找等高度的支撑柱方块，并尝试在其之间搭建横梁，如果支撑柱之间没有方块阻挡，就会消耗与间隔格数同样的支撑柱搭建横梁。"
+				"要想预防塌方，则需要一种由原木加工得到的方块：支撑梁。"
+				"当你手持三个以上支撑梁将其放置在地面上的时候，"
+				"就会消耗三根支撑梁形成一根三格高的支撑柱。"
+				"而当你在支撑柱侧面放置支撑梁的时候，"
+				"它就会在前后左右四个方向的六格内寻找等高度的支撑柱方块，"
+				"并尝试在其之间搭建横梁，如果支撑柱之间没有方块阻挡，就会消耗与间隔格数同样的支撑柱搭建横梁。"
+				"{@pagebreak}"
+				"竖着的支撑柱本身不能够防止塌方，能够防止塌方的是支撑柱之间水平的支撑梁，"
+				"水平支撑梁的最大长度是五格——代表你两根支撑柱之间最多间隔五格，"
+				"每根水平支撑梁能够保护其周围9x9x3的方块不受重力影响，但无法保护这之上或之下的方块。"
+				"而塌方是带有连带效果的，如果被保护的方块上有其他塌方的方块砸落在其之上"
+				"就会引发连带塌方，此时受保护的方块也将跟随塌方方块一同下坠"
 				""
-				"竖着的支撑柱本身不能够防止塌方，能够防止塌方的是支撑柱之间水平的支撑梁，水平支撑梁的最大长度是五格——代表你两根支撑柱之间最多间隔五格，每根水平支撑梁能够保护其周围9x9x3的方块不受重力影响，但无法保护这之上或之下的方块。而塌方是带有连带效果的，如果被保护的方块上有其他塌方的方块砸落在其之上，就会引发连带塌方，此时受保护的方块也将跟随塌方方块一同下坠，如果砸在支撑柱或支撑梁上，就会将其砸毁，并使原本受到保护的方块失去保护，引发巨大的连锁反应、要想预防这种事情发生，就需要在支撑柱和支撑梁的正上方放置反重力方块——例如木板和平滑石——作为保护，或者在挖矿之前先将空洞堵住。"
+				"如果砸在支撑柱或支撑梁上，就会将其砸毁，并使原本受到保护的方块失去保护，引发巨大的连锁反应"
 				""
-				"支撑柱本身的摆放方式是多种多样的，你可以为了节省材料而追求最大效率的摆放方式，或者为了极致的安全感而在整个区域覆盖满支撑梁。但请记住一件事，崩盘常发生，心态最重要。"
+				"支撑柱本身的摆放方式是多种多样的，你可以为了节省材料而追求最大效率的摆放方式，或者为了极致的安全感而在整个区域覆盖满支撑梁。"
+				""
+				"但请记住一件事，崩盘常发生，心态最重要。"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_visible: true
 			icon: "tfc:wood/support/hickory"
 			id: "5292D40DEFEA6B05"
+			rewards: [{
+				id: "6D19C2D67BCBC3EC"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "当你发现你在坑里了，就别再挖了。——维尔 罗格"
 			tasks: [
 				{
@@ -2155,14 +2614,19 @@
 				}
 			]
 			title: "&c挖矿要诀"
-			x: -24.0d
-			y: -2.5d
+			x: -27.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["210AB4533CD5A8A7"]
 			description: ["相信你一定会经常为草丛或雪减缓自己的移动速度而感到烦恼，只需要在副手拿着这根手杖，就可以畅行无阻，还可以防止自己掉进细雪中。"]
 			hide_until_deps_complete: true
 			id: "47989EBC17776AF8"
+			rewards: [{
+				id: "368A5C7B4203D024"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "如履平地"
 			tasks: [{
 				id: "78895B75016622D1"
@@ -2197,6 +2661,11 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "2C296A519C874DE7"
+			rewards: [{
+				id: "773ACD5C5EBE0FC0"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "如果你没在书里看过的话"
 			tasks: [{
 				id: "109773D6F407D655"
@@ -2204,8 +2673,8 @@
 				type: "checkmark"
 			}]
 			title: "群峦传说中的矿物"
-			x: -23.0d
-			y: -2.0d
+			x: -32.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["3195F1931D37ADD0"]
@@ -2213,6 +2682,11 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "33991A0875EFF30F"
+			rewards: [{
+				id: "74A142C5CEE8CD03"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "gear"
 			subtitle: "终于不是脆皮鸡了"
 			tasks: [
@@ -2388,6 +2862,11 @@
 				}
 			}
 			id: "0B036C67A4EF671E"
+			rewards: [{
+				id: "3A6AF671F073868B"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "更好的钳子"
 			tasks: [{
 				id: "2AA0D52835C82E16"
@@ -2401,8 +2880,8 @@
 				title: "制作钳子"
 				type: "item"
 			}]
-			x: -21.5d
-			y: -3.5d
+			x: -21.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["41513B8F3A7B3810"]
@@ -2412,6 +2891,11 @@
 			]
 			hide_until_deps_complete: true
 			id: "13831570ED683A51"
+			rewards: [{
+				id: "75E10242F150B596"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "致敬传奇耐烧王"
 			tasks: [{
 				id: "11A7CC06B9B1E7ED"
@@ -2435,6 +2919,11 @@
 			hide_until_deps_complete: true
 			icon: "valhelsia_structures:explorers_tent"
 			id: "551DB3F4D98BBD12"
+			rewards: [{
+				id: "6F51EE86042EF7B2"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					id: "5B299D04487B8A00"
@@ -2468,6 +2957,11 @@
 			hide_until_deps_visible: true
 			icon: "tfc:wood/axle/oak"
 			id: "78E7C759E7460612"
+			rewards: [{
+				id: "046FBCECC876912E"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					icon: "tfc:wood/axle/oak"
@@ -2516,6 +3010,11 @@
 			]
 			icon: "tfc:wood/water_wheel/oak"
 			id: "7AEDC7D17F3A9676"
+			rewards: [{
+				id: "44AFF65FEFE1DA43"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "自动化的苗头"
 			tasks: [
 				{
@@ -2528,6 +3027,7 @@
 							value: "tfc:water_wheels"
 						}
 					}
+					optional_task: true
 					title: "任意水车"
 					type: "item"
 				}
@@ -2540,6 +3040,7 @@
 							value: "tfc:all_windmill_blades"
 						}
 					}
+					optional_task: true
 					title: "任意风车叶片"
 					type: "item"
 				}
@@ -2553,6 +3054,11 @@
 			description: ["将竖直传动杆与手推磨顶端链接即可使其自动磨碎物品，你只需要把物品放进去就可以了。"]
 			icon: "tfc:quern"
 			id: "346835CB9F759BAD"
+			rewards: [{
+				id: "52DDBCCBCF93FFD4"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "自动化初见端倪"
 			tasks: [{
 				id: "2900AF7A6F892A8C"
@@ -2568,6 +3074,11 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "4717AD81AFA81CCD"
+			rewards: [{
+				id: "13502FE1EE6D5FF8"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "749685E22629743F"
 				item: "tfc:glue"
@@ -2577,7 +3088,10 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["5292D40DEFEA6B05"]
+			dependencies: [
+				"5292D40DEFEA6B05"
+				"1FBB88CD20E47866"
+			]
 			description: [
 				"木支撑梁的支撑范围确实小的可怜、如果要安全的下矿往往需要很麻烦的修连携矿道"
 				""
@@ -2585,10 +3099,16 @@
 				""
 				"越高级的支撑梁他的支撑效果会更强、忽略造价、为了更安全的下矿、用它是相当不错的选择"
 			]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: "kubejs:copper_support"
 			id: "5D31147A604CA16C"
+			rewards: [{
+				id: "59BA99F88A855929"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "729C6C1802CB6E9E"
 				item: {
@@ -2603,13 +3123,22 @@
 			}]
 			title: "坚固的支撑"
 			x: -26.5d
-			y: -2.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["3CCAB31FBEEE494C"]
+			description: [
+				"当你在猎杀动物的时候、你会发现、他们有落下许多的皮"
+				"这些皮如果不经过处理那么很难作为可以加工材料……"
+			]
 			hide_until_deps_complete: true
 			icon: "tfc:large_raw_hide"
 			id: "74D9BA72E3A53351"
+			rewards: [{
+				id: "20007B794E7D91C6"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					id: "6B618AAFB2A860BC"
@@ -2639,9 +3168,14 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["74D9BA72E3A53351"]
+			dependencies: ["1EE460638F892AB5"]
 			hide_until_deps_complete: true
 			id: "50255A3D0E3C4394"
+			rewards: [{
+				id: "6E656103123A2EB7"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "4C5CD40B4D7B389B"
 				item: {
@@ -2653,13 +3187,26 @@
 				}
 				type: "item"
 			}]
-			x: -13.0d
+			x: -12.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["0D6D7D4274FAB7AF"]
+			description: [
+				"将浸泡后的皮革放在原木上刮制可以获得刮制皮革"
+				""
+				"刮制可以使用小刀或是&n刮削&r刀"
+				""
+				"小刀只能一格一格的刮皮、而且不太方便"
+				"而刮削刀可以直接刮整张皮！也可以在砧板上刮整张皮、更方便"
+			]
 			icon: "tfc:large_scraped_hide"
 			id: "1EE460638F892AB5"
+			rewards: [{
+				id: "618B07B8FC6CC62D"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					id: "0840E5445339C677"
@@ -2690,17 +3237,26 @@
 		{
 			dependencies: ["1063BE4F6A66D335"]
 			description: [
-				"航海时代ban掉了所有原版船的制作方式，就连实体也无法生成，现在就需要制作一个比较简易的船“独木舟”了"
+				"下水太冷了！想要更方便的航行河流和海洋、那么就需要做一条&n独木舟&r了"
 				""
 				"要制作独木舟，你首先得将3根剥皮的原木水平放置成一排，并用锯切掉顶部。然后用斧头雕刻出独木舟的形状。最后，点燃独木舟的内部，掏空船体。这将花费与坑窑相同的时间来完成挖空过程。"
-				""
-				"你当然可以在两个座位上都放上方块或动物，但要注意如果你这样做，就没有办法驾驶它了!不过如果你不想亲自运送材料，那就当我没说了。"
-				"独木舟有两个座位，从后面驾驶。你得划桨才能全速前进如果两个玩家一起划桨，它可以走得更快。"
 				""
 				"&n雕刻独木舟需要比较柔软的木材"
 				""
 				"因此，只有部分原木是可行的:&r"
-				"花旗松木,松木,棕榈,云杉木,红杉木,木棉木,红树木,白杉木,柳木"
+				"花旗松木"
+				"松木"
+				"棕榈"
+				"云杉木"
+				"红杉木"
+				"木棉木"
+				"红树木"
+				"白杉木"
+				"柳木"
+				""
+				"{@pagebreak}"
+				"你当然可以在两个座位上都放上方块或动物，但要注意如果你这样做，就没有办法驾驶它了!不过如果你不想亲自运送材料，那就当我没说了。"
+				"独木舟有两个座位，从后面驾驶。你得划桨才能全速前进如果两个玩家一起划桨，它可以走得更快。"
 				""
 				"别忘了做两个桨！"
 			]
@@ -2708,6 +3264,11 @@
 			hide_until_deps_visible: false
 			icon: "firmaciv:canoe_icon_only"
 			id: "74F096200A21E206"
+			rewards: [{
+				id: "674F7384D100CC51"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				advancement: "firmaciv:canoe"
 				criterion: ""
@@ -2733,6 +3294,11 @@
 				}
 			}
 			id: "70CA55ECC7B502CE"
+			rewards: [{
+				id: "67C463BF85493E7D"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "矿物处理β第四步"
 			tasks: [{
 				id: "6F5FE498FB0C5950"
@@ -2745,6 +3311,7 @@
 		}
 		{
 			dependencies: ["70CA55ECC7B502CE"]
+			description: ["虽然比较麻烦！但是恭喜！你有了更高纯度的金属粉！"]
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -2756,6 +3323,11 @@
 				id: "kubejs:item/ore/purified_dust/native_copper"
 			}
 			id: "373D377E4981A4F4"
+			rewards: [{
+				id: "2C53F9684CCCBAED"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "矿物处理β最终步"
 			tasks: [{
 				id: "1064297864F87A97"
@@ -2791,6 +3363,11 @@
 			}
 			id: "44AEF52B78E27184"
 			invisible: true
+			rewards: [{
+				id: "7AF44DA2188678FB"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "美丽的石头"
 			tasks: [{
 				id: "6201DFEF852DAE1D"
@@ -2825,6 +3402,11 @@
 				}
 			}
 			id: "434E5E5039468031"
+			rewards: [{
+				id: "6FEF8873FC681989"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "3EDC76934D278870"
 				item: {
@@ -2838,8 +3420,8 @@
 				type: "item"
 			}]
 			title: "地质锤"
-			x: -24.5d
-			y: -5.0d
+			x: -28.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["61E41171C9379CF9"]
@@ -2859,6 +3441,11 @@
 				}
 			}
 			id: "396D1986E334CCDC"
+			rewards: [{
+				id: "78F9DE9FECF34F0C"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "7893EB0A1C18CA11"
 				item: {
@@ -2872,8 +3459,8 @@
 				type: "item"
 			}]
 			title: "剥岩锤"
-			x: -25.5d
-			y: -4.5d
+			x: -29.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["61E41171C9379CF9"]
@@ -2893,6 +3480,11 @@
 				}
 			}
 			id: "5D80D0C396F532F0"
+			rewards: [{
+				id: "37AAB009F47E367F"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "1251508CC35BCA27"
 				item: {
@@ -2906,12 +3498,17 @@
 				type: "item"
 			}]
 			title: "凿岩钻"
-			x: -25.5d
-			y: -3.5d
+			x: -30.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["7DD760E18F97ABC9"]
 			id: "7BB8F5EC4B447755"
+			rewards: [{
+				id: "2EF1F4E479F744BA"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				count: 5L
 				id: "119F7C794BB366D6"
@@ -2934,6 +3531,11 @@
 		{
 			dependencies: ["41513B8F3A7B3810"]
 			id: "225B60A48BF88DFA"
+			rewards: [{
+				id: "6DAB5CE5B933A29A"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "6C33225B55F961D2"
 				item: {
@@ -2967,9 +3569,15 @@
 				"黄麻是一种比较耐活的植物！如果你有幸找到了那么不要错过它"
 			]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: "tfc:wild_crop/jute"
 			id: "2659E061BD2964D1"
+			rewards: [{
+				id: "661C3E6CF9AA6629"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "中世纪布料"
 			tasks: [
 				{
@@ -2991,6 +3599,11 @@
 			dependencies: ["2659E061BD2964D1"]
 			hide_until_deps_complete: true
 			id: "657F2F5D029310AE"
+			rewards: [{
+				id: "787EC97DE8A850D0"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "2DA40EBE7B747CAC"
 				item: "tfc:burlap_cloth"
@@ -3002,9 +3615,15 @@
 		{
 			dependencies: ["7D97D80EA47C810E"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: "textile:wild_crop/flax"
 			id: "39621E4040226A39"
+			rewards: [{
+				id: "6EDD2514CAED8C62"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "不太舒适的材料"
 			tasks: [
 				{
@@ -3025,6 +3644,11 @@
 			dependencies: ["657F2F5D029310AE"]
 			hide_until_deps_complete: true
 			id: "263DB6F4924D0790"
+			rewards: [{
+				id: "6CC83C7D7687D6A4"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "避暑衣"
 			tasks: [
 				{
@@ -3069,6 +3693,11 @@
 			dependencies: ["657F2F5D029310AE"]
 			hide_until_deps_complete: true
 			id: "588A8954F42DAC9F"
+			rewards: [{
+				id: "7EEE6636CAB978B3"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "5F491C7A6CC6626A"
 				item: {
@@ -3106,6 +3735,11 @@
 			}
 			id: "39E604603D2C0373"
 			invisible: true
+			rewards: [{
+				id: "6618D95C6281A52C"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "circle"
 			subtitle: "FeS2"
 			tasks: [
@@ -3145,6 +3779,11 @@
 			dependencies: ["210AB4533CD5A8A7"]
 			icon: "astikorcarts:animal_cart"
 			id: "46C4B594FF41E4A3"
+			rewards: [{
+				id: "0CB8CF8F900964F2"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [
 				{
 					id: "2846D48BCCA9D2F7"
@@ -3184,13 +3823,18 @@
 				}
 			]
 			title: "背井离乡"
-			x: -15.5d
+			x: -16.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["34A3E922DB7A6883"]
 			hide_until_deps_visible: true
 			id: "01CA18937A6DEADD"
+			rewards: [{
+				id: "3D395D3A88D1D6D5"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "解放双手"
 			tasks: [{
 				id: "6E8178525689A1E3"
@@ -3206,6 +3850,229 @@
 			title: "自己吃饭！"
 			x: -9.0d
 			y: -3.5d
+		}
+		{
+			dependencies: ["210AB4533CD5A8A7"]
+			description: [
+				"之后我们处理矿物或一些物品的时候、往往不能通过简单的合成来处理"
+				""
+				"我们需要砧板配方来处理"
+			]
+			icon: "farmersdelight:cutting_board"
+			id: "14D85185C4493824"
+			subtitle: "打碎还是切碎？"
+			tasks: [{
+				id: "44863C40E5FA116B"
+				item: "farmersdelight:cutting_board"
+				type: "item"
+			}]
+			x: -15.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"6B56C8EFF9041129"
+				"41513B8F3A7B3810"
+			]
+			description: [
+				"炎炎寒冬，你最需要的就是一个暖水袋，"
+				"皮质的暖水袋，可以保温很长时间。"
+				"但是最高60度"
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:leather_hot_water_bag"
+			}
+			id: "3C497ADF6020F77E"
+			rewards: [{
+				id: "636D3DE74DCEFA23"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "43729B7A20037B11"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "kubejs:leather_hot_water_bag"
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6C25D2B12B926D84"
+					optional_task: true
+					title: "我知道这个"
+					type: "checkmark"
+				}
+			]
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3C497ADF6020F77E"]
+			description: ["更厉害的"]
+			hide_until_deps_complete: true
+			id: "744A8E82546BCD51"
+			tasks: [{
+				id: "2A858536A37740CD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:rubber_hot_water_bag"
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3C497ADF6020F77E"]
+			dependency_requirement: "one_started"
+			description: [
+				"内胆更换为金属材质，能存储更烫的水"
+				"温度上限提升至100度"
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: false
+			id: "5EE73B7A3BAF076F"
+			tasks: [{
+				id: "0C20D761D014C4E8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:metal_hot_water_bag"
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7E60DB1DFF798B1C"]
+			description: ["天气渐渐变冷，是时候给自己装备一套暖和的衣服了"]
+			hide_until_deps_visible: true
+			icon: "minecraft:ice"
+			id: "6B56C8EFF9041129"
+			shape: "square"
+			tasks: [
+				{
+					id: "1C14C3516E658FCA"
+					item: {
+						Count: 1
+						id: "textile:raw_hat"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "41F58851A91D99E6"
+					item: {
+						Count: 1
+						id: "textile:raw_shirt"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "595C94023BCC1D00"
+					item: {
+						Count: 1
+						id: "textile:raw_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5132C86F98DE63F7"
+					optional_task: true
+					title: "我做了其他衣服"
+					type: "checkmark"
+				}
+			]
+			title: "天冷了，给孩子多穿点"
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7DD760E18F97ABC9"]
+			description: ["你无意间（故意）发现了这种粉末能快速燃烧，这或许可以干一些其他事情"]
+			id: "6A4A05518B98D34B"
+			invisible: true
+			subtitle: "黑火药"
+			tasks: [{
+				id: "6E1F0D00C1D88CA0"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			x: -27.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6A4A05518B98D34B"]
+			description: ["用纸吧火药包起来，前方再放一粒弹丸，点燃后可以快速推动弹丸"]
+			id: "007EC26A870DFCE7"
+			invisible: true
+			tasks: [{
+				id: "58418A5881BFB11B"
+				item: "scguns:powder_and_ball"
+				type: "item"
+			}]
+			x: -29.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["007EC26A870DFCE7"]
+			description: ["将弹药装进封闭容器内激发可以造成巨大破坏力，于是最简单的燧发枪诞生了"]
+			id: "1F8B499E09CDF5C9"
+			subtitle: "太奶召唤器"
+			tasks: [{
+				id: "02DEE29D3A6DFDDA"
+				item: {
+					Count: 1
+					id: "scguns:flintlock_pistol"
+					tag: {
+						AmmoCount: 1
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -29.5d
+			y: 0.0d
 		}
 	]
 	title: "第一章：铜砂"

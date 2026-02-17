@@ -273,7 +273,7 @@ ServerEvents.recipes(event => {
         ['aa',
             ' a'],
         {
-            a: '#tfc:loose_rocks'
+            a: '#tfc:any_knapping'
         })//石箭头
     event.shaped('minecraft:bucket',
         ['cbc',
@@ -690,7 +690,7 @@ ServerEvents.recipes(event => {
         ' d '
     ], {
         a: 'design_decor:copper_gas_tank',
-        b: 'tfc:metal/sheet/copper',
+        b: 'tfc:metal/rod/copper',
         d: 'tfc:metal/unfinished_chestplate/copper',
         c: 'create:shaft',
         e: 'create:andesite_alloy'
@@ -764,6 +764,77 @@ ServerEvents.recipes(event => {
 
         })
     //致密压头
+    event.shaped('2x create:brass_funnel', [
+
+        ' a ',
+        ' b ',
+        ' c '
+    ],
+        {
+            a: 'create:electron_tube',
+            b: 'tfc:metal/sheet/wrought_iron',
+            c: '#tfc:leather_knapping'
+
+        })
+    event.shaped('2x create:brass_funnel', [
+
+        ' a ',
+        ' b ',
+        ' c '
+    ],
+        {
+            a: 'create:electron_tube',
+            b: 'tfc:metal/sheet/wrought_iron',
+            c: 'afc:rubber_bar'
+
+        })
+    //金属漏斗【原黄铜漏斗】
+
+    event.shaped('create:flywheel', [
+
+        'cac',
+        'aba',
+        'cac'
+    ],
+        {
+            a: 'tfc:metal/rod/wrought_iron',
+            b: 'create:shaft',
+            c: 'tfc:metal/ingot/wrought_iron'
+
+        })
+    //飞轮
+
+    event.shaped('create:rotation_speed_controller', [
+
+        ' a ',
+        'bcb',
+        ' d '
+    ],
+        {
+            a: 'create:precision_mechanism',
+            b: 'create:shaft',
+            c: 'createcasing:crimson_cogwheel',
+            d: 'tfc:metal/block/wrought_iron'
+
+        })
+    //转速控制器
+    event.shaped('3x create:mechanical_crafter', [
+
+        ' a ',
+        'bcb',
+        ' d '
+    ],
+        {
+            a: 'create:electron_tube',
+            b: 'tfc:metal/sheet/steel',
+            c: 'create:depot',
+            d: 'minecraft:crafting_table'
+
+        })
+    //动力合成器
+
+
+
     //=============================================================
     //=======================功能性存储配方==========================
     //=============================================================

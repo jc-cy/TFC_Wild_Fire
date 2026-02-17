@@ -19,36 +19,36 @@ ServerEvents.recipes((event) => {
         {
             ingredients: [{ item: `tfc:metal/ingot/cast_iron` }],
             heatRequirement: 'superheated',
-            processingTime: 60,
+            processingTime: 180,
             results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}ingots/cast_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/double_ingot/cast_iron` }],
             heatRequirement: 'superheated',
-            processingTime: 60,
+            processingTime: 360,
             results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}double_ingots/cast_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/sheet/cast_iron` }],
             heatRequirement: 'superheated',
-            processingTime: 120,
+            processingTime: 360,
             results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}sheets/cast_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/double_sheet/cast_iron` }],
             heatRequirement: 'superheated',
-            processingTime: 240,
+            processingTime: 720,
             results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}double_sheets/cast_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/rod/cast_iron` }],
             heatRequirement: 'superheated',
-            processingTime: 240,
-            results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
+            processingTime: 90,
+            results: [{ amount: 50, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}rod/cast_iron`
         },
 
@@ -56,42 +56,42 @@ ServerEvents.recipes((event) => {
         {
             ingredients: [{ item: `tfc:metal/ingot/wrought_iron` }],
             heatRequirement: 'superheated',
-            processingTime: 60,
+            processingTime: 180,
             results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}ingots/wrought_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/double_ingot/wrought_iron` }],
             heatRequirement: 'superheated',
-            processingTime: 60,
+            processingTime: 360,
             results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}double_ingots/wrought_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/sheet/wrought_iron` }],
             heatRequirement: 'superheated',
-            processingTime: 120,
+            processingTime: 360,
             results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}sheets/wrought_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/double_sheet/wrought_iron` }],
             heatRequirement: 'superheated',
-            processingTime: 240,
+            processingTime: 720,
             results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}double_sheets/wrought_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/rod/wrought_iron` }],
             heatRequirement: 'superheated',
-            processingTime: 240,
-            results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
+            processingTime: 90,
+            results: [{ amount: 50, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}rod/wrought_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/tuyere/wrought_iron` }],
             heatRequirement: 'superheated',
-            processingTime: 240,
+            processingTime: 720,
             results: [{ amount: 400, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}tuyere/wrought_iron`
         },
@@ -215,14 +215,13 @@ ServerEvents.recipes((event) => {
         recipes.push({
             ingredients: [{ item: `tfc:metal/tuyere/${heated}` }],
             heatRequirement: 'heated',
-            processingTime: 240,
+            processingTime: 720,
             results: [{ amount: 400, fluid: `tfc:metal/${heated}` }],
             id: `${id_prefix}tuyere/${heated}`
         })
 
     });
     const tfc_metal_tuyere_super_heated = [
-        'cast_iron',
         'steel',
         'black_steel',
         'blue_steel',
@@ -233,7 +232,7 @@ ServerEvents.recipes((event) => {
         recipes.push({
             ingredients: [{ item: `tfc:metal/tuyere/${heated}` }],
             heatRequirement: 'superheated',
-            processingTime: 240,
+            processingTime: 720,
             results: [{ amount: 400, fluid: `tfc:metal/${heated}` }],
             id: `${id_prefix}tuyere/${heated}`
         })
@@ -242,7 +241,7 @@ ServerEvents.recipes((event) => {
 
 
 
-    
+
 
     const tfc_metal_heated = [
         'bismuth_bronze',
@@ -256,42 +255,43 @@ ServerEvents.recipes((event) => {
         'silver',
         'sterling_silver',
         'zinc',
-        'tin'
+        'tin',
+        'manganese'
     ]
 
     tfc_metal_heated.forEach((heated) => {
         recipes.push({
             ingredients: [{ tag: `forge:ingots/${heated}` }],
             heatRequirement: 'heated',
-            processingTime: 60,
+            processingTime: 180,
             results: [{ amount: 100, fluid: `tfc:metal/${heated}` }],
             id: `${id_prefix}${heated}`
         })
         recipes.push({
             ingredients: [{ tag: `forge:double_ingots/${heated}` }],
             heatRequirement: 'heated',
-            processingTime: 120,
+            processingTime: 360,
             results: [{ amount: 200, fluid: `tfc:metal/${heated}` }],
             id: `${id_prefix}double_${heated}`
         });
         recipes.push({
             ingredients: [{ tag: `forge:rods/${heated}` }],
             heatRequirement: 'heated',
-            processingTime: 30,
+            processingTime: 90,
             results: [{ amount: 50, fluid: `tfc:metal/${heated}` }],
             id: `${id_prefix}${heated}_rod`
         });
         recipes.push({
             ingredients: [{ tag: `forge:sheets/${heated}` }],
             heatRequirement: 'heated',
-            processingTime: 120,
+            processingTime: 360,
             results: [{ amount: 200, fluid: `tfc:metal/${heated}` }],
             id: `${id_prefix}${heated}_plate`
         });
         recipes.push({
             ingredients: [{ tag: `forge:double_sheets/${heated}` }],
             heatRequirement: 'heated',
-            processingTime: 240,
+            processingTime: 720,
             results: [{ amount: 400, fluid: `tfc:metal/${heated}` }],
             id: `${id_prefix}${heated}_double_sheet`
         });
@@ -315,21 +315,21 @@ ServerEvents.recipes((event) => {
         recipes.push({
             ingredients: [{ tag: `forge:ingots/${heated}` }],
             heatRequirement: 'heated',
-            processingTime: 60,
+            processingTime: 180,
             results: [{ amount: 100, fluid: `tfc_ie_addon:metal/${heated}` }],
             id: `${id_prefix}${heated}`
         })
         recipes.push({
             ingredients: [{ tag: `forge:double_ingots/${heated}` }],
             heatRequirement: 'heated',
-            processingTime: 120,
+            processingTime: 360,
             results: [{ amount: 200, fluid: `tfc_ie_addon:metal/${heated}` }],
             id: `${id_prefix}double_${heated}`
         });
         recipes.push({
             ingredients: [{ tag: `forge:sheets/${heated}` }],
             heatRequirement: 'heated',
-            processingTime: 120,
+            processingTime: 360,
             results: [{ amount: 200, fluid: `tfc_ie_addon:metal/${heated}` }],
             id: `${id_prefix}${heated}_plate`
         });
@@ -347,35 +347,35 @@ ServerEvents.recipes((event) => {
         recipes.push({
             ingredients: [{ tag: `forge:ingots/${heated}` }],
             heatRequirement: 'heated',
-            processingTime: 60,
+            processingTime: 180,
             results: [{ amount: 100, fluid: `firmalife:metal/${heated}` }],
             id: `${id_prefix}${heated}`
         })
         recipes.push({
             ingredients: [{ tag: `forge:double_ingots/${heated}` }],
             heatRequirement: 'heated',
-            processingTime: 120,
+            processingTime: 360,
             results: [{ amount: 200, fluid: `firmalife:metal/${heated}` }],
             id: `${id_prefix}double_${heated}`
         });
         recipes.push({
             ingredients: [{ tag: `forge:rods/${heated}` }],
             heatRequirement: 'heated',
-            processingTime: 30,
+            processingTime: 90,
             results: [{ amount: 50, fluid: `firmalife:metal/${heated}` }],
             id: `${id_prefix}${heated}_rod`
         });
         recipes.push({
             ingredients: [{ tag: `forge:sheets/${heated}` }],
             heatRequirement: 'heated',
-            processingTime: 120,
+            processingTime: 360,
             results: [{ amount: 200, fluid: `firmalife:metal/${heated}` }],
             id: `${id_prefix}${heated}_plate`
         });
         recipes.push({
             ingredients: [{ tag: `forge:double_sheets/${heated}` }],
             heatRequirement: 'heated',
-            processingTime: 240,
+            processingTime: 720,
             results: [{ amount: 400, fluid: `firmalife:metal/${heated}` }],
             id: `${id_prefix}${heated}_double_sheet`
         });
@@ -404,6 +404,9 @@ ServerEvents.recipes((event) => {
         { item: 'black_steel', type: '2' },
         { item: 'blue_steel', type: '2' },
         { item: 'red_steel', type: '2' },
+        { item: 'vanadium', type: '2' },
+        { item: 'titanium', type: '2' },
+        { item: 'titanium_alloy', type: '2' },
 
         //{ item: 'pig_iron', type: '2' },
     ]
@@ -413,7 +416,7 @@ ServerEvents.recipes((event) => {
             recipes.push({
                 ingredients: [{ tag: `forge:ingots/${heated.item}` }],
                 heatRequirement: 'superheated',
-                processingTime: 60,
+                processingTime: 180,
                 results: [{ amount: 100, fluid: `tfc:metal/${heated.item}` }],
                 id: `${id_prefix}${heated.item}`
             })
@@ -421,7 +424,7 @@ ServerEvents.recipes((event) => {
             recipes.push({
                 ingredients: [{ tag: `forge:double_ingots/${heated.item}` }],
                 heatRequirement: 'superheated',
-                processingTime: 120,
+                processingTime: 360,
                 results: [{ amount: 200, fluid: `tfc:metal/${heated.item}` }],
                 id: `${id_prefix}double_${heated.item}`
             })
@@ -429,7 +432,7 @@ ServerEvents.recipes((event) => {
             recipes.push({
                 ingredients: [{ tag: `forge:rods/${heated.item}` }],
                 heatRequirement: 'superheated',
-                processingTime: 30,
+                processingTime: 90,
                 results: [{ amount: 50, fluid: `tfc:metal/${heated.item}` }],
                 id: `${id_prefix}${heated.item}_rod`
             });
@@ -437,7 +440,7 @@ ServerEvents.recipes((event) => {
             recipes.push({
                 ingredients: [{ tag: `forge:sheets/${heated.item}` }],
                 heatRequirement: 'superheated',
-                processingTime: 120,
+                processingTime: 360,
                 results: [{ amount: 200, fluid: `tfc:metal/${heated.item}` }],
                 id: `${id_prefix}${heated.item}_plate`
             });
@@ -445,14 +448,44 @@ ServerEvents.recipes((event) => {
             recipes.push({
                 ingredients: [{ tag: `forge:double_sheets/${heated.item}` }],
                 heatRequirement: 'superheated',
-                processingTime: 240,
+                processingTime: 720,
                 results: [{ amount: 400, fluid: `tfc:metal/${heated.item}` }],
                 id: `${id_prefix}${heated.item}_double_sheet`
             });
     });
 
 
+    //三锭熔炼
+    const triple_ingot_metal = [
+        { item: 'copper', type: '1' },
+        { item: 'bismuth_bronze', type: '1' },
+        { item: 'black_bronze', type: '1' },
+        { item: 'bronze', type: '1' },
+        { item: 'wrought_iron', type: '2' },
+        { item: 'steel', type: '2' },
+        { item: 'black_steel', type: '2' },
+        { item: 'blue_steel', type: '2' },
+        { item: 'red_steel', type: '2' },
+    ]
 
+    triple_ingot_metal.forEach((metal) => {
+        if (metal.type == '1')
+            recipes.push({
+                ingredients: [{ item: `kubejs:triple_${metal.item}` }],
+                heatRequirement: 'heated',
+                processingTime: 540,
+                results: [{ amount: 300, fluid: `tfc:metal/${metal.item}` }],
+                id: `${id_prefix}${metal.item}_triple_ingot`
+            });
+        if (metal.type == '2')
+            recipes.push({
+                ingredients: [{ item: `kubejs:triple_${metal.item}` }],
+                heatRequirement: 'superheated',
+                processingTime: 340,
+                results: [{ amount: 300, fluid: `tfc:metal/${metal.item}` }],
+                id: `${id_prefix}${metal.item}_triple_ingot`
+            });
+    });
 
 
 
@@ -506,86 +539,116 @@ ServerEvents.recipes((event) => {
     //////////////////////////////////////
 
 
-
-    const tfc_powders = [
-        { dust: 'garnierite', fluid: 'nickel', type: 'superheated' },
-        { dust: 'magnetite', fluid: 'cast_iron', type: 'superheated' },
-        { dust: 'limonite', fluid: 'cast_iron', type: 'superheated' },
-        { dust: 'hematite', fluid: 'cast_iron', type: 'superheated' },
-        { dust: 'tetrahedrite', fluid: 'copper', type: 'heated' },
-        { dust: 'malachite', fluid: 'copper', type: 'heated' },
-        { dust: 'bismuthinite', fluid: 'bismuth', type: 'heated' },
-        { dust: 'sphalerite', fluid: 'zinc', type: 'heated' },
-        { dust: 'cassiterite', fluid: 'tin', type: 'heated' },
-        { dust: 'native_copper', fluid: 'copper', type: 'heated' },
-        { dust: 'native_gold', fluid: 'gold', type: 'heated' },
-        { dust: 'native_silver', fluid: 'silver', type: 'heated' },
+    //小粉融化
+    const powders = [
+        { dust: 'garnierite', fluid: 'nickel', type: 'superheated', mod: 'tfc' },
+        { dust: 'magnetite', fluid: 'cast_iron', type: 'superheated', mod: 'tfc' },
+        { dust: 'limonite', fluid: 'cast_iron', type: 'superheated', mod: 'tfc' },
+        { dust: 'hematite', fluid: 'cast_iron', type: 'superheated', mod: 'tfc' },
+        { dust: 'tetrahedrite', fluid: 'copper', type: 'heated', mod: 'tfc' },
+        { dust: 'malachite', fluid: 'copper', type: 'heated', mod: 'tfc' },
+        { dust: 'bismuthinite', fluid: 'bismuth', type: 'heated', mod: 'tfc' },
+        { dust: 'sphalerite', fluid: 'zinc', type: 'heated', mod: 'tfc' },
+        { dust: 'cassiterite', fluid: 'tin', type: 'heated', mod: 'tfc' },
+        { dust: 'native_copper', fluid: 'copper', type: 'heated', mod: 'tfc' },
+        { dust: 'native_gold', fluid: 'gold', type: 'heated', mod: 'tfc' },
+        { dust: 'native_silver', fluid: 'silver', type: 'heated', mod: 'tfc' },
+        { dust: 'galena', fluid: 'lead', type: 'heated', mod: 'tfc_ie_addon' },
+        { dust: 'uraninite', fluid: 'uranium', type: 'superheated', mod: 'tfc_ie_addon' },
+        { dust: 'bauxite', fluid: 'aluminum', type: 'superheated', mod: 'tfc_ie_addon' },
+        { dust: 'chromite', fluid: 'chromium', type: 'heated', mod: 'firmalife' }
     ]
 
-    tfc_powders.forEach((powder) => {
+    powders.forEach((powder) => {
         if (powder.type == 'heated')
             recipes.push({
-                ingredients: [{ tag: `forge:powder/${powder.dust}` }],
+                ingredients: [{ item: `${powder.mod}:powder/${powder.dust}` }],
                 heatRequirement: 'heated',
                 processingTime: 3,
-                results: [{ amount: 5, fluid: `tfc:metal/${powder.fluid}` }],
+                results: [{ amount: 5, fluid: `${powder.mod}:metal/${powder.fluid}` }],
                 id: `${id_prefix}heated_${powder.dust}`
             })
         if (powder.type == 'superheated')
             recipes.push({
-                ingredients: [{ tag: `forge:powder/${powder.dust}` }],
+                ingredients: [{ item: `${powder.mod}:powder/${powder.dust}` }],
                 heatRequirement: 'superheated',
                 processingTime: 3,
-                results: [{ amount: 5, fluid: `tfc:metal/${powder.fluid}` }],
-                id: `${id_prefix}superheated_${powder.dust}`
+                results: [{ amount: 5, fluid: `${powder.mod}:metal/${powder.fluid}` }],
+                id: `${id_prefix}superheated_powder_${powder.dust}`
             })
     });
 
-
-
-
-    const ie_powders = [
-        { dust: 'galena', fluid: 'lead', type: 'heated' },
-        { dust: 'uraninite', fluid: 'uranium', type: 'superheated' },
-        //{ dust: 'bauxite', fluid: 'aluminum', type: 'superheated' }
+    const powder_type = [
+        { type: 'rocky_chunks', time: 2, number: 4 },
+        { type: 'chunks', time: 2, number: 4 },
+        { type: 'dirty_dust', time: 3, number: 5 },
+        { type: 'dirty_pile', time: 1, number: 1 },
+        { type: 'purified_dust', time: 3, number: 5 },
+        { type: 'refined_dust', time: 6, number: 10 },
+        { type: 'dust_lump', time: 12, number: 20 },
+        { type: 'dust_clump', time: 48, number: 80 },
+        { type: 'dust_brick', time: 54, number: 90 }
     ]
-    ie_powders.forEach((powder) => {
-        if (powder.type == 'heated')
-            recipes.push({
-                ingredients: [{ tag: `forge:powder/${powder.dust}` }],
-                heatRequirement: 'heated',
-                processingTime: 3,
-                results: [{ amount: 5, fluid: `tfc_ie_addon:metal/${powder.fluid}` }],
-                id: `${id_prefix}heated_${powder.dust}`
-            })
-        if (powder.type == 'superheated')
-            recipes.push({
-                ingredients: [{ tag: `forge:powder/${powder.dust}` }],
-                heatRequirement: 'superheated',
-                processingTime: 3,
-                results: [{ amount: 5, fluid: `tfc_ie_addon:metal/${powder.fluid}` }],
-                id: `${id_prefix}superheated_${powder.dust}`
-            })
-    });
-
-
-
-
-
-/*   const tfccore_powders = [
-        { dust: 'chromium', fluid: 'chromium', type: 'heated' },
+    const powders_2 = [
+        { dust: 'garnierite', fluid: 'nickel', type: 'superheated', mod: 'tfc' },
+        { dust: 'magnetite', fluid: 'cast_iron', type: 'superheated', mod: 'tfc' },
+        { dust: 'limonite', fluid: 'cast_iron', type: 'superheated', mod: 'tfc' },
+        { dust: 'hematite', fluid: 'cast_iron', type: 'superheated', mod: 'tfc' },
+        { dust: 'tetrahedrite', fluid: 'copper', type: 'heated', mod: 'tfc' },
+        { dust: 'malachite', fluid: 'copper', type: 'heated', mod: 'tfc' },
+        { dust: 'bismuthinite', fluid: 'bismuth', type: 'heated', mod: 'tfc' },
+        { dust: 'sphalerite', fluid: 'zinc', type: 'heated', mod: 'tfc' },
+        { dust: 'cassiterite', fluid: 'tin', type: 'heated', mod: 'tfc' },
+        { dust: 'native_copper', fluid: 'copper', type: 'heated', mod: 'tfc' },
+        { dust: 'native_gold', fluid: 'gold', type: 'heated', mod: 'tfc' },
+        { dust: 'native_silver', fluid: 'silver', type: 'heated', mod: 'tfc' },
+        { dust: 'galena', fluid: 'lead', type: 'heated', mod: 'tfc_ie_addon' },
+        { dust: 'uraninite', fluid: 'uranium', type: 'heated', mod: 'tfc_ie_addon' },
+        { dust: 'bauxite', fluid: 'aluminum', type: 'superheated', mod: 'tfc_ie_addon' },
+        { dust: 'chromite', fluid: 'chromium', type: 'superheated', mod: 'firmalife' }
     ]
-    tfccore_powders.forEach((powder) => {
-        if (powder.type == 'heated')
-            recipes.push({
-                ingredients: [{ tag: `forge:powder/${powder.dust}` }],
-                heatRequirement: 'heated',
-                processingTime: 3,
-                results: [{ amount: 5, fluid: `firmalife:metal/${powder.fluid}` }],
-                id: `${id_prefix}heated_${powder.dust}`
-            })
+
+    powders_2.forEach((powder) => {
+        powder_type.forEach((type) => {
+            if (powder.type == 'heated')
+                recipes.push({
+                    ingredients: [{ item: `kubejs:item/ore/${type.type}/${powder.dust}` }],
+                    heatRequirement: 'heated',
+                    processingTime: type.time,
+                    results: [{ amount: type.number, fluid: `${powder.mod}:metal/${powder.fluid}` }],
+                    id: `${id_prefix}heated_${type.type}_${powder.dust}`
+                })
+            if (powder.type == 'superheated')
+                recipes.push({
+                    ingredients: [{ item: `kubejs:item/ore/${type.type}/${powder.dust}` }],
+                    heatRequirement: 'superheated',
+                    processingTime: type.time,
+                    results: [{ amount: type.number, fluid: `${powder.mod}:metal/${powder.fluid}` }],
+                    id: `${id_prefix}superheated_${type.type}_${powder.dust}`
+                })
+        })
     });
-*/
+
+
+
+
+
+
+
+    /*   const tfccore_powders = [
+            { dust: 'chromium', fluid: 'chromium', type: 'heated' },
+        ]
+        tfccore_powders.forEach((powder) => {
+            if (powder.type == 'heated')
+                recipes.push({
+                    ingredients: [{ tag: `forge:powder/${powder.dust}` }],
+                    heatRequirement: 'heated',
+                    processingTime: 3,
+                    results: [{ amount: 5, fluid: `firmalife:metal/${powder.fluid}` }],
+                    id: `${id_prefix}heated_${powder.dust}`
+                })
+        });
+    */
 
 
 

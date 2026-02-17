@@ -111,6 +111,14 @@ ServerEvents.recipes(event => {
     { name: 'kubejs:unfinished/hot_double_ingot/zinc', number: 200, metal: "zinc" },
     { name: 'kubejs:unfinished/double_ingot/stainless_steel', number: 200, metal: "stainless_steel" },
     { name: 'kubejs:unfinished/hot_double_ingot/stainless_steel', number: 200, metal: "stainless_steel" },
+    { name: 'kubejs:unfinished/double_ingot/titanium_alloy', number: 200, metal: "titanium_alloy" },
+    { name: 'kubejs:unfinished/hot_double_ingot/titanium_alloy', number: 200, metal: "titanium_alloy" },
+    { name: 'kubejs:unfinished/double_ingot/titanium', number: 200, metal: "titanium" },
+    { name: 'kubejs:unfinished/hot_double_ingot/titanium', number: 200, metal: "titanium" },
+    { name: 'kubejs:unfinished/double_ingot/vanadium', number: 200, metal: "vanadium" },
+    { name: 'kubejs:unfinished/hot_double_ingot/vanadium', number: 200, metal: "vanadium" },
+    { name: 'kubejs:unfinished/double_ingot/manganese', number: 200, metal: "manganese" },
+    { name: 'kubejs:unfinished/hot_double_ingot/manganese', number: 200, metal: "manganese" },
 
     // ========== 双层薄板相关 (number: 400) ==========
     { name: 'kubejs:unfinished/double_sheet/bismuth_bronze', number: 400, metal: "bismuth_bronze" },
@@ -164,7 +172,15 @@ ServerEvents.recipes(event => {
     { name: 'kubejs:unfinished/double_sheet/zinc', number: 400, metal: "zinc" },
     { name: 'kubejs:unfinished/hot_double_sheet/zinc', number: 400, metal: "zinc" },
     { name: 'kubejs:unfinished/double_sheet/stainless_steel', number: 400, metal: "stainless_steel" },
-    { name: 'kubejs:unfinished/hot_double_sheet/stainless_steel', number: 400, metal: "stainless_steel" }
+    { name: 'kubejs:unfinished/hot_double_sheet/stainless_steel', number: 400, metal: "stainless_steel" },
+    { name: 'kubejs:unfinished/double_sheet/titanium_alloy', number: 400, metal: "titanium_alloy" },
+    { name: 'kubejs:unfinished/hot_double_sheet/titanium_alloy', number: 400, metal: "titanium_alloy" },
+    { name: 'kubejs:unfinished/double_sheet/titanium', number: 400, metal: "titanium" },
+    { name: 'kubejs:unfinished/hot_double_sheet/titanium', number: 400, metal: "titanium" },
+    { name: 'kubejs:unfinished/double_sheet/vanadium', number: 400, metal: "vanadium" },
+    { name: 'kubejs:unfinished/hot_double_sheet/vanadium', number: 400, metal: "vanadium" },
+    { name: 'kubejs:unfinished/double_sheet/manganese', number: 400, metal: "manganese" },
+    { name: 'kubejs:unfinished/hot_double_sheet/manganese', number: 400, metal: "manganese" }
   ];
 
 
@@ -461,6 +477,7 @@ ServerEvents.recipes(e => {
     crucible(`${metala.mods}${metala.name}`, `tfc:metal/${metala.metal}`, metala.number, metala.temperature)
   });
 
+  tfc.heating('tfc:ceramic/unfired_bowl', 1399).resultItem('minecraft:bowl')//碗
   tfc.heating('kubejs:unfired_mold_mechanical', 1399).resultItem('kubejs:mold_mechanical')//零件模具
   tfc.heating('kubejs:unfired_mold_simple_key', 1399).resultItem('kubejs:mold_simple_key')//钥匙模具
 
@@ -1056,6 +1073,27 @@ ServerEvents.recipes(e => {
     crucible(`${metal_block.name}`, metal_block.metal, metal_block.number, metal_block.temperature)
   })
 
+  const ingot_type = [
+    { name: 'ingot', number: 100 },
+    { name: 'double_ingot', number: 200 },
+    { name: 'sheet', number: 200 },
+    { name: 'double_sheet', number: 400 },
+    { name: 'rod', number: 50 }]
+  const new_metal = [
+
+    { name: "titanium_alloy", temperature: 1680, metal: "tfc:metal/titanium_alloy" },
+    { name: "titanium", temperature: 1668, metal: "tfc:metal/titanium" },
+    { name: "vanadium", temperature: 1910, metal: "tfc:metal/vanadium" },
+    { name: "manganese", temperature: 1246, metal: "tfc:metal/manganese" }
+  ]
+  new_metal.forEach(metal => {
+    ingot_type.forEach(type => {
+      //新金属融化
+      tfc.heating(`tfc:metal/${type.name}/${metal.name}`, metal.temperature).resultFluid(Fluid.of(metal.metal, type.number))
+        .useDurability(true);
+      crucible(`tfc:metal/${type.name}/${metal.name}`, metal.metal, type.number, metal.temperature)
+    })
+  })
 
 
   tfc.heating('kubejs:alkalized_bauxite_raw_material', 1500).resultItem('kubejs:bauxite_clinker')

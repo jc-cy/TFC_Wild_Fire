@@ -35,20 +35,30 @@
 		{
 			icon: "artisanal:quill"
 			id: "2DB49F7DE2CD977C"
+			rewards: [{
+				id: "353DABD151763EE8"
+				type: "xp"
+				xp: 25
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "2BA37816F7D9F5A3"
 				type: "checkmark"
 			}]
 			title: "一切的开始"
-			x: -7.702687388088499d
-			y: -3.1665566443789537d
+			x: -5.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2DB49F7DE2CD977C"]
 			hide_until_deps_complete: true
 			icon: "tfc:rock/loose/gabbro"
 			id: "01A61645DD554B40"
+			rewards: [{
+				id: "290532B76DA530A7"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "7E855843872102DE"
 				item: {
@@ -62,8 +72,8 @@
 				type: "item"
 			}]
 			title: "石纪元"
-			x: -7.734883762093844d
-			y: -0.7518285939786509d
+			x: -7.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["01A61645DD554B40"]
@@ -83,6 +93,11 @@
 				}
 			}
 			id: "2C3C24598A5CB94A"
+			rewards: [{
+				id: "3FD5ABAE13CE850A"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "不是剑"
 			tasks: [{
 				id: "25A1FD64127991A1"
@@ -129,6 +144,11 @@
 				}
 			}
 			id: "78FB35EB700196BA"
+			rewards: [{
+				id: "6EA159FF9363C70B"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "前期食物获取"
 			tasks: [
 				{
@@ -201,6 +221,11 @@
 				}
 			}
 			id: "77133CE00F63B5E7"
+			rewards: [{
+				id: "1D5DE9C39C0B1779"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "砍树！"
 			tasks: [{
 				id: "2BD557205F73C6A1"
@@ -215,8 +240,8 @@
 				type: "item"
 			}]
 			title: "木材就应该躺着"
-			x: -6.0d
-			y: -1.0d
+			x: -5.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["01A61645DD554B40"]
@@ -236,6 +261,11 @@
 				}
 			}
 			id: "6AFF0C52463AEA9E"
+			rewards: [{
+				id: "10886CA8EBF92308"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "6E9218F2FCFA7F1A"
 				item: {
@@ -262,6 +292,11 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "6C9C6088595C7D07"
+			rewards: [{
+				id: "2352FEC3BB1E191D"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "你可以给我草吗"
 			tasks: [{
 				id: "5B739EC28E4CC075"
@@ -277,6 +312,11 @@
 			description: ["现在你可以用干草制作纤维绳来加固你的石制工具，让他获得100%的耐久度"]
 			hide_until_deps_complete: true
 			id: "2B78615306BE3AFD"
+			rewards: [{
+				id: "117F683CA34EC376"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "绑好！"
 			tasks: [{
 				id: "4F61750C4C23F613"
@@ -290,20 +330,62 @@
 		{
 			dependencies: ["6AFF0C52463AEA9E"]
 			description: [
-				"黏土会在大部分地区的地表生成，除非该地区的表面不是泥土。使用铲子挖掘黏土方块即可获取。黏土草方块平常跟普通草方块没有任何区别，因此很难辨别，不过当你的准星对准黏土草方块时，屏幕上方的指示器会显示其名为黏土草方块。"
+				"接下来"
+				"我们需要一个非常基础也非常重要的材料：&n黏土&r"
 				""
-				"有一种方法可以很好地发现附近的黏土：寻找黏土指示植物。这些植物分别为蹄盖蕨、美人蕉、一枝黄花、蒲苇、分药花和水生美人蕉。一些水源附近也会生成黏土，如果你找不到指示植物，可以去水边碰碰运气。"
+				"黏土是一种非常有用的材料、他是制陶术的关键"
+				"一开始你可能难以找到黏土、但不要担心它不存在、因为黏土会在绝大部分的地表上大范围的生成"
+				""
+				"没有找到只是因为他的草皮往往和草方块长得极度相似"
+				""
+				"[翻页以查看详细说明]"
+				"{@pagebreak}"
+				"想要找到黏土那么就必须要判断粘土上的植物"
+				"粘土上有的时候会长出一些比较特殊的植物"
+				"它们分别是："
+				""
+				"  &f蹄盖蕨&r"
+				" &f 美人蕉&r"
+				"  &f水生美人蕉&r"
+				"  &f一枝黄花"
+				"  &f蒲苇 "
+				"  &f分药花"
+				"  "
+				"往往这些植物会大面积的成群生成、当你找到他们的时候、往往就会找到一大堆黏土"
+				"不过要注意这些植物的季节变化、他们会在不同的季节呈现不同的样貌"
+				"黏土有时也会在湖泊、溪流、水池边缘露出"
+				""
+				"祝你找的愉快！"
 			]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
+			icon: "minecraft:clay_ball"
 			id: "36D7E98F85B893C9"
+			rewards: [{
+				id: "6DA6AF53B5D7EA11"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "是的，下一步是陶器"
-			tasks: [{
-				id: "62DBD6DB0954F17A"
-				item: "minecraft:clay_ball"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "62DBD6DB0954F17A"
+					item: "minecraft:clay_ball"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					icon: "design_decor:arrow_right_sign"
+					id: "5E11027A89DAA6CB"
+					optional_task: true
+					points: false
+					title: "我已了解：跳过&8[消耗1级经验]"
+					type: "xp"
+					value: 1L
+				}
+			]
 			title: "挖黏土"
 			x: -7.0d
 			y: 2.0d
@@ -333,6 +415,11 @@
 				id: "tfc:ceramic/unfired_large_vessel"
 			}
 			id: "57F6BC38D1A881B4"
+			rewards: [{
+				id: "0D8B0233D5C0049C"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "没有人把泥土弄湿了之后置之不管，好像砖就能神奇地自己造出来一样。——普鲁塔克"
 			tasks: [
@@ -380,6 +467,11 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "653800260C26E91B"
+			rewards: [{
+				id: "429A8A0295355290"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			subtitle: "可惜，还不是做木板的时候"
 			tasks: [{
@@ -390,7 +482,7 @@
 			}]
 			title: "砍原木"
 			x: -5.5d
-			y: 0.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["653800260C26E91B"]
@@ -401,14 +493,19 @@
 			]
 			icon: "minecraft:oak_door"
 			id: "2A2194004E2ACB99"
+			rewards: [{
+				id: "3736974A0A93A7C0"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "71EEAFDAC255A464"
 				type: "checkmark"
 			}]
 			title: "遮风挡雨的庇护所"
-			x: -5.5d
-			y: 2.0d
+			x: -4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["653800260C26E91B"]
@@ -421,6 +518,11 @@
 			]
 			hide_until_deps_complete: true
 			id: "038E23C880719111"
+			rewards: [{
+				id: "14444ADB1D6CE427"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "只需要两根木棍"
 			tasks: [{
 				id: "0F87B5DA6CC32C17"
@@ -448,6 +550,11 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "4386B15CB5B92F9C"
+			rewards: [{
+				id: "62FD3D4A865CBB47"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "残忍又血腥"
 			tasks: [
 				{
@@ -520,8 +627,22 @@
 		{
 			dependencies: ["4386B15CB5B92F9C"]
 			description: ["成功获得一个完整的猎物！！就应该趁早把他带回家处理了"]
-			icon: "butcher:pig_corpse_item"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: -9223372036854775808L
+						traits: [ ]
+					}
+				}
+				id: "butcher:pig_corpse_item"
+			}
 			id: "4C47B292B62DA222"
+			rewards: [{
+				id: "19B4444EC3888F0A"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "拖回家……"
 			tasks: [{
 				id: "4C0AE24004D92ECD"
@@ -549,10 +670,15 @@
 				"挂上去之后先用屠刀右键动物尸体进行&c放血&r，等待一段时间之后，尸体的血将会放干，这个时候就可以继续用屠刀处理尸体了，部分生物需要先用剥皮刀去除外在部分，才可以进行肢解"
 				""
 				"一只动物肢解之后出来的肉量相当之大，可以吃很久很久"
-				"&4&n更多说明请查询《屠宰手册》&r&r"
+				""
 			]
 			hide_until_deps_complete: true
 			id: "11A35AC0A49C979D"
+			rewards: [{
+				id: "653433692A0E45A2"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "处理尸体"
 			tasks: [{
 				id: "468857CDECA2A260"
@@ -582,6 +708,11 @@
 			hide_until_deps_visible: true
 			icon: "tfc:firepit"
 			id: "7E60DB1DFF798B1C"
+			rewards: [{
+				id: "5F913D08D7A68F5E"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "火……温暖的火"
@@ -620,6 +751,11 @@
 			hide_until_deps_visible: true
 			icon: "tfc:ceramic/pot"
 			id: "6D3869F6AB5ECDD2"
+			rewards: [{
+				id: "6B711B1A2C62E31A"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "一些比较基础的烹饪"
 			tasks: [
 				{
@@ -656,6 +792,11 @@
 				id: "tfc:food/cooked_mutton"
 			}
 			id: "718D4BF687097875"
+			rewards: [{
+				id: "03F5C14A4BAB29C0"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "你需要吃熟肉，对吧？没有人类是不吃烤熟的肉的。"
 			tasks: [{
 				id: "2C130E67E896C049"
@@ -672,36 +813,6 @@
 			title: "烤熟了再吃"
 			x: -4.5d
 			y: 6.0d
-		}
-		{
-			dependencies: ["6C9C6088595C7D07"]
-			description: [
-				"群峦传说修改了床的配方，这使得你无法在前期成功做出床。这使你只能使用不能度过夜晚，但是可以储存重生点的干草床代替。"
-				""
-				"要搭建干草床，你需要在地面上水平放置两个干草块，随后手持一张大兽皮对其按下右键。然而由于产出大兽皮的动物要么难以寻得，要么具有攻击性，大兽皮在前期极难获得。所以本任务并没有强制搭建干草床，你可以等有条件获取大兽皮后再进行搭建。"
-			]
-			hide_dependency_lines: true
-			hide_text_until_complete: false
-			hide_until_deps_visible: true
-			icon: "tfc:thatch"
-			id: "19CAFD0FAE153C2F"
-			size: 1.5d
-			subtitle: "先不做也可以"
-			tasks: [
-				{
-					id: "678A992E9D2263E5"
-					title: "请在阅读以下内容后点击确认"
-					type: "checkmark"
-				}
-				{
-					id: "6C498C1019EDC6A9"
-					item: "tfc:thatch"
-					type: "item"
-				}
-			]
-			title: "&e并不柔软的床"
-			x: -7.734883762093844d
-			y: 5.172304223003408d
 		}
 		{
 			dependencies: ["57F6BC38D1A881B4"]
@@ -730,6 +841,11 @@
 				tag: { }
 			}
 			id: "16F9997D7A1F6EB3"
+			rewards: [{
+				id: "0828E96A2D31C445"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "毕竟没人愿意等"
@@ -786,6 +902,11 @@
 			}
 			id: "24A56687163D36FE"
 			ignore_reward_blocking: true
+			rewards: [{
+				id: "5993A0DEDD028809"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "没人敢拿刚烧好的东西"
 			tasks: [{
 				id: "02266A229827860B"
@@ -808,11 +929,16 @@
 			description: [
 				"如果你不幸受伤了，你可以去路边随便采一些花，然后揉在一起搓成一个药草球来治疗你的肢体，虽然他单次恢复量很少，好在廉价"
 				""
-				"&a&n在治疗一个肢体部位的时候不能再治疗一次同一部位，需要等肢体恢复效果结束才能再次治疗&r&r"
+				"&a&n在治疗多个肢体部位损伤的时不建议再治疗多次同一部位，最好等肢体恢复效果结束才能再次治疗&r&r"
 			]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "42F9E68FB24385E8"
+			rewards: [{
+				id: "51C2444C3EF4229E"
+				type: "xp"
+				xp: 25
+			}]
 			subtitle: "嚼碎了抹在伤口上"
 			tasks: [{
 				id: "5A3F80BCBF4FB9CB"
@@ -820,8 +946,8 @@
 				type: "item"
 			}]
 			title: "疼！但是得治"
-			x: -4.5d
-			y: -1.5d
+			x: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -833,6 +959,11 @@
 			hide_until_deps_visible: true
 			icon: "minecraft:oak_planks"
 			id: "49367AA483E68761"
+			rewards: [{
+				id: "3BF06AECC699BA47"
+				type: "xp"
+				xp: 25
+			}]
 			shape: "gear"
 			size: 3.0d
 			subtitle: "前往下一章"
@@ -848,6 +979,11 @@
 			hide_dependency_lines: true
 			id: "54D81CF17173B502"
 			invisible: true
+			rewards: [{
+				id: "1708ED2BEE190D1B"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "1EA2EECCA05DBE87"
 				item: "kubejs:obsidian_shards"
@@ -859,6 +995,11 @@
 		{
 			dependencies: ["54D81CF17173B502"]
 			id: "4557CEE602F8136A"
+			rewards: [{
+				id: "42E35F1B932DB345"
+				type: "xp"
+				xp: 25
+			}]
 			tasks: [{
 				id: "26BCD725201034B9"
 				item: {
@@ -875,16 +1016,105 @@
 		}
 		{
 			dependencies: ["2DB49F7DE2CD977C"]
+			description: [
+				"如果你觉得受了伤可以回血就无忧无虑、可能就要失望了"
+				""
+				"我们的身体会受伤、如果受伤后不及时治疗、会导致debuff和减少血量上限"
+				"当你满血时、身体会缓慢恢复伤势、如果不是满血则无法自然恢复伤势"
+			]
 			hide_until_deps_complete: true
 			id: "2D3E65274951DC05"
+			rewards: [{
+				id: "3A3832DBFC69CFCD"
+				type: "xp"
+				xp: 25
+			}]
+			subtitle: "小心受伤"
 			tasks: [{
 				id: "1B8B9843D0A49ACA"
 				title: "我们的身体"
 				type: "checkmark"
 			}]
 			title: "血肉之躯"
-			x: -6.0d
-			y: -2.5d
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["01A61645DD554B40"]
+			description: [
+				"阿舍利石器是一种多功能工具"
+				"能够同时担任刀-斧-铲的工作"
+				""
+				"但由于他无法绑定、所以耐久比基础的石器低、并且虽然是多功能工具、但他的效率会略低于其他工具"
+				""
+				"{@pagebreak}"
+				"历史性介绍:"
+				"阿舍利石器是旧石器时代中期的核心石器文化遗存，因 1867 年首次发现于法国圣阿舍利遗址得名"
+				"存续于约 170 万至 20万年前，由直立人主导打造，部分早期智人也有使用。"
+				""
+				"其核心器物为对称规整的手斧，还包括薄刃斧、砍斫器等，采用勒瓦娄哇预制石核技术打制，"
+				""
+				"相较奥杜威文化的简单石器，技术与审美均大幅进步。"
+				""
+				"该石器分布极广，覆盖非洲、欧洲及亚洲西部、南部，是古人类空间认知、双手协调能力发展的重要标志。"
+				""
+				"后期随早期智人发展，阿舍利石器逐渐被莫斯特文化的精细化石片工具取代，成为直立人适应环境、技术演进的关键见证。"
+			]
+			hide_until_deps_complete: true
+			id: "6A4169F50CDA885A"
+			subtitle: "多功能工具"
+			tasks: [{
+				id: "582AE1479F497BDD"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:rock_tool/diamond_acheulian)item(kubejs:rock_tool/obsidian_acheulian)item(kubejs:rock_tool/flint_acheulian)item(kubejs:rock_tool/extrusive_acheulian)item(kubejs:rock_tool/intrusive_acheulian)item(kubejs:rock_tool/metamorphic_acheulian)item(kubejs:rock_tool/sedimentary_acheulian))"
+					}
+				}
+				type: "item"
+			}]
+			title: "阿舍利石器"
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			id: "1D58F8A547965919"
+			tasks: [{
+				id: "281606EB782BA090"
+				item: "kubejs:weak_bandage"
+				type: "item"
+			}]
+			title: "简易绷带"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2DB49F7DE2CD977C"]
+			description: [
+				"失去了小地图神力，你需要使用特定物品来暂时解锁"
+				"指南针-解锁路径点"
+				"望远镜-解锁小地图"
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "00B42CE4C06946D9"
+			tasks: [{
+				id: "180E3453636014D6"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							maps: [I; ]
+						}
+					}
+					id: "map_atlases:atlas"
+				}
+				type: "item"
+			}]
+			title: "我看不清，我看不见"
+			x: -8.0d
+			y: -3.0d
 		}
 	]
 	title: "第零章：起始"
