@@ -396,21 +396,21 @@ ServerEvents.tags("block", event => {
 
         event.add('kubejs:ore/ilmenite',
             [
-                "kubejs:ore/poor_ilmenite",
-                "kubejs:ore/ilmenite",
-                "kubejs:ore/rich_ilmenite"
+                "tfc:ore/poor_ilmenite",
+                "tfc:ore/ilmenite",
+                "tfc:ore/rich_ilmenite"
             ])
         event.add('kubejs:ore/manganese',
             [
-                "kubejs:ore/poor_manganese",
-                "kubejs:ore/manganese",
-                "kubejs:ore/rich_manganese"
+                "tfc:ore/poor_manganese",
+                "tfc:ore/manganese",
+                "tfc:ore/rich_manganese"
             ])
         event.add('kubejs:ore/vanadium',
             [
-                "kubejs:ore/poor_vanadium",
-                "kubejs:ore/vanadium",
-                "kubejs:ore/rich_vanadium"
+                "tfc:ore/poor_vanadium",
+                "tfc:ore/vanadium",
+                "tfc:ore/rich_vanadium"
             ])
 
 
