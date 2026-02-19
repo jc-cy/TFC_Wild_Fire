@@ -1,12 +1,7 @@
-// 1. 引入必要的Java类（创建新物品栈、获取物品实例）
-//const ItemStack = Java.type('net.minecraft.world.item.ItemStack');
-//const Items = Java.type('net.minecraft.world.item.Items');
 
-// 2. 核心：监听FoodRottenEvent事件（包名必须和你的Java类完全一致）
-/*ForgeEvents.onEvent("first.wildfires.api.customEvent.FoodRottenEvent", event => {
-    // ===================== 第一步：定义所有物品腐烂映射配置 =====================
-    // 肉类物品ID列表 → 腐烂后：kubejs:rotten_meat
-    const rotten_meat = [
+
+ForgeEvents.onEvent("first.wildfires.api.customEvent.FoodRottenEvent", event => {//食物腐烂
+      const rotten_meat = [
         'tfc:food/hyena', 'tfc:food/duck', 'tfc:food/chevon', 'tfc:food/gran_feline',
         'tfc:food/camelidae', 'tfc:food/cooked_beef', 'tfc:food/cooked_pork',
         'tfc:food/cooked_chicken', 'tfc:food/cooked_quail', 'farmersdelight:minced_beef',
@@ -173,7 +168,7 @@
         'firmalife:jar/red_grapes_unsealed', 'firmalife:jar/white_grapes_unsealed'
     ];
 
-    // ===================== 第二步：构建腐烂映射表 =====================
+    
     const rottenConfig = {};
 
     // 批量填充所有物品的腐烂映射关系
@@ -186,37 +181,18 @@
     plated_food.forEach(plateId => rottenConfig[plateId] = 'kubejs:rotten_platter');
     jar.forEach(jarId => rottenConfig[jarId] = 'kubejs:rotten_jam');
 
-    // ===================== 第三步：核心事件处理逻辑 =====================
-    // 3.1 获取事件中的旧物品栈，跳过空物品
-    const oldItemStack = event.getOldItemStack();
-    if (oldItemStack.isEmpty()) {
-        console.log("[食物腐烂事件] 空物品栈，跳过处理");
-        return;
+let config1 = {
+    "minecraft:beef": "minecraft:acacia_boat"
+}
+
+    
+    /**
+     * @type {Internal.ItemStack}
+     */
+    let item = event.getNewItemStack()
+    console.log(`检查效果：${item}`);
+    let newItem = config1[item.id]
+    if (newItem) {
+        event.setNewItemStack(Item.of(newItem))
     }
-
-    // 3.2 获取旧物品ID和数量
-    const oldItemId = oldItemStack.getItem().getRegistryName().toString();
-    const itemCount = oldItemStack.getCount();
-
-    // 3.3 查映射表，执行腐烂逻辑
-    if (rottenConfig[oldItemId]) {
-        // 获取腐烂后的目标物品ID
-        const newItemId = rottenConfig[oldItemId];
-        console.log(`[食物腐烂事件] 处理物品：${oldItemId} → ${newItemId}（数量：${itemCount}）`);
-
-        // 3.4 创建新物品栈（兼容自定义物品，加容错）
-        const targetItem = Items.REGISTRY.get(newItemId) || Items.ROTTEN_FLESH;
-        const newItemStack = ItemStack.of(targetItem, itemCount);
-
-        // 3.5 可选：继承原物品的NBT（比如保质期、自定义标签）
-        if (oldItemStack.hasTag()) {
-            newItemStack.setTag(oldItemStack.getTag().copy());
-        }
-
-        // 3.6 关键：把新物品栈设置回事件中
-        event.setNewItemStack(newItemStack);
-    } else {
-        // 非目标物品，保持原样
-        console.log(`[食物腐烂事件] 非腐烂目标物品：${oldItemId}，不处理`);
-    }
-});*/
+})
