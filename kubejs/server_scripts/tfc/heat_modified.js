@@ -48,7 +48,18 @@ TFCEvents.data(e => {
   e.itemHeat('minecraft:red_mushroom', 0.9, null, null)
   e.itemHeat('repas_de_survie:rat', 0.9, null, null)
   e.itemHeat('kubejs:unfired_crucible_mold', 3.5, null, null)
+  e.itemHeat('kubejs:corundum_brick', 2.6, null, null)
+  e.itemHeat('kubejs:corundum_brick_block', 2.6, null, null)
 
+  e.itemHeat('@create', 1, null, null)
+  e.itemHeat('@design_decor', 1, null, null)
+  e.itemHeat('@immersiveengineering', 1, null, null)
+  e.itemHeat('@copycats', 1, null, null)
+  e.itemHeat('@tfc_ie_addon', 1, null, null)
+  e.itemHeat('@ad_astra', 1, null, null)
+  e.itemHeat('@firmalife', 1, null, null)
+  e.itemHeat('@createprism', 1, null, null)
+  e.itemHeat('@minecraft', 1, null, null)
   /*e.itemHeat('#tfc:dirty_piles', 0.1, null, null)
   const heatitem = [
     '#forge:ores/rocky_chunks',
@@ -138,7 +149,44 @@ TFCEvents.data(event => {
   event.itemHeat('kubejs:triple_red_steel', triplemetaltp,
     Math.floor(metaltp.red_steel * 0.6),
     Math.floor(metaltp.red_steel * 0.8)
+
   );
+  //搅拌头
+  event.itemHeat('create:whisk', triplemetaltp,
+    Math.floor(metaltp.wrought_iron * 0.6),
+    Math.floor(metaltp.wrought_iron * 0.8)
+  );
+
+  //搅拌头
+  event.itemHeat('kubejs:whisk_stirrer_head_blank', 2.857,
+    Math.floor(metaltp.wrought_iron * 0.6),
+    Math.floor(metaltp.wrought_iron * 0.8)
+  );
+
+  //锻铁双杆
+  event.itemHeat('kubejs:wrought_iron_double_rod', 2.857,
+    Math.floor(metaltp.wrought_iron * 0.6),
+    Math.floor(metaltp.wrought_iron * 0.8)
+  );
+
+  //锰钢搅拌器
+  event.itemHeat('createmetallurgy:sturdy_whisk', triplemetaltp,
+    Math.floor(metaltp.black_steel * 0.6),
+    Math.floor(metaltp.black_steel * 0.8)
+  );
+
+  //锰钢搅拌器
+  event.itemHeat('kubejs:whisk_black_steel_head_blank', 2.857,
+    Math.floor(metaltp.black_steel * 0.6),
+    Math.floor(metaltp.black_steel * 0.8)
+  );
+
+  //锰钢搅拌器
+  event.itemHeat('kubejs:black_steel_double_rod', 2.857,
+    Math.floor(metaltp.black_steel * 0.6),
+    Math.floor(metaltp.black_steel * 0.8)
+  );
+
 });//三锭
 TFCEvents.data(event => {
   // 1. 基础配置表
@@ -346,4 +394,29 @@ TFCEvents.data(event => {
     event.itemHeat(itemId, 0.5 * 2.857, forgingTemp, weldingTemp);
     event.itemHeat(itemId2, 1 * 2.857, forgingTemp, weldingTemp);
   });
+
+  //新金属融化热值
+  const ingot_type = [
+    { name: 'ingot', number: 100, triplemetaltp: 2.857 },
+    { name: 'double_ingot', number: 200, triplemetaltp: 2.857 * 2 },
+    { name: 'sheet', number: 200, triplemetaltp: 2.857 * 2 },
+    { name: 'double_sheet', number: 400, triplemetaltp: 2.857 * 4 },
+    { name: 'rod', number: 50, triplemetaltp: 2.857 / 2 }]
+  const new_metal = [
+
+    { name: "titanium_alloy", temperature: 1680, metal: "tfc:metal/titanium_alloy" },
+    { name: "titanium", temperature: 1668, metal: "tfc:metal/titanium" },
+    { name: "vanadium", temperature: 1917, metal: "tfc:metal/vanadium" },
+    { name: "manganese", temperature: 1246, metal: "tfc:metal/manganese" }
+  ]
+  new_metal.forEach(metal => {
+    ingot_type.forEach(type => {
+
+      event.itemHeat(`tfc:metal/${type.name}/${metal.name}`, type.triplemetaltp,
+        Math.floor(metal.temperature * 0.6),
+        Math.floor(metal.temperature * 0.8)
+      )
+    })
+  })
+
 });

@@ -849,6 +849,10 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'create:crafting/kinetics/flywheel' })
   e.remove({ id: 'create:crafting/kinetics/rotation_speed_controller' })
   e.remove({ id: 'create:crafting/kinetics/mechanical_crafter' })
+  e.remove({ id: 'immersiveengineering:crafting/waterwheel_segment' })
+  e.remove({ id: 'immersiveengineering:crafting/watermill' })
+  e.remove({ id: 'immersiveengineering:crafting/windmill_sail' })
+  e.remove({ id: 'immersiveengineering:crafting/windmill_blade' })
 
   //删除ie左轮手枪及其相关组件配方
   e.remove({ id: 'immersiveengineering:crafting/toolupgrade_revolver_magazine' })

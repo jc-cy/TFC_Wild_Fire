@@ -878,6 +878,7 @@ ServerEvents.recipes(e => {
     { name: "create:brass_scaffolding", temperature: 930, metal: "tfc:metal/brass", number: 50 },
     { name: "createprism:brass_glass_scaffolding", temperature: 930, metal: "tfc:metal/brass", number: 50 },
     { name: "createprism:brass_clear_glass_scaffolding", temperature: 930, metal: "tfc:metal/brass", number: 50 },
+    { name: "create:fluid_pipe", temperature: 930, metal: "tfc:metal/brass", number: 65 },
 
     // 铜台阶（已删除重复）
     { name: "minecraft:cut_copper_slab", temperature: 1085, metal: "tfc:metal/copper", number: 500 },
@@ -1071,7 +1072,7 @@ ServerEvents.recipes(e => {
     tfc.heating(`${metal_block.name}`, metal_block.temperature).resultFluid(Fluid.of(metal_block.metal, metal_block.number))
       .useDurability(true);
     crucible(`${metal_block.name}`, metal_block.metal, metal_block.number, metal_block.temperature)
-  })
+  });
 
   const ingot_type = [
     { name: 'ingot', number: 100 },
@@ -1083,7 +1084,7 @@ ServerEvents.recipes(e => {
 
     { name: "titanium_alloy", temperature: 1680, metal: "tfc:metal/titanium_alloy" },
     { name: "titanium", temperature: 1668, metal: "tfc:metal/titanium" },
-    { name: "vanadium", temperature: 1910, metal: "tfc:metal/vanadium" },
+    { name: "vanadium", temperature: 1917, metal: "tfc:metal/vanadium" },
     { name: "manganese", temperature: 1246, metal: "tfc:metal/manganese" }
   ]
   new_metal.forEach(metal => {
@@ -1093,7 +1094,7 @@ ServerEvents.recipes(e => {
         .useDurability(true);
       crucible(`tfc:metal/${type.name}/${metal.name}`, metal.metal, type.number, metal.temperature)
     })
-  })
+  });
 
 
   tfc.heating('kubejs:alkalized_bauxite_raw_material', 1500).resultItem('kubejs:bauxite_clinker')

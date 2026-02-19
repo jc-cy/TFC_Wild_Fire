@@ -1,0 +1,20 @@
+//多方块实体搭建
+MultiBlockCreateVehicle(
+    //多方块名称
+    'tfc:submarine', 
+    //生成的实体名称
+    'alexscaves:submarine', 
+    //搭建的核心方块
+    'kubejs:submarine_core', 
+    //搭建需要的工具
+    "immersiveengineering:hammer"
+);MultiBlockCreateVehicle(
+    //多方块名称
+    'tfc:biplane', 
+    //生成的实体名称
+    'immersive_aircraft:biplane', 
+    //搭建的核心方块
+    'minecraft:furnace', 
+    //搭建需要的工具
+    "immersiveengineering:hammer"
+);

@@ -935,6 +935,14 @@ ServerEvents.tags("item", event => {
             "tfc:ore/rich_sphalerite",
             "tfc:ore/rich_tetrahedrite",
         ])
+        //删除ie坚韧布料tag
+        event.remove('forge:fabric_hemp', [
+            "tfc:burlap_cloth",
+            "immersiveengineering:hemp_fabric"
+        ])
+        event.add('forge:fabric_hemp', [
+            "sns:reinforced_fabric",
+        ])
     /*
     
     //删除群峦的箱子tag
