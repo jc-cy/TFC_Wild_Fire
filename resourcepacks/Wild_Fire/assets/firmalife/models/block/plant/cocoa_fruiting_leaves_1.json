@@ -1,0 +1,81 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made by Vexxel#9727 with Blockbench || https://github.com/Vexxel || © Vexxel. All rights reserved.",
+	"textures": {
+		"1": "firmalife:block/fruit_tree/cocoa_leaves",
+		"2": "firmalife:block/fruit_tree/cocoa",
+		"particle": "firmalife:block/fruit_tree/cocoa_fruiting_leaves"
+	},
+	"elements": [
+		{
+			"name": "leaves",
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#1", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#1", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#1", "cullface": "down"}
+			}
+		},
+		{
+			"name": "fruit",
+			"from": [10, 10.5, 11.5],
+			"to": [14, 16.5, 15.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9, 19.5, 9.5]},
+			"faces": {
+				"north": {"uv": [0, 4, 4, 10], "texture": "#2"},
+				"east": {"uv": [0, 4, 4, 10], "texture": "#2"},
+				"south": {"uv": [0, 4, 4, 10], "texture": "#2"},
+				"west": {"uv": [0, 4, 4, 10], "texture": "#2"},
+				"up": {"uv": [0, 0, 4, 4], "rotation": 180, "texture": "#2"},
+				"down": {"uv": [0, 0, 4, 4], "rotation": 180, "texture": "#2"}
+			}
+		},
+		{
+			"name": "fruit",
+			"from": [9.99162, 3.01254, 4],
+			"to": [13.99162, 9.01254, 8],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [11.99162, 6.01254, 6]},
+			"faces": {
+				"north": {"uv": [0, 4, 4, 10], "texture": "#2"},
+				"east": {"uv": [0, 4, 4, 10], "texture": "#2"},
+				"south": {"uv": [0, 4, 4, 10], "texture": "#2"},
+				"west": {"uv": [0, 4, 4, 10], "texture": "#2"},
+				"up": {"uv": [0, 0, 4, 4], "rotation": 180, "texture": "#2"},
+				"down": {"uv": [0, 0, 4, 4], "rotation": 180, "texture": "#2"}
+			}
+		},
+		{
+			"name": "fruit",
+			"from": [0.23255, -1.14178, 9],
+			"to": [4.23255, 4.85822, 13],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [2.23255, 1.85822, 11]},
+			"faces": {
+				"north": {"uv": [0, 4, 4, 10], "texture": "#2"},
+				"east": {"uv": [0, 4, 4, 10], "texture": "#2"},
+				"south": {"uv": [0, 4, 4, 10], "texture": "#2"},
+				"west": {"uv": [0, 4, 4, 10], "texture": "#2"},
+				"up": {"uv": [0, 0, 4, 4], "rotation": 180, "texture": "#2"},
+				"down": {"uv": [0, 0, 4, 4], "rotation": 180, "texture": "#2"}
+			}
+		},
+		{
+			"name": "fruit",
+			"from": [3, 7.2451, -0.84984],
+			"to": [7, 13.2451, 3.15016],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [5, 10.2451, 1.15016]},
+			"faces": {
+				"north": {"uv": [0, 4, 4, 10], "texture": "#2"},
+				"east": {"uv": [0, 4, 4, 10], "texture": "#2"},
+				"south": {"uv": [0, 4, 4, 10], "texture": "#2"},
+				"west": {"uv": [0, 4, 4, 10], "texture": "#2"},
+				"up": {"uv": [0, 0, 4, 4], "rotation": 180, "texture": "#2"},
+				"down": {"uv": [0, 0, 4, 4], "rotation": 180, "texture": "#2"}
+			}
+		}
+	]
+}
