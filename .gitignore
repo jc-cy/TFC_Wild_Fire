@@ -20,3 +20,5 @@
 !/start.ps1
 !/start.sh
 !/variables.txt
+.probe/*
+!.probe/probe-settings.json

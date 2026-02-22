@@ -6,6 +6,55 @@ StartupEvents.registry("block", event => {
 
 })//安山齿轮机箱
 StartupEvents.registry('block', event => {
+
+        // 1. 天然水石
+        event.create('kubejs:tfc/water_stone',"cardinal")
+                //可以含水
+                .hardness(0.5)          // 硬度
+                .box(5, 0, 1, 11, 3, 15) // 自定义碰撞箱
+                .requiresTool(false)    
+                .tagBlock("kubejs:polisher")
+               /* .property(BlockProperties.FACING)
+                .placementState(callback=>{
+                        callback.set(BlockProperties.FACING,callback.horizontalDirection.opposite)
+                })*/
+
+
+        // 2. 砂岩磨刀石
+        event.create('kubejs:tfc/sandstone_whetstone',"cardinal")
+                .hardness(0.5)
+                
+
+                .box(5, 0, 1, 11, 3, 15)
+                .requiresTool(false)
+                .tagBlock("kubejs:polisher")
+        // 3. 磨刀石（基础款）
+        event.create('kubejs:tfc/whetstone',"cardinal")
+                .hardness(0.5)
+                
+                .box(5, 0, 1, 11, 3, 15)
+                .requiresTool(false)
+                .tagBlock("kubejs:polisher")
+
+        // 4. 金刚石磨刀石
+        event.create('kubejs:tfc/diamond_whetstone',"cardinal")
+                .hardness(0.5)
+                
+                .box(5, 0, 1, 11, 3, 15)
+                .requiresTool(false)
+                .tagBlock("kubejs:polisher")
+
+        // 5. 铝陶瓷磨刀石
+        event.create('kubejs:tfc/ceramic_stone',"cardinal")
+                .hardness(0.5)
+                
+                .box(5, 0, 1, 11, 3, 15)
+                .requiresTool(false)
+                .tagBlock("kubejs:polisher")
+
+
+});
+StartupEvents.registry('block', event => {
         event.create('unfired_crucible_mold') // 未硬化的坩埚模具
         event.create('corundum_brick_block').tag("tfc:blast_furnace_insulation").tag("tfc:bloomery_insulation")// 刚玉砖块
         event.create('crucible_mold') // 坩埚模具
@@ -38,7 +87,7 @@ StartupEvents.registry('block', event => {
                 .model("kubejs:block/wild_crop/wild_red_mushroom")
                 .tagBlock('tfc:mineable_with_sharp_tool')
 
-                event.create('kubejs:wild_fluorescyst_shroom')
+        event.create('kubejs:wild_fluorescyst_shroom')
                 .material('moss')
                 .soundType('crop')
                 .hardness('0.5')
@@ -60,24 +109,24 @@ StartupEvents.registry('block', event => {
                                 entity.getBlock().set('kubejs:tfc/dried_sinew')
                         })
                 })
-                
-        event.create('kubejs:underwater_turbine','cardinal')//水下涡轮
-        .model('kubejs:block/underwater_turbine')
-        .soundType('netherite_block')
-        .hardness(20) // 设置硬度
-        .tagBlock('minecraft:mineable/pickaxe')
-        .tagBlock('tfc:needs_wrought_iron_tool')
-        .requiresTool()
-        .defaultCutout()
-        
-        event.create('kubejs:submarine_core','cardinal')//潜艇核心
-        .model('kubejs:block/submarine_core')
-        .soundType('copper')
-        .hardness(20) // 设置硬度
-        .tagBlock('minecraft:mineable/pickaxe')
-        .tagBlock('tfc:needs_copper_tool')
-        .requiresTool()
-        .defaultCutout()
+
+        event.create('kubejs:underwater_turbine', 'cardinal')//水下涡轮
+                .model('kubejs:block/underwater_turbine')
+                .soundType('netherite_block')
+                .hardness(20) // 设置硬度
+                .tagBlock('minecraft:mineable/pickaxe')
+                .tagBlock('tfc:needs_wrought_iron_tool')
+                .requiresTool()
+                .defaultCutout()
+
+        event.create('kubejs:submarine_core', 'cardinal')//潜艇核心
+                .model('kubejs:block/submarine_core')
+                .soundType('copper')
+                .hardness(20) // 设置硬度
+                .tagBlock('minecraft:mineable/pickaxe')
+                .tagBlock('tfc:needs_copper_tool')
+                .requiresTool()
+                .defaultCutout()
 })
 const $CrucibleBlock = Java.loadClass('net.dries007.tfc.common.blocks.devices.CrucibleBlock')
 const $ExtendedProperties = Java.loadClass('net.dries007.tfc.common.blocks.ExtendedProperties')
@@ -106,128 +155,128 @@ StartupEvents.registry('item', event => {
         ))
 })
 StartupEvents.registry("block", event => {
-    //注册宝石砂    
-    const deposits = [
-        'andesite',
-        'basalt',
-        'chalk',
-        'chert',
-        'claystone',
-        'conglomerate',
-        'dacite',
-        'diorite',
-        'dolomite',
-        'gabbro',
-        'gneiss',
-        'granite',
-        'limestone',
-        'marble',
-        'phyllite',
-        'quartzite',
-        'rhyolite',
-        'schist',
-        'shale',
-        'slate'
-    ]
+        //注册宝石砂    
+        const deposits = [
+                'andesite',
+                'basalt',
+                'chalk',
+                'chert',
+                'claystone',
+                'conglomerate',
+                'dacite',
+                'diorite',
+                'dolomite',
+                'gabbro',
+                'gneiss',
+                'granite',
+                'limestone',
+                'marble',
+                'phyllite',
+                'quartzite',
+                'rhyolite',
+                'schist',
+                'shale',
+                'slate'
+        ]
 
-    deposits.forEach(deposit => {
-        //宝石砂
-        event.create(`kubejs:deposit/gem_gravel/${deposit}`)
-        .gravelSoundType()
-        .model(`kubejs:block/deposit/gem_gravel/${deposit}`)
-        .tag('forge:gravel')
-        .tagBlock('minecraft:mineable/shovel')
-        .requiresTool()
-        //锰结核砂
-        event.create(`kubejs:deposit/manganese/${deposit}`)
-        .gravelSoundType()
-        .model(`kubejs:block/deposit/manganese/${deposit}`)
-        .tag('forge:gravel')
-        .tagBlock('minecraft:mineable/shovel')
-        .requiresTool()
+        deposits.forEach(deposit => {
+                //宝石砂
+                event.create(`kubejs:deposit/gem_gravel/${deposit}`)
+                        .gravelSoundType()
+                        .model(`kubejs:block/deposit/gem_gravel/${deposit}`)
+                        .tag('forge:gravel')
+                        .tagBlock('minecraft:mineable/shovel')
+                        .requiresTool()
+                //锰结核砂
+                event.create(`kubejs:deposit/manganese/${deposit}`)
+                        .gravelSoundType()
+                        .model(`kubejs:block/deposit/manganese/${deposit}`)
+                        .tag('forge:gravel')
+                        .tagBlock('minecraft:mineable/shovel')
+                        .requiresTool()
 
-        //钛铁矿
-        event.create(`kubejs:ore/poor_ilmenite/${deposit}`)
-        .model(`kubejs:block/ore/poor_ilmenite/${deposit}`)
-        .tag('forge:ores')
-        .tag('forge:ores/ilmenite')
-        .tagBlock('minecraft:mineable/pickaxe')
-        .tagBlock('minecraft:needs_diamond_tool')
-        .hardness(12)
-        .requiresTool()
+                //钛铁矿
+                event.create(`kubejs:ore/poor_ilmenite/${deposit}`)
+                        .model(`kubejs:block/ore/poor_ilmenite/${deposit}`)
+                        .tag('forge:ores')
+                        .tag('forge:ores/ilmenite')
+                        .tagBlock('minecraft:mineable/pickaxe')
+                        .tagBlock('minecraft:needs_diamond_tool')
+                        .hardness(12)
+                        .requiresTool()
 
-        event.create(`kubejs:ore/ilmenite/${deposit}`)
-        .model(`kubejs:block/ore/ilmenite/${deposit}`)
-        .tag('forge:ores')
-        .tag('forge:ores/ilmenite')
-        .tagBlock('minecraft:mineable/pickaxe')
-        .tagBlock('minecraft:needs_diamond_tool')
-        .hardness(12)
-        .requiresTool()
+                event.create(`kubejs:ore/ilmenite/${deposit}`)
+                        .model(`kubejs:block/ore/ilmenite/${deposit}`)
+                        .tag('forge:ores')
+                        .tag('forge:ores/ilmenite')
+                        .tagBlock('minecraft:mineable/pickaxe')
+                        .tagBlock('minecraft:needs_diamond_tool')
+                        .hardness(12)
+                        .requiresTool()
 
-        event.create(`kubejs:ore/rich_ilmenite/${deposit}`)
-        .model(`kubejs:block/ore/rich_ilmenite/${deposit}`)
-        .tag('forge:ores')
-        .tag('forge:ores/ilmenite')
-        .tagBlock('minecraft:mineable/pickaxe')
-        .tagBlock('minecraft:needs_diamond_tool')
-        .hardness(12)
-        .requiresTool()
+                event.create(`kubejs:ore/rich_ilmenite/${deposit}`)
+                        .model(`kubejs:block/ore/rich_ilmenite/${deposit}`)
+                        .tag('forge:ores')
+                        .tag('forge:ores/ilmenite')
+                        .tagBlock('minecraft:mineable/pickaxe')
+                        .tagBlock('minecraft:needs_diamond_tool')
+                        .hardness(12)
+                        .requiresTool()
 
-        //原生钒矿
-        event.create(`kubejs:ore/poor_native_vanadium/${deposit}`)
-        .model(`kubejs:block/ore/poor_native_vanadium/${deposit}`)
-        .tag('forge:ores')
-        .tag('forge:ores/native_vanadium')
-        .tagBlock('minecraft:mineable/pickaxe')
-        .tagBlock('minecraft:needs_stone_tool')
-        .hardness(5)
-        .requiresTool()
+                //原生钒矿
+                event.create(`kubejs:ore/poor_native_vanadium/${deposit}`)
+                        .model(`kubejs:block/ore/poor_native_vanadium/${deposit}`)
+                        .tag('forge:ores')
+                        .tag('forge:ores/native_vanadium')
+                        .tagBlock('minecraft:mineable/pickaxe')
+                        .tagBlock('minecraft:needs_stone_tool')
+                        .hardness(5)
+                        .requiresTool()
 
-        event.create(`kubejs:ore/native_vanadium/${deposit}`)
-        .model(`kubejs:block/ore/native_vanadium/${deposit}`)
-        .tag('forge:ores')
-        .tag('forge:ores/native_vanadium')
-        .tagBlock('minecraft:mineable/pickaxe')
-        .tagBlock('minecraft:needs_stone_tool')
-        .hardness(5)
-        .requiresTool()
+                event.create(`kubejs:ore/native_vanadium/${deposit}`)
+                        .model(`kubejs:block/ore/native_vanadium/${deposit}`)
+                        .tag('forge:ores')
+                        .tag('forge:ores/native_vanadium')
+                        .tagBlock('minecraft:mineable/pickaxe')
+                        .tagBlock('minecraft:needs_stone_tool')
+                        .hardness(5)
+                        .requiresTool()
 
-        event.create(`kubejs:ore/rich_native_vanadium/${deposit}`)
-        .model(`kubejs:block/ore/rich_native_vanadium/${deposit}`)
-        .tag('forge:ores')
-        .tag('forge:ores/native_vanadium')
-        .tagBlock('minecraft:mineable/pickaxe')
-        .tagBlock('minecraft:needs_stone_tool')
-        .hardness(5)
-        .requiresTool()
+                event.create(`kubejs:ore/rich_native_vanadium/${deposit}`)
+                        .model(`kubejs:block/ore/rich_native_vanadium/${deposit}`)
+                        .tag('forge:ores')
+                        .tag('forge:ores/native_vanadium')
+                        .tagBlock('minecraft:mineable/pickaxe')
+                        .tagBlock('minecraft:needs_stone_tool')
+                        .hardness(5)
+                        .requiresTool()
 
-        //锰结核
-        event.create(`kubejs:ore/poor_manganese/${deposit}`)
-        .model(`kubejs:block/ore/poor_manganese/${deposit}`)
-        .tag('forge:ores')
-        .tag('forge:ores/manganese')
-        .tagBlock('minecraft:mineable/pickaxe')
-        .tagBlock('minecraft:needs_diamond_tool')
-        .hardness(12)
-        .requiresTool()
+                //锰结核
+                event.create(`kubejs:ore/poor_manganese/${deposit}`)
+                        .model(`kubejs:block/ore/poor_manganese/${deposit}`)
+                        .tag('forge:ores')
+                        .tag('forge:ores/manganese')
+                        .tagBlock('minecraft:mineable/pickaxe')
+                        .tagBlock('minecraft:needs_diamond_tool')
+                        .hardness(12)
+                        .requiresTool()
 
-        event.create(`kubejs:ore/manganese/${deposit}`)
-        .model(`kubejs:block/ore/manganese/${deposit}`)
-        .tag('forge:ores')
-        .tag('forge:ores/manganese')
-        .tagBlock('minecraft:mineable/pickaxe')
-        .tagBlock('minecraft:needs_diamond_tool')
-        .hardness(12)
-        .requiresTool()
+                event.create(`kubejs:ore/manganese/${deposit}`)
+                        .model(`kubejs:block/ore/manganese/${deposit}`)
+                        .tag('forge:ores')
+                        .tag('forge:ores/manganese')
+                        .tagBlock('minecraft:mineable/pickaxe')
+                        .tagBlock('minecraft:needs_diamond_tool')
+                        .hardness(12)
+                        .requiresTool()
 
-        event.create(`kubejs:ore/rich_manganese/${deposit}`)
-        .model(`kubejs:block/ore/rich_manganese/${deposit}`)
-        .tag('forge:ores')
-        .tag('forge:ores/manganese')
-        .tagBlock('minecraft:mineable/pickaxe')
-        .tagBlock('minecraft:needs_diamond_tool')
-        .hardness(12)
-        .requiresTool()
+                event.create(`kubejs:ore/rich_manganese/${deposit}`)
+                        .model(`kubejs:block/ore/rich_manganese/${deposit}`)
+                        .tag('forge:ores')
+                        .tag('forge:ores/manganese')
+                        .tagBlock('minecraft:mineable/pickaxe')
+                        .tagBlock('minecraft:needs_diamond_tool')
+                        .hardness(12)
+                        .requiresTool()
         })
 })
