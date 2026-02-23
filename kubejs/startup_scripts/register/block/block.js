@@ -157,10 +157,17 @@ StartupEvents.registry('item', event => {
 
 StartupEvents.registry("block", event => {
         const dirt = [
-                { name: "loam", type: "grass", sound: "gravel", float: 0.5 },
-                { name: "sandy_loam", type: "grass", sound: "gravel", float: 0.5 },
-                { name: "silt", type: "grass", sound: "gravel", float: 0.5 },
-                { name: "silty_loam", type: "grass", sound: "gravel", float: 0.5 }
+                { name: "loam", type: "grass", sound: "grass", float: 0.5 },
+                { name: "sandy_loam", type: "grass", sound: "grass", float: 0.5 },
+                { name: "silt", type: "grass", sound: "grass", float: 0.5 },
+                { name: "silty_loam", type: "grass", sound: "grass", float: 0.5 },
+                { name: "brown", type: "sand", sound: "sand", float: 0.5 },
+                { name: "white", type: "sand", sound: "sand", float: 0.5 },
+                { name: "black", type: "sand", sound: "sand", float: 0.5 },
+                { name: "red", type: "sand", sound: "sand", float: 0.5 },
+                { name: "yellow", type: "sand", sound: "sand", float: 0.5 },
+                { name: "green", type: "sand", sound: "sand", float: 0.5 },
+                { name: "pink", type: "sand", sound: "sand", float: 0.5 }
         ]
         dirt.forEach(dirt => {
                 //泥土台阶
@@ -172,7 +179,8 @@ StartupEvents.registry("block", event => {
                         .tagBlock('tfc:ore_deposits')
                         .tagBlock('tfc:can_landslide')
         })
-})
+});
+
 
 StartupEvents.registry("block", event => {
         //注册宝石砂    

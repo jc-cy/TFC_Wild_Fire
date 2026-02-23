@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "tfc:block/sand/black",
+        "top": "tfc:block/sand/black",
+        "side": "tfc:block/sand/black"
+    }
+}
