@@ -94,7 +94,8 @@ TFCEvents.data(event => {
     blue_steel: 1600,
     red_steel: 1600,
     steel: 1540,
-    wrought_iron: 1535
+    wrought_iron: 1535,
+    nickel: 1453,
   };
   const triplemetaltp = 3 * 2.857
   //铋铜三层锭
@@ -185,6 +186,30 @@ TFCEvents.data(event => {
   event.itemHeat('kubejs:black_steel_double_rod', 2.857,
     Math.floor(metaltp.black_steel * 0.6),
     Math.floor(metaltp.black_steel * 0.8)
+  );
+  
+  //镍方坯
+  event.itemHeat('kubejs:raw_nickel_bloom', 2.857,
+    Math.floor(metaltp.nickel * 0.6),
+    Math.floor(metaltp.nickel * 0.8)
+  );
+  
+  //镍方坯
+  event.itemHeat('kubejs:refined_nickel_bloom', 2.857,
+    Math.floor(metaltp.nickel * 0.6),
+    Math.floor(metaltp.nickel * 0.8)
+  );
+
+  //炽熔镍方坯
+  event.itemHeat('kubejs:hot_raw_nickel_bloom', 2.857,
+    Math.floor(metaltp.nickel * 0.6),
+    Math.floor(metaltp.nickel * 0.8)
+  );
+  
+  //炽熔铁方坯
+  event.itemHeat('kubejs:hot_raw_iron_bloom', 2.857,
+    Math.floor(metaltp.wrought_iron * 0.6),
+    Math.floor(metaltp.wrought_iron * 0.8)
   );
 
 });//三锭

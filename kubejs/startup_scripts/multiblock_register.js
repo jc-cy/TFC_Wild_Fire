@@ -65,9 +65,9 @@ StartupEvents.postInit((event) => {
             new $Character('0'),
             "minecraft:furnace[facing=east]",
             new $Character('I'),
-            "minecraft:spruce_wall_sign[facing=south]",//需要全部木头的靠墙告示牌【
+            "createdieselgenerators:sheet_metal_panel[facing=south]",//需要全部木头的靠墙告示牌【
             new $Character('L'),
-            "minecraft:spruce_wall_sign[facing=north]",//需要全部木头的靠墙告示牌【
+            "createdieselgenerators:sheet_metal_panel[facing=north]",//需要全部木头的靠墙告示牌【
             new $Character('H'),
             $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'create:seats')),
             new $Character('T'),
@@ -83,8 +83,8 @@ StartupEvents.postInit((event) => {
         'tfc:airship',//飞艇
         $PatchouliAPI.makeMultiblock(
             [
-                ['_Z_', '_H_', '_H_', '___', '___',],
-                ['_I_', '_H_', '_H_', '_Z_', '___',],
+                ['___', '_H_', '_H_', '_Z_', '___',],
+                ['_Z_', '_H_', '_H_', '_I_', '___',],
                 ['_I_', '___', '___', '_I_', '___',],
                 ['_Z_', 'itl', 'itl', '_0_', '_K_',]
             ],
@@ -93,9 +93,9 @@ StartupEvents.postInit((event) => {
             new $Character('t'),
             $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'create:seats')),
             new $Character('i'),
-            "minecraft:spruce_wall_sign[facing=south]",//需要全部木头的靠墙告示牌【
+            "createdieselgenerators:sheet_metal_panel[facing=south]",//需要全部木头的靠墙告示牌【
             new $Character('l'),
-            "minecraft:spruce_wall_sign[facing=north]",//需要全部木头的靠墙告示牌【
+            "createdieselgenerators:sheet_metal_panel[facing=north]",//需要全部木头的靠墙告示牌【
             new $Character('I'),
             "farmersdelight:rope",
             new $Character('Z'),
@@ -105,15 +105,15 @@ StartupEvents.postInit((event) => {
             new $Character('H'),
             "minecraft:white_wool",
             new $Character('K'),
-            "create:encased_fan[facing=west]"
+            "create:encased_fan[facing=east]"
         )
     );
     $PatchouliAPI.registerMultiblock(
         'tfc:cargo_airship',//货运飞艇
         $PatchouliAPI.makeMultiblock(
             [
-                ['_Z_', '_H_', '_H_', '___', '___',],
-                ['_I_', '_H_', 'KHK', '_Z_', '___',],
+                ['___', '_H_', '_H_', '_Z_', '___',],
+                ['_Z_', '_H_', 'KHK', '_I_', '___',],
                 ['_I_', '___', '___', '_I_', '___',],
                 ['_Z_', 'MtU', 'MtU', '_0_', '_K_',]
             ],
@@ -132,7 +132,7 @@ StartupEvents.postInit((event) => {
             new $Character('H'),
             "minecraft:white_wool",
             new $Character('K'),
-            "create:encased_fan[facing=west]"
+            "create:encased_fan[facing=east]"
         )
     );
     $PatchouliAPI.registerMultiblock(
@@ -195,9 +195,9 @@ StartupEvents.postInit((event) => {
             new $Character('t'),
             $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'create:seats')),
             new $Character('i'),
-            "minecraft:spruce_wall_sign[facing=south]",
+            "createdieselgenerators:sheet_metal_panel[facing=south]",
             new $Character('l'),
-            "minecraft:spruce_wall_sign[facing=north]",
+            "createdieselgenerators:sheet_metal_panel[facing=north]",
             new $Character('L'),
             "create:shaft[axis=y]",
             new $Character('B'),
@@ -220,9 +220,9 @@ StartupEvents.postInit((event) => {
             new $Character('t'),
             $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'create:seats')),
             new $Character('i'),
-            "minecraft:spruce_wall_sign[facing=south]",//需要全部木头的靠墙告示牌【
+            "createdieselgenerators:sheet_metal_panel[facing=south]",//需要全部木头的靠墙告示牌【
             new $Character('l'),
-            "minecraft:spruce_wall_sign[facing=north]",//需要全部木头的靠墙告示牌【
+            "createdieselgenerators:sheet_metal_panel[facing=north]",//需要全部木头的靠墙告示牌【
             new $Character('I'),
             $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'minecraft:fences')),
             new $Character('B'),
@@ -248,7 +248,7 @@ StartupEvents.postInit((event) => {
             new $Character('L'),
             $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'interiors:floor_chairs')),//不知道怎么写方向、方向为[facing=east]
             new $Character('K'),
-            "create:encased_fan[facing=west]",
+            "create:encased_fan[facing=east]",
             new $Character('P'),
             "minecraft:piston[facing=west]",
             new $Character('p'),

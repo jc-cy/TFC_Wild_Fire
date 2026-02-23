@@ -2,7 +2,7 @@
 ServerEvents.recipes((event) => {
     // 基础配置
     const ID_PREFIX = "kubejs:thirace/create/createmetallurgy/casting_in_basin/";
-    
+
     // 移除旧配方
     event.remove({ type: "createmetallurgy:casting_in_basin" });
 
@@ -34,7 +34,7 @@ ServerEvents.recipes((event) => {
         // 自动生成或清洗 ID
         // 核心修复：将 ID 路径中的冒号替换为下划线，防止报错
         let safeSuffix = idSuffix || output;
-        safeSuffix = safeSuffix.replace(/:/g, '_').replace(/\//g, '_'); 
+        safeSuffix = safeSuffix.replace(/:/g, '_').replace(/\//g, '_');
 
         event.custom({
             type: "createmetallurgy:casting_in_basin",
@@ -48,7 +48,7 @@ ServerEvents.recipes((event) => {
     // ==========================================
     // 1. 特殊/独立配方 (Special Recipes)
     // ==========================================
-    
+
     // 玻璃 (无模具，纯流体)
     addCasting('minecraft:glass', 'kubejs:molten_glass', 250, 80, null, 'glass_foundry');
 
@@ -59,15 +59,19 @@ ServerEvents.recipes((event) => {
     // TFC 坩埚 (需要模具)
     addCasting('tfc:crucible', 'kubejs:molten_corundum', 1000, 640, 'kubejs:crucible_mold', 'molten_corundum_crucible');
 
+    // 镀镍块
+    addCasting('tfc:metal/block/nickel', 'tfc:metal/refined_nickel', 100, 60, '#minecraft:planks', 'block/nickel');
+
 
     // ==========================================
     // 2. TFC 金属块配方 (TFC Metal Blocks)
     // 逻辑: 100mb 流体 + 木板 = 金属块
     // ==========================================
+
     const tfcMetals = [
-        "bismuth", "bismuth_bronze", "black_bronze", "bronze", "brass", 
-        "copper", "gold", "nickel", "rose_gold", "silver", "tin", "zinc", 
-        "sterling_silver", "wrought_iron", "cast_iron", "steel", 
+        "bismuth", "bismuth_bronze", "black_bronze", "bronze", "brass",
+        "copper", "gold", "rose_gold", "silver", "tin", "zinc",
+        "sterling_silver",  "cast_iron", "steel",
         "black_steel", "blue_steel", "red_steel"
     ];
 
@@ -83,6 +87,7 @@ ServerEvents.recipes((event) => {
     });
 
 
+
     // ==========================================
     // 3. 存储块配方 (Storage Blocks)
     // 逻辑: 1000mb 流体 = 存储块 (无固体输入)
@@ -93,7 +98,7 @@ ServerEvents.recipes((event) => {
         { out: "minecraft:gold_block", fluid: "tfc:metal/gold" },
         { out: "minecraft:copper_block", fluid: "tfc:metal/copper" },
         { out: "create:brass_block", fluid: "tfc:metal/brass" },
-        { out: "immersiveengineering:storage_nickel", fluid: "tfc:metal/nickel" },
+        { out: "immersiveengineering:storage_nickel", fluid: "tfc:metal/refined_nickel" },
         { out: "immersiveengineering:storage_steel", fluid: "tfc:metal/steel" },
         { out: "immersiveengineering:storage_constantan", fluid: "tfc_ie_addon:metal/constantan" },
         { out: "immersiveengineering:storage_electrum", fluid: "tfc_ie_addon:metal/electrum" },

@@ -118,6 +118,11 @@ StartupEvents.registry('item', event => {
     event.create('cast_iron_indenter', 'basic')//铸铁压头
     event.create('dense_indenter', 'basic')//致密压头
     event.create('noheating_warmer', 'basic')//燃尽暖手宝
+    
+    event.create('hot_raw_iron_bloom', 'basic')//炽熔生铁方胚
+    event.create('hot_raw_nickel_bloom', 'basic')//炽熔生镍方胚
+    event.create('raw_nickel_bloom', 'basic')//生镍方胚
+    event.create('refined_nickel_bloom', 'basic')//精镍方胚
 
     event.create('wooden_slat_grid', 'basic').tag("vintageimprovements:curving_heads");//木条编网
     //硅以及相关材料注册

@@ -853,6 +853,16 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'immersiveengineering:crafting/watermill' })
   e.remove({ id: 'immersiveengineering:crafting/windmill_sail' })
   e.remove({ id: 'immersiveengineering:crafting/windmill_blade' })
+  e.remove({ id: 'tfc:heating/metal/nickel_sheet' })
+  e.remove({ id: 'tfc:heating/metal/nickel_double_sheet' })
+  e.remove({ id: 'tfc:heating/metal/nickel_rod' })
+  e.remove({ id: 'tfc:heating/metal/nickel_double_ingot' })
+  e.remove({ id: 'tfc:heating/metal/nickel_block' })
+  e.remove({ id: 'tfc:heating/metal/nickel_ingot' })
+  e.remove({ id: 'tfc:heating/metal/nickel_block_stairs' })
+  e.remove({ id: 'tfc:heating/metal/nickel_block_slab' })
+  e.remove({ id: 'tfc:casting/nickel_ingot' })
+  e.remove({ id: 'tfc:casting/nickel_fire_ingot' })
 
   //删除ie左轮手枪及其相关组件配方
   e.remove({ id: 'immersiveengineering:crafting/toolupgrade_revolver_magazine' })
