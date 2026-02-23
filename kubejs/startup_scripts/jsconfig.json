@@ -3,10 +3,6 @@
         "./**/*.js"
     ],
     "compilerOptions": {
-        "skipLibCheck": true,
-        "rootDir": ".",
-        "allowJs": true,
-        "module": "commonjs",
         "skipDefaultLibCheck": true,
         "moduleResolution": "classic",
         "composite": true,
@@ -21,6 +17,10 @@
             "../../.probe/shared"
         ],
         "incremental": true,
-        "target": "ES2015"
+        "target": "ES2015",
+        "skipLibCheck": true,
+        "rootDir": ".",
+        "allowJs": true,
+        "module": "commonjs"
     }
 }

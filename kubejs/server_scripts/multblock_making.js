@@ -16,5 +16,14 @@ MultiBlockCreateVehicle(
     //搭建的核心方块
     'minecraft:furnace', 
     //搭建需要的工具
-    "immersiveengineering:hammer"
+    "#tfc:hammers"
+);MultiBlockCreateVehicle(
+    //多方块名称
+    'tfc:airship', 
+    //生成的实体名称
+    'immersive_aircraft:airship', 
+    //搭建的核心方块
+    'minecraft:observer', 
+    //搭建需要的工具
+    "#tfc:hammers"
 );

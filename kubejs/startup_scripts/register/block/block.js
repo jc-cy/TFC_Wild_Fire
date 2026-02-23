@@ -8,46 +8,46 @@ StartupEvents.registry("block", event => {
 StartupEvents.registry('block', event => {
 
         // 1. 天然水石
-        event.create('kubejs:tfc/water_stone',"cardinal")
+        event.create('kubejs:tfc/water_stone', "cardinal")
                 //可以含水
                 .hardness(0.5)          // 硬度
                 .box(5, 0, 1, 11, 3, 15) // 自定义碰撞箱
-                .requiresTool(false)    
+                .requiresTool(false)
                 .tagBlock("kubejs:polisher")
-               /* .property(BlockProperties.FACING)
-                .placementState(callback=>{
-                        callback.set(BlockProperties.FACING,callback.horizontalDirection.opposite)
-                })*/
+        /* .property(BlockProperties.FACING)
+         .placementState(callback=>{
+                 callback.set(BlockProperties.FACING,callback.horizontalDirection.opposite)
+         })*/
 
 
         // 2. 砂岩磨刀石
-        event.create('kubejs:tfc/sandstone_whetstone',"cardinal")
+        event.create('kubejs:tfc/sandstone_whetstone', "cardinal")
                 .hardness(0.5)
-                
+
 
                 .box(5, 0, 1, 11, 3, 15)
                 .requiresTool(false)
                 .tagBlock("kubejs:polisher")
         // 3. 磨刀石（基础款）
-        event.create('kubejs:tfc/whetstone',"cardinal")
+        event.create('kubejs:tfc/whetstone', "cardinal")
                 .hardness(0.5)
-                
+
                 .box(5, 0, 1, 11, 3, 15)
                 .requiresTool(false)
                 .tagBlock("kubejs:polisher")
 
         // 4. 金刚石磨刀石
-        event.create('kubejs:tfc/diamond_whetstone',"cardinal")
+        event.create('kubejs:tfc/diamond_whetstone', "cardinal")
                 .hardness(0.5)
-                
+
                 .box(5, 0, 1, 11, 3, 15)
                 .requiresTool(false)
                 .tagBlock("kubejs:polisher")
 
         // 5. 铝陶瓷磨刀石
-        event.create('kubejs:tfc/ceramic_stone',"cardinal")
+        event.create('kubejs:tfc/ceramic_stone', "cardinal")
                 .hardness(0.5)
-                
+
                 .box(5, 0, 1, 11, 3, 15)
                 .requiresTool(false)
                 .tagBlock("kubejs:polisher")
@@ -154,6 +154,26 @@ StartupEvents.registry('item', event => {
                 new $ItemProperties()
         ))
 })
+
+StartupEvents.registry("block", event => {
+        const dirt = [
+                { name: "loam", type: "grass", sound: "gravel", float: 0.5 },
+                { name: "sandy_loam", type: "grass", sound: "gravel", float: 0.5 },
+                { name: "silt", type: "grass", sound: "gravel", float: 0.5 },
+                { name: "silty_loam", type: "grass", sound: "gravel", float: 0.5 }
+        ]
+        dirt.forEach(dirt => {
+                //泥土台阶
+                event.create(`tfc:${dirt.type}/slab/${dirt.name}`,'slab')
+                        .model(`kubejs:block/${dirt.type}/slab/${dirt.name}`)
+                        .soundType(dirt.sound)
+                        .hardness(dirt.float)
+                        .tagBlock('minecraft:mineable/shovel')
+                        .tagBlock('tfc:ore_deposits')
+                        .tagBlock('tfc:can_landslide')
+        })
+})
+
 StartupEvents.registry("block", event => {
         //注册宝石砂    
         const deposits = [
@@ -186,6 +206,8 @@ StartupEvents.registry("block", event => {
                         .model(`kubejs:block/deposit/gem_gravel/${deposit}`)
                         .tag('forge:gravel')
                         .tagBlock('minecraft:mineable/shovel')
+                        .tagBlock('tfc:ore_deposits')
+                        .tagBlock('tfc:can_landslide')
                         .requiresTool()
                 //锰结核砂
                 event.create(`kubejs:deposit/manganese/${deposit}`)
@@ -193,6 +215,8 @@ StartupEvents.registry("block", event => {
                         .model(`kubejs:block/deposit/manganese/${deposit}`)
                         .tag('forge:gravel')
                         .tagBlock('minecraft:mineable/shovel')
+                        .tagBlock('tfc:ore_deposits')
+                        .tagBlock('tfc:can_landslide')
                         .requiresTool()
 
                 //钛铁矿

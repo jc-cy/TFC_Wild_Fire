@@ -22,7 +22,15 @@ function MultiBlockCreateVehicle(MultiBlockName, VehicleName, MainBlock, HandIte
         let MultiBlockEntity = $PatchouliAPI.getMultiblock(MultiBlockName);
         let rotation = getRotationFromPlayerFacing(player);
 
-        if (item.id == HandItem) {
+        let itemMatches = false;
+        if (HandItem.startsWith('#')) {
+            let tag = HandItem.substring(1);
+            itemMatches = !item.isEmpty() && item.hasTag(tag);
+        } else {
+            itemMatches = !item.isEmpty() && item.id == HandItem;
+        }
+
+        if (itemMatches) {
             $PatchouliAPI.showMultiblock(MultiBlockEntity, null, block.pos.offset(0, -1, 0), rotation);
 
             if (MultiBlockEntity.validate(level, block.pos, rotation)) {
