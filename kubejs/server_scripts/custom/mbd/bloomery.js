@@ -18,7 +18,11 @@ const FUEL_CONFIG = {
     "immersiveengineering:coal_coke": 2400, // 1分钟 = 1200 tick
     "tfc:ore/bituminous_coal": 2400,
     "tfc:ore/lignite": 2400,
-    "minecraft:charcoal": 1200
+    "minecraft:charcoal": 1200,
+    "kubejs:charcoal_briquette": 6000,
+    "kubejs:coal_briquette": 216000,
+    "kubejs:coke_briquette": 216000
+
 
 
 
@@ -308,9 +312,6 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
         return
     }
     
-    // 如果既不是木棍、燃料也不是打火石，显示提示
-    sendCooldownMessage(player, "使用木棍查看剩余燃烧时间，手持燃料右键增加燃烧时间，使用任意打火石点火开始熔炼。燃料会自动从燃料槽中吸取。")
-    player.swing()
 })
 
 MBDMachineEvents.onTick("mbd2:bloomery", e => {
