@@ -1,7 +1,0 @@
-{
-	"parent": "tfc:block/wood/support/connection_vex",
-	"textures": {
-		"texture": 	"tfc:block/wood/stripped_log/sequoia",
-		"top": 		"tfc:block/wood/stripped_log_top/sequoia"
-	}
-}

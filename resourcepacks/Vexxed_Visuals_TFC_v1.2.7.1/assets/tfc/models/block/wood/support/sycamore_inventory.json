@@ -1,8 +1,0 @@
-{
-	"parent": "tfc:block/wood/support/inventory_vex",
-	"textures": {
-		"vertical": 	"tfc:block/wood/stripped_log/sycamore",
-		"horizontal": 	"tfc:block/wood/stripped_log/sycamore",
-		"top": 			"tfc:block/wood/stripped_log_top/sycamore"
-	}
-}

@@ -1,9 +1,0 @@
-newmtl m_e5733767-6a57-a95e-58cd-5b7c4ccc0870
-map_Kd immersiveengineering:block/multiblocks/squeezer
-newmtl m_d2c134a4-698d-25b9-71b1-93101c7965a4
-map_Kd immersiveengineering:block/multiblocks/multiblock_base
-newmtl m_88d2b546-ddc7-e916-9c31-cbd5ab4e52cb
-map_Kd immersiveengineering:block/multiblocks/multiblock_components
-newmtl m_9cdaa25b-650e-7854-3861-9f7e946b50c4
-map_Kd immersiveengineering:block/multiblocks/fermenter
-newmtl none

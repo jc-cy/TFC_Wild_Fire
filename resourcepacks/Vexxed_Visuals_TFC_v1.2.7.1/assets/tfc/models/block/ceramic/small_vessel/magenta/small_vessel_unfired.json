@@ -1,6 +1,0 @@
-{
-	"parent": "tfc:block/ceramic/small_vessel_unfired",
-	"textures": {
-		"side": "tfc:block/ceramic/small_vessel/magenta"
-	}
-}
