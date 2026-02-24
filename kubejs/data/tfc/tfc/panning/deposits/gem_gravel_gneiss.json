@@ -1,0 +1,7 @@
+{
+  "ingredient": "kubejs:deposit/gem_gravel/gneiss",
+  "model_stages": [
+    "tfc:item/pan/cassiterite/gneiss_full"
+  ],
+  "loot_table": "tfc:panning/deposits/gem_gravel_gneiss"
+}
