@@ -238,7 +238,7 @@ ServerEvents.recipes(event => {
             a: 'kubejs:black_steel_arrow',
             b: 'immersiveengineering:stick_treated',
             c: 'artisanal:trimmed_feather'
-        })//锰钢箭头
+        })//高锰钢箭头
     event.shaped('2x spartanweaponry:netherite_bolt',
         ['a',
             'b',
@@ -247,7 +247,7 @@ ServerEvents.recipes(event => {
             a: 'tfc:metal/rod/black_steel',
             b: 'immersiveengineering:stick_treated',
             c: 'artisanal:trimmed_feather'
-        })//锰钢弩箭
+        })//高锰钢弩箭
     event.shaped('2x spartanweaponry:bolt',
         ['a',
             'b',

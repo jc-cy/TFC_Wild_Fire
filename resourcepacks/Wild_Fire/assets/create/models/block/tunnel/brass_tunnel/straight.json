@@ -2,7 +2,7 @@
   "parent": "create:block/belt_tunnel/straight",
   "textures": {
     "direction": "create:block/funnel/brass_funnel_neutral_old",
-    "frame": "create:block/funnel/brass_funnel_frame_2",
+    "frame": "create:block/funnel/brass_funnel_frame",
     "particle": "create:block/brass_block",
     "top": "create:block/tunnel/brass_tunnel_top",
     "tunnel": "create:block/tunnel/brass_tunnel"

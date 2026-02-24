@@ -134,7 +134,7 @@ TFCEvents.data(event => {
     Math.floor(metaltp.steel * 0.8)
   );
 
-  //锰钢三层锭
+  //高锰钢三层锭
   event.itemHeat('kubejs:triple_black_steel', triplemetaltp,
     Math.floor(metaltp.black_steel * 0.6),
     Math.floor(metaltp.black_steel * 0.8)
@@ -170,19 +170,19 @@ TFCEvents.data(event => {
     Math.floor(metaltp.wrought_iron * 0.8)
   );
 
-  //锰钢搅拌器
+  //高锰钢搅拌器
   event.itemHeat('createmetallurgy:sturdy_whisk', triplemetaltp,
     Math.floor(metaltp.black_steel * 0.6),
     Math.floor(metaltp.black_steel * 0.8)
   );
 
-  //锰钢搅拌器
+  //高锰钢搅拌器
   event.itemHeat('kubejs:whisk_black_steel_head_blank', 2.857,
     Math.floor(metaltp.black_steel * 0.6),
     Math.floor(metaltp.black_steel * 0.8)
   );
 
-  //锰钢搅拌器
+  //高锰钢搅拌器
   event.itemHeat('kubejs:black_steel_double_rod', 2.857,
     Math.floor(metaltp.black_steel * 0.6),
     Math.floor(metaltp.black_steel * 0.8)
@@ -406,7 +406,7 @@ TFCEvents.data(event => {
     { name: "gold", temperature: 1064, metal: "golden" }, // 金戒指
     { name: "rose_gold", temperature: 1064, metal: "rose_gold" }, // 玫瑰金戒指
     { name: "steel", temperature: 1540, metal: "steel" }, // 钢戒指
-    { name: "black_steel", temperature: 1784, metal: "black_steel" } // 锰钢戒指
+    { name: "black_steel", temperature: 1784, metal: "black_steel" } // 高锰钢戒指
   ];
 
   // 遍历生成所有戒指的热力配置

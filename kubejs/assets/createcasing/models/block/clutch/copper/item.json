@@ -3,7 +3,7 @@
   "textures": {
     "0": "createcasing:block/clutch_off/copper",
     "1": "createcasing:block/gearbox/copper",
-    "4": "create:block/funnel/brass_funnel_frame_2",
+    "4": "create:block/funnel/brass_funnel_frame",
     "particle": "createcasing:block/clutch_off/copper"
   }
 }

@@ -37,14 +37,14 @@ StartupEvents.registry('item', event => {
     event.create('rock_powder', 'tfc:mold').capacity(100)//岩石粉末模具
     event.create('trachyandesite_alloy', 'basic').texture('kubejs:item/create/trachyandesite_alloy')//粗安山合金
     event.create('wrought_iron_double_rod', 'basic').texture('kubejs:item/create/wrought_iron_double_rod');// 锻铁双棒
-    event.create('black_steel_double_rod', 'basic').texture('kubejs:item/create/black_steel_double_rod');// 锰钢双棒
+    event.create('black_steel_double_rod', 'basic').texture('kubejs:item/create/black_steel_double_rod');// 高锰钢双棒
     event.create('fan_blade_blank', 'basic').texture('kubejs:item/create/fan_blade_blank');// 扇叶半成品
     event.create('fan_blade_blank_part', 'basic').texture('kubejs:item/create/fan_blade_blank_part');// 扇叶片
     event.create('whisk_stirrer_head_blank', 'basic').texture('kubejs:item/create/whisk_stirrer_head_blank');// 搅拌头半成品
-    event.create('whisk_black_steel_head_blank', 'basic').texture('kubejs:item/create/whisk_black_steel_head_blank');// 锰钢搅拌头半成品
+    event.create('whisk_black_steel_head_blank', 'basic').texture('kubejs:item/create/whisk_black_steel_head_blank');// 高锰钢搅拌头半成品
     event.create('material_component_wrought_iron', 'basic').texture('kubejs:item/create/material_component_wrought_iron');// 锻铁零件
     event.create('material_component_steel', 'basic').texture('kubejs:item/create/material_component_steel');// 钢制零件
-    event.create('material_component_black_steel', 'basic').texture('kubejs:item/create/material_component_black_steel');// 锰钢零件
+    event.create('material_component_black_steel', 'basic').texture('kubejs:item/create/material_component_black_steel');// 高锰钢零件
     event.create('rotten_meat', 'basic').texture('kubejs:item/rotten_meat');// 注册腐烂的肉
     event.create('rotten_fish', 'basic').texture('kubejs:item/rotten_fish');// 注册腐烂的鱼
     event.create('rotten_vegetables', 'basic').texture('kubejs:item/rotten_vegetables');// 注册腐烂的蔬菜
@@ -197,7 +197,7 @@ StartupEvents.registry("item", event => {//航空/航天相关部件
     event.create('kubejs:copper_arrow').texture('kubejs:item/tfc/copper_arrow'); // 铜箭头
     event.create('kubejs:wrought_iron_arrow').texture('kubejs:item/tfc/wrought_iron_arrow'); // 锻铁箭头
     event.create('kubejs:steel_arrow').texture('kubejs:item/tfc/steel_arrow'); // 钢箭头
-    event.create('kubejs:black_steel_arrow').texture('kubejs:item/tfc/black_steel_arrow'); // 锰钢箭头
+    event.create('kubejs:black_steel_arrow').texture('kubejs:item/tfc/black_steel_arrow'); // 高锰钢箭头
     event.create('kubejs:gps').texture('kubejs:item/gps').maxStackSize(1); // 全球定位器
 
 
