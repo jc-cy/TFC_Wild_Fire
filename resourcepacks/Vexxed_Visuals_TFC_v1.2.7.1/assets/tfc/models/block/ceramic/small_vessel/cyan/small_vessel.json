@@ -1,6 +1,0 @@
-{
-	"parent": "tfc:block/ceramic/small_vessel",
-	"textures": {
-		"side": "tfc:block/ceramic/small_vessel/cyan"
-	}
-}

@@ -1,8 +1,0 @@
-newmtl m_d008e3eb-4b8a-fc79-568a-e87b398b27d5
-map_Kd immersiveengineering:item/powerpack
-
-newmtl m_9408255b-964d-777a-c4ba-4c675f7ecd5e
-map_Kd minecraft:entity/shield/base
-
-newmtl m_f993f2e6-fcf9-83c7-9ac7-6b21515de443
-map_Kd minecraft:entity/banner_base

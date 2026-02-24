@@ -1,7 +1,0 @@
-newmtl m_ff8d1876-c950-f489-c31b-5f2848f9adc4
-map_Kd immersiveengineering:block/multiblocks/assembler
-newmtl m_c3cc8a39-63d5-a474-d1b6-db7f3a45bfb5
-map_Kd immersiveengineering:block/multiblocks/multiblock_base
-newmtl m_9754dfc8-8e82-3b5e-9e27-42c7217c12a4
-map_Kd immersiveengineering:block/conveyor/conveyor
-newmtl none
