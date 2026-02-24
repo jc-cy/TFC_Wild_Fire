@@ -42,7 +42,7 @@ StartupEvents.registry("item", event => {
             event.create(`kubejs:item/ore/dust_brick/${ore.ore}`).texture(`kubejs:item/ore/dust_brick/${ore.ore}`).tag("kubejs:16ore");//精炼矿粉砖 90mb
         }
     })
-    event.create(`firmalife:powder/chromite`).tag("kubejs:ore"); //铬铁矿粉
+    event.create(`firmalife:powder/chromite`).tag("kubejs:ore"); //铬矿粉
 })
 StartupEvents.registry("fluid", event => {
     wash_ore.forEach(ore => {

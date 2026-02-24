@@ -381,6 +381,8 @@ ServerEvents.tags("block", event => {
         // 熔岩桶和熔融桶是烫手的物品
         event.add('kubejs:hot_items',
             [
+                "kubejs:hot_raw_nickel_bloom",
+                "kubejs:hot_raw_iron_bloom",
                 'minecraft:lava_bucket',
                 "firmalife:bucket/metal/chromium",
                 "firmalife:bucket/metal/stainless_steel",
