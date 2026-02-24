@@ -1,0 +1,7 @@
+{
+  "ingredient": "kubejs:deposit/gem_gravel/basalt",
+  "model_stages": [
+    "tfc:item/pan/cassiterite/basalt_full"
+  ],
+  "loot_table": "tfc:panning/deposits/gem_gravel_basalt"
+}

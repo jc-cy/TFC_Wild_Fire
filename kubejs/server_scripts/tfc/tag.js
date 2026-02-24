@@ -1,6 +1,6 @@
 ServerEvents.tags('minecraft:block', event => {//
 
-    event.add('kubejs:polisher', '#forge:sandstone');//给所有沙岩打上抛光标签
+    //event.add('kubejs:polisher', '#forge:sandstone');//给所有沙岩打上抛光标签
     event.add('tfc:mineable_with_glass_saw', 'minecraft:ice');//玻璃
 
 
@@ -10,6 +10,24 @@ ServerEvents.tags('minecraft:item', event => {//
     buliao.forEach(item => {
         event.add('kubejs:fabric', item);//布料
     })
+    event.add("kubejs:smooth_sandstone", "tfc:smooth_sandstone/brown_slab")//平滑砂岩台阶
+    event.add("kubejs:smooth_sandstone", "tfc:smooth_sandstone/white_slab")//平滑砂岩台阶
+    event.add("kubejs:smooth_sandstone", "tfc:smooth_sandstone/black_slab")//平滑砂岩台阶
+    event.add("kubejs:smooth_sandstone", "tfc:smooth_sandstone/red_slab")//平滑砂岩台阶
+    event.add("kubejs:smooth_sandstone", "tfc:smooth_sandstone/yellow_slab")//平滑砂岩台阶
+    event.add("kubejs:smooth_sandstone", "tfc:smooth_sandstone/green_slab")//平滑砂岩台阶
+    event.add("kubejs:smooth_sandstone", "tfc:smooth_sandstone/pink_slab")//平滑砂岩台阶
+
+    event.add("kubejs:hard_rock_brick", 'tfc:brick/gabbro')//硬质岩石砖
+    event.add("kubejs:hard_rock_brick", 'tfc:brick/diorite')//硬质岩石砖
+    event.add("kubejs:hard_rock_brick", 'tfc:brick/granite')//硬质岩石砖
+    event.add("kubejs:hard_rock_brick", 'tfc:brick/dacite')//硬质岩石砖
+    event.add("kubejs:hard_rock_brick", 'tfc:brick/andesite')//硬质岩石砖
+    event.add("kubejs:hard_rock_brick", 'tfc:brick/basalt')//硬质岩石砖
+    event.add("kubejs:hard_rock_brick", 'tfc:brick/rhyolite')//硬质岩石砖
+
+
+
     event.add('kubejs:4ore', "immersiveengineering:dust_iron");//热矿粉
 
 

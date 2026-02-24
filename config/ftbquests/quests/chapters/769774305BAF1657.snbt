@@ -7,6 +7,12 @@
 	hide_quest_details_until_startable: true
 	icon: {
 		Count: 1
+		ForgeCaps: {
+			"tfc:item_heat": {
+				heat: 0.0f
+				ticks: 0L
+			}
+		}
 		id: "ad_astra:tier_4_rocket"
 		tag: { }
 	}

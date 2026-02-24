@@ -1,6 +1,15 @@
 
+NativeEvents.onEvent(Java.loadClass("first.wildfires.api.customEvent.FoodRottenEvent"),/**@param {Internal.FoodRottenEvent} event*/ event => {
+    if (event.getItemStack().getItem().id == "tfc:food/beef") {
+        event.setItemStack("acacia_boat")
+    }
+})
 
-ForgeEvents.onEvent("first.wildfires.api.customEvent.FoodRottenEvent", event => {//食物腐烂
+
+
+
+ForgeEvents.onEvent("first.wildfires.api.customEvent.FoodRottenEvent", /**@param {Internal.MobSpawnEvent$FinalizeSpawn} event*/ event => {//食物腐烂
+    
       const rotten_meat = [
         'tfc:food/hyena', 'tfc:food/duck', 'tfc:food/chevon', 'tfc:food/gran_feline',
         'tfc:food/camelidae', 'tfc:food/cooked_beef', 'tfc:food/cooked_pork',
@@ -190,7 +199,7 @@ let config1 = {
      * @type {Internal.ItemStack}
      */
     let item = event.getNewItemStack()
-    console.log(`检查效果：${item}`);
+   event.getNewItemStack()
     let newItem = config1[item.id]
     if (newItem) {
         event.setNewItemStack(Item.of(newItem))

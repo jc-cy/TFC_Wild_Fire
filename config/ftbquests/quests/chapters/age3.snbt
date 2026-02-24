@@ -2846,7 +2846,16 @@
 			hide_details_until_startable: false
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
-			icon: "firmalife:spoon"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "firmalife:spoon"
+			}
 			id: "141CD0723C0CFB61"
 			rewards: [{
 				id: "6F18B3DE1C56A89F"
@@ -2995,7 +3004,16 @@
 			dependencies: ["110F269715977C03"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
-			icon: "firmalife:bucket/goat_milk"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "firmalife:bucket/goat_milk"
+			}
 			id: "7C289058C407A6D7"
 			rewards: [{
 				id: "6BD3771DCA9CC034"
@@ -3069,7 +3087,16 @@
 			dependencies: ["6BE9F21FA2117902"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
-			icon: "minecraft:milk_bucket"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:milk_bucket"
+			}
 			id: "7EAF2671D366A306"
 			rewards: [{
 				id: "2AF236ECA1E4C7C1"
@@ -3143,7 +3170,16 @@
 			dependencies: ["2B60371A3480C0B5"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
-			icon: "firmalife:bucket/yak_milk"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "firmalife:bucket/yak_milk"
+			}
 			id: "65EC9C18BAE6999E"
 			rewards: [{
 				id: "7D16C49EF6005F73"
@@ -4395,7 +4431,16 @@
 			dependencies: ["0B32A4C769006051"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:wire_electrum"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:wire_electrum"
+			}
 			id: "600A20784198A2C0"
 			rewards: [{
 				id: "3BF3FD09D155C35B"
@@ -4914,7 +4959,16 @@
 			dependencies: ["7EB046A24267F537"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
-			icon: "firmalife:fruit_leaf"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "firmalife:fruit_leaf"
+			}
 			id: "04F2ACD8CD72DB00"
 			rewards: [{
 				id: "06AC259C7ACFE6BB"
@@ -8194,7 +8248,16 @@
 			description: ["【2】"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
-			icon: "minecraft:rabbit_spawn_egg"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:rabbit_spawn_egg"
+			}
 			id: "55EF684B9642D23E"
 			optional: true
 			rewards: [{
@@ -8205,7 +8268,16 @@
 			subtitle: "&8&l[通过遭遇兔子或提供经验来解锁]&r&r"
 			tasks: [
 				{
-					icon: "minecraft:rabbit_spawn_egg"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "minecraft:rabbit_spawn_egg"
+					}
 					id: "317F82074ED2C519"
 					observe_type: 5
 					optional_task: true
@@ -8230,7 +8302,16 @@
 			dependencies: ["55EF684B9642D23E"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
-			icon: "minecraft:rabbit_hide"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:rabbit_hide"
+			}
 			id: "0B2D15421602109F"
 			rewards: [{
 				id: "104992306BFE99FB"
@@ -8277,7 +8358,16 @@
 			description: ["【2】"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
-			icon: "minecraft:cod_spawn_egg"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:cod_spawn_egg"
+			}
 			id: "3FCE566608798F42"
 			optional: true
 			rewards: [{
@@ -8439,7 +8529,16 @@
 			description: ["【2】"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
-			icon: "minecraft:tropical_fish_spawn_egg"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:tropical_fish_spawn_egg"
+			}
 			id: "545D145004E45E6A"
 			optional: true
 			rewards: [{
@@ -8564,7 +8663,16 @@
 			dependencies: ["53B5566655DB826C"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
-			icon: "minecraft:pufferfish"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:pufferfish"
+			}
 			id: "25245F127AC57867"
 			rewards: [{
 				id: "23FA6E21C31FA948"
@@ -8577,7 +8685,16 @@
 			tasks: [
 				{
 					entity: "tfc:pufferfish"
-					icon: "minecraft:pufferfish"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "minecraft:pufferfish"
+					}
 					id: "345259970E4D7F81"
 					optional_task: true
 					title: "猎杀河豚"
@@ -8651,7 +8768,16 @@
 			description: ["【2】"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
-			icon: "minecraft:horse_spawn_egg"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:horse_spawn_egg"
+			}
 			id: "68DBFE6B97991532"
 			optional: true
 			rewards: [{
@@ -8662,7 +8788,16 @@
 			subtitle: "&8&l[通过遭遇麝牛或提供经验来解锁]&r&r"
 			tasks: [
 				{
-					icon: "minecraft:horse_spawn_egg"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "minecraft:horse_spawn_egg"
+					}
 					id: "6B666088BE16CB02"
 					observe_type: 5
 					optional_task: true
@@ -8850,7 +8985,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
-			icon: "minecraft:feather"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:feather"
+			}
 			id: "1AB20AD4E4D44848"
 			require_sequential_tasks: true
 			rewards: [{

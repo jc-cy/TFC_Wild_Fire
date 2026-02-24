@@ -147,7 +147,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "02FAD8AD1FE45FEC"
 					optional_task: true
 					points: false
@@ -199,7 +208,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "7D12CE2AC89442F6"
 					optional_task: true
 					points: false
@@ -265,7 +283,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "0AACFA7D740E4F7C"
 					optional_task: true
 					points: false
@@ -498,7 +525,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "4E0FAAF35AC569D1"
 					optional_task: true
 					points: false
@@ -525,7 +561,16 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
-			icon: "minecraft:charcoal"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:charcoal"
+			}
 			id: "493A5CFB05F95C24"
 			rewards: [{
 				id: "30F1EAAAA7530250"
@@ -543,7 +588,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "76B32450420F4A81"
 					optional_task: true
 					points: false
@@ -709,7 +763,16 @@
 					type: "observation"
 				}
 				{
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "206138043EAB9276"
 					item: {
 						Count: 1
@@ -771,7 +834,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "0879A7D9BBC699C2"
 					optional_task: true
 					points: false
@@ -825,7 +897,16 @@
 				"虽然按你现在的阶段，还做不到让牲畜们进行繁殖。不过抓几只还是有必要的。如果你在野外见到了牲畜，如牛羊猪一类的，推荐使用手中的方块将其困住，然后制作醒目的标记，以防你忘记了它被关在哪里。等到拥有条件之后，再将其带回基地进行圈养。"
 			]
 			hide_until_deps_visible: true
-			icon: "minecraft:oak_fence"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:oak_fence"
+			}
 			id: "2608FB20E2B5FB63"
 			rewards: [{
 				id: "5F23F004E55FB143"
@@ -909,7 +990,16 @@
 				""
 				"除了工作台，还有一个由木板制成的工作站值得制作：砧板。使用方法很简单，将有配方的物品放置在砧板上，手持加工的工具对其右键，即可获得产物。"
 			]
-			icon: "minecraft:oak_planks"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:oak_planks"
+			}
 			id: "210AB4533CD5A8A7"
 			rewards: [{
 				id: "77B624F012A0CDAB"
@@ -919,7 +1009,16 @@
 			subtitle: "老友重逢的感觉"
 			tasks: [
 				{
-					icon: "minecraft:crafting_table"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "minecraft:crafting_table"
+					}
 					id: "607E9F0A0985FB5C"
 					item: {
 						Count: 1
@@ -947,7 +1046,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "516D2AC4A71D922D"
 					optional_task: true
 					points: false
@@ -1082,7 +1190,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "67CB1A61E15F63D9"
 					optional_task: true
 					points: false
@@ -1430,7 +1547,16 @@
 				}
 				{
 					consume_items: false
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "243BCF5EC2922B8C"
 					item: "minecraft:leather"
 					optional_task: true
@@ -1524,7 +1650,16 @@
 				}
 				{
 					consume_items: false
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "142C5BDA84558DAB"
 					item: "minecraft:leather"
 					optional_task: true
@@ -1634,7 +1769,16 @@
 				"动物的产出行为只有在达到一定好感度才能进行，当动物的好感度到了30%，给两种性别不同的动物喂食就能使雌性动物怀孕或者使卵生动物下出的蛋受精，怀孕一段时间后就会生出幼年动物，产毛和产奶动物在好感度达到一定程度就能够剪毛和挤奶了。要注意的是，动物在剪毛、挤奶或产崽之后就会衰老，衰老的动物将无法进行任何产出行为，建议卸磨杀驴。所有动物的信息可以通过书得知。"
 			]
 			hide_until_deps_complete: true
-			icon: "minecraft:lead"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:lead"
+			}
 			id: "6BBB985E7404B527"
 			rewards: [{
 				id: "7BBC73BE479F2F2A"
@@ -1680,7 +1824,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "1D5ABCF4479989EB"
 					optional_task: true
 					points: false
@@ -1833,6 +1986,12 @@
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
 				id: "minecraft:leather_helmet"
 				tag: {
 					Damage: 0
@@ -2125,7 +2284,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "60419D97A7D0D05F"
 					optional_task: true
 					points: false
@@ -2182,7 +2350,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "3ACA5513A80B7F75"
 					optional_task: true
 					points: false
@@ -2233,7 +2410,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "64DB2FE6D7DCB93F"
 					optional_task: true
 					points: false
@@ -2285,7 +2471,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "69C8FDFFD28C5673"
 					optional_task: true
 					points: false
@@ -2334,7 +2529,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "1C8DA1842B7874D9"
 					optional_task: true
 					points: false
@@ -2604,7 +2808,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "7E28D485393CC32E"
 					optional_task: true
 					points: false
@@ -3155,7 +3368,16 @@
 				}
 				{
 					consume_items: false
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "4EAED3A564B858E9"
 					item: "minecraft:leather"
 					optional_task: true
@@ -3223,7 +3445,16 @@
 				}
 				{
 					consume_items: false
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "3C3ED97DB8784B64"
 					item: "minecraft:leather"
 					optional_task: true
@@ -3976,7 +4207,16 @@
 			dependencies: ["7E60DB1DFF798B1C"]
 			description: ["天气渐渐变冷，是时候给自己装备一套暖和的衣服了"]
 			hide_until_deps_visible: true
-			icon: "minecraft:ice"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:ice"
+			}
 			id: "6B56C8EFF9041129"
 			shape: "square"
 			tasks: [
@@ -4073,6 +4313,16 @@
 			}]
 			x: -29.5d
 			y: 0.0d
+		}
+		{
+			id: "5B0B1BC9D43FAB0E"
+			tasks: [{
+				id: "4068CA528EDAB1DE"
+				item: "kubejs:tfc/sandstone_whetstone"
+				type: "item"
+			}]
+			x: -24.0d
+			y: -4.0d
 		}
 	]
 	title: "第一章：铜砂"

@@ -1,0 +1,7 @@
+{
+  "ingredient": "kubejs:deposit/gem_gravel/shale",
+  "model_stages": [
+    "tfc:item/pan/cassiterite/shale_full"
+  ],
+  "loot_table": "tfc:panning/deposits/gem_gravel_shale"
+}

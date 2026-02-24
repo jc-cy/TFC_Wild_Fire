@@ -1,0 +1,7 @@
+{
+  "ingredient": "kubejs:deposit/gem_gravel/andesite",
+  "model_stages": [
+    "tfc:item/pan/cassiterite/andesite_full"
+  ],
+  "loot_table": "tfc:panning/deposits/gem_gravel_andesite"
+}

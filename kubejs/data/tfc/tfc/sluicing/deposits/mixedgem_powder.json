@@ -1,0 +1,6 @@
+{
+  "ingredient": {
+    "item": "kubejs:item/tfc/mixedgem_powder"
+  },
+  "loot_table": "tfc:sluicing/deposits/mixedgem_powder"
+}

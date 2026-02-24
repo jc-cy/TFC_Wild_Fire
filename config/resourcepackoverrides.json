@@ -17,6 +17,7 @@
   ],
   "pack_overrides": {
     "1": [
+      "file/Create Immersive Aircrafts Resource Pack 1.21.1 - 3.0.zip",
       "file/Parcool Refurbishment V1.0.zip",
       "file/Create Touch-Ups v1.0.zip",
       "file/[Forge] IE Reimmersed v1.1.zip",
@@ -34,7 +35,6 @@
       "hidden": true
     },
     "2": [
-      "file/Create Immersive Aircrafts Resource Pack 1.21.1 - 3.0.zip",
       "file/MCA_resourcepack-V3.1.1.zip",
       "file/ImmersiveResprites-1.1.zip",
       "file/Alex's Caves Compat 1.0.0.zip",
