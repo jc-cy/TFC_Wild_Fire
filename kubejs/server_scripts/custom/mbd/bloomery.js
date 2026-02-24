@@ -33,16 +33,46 @@ function canMeltToCastIron(stack) {
     let displayOutputFluid = recipe.displayOutputFluid
     return displayOutputFluid && displayOutputFluid.fluid && displayOutputFluid.fluid.isSame("tfc:metal/cast_iron")
 }
-function isCoke(stack) {
+
+function canMeltToNickel(stack) {
     if (stack.isEmpty()) return false
-    return stack.id == "immersiveengineering:coal_coke"
+    let recipe = HeatingRecipe.getRecipe(stack)
+    if (!recipe) return false
+    let displayOutputFluid = recipe.displayOutputFluid
+    return displayOutputFluid && displayOutputFluid.fluid && displayOutputFluid.fluid.isSame("tfc:metal/nickel")
 }
+
+function canMeltToSupportedFluid(stack) {
+    if (stack.isEmpty()) return false
+    let recipe = HeatingRecipe.getRecipe(stack)
+    if (!recipe) return false
+    let displayOutputFluid = recipe.displayOutputFluid
+    if (!displayOutputFluid || !displayOutputFluid.fluid) return false
+    
+    // 检查是否是支持的流体类型
+    return displayOutputFluid.fluid.isSame("tfc:metal/cast_iron") || 
+           displayOutputFluid.fluid.isSame("tfc:metal/nickel")
+}
+
 function getMeltedFluidAmount(stack) {
     if (stack.isEmpty()) return 0
     let recipe = HeatingRecipe.getRecipe(stack)
     if (!recipe) return 0
     let result = recipe.assembleFluid(new ItemStackInventory(stack))
     return result ? result.amount : 0
+}
+
+function getMeltedFluidType(stack) {
+    if (stack.isEmpty()) return null
+    let recipe = HeatingRecipe.getRecipe(stack)
+    if (!recipe) return null
+    let result = recipe.assembleFluid(new ItemStackInventory(stack))
+    return result ? result.fluid : null
+}
+
+function isCoke(stack) {
+    if (stack.isEmpty()) return false
+    return stack.id == "immersiveengineering:coal_coke"
 }
 function isStick(stack) {
     if (stack.isEmpty()) return false
@@ -120,8 +150,8 @@ MBDMachineEvents.onStructureFormed("mbd2:bloomery", e => {
     let fuelStorage = fuelTrait ? fuelTrait.storage : null
     let fluidStorage = inputFluidTrait.storages[0]
 
-    // 设置物品过滤器：只允许可加热为铸铁液的物品
-    storage.setFilter((stack) => canMeltToCastIron(stack))
+    // 设置物品过滤器：允许可加热为铸铁液或镍液的物品
+    storage.setFilter((stack) => canMeltToSupportedFluid(stack))
     
     // 设置燃料槽过滤器：只允许燃料物品
     if (fuelStorage) {
@@ -152,14 +182,13 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
     if (isStick(heldItem)) {
         // 直接读取最新的燃烧时间
         let burnTime = customData.getInt("burn_time") || 0
-        let burnSeconds = Math.floor(burnTime / 20)
-        let minutes = Math.floor(burnSeconds / 60)
-        let seconds = burnSeconds % 60
-        
-        // 直接发送消息，不使用防重复
         if (burnTime > 0) {
+            let burnSeconds = Math.floor(burnTime / 20)
+            let minutes = Math.floor(burnSeconds / 60)
+            let seconds = burnSeconds % 60
+            // 直接发送消息，不使用防重复
             player.sendSystemMessage(`锻铁炉剩余燃烧时间: ${minutes}分${seconds}秒`)
-        } 
+        }
         player.swing()
         return
     }
@@ -207,11 +236,33 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
         }
         
         let currentBurnTime = customData.getInt("burn_time") || 0
+        
+        // 修复：只在燃烧时间为0且燃料槽没有燃料时显示无燃料提示
         if (currentBurnTime <= 0) {
-            sendCooldownMessage(player, "没有剩余燃料，请先在燃料槽中添加燃料")
-            player.playSound("minecraft:block.fire.extinguish")
-            player.swing()
-            return
+            // 检查燃料槽是否有燃料
+            let hasFuelInSlot = false
+            /**@type {Internal.ItemSlotCapabilityTrait} */
+            let fuelTrait = machine.getTraitByName("coal_coke_input_slot")
+            if (fuelTrait) {
+                let fuelStorage = fuelTrait.storage
+                for (let i = 0; i < fuelStorage.getSlots(); i++) {
+                    let stackInSlot = fuelStorage.getStackInSlot(i)
+                    if (isFuelItem(stackInSlot) && stackInSlot.count > 0) {
+                        hasFuelInSlot = true
+                        break
+                    }
+                }
+            }
+            
+            if (!hasFuelInSlot) {
+                sendCooldownMessage(player, "没有剩余燃料，请先在燃料槽中添加燃料")
+                player.playSound("minecraft:block.fire.extinguish")
+                player.swing()
+                return
+            } else {
+                // 有燃料在燃料槽中，但不提示，继续点火流程
+                // 燃料会在tick事件中自动消耗
+            }
         }
         
         // 检查机器中是否有可熔化矿石
@@ -222,7 +273,7 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
         let hasMeltableItem = false
         for (let i = 0; i < storage.getSlots(); i++) {
             let stackInSlot = storage.getStackInSlot(i)
-            if (canMeltToCastIron(stackInSlot)) {
+            if (canMeltToSupportedFluid(stackInSlot)) {
                 hasMeltableItem = true
                 break
             }
@@ -353,60 +404,51 @@ MBDMachineEvents.onTick("mbd2:bloomery", e => {
         // 获取当前流体状态
         let currentFluid = fluidStorage.fluid
         let currentAmount = 0
+        let currentFluidType = null
         
         if (currentFluid && currentFluid.fluid) {
             try {
-                // 检查流体类型是否为铸铁液
-                if (currentFluid.fluid.isSame("tfc:metal/cast_iron")) {
-                    currentAmount = currentFluid.amount
-                }
+                currentFluidType = currentFluid.fluid
+                currentAmount = currentFluid.amount
             } catch(e) {
                 // 流体类型检查失败，可能是空槽
+                currentFluidType = null
                 currentAmount = 0
             }
         }
         
-        // 寻找第一个可溶解物品
-        let meltableSlot = -1
-        let meltableStack = null
-        let fluidAmount = 0
-        
+        // 寻找可溶解物品，优先处理与当前流体类型匹配的
         for (let i = 0; i < storage.getSlots(); i++) {
             let stackInSlot = storage.getStackInSlot(i)
-            if (canMeltToCastIron(stackInSlot)) {
-                meltableSlot = i
-                meltableStack = stackInSlot
-                fluidAmount = getMeltedFluidAmount(stackInSlot)
-                break
-            }
-        }
-        
-        // 如果找到可溶解物品
-        if (meltableSlot !== -1 && fluidAmount > 0 && meltableStack) {
-            // 检查流体槽容量（包括空槽和铸铁液槽）
-            let canFill = false
-            
-            if (currentAmount === 0) {
-                canFill = true
-            } else {
-                // 检查流体类型是否为铸铁液
-                try {
-                    {
-                        // 检查容量是否足够
+            if (canMeltToSupportedFluid(stackInSlot)) {
+                let fluidAmount = getMeltedFluidAmount(stackInSlot)
+                let fluidType = getMeltedFluidType(stackInSlot)
+                
+                if (fluidAmount > 0 && fluidType) {
+                    // 检查流体槽容量
+                    let canFill = false
+                    
+                    if (currentAmount === 0) {
+                        // 流体槽为空，可以填充任何类型
+                        canFill = true
+                    } else if (currentFluidType && fluidType.isSame(currentFluidType)) {
+                        // 流体类型相同，检查容量
                         if (currentAmount + fluidAmount <= fluidStorage.capacity) {
                             canFill = true
                         }
                     }
-                } catch(e) {
-                    canFill = false
+                    
+                    if (canFill) {
+                        // 消耗物品
+                        storage.extractItem(i, 1, false)
+                        
+                        // 填充流体 - 完全参考原始代码方式
+                        machine.getCapability(ForgeCapabilities.FLUID_HANDLER).ifPresent(handler => {
+                            handler.fill(Fluid.of(fluidType, fluidAmount), "execute")
+                        })
+                        break // 只处理一个物品，然后等待下一轮
+                    }
                 }
-            }
-            
-            if (canFill) {
-                storage.extractItem(meltableSlot, 1, false)
-                machine.getCapability(ForgeCapabilities.FLUID_HANDLER).ifPresent(handler => {
-                    handler.fill(Fluid.of("tfc:metal/cast_iron", fluidAmount), "execute")
-                })
             }
         }
     } else if (isMelting && burnTime <= 0) {
