@@ -863,6 +863,9 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'tfc:heating/metal/nickel_block_slab' })
   e.remove({ id: 'tfc:casting/nickel_ingot' })
   e.remove({ id: 'tfc:casting/nickel_fire_ingot' })
+  e.remove({ id: 'tfc:crafting/vanilla/redstone/steel_hopper' })
+  e.remove({ id: 'minecraft:hopper' })
+  e.remove({ id: 'tfc:crafting/vanilla/redstone/hopper' })
 
   //删除ie左轮手枪及其相关组件配方
   e.remove({ id: 'immersiveengineering:crafting/toolupgrade_revolver_magazine' })
