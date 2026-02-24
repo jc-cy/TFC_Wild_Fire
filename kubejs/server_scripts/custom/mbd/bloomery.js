@@ -15,15 +15,23 @@ const MAX_BURN_TIME = 24000 // 20分钟最大燃烧时间（20 * 60 * 20 = 24000
 // 燃料配置
 const FUEL_CONFIG = {
     // 燃料ID: 每单位增加的燃烧时间(tick)
-    "immersiveengineering:coal_coke": 1200, // 1分钟 = 1200 tick
+    "immersiveengineering:coal_coke": 2400, // 1分钟 = 1200 tick
+    "tfc:ore/bituminous_coal": 2400,
+    "tfc:ore/lignite": 2400,
+    "minecraft:charcoal": 1200
+
+
 
 }
 
-// 点火配置
+// 点火工具配置
 const FLINT_AND_STEEL_IDS = [
     "minecraft:flint_and_steel",
-    "immersiveengineering:lighter",
-    "tfc:flint_and_steel"
+    "artisanal:metal/flint_and/black_steel",
+    "artisanal:metal/flint_and/blue_steel",
+    "artisanal:metal/flint_and/red_steel",
+    "artisanal:stone/flint_and/pyrite",
+    "artisanal:stone/flint_and/cut_pyrite"
 ]
 
 function canMeltToCastIron(stack) {
