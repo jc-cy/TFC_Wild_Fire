@@ -1,4 +1,4 @@
-ForgeEvents.onEvent("first.wildfires.api.customEvent.AnvilWeldEvent", event => {
+/*ForgeEvents.onEvent("first.wildfires.api.customEvent.AnvilWeldEvent", event => {
 
 
 
@@ -22,4 +22,4 @@ ForgeEvents.onEvent("first.wildfires.api.customEvent.AnvilWeldEvent", event => {
     event.setRight(goldIngot);
 
 
-})
+})*/
