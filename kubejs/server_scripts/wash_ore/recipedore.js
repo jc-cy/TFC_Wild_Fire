@@ -56,6 +56,8 @@ ServerEvents.recipes(event => {
 
 
             event.shapeless(`kubejs:item/ore/dust_brick/${ore.ore}`, `9x kubejs:item/ore/refined_dust/${ore.ore}`).id(`${recipedid}shapeless/1/dust_brick/refined_dust/${ore.ore}`)//精炼
+            
+            event.shapeless( `9x kubejs:item/ore/refined_dust/${ore.ore}`, `kubejs:item/ore/dust_brick/${ore.ore}`).id(`${recipedid}shapeless/2/dust_brick/refined_dust/${ore.ore}`)//精炼反向
             event.shapeless(`kubejs:item/ore/dust_lump/${ore.ore}`, `4x kubejs:item/ore/purified_dust/${ore.ore}`).id(`${recipedid}shapeless/2/dust_lump/powder/${ore.ore}`)//小团矿
             event.shapeless(`kubejs:item/ore/dust_lump/${ore.ore}`, `2x kubejs:item/ore/refined_dust/${ore.ore}`).id(`${recipedid}shapeless/3/dust_lump/powder/${ore.ore}`)//小团矿
             event.shapeless(Item.of(`kubejs:item/ore/dust_clump/${ore.ore}`), `4x kubejs:item/ore/dust_lump/${ore.ore}`).id(`${recipedid}shapeless/1/dust_lump/${ore.ore}`)//大团矿

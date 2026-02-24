@@ -4,7 +4,16 @@
 	default_quest_shape: ""
 	filename: "4EBBE730662AEE77"
 	group: "2BD524ABD6AD1EEE"
-	icon: "immersiveengineering:manual"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"tfc:item_heat": {
+				heat: 0.0f
+				ticks: 0L
+			}
+		}
+		id: "immersiveengineering:manual"
+	}
 	id: "4EBBE730662AEE77"
 	order_index: 1
 	quest_links: [ ]
@@ -32,6 +41,12 @@
 			hide_until_deps_visible: true
 			icon: {
 				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
 				id: "immersiveengineering:hammer"
 				tag: {
 					Damage: 0
@@ -80,6 +95,12 @@
 			]
 			icon: {
 				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
 				id: "immersiveengineering:hammer"
 				tag: {
 					Damage: 0
@@ -175,7 +196,16 @@
 				""
 				"工程师装配台具有六格储存空间以及一格蓝图放置位点，放置位点内放入不同的蓝图，右侧就会出现不同的对应的合成表以进行对应的制作。"
 			]
-			icon: "immersiveengineering:workbench"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:workbench"
+			}
 			id: "2F2D53888136A19E"
 			rewards: [{
 				id: "1E7052499491A5B9"
@@ -259,7 +289,16 @@
 				""
 				"动能发电机分为风车和水车。水车三个水车并联满速状况下能达到75fe/t，风车不稳定，放在越高越空旷的地方发电量越高。"
 			]
-			icon: "immersiveengineering:thermoelectric_generator"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:thermoelectric_generator"
+			}
 			id: "34C46B1F330D644B"
 			rewards: [{
 				id: "3FE9D99388305C98"
@@ -485,7 +524,16 @@
 				""
 				"为了防止被电线击伤，可以使用铝板制作法拉第套装。制作方法与原版的盔甲大致等同，耐久，但是可以有效的防止电线带来的伤害。"
 			]
-			icon: "immersiveengineering:connector_mv_relay"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:connector_mv_relay"
+			}
 			id: "5E48820D1D48EF38"
 			rewards: [{
 				id: "50F1BC441E6CC4B9"

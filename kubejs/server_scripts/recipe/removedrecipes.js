@@ -5,8 +5,14 @@ ServerEvents.recipes(e => {
   e.remove({ mod: 'immersive_melodies' })
   e.remove({ mod: 'functionalstorage' })
   e.remove({ mod: 'scguns' })
-
+ e.remove({ mod: 'createcasing' })
   const iddd = [
+    'petrolsparts:cutting/coaxial_gear_from_cogwheel',
+    'petrolsparts:cutting/coaxial_gear_from_wood',
+    'petrolsparts:cutting/large_coaxial_gear_from_cogwheel',
+    'immersiveengineering:crafting/furnace_heater',
+    'create:crafting/logistics/pulse_extender',
+    'create:crafting/logistics/pulse_repeater',
     'petrolsparts:crafting/pneumatic_tube',
     'artisanal:mixing_bowl/dark_chocolate_blend',
     'artisanal:mixing_bowl/white_chocolate_blend',
@@ -914,7 +920,7 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'tfc_hammer_time:heating/sledgehammer_head/blue_steel' })
   e.remove({ id: 'tfcscraping:heating/metal/blue_steel_scraping_knife' })
   e.remove({ id: 'tfcscraping:heating/metal/blue_steel_scraping_knife_blade' })
-  e.remove({ id: 'tfc_hammer_time:anvil/metal/excavator_head/blue_steel' })
+  //e.remove({ id: 'tfc_hammer_time:anvil/metal/excavator_head/blue_steel' })
   e.remove({ id: 'precisionprospecting:heating/metal/prospector_hammer_head/blue_steel' })
   e.remove({ id: 'artisanal:heating/metal/circle_blade/blue_steel' })
   e.remove({ id: 'artisanal:heating/metal/circle_blade/red_steel' })

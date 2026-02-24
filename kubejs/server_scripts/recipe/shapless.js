@@ -2,6 +2,13 @@ ServerEvents.recipes(event => {
     const { tfc, create, kubejs, immersiveengineering } = event.recipes;
     const id_in = "kubejs:recipe/shapeless/"
 
+  event.shapeless("kubejs:tfc/water_stone", ["tfc:mortar", "tfc:brick/quartzite"]);//天然水石
+  event.shapeless("kubejs:tfc/sandstone_whetstone", ["minecraft:clay_ball", "#kubejs:smooth_sandstone", "kubejs:rock_powder"]);//砂岩磨刀石
+  event.shapeless("kubejs:tfc/whetstone", ["tfc:silica_glass_batch", '#tfc:gem_powders',"#kubejs:hard_rock_brick"]);//磨刀石
+  event.shapeless('kubejs:tfc/unfired_diamond_whetstone', ["tfc:ceramic/ingot_mold", "tfc:powder/diamond", "minecraft:clay_ball","tfc:powder/cassiterite"]).keepIngredient({ item: "tfc:ceramic/ingot_mold" });//未完成的金刚石磨刀石
+  event.shapeless('kubejs:tfc/unfired_ceramic_stone', ["tfc:ceramic/ingot_mold", "2x kubejs:aluminum_chromium_mix_powder","tfc:silica_glass_batch"]).keepIngredient({ item: "tfc:ceramic/ingot_mold" });//未完成的铝陶瓷磨刀石
+
+
     event.shapeless('kubejs:unfired_mold_sheet', ['#forge:sheets', "minecraft:clay"]).keepIngredient({ item: '#forge:sheets' }); //未完成的板模具
     event.shapeless('kubejs:unfired_mold_rods', ['#forge:rods/all_metal',"minecraft:clay"]).keepIngredient({ item: '#forge:rods/all_metal' }); //未完成的棒模具
 

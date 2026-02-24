@@ -145,7 +145,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "1E5C7D82216D2F46"
 					optional_task: true
 					points: false
@@ -541,7 +550,16 @@
 				"不锈钢等级以下的温室都会随着时间流逝而老化。不必在意，这不会对温室造成任何影响。"
 			]
 			hide_until_deps_visible: true
-			icon: "firmalife:treated_wood_greenhouse_wall"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "firmalife:treated_wood_greenhouse_wall"
+			}
 			id: "400313764B17022E"
 			rewards: [{
 				id: "6160087865F3A5E1"
@@ -578,7 +596,16 @@
 		{
 			dependencies: ["400313764B17022E"]
 			description: ["种植盆是温室中用于栽培作物的载体，每个种植盆能够种植的作物种类各不相同，种子自己会告诉你它们能够种在哪个种植盆里。种植盆和耕地一样可以施肥，但与耕地不一样需要每隔一段时间浇水。如果不及时浇水，种植盆中的作物便不会生长。你可以搭建自动浇水的灌溉系统，或者用喷壶手动浇水。"]
-			icon: "firmalife:large_planter"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "firmalife:large_planter"
+			}
 			id: "275A0704EB4EFA8C"
 			rewards: [{
 				id: "6272FAAC99FEAF9A"
@@ -944,7 +971,16 @@
 				"搭建一个烤炉需要使用黏土塑形出烤炉顶、烤炉底和烤炉烟囱三种方块，将烤炉底放置在任意一个你喜欢的位置，并在烤炉底上放置烤炉顶，在烤炉后面放置几格烤炉烟囱。并在烤炉底和烤炉顶除了顶面底面和正面以外的其他三面放置红砖或砖块之类的包裹方块使其被完全包裹（烤炉烟囱也算），烤炉包裹层也可以用来包裹烤炉，但那需要你拥有锻铁。"
 			]
 			hide_until_deps_visible: true
-			icon: "firmalife:oven_bottom"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "firmalife:oven_bottom"
+			}
 			id: "56CDC910560BCE74"
 			rewards: [{
 				id: "2EA9D3DC831B7B0A"
@@ -980,7 +1016,16 @@
 				""
 				"大锅和烤架可以被放置在烤炉底上，这样它们就能享受烤炉更久的保温能力了。"
 			]
-			icon: "firmalife:cured_oven_top"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "firmalife:cured_oven_top"
+			}
 			id: "5FF7FFB0F4F5ABBE"
 			rewards: [{
 				id: "1AF576432BF4AEBA"
@@ -1172,7 +1217,16 @@
 				"一个成功构建的地窖由密封方块围成的一个房间，几扇密封门和一个气象站构成。如果你正确地构建了多方块结构，通过观察气象站即可得知。"
 			]
 			hide_until_deps_visible: true
-			icon: "firmalife:sealed_bricks"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "firmalife:sealed_bricks"
+			}
 			id: "7736AC779D1DA025"
 			rewards: [{
 				id: "5BE3054500D58D38"
@@ -1199,7 +1253,16 @@
 		{
 			dependencies: ["7736AC779D1DA025"]
 			description: ["食物架和悬挂架是与地窖配套的专用食物储存方块，食物架用于储存肉和鱼以外的食物，而悬挂架用于储存肉和鱼。一个食物架和悬挂架能够储存一组同种的食物，且环境温度越低，保质期延长效率越高。"]
-			icon: "firmalife:wood/food_shelf/hickory"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "firmalife:wood/food_shelf/hickory"
+			}
 			id: "1E91D720F8A2C6EE"
 			rewards: [{
 				id: "3BB5F56E98E1AE51"
@@ -1379,7 +1442,16 @@
 			description: ["当产奶动物的好感度足够时即可挤奶，你可以用陶罐或水罐饮用奶，饮用奶可以增加乳制品营养值。"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
-			icon: "firmalife:bucket/yak_milk"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "firmalife:bucket/yak_milk"
+			}
 			id: "0F8DF269DEAF3917"
 			rewards: [{
 				id: "401BE59D5550B64C"
@@ -1473,7 +1545,16 @@
 			dependencies: ["15E9260AECAE335B"]
 			description: ["锻造锻铁需要大量的木炭作为支持，如果你的木炭太少，我建议你先去多准备一些。"]
 			hide_until_deps_complete: true
-			icon: "minecraft:charcoal"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:charcoal"
+			}
 			id: "7D591DFB9CF4D847"
 			rewards: [{
 				id: "4ACAA166D10684F8"
@@ -1492,7 +1573,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "7DCACBDAA2F7B410"
 					optional_task: true
 					points: false
@@ -1632,7 +1722,16 @@
 					type: "item"
 				}
 				{
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "4E3CF632B9B4AF47"
 					item: {
 						Count: 1
@@ -1690,7 +1789,16 @@
 					type: "item"
 				}
 				{
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "18B6BF328CDA016E"
 					item: {
 						Count: 1
@@ -2119,7 +2227,16 @@
 				""
 				"&f[鼠标对准安山岩石磨长按[W]键思索！更容易理解功能]&r"
 			]
-			icon: "create:millstone"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:millstone"
+			}
 			id: "4052E4CC34F12433"
 			rewards: [{
 				id: "21EBDD1F64E400A9"
@@ -2144,7 +2261,16 @@
 		}
 		{
 			dependencies: ["492B40A0DB508FD0"]
-			icon: "create:hand_crank"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:hand_crank"
+			}
 			id: "5BFB313AE619BA74"
 			rewards: [{
 				id: "6481DD8C5C03565E"
@@ -2160,7 +2286,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "5F6B405465B15A62"
 					optional_task: true
 					points: false
@@ -2430,7 +2565,16 @@
 				"&f[鼠标对准物品长按[W]键思索！更容易理解功能]&r"
 			]
 			hide_until_deps_complete: true
-			icon: "create:stressometer"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:stressometer"
+			}
 			id: "59BE02E592F17A58"
 			rewards: [{
 				id: "5217A4BB10B7BF80"
@@ -2446,7 +2590,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "70DBE62B3E95A586"
 					optional_task: true
 					points: false
@@ -2559,7 +2712,16 @@
 				"你可以在炉底放下一个锻铁炉以用来简便化的处理你挖掘的方胚"
 				"&8[虽然仍然需要你手挖]"
 			]
-			icon: "minecraft:hopper"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:hopper"
+			}
 			id: "79C70447D297FD9A"
 			rewards: [
 				{
@@ -2575,7 +2737,16 @@
 			]
 			subtitle: "漏斗的更改"
 			tasks: [{
-				icon: "design_decor:capitalism_warning_sign"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "design_decor:capitalism_warning_sign"
+				}
 				id: "186B4FBF28B133C7"
 				points: false
 				title: "给你一个试试！&8[消耗7级经验]"
@@ -2615,7 +2786,16 @@
 				""
 				"&f[鼠标对准物品长按[W]键思索！更容易理解功能]&r"
 			]
-			icon: "create:mechanical_press"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:mechanical_press"
+			}
 			id: "75371B1CB24686AB"
 			rewards: [{
 				id: "4D7D9C3366C19C05"
@@ -2743,7 +2923,16 @@
 			]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
-			icon: "create:cogwheel"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:cogwheel"
+			}
 			id: "2DD8F4416E7766A4"
 			tasks: [{
 				id: "4617872EF71CB663"

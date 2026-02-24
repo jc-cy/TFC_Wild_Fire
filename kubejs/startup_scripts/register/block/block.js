@@ -14,10 +14,19 @@ StartupEvents.registry('block', event => {
                 .box(5, 0, 1, 11, 3, 15) // 自定义碰撞箱
                 .requiresTool(false)
                 .tagBlock("kubejs:polisher")
-        /* .property(BlockProperties.FACING)
-         .placementState(callback=>{
-                 callback.set(BlockProperties.FACING,callback.horizontalDirection.opposite)
-         })*/
+                .blockEntity(info => {
+                        info.serverTick(0,1,entity=> {
+                               
+                                let block = entity.getBlock()
+                                let downblock = block.down
+                                
+                                if(downblock.getBlockState.isAir){
+                                       block.level.destroyBlock(block.pos,true,null,1)
+                                }
+
+                        })
+                })
+
 
 
         // 2. 砂岩磨刀石
@@ -172,7 +181,7 @@ StartupEvents.registry("block", event => {
         dirt.forEach(dirt => {
                 //泥土台阶
                 event.create(`tfc:${dirt.type}/slab/${dirt.name}`,'slab')
-                        .model(`kubejs:block/${dirt.type}/slab/${dirt.name}`)
+                         .model(`kubejs:block/${dirt.type}/slab/${dirt.name}`)
                         .soundType(dirt.sound)
                         .hardness(dirt.float)
                         .tagBlock('minecraft:mineable/shovel')

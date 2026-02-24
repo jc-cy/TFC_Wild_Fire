@@ -352,16 +352,16 @@ ServerEvents.recipes(e => {
   const item = [
 
     //戒指
-    { name: "copper_ring", metal: "copper", number: 50, temperature: 1080 }, // 铜戒指
-    { name: "bronze_ring", metal: "bronze", number: 50, temperature: 950 }, // 青铜戒指
-    { name: "black_bronze_ring", metal: "black_bronze", number: 50, temperature: 1080 }, // 黑铜戒指
-    { name: "bismuth_bronze_ring", metal: "bismuth_bronze", number: 50, temperature: 1080 }, // 铋铜戒指
-    { name: "silver_ring", metal: "silver", number: 50, temperature: 961 }, // 银戒指
-    { name: "sterling_silver_ring", metal: "sterling_silver", number: 50, temperature: 950 }, // 纹银戒指
-    { name: "gold_ring", metal: "gold", number: 50, temperature: 1064 }, // 金戒指
-    { name: "rose_gold_ring", metal: "rose_gold", number: 50, temperature: 1064 }, // 玫瑰金戒指
-    { name: "steel_ring", metal: "steel", number: 50, temperature: 1535 }, // 钢戒指
-    { name: "black_steel_ring", metal: "black_steel", number: 50, temperature: 1784 }, // 黑钢戒指
+    { name: "copper_ring", metal: "copper", number: 100, temperature: 1080 }, // 铜戒指
+    { name: "bronze_ring", metal: "bronze", number: 100, temperature: 950 }, // 青铜戒指
+    { name: "black_bronze_ring", metal: "black_bronze", number: 100, temperature: 1080 }, // 黑铜戒指
+    { name: "bismuth_bronze_ring", metal: "bismuth_bronze", number: 100, temperature: 1080 }, // 铋铜戒指
+    { name: "silver_ring", metal: "silver", number: 100, temperature: 961 }, // 银戒指
+    { name: "sterling_silver_ring", metal: "sterling_silver", number: 100, temperature: 950 }, // 纹银戒指
+    { name: "gold_ring", metal: "gold", number: 100, temperature: 1064 }, // 金戒指
+    { name: "rose_gold_ring", metal: "rose_gold", number: 100, temperature: 1064 }, // 玫瑰金戒指
+    { name: "steel_ring", metal: "steel", number: 100, temperature: 1535 }, // 钢戒指
+    { name: "black_steel_ring", metal: "black_steel", number: 100, temperature: 1784 }, // 黑钢戒指
   ];
   item.forEach(metala => {
 
@@ -480,6 +480,10 @@ ServerEvents.recipes(e => {
   tfc.heating('tfc:ceramic/unfired_bowl', 1399).resultItem('minecraft:bowl')//碗
   tfc.heating('kubejs:unfired_mold_mechanical', 1399).resultItem('kubejs:mold_mechanical')//零件模具
   tfc.heating('kubejs:unfired_mold_simple_key', 1399).resultItem('kubejs:mold_simple_key')//钥匙模具
+
+
+   tfc.heating('kubejs:tfc/unfired_diamond_whetstone', 1600).resultItem('kubejs:tfc/diamond_whetstone')//钻石磨刀石
+    tfc.heating('kubejs:tfc/unfired_ceramic_stone', 2100).resultItem('kubejs:tfc/ceramic_stone')//铝陶瓷磨刀石
 
   tfc.heating('kubejs:unfired_mold_sheet', 1399).resultItem('kubejs:mold_sheet')//板模具
   tfc.heating('kubejs:unfired_mold_rods', 1399).resultItem('kubejs:mold_rods')//棒模具

@@ -5,7 +5,16 @@
 	filename: "4EF050249B2A79A4"
 	group: "2BD524ABD6AD1EEE"
 	hide_quest_details_until_startable: true
-	icon: "ad_astra:moon_globe"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"tfc:item_heat": {
+				heat: 0.0f
+				ticks: 0L
+			}
+		}
+		id: "ad_astra:moon_globe"
+	}
 	id: "4EF050249B2A79A4"
 	order_index: 2
 	quest_links: [ ]
@@ -14,6 +23,12 @@
 			dependencies: ["17A1BC8ECD139173"]
 			icon: {
 				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
 				id: "ad_astra:tier_2_rocket"
 				tag: {
 					BotariumData: {
@@ -36,7 +51,16 @@
 		}
 		{
 			dependencies: ["403C506DF16CC105"]
-			icon: "ad_astra:mars_globe"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "ad_astra:mars_globe"
+			}
 			id: "01D6D83DA5296A20"
 			shape: "rsquare"
 			size: 2.0d

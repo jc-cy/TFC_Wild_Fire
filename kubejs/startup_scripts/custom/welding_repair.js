@@ -1,4 +1,4 @@
-TFCEvents.registerItemStackModifier(event => {
+/*TFCEvents.registerItemStackModifier(event => {
 
     event.withInput('kubejs:welding_repair_percentage15', (output, input) => {
         if (input.id == output.id) {
@@ -67,4 +67,4 @@ TFCEvents.registerItemStackModifier(event => {
         }
         return input
     })
-})
+})*/

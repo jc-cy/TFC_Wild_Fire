@@ -34,6 +34,7 @@ ServerEvents.tags("item", event => {
     ];
 
     toolMetals.forEach(metal => {
+        if(metal=="copper")return
         toolHeadTemplates.forEach(template => {
             // 替换模板中的 {metal} 为当前金属名（生成完整的物品ID）
             const toolHeadId = template.replace(/{metal}/g, metal);

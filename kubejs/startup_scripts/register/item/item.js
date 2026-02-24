@@ -67,7 +67,12 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:tfc/crushed_sinew', 'basic').texture('kubejs:item/tfc/crushed_sinew'); // 捣碎的筋腱
     event.create('kubejs:tfc/sinew_thread', 'basic').texture('kubejs:item/tfc/sinew_thread'); // 筋线
 
+    event.create('kubejs:tfc/unfired_diamond_whetstone', 'basic').texture('kubejs:item/tfc/unfired_diamond_whetstone').tag("kubejs:1ingot"); // 未烧制的金刚石磨刀石
+    event.create('kubejs:tfc/unfired_ceramic_stone', 'basic').texture('kubejs:item/tfc/unfired_ceramic_stone').tag("kubejs:1ingot"); // 未烧制的铝陶瓷磨刀石
+
     event.create('coal_powder', 'basic').texture('kubejs:item/fuel/coal_powder'); // 煤炭粉
+    event.create('kubejs:item/tfc/mixedgem_powder', 'basic').texture('kubejs:item/tfc/mixedgem_powder').tag('tfc:gem_powders'); //掺杂宝石粉
+
     event.create('kubejs:crushed_raw_desh') // 创建粉碎的原始Desh物品.texture('kubejs:item/crushed_raw_desh') 
     event.create('kubejs:crushed_raw_calorite') // 创建粉碎的原始Calorite物品.texture('kubejs:item/crushed_raw_calorite') 
     event.create('kubejs:crushed_raw_ostrum') // 创建粉碎的原始Ostrum物品.texture('kubejs:item/crushed_raw_ostrum')
@@ -109,7 +114,35 @@ StartupEvents.registry('item', event => {
     event.create('alumina_powder', 'basic').texture('kubejs:item/tfc/alumina_powder').tag("kubejs:ore"); // 氧化铝粉
     event.create('unfired_corundum_brick', 'basic').texture('kubejs:item/tfc/unfired_corundum_brick').tag("kubejs:ore");   // 未完成的刚玉砖
     event.create('corundum_brick', 'basic').texture('kubejs:item/tfc/corundum_brick');   // 刚玉砖
+    //金属齿轮半成品
 
+    const gearBlankConfigs = [
+        { id: "warped", material: "木齿轮", type: "basic" },
+        { id: "cogwheel", material: "安山合金齿轮", type: "basic" }, // 原生create前缀，无casing
+        { id: "birch", material: "铜壳齿轮", type: "basic" },
+        { id: "acacia", material: "铜齿轮", type: "basic" },
+        { id: "bamboo", material: "铸铁齿轮", type: "basic" },
+        { id: "dark_oak", material: "铁壳齿轮", type: "basic" },
+        { id: "crimson", material: "锻铁齿轮", type: "basic" },
+        { id: "mangrove", material: "钢壳齿轮", type: "basic" },
+        { id: "jungle", material: "钢齿轮", type: "basic" },
+        { id: "oak", material: "高锰钢齿轮", type: "basic" }
+    ];
+    gearBlankConfigs.forEach(config => {
+
+        let itemId = `kubejs:gear_blank/cogwheel/${config.id}`;
+        let largeItemId = `kubejs:gear_blank/large_cogwheel/${config.id}`;
+
+        event.create(itemId, config.type)
+
+            .maxStackSize(16) // 堆叠数量
+            .tag('kubejs:gear_blanks') 
+        event.create(largeItemId, config.type)
+
+            .maxStackSize(16) // 堆叠数量
+            .tag('kubejs:large_gear_blanks')
+
+    });
 
 
     //万象瑞雪模型以及
@@ -296,32 +329,32 @@ StartupEvents.registry("item", event => {   //新金属
     ]
     molten_metal.forEach(metal => {
         event.create(`tfc:metal/ingot/${metal.id}`).texture(`kubejs:item/metal/ingot/${metal.id}`)
-        .tag('balm:ingots')
-        .tag(`forge:ingots`)
-        .tag('tfc:pileable_ingots')
-        .tag(`forge:ingots/${metal.id}`)
-        .tag(`tfc:metal_item/${metal.id}`);
+            .tag('balm:ingots')
+            .tag(`forge:ingots`)
+            .tag('tfc:pileable_ingots')
+            .tag(`forge:ingots/${metal.id}`)
+            .tag(`tfc:metal_item/${metal.id}`);
         event.create(`tfc:metal/double_ingot/${metal.id}`).texture(`kubejs:item/metal/double_ingot/${metal.id}`)
-        .tag('tfc:pileable_double_ingots')
-        .tag('tfc:pileable_sheets')
-        .tag(`forge:double_ingots`)
-        .tag(`forge:double_ingots/${metal.id}`)
-        .tag(`tfc:metal_item/${metal.id}`);
+            .tag('tfc:pileable_double_ingots')
+            .tag('tfc:pileable_sheets')
+            .tag(`forge:double_ingots`)
+            .tag(`forge:double_ingots/${metal.id}`)
+            .tag(`tfc:metal_item/${metal.id}`);
         event.create(`tfc:metal/sheet/${metal.id}`).texture(`kubejs:item/metal/sheet/${metal.id}`)
-        .tag('tfc:pileable_sheets')
-        .tag(`forge:sheets`)
-        .tag(`forge:sheets/${metal.id}`)
-        .tag(`tfc:metal_item/${metal.id}`);
+            .tag('tfc:pileable_sheets')
+            .tag(`forge:sheets`)
+            .tag(`forge:sheets/${metal.id}`)
+            .tag(`tfc:metal_item/${metal.id}`);
         event.create(`tfc:metal/double_sheet/${metal.id}`).texture(`kubejs:item/metal/double_sheet/${metal.id}`)
-        .tag(`forge:double_sheets`)
-        .tag(`forge:double_sheets/${metal.id}`)
-        .tag(`tfc:metal_item/${metal.id}`);
+            .tag(`forge:double_sheets`)
+            .tag(`forge:double_sheets/${metal.id}`)
+            .tag(`tfc:metal_item/${metal.id}`);
         event.create(`tfc:metal/rod/${metal.id}`).texture(`kubejs:item/metal/rod/${metal.id}`)
-        .tag(`forge:rods`)
-        .tag(`forge:rods/${metal.id}`)
-        .tag(`tfc:metal_item/${metal.id}`);
+            .tag(`forge:rods`)
+            .tag(`forge:rods/${metal.id}`)
+            .tag(`tfc:metal_item/${metal.id}`);
 
-    })  
+    })
     //矿物
     const ore = [
         'ilmenite',
@@ -331,11 +364,11 @@ StartupEvents.registry("item", event => {   //新金属
     ]
     ore.forEach(ore => {
         event.create(`tfc:ore/rich_${ore}`).texture(`kubejs:item/ore/rich_${ore}`)
-        .tag('tfc:ore_pieces');
+            .tag('tfc:ore_pieces');
         event.create(`tfc:ore/${ore}`).texture(`kubejs:item/ore/${ore}`)
-        .tag('tfc:ore_pieces');
+            .tag('tfc:ore_pieces');
         event.create(`tfc:ore/poor_${ore}`).texture(`kubejs:item/ore/poor_${ore}`)
-        .tag('tfc:ore_pieces');
+            .tag('tfc:ore_pieces');
     })
 
 })  

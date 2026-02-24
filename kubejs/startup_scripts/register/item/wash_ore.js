@@ -21,7 +21,12 @@ let wash_ore = [
     { mod: 'tfc:ore', type: '/', ore: 'sulfur', color: 0xFFFF00 },
     { mod: 'tfc:ore', type: '/', ore: 'graphite', color: 0x202020 },
     { mod: 'tfc:ore', type: '/', ore: 'cryolite', color: 0xF0F8FF },
-    { mod: 'tfc:ore', type: '/', ore: 'cinnabar', color: 0xFF0000 }
+    { mod: 'tfc:ore', type: '/', ore: 'cinnabar', color: 0xFF0000 },
+    
+    { mod: 'tfc:ore', type: '/', ore: 'ilmenite', color: 0xFF0000 },//钛铁
+    { mod: 'tfc:ore', type: '/', ore: 'manganese', color: 0xFF0000 },///锰
+    { mod: 'tfc:ore', type: '/', ore: 'native_vanadium', color: 0xFF0000 },//钒
+
 ];
 
 StartupEvents.registry("item", event => {

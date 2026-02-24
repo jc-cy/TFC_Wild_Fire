@@ -23,7 +23,16 @@
 				""
 				"加农炮有多种设置可供使用，通过合理使用加农炮的选项和蓝图创建的自由性，你甚至可以做到打印大型的空置域。机械动力的蓝图系统，恐怖如斯。"
 			]
-			icon: "create:schematic_table"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:schematic_table"
+			}
 			id: "5A304CBBF873084F"
 			subtitle: "建筑爱好者的福音"
 			tasks: [
