@@ -7,7 +7,8 @@ ServerEvents.recipes(e => {
   e.remove({ mod: 'scguns' })
   e.remove({ mod: 'createcasing' })
   e.remove({ mod: 'firma_aircraft' })
- e.remove({ mod: 'createcasing' })
+  e.remove({ mod: 'createcasing' })
+  e.remove({ mod: 'irons_spellbooks' })
  e.replaceInput({}, "create:shaft",'#kubejs:shaft')
  
   const iddd = [

@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/coarse_dirt/fluvisol"
+      },
+      {
+        "model": "tfc:block/coarse_dirt/fluvisol",
+        "y": 90
+      },
+      {
+        "model": "tfc:block/coarse_dirt/fluvisol",
+        "y": 180
+      },
+      {
+        "model": "tfc:block/coarse_dirt/fluvisol",
+        "y": 270
+      }
+    ]
+  }
+}

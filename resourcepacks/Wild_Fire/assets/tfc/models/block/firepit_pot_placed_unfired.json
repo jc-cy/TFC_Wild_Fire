@@ -1,0 +1,10 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"parent": "tfc:block/firepit_pot_placed",
+	"textures": {
+		"particle": "tfc:block/ceramic/pot/pot_outside_clay",
+		"pot_side": "tfc:block/ceramic/pot/pot_outside_clay",
+		"pot_bottom": "tfc:block/ceramic/pot/pot_inside_clay"
+	}
+}

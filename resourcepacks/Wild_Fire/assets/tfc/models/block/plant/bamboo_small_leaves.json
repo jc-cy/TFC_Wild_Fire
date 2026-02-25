@@ -1,0 +1,8 @@
+{
+    "ambientocclusion": false,
+	"parent": "minecraft:block/bamboo_small_leaves",
+    "textures": {
+        "texture": "tfc:block/plant/golden_bamboo/small_leaves",
+        "particle": "tfc:block/plant/golden_bamboo/small_leaves"
+    }
+}

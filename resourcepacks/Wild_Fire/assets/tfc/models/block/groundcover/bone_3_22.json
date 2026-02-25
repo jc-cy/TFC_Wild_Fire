@@ -1,0 +1,19 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "tfc:block/groundcover/bone_2",
+		"particle": "tfc:block/groundcover/bone_2"
+	},
+	"elements": [
+		{
+			"from": [1, 0.25, 6],
+			"to": [15, 0.25, 9],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"up": {"uv": [1, 7, 15, 10], "texture": "#0"},
+				"down": {"uv": [1, 10, 15, 7], "texture": "#0"}
+			}
+		}
+	]
+}

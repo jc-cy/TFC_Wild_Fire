@@ -1,0 +1,24 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "tfc:block/plant/cycad/trunk",
+		"trunk": "tfc:block/plant/cycad/trunk"
+	},
+	"elements": [
+		{
+			"from": [6, 0, 6],
+			"to": [10, 16, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8], "rescale": true},
+			"faces": {
+				"north": {"uv": [0, 0, 4, 16], "texture": "#trunk"},
+				"east": {"uv": [4, 0, 8, 16], "texture": "#trunk"},
+				"south": {"uv": [8, 0, 12, 16], "texture": "#trunk"},
+				"west": {"uv": [12, 0, 16, 16], "texture": "#trunk"},
+				"up": {"uv": [6, 6, 10, 10], "texture": "#trunk"},
+				"down": {"uv": [6, 6, 10, 10], "texture": "#trunk"}
+			}
+		}
+	]
+}
