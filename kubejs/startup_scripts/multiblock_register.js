@@ -43,7 +43,7 @@ StartupEvents.postInit((event) => {
             new $Character('J'),
             "immersiveengineering:slab_sheetmetal_iron[type=top]",
             new $Character('K'),
-            $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'create:seats')),
+            "create:black_seat",
             new $Character('M'),
             "kubejs:underwater_turbine[facing=east]"
 
@@ -69,7 +69,7 @@ StartupEvents.postInit((event) => {
             new $Character('I'),
             "createdieselgenerators:sheet_metal_panel[facing=north]",//需要全部木头的靠墙告示牌【
             new $Character('H'),
-            $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'create:seats')),
+            "create:black_seat",
             new $Character('T'),
             $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'minecraft:planks')),
             new $Character('m'),
@@ -91,7 +91,7 @@ StartupEvents.postInit((event) => {
             new $Character('0'),
             "minecraft:chiseled_bookshelf[facing=west]",
             new $Character('t'),
-            $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'create:seats')),
+            "create:black_seat",
             new $Character('l'),
             "createdieselgenerators:sheet_metal_panel[facing=south]",//需要全部木头的靠墙告示牌【
             new $Character('i'),
@@ -120,7 +120,7 @@ StartupEvents.postInit((event) => {
             new $Character('0'),
             "supplementaries:clock_block[facing=west]",
             new $Character('t'),
-            $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'create:seats')),
+            "create:black_seat",
             new $Character('U'),
             "minecraft:chest[facing=south]",
             new $Character('I'),
@@ -157,15 +157,15 @@ StartupEvents.postInit((event) => {
             new $Character('R'),
             "create:industrial_iron_block",
             new $Character('T'),
-            "create:metal_girder",//不知道怎么写金属梁的x为ture
+            "create:metal_girder[axis=x]",//不知道怎么写金属梁的x为ture
             new $Character('I'),
-            "create:metal_girder",//不知道怎么写金属梁的z为ture
+            "create:metal_girder[axis=z]",//不知道怎么写金属梁的z为ture
             new $Character('A'),
             "create:andesite_casing",
             new $Character('L'),
-            $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'interiors:floor_chairs')),//不知道怎么写方向、方向为[facing=east]
+            "bits_n_bobs:black_chair[facing=west]",//不知道怎么写方向、方向为[facing=east]
             new $Character('t'),
-            $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'create:seats')),
+            "create:black_seat",
             new $Character('i'),
             "farmersdelight:rope",
             new $Character('O'),
@@ -193,7 +193,7 @@ StartupEvents.postInit((event) => {
             new $Character('I'),
             $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'minecraft:fences')),
             new $Character('t'),
-            $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'create:seats')),
+            "create:black_seat",
             new $Character('l'),
             "createdieselgenerators:sheet_metal_panel[facing=south]",
             new $Character('i'),
@@ -218,7 +218,7 @@ StartupEvents.postInit((event) => {
             new $Character('0'),
             "minecraft:observer[facing=east]",
             new $Character('t'),
-            $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'create:seats')),
+            "create:black_seat",
             new $Character('l'),
             "createdieselgenerators:sheet_metal_panel[facing=south]",//需要全部木头的靠墙告示牌【
             new $Character('i'),
@@ -248,7 +248,7 @@ StartupEvents.postInit((event) => {
             new $Character('A'),
             "create:andesite_casing",
             new $Character('L'),
-            $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'interiors:floor_chairs')),//不知道怎么写方向、方向为[facing=east]
+            "bits_n_bobs:black_chair[facing=west]",//不知道怎么写方向、方向为[facing=east]
             new $Character('K'),
             "create:white_sail[facing=south]",
             new $Character('p'),

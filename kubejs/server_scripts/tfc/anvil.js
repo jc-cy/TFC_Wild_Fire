@@ -42,13 +42,23 @@ ServerEvents.recipes(e => {
   ).tier(2).bonus(false)//镍锭
 
    tfc.anvil(
+    "minecraft:hopper",
+    "tfc:metal/double_sheet/copper",
+    [
+      'hit_any',
+      'draw_any',
+      'hit_any',
+    ]
+  ).tier(1).bonus(false)//漏斗
+
+   tfc.anvil(
     "scguns:stone_gun_barrel",
     "tfc:metal/sheet/cast_iron",
     [
       'hit_any',
       'draw_any'
     ]
-  ).tier(1).bonus(false)//土枪管
+  ).tier(2).bonus(false)//土枪管
    tfc.anvil(
     "scguns:heavy_gun_barrel",
     "tfc:metal/double_sheet/cast_iron",
@@ -56,7 +66,7 @@ ServerEvents.recipes(e => {
       'hit_any',
       'draw_any'
     ]
-  ).tier(1).bonus(false)//重型土枪管
+  ).tier(2).bonus(false)//重型土枪管
     tfc.anvil(
     'supplementaries:bubble_blower',
     'immersiveengineering:stick_aluminum',

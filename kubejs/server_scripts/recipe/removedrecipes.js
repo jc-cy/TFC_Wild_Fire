@@ -5,7 +5,8 @@ ServerEvents.recipes(e => {
   e.remove({ mod: 'immersive_melodies' })
   e.remove({ mod: 'functionalstorage' })
   e.remove({ mod: 'scguns' })
- e.remove({ mod: 'createcasing' })
+  e.remove({ mod: 'createcasing' })
+  e.remove({ mod: 'firma_aircraft' })
   const iddd = [
     'petrolsparts:cutting/coaxial_gear_from_cogwheel',
     'petrolsparts:cutting/coaxial_gear_from_wood',

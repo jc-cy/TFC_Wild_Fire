@@ -867,6 +867,7 @@ ServerEvents.recipes(e => {
     { name: "create:copper_scaffolding", temperature: 1085, metal: "tfc:metal/copper", number: 50 },
     { name: "createprism:copper_glass_scaffolding", temperature: 1085, metal: "tfc:metal/copper", number: 50 },
     { name: "createprism:copper_clear_glass_scaffolding", temperature: 1085, metal: "tfc:metal/copper", number: 50 },
+    { name: "minecraft:hopper", temperature: 1085, metal: "tfc:metal/copper", number: 400 },
 
     //黄铜制品
     { name: "create:brass_ladder", temperature: 930, metal: "tfc:metal/brass", number: 50 },
