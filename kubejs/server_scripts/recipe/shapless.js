@@ -2,15 +2,59 @@ ServerEvents.recipes(event => {
     const { tfc, create, kubejs, immersiveengineering } = event.recipes;
     const id_in = "kubejs:recipe/shapeless/"
 
-  event.shapeless("kubejs:tfc/water_stone", ["tfc:mortar", "tfc:brick/quartzite"]);//天然水石
-  event.shapeless("kubejs:tfc/sandstone_whetstone", ["minecraft:clay_ball", "#kubejs:smooth_sandstone", "kubejs:rock_powder"]);//砂岩磨刀石
-  event.shapeless("kubejs:tfc/whetstone", ["tfc:silica_glass_batch", '#tfc:gem_powders',"#kubejs:hard_rock_brick"]);//磨刀石
-  event.shapeless('kubejs:tfc/unfired_diamond_whetstone', ["tfc:ceramic/ingot_mold", "tfc:powder/diamond", "minecraft:clay_ball","tfc:powder/cassiterite"]).keepIngredient({ item: "tfc:ceramic/ingot_mold" });//未完成的金刚石磨刀石
-  event.shapeless('kubejs:tfc/unfired_ceramic_stone', ["tfc:ceramic/ingot_mold", "2x kubejs:aluminum_chromium_mix_powder","tfc:silica_glass_batch"]).keepIngredient({ item: "tfc:ceramic/ingot_mold" });//未完成的铝陶瓷磨刀石
+
+    //传动杆
+    event.shapeless("create:shaft", ['#kubejs:shaft', "create:andesite_alloy"]).keepIngredient({ item: "minecraft:glass" });//安山传动杆
+    event.shapeless("createcasing:glass_shaft", ['#kubejs:shaft', "minecraft:glass"]).keepIngredient({ item: "minecraft:glass" });//玻璃传动杆
+    event.shapeless("createcasing:mangrove_shaft", ['#kubejs:shaft', "kubejs:steel_fragments"]).keepIngredient({ item: "kubejs:steel_fragments" });//钢壳传动杆
+    event.shapeless("createcasing:warped_shaft", ['#kubejs:shaft', '#tfc:lumber']).keepIngredient({ item: "#tfc:lumber" });//木质传动杆
+    event.shapeless("createcasing:jungle_shaft", ['#kubejs:shaft', "tfc:metal/ingot/steel"]).keepIngredient({ item: "tfc:metal/ingot/steel" });//钢传动杆
+    event.shapeless("createcasing:oak_shaft", ['#kubejs:shaft', "tfc:metal/ingot/black_steel"]).keepIngredient({ item: "tfc:metal/ingot/black_steel" });//高锰钢传动杆
+    event.shapeless("createcasing:acacia_shaft", ['#kubejs:shaft', "tfc:metal/ingot/copper"]).keepIngredient({ item: "tfc:metal/ingot/copper" });//铜传动杆
+    event.shapeless("createcasing:birch_shaft", ['#kubejs:shaft', "kubejs:copper_fragments"]).keepIngredient({ item: "kubejs:copper_fragments" });//铜壳传动杆
+    event.shapeless("createcasing:crimson_shaft", ['#kubejs:shaft', "tfc:metal/ingot/wrought_iron"]).keepIngredient({ item: "tfc:metal/ingot/wrought_iron" });//锻铁传动杆
+    event.shapeless("createcasing:dark_oak_shaft", ['#kubejs:shaft', "kubejs:wrought_iron_fragments"]).keepIngredient({ item: "kubejs:wrought_iron_fragments" });//铁壳传动杆
+
+    //金属齿轮半成品
+
+    event.shapeless("kubejs:gear_blank/cogwheel/warped", ['#tfc:saws', '#tfc:lumber']).damageIngredient({ tag: '#tfc:saws' }, 1)//木齿轮半成品
+    event.shapeless("kubejs:gear_blank/large_cogwheel/warped", ['#tfc:saws', '2x #tfc:lumber']).damageIngredient({ tag: '#tfc:saws' }, 1)//大木齿轮半成品
+
+    event.shapeless("createcasing:acacia_large_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/large_cogwheel/acacia"]);//铜大齿轮
+    event.shapeless("createcasing:birch_large_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/large_cogwheel/birch"]);//铜壳大齿轮
+    event.shapeless("createcasing:dark_oak_large_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/large_cogwheel/dark_oak"]);//铁壳大齿轮
+    event.shapeless("createcasing:crimson_large_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/large_cogwheel/crimson"]);//锻铁大齿轮
+    event.shapeless("createcasing:jungle_large_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/large_cogwheel/jungle"]);//钢大齿轮
+    event.shapeless("createcasing:mangrove_large_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/large_cogwheel/mangrove"]);//钢壳大齿轮
+    event.shapeless("createcasing:oak_large_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/large_cogwheel/oak"]);//高锰钢大齿轮
+    event.shapeless("createcasing:warped_large_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/large_cogwheel/warped"]);//木大齿轮
+
+    event.shapeless("createcasing:acacia_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/cogwheel/acacia"]);//铜小齿轮
+    event.shapeless("createcasing:birch_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/cogwheel/birch"]);//铜壳小齿轮
+    event.shapeless("createcasing:dark_oak_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/cogwheel/dark_oak"]);//铁壳小齿轮
+    event.shapeless("createcasing:crimson_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/cogwheel/crimson"]);//锻铁小齿轮
+    event.shapeless("createcasing:jungle_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/cogwheel/jungle"]);//钢小齿轮
+    event.shapeless("createcasing:mangrove_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/cogwheel/mangrove"]);//钢壳小齿轮
+    event.shapeless("createcasing:oak_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/cogwheel/oak"]);//高锰钢小齿轮
+    event.shapeless("createcasing:warped_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/cogwheel/warped"]);//木小齿轮
+
+
+    event.shapeless("create:large_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/large_cogwheel/cogwheel"]);//安山大齿轮
+    event.shapeless("create:cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/cogwheel/cogwheel"]);//安山小齿轮
+
+
+
+
+
+    event.shapeless("kubejs:tfc/water_stone", ["tfc:mortar", "tfc:brick/quartzite"]);//天然水石
+    event.shapeless("kubejs:tfc/sandstone_whetstone", ["minecraft:clay_ball", "#kubejs:smooth_sandstone", "kubejs:rock_powder"]);//砂岩磨刀石
+    event.shapeless("kubejs:tfc/whetstone", ["tfc:silica_glass_batch", '#tfc:gem_powders', "#kubejs:hard_rock_brick"]);//磨刀石
+    event.shapeless('kubejs:tfc/unfired_diamond_whetstone', ["tfc:ceramic/ingot_mold", "tfc:powder/diamond", "minecraft:clay_ball", "tfc:powder/cassiterite"]).keepIngredient({ item: "tfc:ceramic/ingot_mold" });//未完成的金刚石磨刀石
+    event.shapeless('kubejs:tfc/unfired_ceramic_stone', ["tfc:ceramic/ingot_mold", "2x kubejs:aluminum_chromium_mix_powder", "tfc:silica_glass_batch"]).keepIngredient({ item: "tfc:ceramic/ingot_mold" });//未完成的铝陶瓷磨刀石
 
 
     event.shapeless('kubejs:unfired_mold_sheet', ['#forge:sheets', "minecraft:clay"]).keepIngredient({ item: '#forge:sheets' }); //未完成的板模具
-    event.shapeless('kubejs:unfired_mold_rods', ['#forge:rods/all_metal',"minecraft:clay"]).keepIngredient({ item: '#forge:rods/all_metal' }); //未完成的棒模具
+    event.shapeless('kubejs:unfired_mold_rods', ['#forge:rods/all_metal', "minecraft:clay"]).keepIngredient({ item: '#forge:rods/all_metal' }); //未完成的棒模具
 
 
     event.shapeless('2x kubejs:charcoal_pellet', ['createdieselgenerators:wood_chip', '2x tfc:powder/charcoal', 'tfc:daub']);//木炭颗粒

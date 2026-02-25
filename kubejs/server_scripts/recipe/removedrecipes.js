@@ -7,7 +7,16 @@ ServerEvents.recipes(e => {
   e.remove({ mod: 'scguns' })
   e.remove({ mod: 'createcasing' })
   e.remove({ mod: 'firma_aircraft' })
+ e.remove({ mod: 'createcasing' })
+ e.replaceInput({}, "create:shaft",'#kubejs:shaft')
+ 
   const iddd = [
+    'create:deploying/cogwheel',
+    'create:crafting/kinetics/large_cogwheel',
+    'petrolsparts:crafting/large_cog_from_coaxial_gear',
+    'create:crafting/kinetics/large_cogwheel_from_little',
+    'petrolsparts:crafting/cog_from_coaxial_gear',
+    'create:crafting/kinetics/cogwheel',
     'petrolsparts:cutting/coaxial_gear_from_cogwheel',
     'petrolsparts:cutting/coaxial_gear_from_wood',
     'petrolsparts:cutting/large_coaxial_gear_from_cogwheel',
