@@ -1,5 +1,14 @@
 {
     "compilerOptions": {
+        "types": [
+            "../../.probe/server/packages",
+            "../../.probe/server/global",
+            "../../.probe/shared"
+        ],
+        "lib": [
+            "ES5",
+            "ES2015"
+        ],
         "isolatedModules": true,
         "composite": true,
         "moduleResolution": "classic",
@@ -9,16 +18,7 @@
         "rootDir": ".",
         "skipLibCheck": true,
         "target": "ES2015",
-        "incremental": true,
-        "types": [
-            "../../.probe/server/packages",
-            "../../.probe/server/global",
-            "../../.probe/shared"
-        ],
-        "lib": [
-            "ES5",
-            "ES2015"
-        ]
+        "incremental": true
     },
     "include": [
         "./**/*.js"

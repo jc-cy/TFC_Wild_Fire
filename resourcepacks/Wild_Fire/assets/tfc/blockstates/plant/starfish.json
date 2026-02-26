@@ -1,0 +1,160 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "east"
+      },
+      "apply": [
+        {
+          "model": "tfc:block/plant/starfish_0",
+          "x": 90,
+          "y": 90
+        },
+		{
+          "model": "tfc:block/plant/starfish_1",
+          "x": 90,
+          "y": 90
+        },
+		{
+          "model": "tfc:block/plant/starfish_2",
+          "x": 90,
+          "y": 90
+        }
+      ]
+    },
+    {
+      "when": {
+        "facing": "south"
+      },
+      "apply": [
+        {
+          "model": "tfc:block/plant/starfish_0",
+          "x": 90,
+          "y": 180
+        },
+		{
+          "model": "tfc:block/plant/starfish_1",
+          "x": 90,
+          "y": 180
+        },
+		{
+          "model": "tfc:block/plant/starfish_2",
+          "x": 90,
+          "y": 180
+        }
+      ]
+    },
+    {
+      "when": {
+        "facing": "west"
+      },
+      "apply": [
+        {
+          "model": "tfc:block/plant/starfish_0",
+          "x": 90,
+          "y": 270
+        },
+		{
+          "model": "tfc:block/plant/starfish_1",
+          "x": 90,
+          "y": 270
+        },
+		{
+          "model": "tfc:block/plant/starfish_2",
+          "x": 90,
+          "y": 270
+        }
+      ]
+    },
+    {
+      "when": {
+        "facing": "north"
+      },
+      "apply": [
+        {
+          "model": "tfc:block/plant/starfish_0",
+          "x": 90
+        },
+		{
+          "model": "tfc:block/plant/starfish_1",
+          "x": 90
+        },
+		{
+          "model": "tfc:block/plant/starfish_2",
+          "x": 90
+        }
+      ]
+    },
+    {
+      "when": {
+        "facing": "up"
+      },
+      "apply": [
+        {
+          "model": "tfc:block/plant/starfish_0"
+        },
+		{
+          "model": "tfc:block/plant/starfish_1"
+        },
+		{
+          "model": "tfc:block/plant/starfish_2"
+        },
+		{
+          "model": "tfc:block/plant/starfish_0",
+		  "y": 90
+        },
+		{
+          "model": "tfc:block/plant/starfish_1",
+		  "y": 90
+        },
+		{
+          "model": "tfc:block/plant/starfish_2",
+		  "y": 90
+        },
+		{
+          "model": "tfc:block/plant/starfish_0",
+		  "y": 180
+        },
+		{
+          "model": "tfc:block/plant/starfish_1",
+		  "y": 180
+        },
+		{
+          "model": "tfc:block/plant/starfish_2",
+		  "y": 180
+        },
+		{
+          "model": "tfc:block/plant/starfish_0",
+		  "y": 270
+        },
+		{
+          "model": "tfc:block/plant/starfish_1",
+		  "y": 270
+        },
+		{
+          "model": "tfc:block/plant/starfish_2",
+		  "y": 270
+        }
+      ]
+    },
+    {
+      "when": {
+        "facing": "down"
+      },
+      "apply": [
+        {
+          "model": "tfc:block/plant/starfish_0",
+          "x": 180
+        },
+		{
+          "model": "tfc:block/plant/starfish_1",
+          "x": 180
+        },
+		{
+          "model": "tfc:block/plant/starfish_2",
+          "x": 180
+        }
+      ]
+    }
+  ]
+}

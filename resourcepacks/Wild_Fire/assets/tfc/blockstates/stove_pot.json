@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "lit=true,facing=north": {
+      "model": "tfc:block/stove_lit_pot",
+      "y": 270
+    },
+    "lit=true,facing=south": {
+      "model": "tfc:block/stove_lit_pot",
+      "y": 90
+    },
+    "lit=true,facing=east": {
+      "model": "tfc:block/stove_lit_pot"
+    },
+    "lit=true,facing=west": {
+      "model": "tfc:block/stove_lit_pot",
+      "y": 180
+    },
+    "lit=false,facing=north": {
+      "model": "tfc:block/stove_unlit_pot",
+      "y": 270
+    },
+    "lit=false,facing=south": {
+      "model": "tfc:block/stove_unlit_pot",
+      "y": 90
+    },
+    "lit=false,facing=east": {
+      "model": "tfc:block/stove_unlit_pot"
+    },
+    "lit=false,facing=west": {
+      "model": "tfc:block/stove_unlit_pot",
+      "y": 180
+    }
+  }
+}

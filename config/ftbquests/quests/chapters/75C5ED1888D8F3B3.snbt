@@ -2322,7 +2322,7 @@
 				item: "woodencog:wooden_generator"
 				type: "item"
 			}]
-			x: 81.0d
+			x: 79.0d
 			y: -4.5d
 		}
 		{
@@ -2609,8 +2609,8 @@
 				}
 			]
 			title: "应力"
-			x: 82.0d
-			y: -3.5d
+			x: 80.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["6F183520DCA27C19"]
@@ -2955,6 +2955,31 @@
 			}]
 			x: 83.5d
 			y: -3.0d
+		}
+		{
+			dependencies: ["492B40A0DB508FD0"]
+			description: ["装饰你的传动杆，此合成不消耗物品，比如一个锻铁锭能无限转换所有传动杆为锻铁传动杆"]
+			id: "232B3139D3876F9E"
+			tasks: [{
+				id: "485FADDFCD9CCE71"
+				item: "createcasing:glass_shaft"
+				type: "item"
+			}]
+			title: "装饰你的传动杆"
+			x: 79.5d
+			y: -2.0d
+		}
+		{
+			description: ["很显然，安山合金制作的齿轮价格比较昂贵，你或许可以做更便宜的齿轮，但是应该没有那么好用"]
+			id: "6A0FB3D647A44A96"
+			subtitle: "便宜货"
+			tasks: [{
+				id: "5F53740766510AE4"
+				item: "createcasing:warped_cogwheel"
+				type: "item"
+			}]
+			x: 82.0d
+			y: -3.5d
 		}
 	]
 	title: "第二章：大地结晶"

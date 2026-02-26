@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/halite"
+      },
+      {
+        "model": "tfc:block/halite",
+        "y": 90
+      },
+      {
+        "model": "tfc:block/halite",
+        "y": 180
+      },
+      {
+        "model": "tfc:block/halite",
+        "y": 270
+      }
+    ]
+  }
+}

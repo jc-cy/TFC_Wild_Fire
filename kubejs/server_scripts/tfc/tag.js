@@ -28,6 +28,12 @@ ServerEvents.tags('minecraft:item', event => {//
 
 
 
+    const shafts = ['createcasing:glass_shaft', 'createcasing:acacia_shaft', 'createcasing:birch_shaft', 'createcasing:bamboo_shaft', 'createcasing:cherry_shaft', 'createcasing:crimson_shaft', 'createcasing:dark_oak_shaft', 'createcasing:oak_shaft', 'createcasing:jungle_shaft', 'createcasing:mangrove_shaft', 'createcasing:warped_shaft', 'createcasing:spruce_shaft']
+    shafts.forEach(item => {
+        event.add('kubejs:shaft', item);//传动杆
+    })
+
+
     event.add('kubejs:4ore', "immersiveengineering:dust_iron");//热矿粉
 
 

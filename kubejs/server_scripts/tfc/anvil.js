@@ -12,6 +12,118 @@ ServerEvents.recipes(e => {
     { name: "wrought_iron", number: 3 }
   ];
 
+ tfc.anvil(//安山大齿轮
+    "4x kubejs:gear_blank/large_cogwheel/cogwheel",
+    "vintageimprovements:andesite_sheet",
+    [
+      'draw_any',
+      'hit_any'
+    ]
+  ).tier(1).bonus(false)
+
+  tfc.anvil(//安山小齿轮
+    "8x kubejs:gear_blank/cogwheel/cogwheel",
+    "vintageimprovements:andesite_sheet",
+    [
+      'draw_any',
+      'hit_any'
+    ]
+  ).tier(1).bonus(false)
+
+  tfc.anvil(//铜大齿轮
+    "8x kubejs:gear_blank/large_cogwheel/acacia",
+    "tfc:metal/double_sheet/copper",
+    [
+      'draw_any',
+      'hit_any'
+    ]
+  ).tier(1).bonus(false)
+
+  tfc.anvil(//铜小齿轮
+    "8x kubejs:gear_blank/cogwheel/acacia",
+    "tfc:metal/sheet/copper",
+    [
+      'draw_any',
+      'hit_any'
+    ]
+  ).tier(1).bonus(false)
+
+  tfc.anvil(//铸铁大齿轮
+    "8x kubejs:gear_blank/large_cogwheel/bamboo",
+    "tfc:metal/double_sheet/cast_iron",
+    [
+      'draw_any',
+      'hit_any'
+    ]
+  ).tier(1).bonus(false)
+
+  tfc.anvil(//铸铁小齿轮
+    "8x kubejs:gear_blank/cogwheel/bamboo",
+    "tfc:metal/sheet/cast_iron",
+    [
+      'draw_any',
+      'hit_any'
+    ]
+  ).tier(1).bonus(false)
+
+  tfc.anvil(//锻铁大齿轮
+    "8x kubejs:gear_blank/large_cogwheel/crimson",
+    "tfc:metal/double_sheet/wrought_iron",
+    [
+      'draw_any',
+      'hit_any'
+    ]
+  ).tier(3).bonus(false)
+
+  tfc.anvil(//锻铁小齿轮
+    "8x kubejs:gear_blank/cogwheel/crimson",
+    "tfc:metal/sheet/wrought_iron",
+    [
+      'draw_any',
+      'hit_any'
+    ]
+  ).tier(3).bonus(false)
+
+  tfc.anvil(//钢大齿轮
+    "8x kubejs:gear_blank/large_cogwheel/jungle",
+    "tfc:metal/double_sheet/steel",
+    [
+      'draw_any',
+      'hit_any'
+    ]
+  ).tier(4).bonus(false)
+
+  tfc.anvil(//钢小齿轮
+    "8x kubejs:gear_blank/cogwheel/jungle",
+    "tfc:metal/sheet/steel",
+    [
+      'draw_any',
+      'hit_any'
+    ]
+  ).tier(4).bonus(false)
+
+    tfc.anvil(//高锰钢大齿轮
+    "8x kubejs:gear_blank/large_cogwheel/oak",
+    "tfc:metal/double_sheet/black_steel",
+    [
+      'draw_any',
+      'hit_any'
+    ]
+  ).tier(5).bonus(false)
+
+  tfc.anvil(//高锰钢小齿轮
+    "8x kubejs:gear_blank/cogwheel/oak",
+    "tfc:metal/sheet/black_steel",
+    [
+      'draw_any',
+      'hit_any'
+    ]
+  ).tier(5).bonus(false)
+
+
+
+
+
   metal.forEach(item => {
     tfc.welding(
       `kubejs:triple_${item.name}`,       // 输出
@@ -20,8 +132,8 @@ ServerEvents.recipes(e => {
       item.number // 砧等级 0是石头 1铜 2铜合金 3锻铁 4钢 5高锰钢 6精金秘银
     ).id(`kubejs:tfc/anvil/triple_${item.name}`);;
   });
-  
-   tfc.anvil(
+
+  tfc.anvil(
     "kubejs:refined_nickel_bloom",
     "kubejs:raw_nickel_bloom",
     [
@@ -30,8 +142,8 @@ ServerEvents.recipes(e => {
       'hit_any',
     ]
   ).tier(2).bonus(false)//镍坯
-  
-   tfc.anvil(
+
+  tfc.anvil(
     "tfc:metal/ingot/nickel",
     "kubejs:refined_nickel_bloom",
     [
@@ -42,6 +154,17 @@ ServerEvents.recipes(e => {
   ).tier(2).bonus(false)//镍锭
 
    tfc.anvil(
+    "minecraft:hopper",
+    "tfc:metal/double_sheet/copper",
+    [
+      'hit_any',
+      'draw_any',
+      'hit_any',
+    ]
+  ).tier(1).bonus(false)//漏斗
+
+  
+  tfc.anvil(
     "scguns:stone_gun_barrel",
     "tfc:metal/sheet/cast_iron",
     [
@@ -49,7 +172,7 @@ ServerEvents.recipes(e => {
       'draw_any'
     ]
   ).tier(1).bonus(false)//土枪管
-   tfc.anvil(
+  tfc.anvil(
     "scguns:heavy_gun_barrel",
     "tfc:metal/double_sheet/cast_iron",
     [
@@ -57,7 +180,7 @@ ServerEvents.recipes(e => {
       'draw_any'
     ]
   ).tier(1).bonus(false)//重型土枪管
-    tfc.anvil(
+  tfc.anvil(
     'supplementaries:bubble_blower',
     'immersiveengineering:stick_aluminum',
     [
@@ -65,7 +188,7 @@ ServerEvents.recipes(e => {
     ]
   ).tier(1).bonus(false).id("kubejs:tfc/anvil/bubble_blower/anvil")//泡泡环
 
-    tfc.anvil(
+  tfc.anvil(
     'spartanweaponry:medium_quiver_brace',
     'tfc:metal/sheet/copper',
     [
@@ -74,7 +197,7 @@ ServerEvents.recipes(e => {
     ]
   ).tier(1).bonus(false).id("kubejs:tfc/anvil/medium_quiver_brace/anvil")//铜箭袋垫板
 
-    tfc.anvil(
+  tfc.anvil(
     'spartanweaponry:large_quiver_brace',
     'tfc:metal/sheet/wrought_iron',
     [
@@ -82,8 +205,8 @@ ServerEvents.recipes(e => {
       'draw_any'
     ]
   ).tier(3).bonus(false).id("kubejs:tfc/anvil/large_quiver_brace/anvil")//铁箭袋垫板
-  
-    tfc.anvil(
+
+  tfc.anvil(
     'spartanweaponry:huge_quiver_brace',
     'tfc:metal/sheet/steel',
     [

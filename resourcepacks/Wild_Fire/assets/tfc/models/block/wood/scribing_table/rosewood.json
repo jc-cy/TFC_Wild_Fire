@@ -1,0 +1,7 @@
+{
+  "parent": "tfc:block/scribing_table",
+  "textures": {
+    "sheet": "tfc:block/wood/sheet/rosewood",
+    "planks": "tfc:block/wood/planks/rosewood"
+  }
+}

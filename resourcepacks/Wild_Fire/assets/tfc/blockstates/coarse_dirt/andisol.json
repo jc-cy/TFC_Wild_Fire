@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/coarse_dirt/andisol"
+      },
+      {
+        "model": "tfc:block/coarse_dirt/andisol",
+        "y": 90
+      },
+      {
+        "model": "tfc:block/coarse_dirt/andisol",
+        "y": 180
+      },
+      {
+        "model": "tfc:block/coarse_dirt/andisol",
+        "y": 270
+      }
+    ]
+  }
+}

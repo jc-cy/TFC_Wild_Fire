@@ -15,13 +15,13 @@ StartupEvents.registry('block', event => {
                 .requiresTool(false)
                 .tagBlock("kubejs:polisher")
                 .blockEntity(info => {
-                        info.serverTick(0,1,entity=> {
-                               
+                        info.serverTick(0, 1, entity => {
+
                                 let block = entity.getBlock()
                                 let downblock = block.down
-                                
-                                if(downblock.getBlockState.isAir){
-                                       block.level.destroyBlock(block.pos,true,null,1)
+
+                                if (downblock.getBlockState.isAir) {
+                                        block.level.destroyBlock(block.pos, true, null, 1)
                                 }
 
                         })
@@ -169,19 +169,13 @@ StartupEvents.registry("block", event => {
                 { name: "loam", type: "grass", sound: "grass", float: 0.5 },
                 { name: "sandy_loam", type: "grass", sound: "grass", float: 0.5 },
                 { name: "silt", type: "grass", sound: "grass", float: 0.5 },
-                { name: "silty_loam", type: "grass", sound: "grass", float: 0.5 },
-                { name: "brown", type: "sand", sound: "sand", float: 0.5 },
-                { name: "white", type: "sand", sound: "sand", float: 0.5 },
-                { name: "black", type: "sand", sound: "sand", float: 0.5 },
-                { name: "red", type: "sand", sound: "sand", float: 0.5 },
-                { name: "yellow", type: "sand", sound: "sand", float: 0.5 },
-                { name: "green", type: "sand", sound: "sand", float: 0.5 },
-                { name: "pink", type: "sand", sound: "sand", float: 0.5 }
+                { name: "silty_loam", type: "grass", sound: "grass", float: 0.5 }
         ]
+
         dirt.forEach(dirt => {
                 //泥土台阶
-                event.create(`tfc:${dirt.type}/slab/${dirt.name}`,'slab')
-                         .model(`kubejs:block/${dirt.type}/slab/${dirt.name}`)
+                event.create(`tfc:${dirt.type}/slab/${dirt.name}`, 'slab')
+                        .model(`kubejs:block/${dirt.type}/slab/${dirt.name}`)
                         .soundType(dirt.sound)
                         .hardness(dirt.float)
                         .tagBlock('minecraft:mineable/shovel')
@@ -190,6 +184,28 @@ StartupEvents.registry("block", event => {
         })
 });
 
+StartupEvents.registry("block", event => {
+        const sand = [
+                { name: "brown", type: "sand", sound: "sand", float: 0.5 },
+                { name: "white", type: "sand", sound: "sand", float: 0.5 },
+                { name: "black", type: "sand", sound: "sand", float: 0.5 },
+                { name: "red", type: "sand", sound: "sand", float: 0.5 },
+                { name: "yellow", type: "sand", sound: "sand", float: 0.5 },
+                { name: "green", type: "sand", sound: "sand", float: 0.5 },
+                { name: "pink", type: "sand", sound: "sand", float: 0.5 }
+        ]
+        sand.forEach(sand => {
+                //沙子台阶
+                event.create(`tfc:${sand.type}/slab/${sand.name}`, 'slab')
+                        .textureAll(`tfc:block/${sand.type}/${sand.name}`)
+                        .soundType(sand.sound)
+                        .hardness(sand.float)
+                        .tagBlock('minecraft:mineable/shovel')
+                        .tagBlock('tfc:ore_deposits')
+                        .tagBlock('tfc:can_landslide')
+        })
+
+});
 
 StartupEvents.registry("block", event => {
         //注册宝石砂    

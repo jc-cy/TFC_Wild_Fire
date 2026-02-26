@@ -2,12 +2,12 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
+	"render_type": "minecraft:cutout",
 	"texture_size": [64, 64],
 	"textures": {
 		"2": "mbd2:block/bloomery/bloomery",
 		"particle": "mbd2:block/bloomery/bloomery"
 	},
-	"render_type":"minecraft:cutout",
 	"elements": [
 		{
 			"name": "5746292c-97bf-4f65-bc5f-4dd68426b719_0",
@@ -624,6 +624,7 @@
 			}
 		}
 	],
+	"display": {},
 	"groups": [
 		{
 			"name": "5746292c-97bf-4f65-bc5f-4dd68426b719",
