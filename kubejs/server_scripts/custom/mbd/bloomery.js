@@ -11,7 +11,6 @@ const CLEANUP_INTERVAL = 5 * 60 * 1000 // 每5分钟清理一次
 const ENTRY_MAX_AGE = 10 * 60 * 1000  // 条目最大存活时间10分钟
 const MAX_BURN_TIME = 24000 // 20分钟最大燃烧时间（20 * 60 * 20 = 24000）
 
-
 // 燃料配置
 const FUEL_CONFIG = {
     // 燃料ID: 每单位增加的燃烧时间(tick)
@@ -22,10 +21,6 @@ const FUEL_CONFIG = {
     "kubejs:charcoal_briquette": 6000,
     "kubejs:coal_briquette": 216000,
     "kubejs:coke_briquette": 216000
-
-
-
-
 }
 
 // 点火工具配置
@@ -248,8 +243,6 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
         }
         
         let currentBurnTime = customData.getInt("burn_time") || 0
-        
-        // 修复：只在燃烧时间为0且燃料槽没有燃料时显示无燃料提示
         if (currentBurnTime <= 0) {
             // 检查燃料槽是否有燃料
             let hasFuelInSlot = false
@@ -305,7 +298,8 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
         // 设置燃烧状态为已启动
         customData.putBoolean("burn_started", true)
         
-        machine.setMachineState("heating")
+        // 修改：点火后设置为 working 状态，而不是 heating
+        machine.setMachineState("working")
         player.playSound("minecraft:item.flintandsteel.use")
         sendCooldownMessage(player, "点火成功，锻铁炉开始熔化矿石...")
         player.swing()
@@ -376,12 +370,18 @@ MBDMachineEvents.onTick("mbd2:bloomery", e => {
             customData.putBoolean("is_melting", false)
             customData.putBoolean("burn_started", false) // 重置燃烧启动标志
             customData.putInt("melting_timer", 0)
-            machine.setMachineState("idle")
+            machine.setMachineState("base")
             // 播放关闭音效
             machine.level.playSound(null, machine.pos.x + 0.5, machine.pos.y + 0.5, machine.pos.z + 0.5, 
                 "minecraft:block.fire.extinguish", 1.0, 1.0)
             return
         }
+    }
+    
+    // 新增功能：只要有燃烧时间，机器状态每tick都强制设为working
+    if (burnStarted && burnTime > 0) {
+        // 强制将状态设置为 working，无论是否在加热阶段
+        machine.setMachineState("working")
     }
     
     // 处理暖机阶段（仅在燃烧时间内）
@@ -394,7 +394,6 @@ MBDMachineEvents.onTick("mbd2:bloomery", e => {
         if (heatTime === 0) {
             customData.putBoolean("is_melting", true)
             customData.putInt("melting_timer", 20) // 改为20tick（1秒后处理第一个物品）
-            machine.setMachineState("working")
         }
     }
     
@@ -464,7 +463,7 @@ MBDMachineEvents.onTick("mbd2:bloomery", e => {
         // 燃烧时间结束，停止熔化
         customData.putBoolean("is_melting", false)
         customData.putInt("melting_timer", 0)
-        customData.putBoolean("burn_started", false) // 重置燃烧启动标志
-        machine.setMachineState("idle")
+        // 重置燃烧启动标志
+        customData.putBoolean("burn_started", false)
     }
 })

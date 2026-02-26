@@ -4,8 +4,8 @@
 	"parent": "block/block",
 	"texture_size": [64, 64],
 	"textures": {
-		"4": "mbd2:block/bloomery_input",
-		"particle": "mbd2:block/bloomery_input"
+		"4": "mbd2:block/bloomery/bloomery_input",
+		"particle": "mbd2:block/bloomery/bloomery_input"
 	},
 	"render_type":"minecraft:cutout",
 	"elements": [
