@@ -136,6 +136,64 @@ StartupEvents.registry('block', event => {
                 .tagBlock('tfc:needs_copper_tool')
                 .requiresTool()
                 .defaultCutout()
+
+        event.create('kubejs:simple_air_cushion', 'cardinal')//简易气球
+                .model('kubejs:block/airship/simple_air_cushion')
+                .soundType('wool')
+                .hardness(5) // 设置硬度
+                .defaultCutout()
+
+        event.create('kubejs:air_cushion', 'cardinal')//气球
+                .model('kubejs:block/airship/air_cushion')
+                .soundType('wool')
+                .hardness(5) // 设置硬度
+                .defaultCutout()
+
+        event.create('kubejs:double_wing', 'cardinal')//双翼
+                .model('kubejs:block/airship/double_wing')
+                .box(0, 3, 6, 16, 14, 26)
+                .soundType('scaffolding')
+                .tagBlock('minecraft:mineable/axe')
+                .tagBlock('tfc:needs_copper_tool')
+                .hardness(5) // 设置硬度
+                .defaultCutout()
+                .requiresTool()
+
+        event.create('kubejs:airship_slats', 'cardinal')//飞艇侧板
+                .model('kubejs:block/airship/airship_slats')
+                .box(0, 4, 14, 16, 13, 16)
+                .soundType('scaffolding')
+                .tagBlock('minecraft:mineable/axe')
+                .tagBlock('tfc:needs_copper_tool')
+                .hardness(5) // 设置硬度
+                .requiresTool()
+                .defaultCutout()
+        const engine = [
+                { name: "biplane_engine", box: [0, 0, 0, 16, 16, 16] },//双翼机引擎
+                { name: "large_airship_engine", box: [-1, 0, -2, 17, 18, 16] },
+                { name: "small_engine", box: [1, 0, 0, 15, 16, 16] },
+                { name: "small_side_engine", box: [2, 2, 0, 14, 14, 16] },
+                { name: "rugged_small_engine", box: [1, 0, 0, 15, 16, 16] },
+                { name: "large_propeller", box: [5, 6, 12.5, 11, 12, 16.5] },
+                { name: "large_twin_propeller", box: [5, 5, 12.5, 11, 11, 16.5] },
+                { name: "medium_propeller", box: [5, 5, 12.5, 11, 11, 16.5] },
+                { name: "small_propeller", box: [5, 5, 12.5, 11, 11, 16.5] }
+        ]
+
+        engine.forEach(engine => {
+                event.create(`kubejs:${engine.name}`, 'cardinal')
+                        .model(`kubejs:block/airship/${engine.name}`)
+                        .box(
+                                engine.box[0], engine.box[1], engine.box[2],
+                                engine.box[3], engine.box[4], engine.box[5]
+                        )
+                        .soundType('netherite_block')
+                        .hardness(20)
+                        .tagBlock('minecraft:mineable/pickaxe')
+                        .tagBlock('tfc:needs_copper_tool')
+                        .requiresTool()
+                        .defaultCutout()
+        });
 })
 const $CrucibleBlock = Java.loadClass('net.dries007.tfc.common.blocks.devices.CrucibleBlock')
 const $ExtendedProperties = Java.loadClass('net.dries007.tfc.common.blocks.ExtendedProperties')
@@ -163,7 +221,7 @@ StartupEvents.registry('item', event => {
                 new $ItemProperties()
         ))
 })
-
+/*
 StartupEvents.registry("block", event => {
         const dirt = [
                 { name: "loam", type: "grass", sound: "grass", float: 0.5 },
@@ -183,7 +241,7 @@ StartupEvents.registry("block", event => {
                         .tagBlock('tfc:can_landslide')
         })
 });
-
+*/
 StartupEvents.registry("block", event => {
         const sand = [
                 { name: "brown", type: "sand", sound: "sand", float: 0.5 },
