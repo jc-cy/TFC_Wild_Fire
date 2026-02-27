@@ -19,8 +19,8 @@ const FUEL_CONFIG = {
     "tfc:ore/lignite": 2400,
     "minecraft:charcoal": 1200,
     "kubejs:charcoal_briquette": 6000,
-    "kubejs:coal_briquette": 216000,
-    "kubejs:coke_briquette": 216000
+    "kubejs:coal_briquette": 21600,
+    "kubejs:coke_briquette": 21600
 }
 
 // 点火工具配置
@@ -209,7 +209,7 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
 
         // 检查加入后是否会超出上限
         if (currentBurnTime + addedTime > MAX_BURN_TIME) {
-            sendCooldownMessage(player, `添加燃料会导致燃烧时间超过上限！`)
+            sendCooldownMessage(player, `锻铁炉容纳不下这么多燃料！`)
             player.swing()
             return
         }
@@ -237,7 +237,6 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
     if (isFlintAndSteel(heldItem)) {
         // 防止重复启动（检查机器是否正在加热或熔化）
         if (customData.getInt("heat_time") > 0 || customData.getBoolean("is_melting")) {
-            sendCooldownMessage(player, "锻铁炉已经在运行中")
             player.swing()
             return
         }
@@ -260,7 +259,6 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
             }
             
             if (!hasFuelInSlot) {
-                sendCooldownMessage(player, "没有剩余燃料，请先在燃料槽中添加燃料")
                 player.playSound("minecraft:block.fire.extinguish")
                 player.swing()
                 return
@@ -298,10 +296,9 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
         // 设置燃烧状态为已启动
         customData.putBoolean("burn_started", true)
         
-        // 修改：点火后设置为 working 状态，而不是 heating
+        // 点火后设置为 working 状态
         machine.setMachineState("working")
         player.playSound("minecraft:item.flintandsteel.use")
-        sendCooldownMessage(player, "点火成功，锻铁炉开始熔化矿石...")
         player.swing()
         return
     }
@@ -323,6 +320,17 @@ MBDMachineEvents.onTick("mbd2:bloomery", e => {
     let storage = inputTrait.storage
     let fuelStorage = fuelTrait ? fuelTrait.storage : null
     let fluidStorage = inputFluidTrait.storages[0]
+    
+    //燃烧时间为0时强制设置机器状态为base
+    if (burnTime <= 0) {
+        machine.setMachineState("base")
+        // 同时重置相关状态变量（如果存在）
+        customData.putBoolean("burn_started", false)
+        customData.putInt("heat_time", 0)
+        customData.putBoolean("is_melting", false)
+        customData.putInt("melting_timer", 0)
+        customData.putInt("fuel_check_timer", 0)
+    }
     
     let heatTime = customData.getInt("heat_time")
     let isMelting = customData.getBoolean("is_melting")
@@ -378,9 +386,8 @@ MBDMachineEvents.onTick("mbd2:bloomery", e => {
         }
     }
     
-    // 新增功能：只要有燃烧时间，机器状态每tick都强制设为working
+    // 只要有燃烧时间，机器状态每tick都强制设为working
     if (burnStarted && burnTime > 0) {
-        // 强制将状态设置为 working，无论是否在加热阶段
         machine.setMachineState("working")
     }
     
