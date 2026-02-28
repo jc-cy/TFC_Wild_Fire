@@ -53,25 +53,27 @@ StartupEvents.postInit((event) => {
         'tfc:biplane',//飞机
         $PatchouliAPI.makeMultiblock(
             [
-                ['_______', '_______', '_______', '_______', '___i___',],
-                ['MMMOMMM', '___0___', '__IHL__', '___T___', '__mTm__',]
+                ['_______', '_______', '_______', '_______', '_______', '___i___',],
+                ['___tNNN', 'MMMO___', '___0___', '__IHL__', '___T___', '__mTm__',]
             ],
-            new $Character('O'),
-            "create:encased_fan[facing=west]",
-            new $Character('M'),
-            "minecraft:oak_stairs[facing=east,half=bottom]",
-            new $Character('N'),
-            "minecraft:oak_stairs[facing=west,half=bottom]",
             new $Character('0'),
-            "minecraft:furnace[facing=east]",
-            new $Character('L'),
-            "createdieselgenerators:sheet_metal_panel[facing=south]",//需要全部木头的靠墙告示牌【
+            "kubejs:biplane_engine[facing=west]",
+            new $Character('O'),
+            "create:mechanical_bearing[facing=east]",
+            new $Character('N'),
+            "kubejs:double_wing[facing=east]",
+            new $Character('M'),
+            "kubejs:double_wing[facing=west]",
             new $Character('I'),
-            "createdieselgenerators:sheet_metal_panel[facing=north]",//需要全部木头的靠墙告示牌【
+            "kubejs:airship_slats[facing=south]",
+            new $Character('L'),
+            "kubejs:airship_slats[facing=north]",
             new $Character('H'),
             "create:black_seat",
+            new $Character('t'),
+            "kubejs:medium_propeller[facing=east]",
             new $Character('T'),
-            $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'minecraft:planks')),
+            "create:andesite_casing",
             new $Character('m'),
             "create:white_sail[facing=up]",
             new $Character('i'),
@@ -89,23 +91,21 @@ StartupEvents.postInit((event) => {
                 ['_Z_', 'itl', 'itl', '_0_', '_K_',]
             ],
             new $Character('0'),
-            "minecraft:chiseled_bookshelf[facing=west]",
+            "kubejs:small_engine[facing=east]",
             new $Character('t'),
             "create:black_seat",
-            new $Character('l'),
-            "createdieselgenerators:sheet_metal_panel[facing=south]",//需要全部木头的靠墙告示牌【
             new $Character('i'),
-            "createdieselgenerators:sheet_metal_panel[facing=north]",//需要全部木头的靠墙告示牌【
+            "kubejs:airship_slats[facing=south]",
+            new $Character('l'),
+            "kubejs:airship_slats[facing=north]",
             new $Character('I'),
             "farmersdelight:rope",
             new $Character('Z'),
             "create:white_sail[facing=south]",
             new $Character('H'),
-            "minecraft:white_wool",
-            new $Character('H'),
-            "minecraft:white_wool",
+            "kubejs:simple_air_cushion",
             new $Character('K'),
-            "create:encased_fan[facing=east]"
+            "kubejs:small_propeller[facing=west]"
         )
     );
     $PatchouliAPI.registerMultiblock(
@@ -113,26 +113,28 @@ StartupEvents.postInit((event) => {
         $PatchouliAPI.makeMultiblock(
             [
                 ['___', '_H_', '_H_', '_Z_', '___',],
-                ['_Z_', '_H_', 'KHK', '_I_', '___',],
+                ['_Z_', '_H_', 'KHK', 'kIk', '___',],
                 ['_I_', '___', '___', '_I_', '___',],
-                ['_Z_', 'MtU', 'MtU', '_0_', '_K_',]
+                ['_Z_', 'MtU', 'MtU', '_0_', '_k_',]
             ],
             new $Character('0'),
-            "supplementaries:clock_block[facing=west]",
+            "kubejs:rugged_small_engine[facing=east]",
             new $Character('t'),
             "create:black_seat",
             new $Character('U'),
             "minecraft:chest[facing=south]",
-            new $Character('I'),
-            "farmersdelight:rope",
             new $Character('M'),
             "minecraft:chest[facing=north]",
+            new $Character('I'),
+            "farmersdelight:rope",
             new $Character('Z'),
             "create:white_sail[facing=south]",
             new $Character('H'),
-            "minecraft:white_wool",
+            "kubejs:simple_air_cushion",
+            new $Character('k'),
+            "kubejs:small_propeller[facing=west]",
             new $Character('K'),
-            "create:encased_fan[facing=east]"
+            "kubejs:small_side_engine[facing=east]"
         )
     );
     $PatchouliAPI.registerMultiblock(
@@ -141,15 +143,15 @@ StartupEvents.postInit((event) => {
             [
                 ['_________', '_________', '____H____', '___OOO___', '___OOO___', '___OOO___', '___OOO___', '___OOO___', '___OOO___', '____H____', '____H____', '____H____',],
                 ['_________', '____H____', '____H____', '___OOO___', '_RO___OR_', '_RO___OR_', '_RO___OR_', '_RO___OR_', '___OOO___', '_________', '_________', '_________',],
-                ['____H____', '____H____', '____H____', 'ITTRRRTTI', 'BRO___ORB', 'IR_____RI', 'IR_____RI', 'BRO___ORB', 'ITIRRRITI', '__D_D_D__', '_________', '_________',],
+                ['____H____', '____H____', '____H____', 'ITTRRRTTI', 'BRO___ORB', 'IR_____RI', 'IR_____RI', 'BRO___ORB', 'ITIRRRITI', '__D_D_D__', '__w_w_w__', '_________',],
                 ['_________', '_________', '____H____', '___OOO___', '_ROOOOOR_', '_ROOOOOR_', '_ROOOOOR_', '_ROOOOOR_', '___OOO___', '_________', '_________', '_________',],
                 ['_________', '_________', '_________', '_________', '__ITTTI__', '_________', '_________', '__ITTTI__', '_________', '_________', '_________', '_________',],
                 ['_________', '_________', '_________', '_________', '__ii_ii__', '_________', '_________', '__ii_ii__', '_________', '_________', '_________', '_________',],
-                ['_________', '_________', '___MMM___', '_________', '___i_i___', '_________', '_________', '___i0i___', '____D____', '_________', '_________', '_________',],
+                ['_________', '_________', '___MMM___', '_________', '___i_i___', '_________', '_________', '___i0i___', '____w____', '_________', '_________', '_________',],
                 ['_________', '_________', '___TRT___', '___ILI___', '___RAR___', '___RtR___', '__cRtRC__', '__cRARC__', '_________', '_________', '_________', '_________',]
             ],
             new $Character('0'),
-            "minecraft:blast_furnace[facing=west]",
+            "kubejs:large_airship_engine[facing=east]",
             new $Character('H'),
             "create:white_sail[facing=south]",
             new $Character('M'),
@@ -157,9 +159,9 @@ StartupEvents.postInit((event) => {
             new $Character('R'),
             "create:industrial_iron_block",
             new $Character('T'),
-            "create:metal_girder[axis=x]",//不知道怎么写金属梁的x为ture
+            "create:metal_girder[axis=z]",//不知道怎么写金属梁的x为ture
             new $Character('I'),
-            "create:metal_girder[axis=z]",//不知道怎么写金属梁的z为ture
+            "create:metal_girder[axis=x]",//不知道怎么写金属梁的z为ture
             new $Character('A'),
             "create:andesite_casing",
             new $Character('L'),
@@ -169,7 +171,7 @@ StartupEvents.postInit((event) => {
             new $Character('i'),
             "farmersdelight:rope",
             new $Character('O'),
-            "minecraft:white_wool",
+            "kubejs:air_cushion",
             new $Character('B'),
             "tfc:metal/block/copper",
             new $Character('C'),
@@ -177,7 +179,9 @@ StartupEvents.postInit((event) => {
             new $Character('c'),
             "minecraft:chest[facing=north]",
             new $Character('D'),
-            "minecraft:smoker[facing=east]"
+            "kubejs:large_airship_engine[facing=east]",
+            new $Character('w'),
+            "kubejs:large_propeller[facing=west]"
         )
     );
     $PatchouliAPI.registerMultiblock(
@@ -186,7 +190,7 @@ StartupEvents.postInit((event) => {
             [
                 ['_____', '_____', '_____', '__B__', '_____', '_____',],
                 ['_____', '_____', '_____', '__L__', '_____', '_____',],
-                ['__I__', '__I__', '__0__', '_itl_', 'mmtmm', '__U__',]
+                ['__I__', '__I__', '__0__', '_itl_', 'mmtmm', '_i_l_',]
             ],
             new $Character('0'),
             "minecraft:beehive[facing=east]",
@@ -195,17 +199,15 @@ StartupEvents.postInit((event) => {
             new $Character('t'),
             "create:black_seat",
             new $Character('l'),
-            "createdieselgenerators:sheet_metal_panel[facing=south]",
+            "kubejs:airship_slats[facing=south]",
             new $Character('i'),
-            "createdieselgenerators:sheet_metal_panel[facing=north]",
+            "kubejs:airship_slats[facing=north]",
             new $Character('L'),
             "create:shaft[axis=y]",
             new $Character('B'),
             "minecraft:oak_pressure_plate",
             new $Character('m'),
-            "create:white_sail[facing=up]",
-            new $Character('U'),
-            "create:sail_frame[facing=up]"
+            "create:white_sail[facing=up]"
         )
     );
     $PatchouliAPI.registerMultiblock(
@@ -219,10 +221,10 @@ StartupEvents.postInit((event) => {
             "minecraft:observer[facing=east]",
             new $Character('t'),
             "create:black_seat",
-            new $Character('l'),
-            "createdieselgenerators:sheet_metal_panel[facing=south]",//需要全部木头的靠墙告示牌【
             new $Character('i'),
-            "createdieselgenerators:sheet_metal_panel[facing=north]",//需要全部木头的靠墙告示牌【
+            "kubejs:airship_slats[facing=south]",//需要全部木头的靠墙告示牌【
+            new $Character('l'),
+            "kubejs:airship_slats[facing=north]",//需要全部木头的靠墙告示牌【
             new $Character('I'),
             $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'minecraft:fences')),
             new $Character('B'),
@@ -258,15 +260,15 @@ StartupEvents.postInit((event) => {
             new $Character('Q'),
             "immersiveengineering:cushion",
             new $Character('T'),
-            "create:copper_scaffolding",
+            "create:brass_scaffolding",
             new $Character('v'),
-            "create:copper_table_cloth",
+            "create:brass_table_cloth",
             new $Character('o'),
-            "tfc:metal/block/copper_stairs[facing=west,half=top]",//[half=top]
+            "tfc:metal/block/brass_stairs[facing=west,half=top]",//[half=top]
             new $Character('O'),
-            "tfc:metal/block/copper_stairs[facing=east,half=top]",//[half=top]
+            "tfc:metal/block/brass_stairs[facing=east,half=top]",//[half=top]
             new $Character('I'),
-            "create:copper_bars",
+            "create:brass_bars",
         )
     );
 });

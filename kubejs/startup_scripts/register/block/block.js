@@ -168,6 +168,17 @@ StartupEvents.registry('block', event => {
                 .hardness(5) // 设置硬度
                 .requiresTool()
                 .defaultCutout()
+
+        event.create('kubejs:gyrodyne_propeller')//人力飞机扇叶
+                .model('kubejs:block/airship/gyrodyne_propeller')
+                .box(7.75, -16, 7.75, 8.25, 16, 8.25)
+                .soundType('scaffolding')
+                .tagBlock('minecraft:mineable/axe')
+                .tagBlock('tfc:needs_copper_tool')
+                .hardness(5) // 设置硬度
+                .requiresTool()
+                .defaultCutout()
+
         const engine = [
                 { name: "biplane_engine", box: [0, 0, 0, 16, 16, 16] },//双翼机引擎
                 { name: "large_airship_engine", box: [-1, 0, -2, 17, 18, 16] },
@@ -177,7 +188,7 @@ StartupEvents.registry('block', event => {
                 { name: "large_propeller", box: [5, 6, 12.5, 11, 12, 16.5] },
                 { name: "large_twin_propeller", box: [5, 5, 12.5, 11, 11, 16.5] },
                 { name: "medium_propeller", box: [5, 5, 12.5, 11, 11, 16.5] },
-                { name: "small_propeller", box: [5, 5, 12.5, 11, 11, 16.5] }
+                { name: "small_propeller", box: [5, 5, 12.5, 11, 11, 16.5] },
         ]
 
         engine.forEach(engine => {

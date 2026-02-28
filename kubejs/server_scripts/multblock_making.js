@@ -10,10 +10,10 @@ MultiBlockCreateVehicle(
     "#tfc:hammers"
 );
 const MultiBlock = [
-    { name: "biplane", block: "minecraft:furnace" },
-    { name: "airship", block: "minecraft:chiseled_bookshelf" },
-    { name: "cargo_airship", block: "supplementaries:clock_block" },
-    { name: "warship", block: "minecraft:blast_furnace" },
+    { name: "biplane", block: "kubejs:biplane_engine" },
+    { name: "airship", block: "kubejs:small_engine" },
+    { name: "cargo_airship", block: "kubejs:rugged_small_engine" },
+    { name: "warship", block: "kubejs:large_airship_engine" },
     { name: "gyrodyne", block: "minecraft:beehive" },
     { name: "quadrocopter", block: "minecraft:observer" },
     { name: "bamboo_hopper", block: "minecraft:lectern" }

@@ -1,26 +1,26 @@
 {
+    "include": [
+        "./**/*.js"
+    ],
     "compilerOptions": {
-        "allowJs": true,
-        "rootDir": ".",
-        "skipLibCheck": true,
-        "target": "ES2015",
-        "incremental": true,
+        "module": "commonjs",
+        "skipDefaultLibCheck": true,
+        "moduleResolution": "classic",
+        "composite": true,
+        "isolatedModules": true,
+        "lib": [
+            "ES5",
+            "ES2015"
+        ],
         "types": [
             "../../.probe/client/packages",
             "../../.probe/client/global",
             "../../.probe/shared"
         ],
-        "lib": [
-            "ES5",
-            "ES2015"
-        ],
-        "isolatedModules": true,
-        "composite": true,
-        "moduleResolution": "classic",
-        "skipDefaultLibCheck": true,
-        "module": "commonjs"
-    },
-    "include": [
-        "./**/*.js"
-    ]
+        "incremental": true,
+        "target": "ES2015",
+        "skipLibCheck": true,
+        "rootDir": ".",
+        "allowJs": true
+    }
 }
