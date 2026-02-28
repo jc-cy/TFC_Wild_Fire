@@ -54,7 +54,7 @@ StartupEvents.postInit((event) => {
         $PatchouliAPI.makeMultiblock(
             [
                 ['_______', '_______', '_______', '_______', '___i___',],
-                ['MMMOMMM', 'NNN0NNN', '__IHL__', '___T___', '__mTm__',]
+                ['MMMOMMM', '___0___', '__IHL__', '___T___', '__mTm__',]
             ],
             new $Character('O'),
             "create:encased_fan[facing=west]",

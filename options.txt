@@ -126,7 +126,7 @@ key_key.oneenoughitem.open_editor:key.keyboard.r
 key_key.exposure.camera_controls:key.keyboard.unknown
 key_key.corpse.death_history:key.keyboard.u
 key_key.additionalplacements.placement_toggle:key.keyboard.unknown
-key_iris.keybind.reload:key.keyboard.r
+key_iris.keybind.reload:key.keyboard.unknown
 key_iris.keybind.toggleShaders:key.keyboard.k
 key_iris.keybind.shaderPackSelection:key.keyboard.o
 key_jcrj.copy.recipe.json:key.keyboard.unknown
@@ -135,6 +135,7 @@ key_jcrj.show.item.info:key.keyboard.unknown
 key_key.clienttweaks.hideOffhandItem:key.keyboard.unknown
 key_key.clienttweaks.disableStepAssist:key.keyboard.unknown
 key_key.clienttweaks.disableLogStripping:key.keyboard.unknown
+<<<<<<< HEAD
 key_key.jei.focusSearch:key.keyboard.f:CONTROL
 key_key.jei.previousCategory:key.keyboard.page.up:SHIFT
 key_key.jei.cheatOneItem:key.mouse.left
@@ -166,6 +167,39 @@ key_key.jei.nextPage:key.keyboard.unknown
 key_key.jei.maxTransferRecipeBookmark:key.mouse.left:CONTROL
 key_key.jei.toggleOverlay:key.keyboard.o:CONTROL
 key_key.jei.toggleCheatModeConfigButton:key.mouse.left:CONTROL
+=======
+key_key.jei.cheatOneItem2:key.mouse.right
+key_key.jei.previousPage:key.keyboard.unknown
+key_key.jei.showUses:key.keyboard.u
+key_key.jei.clearSearchBar:key.mouse.right
+key_key.jei.nextSearch:key.keyboard.down
+key_key.jei.closeRecipeGui:key.keyboard.escape
+key_key.jei.transferRecipeBookmark:key.mouse.left:SHIFT
+key_key.jei.maxTransferRecipeBookmark:key.mouse.left:CONTROL
+key_key.jei.toggleOverlay:key.keyboard.o:CONTROL
+key_key.jei.focusSearch:key.keyboard.f:CONTROL
+key_key.jei.toggleCheatMode:key.keyboard.unknown
+key_key.jei.cheatOneItem:key.mouse.left
+key_key.jei.cheatItemStack:key.mouse.left:SHIFT
+key_key.jei.recipeBack:key.keyboard.backspace
+key_key.jei.showRecipe:key.keyboard.r
+key_key.jei.showUses2:key.mouse.right
+key_key.jei.cheatItemStack2:key.mouse.middle
+key_key.jei.previousSearch:key.keyboard.up
+key_key.jei.previousCategory:key.keyboard.page.up:SHIFT
+key_key.jei.nextCategory:key.keyboard.page.down:SHIFT
+key_key.jei.toggleHideIngredient:key.mouse.left:CONTROL
+key_key.jei.toggleEditMode:key.keyboard.unknown
+key_key.jei.toggleCheatModeConfigButton:key.mouse.left:CONTROL
+key_key.jei.nextRecipePage:key.keyboard.page.down
+key_key.jei.copy.recipe.id:key.keyboard.unknown
+key_key.jei.toggleBookmarkOverlay:key.keyboard.unknown
+key_key.jei.showRecipe2:key.mouse.left
+key_key.jei.bookmark:key.keyboard.a
+key_key.jei.nextPage:key.keyboard.unknown
+key_key.jei.toggleWildcardHideIngredient:key.mouse.right:CONTROL
+key_key.jei.previousRecipePage:key.keyboard.page.up
+>>>>>>> ea1887b0e7e973963124ebedc56f93186ac66bf9
 key_key.push_to_talk:key.keyboard.unknown
 key_key.whisper:key.keyboard.unknown
 key_key.mute_microphone:key.keyboard.m
@@ -208,7 +242,7 @@ key_tfc.key.place_block:key.keyboard.v
 key_tfc.key.cycle_chisel_mode:key.keyboard.m
 key_tfc.key.stack_food:key.keyboard.i
 key_auroras.key.reload_aurora_configs:key.keyboard.unknown
-key_key.auratip.open_radial:key.keyboard.r
+key_key.auratip.open_radial:key.keyboard.unknown
 key_key.auratip.close_tip:key.keyboard.delete
 key_keybind.sophisticatedcore.item_highlight:key.keyboard.semicolon
 key_keybind.sophisticatedcore.sort:key.mouse.middle
