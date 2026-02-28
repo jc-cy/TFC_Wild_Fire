@@ -299,8 +299,8 @@ ServerEvents.recipes(e => {
     { name: "rapier", number: 250 },              // 迅捷剑
     { name: "katana", number: 250 },              // 太刀
     { name: "battleaxe", number: 400 },           // 战斧
-    { name: "battle_hammer", number: 200 },       // 长柄锤
-    { name: "warhammer", number: 400 },           // 大锤
+    { name: "battle_hammer", number: 300 },       // 大锤
+    { name: "warhammer", number: 300 },           // 穿甲锤
     { name: "javelin", number: 400 },             // 标枪
     { name: "spear", number: 100 },               // 矛
     { name: "pike", number: 100 },                // 长矛
@@ -322,8 +322,8 @@ ServerEvents.recipes(e => {
     { name: "katana_weapon_part", number: 200 },          // 太刀武器部件
     { name: "saber_weapon_part", number: 200 },           // 军刀武器部件
     { name: "rapier_weapon_part", number: 200 },          // 迅捷剑武器部件
-    { name: "battle_hammer_weapon_part", number: 200 },   // 战锤武器部件
-    { name: "warhammer_weapon_part", number: 300 },       // 大战锤武器部件
+    { name: "battle_hammer_weapon_part", number: 300 },   // 大锤武器部件
+    { name: "warhammer_weapon_part", number: 300 },       // 穿甲锤武器部件
     { name: "battleaxe_weapon_part", number: 300 },       // 战斧武器部件
     { name: "flanged_mace_weapon_part", number: 300 },    // 带刺钉头锤武器部件
     { name: "greatsword_weapon_part", number: 300 },      // 大剑武器部件

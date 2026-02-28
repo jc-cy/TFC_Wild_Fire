@@ -1,16 +1,8 @@
-
 NativeEvents.onEvent(Java.loadClass("first.wildfires.api.customEvent.FoodRottenEvent"),/**@param {Internal.FoodRottenEvent} event*/ event => {
-    if (event.getItemStack().getItem().id == "tfc:food/beef") {
-        event.setItemStack("acacia_boat")
-    }
-})
-
-
-
-
-ForgeEvents.onEvent("first.wildfires.api.customEvent.FoodRottenEvent", /**@param {Internal.MobSpawnEvent$FinalizeSpawn} event*/ event => {//食物腐烂
-    
-      const rotten_meat = [
+ if (event.getItemStack().getItem().id == "tfc:food/beef") {
+        event.setItemStack('tfc:wood/encased_axle/birch')
+    }/*
+    const rotten_meat = [
         'tfc:food/hyena', 'tfc:food/duck', 'tfc:food/chevon', 'tfc:food/gran_feline',
         'tfc:food/camelidae', 'tfc:food/cooked_beef', 'tfc:food/cooked_pork',
         'tfc:food/cooked_chicken', 'tfc:food/cooked_quail', 'farmersdelight:minced_beef',
@@ -177,7 +169,7 @@ ForgeEvents.onEvent("first.wildfires.api.customEvent.FoodRottenEvent", /**@param
         'firmalife:jar/red_grapes_unsealed', 'firmalife:jar/white_grapes_unsealed'
     ];
 
-    
+
     const rottenConfig = {};
 
     // 批量填充所有物品的腐烂映射关系
@@ -190,18 +182,9 @@ ForgeEvents.onEvent("first.wildfires.api.customEvent.FoodRottenEvent", /**@param
     plated_food.forEach(plateId => rottenConfig[plateId] = 'kubejs:rotten_platter');
     jar.forEach(jarId => rottenConfig[jarId] = 'kubejs:rotten_jam');
 
-let config1 = {
-    "minecraft:beef": "minecraft:acacia_boat"
-}
-
+将以上所有的腐烂映射关系注册到事件中
+例子：
+   
+*/
     
-    /**
-     * @type {Internal.ItemStack}
-     */
-    let item = event.getNewItemStack()
-   event.getNewItemStack()
-    let newItem = config1[item.id]
-    if (newItem) {
-        event.setNewItemStack(Item.of(newItem))
-    }
 })

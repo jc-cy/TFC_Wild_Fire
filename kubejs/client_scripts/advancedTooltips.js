@@ -1,5 +1,31 @@
 ItemEvents.tooltip(event => {
     addShiftTooltip(event, [
+
+
+        'createcasing:crimson_large_cogwheel',
+        'createcasing:dark_oak_cogwheel',
+        'createcasing:dark_oak_large_cogwheel',
+        'createcasing:oak_cogwheel',
+        'createcasing:oak_large_cogwheel',
+        'createcasing:jungle_cogwheel',
+        'createcasing:jungle_large_cogwheel',
+        'createcasing:mangrove_cogwheel',
+        'createcasing:mangrove_large_cogwheel',
+        'createcasing:warped_cogwheel',
+        'createcasing:warped_large_cogwheel',
+        'bits_n_bobs:small_flanged_cogwheel',
+        'bits_n_bobs:large_flanged_cogwheel',
+        'createcasing:crimson_cogwheel',
+        'createcasing:bamboo_large_cogwheel',
+        'createcasing:bamboo_cogwheel',
+        'createcasing:birch_large_cogwheel',
+        'createcasing:birch_cogwheel',
+        'createcasing:acacia_large_cogwheel',
+        'createcasing:acacia_cogwheel',
+
+
+
+
         "kubejs:warm_warmer",
         'kubejs:alumina_dioxide',
         'repas_de_survie:cooked_red_mushroom',

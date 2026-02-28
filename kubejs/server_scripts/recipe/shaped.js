@@ -3,6 +3,31 @@ ServerEvents.recipes(event => {
     const id_in = "kubejs:recipe/shaped/"
     event.shaped('minecraft:anvil', ['aaa', ' a ', 'aaa'], { a: 'tfc:metal/double_ingot/cast_iron' })//铁砧
 
+ event.shaped("create:copper_diving_helmet", [' a ', ' b ', 'cdc'], {
+        a: "tfc:metal/unfinished_helmet/copper", 
+        b: "firmalife:reinforced_glass",
+        c: "sns:leather_strip",
+        d:"kubejs:copper_fragments",
+       
+    })//潜水头盔
+
+     event.shaped("create:copper_diving_boots", ['aba', 'c c'], {
+        a: "sns:leather_strip", 
+        b: "tfc:metal/unfinished_boots/copper",
+        c: "immersiveengineering:ingot_lead"
+       
+    })//潜水鞋子
+
+       event.shaped("alexscaves:diving_leggings", ['aba', 'c c', 'aba'], {
+        a: "sns:leather_strip", 
+        b: "tfc:metal/unfinished_greaves/copper",
+        c: "kubejs:copper_fragments",
+       
+    })//潜水裤子
+
+
+
+    
    event.shaped("moreburners:electric_burner", ['dbd', 'aca', ' e '], {
         a: "vintageimprovements:andesite_sheet", 
         b: "firmalife:reinforced_glass",

@@ -1,3 +1,7 @@
+
+//齿轮过载
+
+
 let ArrayList = Java.loadClass("java.util.ArrayList")
 NativeEvents.onEvent(Java.loadClass("first.wildfires.api.customEvent.KineticDataModifyEvent"),/**@param {Internal.KineticDataModifyEvent} event*/ event => {
     let list = new ArrayList()

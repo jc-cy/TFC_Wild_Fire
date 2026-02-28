@@ -2190,6 +2190,7 @@
 				"是时候步入机械动力了！"
 				""
 				"&n&e关于机械动力的知识、你可以对其长按[W]进行思考&r"
+				"安山合金具有256的转速上限以及8192的可承载应力"
 			]
 			hide_until_deps_complete: true
 			id: "492B40A0DB508FD0"
@@ -2917,9 +2918,8 @@
 		{
 			dependencies: ["492B40A0DB508FD0"]
 			description: [
-				"木质齿轮的结构看上去比较脆弱"
-				"只能承载16384的应力"
-				"如果超过木质齿轮会在工作的时候崩断"
+				"每种不同的齿轮都有不同的转速上限和应力承载上限"
+				"如果超过则会崩开，值得一提的是，传动杆并没有这个限制"
 			]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
@@ -2934,6 +2934,7 @@
 				id: "create:cogwheel"
 			}
 			id: "2DD8F4416E7766A4"
+			subtitle: "爆掉了"
 			tasks: [{
 				id: "4617872EF71CB663"
 				title: "了解"
@@ -2948,11 +2949,18 @@
 			description: ["经过升级的高级齿轮，能承载更高的转速以及更高的应力输入"]
 			id: "78C01497DB13B244"
 			shape: "circle"
-			tasks: [{
-				id: "39072FB23E4AE522"
-				item: "design_decor:industrial_gear"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "39072FB23E4AE522"
+					item: "design_decor:industrial_gear"
+					type: "item"
+				}
+				{
+					id: "45590A70DE685EA0"
+					item: "createcasing:acacia_cogwheel"
+					type: "item"
+				}
+			]
 			x: 83.5d
 			y: -3.0d
 		}
@@ -2970,7 +2978,12 @@
 			y: -2.0d
 		}
 		{
-			description: ["很显然，安山合金制作的齿轮价格比较昂贵，你或许可以做更便宜的齿轮，但是应该没有那么好用"]
+			dependencies: ["492B40A0DB508FD0"]
+			description: [
+				"很显然，安山合金制作的齿轮价格比较昂贵，你或许可以做更便宜的齿轮，但是应该没有那么好用"
+				""
+				"木质齿轮有64的转速上限，以及8192的应力承载"
+			]
 			id: "6A0FB3D647A44A96"
 			subtitle: "便宜货"
 			tasks: [{

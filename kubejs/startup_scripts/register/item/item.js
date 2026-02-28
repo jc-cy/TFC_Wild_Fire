@@ -133,14 +133,34 @@ StartupEvents.registry('item', event => {
         let itemId = `kubejs:gear_blank/cogwheel/${config.id}`;
         let largeItemId = `kubejs:gear_blank/large_cogwheel/${config.id}`;
 
-        event.create(itemId, config.type)
 
-            .maxStackSize(16) // 堆叠数量
-            .tag('kubejs:gear_blanks') 
-        event.create(largeItemId, config.type)
+        if (config.id != "cogwheel" || config.id != "warped") {
 
-            .maxStackSize(16) // 堆叠数量
-            .tag('kubejs:large_gear_blanks')
+            event.create(itemId, config.type)
+
+                .maxStackSize(16) // 堆叠数量
+                .tag('kubejs:gear_blanks')
+            event.create(largeItemId, config.type)
+
+                .maxStackSize(16) // 堆叠数量
+                .tag('kubejs:large_gear_blanks')
+        } else {
+            event.create(itemId, 'tfc:mold')
+
+                .maxStackSize(16) // 堆叠数量
+                .tag('kubejs:gear_blanks')
+                .capacity(10)
+            event.create(largeItemId, 'tfc:mold')
+
+                .maxStackSize(16) // 堆叠数量
+                .tag('kubejs:large_gear_blanks')
+                .capacity(20)
+
+        }
+
+
+
+
 
     });
 
@@ -151,7 +171,7 @@ StartupEvents.registry('item', event => {
     event.create('cast_iron_indenter', 'basic')//铸铁压头
     event.create('dense_indenter', 'basic')//致密压头
     event.create('noheating_warmer', 'basic')//燃尽暖手宝
-    
+
     event.create('hot_raw_iron_bloom', 'basic')//炽熔生铁方胚
     event.create('hot_raw_nickel_bloom', 'basic')//炽熔生镍方胚
     event.create('raw_nickel_bloom', 'basic')//生镍方胚

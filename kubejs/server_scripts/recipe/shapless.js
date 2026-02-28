@@ -25,6 +25,7 @@ ServerEvents.recipes(event => {
     event.shapeless("createcasing:dark_oak_large_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/large_cogwheel/dark_oak"]);//铁壳大齿轮
     event.shapeless("createcasing:crimson_large_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/large_cogwheel/crimson"]);//锻铁大齿轮
     event.shapeless("createcasing:jungle_large_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/large_cogwheel/jungle"]);//钢大齿轮
+    event.shapeless("createcasing:bamboo_large_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/large_cogwheel/bamboo"]);//铸铁大齿轮
     event.shapeless("createcasing:mangrove_large_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/large_cogwheel/mangrove"]);//钢壳大齿轮
     event.shapeless("createcasing:oak_large_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/large_cogwheel/oak"]);//高锰钢大齿轮
     event.shapeless("createcasing:warped_large_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/large_cogwheel/warped"]);//木大齿轮
@@ -34,6 +35,7 @@ ServerEvents.recipes(event => {
     event.shapeless("createcasing:dark_oak_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/cogwheel/dark_oak"]);//铁壳小齿轮
     event.shapeless("createcasing:crimson_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/cogwheel/crimson"]);//锻铁小齿轮
     event.shapeless("createcasing:jungle_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/cogwheel/jungle"]);//钢小齿轮
+    event.shapeless("createcasing:bamboo_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/cogwheel/bamboo"]);//铸铁小齿轮
     event.shapeless("createcasing:mangrove_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/cogwheel/mangrove"]);//钢壳小齿轮
     event.shapeless("createcasing:oak_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/cogwheel/oak"]);//高锰钢小齿轮
     event.shapeless("createcasing:warped_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/cogwheel/warped"]);//木小齿轮

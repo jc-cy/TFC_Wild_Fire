@@ -233,7 +233,6 @@ StartupEvents.registry("block", event => {
         dirt.forEach(dirt => {
                 //泥土台阶
                 event.create(`tfc:${dirt.type}/slab/${dirt.name}`, 'slab')
-                        .model(`kubejs:block/${dirt.type}/slab/${dirt.name}`)
                         .soundType(dirt.sound)
                         .hardness(dirt.float)
                         .tagBlock('minecraft:mineable/shovel')

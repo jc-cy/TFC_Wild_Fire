@@ -6,7 +6,7 @@ const playerNames = [
   "awhites"
 ];
 
-const isDeveloper = (playerUsername) => playerNames.includes(playerUsername);
+/*const isDeveloper = (playerUsername) => playerNames.includes(playerUsername);
 
 ItemEvents.rightClicked((event) => {
   const { item, player, server } = event;
@@ -52,3 +52,4 @@ PlayerEvents.loggedIn((event) => {
     player.tell(Text.translate("message.kubejs.conventcommand", [player.username]));
   }
 });
+*/

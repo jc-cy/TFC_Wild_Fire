@@ -1,5 +1,5 @@
 // 阻止工具放在错误的位置 工具检测 '#minecraft:tools'
-BlockEvents.rightClicked(event => {
+/*BlockEvents.rightClicked(event => {
     const { item, block, player } = event
     if (!item.hasTag('tfc:hammers')) return
     if (!block.hasTag('tfc:anvils')) return
@@ -7,18 +7,18 @@ BlockEvents.rightClicked(event => {
 
     let wrong_recipe = false
 
-    let Items = /**@type {Array} */ (block.getEntityData()['inventory']['Items'])
-    Items.forEach(slot => {
-        if (slot.Slot == 1) {
+    //let Items = /**@type {Array} */ //(block.getEntityData()['inventory']['Items'])
+   /*   Items.forEach(slot => {
+      if (slot.Slot == 1) {
             if (Item.of(slot.id).hasTag('tfc:usable_on_tool_rack')) {
                 wrong_recipe = true
             }
         }
     })
     if (wrong_recipe) event.cancel()
-})
+})*/
 
-ServerEvents.recipes(event => {
+/*ServerEvents.recipes(event => {
     const { welding } = event.recipes.tfc
 
     /**
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
      * @param {number} tier 砧的等级
      * @param {"percentage" | "value"} repairType 
      */
-    function welding_repair(toolId, materialId, tier, repairType) {
+   /* function welding_repair(toolId, materialId, tier, repairType) {
         tier = typeof tier != 'undefined' ? tier : 0
         repairType = typeof repairType != 'undefined' ? repairType : "percentage"
 
@@ -256,11 +256,11 @@ ServerEvents.recipes(event => {
         { mod: 'kubejs:', tool: 'tong', type: 'percentage15' },   // 铋青铜钳子
         { mod: 'kubejs:', tool: 'lockpick', type: 'percentage15' }, // 铋青铜开锁器
     ]*/
-    tfctool.forEach(tool => {
+   /* tfctool.forEach(tool => {
         metal.forEach(metal => {
             welding_repair(`${tool.mod}${tool.tool}${metal.name}`, `kubejs:${metal.name}_fragments`, metal.level, tool.type)
-        })
-    })
+        })*/
+   // })
     /*kubejstool.forEach(tool => {
         metal.forEach(metal => {
             welding_repair(`kubejs:${metal.name}_${tool.tool}`, `kubejs:${metal.name}_fragments`, metal.level, tool.type)
@@ -270,4 +270,4 @@ ServerEvents.recipes(event => {
     //100
     //welding_repair('kubejs:wrought_iron_tong', 'minecraft:iron_nugget', 3)
     // welding_repair('tfc:metal/knife/wrought_iron', 'minecraft:iron_nugget', 3, 'value')
-})
+//})

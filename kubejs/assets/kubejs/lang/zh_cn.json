@@ -1905,5 +1905,25 @@
   "block.kubejs.tfc.sandstone_whetstone": "砂岩磨刀石",
   "block.kubejs.tfc.whetstone": "磨刀石",
   "block.kubejs.tfc.diamond_whetstone": "金刚石磨刀石",
-  "block.kubejs.tfc.ceramic_stone": "铝陶瓷磨刀石"
+  "block.kubejs.tfc.ceramic_stone": "铝陶瓷磨刀石",
+  
+  "tooltip.kubejs.shift_crimson_cogwheel": "§7齿轮应力上限32768，齿轮转速上限512",
+  "tooltip.kubejs.shift_crimson_large_cogwheel": "§7齿轮应力上限32768，齿轮转速上限512",
+  "tooltip.kubejs.shift_dark_oak_cogwheel": "§7齿轮应力上限32768，齿轮转速上限512",
+  "tooltip.kubejs.shift_dark_oak_large_cogwheel": "§7齿轮应力上限32768，齿轮转速上限512",
+  "tooltip.kubejs.shift_oak_cogwheel": "§7齿轮应力无上限，齿轮转速上限1024",
+  "tooltip.kubejs.shift_oak_large_cogwheel": "§7齿轮应力上限104857600，齿轮转速上限1024",
+  "tooltip.kubejs.shift_jungle_cogwheel": "§7齿轮应力上限65536，齿轮转速上限512",
+  "tooltip.kubejs.shift_jungle_large_cogwheel": "§7齿轮应力上限65536，齿轮转速上限512",
+  "tooltip.kubejs.shift_mangrove_cogwheel": "§7齿轮应力上限65536，齿轮转速上限512",
+  "tooltip.kubejs.shift_mangrove_large_cogwheel": "§7齿轮应力上限65536，齿轮转速上限512",
+  "tooltip.kubejs.shift_warped_cogwheel": "§7齿轮应力上限8192，齿轮转速上限64",
+  "tooltip.kubejs.shift_warped_large_cogwheel": "§7齿轮应力上限8192，齿轮转速上限64",
+  "tooltip.kubejs.shift_bamboo_cogwheel": "§7齿轮应力上限32768，齿轮转速上限64",
+  "tooltip.kubejs.shift_bamboo_large_cogwheel": "§7齿轮应力上限32768，齿轮转速上限64",
+  "tooltip.kubejs.shift_birch_cogwheel": "§7齿轮应力上限16384，齿轮转速上限128",
+  "tooltip.kubejs.shift_birch_large_cogwheel": "§7齿轮应力上限16384，齿轮转速上限128",
+  "tooltip.kubejs.shift_acacia_cogwheel": "§7齿轮应力上限16384，齿轮转速上限128",
+  "tooltip.kubejs.shift_acacia_large_cogwheel": "§7齿轮应力上限16384，齿轮转速上限128"
+
 }
