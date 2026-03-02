@@ -5,7 +5,16 @@
 	filename: "6E63D2E12D7AADD8"
 	group: "2BD524ABD6AD1EEE"
 	hide_quest_details_until_startable: true
-	icon: "create:wrench"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"tfc:item_heat": {
+				heat: 0.0f
+				ticks: 0L
+			}
+		}
+		id: "create:wrench"
+	}
 	id: "6E63D2E12D7AADD8"
 	order_index: 4
 	quest_links: [ ]
@@ -20,7 +29,16 @@
 				""
 				"注：TFCR的官方服务器已禁止机械动力相关的较多物品，因此在官服中本任务线无法完成。"
 			]
-			icon: "create:wrench"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:wrench"
+			}
 			id: "648DA94A24E63FD6"
 			rewards: [{
 				id: "1B76FBD1BE80C9ED"
@@ -48,7 +66,16 @@
 				""
 				"发展机械动力需要大量的安山合金，同理也就需要大量的石英。你不需要耗费大量精力寻找石英晶洞。你可以放置石英母岩等待其自动长出石英，也可以用沙子与石英合成两个石英种子。石英种子在装有淡水的大桶内密封十个小时就能变成石英，每个石英需要消耗500mb淡水。"
 			]
-			icon: "create:andesite_alloy"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:andesite_alloy"
+			}
 			id: "2C8CA898AC4C8DFE"
 			rewards: [{
 				id: "7654C32A1CC84C2D"
@@ -171,7 +198,16 @@
 				""
 				"水车和大水车使用方法相同，只要生效范围内有流动水即可开始工作，且只要附近有一格流动水就可以满效率工作。"
 			]
-			icon: "create:water_wheel"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:water_wheel"
+			}
 			id: "1C1BC469151DF73C"
 			rewards: [{
 				id: "2F68108992AA2E09"
@@ -251,7 +287,16 @@
 				""
 				"工作盆是一种工作辅助方块，可以存储九种以物流形式输入的最多16个物品或以掉落物形式输入的最多64个物品以及两种最多1000mb的流体，且六个方向都可以输入输出。工作盆侧面有一个配方过滤插槽，可以用于设定目标产物以避免配方混淆。工作盆在侧下方有置物台、溜槽、传送带、垂直放置的机械动力漏斗、工作盆之类的开放式存储方块时，会出现一个开口并尝试自动输出物品。在动态结构上倒置的工作盆会将其中的物品以掉落物的形式掉出。"
 			]
-			icon: "create:mechanical_mixer"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:mechanical_mixer"
+			}
 			id: "6E0D1DF72B94ADC9"
 			rewards: [{
 				id: "6A9093EB7613FE75"
@@ -282,7 +327,16 @@
 				""
 				"置物台是一种容器和工作辅助方块，可以存储一批物品——一次输入的最少1个最多64个物品。置物台可以从六个方向输入物品，也可以接收掉落物，但在其存储的一批物品离开之前不会再接收其他物品。"
 			]
-			icon: "create:mechanical_press"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:mechanical_press"
+			}
 			id: "5E2EF32B142A1F00"
 			rewards: [{
 				id: "03C8BFCBD5337706"
@@ -423,7 +477,16 @@
 				""
 				"隧道是一种能够遮住传送带使其不受掉落物影响的方块。隧道在物流上还能执行分流物品的工作，当放置在传送带上的隧道侧面出现了另一根传送带，它就会在一批物品经过传送带时向侧面的传送带分流一个物品。"
 			]
-			icon: "create:belt_connector"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:belt_connector"
+			}
 			id: "7195F732DEE35696"
 			rewards: [{
 				id: "6A8CA82F8CEE2C11"
@@ -491,7 +554,16 @@
 				""
 				"移动式接口还有一种叫移动式流体接口的方块，用于运送流体。"
 			]
-			icon: "create:portable_storage_interface"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:portable_storage_interface"
+			}
 			id: "2B91688E20CE8A18"
 			rewards: [{
 				id: "204255FE9753D6BF"
@@ -517,7 +589,16 @@
 		{
 			dependencies: ["43ED67D161B4D11E"]
 			description: ["绳索滑轮、动力活塞、起重机是用于移动方块的机器，适用于需要频繁将方块移动和方块化的场合。绳索滑轮和起重机只要动态结构不被方块阻挡就能能够一口气移动所有被强力胶粘在一起的方块，动力活塞甚至能推动阻挡的方块一起移动。三种机器分别最适合的场合各不相同。"]
-			icon: "create:mechanical_piston"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:mechanical_piston"
+			}
 			id: "47855701499FB613"
 			rewards: [{
 				id: "471D425C89E621D1"
@@ -566,7 +647,16 @@
 				""
 				"发条轴承是一种接入动力后会使面前被强力胶粘在一起的方块转化为动态结构并使其开始按照时间旋转的机器，需要两个独立的被判定做分针秒针的结构才能开始工作。使用发条轴承可以制造出时钟，但由于群峦世界的时间独立于mc自身的时间而存在，这个钟会不准。"
 			]
-			icon: "create:mechanical_bearing"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:mechanical_bearing"
+			}
 			id: "64B8D6F8F9F15732"
 			rewards: [{
 				id: "253526E7F5645E89"
@@ -738,7 +828,16 @@
 				""
 				"传送带能够横向竖向和斜向45°传送应力，且能带动内部的传动杆一起旋转。"
 			]
-			icon: "create:cogwheel"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:cogwheel"
+			}
 			id: "545435214C14571C"
 			rewards: [{
 				id: "674F0CEDFA2013EA"
@@ -803,7 +902,16 @@
 				""
 				"弹射置物台是一种能够远距离移动物品的方式，在放置之前需要被设置弹射的目的地。在接入动力时，弹射置物台能够弹射其上方的实体、掉落物、物品。"
 			]
-			icon: "create:andesite_funnel"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:andesite_funnel"
+			}
 			id: "4DC9620F74CF73F0"
 			rewards: [{
 				id: "2700C5201C476C06"
@@ -862,7 +970,16 @@
 		{
 			dependencies: ["53072FE9D8040846"]
 			description: ["将玫瑰石英与铁板合成即可得到电子管，电子管是合成智能机器的材料之一，另一种材料是黄铜"]
-			icon: "create:electron_tube"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:electron_tube"
+			}
 			id: "01439887E8F1802C"
 			rewards: [{
 				id: "403D438A0559EDE5"
@@ -978,7 +1095,16 @@
 				""
 				"注意：太多的过滤项会导致tps降低，使游戏卡顿提升！"
 			]
-			icon: "create:brass_funnel"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:brass_funnel"
+			}
 			id: "75045CB20541CA03"
 			rewards: [{
 				id: "23AA8A93ABCD5EDC"
@@ -1203,7 +1329,16 @@
 				"升降机滑轮用于跟动态结构控制器和接触式红石信号发生器配合构建电梯，具体搭建方法详见思索。"
 			]
 			hide_dependency_lines: true
-			icon: "create:contraption_controls"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:contraption_controls"
+			}
 			id: "055FFAB83C1BE571"
 			rewards: [{
 				id: "314A647CC70B4692"
@@ -1240,7 +1375,16 @@
 				""
 				"&a不幸的是，烈焰人蛋糕的制作配方被残忍ban掉，能让烈焰人燃烧室变成超级加热状态的只有汽油与柴油，而采油井需要的汽油与柴油也是后期火箭燃料的重要材料&r"
 			]
-			icon: "create:blaze_burner"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:blaze_burner"
+			}
 			id: "73B13479C0974BB1"
 			rewards: [{
 				id: "009B385921B96FB2"
@@ -1277,7 +1421,16 @@
 			dependencies: ["1005BE3C28B3739A"]
 			description: ["管道的末尾若是空气，则会在搬运流体前喷出流体粒子，岩浆也是一样。岩浆粒子接触到流动水就会变成原版圆石，原版圆石粉碎后获得原版砂砾，原版砂砾吹洗获得铁矿。你懂我的意思了吧。"]
 			hide_dependency_lines: true
-			icon: "minecraft:cobblestone"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:cobblestone"
+			}
 			id: "7B0CE0C43D0C5FA7"
 			rewards: [{
 				id: "49DFE0A8F15ADB12"
@@ -1318,7 +1471,16 @@
 		{
 			dependencies: ["2C8CA898AC4C8DFE"]
 			description: ["工程师护目镜（并非沉浸物品）和扳手是机械动力两个关键道具。戴着工程师护目镜能够告诉你机器的工作状态和应力网络的应力量。而扳手能够轻松地拆除机械动力的方块，改变方块的朝向，或修改机器的配置。"]
-			icon: "create:goggles"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:goggles"
+			}
 			id: "1E988359FD5A5E6A"
 			rewards: [{
 				id: "7A63CF6F246C5F76"
@@ -1388,7 +1550,16 @@
 		{
 			dependencies: ["76DC471C7BADA161"]
 			description: ["让黑曜石通过粉碎轮即可获得黑曜石粉末，黑曜石粉末是制造坚固板的原料，而坚固板是建造列车系统的核心材料。"]
-			icon: "create:sturdy_sheet"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:sturdy_sheet"
+			}
 			id: "79A04CC6D7668085"
 			rewards: [{
 				id: "0F4EE3186D7CA7F6"
@@ -1453,7 +1624,16 @@
 				"75045CB20541CA03"
 			]
 			description: ["机械动力强化了原版红石的很多功能，如无线红石等，由于笔者不是很懂红石，这里略过，感兴趣的请查阅思索。"]
-			icon: "create:redstone_link"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:redstone_link"
+			}
 			id: "051EA6F7628BA048"
 			rewards: [{
 				id: "3944133AFD3D877C"
@@ -1515,7 +1695,16 @@
 				""
 				"列车与移动结构相同，可以装载一些机器，可以装载容器，可以用移动式接口进行物品与流体装卸。其速度比矿车快，运行比矿车准确，不需要消耗燃料，甚至其运行进程是独立于MC的!还能穿过地狱门（可惜群峦世界没有地狱）！你没有听错，列车即使在区块未加载的地区也能运行，且能够正确地进行物流传输。这些特性使得列车成为了美观性与功能性齐具的强大设施，推荐所有玩家都来尝试构建一套自己的火车系统。"
 			]
-			icon: "create:track_station"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:track_station"
+			}
 			id: "086DCB92F2D515AC"
 			rewards: [{
 				id: "7B86C83463BC24EA"
@@ -1551,7 +1740,16 @@
 				""
 				"时刻表设定完毕后，你需要把这个表给列车的驾驶员。这个驾驶员可以是被拴在列车驾驶台面前一格坐垫上的动物，或者燃烧室里的烈焰人。驾驶员收到时刻表之后就会自己开车了。"
 			]
-			icon: "create:schedule"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:schedule"
+			}
 			id: "2A840AC056888886"
 			rewards: [{
 				id: "10536CCD82621EB0"
@@ -1633,7 +1831,16 @@
 				"2A840AC056888886"
 			]
 			description: ["这些方块是用于进阶控制列车的，因为过于复杂所以难以学会。不过如果你将其学会，你就能够建造巨大的列车集散中心和列车站，从而成立你的铁路帝国。"]
-			icon: "create:track_signal"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:track_signal"
+			}
 			id: "796AEB66DF6C4865"
 			rewards: [{
 				id: "555D9F5DCDF4687A"
@@ -1737,7 +1944,7 @@
 		}
 		{
 			dependencies: ["2C8CA898AC4C8DFE"]
-			description: ["当你拥有红蓝锰钢后，就能做出冲压机了。冲压机只有一个用处：制作原版铁桶。听上去没有用，但实际上作用非常大，因为铁桶能够搬运所有流体源，这对搬运流体源需要钢管道的群峦传说来说无疑提升巨大。"]
+			description: ["当你拥有红蓝高锰钢后，就能做出冲压机了。冲压机只有一个用处：制作原版铁桶。听上去没有用，但实际上作用非常大，因为铁桶能够搬运所有流体源，这对搬运流体源需要钢管道的群峦传说来说无疑提升巨大。"]
 			icon: {
 				Count: 1
 				ForgeCaps: {

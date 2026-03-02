@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
     "bronze": { temp: 950, fluid: "tfc:metal/bronze" },
     "copper": { temp: 1085, fluid: "tfc:metal/copper" },
     "gold": { temp: 1064, fluid: "tfc:metal/gold" },
-    "nickel": { temp: 1455, fluid: "tfc:metal/nickel" },
+    "nickel": { temp: 1455, fluid: "tfc:metal/refined_nickel" },
     "rose_gold": { temp: 1060, fluid: "tfc:metal/rose_gold" },
     "silver": { temp: 961, fluid: "tfc:metal/silver" },
     "tin": { temp: 232, fluid: "tfc:metal/tin" },
@@ -223,7 +223,7 @@ ServerEvents.recipes(e => {
     { name: "bronze", temperature: 950, metal: "bronze" },
     { name: "copper", temperature: 1080, metal: "copper" },
     { name: "gold", temperature: 1064, metal: "gold" },
-    { name: "nickel", temperature: 1455, metal: "nickel" },
+    { name: "nickel", temperature: 1455, metal: "refined_nickel" },
     { name: "rose_gold", temperature: 1060, metal: "rose_gold" },
     { name: "silver", temperature: 961, metal: "silver" },
     { name: "tin", temperature: 232, metal: "tin" },
@@ -299,8 +299,8 @@ ServerEvents.recipes(e => {
     { name: "rapier", number: 250 },              // 迅捷剑
     { name: "katana", number: 250 },              // 太刀
     { name: "battleaxe", number: 400 },           // 战斧
-    { name: "battle_hammer", number: 200 },       // 长柄锤
-    { name: "warhammer", number: 400 },           // 大锤
+    { name: "battle_hammer", number: 300 },       // 大锤
+    { name: "warhammer", number: 300 },           // 穿甲锤
     { name: "javelin", number: 400 },             // 标枪
     { name: "spear", number: 100 },               // 矛
     { name: "pike", number: 100 },                // 长矛
@@ -322,8 +322,8 @@ ServerEvents.recipes(e => {
     { name: "katana_weapon_part", number: 200 },          // 太刀武器部件
     { name: "saber_weapon_part", number: 200 },           // 军刀武器部件
     { name: "rapier_weapon_part", number: 200 },          // 迅捷剑武器部件
-    { name: "battle_hammer_weapon_part", number: 200 },   // 战锤武器部件
-    { name: "warhammer_weapon_part", number: 300 },       // 大战锤武器部件
+    { name: "battle_hammer_weapon_part", number: 300 },   // 大锤武器部件
+    { name: "warhammer_weapon_part", number: 300 },       // 穿甲锤武器部件
     { name: "battleaxe_weapon_part", number: 300 },       // 战斧武器部件
     { name: "flanged_mace_weapon_part", number: 300 },    // 带刺钉头锤武器部件
     { name: "greatsword_weapon_part", number: 300 },      // 大剑武器部件
@@ -352,16 +352,16 @@ ServerEvents.recipes(e => {
   const item = [
 
     //戒指
-    { name: "copper_ring", metal: "copper", number: 50, temperature: 1080 }, // 铜戒指
-    { name: "bronze_ring", metal: "bronze", number: 50, temperature: 950 }, // 青铜戒指
-    { name: "black_bronze_ring", metal: "black_bronze", number: 50, temperature: 1080 }, // 黑铜戒指
-    { name: "bismuth_bronze_ring", metal: "bismuth_bronze", number: 50, temperature: 1080 }, // 铋铜戒指
-    { name: "silver_ring", metal: "silver", number: 50, temperature: 961 }, // 银戒指
-    { name: "sterling_silver_ring", metal: "sterling_silver", number: 50, temperature: 950 }, // 纹银戒指
-    { name: "gold_ring", metal: "gold", number: 50, temperature: 1064 }, // 金戒指
-    { name: "rose_gold_ring", metal: "rose_gold", number: 50, temperature: 1064 }, // 玫瑰金戒指
-    { name: "steel_ring", metal: "steel", number: 50, temperature: 1535 }, // 钢戒指
-    { name: "black_steel_ring", metal: "black_steel", number: 50, temperature: 1784 }, // 黑钢戒指
+    { name: "copper_ring", metal: "copper", number: 100, temperature: 1080 }, // 铜戒指
+    { name: "bronze_ring", metal: "bronze", number: 100, temperature: 950 }, // 青铜戒指
+    { name: "black_bronze_ring", metal: "black_bronze", number: 100, temperature: 1080 }, // 黑铜戒指
+    { name: "bismuth_bronze_ring", metal: "bismuth_bronze", number: 100, temperature: 1080 }, // 铋铜戒指
+    { name: "silver_ring", metal: "silver", number: 100, temperature: 961 }, // 银戒指
+    { name: "sterling_silver_ring", metal: "sterling_silver", number: 100, temperature: 950 }, // 纹银戒指
+    { name: "gold_ring", metal: "gold", number: 100, temperature: 1064 }, // 金戒指
+    { name: "rose_gold_ring", metal: "rose_gold", number: 100, temperature: 1064 }, // 玫瑰金戒指
+    { name: "steel_ring", metal: "steel", number: 100, temperature: 1535 }, // 钢戒指
+    { name: "black_steel_ring", metal: "black_steel", number: 100, temperature: 1784 }, // 黑钢戒指
   ];
   item.forEach(metala => {
 
@@ -481,6 +481,10 @@ ServerEvents.recipes(e => {
   tfc.heating('kubejs:unfired_mold_mechanical', 1399).resultItem('kubejs:mold_mechanical')//零件模具
   tfc.heating('kubejs:unfired_mold_simple_key', 1399).resultItem('kubejs:mold_simple_key')//钥匙模具
 
+
+   tfc.heating('kubejs:tfc/unfired_diamond_whetstone', 1600).resultItem('kubejs:tfc/diamond_whetstone')//钻石磨刀石
+    tfc.heating('kubejs:tfc/unfired_ceramic_stone', 2100).resultItem('kubejs:tfc/ceramic_stone')//铝陶瓷磨刀石
+
   tfc.heating('kubejs:unfired_mold_sheet', 1399).resultItem('kubejs:mold_sheet')//板模具
   tfc.heating('kubejs:unfired_mold_rods', 1399).resultItem('kubejs:mold_rods')//棒模具
 
@@ -511,7 +515,7 @@ ServerEvents.recipes(e => {
     { name: "bismuth", temperature: 271, metal: "tfc:metal/bismuth" },
     { name: "silver", temperature: 961, metal: "tfc:metal/silver" },
     { name: "sterling_silver", temperature: 940, metal: "tfc:metal/sterling_silver" },
-    { name: "nickel", temperature: 1453, metal: "tfc:metal/nickel" },
+    { name: "nickel", temperature: 1453, metal: "tfc:metal/refined_nickel" },
     { name: "chromium", temperature: 1907, metal: "firmalife:bucket/metal/chromium" },
     { name: "zinc", temperature: 419, metal: "tfc:metal/zinc" },
     { name: "stainless_steel", temperature: 1400, metal: "firmalife:bucket/metal/stainless_steel" },
@@ -699,7 +703,7 @@ ServerEvents.recipes(e => {
     { name: "immersiveengineering:sheetmetal_aluminum", temperature: 650, metal: "tfc_ie_addon:metal/aluminum", number: 100 },//铝
     { name: "immersiveengineering:sheetmetal_lead", temperature: 500, metal: "tfc_ie_addon:metal/lead", number: 100 },//铅
     { name: "immersiveengineering:sheetmetal_silver", temperature: 961, metal: "tfc:metal/silver", number: 100 },//银
-    { name: "immersiveengineering:sheetmetal_nickel", temperature: 1453, metal: "tfc:metal/nickel", number: 100 },//镍
+    { name: "immersiveengineering:sheetmetal_nickel", temperature: 1453, metal: "tfc:metal/refined_nickel", number: 100 },//镍
     { name: "immersiveengineering:sheetmetal_copper", temperature: 1080, metal: "tfc:metal/copper", number: 100 },//铜
     { name: "immersiveengineering:sheetmetal_uranium", temperature: 747, metal: "tfc_ie_addon:metal/uranium", number: 100 },//铀
     { name: "immersiveengineering:sheetmetal_constantan", temperature: 750, metal: "tfc_ie_addon:metal/constantan", number: 100 },//康铜
@@ -711,7 +715,7 @@ ServerEvents.recipes(e => {
     { name: "immersiveengineering:slab_sheetmetal_aluminum", temperature: 650, metal: "tfc_ie_addon:metal/aluminum", number: 50 },//铝
     { name: "immersiveengineering:slab_sheetmetal_lead", temperature: 500, metal: "tfc_ie_addon:metal/lead", number: 50 },//铅
     { name: "immersiveengineering:slab_sheetmetal_silver", temperature: 961, metal: "tfc:metal/silver", number: 50 },//银
-    { name: "immersiveengineering:slab_sheetmetal_nickel", temperature: 1453, metal: "tfc:metal/nickel", number: 50 },//镍
+    { name: "immersiveengineering:slab_sheetmetal_nickel", temperature: 1453, metal: "tfc:metal/refined_nickel", number: 50 },//镍
     { name: "immersiveengineering:slab_sheetmetal_copper", temperature: 1080, metal: "tfc:metal/copper", number: 50 },//铜
     { name: "immersiveengineering:slab_sheetmetal_uranium", temperature: 747, metal: "tfc_ie_addon:metal/uranium", number: 50 },//铀
     { name: "immersiveengineering:slab_sheetmetal_constantan", temperature: 750, metal: "tfc_ie_addon:metal/constantan", number: 50 },//康铜
@@ -727,7 +731,7 @@ ServerEvents.recipes(e => {
     { name: "minecraft:iron_block", temperature: 1535, metal: "tfc:metal/cast_iron", number: 1000 },
     { name: "minecraft:gold_block", temperature: 1060, metal: "tfc:metal/gold", number: 1000 },
     { name: "create:brass_block", temperature: 930, metal: "tfc:metal/brass", number: 1000 },
-    { name: "immersiveengineering:storage_nickel", temperature: 1453, metal: "tfc:metal/nickel", number: 1000 },
+    { name: "immersiveengineering:storage_nickel", temperature: 1453, metal: "tfc:metal/refined_nickel", number: 1000 },
     { name: "immersiveengineering:storage_steel", temperature: 1540, metal: "tfc:metal/steel", number: 1000 },
     { name: "immersiveengineering:storage_constantan", temperature: 750, metal: "tfc_ie_addon:metal/constantan", number: 1000 },
     { name: "immersiveengineering:storage_electrum", temperature: 900, metal: "tfc_ie_addon:metal/electrum", number: 1000 },
@@ -863,6 +867,7 @@ ServerEvents.recipes(e => {
     { name: "create:copper_scaffolding", temperature: 1085, metal: "tfc:metal/copper", number: 50 },
     { name: "createprism:copper_glass_scaffolding", temperature: 1085, metal: "tfc:metal/copper", number: 50 },
     { name: "createprism:copper_clear_glass_scaffolding", temperature: 1085, metal: "tfc:metal/copper", number: 50 },
+    { name: "minecraft:hopper", temperature: 1085, metal: "tfc:metal/copper", number: 400 },
 
     //黄铜制品
     { name: "create:brass_ladder", temperature: 930, metal: "tfc:metal/brass", number: 50 },
@@ -900,7 +905,14 @@ ServerEvents.recipes(e => {
     { name: "minecraft:waxed_oxidized_cut_copper_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 450 },
 
     // 工业工程金属台阶
-    { name: "immersiveengineering:slab_storage_nickel", temperature: 1453, metal: "tfc:metal/nickel", number: 500 },
+    { name: "immersiveengineering:slab_storage_nickel", temperature: 1453, metal: "tfc:metal/refined_nickel", number: 500 },
+    { name: "tfc:metal/block/nickel", temperature: 1453, metal: "tfc:metal/refined_nickel", number: 100 },
+    { name: "tfc:metal/block/nickel_stairs", temperature: 1453, metal: "tfc:metal/refined_nickel", number: 75 },
+    { name: "tfc:metal/block/nickel_slab", temperature: 1453, metal: "tfc:metal/refined_nickel", number: 50 },
+    { name: "kubejs:raw_nickel_bloom", temperature: 1453, metal: "tfc:metal/nickel", number: 100 },
+    { name: "kubejs:refined_nickel_bloom", temperature: 1453, metal: "tfc:metal/nickel", number: 100 },
+    { name: "kubejs:hot_raw_nickel_bloom", temperature: 1453, metal: "tfc:metal/nickel", number: 100 },
+    { name: "kubejs:hot_raw_iron_bloom", temperature: 1535, metal: "tfc:metal/cast_iron", number: 100 },
     { name: "immersiveengineering:slab_storage_steel", temperature: 1540, metal: "tfc:metal/steel", number: 500 },
     { name: "immersiveengineering:slab_storage_constantan", temperature: 750, metal: "tfc_ie_addon:metal/constantan", number: 500 },
     { name: "immersiveengineering:slab_storage_electrum", temperature: 900, metal: "tfc_ie_addon:metal/electrum", number: 500 },
@@ -1041,7 +1053,7 @@ ServerEvents.recipes(e => {
     //金属粒
     { name: "immersiveengineering:nugget_lead", temperature: 1060, metal: "tfc_ie_addon:metal/lead", number: 10 },//弹壳
     { name: "immersiveengineering:nugget_aluminum", temperature: 1535, metal: "tfc_ie_addon:metal/aluminum", number: 10 },//弹壳    
-    { name: "immersiveengineering:nugget_nickel", temperature: 1060, metal: "tfc:metal/nickel", number: 10 },//工程师护目镜
+    { name: "immersiveengineering:nugget_nickel", temperature: 1060, metal: "tfc:metal/refined_nickel", number: 10 },//工程师护目镜
     { name: "immersiveengineering:nugget_uranium", temperature: 940, metal: "tfc_ie_addon:metal/uranium", number: 10 },//分液池
     { name: "immersiveengineering:nugget_constantan", temperature: 1060, metal: "tfc_ie_addon:metal/constantan", number: 10 },//工程师护目镜
     { name: "immersiveengineering:nugget_electrum", temperature: 940, metal: "tfc_ie_addon:metal/electrum", number: 10 },//分液池
@@ -1085,7 +1097,8 @@ ServerEvents.recipes(e => {
     { name: "titanium_alloy", temperature: 1680, metal: "tfc:metal/titanium_alloy" },
     { name: "titanium", temperature: 1668, metal: "tfc:metal/titanium" },
     { name: "vanadium", temperature: 1917, metal: "tfc:metal/vanadium" },
-    { name: "manganese", temperature: 1246, metal: "tfc:metal/manganese" }
+    { name: "manganese", temperature: 1246, metal: "tfc:metal/manganese" },
+    { name: "nickel", temperature: 1453, metal: "tfc:metal/refined_nickel" }
   ]
   new_metal.forEach(metal => {
     ingot_type.forEach(type => {

@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "vintageimprovements"
+    }
+  ],
+  "type": "vintageimprovements:hammering",
+	"hammerBlows": 2,
+  "ingredients": [
+    {
+      "type": "tfc:heatable",
+      "min_temp": 872,
+      "ingredient": {
+        "item": "kubejs:raw_nickel_bloom"
+      }
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:refined_nickel_bloom"
+    }
+  ]
+}

@@ -7,7 +7,16 @@
 	hide_quest_details_until_startable: true
 	hide_quest_until_deps_complete: true
 	hide_quest_until_deps_visible: true
-	icon: "ad_astra:earth_globe"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"tfc:item_heat": {
+				heat: 0.0f
+				ticks: 0L
+			}
+		}
+		id: "ad_astra:earth_globe"
+	}
 	id: "30F46A4E89C4F061"
 	order_index: 5
 	quest_links: [ ]
@@ -24,7 +33,16 @@
 			]
 			hide_dependent_lines: true
 			hide_until_deps_visible: false
-			icon: "ad_astra:earth_globe"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "ad_astra:earth_globe"
+			}
 			id: "55A7A71E11F88C31"
 			rewards: [{
 				id: "60993161460F1060"
@@ -358,7 +376,16 @@
 			}]
 			tasks: [{
 				dimension: "ad_astra:earth_orbit"
-				icon: "ad_astra:steel_sliding_door"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "ad_astra:steel_sliding_door"
+				}
 				id: "5B7BDDED13873FEB"
 				title: "进入地球空间站"
 				type: "dimension"
@@ -499,6 +526,12 @@
 			]
 			icon: {
 				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
 				id: "ad_astra:tier_2_rocket"
 				tag: { }
 			}

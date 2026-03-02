@@ -1,64 +1,121 @@
 {
   "pools": [
     {
-      "rolls": 2,
+      "rolls": 6,
+      "bonus_rolls": 1.5,
       "entries": [
         {
-          "type": "minecraft:item",
-          "weight": 30,
-          "name": "kubejs:item/ore/rocky_chunks/native_copper"
-        },
-        {
-          "type": "minecraft:empty",
-          "weight": 30
-        },
-        {
-          "type": "minecraft:group",
+          "type": "minecraft:alternatives",
           "children": [
             {
-              "type": "minecraft:item",
-              "name": "minecraft:flint",
-              "weight": 7
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 40,
-          "name": "tfc:rock/loose/gneiss"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "name": "kubejs:item/ore/rocky_chunks/native_copper"
-        },
-        {
-          "type": "minecraft:group",
-          "children": [
-            {
-              "type": "minecraft:item",
-              "name": "kubejs:item/ore/rocky_chunks/native_gold",
-              "weight": 2
+              "type": "minecraft:empty",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
             },
             {
               "type": "minecraft:item",
-              "name": "kubejs:item/ore/rocky_chunks/native_silver",
-              "weight": 2
+              "name": "tfc:rock/loose/gneiss",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
             },
             {
               "type": "minecraft:item",
-              "name": "kubejs:item/ore/rocky_chunks/cassiterite",
-              "weight": 2
+              "name": "kubejs:item/ore/rocky_chunks/native_copper",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
             },
             {
               "type": "minecraft:item",
-              "name": "kubejs:item/ore/rocky_chunks/graphite",
-              "weight": 2
+              "name": "kubejs:item/ore/rocky_chunks/native_copper",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.3
+                }
+              ]
             },
             {
-              "type": "minecraft:item",
-              "name": "kubejs:item/ore/rocky_chunks/uraninite",
-              "weight": 2
+              "type": "minecraft:alternatives",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.1
+                }
+              ],
+              "children": [
+                {
+                  "type": "minecraft:group",
+                  "children": [
+                    {
+                      "type": "minecraft:item",
+                      "name": "kubejs:item/ore/rocky_chunks/native_gold",
+                      "weight": 1
+                    },
+                    {
+                      "type": "minecraft:item",
+                      "name": "kubejs:item/ore/rocky_chunks/native_silver",
+                      "weight": 1
+                    },
+                    {
+                      "type": "minecraft:item",
+                      "name": "kubejs:item/ore/rocky_chunks/cassiterite",
+                      "weight": 1
+                    },
+                    {
+                      "type": "minecraft:item",
+                      "name": "kubejs:item/ore/rocky_chunks/graphite",
+                      "weight": 1
+                    },
+                    {
+                      "type": "minecraft:item",
+                      "name": "kubejs:item/ore/rocky_chunks/uraninite",
+                      "weight": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "minecraft:alternatives",
+              "children": [
+                {
+                  "type": "minecraft:group",
+                  "children": [
+                    {
+                      "type": "minecraft:item",
+                      "name": "minecraft:flint",
+                      "weight": 1
+                    },
+                    {
+                      "type": "minecraft:item",
+                      "name": "minecraft:bone",
+                      "weight": 5
+                    },
+                    {
+                      "type": "minecraft:item",
+                      "name": "kubejs:item/ore/dirty_pile/native_copper",
+                      "weight": 2
+                    },
+                    {
+                      "type": "minecraft:item",
+                      "name": "minecraft:stick",
+                      "weight": 5
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }

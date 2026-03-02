@@ -1,0 +1,23 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "vintageimprovements"
+    }
+  ],
+  "type": "vintageimprovements:hammering",
+	"hammerBlows": 2,
+  "ingredients": [
+    {
+      "type": "tfc:heatable",
+      "ingredient": {
+        "item": "kubejs:hot_raw_iron_bloom"
+      }
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:refined_iron_bloom"
+    }
+  ]
+}

@@ -5,8 +5,29 @@ ServerEvents.recipes(e => {
   e.remove({ mod: 'immersive_melodies' })
   e.remove({ mod: 'functionalstorage' })
   e.remove({ mod: 'scguns' })
-
+  e.remove({ mod: 'createcasing' })
+  e.remove({ mod: 'firma_aircraft' })
+  e.remove({ mod: 'createcasing' })
+  e.remove({ mod: 'irons_spellbooks' })
+ e.replaceInput({}, "create:shaft",'#kubejs:shaft')
+ 
   const iddd = [
+    'woodencog:crafting/appliances/copper_diving_boots',
+    'create:crafting/appliances/copper_diving_boots',
+    'woodencog:crafting/appliances/copper_diving_helmet',
+    'create:crafting/appliances/copper_diving_helmet',
+    'create:deploying/cogwheel',
+    'create:crafting/kinetics/large_cogwheel',
+    'petrolsparts:crafting/large_cog_from_coaxial_gear',
+    'create:crafting/kinetics/large_cogwheel_from_little',
+    'petrolsparts:crafting/cog_from_coaxial_gear',
+    'create:crafting/kinetics/cogwheel',
+    'petrolsparts:cutting/coaxial_gear_from_cogwheel',
+    'petrolsparts:cutting/coaxial_gear_from_wood',
+    'petrolsparts:cutting/large_coaxial_gear_from_cogwheel',
+    'immersiveengineering:crafting/furnace_heater',
+    'create:crafting/logistics/pulse_extender',
+    'create:crafting/logistics/pulse_repeater',
     'petrolsparts:crafting/pneumatic_tube',
     'artisanal:mixing_bowl/dark_chocolate_blend',
     'artisanal:mixing_bowl/white_chocolate_blend',
@@ -853,6 +874,19 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'immersiveengineering:crafting/watermill' })
   e.remove({ id: 'immersiveengineering:crafting/windmill_sail' })
   e.remove({ id: 'immersiveengineering:crafting/windmill_blade' })
+  e.remove({ id: 'tfc:heating/metal/nickel_sheet' })
+  e.remove({ id: 'tfc:heating/metal/nickel_double_sheet' })
+  e.remove({ id: 'tfc:heating/metal/nickel_rod' })
+  e.remove({ id: 'tfc:heating/metal/nickel_double_ingot' })
+  e.remove({ id: 'tfc:heating/metal/nickel_block' })
+  e.remove({ id: 'tfc:heating/metal/nickel_ingot' })
+  e.remove({ id: 'tfc:heating/metal/nickel_block_stairs' })
+  e.remove({ id: 'tfc:heating/metal/nickel_block_slab' })
+  e.remove({ id: 'tfc:casting/nickel_ingot' })
+  e.remove({ id: 'tfc:casting/nickel_fire_ingot' })
+  e.remove({ id: 'tfc:crafting/vanilla/redstone/steel_hopper' })
+  e.remove({ id: 'minecraft:hopper' })
+  e.remove({ id: 'tfc:crafting/vanilla/redstone/hopper' })
 
   //删除ie左轮手枪及其相关组件配方
   e.remove({ id: 'immersiveengineering:crafting/toolupgrade_revolver_magazine' })
@@ -901,7 +935,7 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'tfc_hammer_time:heating/sledgehammer_head/blue_steel' })
   e.remove({ id: 'tfcscraping:heating/metal/blue_steel_scraping_knife' })
   e.remove({ id: 'tfcscraping:heating/metal/blue_steel_scraping_knife_blade' })
-  e.remove({ id: 'tfc_hammer_time:anvil/metal/excavator_head/blue_steel' })
+  //e.remove({ id: 'tfc_hammer_time:anvil/metal/excavator_head/blue_steel' })
   e.remove({ id: 'precisionprospecting:heating/metal/prospector_hammer_head/blue_steel' })
   e.remove({ id: 'artisanal:heating/metal/circle_blade/blue_steel' })
   e.remove({ id: 'artisanal:heating/metal/circle_blade/red_steel' })

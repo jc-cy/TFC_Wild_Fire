@@ -123,7 +123,16 @@
 				"当然，你也可以轻装上阵，或是使用飞雷神在家中和路上来回tp，这是你的自由。不过请确保你完成了至少一项指标。"
 			]
 			hide_until_deps_complete: true
-			icon: "minecraft:dirt_path"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:dirt_path"
+			}
 			id: "5E9051E49C388834"
 			progression_mode: "linear"
 			require_sequential_tasks: false
@@ -526,7 +535,16 @@
 				}
 				{
 					consume_items: false
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "04E81EA20D727A1A"
 					item: "tfc:fire_bricks"
 					optional_task: true
@@ -579,7 +597,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "5E75C1A28020D61E"
 					optional_task: true
 					points: false
@@ -637,7 +664,16 @@
 					type: "item"
 				}
 				{
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "16A23ABEF04F88F0"
 					observe_type: 0
 					optional_task: true
@@ -755,7 +791,16 @@
 				}
 				{
 					consume_items: false
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "156552D4826F7C6C"
 					item: "tfc:fire_bricks"
 					optional_task: true
@@ -941,7 +986,16 @@
 				}
 				{
 					consume_items: false
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "17D76583D1B5BB5F"
 					item: "kubejs:corundum_brick_block"
 					optional_task: true
@@ -992,7 +1046,16 @@
 				}
 				{
 					consume_items: false
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "0F784A702C1E3073"
 					item: "kubejs:corundum_brick_block"
 					optional_task: true
@@ -1334,6 +1397,12 @@
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
 				id: "minecraft:white_banner"
 				tag: {
 					BlockEntityTag: {
@@ -1569,7 +1638,16 @@
 			dependencies: ["22D0B839C9E27B02"]
 			description: ["掠夺者最危险的地方就是城寨了，有很多重甲掠夺者在里面，没有相应的装备击溃他们简直难如登天"]
 			hide_until_deps_complete: true
-			icon: "minecraft:stone_bricks"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:stone_bricks"
+			}
 			id: "1001B1A653E27055"
 			rewards: [{
 				id: "16A415BAC6A5C0E5"
@@ -1770,7 +1848,16 @@
 		{
 			dependencies: ["2D8EE1518B0C8834"]
 			hide_details_until_startable: true
-			icon: "create:basin"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "create:basin"
+			}
 			id: "1B31D6B48235E998"
 			rewards: [{
 				id: "0F20300AEEBE80BE"
@@ -2261,7 +2348,16 @@
 			]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
-			icon: "design_decor:industrial_gear_large"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "design_decor:industrial_gear_large"
+			}
 			id: "5ABCEA9D66EB2104"
 			rewards: [{
 				id: "5101CEF8047AD49D"
@@ -2419,17 +2515,17 @@
 				"是需要通过提炼&4铝&r和&f铬&r"
 				"来制作人造刚玉&n[人造红宝石]&r以代替耐火砖块的路线"
 				""
-				"如果你的家附近有铝土矿和铬铁矿！那么可以尝试走一下这个虽然步骤稍显繁琐但也不会和高岭土一样难找的路线"
-				"哪怕是附近没有、随便走走看看用勘探工具查看一下、也许就能找到铝土和铬铁了呢"
+				"如果你的家附近有铝土矿和铬矿！那么可以尝试走一下这个虽然步骤稍显繁琐但也不会和高岭土一样难找的路线"
+				"哪怕是附近没有、随便走走看看用勘探工具查看一下、也许就能找到铝土和铬了呢"
 				""
-				"&e&n[翻页以查看铝土和铬铁的详细信息]&r&r"
+				"&e&n[翻页以查看铝土和铬的详细信息]&r&r"
 				"{@pagebreak}"
-				"&4铝土&r和&f铬铁&r他们的生成条件对高度没有要求、可以在海拔任意或深度任意的地质上生成"
+				"&4铝土&r和&f铬&r他们的生成条件对高度没有要求、可以在海拔任意或深度任意的地质上生成"
 				"不过、他们需要的环境地质不同"
 				""
 				"&4铝土&r必须要在沉积岩与变质岩的地质下才能形成"
 				""
-				"&f铬铁&r必须要在侵入岩和变质岩的地质下才能形成"
+				"&f铬&r必须要在侵入岩和变质岩的地质下才能形成"
 				""
 				"请好好查看你所在附近的地质、如果非此类地质那么是无法找到它们的！"
 			]
@@ -2497,7 +2593,7 @@
 					type: "item"
 				}
 			]
-			title: "铝土与铬铁"
+			title: "铝土与铬"
 			x: 4.5d
 			y: -2.0d
 		}
@@ -2550,7 +2646,16 @@
 				}
 				{
 					consume_items: false
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "197F2B6091890CB3"
 					item: "kubejs:corundum_brick_block"
 					optional_task: true
@@ -2567,7 +2672,7 @@
 				"620FE34A0406DCFE"
 			]
 			description: [
-				"使用&6焖煮&r的方法来精炼铬铁矿浆得到&f精炼铬铁矿粉&r"
+				"使用&6焖煮&r的方法来精炼铬矿浆得到&f精炼铬矿粉&r"
 				""
 				"然后和&c氧化铝粉&r混合获得铝铬混合粉！"
 			]
@@ -2598,7 +2703,16 @@
 				}
 				{
 					consume_items: false
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "4F351F20714B8E30"
 					item: "kubejs:corundum_brick_block"
 					optional_task: true
@@ -2606,7 +2720,7 @@
 					type: "item"
 				}
 			]
-			title: "精炼铬铁、然后混合"
+			title: "精炼铬、然后混合"
 			x: 7.5d
 			y: -1.5d
 		}
@@ -2635,7 +2749,16 @@
 				}
 				{
 					consume_items: false
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "73AEC1581C0FA8F9"
 					item: "kubejs:corundum_brick_block"
 					optional_task: true
@@ -2659,7 +2782,16 @@
 			]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
-			icon: "kubejs:corundum_brick"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:corundum_brick"
+			}
 			id: "053D26E611D4FC35"
 			min_required_dependencies: 1
 			rewards: [{
@@ -2686,7 +2818,16 @@
 				}
 				{
 					consume_items: false
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "78BB79CD4C73709D"
 					item: "kubejs:corundum_brick_block"
 					optional_task: true
@@ -2774,7 +2915,16 @@
 		{
 			dependencies: ["797E70374DC5D08D"]
 			description: ["当作燃料使用会有&4&l剧毒气体&r&r产生，请谨慎使用"]
-			icon: "immersiveengineering:creosote_bucket"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:creosote_bucket"
+			}
 			id: "50E3DC2119EEF05E"
 			rewards: [{
 				id: "20D5343892103823"
@@ -3040,7 +3190,16 @@
 					type: "item"
 				}
 				{
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "7930B9DA0892F09F"
 					observe_type: 0
 					optional_task: true

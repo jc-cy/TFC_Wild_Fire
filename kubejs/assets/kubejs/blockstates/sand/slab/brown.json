@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "tfc:block/sand/brown"
+        },
+        "type=top": {
+            "model": "tfc:block/sand/brown"
+        },
+        "type=double": {
+            "model": "tfc:block/sand/brown"
+        }
+    }
+}

@@ -287,7 +287,7 @@ e.create("steel_boomerang", "spartanweaponry:boomerang").material(steel).setAtta
 // 22. 标枪javelin
 e.create("steel_javelin", "spartanweaponry:javelin").material(steel).setAttackDamage(4.65 - 1).setAttackSpeed(1).setAmmo(4).setDuration(150).tag('tfc:usable_on_tool_rack');
 
-// 七、锰钢（black_steel）系列武器（攻击速度=铜武器，伤害=表格数值）
+// 七、高锰钢（black_steel）系列武器（攻击速度=铜武器，伤害=表格数值）
 // 1. 长枪spear
 e.create("black_steel_spear", "spartanweaponry:spear").material(black_steel).setAttackDamage(7.5 - 1).setAttackSpeed(2).setDuration(4000).tag('tfc:usable_on_tool_rack');
 // 2. 大剑greatsword

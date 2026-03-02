@@ -5,7 +5,8 @@ const molten_metal = [
     { id: 'titanium_alloy', Temperature: 1700, tier: 4 },
     { id: 'titanium', Temperature: 1668, tier: 3 },
     { id: 'vanadium', Temperature: 1910, tier: 2 },
-    { id: 'manganese', Temperature: 1246, tier: 3 }
+    { id: 'manganese', Temperature: 1246, tier: 3 },
+    { id: 'refined_nickel', Temperature: 1453, tier: 2 }
 ]
 
 TFCEvents.data(event => {

@@ -4,14 +4,32 @@
 	default_quest_shape: ""
 	filename: "25683879AF8D9164"
 	group: "257B93C8F82BA053"
-	icon: "design_decor:glitch_warning_sign"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"tfc:item_heat": {
+				heat: 0.0f
+				ticks: 0L
+			}
+		}
+		id: "design_decor:glitch_warning_sign"
+	}
 	id: "25683879AF8D9164"
 	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
 			description: ["在初次进入游戏后执行规则"]
-			icon: "design_decor:gear_sign"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "design_decor:gear_sign"
+			}
 			id: "2B01F62A78F31206"
 			ignore_reward_blocking: true
 			require_sequential_tasks: true
@@ -21,7 +39,16 @@
 					command: "/gamerule naughtinessMechanics false"
 					elevate_perms: true
 					exclude_from_claim_all: true
-					icon: "design_decor:gear_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:gear_sign"
+					}
 					id: "09767758BC6076BF"
 					ignore_reward_blocking: true
 					silent: true
@@ -34,7 +61,16 @@
 					command: "/gamerule spawnRadius 100"
 					elevate_perms: true
 					exclude_from_claim_all: true
-					icon: "design_decor:gear_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:gear_sign"
+					}
 					id: "3BEF0E9A10CD2988"
 					ignore_reward_blocking: true
 					silent: true
@@ -63,7 +99,16 @@
 				command: "/gamerule doTraderSpawning true"
 				elevate_perms: true
 				exclude_from_claim_all: true
-				icon: "design_decor:gear_sign"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "design_decor:gear_sign"
+				}
 				id: "012C0798EECFCCF8"
 				ignore_reward_blocking: true
 				silent: true
@@ -81,7 +126,16 @@
 					value: 3
 				}
 				{
-					icon: "minecraft:white_bed"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "minecraft:white_bed"
+					}
 					id: "0D4DF541A27B4392"
 					observe_type: 1
 					timer: 0L
@@ -116,7 +170,16 @@
 					command: "/gamerule doPatrolSpawning true"
 					elevate_perms: true
 					exclude_from_claim_all: true
-					icon: "design_decor:gear_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:gear_sign"
+					}
 					id: "7049D73DC88DE248"
 					ignore_reward_blocking: true
 					silent: true
@@ -129,7 +192,16 @@
 					command: "/gamestage add @p pillager_structure_small true"
 					elevate_perms: true
 					exclude_from_claim_all: true
-					icon: "design_decor:gear_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:gear_sign"
+					}
 					id: "5D6E76293B314731"
 					ignore_reward_blocking: true
 					silent: true
@@ -194,7 +266,16 @@
 				command: "/gamestage add @p pillager_structure_medium true"
 				elevate_perms: true
 				exclude_from_claim_all: true
-				icon: "design_decor:gear_sign"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "design_decor:gear_sign"
+				}
 				id: "08ABE8BF72F3C8EB"
 				ignore_reward_blocking: true
 				silent: true
@@ -268,7 +349,16 @@
 				command: "/gamestage add @p pillager_structure_large true"
 				elevate_perms: true
 				exclude_from_claim_all: true
-				icon: "design_decor:gear_sign"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "design_decor:gear_sign"
+				}
 				id: "423946FE75B202FC"
 				ignore_reward_blocking: true
 				silent: true

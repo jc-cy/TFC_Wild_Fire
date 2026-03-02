@@ -11,19 +11,26 @@ const CLEANUP_INTERVAL = 5 * 60 * 1000 // 每5分钟清理一次
 const ENTRY_MAX_AGE = 10 * 60 * 1000  // 条目最大存活时间10分钟
 const MAX_BURN_TIME = 24000 // 20分钟最大燃烧时间（20 * 60 * 20 = 24000）
 
-
 // 燃料配置
 const FUEL_CONFIG = {
     // 燃料ID: 每单位增加的燃烧时间(tick)
-    "immersiveengineering:coal_coke": 1200, // 1分钟 = 1200 tick
-
+    "immersiveengineering:coal_coke": 2400, // 1分钟 = 1200 tick
+    "tfc:ore/bituminous_coal": 2400,
+    "tfc:ore/lignite": 2400,
+    "minecraft:charcoal": 1200,
+    "kubejs:charcoal_briquette": 6000,
+    "kubejs:coal_briquette": 21600,
+    "kubejs:coke_briquette": 21600
 }
 
-// 点火配置
+// 点火工具配置
 const FLINT_AND_STEEL_IDS = [
     "minecraft:flint_and_steel",
-    "immersiveengineering:lighter",
-    "tfc:flint_and_steel"
+    "artisanal:metal/flint_and/black_steel",
+    "artisanal:metal/flint_and/blue_steel",
+    "artisanal:metal/flint_and/red_steel",
+    "artisanal:stone/flint_and/pyrite",
+    "artisanal:stone/flint_and/cut_pyrite"
 ]
 
 function canMeltToCastIron(stack) {
@@ -33,16 +40,46 @@ function canMeltToCastIron(stack) {
     let displayOutputFluid = recipe.displayOutputFluid
     return displayOutputFluid && displayOutputFluid.fluid && displayOutputFluid.fluid.isSame("tfc:metal/cast_iron")
 }
-function isCoke(stack) {
+
+function canMeltToNickel(stack) {
     if (stack.isEmpty()) return false
-    return stack.id == "immersiveengineering:coal_coke"
+    let recipe = HeatingRecipe.getRecipe(stack)
+    if (!recipe) return false
+    let displayOutputFluid = recipe.displayOutputFluid
+    return displayOutputFluid && displayOutputFluid.fluid && displayOutputFluid.fluid.isSame("tfc:metal/nickel")
 }
+
+function canMeltToSupportedFluid(stack) {
+    if (stack.isEmpty()) return false
+    let recipe = HeatingRecipe.getRecipe(stack)
+    if (!recipe) return false
+    let displayOutputFluid = recipe.displayOutputFluid
+    if (!displayOutputFluid || !displayOutputFluid.fluid) return false
+    
+    // 检查是否是支持的流体类型
+    return displayOutputFluid.fluid.isSame("tfc:metal/cast_iron") || 
+           displayOutputFluid.fluid.isSame("tfc:metal/nickel")
+}
+
 function getMeltedFluidAmount(stack) {
     if (stack.isEmpty()) return 0
     let recipe = HeatingRecipe.getRecipe(stack)
     if (!recipe) return 0
     let result = recipe.assembleFluid(new ItemStackInventory(stack))
     return result ? result.amount : 0
+}
+
+function getMeltedFluidType(stack) {
+    if (stack.isEmpty()) return null
+    let recipe = HeatingRecipe.getRecipe(stack)
+    if (!recipe) return null
+    let result = recipe.assembleFluid(new ItemStackInventory(stack))
+    return result ? result.fluid : null
+}
+
+function isCoke(stack) {
+    if (stack.isEmpty()) return false
+    return stack.id == "immersiveengineering:coal_coke"
 }
 function isStick(stack) {
     if (stack.isEmpty()) return false
@@ -120,8 +157,8 @@ MBDMachineEvents.onStructureFormed("mbd2:bloomery", e => {
     let fuelStorage = fuelTrait ? fuelTrait.storage : null
     let fluidStorage = inputFluidTrait.storages[0]
 
-    // 设置物品过滤器：只允许可加热为铸铁液的物品
-    storage.setFilter((stack) => canMeltToCastIron(stack))
+    // 设置物品过滤器：允许可加热为铸铁液或镍液的物品
+    storage.setFilter((stack) => canMeltToSupportedFluid(stack))
     
     // 设置燃料槽过滤器：只允许燃料物品
     if (fuelStorage) {
@@ -152,14 +189,13 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
     if (isStick(heldItem)) {
         // 直接读取最新的燃烧时间
         let burnTime = customData.getInt("burn_time") || 0
-        let burnSeconds = Math.floor(burnTime / 20)
-        let minutes = Math.floor(burnSeconds / 60)
-        let seconds = burnSeconds % 60
-        
-        // 直接发送消息，不使用防重复
         if (burnTime > 0) {
+            let burnSeconds = Math.floor(burnTime / 20)
+            let minutes = Math.floor(burnSeconds / 60)
+            let seconds = burnSeconds % 60
+            // 直接发送消息，不使用防重复
             player.sendSystemMessage(`锻铁炉剩余燃烧时间: ${minutes}分${seconds}秒`)
-        } 
+        }
         player.swing()
         return
     }
@@ -173,7 +209,7 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
 
         // 检查加入后是否会超出上限
         if (currentBurnTime + addedTime > MAX_BURN_TIME) {
-            sendCooldownMessage(player, `添加燃料会导致燃烧时间超过上限！`)
+            sendCooldownMessage(player, `锻铁炉容纳不下这么多燃料！`)
             player.swing()
             return
         }
@@ -201,17 +237,35 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
     if (isFlintAndSteel(heldItem)) {
         // 防止重复启动（检查机器是否正在加热或熔化）
         if (customData.getInt("heat_time") > 0 || customData.getBoolean("is_melting")) {
-            sendCooldownMessage(player, "锻铁炉已经在运行中")
             player.swing()
             return
         }
         
         let currentBurnTime = customData.getInt("burn_time") || 0
         if (currentBurnTime <= 0) {
-            sendCooldownMessage(player, "没有剩余燃料，请先在燃料槽中添加燃料")
-            player.playSound("minecraft:block.fire.extinguish")
-            player.swing()
-            return
+            // 检查燃料槽是否有燃料
+            let hasFuelInSlot = false
+            /**@type {Internal.ItemSlotCapabilityTrait} */
+            let fuelTrait = machine.getTraitByName("coal_coke_input_slot")
+            if (fuelTrait) {
+                let fuelStorage = fuelTrait.storage
+                for (let i = 0; i < fuelStorage.getSlots(); i++) {
+                    let stackInSlot = fuelStorage.getStackInSlot(i)
+                    if (isFuelItem(stackInSlot) && stackInSlot.count > 0) {
+                        hasFuelInSlot = true
+                        break
+                    }
+                }
+            }
+            
+            if (!hasFuelInSlot) {
+                player.playSound("minecraft:block.fire.extinguish")
+                player.swing()
+                return
+            } else {
+                // 有燃料在燃料槽中，但不提示，继续点火流程
+                // 燃料会在tick事件中自动消耗
+            }
         }
         
         // 检查机器中是否有可熔化矿石
@@ -222,7 +276,7 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
         let hasMeltableItem = false
         for (let i = 0; i < storage.getSlots(); i++) {
             let stackInSlot = storage.getStackInSlot(i)
-            if (canMeltToCastIron(stackInSlot)) {
+            if (canMeltToSupportedFluid(stackInSlot)) {
                 hasMeltableItem = true
                 break
             }
@@ -242,16 +296,13 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
         // 设置燃烧状态为已启动
         customData.putBoolean("burn_started", true)
         
-        machine.setMachineState("heating")
+        // 点火后设置为 working 状态
+        machine.setMachineState("working")
         player.playSound("minecraft:item.flintandsteel.use")
-        sendCooldownMessage(player, "点火成功，锻铁炉开始熔化矿石...")
         player.swing()
         return
     }
     
-    // 如果既不是木棍、燃料也不是打火石，显示提示
-    sendCooldownMessage(player, "使用木棍查看剩余燃烧时间，手持燃料右键增加燃烧时间，使用任意打火石点火开始熔炼。燃料会自动从燃料槽中吸取。")
-    player.swing()
 })
 
 MBDMachineEvents.onTick("mbd2:bloomery", e => {
@@ -269,6 +320,17 @@ MBDMachineEvents.onTick("mbd2:bloomery", e => {
     let storage = inputTrait.storage
     let fuelStorage = fuelTrait ? fuelTrait.storage : null
     let fluidStorage = inputFluidTrait.storages[0]
+    
+    //燃烧时间为0时强制设置机器状态为base
+    if (burnTime <= 0) {
+        machine.setMachineState("base")
+        // 同时重置相关状态变量（如果存在）
+        customData.putBoolean("burn_started", false)
+        customData.putInt("heat_time", 0)
+        customData.putBoolean("is_melting", false)
+        customData.putInt("melting_timer", 0)
+        customData.putInt("fuel_check_timer", 0)
+    }
     
     let heatTime = customData.getInt("heat_time")
     let isMelting = customData.getBoolean("is_melting")
@@ -316,12 +378,17 @@ MBDMachineEvents.onTick("mbd2:bloomery", e => {
             customData.putBoolean("is_melting", false)
             customData.putBoolean("burn_started", false) // 重置燃烧启动标志
             customData.putInt("melting_timer", 0)
-            machine.setMachineState("idle")
+            machine.setMachineState("base")
             // 播放关闭音效
             machine.level.playSound(null, machine.pos.x + 0.5, machine.pos.y + 0.5, machine.pos.z + 0.5, 
                 "minecraft:block.fire.extinguish", 1.0, 1.0)
             return
         }
+    }
+    
+    // 只要有燃烧时间，机器状态每tick都强制设为working
+    if (burnStarted && burnTime > 0) {
+        machine.setMachineState("working")
     }
     
     // 处理暖机阶段（仅在燃烧时间内）
@@ -334,7 +401,6 @@ MBDMachineEvents.onTick("mbd2:bloomery", e => {
         if (heatTime === 0) {
             customData.putBoolean("is_melting", true)
             customData.putInt("melting_timer", 20) // 改为20tick（1秒后处理第一个物品）
-            machine.setMachineState("working")
         }
     }
     
@@ -353,67 +419,58 @@ MBDMachineEvents.onTick("mbd2:bloomery", e => {
         // 获取当前流体状态
         let currentFluid = fluidStorage.fluid
         let currentAmount = 0
+        let currentFluidType = null
         
         if (currentFluid && currentFluid.fluid) {
             try {
-                // 检查流体类型是否为铸铁液
-                if (currentFluid.fluid.isSame("tfc:metal/cast_iron")) {
-                    currentAmount = currentFluid.amount
-                }
+                currentFluidType = currentFluid.fluid
+                currentAmount = currentFluid.amount
             } catch(e) {
                 // 流体类型检查失败，可能是空槽
+                currentFluidType = null
                 currentAmount = 0
             }
         }
         
-        // 寻找第一个可溶解物品
-        let meltableSlot = -1
-        let meltableStack = null
-        let fluidAmount = 0
-        
+        // 寻找可溶解物品，优先处理与当前流体类型匹配的
         for (let i = 0; i < storage.getSlots(); i++) {
             let stackInSlot = storage.getStackInSlot(i)
-            if (canMeltToCastIron(stackInSlot)) {
-                meltableSlot = i
-                meltableStack = stackInSlot
-                fluidAmount = getMeltedFluidAmount(stackInSlot)
-                break
-            }
-        }
-        
-        // 如果找到可溶解物品
-        if (meltableSlot !== -1 && fluidAmount > 0 && meltableStack) {
-            // 检查流体槽容量（包括空槽和铸铁液槽）
-            let canFill = false
-            
-            if (currentAmount === 0) {
-                canFill = true
-            } else {
-                // 检查流体类型是否为铸铁液
-                try {
-                    {
-                        // 检查容量是否足够
+            if (canMeltToSupportedFluid(stackInSlot)) {
+                let fluidAmount = getMeltedFluidAmount(stackInSlot)
+                let fluidType = getMeltedFluidType(stackInSlot)
+                
+                if (fluidAmount > 0 && fluidType) {
+                    // 检查流体槽容量
+                    let canFill = false
+                    
+                    if (currentAmount === 0) {
+                        // 流体槽为空，可以填充任何类型
+                        canFill = true
+                    } else if (currentFluidType && fluidType.isSame(currentFluidType)) {
+                        // 流体类型相同，检查容量
                         if (currentAmount + fluidAmount <= fluidStorage.capacity) {
                             canFill = true
                         }
                     }
-                } catch(e) {
-                    canFill = false
+                    
+                    if (canFill) {
+                        // 消耗物品
+                        storage.extractItem(i, 1, false)
+                        
+                        // 填充流体 - 完全参考原始代码方式
+                        machine.getCapability(ForgeCapabilities.FLUID_HANDLER).ifPresent(handler => {
+                            handler.fill(Fluid.of(fluidType, fluidAmount), "execute")
+                        })
+                        break // 只处理一个物品，然后等待下一轮
+                    }
                 }
-            }
-            
-            if (canFill) {
-                storage.extractItem(meltableSlot, 1, false)
-                machine.getCapability(ForgeCapabilities.FLUID_HANDLER).ifPresent(handler => {
-                    handler.fill(Fluid.of("tfc:metal/cast_iron", fluidAmount), "execute")
-                })
             }
         }
     } else if (isMelting && burnTime <= 0) {
         // 燃烧时间结束，停止熔化
         customData.putBoolean("is_melting", false)
         customData.putInt("melting_timer", 0)
-        customData.putBoolean("burn_started", false) // 重置燃烧启动标志
-        machine.setMachineState("idle")
+        // 重置燃烧启动标志
+        customData.putBoolean("burn_started", false)
     }
 })

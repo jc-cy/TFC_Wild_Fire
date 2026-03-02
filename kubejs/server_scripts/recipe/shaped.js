@@ -2,6 +2,76 @@ ServerEvents.recipes(event => {
 
     const id_in = "kubejs:recipe/shaped/"
     event.shaped('minecraft:anvil', ['aaa', ' a ', 'aaa'], { a: 'tfc:metal/double_ingot/cast_iron' })//铁砧
+
+ event.shaped("create:copper_diving_helmet", [' a ', ' b ', 'cdc'], {
+        a: "tfc:metal/unfinished_helmet/copper", 
+        b: "firmalife:reinforced_glass",
+        c: "sns:leather_strip",
+        d:"kubejs:copper_fragments",
+       
+    })//潜水头盔
+
+     event.shaped("create:copper_diving_boots", ['aba', 'c c'], {
+        a: "sns:leather_strip", 
+        b: "tfc:metal/unfinished_boots/copper",
+        c: "immersiveengineering:ingot_lead"
+       
+    })//潜水鞋子
+
+       event.shaped("alexscaves:diving_leggings", ['aba', 'c c', 'aba'], {
+        a: "sns:leather_strip", 
+        b: "tfc:metal/unfinished_greaves/copper",
+        c: "kubejs:copper_fragments",
+       
+    })//潜水裤子
+
+
+
+    
+   event.shaped("moreburners:electric_burner", ['dbd', 'aca', ' e '], {
+        a: "vintageimprovements:andesite_sheet", 
+        b: "firmalife:reinforced_glass",
+        c: "moreburners:copper_coil",
+        d:"tfc:metal/sheet/wrought_iron",
+        e: "immersiveengineering:furnace_heater"
+    })//电磁炉
+
+   event.shaped("immersiveengineering:furnace_heater", ['aba', 'cdc', 'aba'], {
+        a: "immersiveengineering:sheetmetal_iron", 
+        b: "tfc:metal/sheet/copper",
+        c: "immersiveengineering:wirecoil_copper",
+        d: "moreburners:copper_coil"
+    })//外置加热
+
+
+     event.shaped("create_connected:empty_fan_catalyst", ['aba', 'b b', 'aba'], {
+        a: TFC.ingredient.heatable( "tfc:metal/rod/brass", 600, null), 
+        b: "tfc:metal/bars/wrought_iron"
+    })//黄铜触媒
+
+    event.shaped("2x create:pulse_timer", [' a ', 'bcd', 'eee'], {
+        a: "tfc:powder/amethyst",
+        b: "minecraft:redstone",
+        c: "tfc:metal/sheet/brass",
+        d: "minecraft:redstone_torch",
+        e: '#loot:rock_brick'
+    })//脉冲计时器
+    event.shaped("2x create:pulse_repeater", ['bcd', 'eee'], {
+
+        b: "minecraft:redstone",
+        c: "tfc:metal/sheet/brass",
+        d: "minecraft:redstone_torch",
+        e: '#loot:rock_brick'
+    })//脉冲中继器
+    event.shaped("2x create:pulse_extender", ['  b', 'bcd', 'eee'], {
+
+        b: "minecraft:redstone",
+        c: "tfc:metal/sheet/brass",
+        d: "minecraft:redstone_torch",
+        e: '#loot:rock_brick'
+    })//脉冲延长器
+
+
     event.shaped("immersiveengineering:rs_engineering", [' a ', 'aba', ' a '], {
         a: "tfc:metal/sheet/steel", b: "create:rose_quartz_block"
     })//红石工程块
@@ -238,7 +308,7 @@ ServerEvents.recipes(event => {
             a: 'kubejs:black_steel_arrow',
             b: 'immersiveengineering:stick_treated',
             c: 'artisanal:trimmed_feather'
-        })//锰钢箭头
+        })//高锰钢箭头
     event.shaped('2x spartanweaponry:netherite_bolt',
         ['a',
             'b',
@@ -247,7 +317,7 @@ ServerEvents.recipes(event => {
             a: 'tfc:metal/rod/black_steel',
             b: 'immersiveengineering:stick_treated',
             c: 'artisanal:trimmed_feather'
-        })//锰钢弩箭
+        })//高锰钢弩箭
     event.shaped('2x spartanweaponry:bolt',
         ['a',
             'b',

@@ -165,5 +165,10 @@ StartupEvents.registry("fluid", event => {
         .stillTexture('kubejs:fluid/molten/molten_titanium_alloy_still')
         .flowingTexture('kubejs:fluid/molten/molten_titanium_alloy_flowing')
     //熔融钛合金
+    
+    event.create("tfc:metal/refined_nickel")
+        .stillTexture('kubejs:fluid/molten/molten_refined_nickel_still')
+        .flowingTexture('kubejs:fluid/molten/molten_refined_nickel_flowing')
+    //熔融钛合金
 
 })

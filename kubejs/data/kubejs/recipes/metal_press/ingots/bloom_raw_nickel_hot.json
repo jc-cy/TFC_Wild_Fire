@@ -1,0 +1,23 @@
+{
+	"conditions": [
+	  {
+		"type": "forge:mod_loaded",
+		"modid": "immersiveengineering"
+	  }
+	],
+	"type":"immersiveengineering:metal_press",
+	"energy":2400,
+	"mold":"kubejs:cast_iron_indenter",
+	"input": 
+    {
+      "type": "tfc:heatable",
+	  "ingredient": {
+		"item": "kubejs:hot_raw_nickel_bloom"
+	  }
+	},  
+	"result": [
+	  {
+		"item": "kubejs:refined_nickel_bloom"
+	  }
+	]
+  }

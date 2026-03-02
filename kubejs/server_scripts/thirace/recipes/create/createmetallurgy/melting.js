@@ -18,35 +18,35 @@ ServerEvents.recipes((event) => {
         //手写铸铁融化配方
         {
             ingredients: [{ item: `tfc:metal/ingot/cast_iron` }],
-            heatRequirement: 'superheated',
+            heatRequirement: 'heated',
             processingTime: 180,
             results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}ingots/cast_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/double_ingot/cast_iron` }],
-            heatRequirement: 'superheated',
+            heatRequirement: 'heated',
             processingTime: 360,
             results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}double_ingots/cast_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/sheet/cast_iron` }],
-            heatRequirement: 'superheated',
+            heatRequirement: 'heated',
             processingTime: 360,
             results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}sheets/cast_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/double_sheet/cast_iron` }],
-            heatRequirement: 'superheated',
+            heatRequirement: 'heated',
             processingTime: 720,
             results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}double_sheets/cast_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/rod/cast_iron` }],
-            heatRequirement: 'superheated',
+            heatRequirement: 'heated',
             processingTime: 90,
             results: [{ amount: 50, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}rod/cast_iron`
@@ -55,42 +55,42 @@ ServerEvents.recipes((event) => {
         //锻铁
         {
             ingredients: [{ item: `tfc:metal/ingot/wrought_iron` }],
-            heatRequirement: 'superheated',
+            heatRequirement: 'heated',
             processingTime: 180,
             results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}ingots/wrought_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/double_ingot/wrought_iron` }],
-            heatRequirement: 'superheated',
+            heatRequirement: 'heated',
             processingTime: 360,
             results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}double_ingots/wrought_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/sheet/wrought_iron` }],
-            heatRequirement: 'superheated',
+            heatRequirement: 'heated',
             processingTime: 360,
             results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}sheets/wrought_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/double_sheet/wrought_iron` }],
-            heatRequirement: 'superheated',
+            heatRequirement: 'heated',
             processingTime: 720,
             results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}double_sheets/wrought_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/rod/wrought_iron` }],
-            heatRequirement: 'superheated',
+            heatRequirement: 'heated',
             processingTime: 90,
             results: [{ amount: 50, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}rod/wrought_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/tuyere/wrought_iron` }],
-            heatRequirement: 'superheated',
+            heatRequirement: 'heated',
             processingTime: 720,
             results: [{ amount: 400, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}tuyere/wrought_iron`
@@ -99,7 +99,7 @@ ServerEvents.recipes((event) => {
         //生铁
         {
             ingredients: [{ item: `tfc:metal/ingot/pig_iron` }],
-            heatRequirement: 'superheated',
+            heatRequirement: 'heated',
             processingTime: 60,
             results: [{ amount: 100, fluid: `tfc:metal/pig_iron` }],
             id: `${id_prefix}ingots/pigq_iron`

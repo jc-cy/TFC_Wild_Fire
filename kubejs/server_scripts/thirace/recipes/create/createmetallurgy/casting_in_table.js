@@ -180,7 +180,16 @@ ServerEvents.recipes((event) => {
       });
     });
   })
-
+  //镍锭单独配方
+  recipes.push({
+    ingredients: [
+      { item: 'createmetallurgy:graphite_ingot_mold' },
+      { amount: 100, fluid: `tfc:metal/refined_nickel`, nbt: {} }
+    ],
+    processingTime: 100,
+    result: { item: `tfc:metal/ingot/nickel` },
+    id: `${id_prefix}ingot/nickel`
+  });
 
   const molds_0 = [
     { item: 'weak_steel', type: '1' },
@@ -197,7 +206,6 @@ ServerEvents.recipes((event) => {
     { item: 'copper', type: '1' },
     { item: 'gold', type: '1' },
     { item: 'cast_iron', type: '1' },
-    { item: 'nickel', type: '1' },
     { item: 'silver', type: '1' },
     { item: 'steel', type: '1' },
     { item: 'tin', type: '1' },
@@ -225,6 +233,7 @@ ServerEvents.recipes((event) => {
         result: { item: `tfc:metal/ingot/${metal.item}` },
         id: `${id_prefix}ingot/${metal.item}`
       });
+
     /*     if (metal.type == '2')
         recipes.push({
             ingredients: [

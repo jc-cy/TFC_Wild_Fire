@@ -378,34 +378,6 @@
       "temperature": 0.0
     }
   ],
-  "valhelsia_structures:brazier": [
-    {
-      "properties": {
-        "lit": "true"
-      },
-      "temperature": 8.0
-    },
-    {
-      "properties": {
-        "lit": "false"
-      },
-      "temperature": 0.0
-    }
-  ],
-  "valhelsia_structures:soul_brazier": [
-    {
-      "properties": {
-        "lit": "true"
-      },
-      "temperature": -5.5
-    },
-    {
-      "properties": {
-        "lit": "false"
-      },
-      "temperature": 0.0
-    }
-  ],
   "tfc:firepit": [
     {
       "properties": {

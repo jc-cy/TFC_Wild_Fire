@@ -1,0 +1,15 @@
+{
+	"type": "vintageimprovements:curving",
+	"mode": 1,
+	"ingredients": [
+		{
+		  "item": "tfc:metal/double_sheet/copper"
+		}
+	],
+	"results": [
+		{
+		  "item": "hopper",
+                  "count": 1
+		}
+	]
+}

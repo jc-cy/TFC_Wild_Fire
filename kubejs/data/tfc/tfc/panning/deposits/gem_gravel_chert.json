@@ -1,0 +1,7 @@
+{
+  "ingredient": "kubejs:deposit/gem_gravel/chert",
+  "model_stages": [
+    "tfc:item/pan/cassiterite/chert_full"
+  ],
+  "loot_table": "tfc:panning/deposits/gem_gravel_chert"
+}

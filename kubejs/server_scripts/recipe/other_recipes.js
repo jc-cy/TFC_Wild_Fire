@@ -6,7 +6,6 @@ ServerEvents.recipes(event => {
 
 
 tfc.casting('tfc:metal/sheet/copper', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/copper', 200), 1)//铜板
-tfc.casting('tfc:metal/sheet/nickel', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/nickel', 200), 1)//镍板
 tfc.casting('tfc:metal/sheet/rose_gold', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/rose_gold', 200), 1)//玫瑰金板
 tfc.casting('tfc:metal/sheet/silver', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/silver', 200), 1)//银板
 tfc.casting('tfc:metal/sheet/tin', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/tin', 200), 1)//锡板
@@ -20,7 +19,6 @@ tfc.casting('tfc:metal/sheet/bismuth_bronze', 'kubejs:mold_sheet', TFC.fluidStac
 
 tfc.casting("tfc:metal/rod/copper", 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/copper', 50), 1)//铜棒
 tfc.casting("tfc:metal/rod/bronze", 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/bronze', 50), 1)//青铜棒
-tfc.casting('tfc:metal/rod/nickel', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/nickel', 50), 1)//镍棒
 tfc.casting('tfc:metal/rod/rose_gold', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/rose_gold', 50), 1)//玫瑰金棒
 tfc.casting('tfc:metal/rod/silver', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/silver', 50), 1)//银棒
 tfc.casting('tfc:metal/rod/tin', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/tin', 50), 1)//锡棒
@@ -324,7 +322,7 @@ create.sandpaper_polishing("kubejs:steel_needle","tfc:metal/rod/steel")
   farmersdelight_cutting(`kubejs:red_steel_fragments`, 'tfc:metal/ingot/red_steel', 5, 'tfc:hammers', `kubejs:cutting_reciped_red_steel_fragments`)// 精金锭 →
   farmersdelight_cutting(`kubejs:steel_fragments`, 'tfc:metal/ingot/steel', 5, 'tfc:hammers', `kubejs:cutting_reciped_steel_fragments`)// 钢锭 → 5个钢碎片
   farmersdelight_cutting(`kubejs:wrought_iron_fragments`, 'tfc:metal/ingot/wrought_iron', 5, 'tfc:hammers', `kubejs:cutting_reciped_wrought_iron_fragments`)// 锻铁锭 → 5个熟铁碎片
-  farmersdelight_cutting(`kubejs:black_steel_fragments`, 'tfc:metal/ingot/black_steel', 5, 'tfc:hammers', `kubejs:cutting_reciped_black_steel_fragments`)// 锰钢锭 → 5个锰钢碎片
+  farmersdelight_cutting(`kubejs:black_steel_fragments`, 'tfc:metal/ingot/black_steel', 5, 'tfc:hammers', `kubejs:cutting_reciped_black_steel_fragments`)// 高锰钢锭 → 5个高锰钢碎片
   farmersdelight_cutting(`kubejs:blue_steel_fragments`, 'tfc:metal/ingot/blue_steel', 5, 'tfc:hammers', `kubejs:cutting_reciped_blue_steel_fragments`)// 秘银锭 → 5个秘银碎片
 
   // 皮毛/皮革 JS 数组
@@ -490,8 +488,12 @@ ServerEvents.recipes(event => {
   //致密压头压中间锭配方
   const high_carbon_metal =
     [
+      { metal1: 'kubejs:hot_raw_nickel_bloom', metal2: 'kubejs:refined_nickel_bloom', },
+      { metal1: 'kubejs:hot_raw_iron_bloom', metal2: 'tfc:refined_iron_bloom', },
       { metal1: 'tfc:raw_iron_bloom', metal2: 'tfc:refined_iron_bloom', },
       { metal1: 'tfc:refined_iron_bloom', metal2: 'tfc:metal/ingot/wrought_iron', },
+      { metal1: 'kubejs:raw_nickel_bloom', metal2: 'kubejs:refined_nickel_bloom', },
+      { metal1: 'kubejs:refined_nickel_bloom', metal2: 'tfc:metal/ingot/nickel', },
       { metal1: 'tfc:metal/ingot/pig_iron', metal2: 'tfc:metal/ingot/high_carbon_steel', },
       { metal1: 'tfc:metal/ingot/high_carbon_steel', metal2: 'tfc:metal/ingot/steel', },
       { metal1: 'tfc:metal/ingot/high_carbon_black_steel', metal2: 'tfc:metal/ingot/black_steel', },

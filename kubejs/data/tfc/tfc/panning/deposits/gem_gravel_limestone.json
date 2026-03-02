@@ -1,0 +1,7 @@
+{
+  "ingredient": "kubejs:deposit/gem_gravel/limestone",
+  "model_stages": [
+    "tfc:item/pan/cassiterite/limestone_full"
+  ],
+  "loot_table": "tfc:panning/deposits/gem_gravel_limestone"
+}

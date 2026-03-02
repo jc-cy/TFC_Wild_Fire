@@ -34,6 +34,7 @@ ServerEvents.tags("item", event => {
     ];
 
     toolMetals.forEach(metal => {
+        if(metal=="copper")return
         toolHeadTemplates.forEach(template => {
             // 替换模板中的 {metal} 为当前金属名（生成完整的物品ID）
             const toolHeadId = template.replace(/{metal}/g, metal);
@@ -88,47 +89,6 @@ ServerEvents.tags("item", event => {
 
 
 
-
-const deposit = [
-    'andesite',
-    'basalt',
-    'chalk',
-    'chert',
-    'claystone',
-    'conglomerate',
-    'dacite',
-    'diorite',
-    'dolomite',
-    'gabbro',
-    'gneiss',
-    'granite',
-    'limestone',
-    'marble',
-    'phyllite',
-    'quartzite',
-    'rhyolite',
-    'schist',
-    'shale',
-    'slate'
-];
-const deposit_tag = [
-    'tfc:ore_deposits',
-    'tfc:can_landslide',
-];
-deposit.forEach(deposit => {
-    deposit_tag.forEach(tag => {
-        ServerEvents.tags("block", event => {
-
-
-            event.add(tag,
-                [
-                    `kubejs:deposit/gem_gravel/${deposit}`,
-                    `kubejs:deposit/manganese/${deposit}`
-                ]
-            )
-        })
-    })
-})
 const rock = [
     'andesite',
     'basalt',
@@ -422,6 +382,8 @@ ServerEvents.tags("block", event => {
         // 熔岩桶和熔融桶是烫手的物品
         event.add('kubejs:hot_items',
             [
+                "kubejs:hot_raw_nickel_bloom",
+                "kubejs:hot_raw_iron_bloom",
                 'minecraft:lava_bucket',
                 "firmalife:bucket/metal/chromium",
                 "firmalife:bucket/metal/stainless_steel",

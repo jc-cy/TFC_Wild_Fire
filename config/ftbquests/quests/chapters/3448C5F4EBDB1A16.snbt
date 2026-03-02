@@ -330,7 +330,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "2BC1389FB46B54C9"
 					optional_task: true
 					points: false
@@ -353,9 +362,9 @@
 		{
 			dependencies: ["6AB49CFCB58E3D6B"]
 			description: [
-				"铬铁矿——现在你应该知道他不是铁了——是一种铬矿，可以在地下深处找到大片矿脉，铬是不锈钢——一种钢、铬与镍的合金——的原材料。"
+				"铬矿——现在你应该知道他不是铁了——是一种铬矿，可以在地下深处找到大片矿脉，铬是不锈钢——一种钢、铬与镍的合金——的原材料。"
 				""
-				"&l小知识&r：铬薄板可以代替铁薄板成为高炉砖块的蒙皮，而且铬铁产量比较大，一般挖一次就一段时间不缺了，唯一缺点就是铬薄板需要钢砧才能进行敲制、如果你比较缺铁或者不想浪费铁来制作高炉蒙皮，可以用廉价的铬作为替代"
+				"&l小知识&r：铬薄板可以代替铁薄板成为高炉砖块的蒙皮，而且铬产量比较大，一般挖一次就一段时间不缺了，唯一缺点就是铬薄板需要钢砧才能进行敲制、如果你比较缺铁或者不想浪费铁来制作高炉蒙皮，可以用廉价的铬作为替代"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_visible: false
@@ -394,7 +403,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "287EBAEF4AB0DFDA"
 					optional_task: true
 					points: false
@@ -475,7 +493,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "1462B97DC97905CD"
 					optional_task: true
 					points: false
@@ -596,7 +623,16 @@
 					type: "item"
 				}
 				{
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "1F74FC611A3744A9"
 					item: {
 						Count: 1
@@ -653,7 +689,16 @@
 					type: "item"
 				}
 				{
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "1E9B527F90059AF4"
 					item: {
 						Count: 1
@@ -741,7 +786,16 @@
 					type: "item"
 				}
 				{
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "387F0CB2734141EA"
 					item: {
 						Count: 1
@@ -798,7 +852,16 @@
 					type: "item"
 				}
 				{
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "26775151F698BBDB"
 					item: {
 						Count: 1
@@ -1172,7 +1235,16 @@
 			tasks: [{
 				advancement: "tfc:story/iron_age"
 				criterion: ""
-				icon: "design_decor:arrow_right_sign"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "design_decor:arrow_right_sign"
+				}
 				id: "2CE792E69EC21BDE"
 				title: "我已了解"
 				type: "advancement"
@@ -1184,7 +1256,16 @@
 		{
 			dependencies: ["72432121EE248C7B"]
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:component_steel"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:material_component_steel"
+			}
 			id: "6A3789FBED7462BD"
 			rewards: [{
 				id: "304B5F3997A91CA3"
@@ -1196,7 +1277,16 @@
 			tasks: [{
 				advancement: "tfc:story/iron_age"
 				criterion: ""
-				icon: "design_decor:arrow_right_sign"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "design_decor:arrow_right_sign"
+				}
 				id: "224D1BDCC55F2F96"
 				title: "我已了解"
 				type: "advancement"
@@ -1211,7 +1301,16 @@
 				"418943718040C326"
 			]
 			hide_until_deps_complete: true
-			icon: "firmalife:stainless_steel_greenhouse_wall"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "firmalife:stainless_steel_greenhouse_wall"
+			}
 			id: "37A28CF1E9EB324D"
 			rewards: [{
 				id: "0F6C9A745188F8CD"
@@ -1273,6 +1372,10 @@
 						Items: [ ]
 						Size: 23
 					}
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
 				}
 				id: "immersiveengineering:toolbox"
 			}
@@ -1323,7 +1426,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "446E51077776BD5F"
 					optional_task: true
 					points: false
@@ -1339,7 +1451,16 @@
 		{
 			dependencies: ["7B1D01476090D426"]
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:metal_press"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:metal_press"
+			}
 			id: "18800A96A310D2AD"
 			rewards: [{
 				id: "6979DE95FB726498"
@@ -1350,7 +1471,16 @@
 			subtitle: "极致锻压"
 			tasks: [
 				{
-					icon: "design_decor:gear_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:gear_sign"
+					}
 					id: "517F298755EC5D76"
 					item: "immersiveengineering:metal_press"
 					optional_task: true
@@ -1358,7 +1488,16 @@
 					type: "item"
 				}
 				{
-					icon: "immersiveengineering:metal_press"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "immersiveengineering:metal_press"
+					}
 					id: "3AE1F132F5D25438"
 					observe_type: 0
 					timer: 0L
@@ -1380,7 +1519,16 @@
 			]
 			hide_until_deps_complete: false
 			hide_until_deps_visible: true
-			icon: "immersiveengineering:diesel_generator"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:diesel_generator"
+			}
 			id: "30DCEA23B7A342E0"
 			rewards: [{
 				id: "5F2A10D149DC1238"
@@ -1390,7 +1538,16 @@
 			subtitle: "轰鸣"
 			tasks: [
 				{
-					icon: "design_decor:gear_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:gear_sign"
+					}
 					id: "6B9BB0DA4484AAA1"
 					item: "immersiveengineering:diesel_generator"
 					optional_task: true
@@ -1398,7 +1555,16 @@
 					type: "item"
 				}
 				{
-					icon: "immersiveengineering:diesel_generator"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "immersiveengineering:diesel_generator"
+					}
 					id: "34EAFC03E639BAB0"
 					observe_type: 0
 					timer: 0L
@@ -1414,7 +1580,16 @@
 		{
 			dependencies: ["7B1D01476090D426"]
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:lightning_rod"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:lightning_rod"
+			}
 			id: "0350A7ECD7634DCC"
 			rewards: [{
 				id: "44E16EDC408F8285"
@@ -1424,7 +1599,16 @@
 			subtitle: "雷霆之声"
 			tasks: [
 				{
-					icon: "design_decor:gear_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:gear_sign"
+					}
 					id: "270E23FC6AAB38B3"
 					item: "immersiveengineering:lightning_rod"
 					optional_task: true
@@ -1432,7 +1616,16 @@
 					type: "item"
 				}
 				{
-					icon: "immersiveengineering:lightning_rod"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "immersiveengineering:lightning_rod"
+					}
 					id: "3FBAD872E37662BA"
 					observe_type: 0
 					timer: 0L
@@ -1448,7 +1641,16 @@
 		{
 			dependencies: ["7B1D01476090D426"]
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:tank"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:tank"
+			}
 			id: "3F599974C2D05568"
 			rewards: [{
 				id: "5CB4492B554F3011"
@@ -1456,7 +1658,16 @@
 				xp: 25
 			}]
 			tasks: [{
-				icon: "design_decor:gear_sign"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "design_decor:gear_sign"
+				}
 				id: "49797D5504DDD389"
 				item: "immersiveengineering:tank"
 				optional_task: true
@@ -1470,7 +1681,16 @@
 		{
 			dependencies: ["7B1D01476090D426"]
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:silo"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:silo"
+			}
 			id: "496C9F6F617DE0C7"
 			rewards: [{
 				id: "67AA0B1FD80BAFF5"
@@ -1478,7 +1698,16 @@
 				xp: 25
 			}]
 			tasks: [{
-				icon: "design_decor:gear_sign"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "design_decor:gear_sign"
+				}
 				id: "0CB7EC45AC42AFE5"
 				item: "immersiveengineering:silo"
 				optional_task: true
@@ -1519,7 +1748,16 @@
 			dependencies: ["7B1D01476090D426"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:refinery"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:refinery"
+			}
 			id: "2ABFF323B5CA1EAA"
 			rewards: [{
 				id: "73A5D6D3FED371CB"
@@ -1529,7 +1767,16 @@
 			subtitle: "炼制的其他方式"
 			tasks: [
 				{
-					icon: "design_decor:gear_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:gear_sign"
+					}
 					id: "1C38BFCDF6A1560E"
 					item: "immersiveengineering:refinery"
 					optional_task: true
@@ -1537,7 +1784,16 @@
 					type: "item"
 				}
 				{
-					icon: "immersiveengineering:refinery"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "immersiveengineering:refinery"
+					}
 					id: "4A1AADF2D01C1423"
 					observe_type: 0
 					timer: 0L
@@ -1553,7 +1809,16 @@
 		{
 			dependencies: ["7B1D01476090D426"]
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:bottling_machine"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:bottling_machine"
+			}
 			id: "4848F0FD593930E7"
 			rewards: [{
 				id: "45E2BA724C1EB96D"
@@ -1562,7 +1827,16 @@
 			}]
 			tasks: [
 				{
-					icon: "design_decor:gear_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:gear_sign"
+					}
 					id: "7B5127A5960160B8"
 					item: "immersiveengineering:bottling_machine"
 					optional_task: true
@@ -1570,7 +1844,16 @@
 					type: "item"
 				}
 				{
-					icon: "immersiveengineering:bottling_machine"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "immersiveengineering:bottling_machine"
+					}
 					id: "2119F025A661A45C"
 					observe_type: 0
 					timer: 0L
@@ -1587,7 +1870,16 @@
 			dependencies: ["7B1D01476090D426"]
 			dependency_requirement: "one_started"
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:squeezer"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:squeezer"
+			}
 			id: "0CFA0C1750E3F0B7"
 			rewards: [{
 				id: "417C41A389D1CAE2"
@@ -1598,7 +1890,16 @@
 			subtitle: "无尽的压榨"
 			tasks: [
 				{
-					icon: "design_decor:gear_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:gear_sign"
+					}
 					id: "6B227247E5943933"
 					item: "immersiveengineering:squeezer"
 					optional_task: true
@@ -1606,7 +1907,16 @@
 					type: "item"
 				}
 				{
-					icon: "immersiveengineering:squeezer"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "immersiveengineering:squeezer"
+					}
 					id: "309D508CC5877481"
 					observe_type: 0
 					timer: 0L
@@ -1622,7 +1932,16 @@
 		{
 			dependencies: ["7B1D01476090D426"]
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:mixer"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:mixer"
+			}
 			id: "0FBD02051EA19ACF"
 			rewards: [{
 				id: "14AA2B3533F5D398"
@@ -1631,7 +1950,16 @@
 			}]
 			tasks: [
 				{
-					icon: "design_decor:gear_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:gear_sign"
+					}
 					id: "3C76DF10BA0FFCB2"
 					item: "immersiveengineering:mixer"
 					optional_task: true
@@ -1639,7 +1967,16 @@
 					type: "item"
 				}
 				{
-					icon: "immersiveengineering:mixer"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "immersiveengineering:mixer"
+					}
 					id: "0E2AF3EA62D045DF"
 					observe_type: 0
 					timer: 0L
@@ -1655,7 +1992,16 @@
 		{
 			dependencies: ["7B1D01476090D426"]
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:assembler"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:assembler"
+			}
 			id: "6C32B2D27B58CB19"
 			rewards: [{
 				id: "5A56EBAB27F48E33"
@@ -1664,7 +2010,16 @@
 			}]
 			tasks: [
 				{
-					icon: "design_decor:gear_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:gear_sign"
+					}
 					id: "1725852A1B500D53"
 					item: "immersiveengineering:assembler"
 					optional_task: true
@@ -1672,7 +2027,16 @@
 					type: "item"
 				}
 				{
-					icon: "immersiveengineering:assembler"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "immersiveengineering:assembler"
+					}
 					id: "3F5094FD931E2D43"
 					observe_type: 0
 					timer: 0L
@@ -1688,7 +2052,16 @@
 		{
 			dependencies: ["7B1D01476090D426"]
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:sawmill"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:sawmill"
+			}
 			id: "41BBD2EED501D890"
 			rewards: [{
 				id: "0B9FFAA5CFD8F886"
@@ -1697,7 +2070,16 @@
 			}]
 			tasks: [
 				{
-					icon: "design_decor:gear_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:gear_sign"
+					}
 					id: "09632C6DC58A0286"
 					item: "immersiveengineering:sawmill"
 					optional_task: true
@@ -1705,7 +2087,16 @@
 					type: "item"
 				}
 				{
-					icon: "immersiveengineering:sawmill"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "immersiveengineering:sawmill"
+					}
 					id: "4864C34B501AA24E"
 					observe_type: 0
 					timer: 0L
@@ -1721,7 +2112,16 @@
 		{
 			dependencies: ["7B1D01476090D426"]
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:auto_workbench"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:auto_workbench"
+			}
 			id: "11BEBA7BDA77BC1C"
 			rewards: [{
 				id: "7167D14916E23D5D"
@@ -1730,7 +2130,16 @@
 			}]
 			tasks: [
 				{
-					icon: "design_decor:gear_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:gear_sign"
+					}
 					id: "4E80AAA82E09E185"
 					item: "immersiveengineering:auto_workbench"
 					optional_task: true
@@ -1738,7 +2147,16 @@
 					type: "item"
 				}
 				{
-					icon: "immersiveengineering:auto_workbench"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "immersiveengineering:auto_workbench"
+					}
 					id: "472E103A4B6A6D1F"
 					observe_type: 0
 					timer: 0L
@@ -1754,7 +2172,16 @@
 		{
 			dependencies: ["7B1D01476090D426"]
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:crusher"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:crusher"
+			}
 			id: "7572E39DE6877473"
 			rewards: [{
 				id: "4615BE934C074E2F"
@@ -1765,7 +2192,16 @@
 			subtitle: "彻底粉碎！"
 			tasks: [
 				{
-					icon: "design_decor:gear_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:gear_sign"
+					}
 					id: "684BA290371904DE"
 					item: "immersiveengineering:crusher"
 					optional_task: true
@@ -1773,7 +2209,16 @@
 					type: "item"
 				}
 				{
-					icon: "immersiveengineering:crusher"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "immersiveengineering:crusher"
+					}
 					id: "33AA3A7FAD3C5F8C"
 					observe_type: 0
 					timer: 0L
@@ -1790,7 +2235,16 @@
 			dependencies: ["38AB235E2F464D21"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:bucket_wheel"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:bucket_wheel"
+			}
 			icon_scale: 1.5d
 			id: "1B2E0ABE2B928B12"
 			rewards: [{
@@ -1803,7 +2257,16 @@
 			subtitle: "开采地脉之手"
 			tasks: [
 				{
-					icon: "design_decor:gear_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:gear_sign"
+					}
 					id: "543DC162E46700EB"
 					item: "immersiveengineering:bucket_wheel"
 					optional_task: true
@@ -1811,7 +2274,16 @@
 					type: "item"
 				}
 				{
-					icon: "immersiveengineering:bucket_wheel"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "immersiveengineering:bucket_wheel"
+					}
 					id: "4E4269C47CAEEEF2"
 					observe_type: 0
 					timer: 0L
@@ -1827,7 +2299,16 @@
 		{
 			dependencies: ["38AB235E2F464D21"]
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:excavator"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:excavator"
+			}
 			icon_scale: 1.2d
 			id: "163E9EA062C87DE2"
 			rewards: [{
@@ -1840,7 +2321,16 @@
 			subtitle: "承担万钧之臂"
 			tasks: [
 				{
-					icon: "design_decor:gear_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:gear_sign"
+					}
 					id: "6F688EDC7B875AEC"
 					item: "immersiveengineering:excavator"
 					optional_task: true
@@ -1848,7 +2338,16 @@
 					type: "item"
 				}
 				{
-					icon: "immersiveengineering:excavator"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "immersiveengineering:excavator"
+					}
 					id: "1109E74E71BC9757"
 					observe_type: 0
 					timer: 0L
@@ -1880,7 +2379,16 @@
 		}
 		{
 			dependencies: ["4485027AFE920134"]
-			icon: "immersiveengineering:arc_furnace"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:arc_furnace"
+			}
 			id: "32A00AE94CED5549"
 			rewards: [{
 				id: "06BDB99F0FA5BC0A"
@@ -1892,14 +2400,32 @@
 			subtitle: "最终的炼炉"
 			tasks: [
 				{
-					icon: "design_decor:gear_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:gear_sign"
+					}
 					id: "26505C0FA56F9043"
 					item: "immersiveengineering:arc_furnace"
 					title: "点击查看电弧炉所需建材"
 					type: "item"
 				}
 				{
-					icon: "immersiveengineering:arc_furnace"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "immersiveengineering:arc_furnace"
+					}
 					id: "5687EEAD8BF1E898"
 					observe_type: 0
 					timer: 0L
@@ -1924,7 +2450,16 @@
 				"为了防止被电线击伤，可以使用铝板制作法拉第套装。制作方法与原版的盔甲大致等同，耐久，但是可以有效的防止电线带来的伤害。"
 			]
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:connector_mv_relay"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:connector_mv_relay"
+			}
 			id: "4531DD18E00408D5"
 			rewards: [{
 				id: "43983B0F7E329692"
@@ -1995,7 +2530,16 @@
 		}
 		{
 			dependencies: ["6A3789FBED7462BD"]
-			icon: "immersiveengineering:circuit_table"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:circuit_table"
+			}
 			id: "366FC1B30FB2EF18"
 			rewards: [{
 				id: "6C25ADA4BF571103"
@@ -2013,7 +2557,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "5C62F4073CB9B776"
 					optional_task: true
 					points: false
@@ -2092,7 +2645,16 @@
 				"工程师装配台具有六格储存空间以及一格蓝图放置位点，放置位点内放入不同的蓝图，右侧就会出现不同的对应的合成表以进行对应的制作。"
 			]
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:workbench"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "immersiveengineering:workbench"
+			}
 			id: "53CF01B3B600F9A3"
 			rewards: [{
 				id: "4BC1707AEA91C782"
@@ -2467,7 +3029,16 @@
 					type: "observation"
 				}
 				{
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "3EC37C05E05B9AB6"
 					item: {
 						Count: 1
@@ -2489,6 +3060,12 @@
 			dependencies: ["0CFA0C1750E3F0B7"]
 			icon: {
 				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
 				id: "immersiveengineering:graphite_electrode"
 				tag: {
 					graphDmg: 0

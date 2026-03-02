@@ -8,46 +8,55 @@ StartupEvents.registry("block", event => {
 StartupEvents.registry('block', event => {
 
         // 1. 天然水石
-        event.create('kubejs:tfc/water_stone',"cardinal")
+        event.create('kubejs:tfc/water_stone', "cardinal")
                 //可以含水
                 .hardness(0.5)          // 硬度
                 .box(5, 0, 1, 11, 3, 15) // 自定义碰撞箱
-                .requiresTool(false)    
+                .requiresTool(false)
                 .tagBlock("kubejs:polisher")
-               /* .property(BlockProperties.FACING)
-                .placementState(callback=>{
-                        callback.set(BlockProperties.FACING,callback.horizontalDirection.opposite)
-                })*/
+                .blockEntity(info => {
+                        info.serverTick(0, 1, entity => {
+
+                                let block = entity.getBlock()
+                                let downblock = block.down
+
+                                if (downblock.getBlockState.isAir) {
+                                        block.level.destroyBlock(block.pos, true, null, 1)
+                                }
+
+                        })
+                })
+
 
 
         // 2. 砂岩磨刀石
-        event.create('kubejs:tfc/sandstone_whetstone',"cardinal")
+        event.create('kubejs:tfc/sandstone_whetstone', "cardinal")
                 .hardness(0.5)
-                
+
 
                 .box(5, 0, 1, 11, 3, 15)
                 .requiresTool(false)
                 .tagBlock("kubejs:polisher")
         // 3. 磨刀石（基础款）
-        event.create('kubejs:tfc/whetstone',"cardinal")
+        event.create('kubejs:tfc/whetstone', "cardinal")
                 .hardness(0.5)
-                
+
                 .box(5, 0, 1, 11, 3, 15)
                 .requiresTool(false)
                 .tagBlock("kubejs:polisher")
 
         // 4. 金刚石磨刀石
-        event.create('kubejs:tfc/diamond_whetstone',"cardinal")
+        event.create('kubejs:tfc/diamond_whetstone', "cardinal")
                 .hardness(0.5)
-                
+
                 .box(5, 0, 1, 11, 3, 15)
                 .requiresTool(false)
                 .tagBlock("kubejs:polisher")
 
         // 5. 铝陶瓷磨刀石
-        event.create('kubejs:tfc/ceramic_stone',"cardinal")
+        event.create('kubejs:tfc/ceramic_stone', "cardinal")
                 .hardness(0.5)
-                
+
                 .box(5, 0, 1, 11, 3, 15)
                 .requiresTool(false)
                 .tagBlock("kubejs:polisher")
@@ -127,6 +136,75 @@ StartupEvents.registry('block', event => {
                 .tagBlock('tfc:needs_copper_tool')
                 .requiresTool()
                 .defaultCutout()
+
+        event.create('kubejs:simple_air_cushion', 'cardinal')//简易气球
+                .model('kubejs:block/airship/simple_air_cushion')
+                .soundType('wool')
+                .hardness(5) // 设置硬度
+                .defaultCutout()
+
+        event.create('kubejs:air_cushion', 'cardinal')//气球
+                .model('kubejs:block/airship/air_cushion')
+                .soundType('wool')
+                .hardness(5) // 设置硬度
+                .defaultCutout()
+
+        event.create('kubejs:double_wing', 'cardinal')//双翼
+                .model('kubejs:block/airship/double_wing')
+                .box(0, 3, 6, 16, 14, 26)
+                .soundType('scaffolding')
+                .tagBlock('minecraft:mineable/axe')
+                .tagBlock('tfc:needs_copper_tool')
+                .hardness(5) // 设置硬度
+                .defaultCutout()
+                .requiresTool()
+
+        event.create('kubejs:airship_slats', 'cardinal')//飞艇侧板
+                .model('kubejs:block/airship/airship_slats')
+                .box(0, 4, 14, 16, 13, 16)
+                .soundType('scaffolding')
+                .tagBlock('minecraft:mineable/axe')
+                .tagBlock('tfc:needs_copper_tool')
+                .hardness(5) // 设置硬度
+                .requiresTool()
+                .defaultCutout()
+
+        event.create('kubejs:gyrodyne_propeller')//人力飞机扇叶
+                .model('kubejs:block/airship/gyrodyne_propeller')
+                .box(7.75, -16, 7.75, 8.25, 16, 8.25)
+                .soundType('scaffolding')
+                .tagBlock('minecraft:mineable/axe')
+                .tagBlock('tfc:needs_copper_tool')
+                .hardness(5) // 设置硬度
+                .requiresTool()
+                .defaultCutout()
+
+        const engine = [
+                { name: "biplane_engine", box: [0, 0, 0, 16, 16, 16] },//双翼机引擎
+                { name: "large_airship_engine", box: [-1, 0, -2, 17, 18, 16] },
+                { name: "small_engine", box: [1, 0, 0, 15, 16, 16] },
+                { name: "small_side_engine", box: [2, 2, 0, 14, 14, 16] },
+                { name: "rugged_small_engine", box: [1, 0, 0, 15, 16, 16] },
+                { name: "large_propeller", box: [5, 6, 12.5, 11, 12, 16.5] },
+                { name: "large_twin_propeller", box: [5, 5, 12.5, 11, 11, 16.5] },
+                { name: "medium_propeller", box: [5, 5, 12.5, 11, 11, 16.5] },
+                { name: "small_propeller", box: [5, 5, 12.5, 11, 11, 16.5] },
+        ]
+
+        engine.forEach(engine => {
+                event.create(`kubejs:${engine.name}`, 'cardinal')
+                        .model(`kubejs:block/airship/${engine.name}`)
+                        .box(
+                                engine.box[0], engine.box[1], engine.box[2],
+                                engine.box[3], engine.box[4], engine.box[5]
+                        )
+                        .soundType('netherite_block')
+                        .hardness(20)
+                        .tagBlock('minecraft:mineable/pickaxe')
+                        .tagBlock('tfc:needs_copper_tool')
+                        .requiresTool()
+                        .defaultCutout()
+        });
 })
 const $CrucibleBlock = Java.loadClass('net.dries007.tfc.common.blocks.devices.CrucibleBlock')
 const $ExtendedProperties = Java.loadClass('net.dries007.tfc.common.blocks.ExtendedProperties')
@@ -154,6 +232,49 @@ StartupEvents.registry('item', event => {
                 new $ItemProperties()
         ))
 })
+/*
+StartupEvents.registry("block", event => {
+        const dirt = [
+                { name: "loam", type: "grass", sound: "grass", float: 0.5 },
+                { name: "sandy_loam", type: "grass", sound: "grass", float: 0.5 },
+                { name: "silt", type: "grass", sound: "grass", float: 0.5 },
+                { name: "silty_loam", type: "grass", sound: "grass", float: 0.5 }
+        ]
+
+        dirt.forEach(dirt => {
+                //泥土台阶
+                event.create(`tfc:${dirt.type}/slab/${dirt.name}`, 'slab')
+                        .soundType(dirt.sound)
+                        .hardness(dirt.float)
+                        .tagBlock('minecraft:mineable/shovel')
+                        .tagBlock('tfc:ore_deposits')
+                        .tagBlock('tfc:can_landslide')
+        })
+});
+*/
+StartupEvents.registry("block", event => {
+        const sand = [
+                { name: "brown", type: "sand", sound: "sand", float: 0.5 },
+                { name: "white", type: "sand", sound: "sand", float: 0.5 },
+                { name: "black", type: "sand", sound: "sand", float: 0.5 },
+                { name: "red", type: "sand", sound: "sand", float: 0.5 },
+                { name: "yellow", type: "sand", sound: "sand", float: 0.5 },
+                { name: "green", type: "sand", sound: "sand", float: 0.5 },
+                { name: "pink", type: "sand", sound: "sand", float: 0.5 }
+        ]
+        sand.forEach(sand => {
+                //沙子台阶
+                event.create(`tfc:${sand.type}/slab/${sand.name}`, 'slab')
+                        .textureAll(`tfc:block/${sand.type}/${sand.name}`)
+                        .soundType(sand.sound)
+                        .hardness(sand.float)
+                        .tagBlock('minecraft:mineable/shovel')
+                        .tagBlock('tfc:ore_deposits')
+                        .tagBlock('tfc:can_landslide')
+        })
+
+});
+
 StartupEvents.registry("block", event => {
         //注册宝石砂    
         const deposits = [
@@ -186,6 +307,8 @@ StartupEvents.registry("block", event => {
                         .model(`kubejs:block/deposit/gem_gravel/${deposit}`)
                         .tag('forge:gravel')
                         .tagBlock('minecraft:mineable/shovel')
+                        .tagBlock('tfc:ore_deposits')
+                        .tagBlock('tfc:can_landslide')
                         .requiresTool()
                 //锰结核砂
                 event.create(`kubejs:deposit/manganese/${deposit}`)
@@ -193,6 +316,8 @@ StartupEvents.registry("block", event => {
                         .model(`kubejs:block/deposit/manganese/${deposit}`)
                         .tag('forge:gravel')
                         .tagBlock('minecraft:mineable/shovel')
+                        .tagBlock('tfc:ore_deposits')
+                        .tagBlock('tfc:can_landslide')
                         .requiresTool()
 
                 //钛铁矿

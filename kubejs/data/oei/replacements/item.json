@@ -1,12 +1,6 @@
 [
     {
         "matchItems": [
-            "tfcorewashing:rock_powder"
-        ],
-        "resultItems": "kubejs:rock_powder"
-    },
-    {
-        "matchItems": [
             "minecraft:wheat"
         ],
         "resultItems": "tfc:food/wheat"

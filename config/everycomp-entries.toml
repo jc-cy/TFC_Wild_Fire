@@ -62,12 +62,6 @@
 			pewen = true
 			thornwood = true
 
-		[types.wood_type.northstar]
-			wilter = true
-			argyre = true
-			coiler = true
-			calorian = true
-
 	[types.leaves_type]
 
 		[types.leaves_type.ad_astra]
@@ -83,11 +77,6 @@
 
 		[types.leaves_type.alexscaves]
 			ancient = true
-
-		[types.leaves_type.northstar]
-			wilter = true
-			argyre = true
-			coiler = true
 
 #Disables specific entries
 [entries]

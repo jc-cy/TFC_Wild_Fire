@@ -3,7 +3,7 @@
   "textures": {
     "base": "create:block/funnel/brass_funnel",
     "direction": "create:block/funnel/brass_funnel_pull",
-    "frame": "create:block/funnel/brass_funnel_frame",
+    "frame": "create:block/funnel/brass_funnel_frame_1",
     "open": "create:block/funnel/funnel_open",
     "particle": "create:block/wrought_iron",
     "redstone": "create:block/funnel/brass_funnel_unpowered"

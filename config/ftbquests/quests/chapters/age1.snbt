@@ -359,7 +359,16 @@
 			]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
-			icon: "minecraft:clay_ball"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:clay_ball"
+			}
 			id: "36D7E98F85B893C9"
 			rewards: [{
 				id: "6DA6AF53B5D7EA11"
@@ -377,7 +386,16 @@
 				}
 				{
 					disable_toast: true
-					icon: "design_decor:arrow_right_sign"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "design_decor:arrow_right_sign"
+					}
 					id: "5E11027A89DAA6CB"
 					optional_task: true
 					points: false
@@ -491,7 +509,16 @@
 				""
 				"一个好的安家地点包括多个要素，靠近淡水源、地势平坦、附近树木够多、平均温度在15℃左右、表层岩层是某种沉积岩，以及地面最好有黝铜矿、孔雀石或者原生铜的矿粒。最后一点不做强求，但前面五点请务必做到，只有选好开局点，后面的流程进行才不会过于困难。"
 			]
-			icon: "minecraft:oak_door"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:oak_door"
+			}
 			id: "2A2194004E2ACB99"
 			rewards: [{
 				id: "3736974A0A93A7C0"
@@ -765,7 +792,7 @@
 				}
 				{
 					id: "76FC907A73703DA8"
-					item: "tfc:ceramic/bowl"
+					item: "minecraft:bowl"
 					type: "item"
 				}
 			]
@@ -957,7 +984,16 @@
 			description: ["可以说，一切的一切都建立在安居乐业上，有一个安全的家，比什么真金白银都要好"]
 			hide_dependency_lines: false
 			hide_until_deps_visible: true
-			icon: "minecraft:oak_planks"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:oak_planks"
+			}
 			id: "49367AA483E68761"
 			rewards: [{
 				id: "3BF06AECC699BA47"

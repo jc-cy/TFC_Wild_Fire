@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "kubejs:block/airship/small_propeller",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "kubejs:block/airship/small_propeller"
+    },
+    "facing=south": {
+      "model": "kubejs:block/airship/small_propeller",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "kubejs:block/airship/small_propeller",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "kubejs:block/airship/small_propeller",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "kubejs:block/airship/small_propeller",
+      "x": 90
+    }
+  }
+}

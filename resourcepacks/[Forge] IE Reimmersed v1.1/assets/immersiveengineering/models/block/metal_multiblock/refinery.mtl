@@ -1,7 +1,0 @@
-newmtl m_af28d9d9-db27-5560-4182-cd593fd0b50d
-map_Kd immersiveengineering:block/multiblocks/refinery
-newmtl m_728403f5-2ddf-52ef-bf4d-36a5e4e86d70
-map_Kd immersiveengineering:block/multiblocks/multiblock_base
-newmtl m_1f2f5c86-da77-8349-abc8-3a11367dac9e
-map_Kd immersiveengineering:block/multiblocks/multiblock_components
-newmtl none

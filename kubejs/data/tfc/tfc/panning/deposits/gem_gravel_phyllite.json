@@ -1,0 +1,7 @@
+{
+  "ingredient": "kubejs:deposit/gem_gravel/phyllite",
+  "model_stages": [
+    "tfc:item/pan/cassiterite/phyllite_full"
+  ],
+  "loot_table": "tfc:panning/deposits/gem_gravel_phyllite"
+}
