@@ -20,7 +20,7 @@
       {
           "type": "patchouli:crafting",
           "recipe": "bsa:crafting/ceramic/unfired_decorated_pot",
-          "text": "任意图案的四块未硬化陶片可以合成一个未硬化的彩绘陶罐。"
+          "text": "任意图案的四块未烧制陶片可以合成一个未烧制的彩绘陶罐。"
       },
       {
           "type": "tfc:heat_recipe",

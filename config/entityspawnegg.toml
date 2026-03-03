@@ -1,0 +1,21 @@
+
+["General Settings"]
+	#Max zoom rate
+	#Range: 0.0 ~ 2.147483647E9
+	maxZoomRate = 0.5
+	#Min zoom rate
+	#Range: 0.0 ~ 2.147483647E9
+	minZoomRate = 0.15
+	#Total zoom rate
+	#Range: 0.0 ~ 2.147483647E9
+	totalZoomRate = 1.0
+	#Icon zoom rate
+	#Range: 0.0 ~ 2.147483647E9
+	iconZoomRate = 1.2
+	#Rotation angle
+	#Range: 0.0 ~ 2.147483647E9
+	rotationAngle = 325.0
+	#Item zoom rate
+	#Range: 0.0 ~ 2.147483647E9
+	itemZoomRate = 1.0
+

@@ -1,0 +1,6 @@
+
+#SurvivorsAquaculture - Common settings
+[general]
+	#Make fish larger according to how many fillets it provides.
+	adjustFishSize = true
+

@@ -1,0 +1,29 @@
+{
+    "net.minecraft.client.gui.screens.inventory.InventoryScreen": {
+        "buttonHints": {
+            "PROFILE_SELECTOR": {
+                "bottom": -280
+            },
+            "SHOW_EDITOR": {
+                "horizontalOffset": 210,
+                "top": 245
+            },
+            "SETTINGS": {
+                "horizontalOffset": 210,
+                "top": 244
+            }
+        }
+    },
+    "net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen": {
+        "buttonHints": {
+            "SHOW_EDITOR": {
+                "horizontalOffset": 200,
+                "top": 110
+            },
+            "SETTINGS": {
+                "horizontalOffset": 200,
+                "top": 80
+            }
+        }
+    }
+}

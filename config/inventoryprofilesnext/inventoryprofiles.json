@@ -1,0 +1,9 @@
+{
+    "ModSettings": {
+        "sort_order": "ITEM_NAME",
+        "enable_auto_refill": {
+            "value": false
+        },
+        "first_run": false
+    }
+}

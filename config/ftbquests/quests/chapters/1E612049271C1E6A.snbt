@@ -814,7 +814,7 @@
 		}
 		{
 			dependencies: ["0B73FDEF3EF6266A"]
-			description: ["塑形耐火黏土可得到未硬化的耐火砖，将其烧制即可获得耐火砖，耐火砖与砂浆合成即可获得耐火砖块。"]
+			description: ["塑形耐火黏土可得到未烧制的耐火砖，将其烧制即可获得耐火砖，耐火砖与砂浆合成即可获得耐火砖块。"]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			icon: "tfc:fire_bricks"

@@ -1,0 +1,162 @@
+//═══════════════════════════════════════════════════════════════════════════════
+// Questory Configuration File
+// Version: 1.2.0
+//═══════════════════════════════════════════════════════════════════════════════
+// Edit this file to customize quest system behavior
+// Changes require /quest reload or server restart to take effect
+// Backups are automatically created before migrations in questory-backups/
+//═══════════════════════════════════════════════════════════════════════════════
+
+{
+  // ═══════ VERSION ═══════
+  "configVersion": "1.2.0",  // Config version (managed automatically, do not modify)
+
+  // ══════════════ NOTIFICATION SETTINGS ══════════════
+  // Control how and when players are notified about quest events
+  "enableQuestNotifications": true,  // Master toggle for all notifications
+  "enableQuestSounds": true,  // Play sound effects
+  "enableQuestTitles": true,  // Show title/subtitle messages
+  "enableQuestChatMessages": true,  // Send chat messages
+  "notifyOnQuestUnlock": true,  // Notify when quest becomes available
+  "notifyOnQuestReady": true,  // Notify when all requirements met
+  "notifyOnQuestComplete": true,  // Notify on completion
+
+  // ══════════════ PROGRESS & PERFORMANCE ══════════════
+  // Settings for saving player progress and system limits
+  "autoSaveIntervalTicks": 6000,  // Auto-save interval (6000 = 5 min, 20 = 1 sec)
+  "saveOnEveryProgress": false,  // Save immediately after each update (impacts performance)
+  "trackCompletionTime": true,  // Track quest completion timestamps
+  "maxQuestsPerPlayer": 1000,  // Maximum quests per player
+  "maxRequirementsPerQuest": 50,  // Maximum requirements per quest
+  "maxRewardsPerQuest": 20,  // Maximum rewards per quest
+
+  // ══════════════ QUEST BEHAVIOR ══════════════
+  "allowQuestReset": true,  // Allow players to reset quest progress
+  "allowQuestReload": true,  // Allow /quest reload command
+  "requireOPForAdmin": true,  // Require OP for admin commands
+  "adminPermissionLevel": 2,  // Permission level (2 = standard OP, 4 = full)
+  "autoCompleteWhenRequirementsMet": false,  // Auto-complete when all requirements met
+
+  // ══════════════ DISPLAY SETTINGS ══════════════
+  "showQuestIDInList": false,  // Show quest IDs (for debugging)
+  "showProgressPercentage": true,  // Show progress percentages
+  "useColoredMessages": true,  // Use colored chat messages
+
+  // ══════════════ OBSERVATION & ENVIRONMENT ══════════════
+  // Settings for observation-type requirements (looking at blocks/entities)
+  "observationEnabled": true,  // Enable observation requirements
+  "observationScanIntervalTicks": 10,  // Scan interval (10 = 0.5 sec)
+  "observationMaxLookDistance": 5.0,  // Max look distance in blocks
+  "environmentOnlyVisibleQuests": false,  // Only check visible quests (performance)
+  "equipmentCheckIntervalTicks": 200,  // Equipment check interval (200 = 10 sec)
+
+  // ══════════════ DEBUG SETTINGS ══════════════
+  "debugMode": false,  // Enable verbose debug logging
+  "logQuestProgress": false,  // Log every progress update (very verbose)
+  "logQuestCompletion": true,  // Log quest completions
+
+  // ══════════════ ADVANCED EDITOR ══════════════
+  // WARNING: Powerful feature - only enable for trusted users
+  "enableAdvancedEditor": false,  // Enable in-game quest/theme editor
+  "advancedEditorRequiresOp": true,  // Require OP to use editor
+  "enableEditorAutoSave": true,  // Enable auto-save in editor (uses autoSaveIntervalTicks)
+
+  // ══════════════ THEME SETTINGS ══════════════
+  "customThemeName": "",  // Custom theme name (empty = default)
+
+  // ══════════════ FTB QUESTS IMPORT ══════════════
+  "ftbImportPreserveDependencies": true,  // Preserve quest dependencies
+  "ftbImportConvertUnknownTasks": true,  // Convert unknown task types
+  "ftbImportQuestPrefix": "ftb_",  // Prefix for imported quest IDs
+
+  // ══════════════ DAILY QUEST SYSTEM ══════════════
+  // Rotating quests that reset daily from remote source
+  "dailyEnable": false,  // Enable daily quests
+  "dailyRemoteUrl": "",  // Primary fetch URL (empty = disabled)
+  "dailyBackupUrls": [],  // Backup URLs if primary fails
+  "dailyFetchOnWorldLoad": true,  // Fetch on world/server start
+  "dailyFetchIntervalMinutes": 0,  // Auto-fetch interval (0 = manual only)
+  "dailyCacheTtlMinutes": 1440,  // Cache lifetime (1440 = 24 hours)
+  "dailyOfflineFallback": "use_cache",  // Fallback: use_cache|keep_previous|disable
+  "dailyRolloverHour": 0,  // Reset hour in 24h format (0 = midnight)
+  "dailyTimeZone": "UTC",  // Time zone (IANA format, e.g., UTC)
+  "dailyGroupName": "Daily",  // Default group name
+  "dailyTagKey": "daily",  // Tag for filtering
+  "dailyPrefixQuestIds": "daily_",  // Quest ID prefix
+  "dailyMaxActiveQuests": 0,  // Max active quests (0 = all)
+  "dailyCompletionMode": "ALL",  // Completion: ALL|ANY
+  "dailyMinQuestsToComplete": 0,  // Min quests to complete (0 = use mode)
+  "dailyStoreHistory": true,  // Store historical data
+  "dailyHttpTimeoutMs": 8000,  // HTTP timeout (ms)
+  "dailyRetryCount": 2,  // Number of retry attempts
+  "dailyDataDirNameOverride": "",  // Custom data subfolder (empty = default)
+
+  // ══════════════ SCRIPTING & INTEGRATION ══════════════
+  // Connect quest events to webhooks and commands
+  "scriptIntegrationEnabled": false,  // Enable integrations
+  "scriptAllowExternalHttp": false,  // Allow HTTP requests (security risk)
+  "scriptWebhookUrl": "",  // Webhook URL (empty = disabled)
+  "scriptHttpTimeoutMs": 5000,  // HTTP timeout (ms)
+  // Command templates - Placeholders: {player}, {uuid}, {quest_id}, {quest_title}, {group}, {timestamp}
+  "scriptCommandOnUnlock": "",  // Command on unlock
+  "scriptCommandOnStarted": "",  // Command on start
+  "scriptCommandOnProgress": "",  // Command on progress
+  "scriptCommandOnComplete": "",  // Command on complete
+  "scriptCommandOnRewardClaimed": "",  // Command on reward claim
+  // Event toggles
+  "scriptEmitOnUnlock": true,  // Emit unlock events
+  "scriptEmitOnStarted": true,  // Emit start events
+  "scriptEmitOnProgress": false,  // Emit progress events (can be frequent)
+  "scriptEmitOnCompleted": true,  // Emit completion events
+  "scriptEmitOnRewardClaimed": true,  // Emit reward claim events
+
+  // ══════════════ TEAM SYSTEM ══════════════
+  // Shared quest progress and team rewards
+  "teamSystemEnabled": true,  // Enable team quests
+  "teamUseExternalProvider": true,  // Use external team mods
+  "teamPreferredProvider": "ftbteams",  // Preferred provider (e.g., ftbteams, opac)
+  "teamFallbackToBuiltIn": true,  // Use built-in if external unavailable
+  "teamDefaultProgressMode": "SHARED",  // Progress: SHARED|INDIVIDUAL|COMBINED|PARALLEL
+  "teamDefaultRewardMode": "SHARED",  // Rewards: SHARED|COMPLETER_ONLY|DISTRIBUTED|ALL_MEMBERS
+  "teamMaxSize": 10,  // Max team size (built-in)
+  "teamAllowCreation": true,  // Allow team creation
+  "teamRequireAllOnlineDefault": false,  // Require all online for completion
+  "teamSyncProgressDelay": 20,  // Sync delay (20 = 1 sec)
+
+  // ══════════════ OPAC INTEGRATION ══════════════
+  // Integration with Open Parties and Claims mod (optional)
+  "opacIntegrationEnabled": true,  // Enable OPAC integration
+  "opacUseAsTeamProvider": true,  // Use OPAC parties as teams
+  "opacTeamProviderPriority": 90,  // Team provider priority (90 = below FTB Teams)
+  "opacEnableClaimRequirements": true,  // Enable claim-based requirements
+  "opacClaimCheckIntervalTicks": 20,  // Claim check interval (20 = 1 sec)
+  "opacEnablePlaceholders": true,  // Enable OPAC placeholders
+  "opacSyncOnPartyChange": true,  // Sync on party changes
+  "opacSyncIntervalTicks": 100,  // Party change poll interval (100 = 5 sec)
+
+  // ══════════════ STORAGE BACKEND ══════════════
+  // json = simple file-based | sqlite = local DB | mysql = remote DB
+  "storageType": "json",  // Storage type (json|sqlite|mysql)
+
+  // SQLite Settings (when storageType = sqlite)
+  "sqliteDatabasePath": "questory.db",  // Database file path (relative to world)
+
+  // MySQL Settings (when storageType = mysql)
+  "mysqlHost": "localhost",  // Server hostname/IP
+  "mysqlPort": 3306,  // Server port (default: 3306)
+  "mysqlDatabase": "questory",  // Database name
+  "mysqlUsername": "questory_user",  // Username
+  "mysqlPassword": "",  // Password (can use ${ENV_VAR})
+  "mysqlTablePrefix": "questory_",  // Table prefix
+  // MySQL Connection Pool
+  "mysqlPoolMinConnections": 2,  // Min connections
+  "mysqlPoolMaxConnections": 10,  // Max connections
+  "mysqlConnectionTimeoutMs": 30000,  // Connection timeout (ms)
+  "mysqlIdleTimeoutMs": 600000,  // Idle timeout (ms)
+  "mysqlAutoReconnect": true,  // Auto-reconnect on failure
+
+  // Storage Retry Settings
+  "storageRetryAttempts": 3,  // Retry attempts before failure
+  "storageRetryDelayMs": 1000  // Delay between retries (ms)
+
+}

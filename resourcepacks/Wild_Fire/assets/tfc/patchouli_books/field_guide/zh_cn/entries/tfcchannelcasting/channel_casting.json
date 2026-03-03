@@ -10,12 +10,12 @@
       {
           "type": "tfc:knapping_recipe",
           "recipe": "tfcchannelcasting:fire_clay_knapping/unfired_channel_4",
-          "text": "制作几个$(thing)未硬化的流道$()。"
+          "text": "制作几个$(thing)未烧制的流道$()。"
       },
       {
           "type": "tfc:knapping_recipe",
           "recipe": "tfcchannelcasting:fire_clay_knapping/unfired_mold_table",
-          "text": "制作一个$(thing)未硬化的模具桌$()。"
+          "text": "制作一个$(thing)未烧制的模具桌$()。"
       },
       {
           "type": "tfc:heat_recipe",

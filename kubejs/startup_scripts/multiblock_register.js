@@ -54,12 +54,12 @@ StartupEvents.postInit((event) => {
         $PatchouliAPI.makeMultiblock(
             [
                 ['_______', '_______', '_______', '_______', '_______', '___i___',],
-                ['___tNNN', 'MMMO___', '___0___', '__IHL__', '___T___', '__mTm__',]
+                ['___t___', '___ONNN', 'MMM0___', '__IHL__', '___T___', '__mTm__',]
             ],
             new $Character('0'),
             "kubejs:biplane_engine[facing=west]",
             new $Character('O'),
-            "create:mechanical_bearing[facing=east]",
+            "create:mechanical_bearing[facing=west]",
             new $Character('N'),
             "kubejs:double_wing[facing=east]",
             new $Character('M'),

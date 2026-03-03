@@ -34,7 +34,7 @@ ServerEvents.tags("item", event => {
     ];
 
     toolMetals.forEach(metal => {
-        if(metal=="copper")return
+        if (metal == "copper") return
         toolHeadTemplates.forEach(template => {
             // 替换模板中的 {metal} 为当前金属名（生成完整的物品ID）
             const toolHeadId = template.replace(/{metal}/g, metal);
@@ -137,7 +137,39 @@ ServerEvents.tags("block", event => {
             )
         })
     })
-})
+});
+
+const loose = [
+    'andesite',
+    'basalt',
+    'chalk',
+    'chert',
+    'claystone',
+    'conglomerate',
+    'dacite',
+    'diorite',
+    'dolomite',
+    'gabbro',
+    'gneiss',
+    'granite',
+    'limestone',
+    'marble',
+    'phyllite',
+    'quartzite',
+    'rhyolite',
+    'schist',
+    'shale',
+    'slate'
+];
+ServerEvents.tags("item", event => {
+    loose.forEach(loose => {
+        event.add('supplementaries:throwable_bricks',
+            [
+                `tfc:brick/${loose}`
+            ]
+        )
+    })
+});
 ServerEvents.tags("block", event => {
 
 
@@ -373,7 +405,28 @@ ServerEvents.tags("block", event => {
                 "tfc:ore/rich_vanadium"
             ])
 
-
+        //投掷砖块
+        event.add('supplementaries:throwable_bricks',
+            [
+                `kubejs:rotten_meat`,
+                `kubejs:rotten_fish`,
+                `kubejs:rotten_vegetables`,
+                `kubejs:rotten_fruit`,
+                `kubejs:rot`,
+                `tfc:mud_brick/loam`,
+                `tfc:mud_brick/sandy_loam`,
+                `tfc:mud_brick/silty_loam`,
+                `tfc:mud_brick/silt`,
+                `tfc:drying_bricks/loam`,
+                `tfc:drying_bricks/sandy_loam`,
+                `tfc:drying_bricks/silty_loam`,
+                `tfc:drying_bricks/silt`,
+                `tfc:alabaster_brick`,
+                `tfc:ceramic/unfired_brick`,
+                `tfc:ceramic/unfired_fire_brick`,
+                `tfc:ceramic/fire_brick`
+            ]
+        )
 
 
         // 将手套加入进饰品tag
@@ -610,7 +663,7 @@ ServerEvents.tags("block", event => {
                 "kubejs:rotten_meat",
                 "kubejs:rotten_platter"
             ])
-            
+
         event.add('sliceanddice:allowed_tools', '#minecraft:tools')
         //石墨铸模
         event.add('forge:graphite_molds',
@@ -897,14 +950,14 @@ ServerEvents.tags("item", event => {
             "tfc:ore/rich_sphalerite",
             "tfc:ore/rich_tetrahedrite",
         ])
-        //删除ie坚韧布料tag
-        event.remove('forge:fabric_hemp', [
-            "tfc:burlap_cloth",
-            "immersiveengineering:hemp_fabric"
-        ])
-        event.add('forge:fabric_hemp', [
-            "sns:reinforced_fabric",
-        ])
+    //删除ie坚韧布料tag
+    event.remove('forge:fabric_hemp', [
+        "tfc:burlap_cloth",
+        "immersiveengineering:hemp_fabric"
+    ])
+    event.add('forge:fabric_hemp', [
+        "sns:reinforced_fabric",
+    ])
     /*
     
     //删除群峦的箱子tag

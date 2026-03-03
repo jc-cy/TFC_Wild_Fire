@@ -1,0 +1,21 @@
+{
+  "schema_version": "2",
+  "createdieselgenerators:asphalt_block": 1.57,
+  "createdieselgenerators:asphalt_stairs": 1.57,
+  "createdieselgenerators:asphalt_slab": 1.57,
+  "#blockrunner:quick_blocks": 1.35,
+  "minecraft:dirt_path": 1.35,
+  "design_decor:zinc_floor": 1.20,
+  "design_decor:brass_floor": 1.20,
+  "design_decor:copper_floor": 1.20,
+  "design_decor:industrial_iron_floor": 1.20,
+  "design_decor:industrial_gold_floor": 1.20,
+  "#tfc:paths": 1.35,
+  "#blockrunner:very_quick_blocks": 1.55,
+  "#forge:concrete": 1.15,
+  "#minecraft:stone_bricks": 1.15,
+  "#blockrunner:slow_blocks": 0.65,
+  "#blockrunner:very_slow_blocks": 0.45,
+  "#blockrunner:slightly_slow_blocks": 0.85,
+  "#blockrunner:slightly_quick_blocks": 1.15
+}

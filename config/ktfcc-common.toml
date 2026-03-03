@@ -1,0 +1,6 @@
+# 
+#The stove provides the highest temperature that can be reached by a cluster of heat sources (default 450)
+#炉灶提供群峦热源可达到的最高温度（默认450）
+#Range: 200.0 ~ 2000.0
+stoveTemperature = 450.0
+

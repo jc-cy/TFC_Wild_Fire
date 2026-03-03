@@ -37,6 +37,6 @@
   "item.tfc_hammer_time.metal.sledgehammer_head.red_steel": "精金长柄大锤头",
   "item.tfc_hammer_time.ceramic.excavator_head_mold": "开掘铲头模具",
   "item.tfc_hammer_time.ceramic.sledgehammer_head_mold": "长柄大锤头模具",
-  "item.tfc_hammer_time.ceramic.unfired_excavator_head_mold": "未硬化的开掘铲头模具",
-  "item.tfc_hammer_time.ceramic.unfired_sledgehammer_head_mold": "未硬化的长柄大锤头模具"
+  "item.tfc_hammer_time.ceramic.unfired_excavator_head_mold": "未烧制的开掘铲头模具",
+  "item.tfc_hammer_time.ceramic.unfired_sledgehammer_head_mold": "未烧制的长柄大锤头模具"
 }
