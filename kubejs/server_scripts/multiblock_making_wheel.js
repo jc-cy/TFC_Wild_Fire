@@ -1,3 +1,4 @@
+//server_scripts
 // priority: 9999
 const $PatchouliAPI = Java.loadClass('vazkii.patchouli.api.PatchouliAPI').get();
 
@@ -31,7 +32,8 @@ function MultiBlockCreateVehicle(MultiBlockName, VehicleName, MainBlock, HandIte
         }
 
         if (itemMatches) {
-            $PatchouliAPI.showMultiblock(MultiBlockEntity, null, block.pos.offset(0, -1, 0), rotation);
+            let BlockPosData = block.pos.offset(0, -1, 0)
+            player.sendData("show_multiblock", {MultiBlockName: MultiBlockName, blockPosX: BlockPosData.getX(), blockPosY: BlockPosData.getY(), blockPosZ: BlockPosData.getZ(), rotation: rotation});
 
             if (MultiBlockEntity.validate(level, block.pos, rotation)) {
                 MultiBlockEntity.simulate(level, block.pos, rotation, false).second.forEach((result) => {
@@ -76,11 +78,15 @@ function MultiBlockCreateVehicle(MultiBlockName, VehicleName, MainBlock, HandIte
                 );
                 level.playSound(null, block.pos.x, block.pos.y, block.pos.z, "minecraft:block.anvil.use", "blocks", 5, 1);
                 player.swing();
-                $PatchouliAPI.clearMultiblock();
+                player.sendData("clear_multiblock",{})
             }
         }
     });
     BlockEvents.broken(MainBlock, event => {
-        $PatchouliAPI.clearMultiblock()
+        let player = event.player
+        player.sendData("clear_multiblock",{})
     })
 }
+
+//例：  MultiBlockCreateVehicle(多方块名称, 载具实体id, 中心方块, 手持物品)
+//例：MultiBlockCreateVehicle('tfc:submarine', 'alexscaves:submarine', "immersiveengineering:floodlight", "immersiveengineering:hammer")

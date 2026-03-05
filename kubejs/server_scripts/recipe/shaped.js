@@ -231,6 +231,15 @@ ServerEvents.recipes(event => {
         c: 'tfc:brass_mechanisms'
     }) //石切机
 
+    event.shaped('farmersdelight:cooked_rice',
+        [
+            'aa ',
+            'b  '
+        ], {
+        a: 'tfc:food/cooked_rice',
+        b: 'minecraft:bowl'
+    }) //米饭
+
 
     event.shaped('immersiveengineering:workbench',
         [

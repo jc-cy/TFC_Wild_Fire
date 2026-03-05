@@ -427,5 +427,29 @@
             "immersiveengineering:component_steel"
         ],
         "resultItems": "kubejs:material_component_steel"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:steel_wire"
+        ],
+        "resultItems": "immersiveengineering:wire_steel"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:steel_wire"
+        ],
+        "resultItems": "immersiveengineering:wire_steel"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:lead_wire"
+        ],
+        "resultItems": "immersiveengineering:wire_lead"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:aluminum_wire"
+        ],
+        "resultItems": "immersiveengineering:wire_aluminum"
     }
 ]

@@ -172,7 +172,13 @@ ServerEvents.tags("item", event => {
 });
 ServerEvents.tags("block", event => {
 
-
+    event.add('create_compatible_storage:silent_mounted_storage',
+        [
+            "ae2:smooth_sky_stone_chest",
+            "immersiveengineering:crate",
+            "immersiveengineering:reinforced_crate"
+        ]
+    )
 
     event.add('create:chest_mounted_storage',
         [
@@ -628,6 +634,17 @@ ServerEvents.tags("block", event => {
 
             ])
 
+        //森罗物语油脂
+        event.add('kaleidoscope_cookery:oil',
+            [
+                "artisanal:animal_fat",
+                "artisanal:suet",
+                "artisanal:pork_fat",
+                "artisanal:poultry_fat",
+                "artisanal:bear_fat",
+                "tfc:blubber"
+
+            ])
         //可以作为杠杆锤的砧的砧
         event.add('vintageimprovements:anvils',
             [
@@ -957,6 +974,59 @@ ServerEvents.tags("item", event => {
     ])
     event.add('forge:fabric_hemp', [
         "sns:reinforced_fabric",
+    ]);
+
+    //删除一些没用的配方tag
+    //柴油动力的锤子
+    event.remove('immersiveengineering:tools/hammers', [
+        "createdieselgenerators:hammer"
+    ])
+    //金属线
+    event.remove('forge:wires', [
+        "vintageimprovements:aluminum_wire",
+        "vintageimprovements:andesite_wire",
+        "vintageimprovements:brass_wire",
+        "vintageimprovements:bronze_wire",
+        "vintageimprovements:calorite_wire",
+        "vintageimprovements:cast_iron_wire",
+        "vintageimprovements:constantan_wire",
+        "vintageimprovements:desh_wire",
+        "vintageimprovements:lead_wire",
+        "vintageimprovements:netherite_wire",
+        "vintageimprovements:nickel_wire",
+        "vintageimprovements:ostrum_wire",
+        "vintageimprovements:rose_gold_wire",
+        "vintageimprovements:silver_wire",
+        "vintageimprovements:steel_wire",
+        "vintageimprovements:tin_wire",
+        "vintageimprovements:vanadium_wire",
+        "vintageimprovements:zinc_wire",
+        "vintageimprovements:amethyst_bronze_wire",
+        "vintageimprovements:cobalt_wire",
+        "vintageimprovements:enderium_wire",
+        "vintageimprovements:hepatizon_wire",
+        "vintageimprovements:invar_wire",
+        "vintageimprovements:lumium_wire",
+        "vintageimprovements:manyullyn_wire",
+        "vintageimprovements:osmium_wire",
+        "vintageimprovements:palladium_wire",
+        "vintageimprovements:pig_iron_wire",
+        "vintageimprovements:platinum_wire",
+        "vintageimprovements:pure_gold_wire",
+        "vintageimprovements:refined_glowstone_wire",
+        "vintageimprovements:refined_obsidian_wire",
+        "vintageimprovements:rhodium_wire",
+        "vintageimprovements:signalum_wire",
+        "vintageimprovements:uranium_wire",
+        "vintageimprovements:refined_radiance_wire",
+        "vintageimprovements:ironwood_wire",
+        "vintageimprovements:knightmetal_wire",
+        "vintageimprovements:queens_slime_wire",
+        "vintageimprovements:slimesteel_wire",
+        "vintageimprovements:fiery_wire",
+        "vintageimprovements:shadow_steel_wire",
+        "vintageimprovements:nethersteel_wire",
+        "vintageimprovements:aluminum_wire"
     ])
     /*
     

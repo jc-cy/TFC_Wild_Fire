@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+  ServerEvents.recipes(event => {
   const { tfc, create, kubejs, immersiveengineering } = event.recipes;
 
   tfc.casting('2x tfc:brass_mechanisms', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/brass', 100), 1)//黄铜机件
