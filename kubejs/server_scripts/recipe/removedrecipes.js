@@ -930,13 +930,13 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'brewery:mashed_potato' })
   e.remove({ id: 'sliceanddice:cooking/brewery/pork_knuckle_0' })
   e.remove({ id: 'brewery:pork_knuckle' })
-  e.remove({ id: '1111111111111111111111111111111111' })
-  e.remove({ id: '1111111111111111111111111111111111' })
-  e.remove({ id: '1111111111111111111111111111111111' })
-  e.remove({ id: '1111111111111111111111111111111111' })
-  e.remove({ id: '1111111111111111111111111111111111' })
-  e.remove({ id: '1111111111111111111111111111111111' })
-  e.remove({ id: '1111111111111111111111111111111111' })
+  e.remove({ id: 'farmersdelight:wheat_dough_from_water' })
+  e.remove({ id: 'artisanal:crafting/oat_dough' })
+  e.remove({ id: 'artisanal:crafting/wheat_dough' })
+  e.remove({ id: 'artisanal:crafting/barley_dough' })
+  e.remove({ id: 'artisanal:crafting/maize_dough' })
+  e.remove({ id: 'artisanal:crafting/rice_dough' })
+  e.remove({ id: 'artisanal:crafting/rye_dough' })
   e.remove({ id: '1111111111111111111111111111111111' })
   e.remove({ id: '1111111111111111111111111111111111' })
   e.remove({ id: '1111111111111111111111111111111111' })
@@ -1124,6 +1124,7 @@ ServerEvents.recipes(e => {
   e.remove({ type: 'scguns:gun_bench' }) // 移除枪械工作台配方
 
   e.remove({ type: 'kaleidoscope_cookery:chopping_board' }) // 移除森罗物语菜板配方
+  e.remove({ type: 'kaleidoscope_cookery:millstone' }) // 移除森罗石磨配方
 
   e.remove({ type: 'woodencog:heated_pressing' }) // 移除woodencog加热敲制配方
   e.remove({ type: 'butcher:pestleandmortar' }) // 移除butchery垃圾配方

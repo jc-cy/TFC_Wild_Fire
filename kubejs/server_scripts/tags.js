@@ -637,6 +637,9 @@ ServerEvents.tags("block", event => {
         //森罗物语油脂
         event.add('kaleidoscope_cookery:oil',
             [
+                "butcher:raw_pork_belly",
+                "butcher:pork_belly",
+                "firmalife:food/butter",
                 "artisanal:animal_fat",
                 "artisanal:suet",
                 "artisanal:pork_fat",
@@ -645,6 +648,40 @@ ServerEvents.tags("block", event => {
                 "tfc:blubber"
 
             ])
+            
+            //合理的种子物品
+        event.add('forge:seeds',
+            [
+                "tfc:seeds/wheat",
+                "tfc:seeds/barley",
+                "tfc:seeds/oat",
+                "tfc:seeds/rye",
+                "tfc:seeds/maize",
+                "tfc:seeds/rice",
+                "tfc:seeds/beet",
+                "tfc:seeds/cabbage",
+                "tfc:seeds/carrot",
+                "tfc:seeds/garlic",
+                "tfc:seeds/green_bean",
+                "tfc:seeds/red_bell_pepper",
+                "tfc:seeds/yellow_bell_pepper",
+                "tfc:seeds/melon",
+                "tfc:crop/horsetail_seeds",
+                "tfc:seeds/onion",
+                "tfc:seeds/soybean",
+                "tfc:seeds/squash",
+                "tfc:seeds/sugarcane",
+                "tfc:seeds/tomato",
+                "tfc:seeds/jute",
+                "tfc:seeds/papyrus",
+                "tfc:seeds/pumpkin",
+                "tfc:crop/hops_seeds",
+                "tfc:crop/marigold_seeds",
+                "tfc:crop/trillium_seeds",
+                "tfc:crop/labrador_tea_seeds",
+                "tfc:crop/red_palm_seeds"
+            ])
+
         //可以作为杠杆锤的砧的砧
         event.add('vintageimprovements:anvils',
             [

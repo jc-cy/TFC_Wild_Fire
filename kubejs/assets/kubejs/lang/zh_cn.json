@@ -1907,6 +1907,21 @@
   "block.kubejs.tfc.diamond_whetstone": "金刚石磨刀石",
   "block.kubejs.tfc.ceramic_stone": "铝陶瓷磨刀石",
   
+  
+  "item.tfc.food.yeast_dough.wheat_dough": "小麦酵母面团",
+  "item.tfc.food.yeast_dough.maize_dough": "玉米酵母面团",
+  "item.tfc.food.yeast_dough.oat_dough": "燕麦酵母面团",
+  "item.tfc.food.yeast_dough.rye_dough": "黑麦酵母面团",
+  "item.tfc.food.yeast_dough.rice_dough": "大米酵母面团",
+  "item.tfc.food.yeast_dough.barley_dough": "大麦酵母面团",
+  
+  "tfc.recipe.barrel.minecraft.tfc.barrel_sealed.food.wheat_dough":"小麦面团发面中",
+  "tfc.recipe.barrel.minecraft.tfc.barrel_sealed.food.maize_dough":"玉米面团发面中",
+  "tfc.recipe.barrel.minecraft.tfc.barrel_sealed.food.oat_dough":"燕麦面团发面中",
+  "tfc.recipe.barrel.minecraft.tfc.barrel_sealed.food.rye_dough":"黑麦面团发面中",
+  "tfc.recipe.barrel.minecraft.tfc.barrel_sealed.food.rice_dough":"大米面团发面中",
+  "tfc.recipe.barrel.minecraft.tfc.barrel_sealed.food.barley_dough":"大麦面团发面中",
+
   "tooltip.kubejs.shift_crimson_cogwheel": "§7齿轮应力上限32768，齿轮转速上限512",
   "tooltip.kubejs.shift_crimson_large_cogwheel": "§7齿轮应力上限32768，齿轮转速上限512",
   "tooltip.kubejs.shift_dark_oak_cogwheel": "§7齿轮应力上限32768，齿轮转速上限512",

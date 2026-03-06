@@ -802,18 +802,97 @@ ServerEvents.recipes(event => {
     ).transitionalItem(`${item.item1}`).loops(1)
   
   })
-      //加压处理
-  /*  
-  
-    {
-      "type": "vintageimprovements:pressurizing",
-      "heatRequirement": "heated",                                                           加热等级
-      "processingTime": 800,                                                                 焖煮时间
-      "ingredients": [
-        { "fluid": "immersiveengineering:creosote", "amount": 50 }, { "tag": "tfc:lumber" }],
-      "results": [{ "item": "tfc_ie_addon:treated_wood_lumber" }]                            产物
+
+  //森罗油脂凝固配方
+  const vat = [
+    "artisanal:lard",
+    "artisanal:schmaltz",
+    "tfc:tallow",
+    "createdieselgenerators:plant_oil",
+    "immersiveengineering:plantoil",
+  ];
+
+  vat.forEach(item => {
+    const idPath = item.replace(/:/g, '/');
+    event.custom({
+      "type": "tfc:barrel_sealed",
+      "input_fluid": { "ingredient": item, "amount": 100 },
+      "output_item": { "item": "kaleidoscope_cookery:oil" },
+      "duration": 1000
     })
-      */
+      .id(`tfc:barrel_sealed/oil/${idPath}`); 
+  });
+
+
+
+
+  //发酵面团发酵配方
+  const dough = [
+    { name1: "barley" },
+    { name1: "maize" },
+    { name1: "oat" },
+    { name1: "rye" },
+    { name1: "rice" },
+    { name1: "wheat" },
+  ];
+  dough.forEach(dough => {
+    //瞬时大桶制作发酵面团配方
+    event.recipes.tfc.barrel_instant()
+      .outputItem(TFC.isp.of(`tfc:food/yeast_dough/${dough.name1}_dough`).copyFood())
+      .inputs(Item.of(`tfc:food/${dough.name1}_dough`), Fluid.of('firmalife:yeast_starter', 5))
+      .id(`tfc:barrel_instant/food/yeast_dough/${dough.name1}_dough`);
+    //密封大桶发面面团配方
+    event.recipes.tfc.barrel_sealed(5000)
+      .inputItem(TFC.ingredient.notRotten(`tfc:food/yeast_dough/${dough.name1}_dough`))
+      .outputItem(`firmalife:food/${dough.name1}_dough`)
+      .id(`tfc:barrel_sealed/food/${dough.name1}_dough`)
+    //面粉加水加酵母简便混合配方
+    create.mixing(`2x tfc:food/${dough.name1}_dough`, [`tfc:food/${dough.name1}_flour`, Fluid.of('minecraft:water', 100)])
+      .id(`create:mixing/food/${dough.name1}_dough`)
+    //面粉加水加酵母直接合成酵母面团配方
+    create.mixing(`2x tfc:food/yeast_dough/${dough.name1}_dough`, [`tfc:food/${dough.name1}_flour`, Fluid.of('minecraft:water', 100), Fluid.of('firmalife:yeast_starter', 15)])
+      .id(`create:mixing/food/yeast_dough/${dough.name1}_dough`)
+    //粗面团注液酵种制作发酵面团配方
+    create.filling(`tfc:food/yeast_dough/${dough.name1}_dough`, [`tfc:food/${dough.name1}_dough`, Fluid.of('firmalife:yeast_starter', 5)])
+      .id(`create:filling/food/yeast_dough/${dough.name1}_dough`)
+
+    //面团发酵配方
+    event.custom({
+      "type": "createdieselgenerators:basin_fermenting",
+      "ingredients": [
+        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`},
+        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`},
+        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`},
+        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`},
+        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`},
+        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`},
+        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`},
+        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`},
+        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`},
+        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`},
+      ],
+      "processingTime": 2000,
+      "results": [{
+        "count": 10,
+        "item": `firmalife:food/${dough.name1}_dough`
+      }]
+    }).id(`create:heatslurry/food/much_${dough.name1}_dough`)
+    event.custom({
+      "type": "createdieselgenerators:basin_fermenting",
+      "ingredients": [
+        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`}
+      ],
+      "processingTime": 300,
+      "results": [{
+        "count": 1,
+        "item": `firmalife:food/${dough.name1}_dough`
+      }]
+    }).id(`create:heatslurry/food/${dough.name1}_dough`)
+  });
+
+/*000
+*/
+
   event.custom(
     {
       "type": "vintageimprovements:pressurizing",

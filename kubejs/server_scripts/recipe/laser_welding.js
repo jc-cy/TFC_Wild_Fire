@@ -43,19 +43,19 @@ ServerEvents.recipes(event => {
         // 锭>双锭 部分
         if (type == "1") {
             create.deploying(`kubejs:unfinished/double_ingot/${input}`, [`tfc:metal/ingot/${input}`, `tfc:metal/ingot/${input}`]).id(`kubejs:deploying/double_ingot/${input}_hide`)
-            event.shapeless(`kubejs:unfinished/double_ingot/${input}`, [`tfc:metal/ingot/${input}`, `tfc:metal/ingot/${input}`])
+            event.shaped(`kubejs:unfinished/double_ingot/${input}`,['a','b','a'], {a: `tfc:metal/ingot/${input}`,b: 'tfc:powder/flux',})
             event.shapeless(`2x tfc:metal/ingot/${input}`, `kubejs:unfinished/double_ingot/${input}`)
 
         }
         if (type == "2") {
             create.deploying(`kubejs:unfinished/double_ingot/${input}`, [`firmalife:metal/ingot/${input}`, `firmalife:metal/ingot/${input}`]).id(`kubejs:deploying/double_ingot/${input}_hide`)
-            event.shapeless(`kubejs:unfinished/double_ingot/${input}`, [`firmalife:metal/ingot/${input}`, `firmalife:metal/ingot/${input}`])
+            event.shaped(`kubejs:unfinished/double_ingot/${input}`,['a','b','a'], {a: `firmalife:metal/ingot/${input}`,b: 'tfc:powder/flux',})
             event.shapeless(`2x firmalife:metal/ingot/${input}`, `kubejs:unfinished/double_ingot/${input}`)
         }
 
         if (type == "3") {
             create.deploying(`kubejs:unfinished/double_ingot/${input}`, [`immersiveengineering:ingot_${input}`, `immersiveengineering:ingot_${input}`]).id(`kubejs:deploying/double_ingot/${input}_hide`)
-            event.shapeless(`kubejs:unfinished/double_ingot/${input}`, [`immersiveengineering:ingot_${input}`, `immersiveengineering:ingot_${input}`])
+            event.shaped(`kubejs:unfinished/double_ingot/${input}`,['a','b','a'], {a: `immersiveengineering:ingot_${input}`,b: 'tfc:powder/flux',})
             event.shapeless(`2x immersiveengineering:ingot_${input}`, `kubejs:unfinished/double_ingot/${input}`)
         }
         //双锭->热双锭->辊压 部分
@@ -117,19 +117,19 @@ ServerEvents.recipes(event => {
         // 锭>双锭 部分'tfc_ie_addon:metal/sheet/uranium'
         if (type == "1") {
             create.deploying(`kubejs:unfinished/double_sheet/${input}`, [`tfc:metal/sheet/${input}`, `tfc:metal/sheet/${input}`])
-            event.shapeless(`kubejs:unfinished/double_sheet/${input}`, [`tfc:metal/sheet/${input}`, `tfc:metal/sheet/${input}`])
+            event.shaped(`kubejs:unfinished/double_sheet/${input}`,['a','b','a'], {a: `tfc:metal/sheet/${input}`,b: 'tfc:powder/flux',})
             event.shapeless(`2x tfc:metal/sheet/${input}`, `kubejs:unfinished/double_sheet/${input}`)
 
         }
         if (type == "2") {
             create.deploying(`kubejs:unfinished/double_sheet/${input}`, [`firmalife:metal/sheet/${input}`, `firmalife:metal/sheet/${input}`])
-            event.shapeless(`kubejs:unfinished/double_sheet/${input}`, [`firmalife:metal/sheet/${input}`, `firmalife:metal/sheet/${input}`])
+            event.shaped(`kubejs:unfinished/double_sheet/${input}`,['a','b','a'], {a: `firmalife:metal/sheet/${input}`,b: 'tfc:powder/flux',})
             event.shapeless(`2x firmalife:metal/sheet/${input}`, `kubejs:unfinished/double_sheet/${input}`)
         }
 
         if (type == "3") {
             create.deploying(`kubejs:unfinished/double_sheet/${input}`, [`tfc_ie_addon:metal/sheet/${input}`, `tfc_ie_addon:metal/sheet/${input}`])
-            event.shapeless(`kubejs:unfinished/double_sheet/${input}`,  `2x tfc_ie_addon:metal/sheet/${input}`)
+            event.shaped(`kubejs:unfinished/double_sheet/${input}`,['a','b','a'], {a: `tfc_ie_addon:metal/sheet/${input}`,b: 'tfc:powder/flux',})
             event.shapeless(`2x tfc_ie_addon:metal/sheet/${input}`, `kubejs:unfinished/double_sheet/${input}`)
         }
              //双锭->热双锭->辊压 部分

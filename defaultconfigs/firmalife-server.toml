@@ -41,10 +41,10 @@
 	hollowShellCapacity = 250
 	#The average temperature below which stronger decay modifiers apply to cellar blocks.
 	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	cellarLevel2Temperature = 0.0
+	cellarLevel2Temperature = 5.0
 	#The average temperature below which even stronger decay modifiers apply to cellar blocks.
 	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	cellarLevel3Temperature = -12.0
+	cellarLevel3Temperature = -10.0
 	#The average amount of days for a crop in a greenhouse to grow. For normal crops, this is 24 days.
 	#Range: 4.9E-324 ~ 1.7976931348623157E308
 	greenhouseGrowthDays = 20.0
@@ -92,22 +92,22 @@
 	traitRancid_smokedModifier = 2.0
 	#The modifier for the 'Shelved' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitShelvedModifier = 0.4000000059604645
+	traitShelvedModifier = 0.43
 	#The modifier for the 'Shelved_2' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitShelved_2Modifier = 0.3499999940395355
+	traitShelved_2Modifier = 0.35
 	#The modifier for the 'Shelved_3' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitShelved_3Modifier = 0.25
+	traitShelved_3Modifier = 0.27
 	#The modifier for the 'Hung' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitHungModifier = 0.3499999940395355
+	traitHungModifier = 0.43
 	#The modifier for the 'Hung_2' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitHung_2Modifier = 0.30000001192092896
+	traitHung_2Modifier = 0.35
 	#The modifier for the 'Hung_3' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitHung_3Modifier = 0.25
+	traitHung_3Modifier = 0.27
 	#The modifier for the 'Fermented' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	traitFermentedModifier = 0.25

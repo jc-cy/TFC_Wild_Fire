@@ -104,6 +104,25 @@ StartupEvents.registry('item', event => {
     event.create('pulp_film', 'basic').texture('kubejs:item/pulp_film'); // 纸浆膜
     event.create('paper_film', 'basic').texture('kubejs:item/paper_film'); // 纸膜
 
+    const dough = [
+        {name1:"barley_dough",name2:"barley_flatbread_dough"},
+        {name1:"maize_dough",name2:"maize_flatbread_dough"},
+        {name1:"oat_dough",name2:"oat_flatbread_dough"},
+        {name1:"rye_dough",name2:"rye_flatbread_dough"},
+        {name1:"rice_dough",name2:"rice_flatbread_dough"},
+        {name1:"wheat_dough",name2:"wheat_flatbread_dough"},
+    ];
+    dough.forEach(item => {
+            event.create(`tfc:food/yeast_dough/${item.name1}`)
+                .food(food => {
+                    food
+                        .hunger(1)
+                        .saturation(1)
+                        .alwaysEdible()
+                })
+                .texture(`firmalife:item/food/${item.name2}`)  // 酵母面团
+        })
+
 
     event.create('alkalized_bauxite_raw_material', 'basic').texture('kubejs:item/tfc/alkalized_bauxite_raw_material').tag("kubejs:ore"); // 碱化铝土生料
 
