@@ -4,11 +4,6 @@ const ItemStackInventory = Java.loadClass("net.dries007.tfc.common.recipes.inven
 const HeatingRecipe = Java.loadClass("net.dries007.tfc.common.recipes.HeatingRecipe")
 const mbd2$FluidStack = Java.loadClass("com.lowdragmc.lowdraglib.side.fluid.FluidStack")
 
-// 全局消息防重复缓存
-let messageCooldown = {}
-let lastCleanupTime = Date.now()
-const CLEANUP_INTERVAL = 5 * 60 * 1000 // 每5分钟清理一次
-const ENTRY_MAX_AGE = 10 * 60 * 1000  // 条目最大存活时间10分钟
 const MAX_BURN_TIME = 24000 // 20分钟最大燃烧时间（20 * 60 * 20 = 24000）
 
 // 燃料配置
@@ -99,48 +94,6 @@ function getFuelBurnTime(stack) {
     return FUEL_CONFIG[fuelId] || 0
 }
 
-// 清理过期的冷却记录
-function cleanupExpiredCooldowns() {
-    const now = Date.now()
-    // 检查是否需要执行清理
-    if (now - lastCleanupTime < CLEANUP_INTERVAL) {
-        return
-    }
-    
-    lastCleanupTime = now
-    const entriesBefore = Object.keys(messageCooldown).length
-    
-    // 清理过期的条目
-    for (const playerId in messageCooldown) {
-        if (now - messageCooldown[playerId] > ENTRY_MAX_AGE) {
-            delete messageCooldown[playerId]
-        }
-    }
-    
-    const entriesAfter = Object.keys(messageCooldown).length
-    const removedCount = entriesBefore - entriesAfter
-
-}
-
-// 发送消息的函数，带有1秒冷却时间
-function sendCooldownMessage(player, message) {
-    const playerId = player.id
-    const currentTime = Date.now()
-    
-    // 执行定期清理
-    cleanupExpiredCooldowns()
-    
-    // 检查是否有冷却时间
-    if (messageCooldown[playerId] && currentTime - messageCooldown[playerId] < 1000) {
-        return false // 冷却时间内，不发送消息
-    }
-    
-    // 发送消息并记录时间
-    player.sendSystemMessage(message)
-    messageCooldown[playerId] = currentTime
-    return true
-}
-
 MBDMachineEvents.onStructureFormed("mbd2:bloomery", e => {
     let event = e.event
     const { machine } = event
@@ -171,20 +124,6 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
     const { machine, player, heldItem } = event
     const { customData } = machine
     
-    // 获取当前时间戳
-    let currentTime = Date.now()
-    let lastProcessTime = customData.getLong("last_process_time") || 0
-    
-    // 如果距离上次处理时间小于1000ms，则跳过（避免重复执行）
-    if (currentTime - lastProcessTime < 1000) {
-        // 只更新动画，不执行其他逻辑
-        player.swing()
-        return
-    }
-    
-    // 更新最近处理时间戳
-    customData.putLong("last_process_time", currentTime)
-    
     // 1. 先处理木棍检测
     if (isStick(heldItem)) {
         // 直接读取最新的燃烧时间
@@ -193,7 +132,7 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
             let burnSeconds = Math.floor(burnTime / 20)
             let minutes = Math.floor(burnSeconds / 60)
             let seconds = burnSeconds % 60
-            // 直接发送消息，不使用防重复
+            // 直接发送消息
             player.sendSystemMessage(`锻铁炉剩余燃烧时间: ${minutes}分${seconds}秒`)
         }
         player.swing()
@@ -209,12 +148,12 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
 
         // 检查加入后是否会超出上限
         if (currentBurnTime + addedTime > MAX_BURN_TIME) {
-            sendCooldownMessage(player, `锻铁炉容纳不下这么多燃料！`)
+            player.sendSystemMessage(`锻铁炉容纳不下这么多燃料！`)
             player.swing()
             return
         }
         
-        // 计算新的燃烧时间，不超过上限（这里已经有上面的检查，但为了安全还是加上限制）
+        // 计算新的燃烧时间，不超过上限
         let newBurnTime = Math.min(currentBurnTime + addedTime, MAX_BURN_TIME)
         customData.putInt("burn_time", newBurnTime) 
         
@@ -228,7 +167,7 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
         let addedSeconds = Math.floor(addedTime / 20)
         let addedMinutes = Math.floor(addedSeconds / 60)
         let remainingSeconds = addedSeconds % 60
-        sendCooldownMessage(player, `添加${fuelCount}个燃料，增加${addedMinutes}分${remainingSeconds}秒燃烧时间`)
+        player.sendSystemMessage(`添加${fuelCount}个燃料，增加${addedMinutes}分${remainingSeconds}秒燃烧时间`)
         player.swing()
         return
     }
@@ -291,11 +230,10 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
         // 启动加热过程
         customData.putInt("heat_time", 40) // 40tick = 2秒暖机
         customData.putBoolean("is_melting", false) // 未开始溶解
-        customData.putInt("melting_timer", 20) // 溶解计时器改为20tick（1秒一次）
+        customData.putInt("melting_timer", 20) // 溶解计时器为20tick
         
         // 设置燃烧状态为已启动
         customData.putBoolean("burn_started", true)
-        
         // 点火后设置为 working 状态
         machine.setMachineState("working")
         player.playSound("minecraft:item.flintandsteel.use")
@@ -321,23 +259,23 @@ MBDMachineEvents.onTick("mbd2:bloomery", e => {
     let fuelStorage = fuelTrait ? fuelTrait.storage : null
     let fluidStorage = inputFluidTrait.storages[0]
     
-    //燃烧时间为0时强制设置机器状态为base
-    if (burnTime <= 0) {
-        machine.setMachineState("base")
-        // 同时重置相关状态变量（如果存在）
-        customData.putBoolean("burn_started", false)
-        customData.putInt("heat_time", 0)
-        customData.putBoolean("is_melting", false)
-        customData.putInt("melting_timer", 0)
-        customData.putInt("fuel_check_timer", 0)
-    }
-    
     let heatTime = customData.getInt("heat_time")
     let isMelting = customData.getBoolean("is_melting")
     let meltingTimer = customData.getInt("melting_timer")
     let burnTime = customData.getInt("burn_time") || 0
     let burnStarted = customData.getBoolean("burn_started") || false
     let fuelCheckTimer = customData.getInt("fuel_check_timer") || 0
+    
+    //燃烧时间为0时强制设置机器状态为base
+    if (burnTime <= 0) {
+        machine.setMachineState("base")
+    //重置相关状态变量
+        customData.putBoolean("burn_started", false)
+        customData.putInt("heat_time", 0)
+        customData.putBoolean("is_melting", false)
+        customData.putInt("melting_timer", 0)
+        customData.putInt("fuel_check_timer", 0)
+    }
     
     // 燃料检查计时器 - 每20tick（1秒）执行一次
     fuelCheckTimer++
@@ -426,7 +364,6 @@ MBDMachineEvents.onTick("mbd2:bloomery", e => {
                 currentFluidType = currentFluid.fluid
                 currentAmount = currentFluid.amount
             } catch(e) {
-                // 流体类型检查失败，可能是空槽
                 currentFluidType = null
                 currentAmount = 0
             }
@@ -456,8 +393,6 @@ MBDMachineEvents.onTick("mbd2:bloomery", e => {
                     if (canFill) {
                         // 消耗物品
                         storage.extractItem(i, 1, false)
-                        
-                        // 填充流体 - 完全参考原始代码方式
                         machine.getCapability(ForgeCapabilities.FLUID_HANDLER).ifPresent(handler => {
                             handler.fill(Fluid.of(fluidType, fluidAmount), "execute")
                         })
@@ -470,7 +405,6 @@ MBDMachineEvents.onTick("mbd2:bloomery", e => {
         // 燃烧时间结束，停止熔化
         customData.putBoolean("is_melting", false)
         customData.putInt("melting_timer", 0)
-        // 重置燃烧启动标志
         customData.putBoolean("burn_started", false)
     }
 })
