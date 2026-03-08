@@ -1,0 +1,65 @@
+{
+    "customGroups": [
+        {
+            "name": "arrow",
+            "items": [
+                "spartanweaponry:copper_arrow",
+                "spartanweaponry:iron_arrow",
+                "spartanweaponry:wooden_arrow",
+                "spartanweaponry:explosive_arrow",
+                "spartanweaponry:diamond_arrow",
+                "spartanweaponry:netherite_arrow",
+                "spartanweaponry:bolt",
+                "spartanweaponry:netherite_bolt",
+                "spartanweaponry:diamond_bolt",
+                "spartanweaponry:copper_bolt",
+                "spartanweaponry:tipped_copper_arrow",
+                "spartanweaponry:tipped_iron_arrow",
+                "spartanweaponry:tipped_wooden_arrow",
+                "spartanweaponry:tipped_explosive_arrow",
+                "spartanweaponry:tipped_diamond_arrow",
+                "spartanweaponry:tipped_netherite_arrow",
+                "spartanweaponry:tipped_bolt",
+                "spartanweaponry:tipped_netherite_bolt",
+                "spartanweaponry:tipped_diamond_bolt",
+                "spartanweaponry:tipped_copper_bolt",
+                
+                "spartanweaponry:spectral_bolt",
+                "minecraft:tipped_arrow",
+                "minecraft:spectral_arrow",
+                "alexscaves:burrowing_arrow",
+                "alexscaves:seeking_arrow"
+            ]
+        }
+    ],
+    "item": {
+        "arrow": {
+            "transforms": {
+                "right": {
+                    "scale": 1.0,
+                    "offX": 0.13999999,
+                    "offY": -0.13999997,
+                    "offZ": 0.06999999,
+                    "rotX": -45.0,
+                    "rotY": 93.0,
+                    "rotZ": 0.0,
+                    "pivotX": -0.06999999,
+                    "pivotY": 0.089999974,
+                    "pivotZ": -0.059999995
+                },
+                "left": {
+                    "scale": 1.0,
+                    "offX": 0.14999999,
+                    "offY": -0.13999997,
+                    "offZ": 0.059999995,
+                    "rotX": -132.0,
+                    "rotY": -89.0,
+                    "rotZ": 1.0,
+                    "pivotX": 0.06999999,
+                    "pivotY": 0.089999974,
+                    "pivotZ": -0.059999995
+                }
+            }
+        }
+    }
+}

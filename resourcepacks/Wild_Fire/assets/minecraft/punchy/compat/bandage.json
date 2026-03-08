@@ -1,0 +1,25 @@
+{
+    "customGroups": [
+        {
+            "name": "bandage",
+            "items": [
+                "kubejs:weak_bandage",
+                "legendarysurvivaloverhaul:bandage",
+                "kubejs:healing_paste",
+                "legendarysurvivaloverhaul:healing_herbs",
+                "legendarysurvivaloverhaul:plaster"
+            ]
+        }
+    ],
+    "item": {
+        "bandage": {
+            "customAnimation": [
+                {
+                    "type": "useItem",
+                    "name": "bandaging"
+                }
+            ]
+            
+        }
+    }
+}

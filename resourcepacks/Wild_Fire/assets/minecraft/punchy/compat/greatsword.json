@@ -1,0 +1,46 @@
+{
+    "customGroups": [
+        {
+            "name": "greatsword",
+            "items": [
+                "spartanweaponry:wooden_greatsword",
+                "spartanweaponry:stone_greatsword",
+                "spartanweaponry:golden_greatsword",
+                "spartanweaponry:netherite_greatsword",
+                "spartanweaponry:tin_greatsword",
+                "spartanweaponry:silver_greatsword",
+                "spartanweaponry:electrum_greatsword",
+                "spartanweaponry:lead_greatsword",
+                "spartanweaponry:nickel_greatsword",
+                "spartanweaponry:invar_greatsword",
+                "spartanweaponry:constantan_greatsword",
+                "spartanweaponry:platinum_greatsword",
+                "kubejs:copper_greatsword",
+                "kubejs:wrought_iron_greatsword",
+                "kubejs:steel_greatsword",
+                "kubejs:bismuth_bronze_greatsword",
+                "kubejs:black_bronze_greatsword",
+                "kubejs:bronze_greatsword",
+                "kubejs:black_steel_greatsword",
+                "kubejs:blue_steel_greatsword",
+                "kubejs:red_steel_greatsword"
+            ]
+        }
+    ],
+    "item": {
+        "greatsword": {
+            "customAnimation": [
+                {
+                    "type": "useItem",
+                    "name": "use_greatsword_dual_handed"
+                }
+            ],
+            "transforms": {
+                "right": {
+                    "scale": 1,
+                    "offZ": 0.052
+                }
+            }
+        }
+    }
+}

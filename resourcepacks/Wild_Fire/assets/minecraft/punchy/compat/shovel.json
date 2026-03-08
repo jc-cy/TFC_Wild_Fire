@@ -1,0 +1,21 @@
+{
+    "customGroups": [
+        {
+            "name": "shovel",
+            "items": [
+                "kaleidoscope_cookery:kitchen_shovel"
+            ]
+        }
+    ],
+    "item": {
+        "shovel": {
+            "customAnimation": [
+                {
+                    "type": "useItem",
+                    "name": "mining_digging"
+                }
+            ]
+            
+        }
+    }
+}

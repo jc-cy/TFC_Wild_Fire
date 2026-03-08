@@ -1,0 +1,103 @@
+{
+  "customGroups": [
+    {
+      "name": "weapons_throwing",
+      "items": [
+        "spartanweaponry:wooden_tomahawk",
+        "spartanweaponry:stone_tomahawk",
+        "spartanweaponry:golden_tomahawk",
+        "spartanweaponry:netherite_tomahawk",
+        "spartanweaponry:tin_tomahawk",
+        "spartanweaponry:silver_tomahawk",
+        "spartanweaponry:electrum_tomahawk",
+        "spartanweaponry:lead_tomahawk",
+        "spartanweaponry:nickel_tomahawk",
+        "spartanweaponry:invar_tomahawk",
+        "spartanweaponry:constantan_tomahawk",
+        "spartanweaponry:platinum_tomahawk",
+        "spartanweaponry:aluminum_tomahawk",
+        "kubejs:copper_tomahawk",
+        "kubejs:wrought_iron_tomahawk",
+        "kubejs:steel_tomahawk",
+        "kubejs:bismuth_bronze_tomahawk",
+        "kubejs:black_bronze_tomahawk",
+        "kubejs:bronze_tomahawk",
+        "kubejs:black_steel_tomahawk",
+        "kubejs:blue_steel_tomahawk",
+        "kubejs:red_steel_tomahawk",
+        "spartanweaponry:wooden_boomerang",
+        "spartanweaponry:stone_boomerang",
+        "spartanweaponry:golden_boomerang",
+        "spartanweaponry:netherite_boomerang",
+        "spartanweaponry:tin_boomerang",
+        "spartanweaponry:silver_boomerang",
+        "spartanweaponry:electrum_boomerang",
+        "spartanweaponry:lead_boomerang",
+        "spartanweaponry:nickel_boomerang",
+        "spartanweaponry:invar_boomerang",
+        "spartanweaponry:constantan_boomerang",
+        "spartanweaponry:platinum_boomerang",
+        "spartanweaponry:aluminum_boomerang",
+        "kubejs:copper_boomerang",
+        "kubejs:wrought_iron_boomerang",
+        "kubejs:steel_boomerang",
+        "kubejs:bismuth_bronze_boomerang",
+        "kubejs:black_bronze_boomerang",
+        "kubejs:bronze_boomerang",
+        "kubejs:black_steel_boomerang",
+        "kubejs:blue_steel_boomerang",
+        "kubejs:red_steel_boomerang",
+        "spartanweaponry:wooden_throwing_knife",
+        "spartanweaponry:stone_throwing_knife",
+        "spartanweaponry:golden_throwing_knife",
+        "spartanweaponry:netherite_throwing_knife",
+        "spartanweaponry:tin_throwing_knife",
+        "spartanweaponry:silver_throwing_knife",
+        "spartanweaponry:electrum_throwing_knife",
+        "spartanweaponry:lead_throwing_knife",
+        "spartanweaponry:nickel_throwing_knife",
+        "spartanweaponry:invar_throwing_knife",
+        "spartanweaponry:constantan_throwing_knife",
+        "spartanweaponry:platinum_throwing_knife",
+        "spartanweaponry:aluminum_throwing_knife",
+        "kubejs:copper_throwing_knife",
+        "kubejs:wrought_iron_throwing_knife",
+        "kubejs:steel_throwing_knife",
+        "kubejs:bismuth_bronze_throwing_knife",
+        "kubejs:black_bronze_throwing_knife",
+        "kubejs:bronze_throwing_knife",
+        "kubejs:black_steel_throwing_knife",
+        "kubejs:blue_steel_throwing_knife",
+        "kubejs:red_steel_throwing_knife"
+      ]
+    }
+  ],
+  "item": {
+    "weapons_throwing": {
+      "kind": "TRIDENT",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "var_3": "attack_3",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "useItem",
+          "name": "use_throwing_weapons"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.052
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.052
+        }
+      }
+    }
+  }
+}

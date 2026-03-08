@@ -256,13 +256,13 @@
 		#Position and rotation settings
 		#x position27
 		#Range: > -2147483648
-		x_position27 = -8
+		x_position27 = -14
 		#y position28
 		#Range: > -2147483648
 		y_position28 = 55
 		#z position29
 		#Range: > -2147483648
-		z_position29 = 15
+		z_position29 = 24
 		#x rotation27
 		#Range: > -2147483648
 		x_rotation27 = -4

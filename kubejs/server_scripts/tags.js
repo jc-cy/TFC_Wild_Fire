@@ -257,6 +257,84 @@ ServerEvents.tags("block", event => {
     }),
     ServerEvents.tags("item", event => {
 
+        //合理的种子物品
+        event.add('tfc:small_fishing_bait',
+            [
+                "tfc:seeds/wheat",
+                "tfc:seeds/barley",
+                "tfc:seeds/oat",
+                "tfc:seeds/rye",
+                "tfc:seeds/maize",
+                "tfc:seeds/rice",
+                "tfc:seeds/beet",
+                "tfc:seeds/cabbage",
+                "tfc:seeds/carrot",
+                "tfc:seeds/garlic",
+                "tfc:seeds/green_bean",
+                "tfc:seeds/red_bell_pepper",
+                "tfc:seeds/yellow_bell_pepper",
+                "tfc:seeds/melon",
+                "tfc:crop/horsetail_seeds",
+                "tfc:seeds/onion",
+                "tfc:seeds/soybean",
+                "tfc:seeds/squash",
+                "tfc:seeds/sugarcane",
+                "tfc:seeds/tomato",
+                "tfc:seeds/jute",
+                "tfc:seeds/papyrus",
+                "tfc:seeds/pumpkin",
+                "tfc:crop/hops_seeds",
+                "tfc:crop/marigold_seeds",
+                "tfc:crop/trillium_seeds",
+                "tfc:crop/labrador_tea_seeds",
+                "tfc:crop/red_palm_seeds"
+            ])
+
+        event.add('forge:tools/tridents',
+            [
+                "alexscaves:limestone_spear",
+                "alexscaves:extinction_spear",
+                "alexscaves:frostmint_spear",
+                "kubejs:rock_tool/diamond_javelin",
+                "kubejs:rock_tool/obsidian_javelin",
+                "kubejs:rock_tool/flint_javelin",
+                "tfc:stone/javelin/igneous_extrusive",
+                "tfc:stone/javelin/igneous_intrusive",
+                "tfc:stone/javelin/metamorphic",
+                "tfc:stone/javelin/sedimentary",
+                "tfc:metal/javelin/bismuth_bronze",
+                "tfc:metal/javelin/black_bronze",
+                "tfc:metal/javelin/bronze",
+                "tfc:metal/javelin/copper",
+                "tfc:metal/javelin/wrought_iron",
+                "tfc:metal/javelin/steel",
+                "tfc:metal/javelin/black_steel",
+                "tfc:metal/javelin/blue_steel",
+                "tfc:metal/javelin/red_steel",
+                "spartanweaponry:wooden_javelin",
+                "spartanweaponry:stone_javelin",
+                "spartanweaponry:golden_javelin",
+                "spartanweaponry:netherite_javelin",
+                "spartanweaponry:tin_javelin",
+                "spartanweaponry:silver_javelin",
+                "spartanweaponry:electrum_javelin",
+                "spartanweaponry:lead_javelin",
+                "spartanweaponry:nickel_javelin",
+                "spartanweaponry:invar_javelin",
+                "spartanweaponry:constantan_javelin",
+                "spartanweaponry:platinum_javelin",
+                "spartanweaponry:aluminum_javelin",
+                "kubejs:copper_javelin",
+                "kubejs:wrought_iron_javelin",
+                "kubejs:steel_javelin",
+                "kubejs:bismuth_bronze_javelin",
+                "kubejs:black_bronze_javelin",
+                "kubejs:bronze_javelin",
+                "kubejs:black_steel_javelin",
+                "kubejs:blue_steel_javelin",
+                "kubejs:red_steel_javelin"
+            ])
+
         event.add('forge:tools/hammers', '#tfc:hammers')
 
         const metals = [
@@ -648,39 +726,7 @@ ServerEvents.tags("block", event => {
                 "tfc:blubber"
 
             ])
-            
-            //合理的种子物品
-        event.add('tfc:seeds',
-            [
-                "tfc:seeds/wheat",
-                "tfc:seeds/barley",
-                "tfc:seeds/oat",
-                "tfc:seeds/rye",
-                "tfc:seeds/maize",
-                "tfc:seeds/rice",
-                "tfc:seeds/beet",
-                "tfc:seeds/cabbage",
-                "tfc:seeds/carrot",
-                "tfc:seeds/garlic",
-                "tfc:seeds/green_bean",
-                "tfc:seeds/red_bell_pepper",
-                "tfc:seeds/yellow_bell_pepper",
-                "tfc:seeds/melon",
-                "tfc:crop/horsetail_seeds",
-                "tfc:seeds/onion",
-                "tfc:seeds/soybean",
-                "tfc:seeds/squash",
-                "tfc:seeds/sugarcane",
-                "tfc:seeds/tomato",
-                "tfc:seeds/jute",
-                "tfc:seeds/papyrus",
-                "tfc:seeds/pumpkin",
-                "tfc:crop/hops_seeds",
-                "tfc:crop/marigold_seeds",
-                "tfc:crop/trillium_seeds",
-                "tfc:crop/labrador_tea_seeds",
-                "tfc:crop/red_palm_seeds"
-            ])
+
 
         //可以作为杠杆锤的砧的砧
         event.add('vintageimprovements:anvils',

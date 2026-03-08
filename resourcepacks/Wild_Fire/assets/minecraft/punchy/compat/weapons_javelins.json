@@ -1,0 +1,75 @@
+{
+  "customGroups": [
+    {
+      "name": "weapons_javelins",
+      "items": [
+        "alexscaves:limestone_spear",
+        "alexscaves:extinction_spear",
+        "alexscaves:frostmint_spear",
+        "kubejs:rock_tool/diamond_javelin",
+        "kubejs:rock_tool/obsidian_javelin",
+        "kubejs:rock_tool/flint_javelin",
+        "tfc:stone/javelin/igneous_extrusive",
+        "tfc:stone/javelin/igneous_intrusive",
+        "tfc:stone/javelin/metamorphic",
+        "tfc:stone/javelin/sedimentary",
+        "tfc:metal/javelin/bismuth_bronze",
+        "tfc:metal/javelin/black_bronze",
+        "tfc:metal/javelin/bronze",
+        "tfc:metal/javelin/copper",
+        "tfc:metal/javelin/wrought_iron",
+        "tfc:metal/javelin/steel",
+        "tfc:metal/javelin/black_steel",
+        "tfc:metal/javelin/blue_steel",
+        "tfc:metal/javelin/red_steel",
+        "spartanweaponry:wooden_javelin",
+        "spartanweaponry:stone_javelin",
+        "spartanweaponry:golden_javelin",
+        "spartanweaponry:netherite_javelin",
+        "spartanweaponry:tin_javelin",
+        "spartanweaponry:silver_javelin",
+        "spartanweaponry:electrum_javelin",
+        "spartanweaponry:lead_javelin",
+        "spartanweaponry:nickel_javelin",
+        "spartanweaponry:invar_javelin",
+        "spartanweaponry:constantan_javelin",
+        "spartanweaponry:platinum_javelin",
+        "spartanweaponry:aluminum_javelin",
+        "kubejs:copper_javelin",
+        "kubejs:wrought_iron_javelin",
+        "kubejs:steel_javelin",
+        "kubejs:bismuth_bronze_javelin",
+        "kubejs:black_bronze_javelin",
+        "kubejs:bronze_javelin",
+        "kubejs:black_steel_javelin",
+        "kubejs:blue_steel_javelin",
+        "kubejs:red_steel_javelin"
+      ]
+    }
+  ],
+  "item": {
+    "weapons_javelins": {
+      "kind": "TRIDENT",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_trident"
+        },
+        {
+          "type": "useItem",
+          "name": "use_trident"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.052
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.052
+        }
+      }
+    }
+  }
+}

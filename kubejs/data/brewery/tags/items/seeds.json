@@ -1,9 +1,6 @@
 {
   "replace": false,
   "values": [
-    "#c:seeds",
-    "#forge:seeds",
-    "#tfc:seeds"
   ]
 }
 

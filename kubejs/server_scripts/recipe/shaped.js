@@ -935,7 +935,7 @@ ServerEvents.recipes(event => {
     ],
         {
             a: 'vintageimprovements:andesite_rod',
-            b: 'farmersdelight:canvas',
+            b: 'firmalife:drying_mat',
             c: '#tfc:lumber',
             d: 'minecraft:glass_pane'
 
