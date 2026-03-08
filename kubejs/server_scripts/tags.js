@@ -650,7 +650,7 @@ ServerEvents.tags("block", event => {
             ])
             
             //合理的种子物品
-        event.add('forge:seeds',
+        event.add('tfc:seeds',
             [
                 "tfc:seeds/wheat",
                 "tfc:seeds/barley",

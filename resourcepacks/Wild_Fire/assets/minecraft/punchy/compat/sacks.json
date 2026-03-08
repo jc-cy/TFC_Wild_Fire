@@ -1,0 +1,102 @@
+{
+  "customGroups": [
+    {
+      "name": "sacks",
+      "items": [
+        "sns:frame_pack",
+        "sns:ore_sack",
+        "sns:burlap_sack",
+        "sns:leather_sack",
+        "sns:seed_pouch"
+      ]
+    },
+    {
+      "name": "straw_basket",
+      "items": [
+        "sns:straw_basket"
+      ]
+    }
+  ],
+  "item": {
+    "sacks": {
+      "kind": "LANTERN",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.05,
+          "offY": 0,
+          "rotX": -100
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.05,
+          "offY": 0,
+          "rotX": -100
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offY": 0.2,
+          "rotX": -15.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offY": 0.2,
+          "rotX": -15.0
+        }
+      },
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 55.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ]
+    },
+    "straw_basket": {
+      "kind": "LANTERN",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.05,
+          "offY": -0.9,
+          "rotX": -100,
+          "offZ": -0.3
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.05,
+          "offY": -0.9,
+          "rotX": -100,
+          "offZ": -0.3
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offY": 0.2,
+          "rotX": -15.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offY": 0.2,
+          "rotX": -15.0
+        }
+      },
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 55.0,
+          "force": 0.1,
+          "speed": 0.7,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ]
+    }
+  }
+}

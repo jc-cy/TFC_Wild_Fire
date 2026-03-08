@@ -1,0 +1,20 @@
+{
+  "item": {
+    "FULL_BLOCK": {
+      "transforms": {
+        "left": {
+          "scale": 0.6600003,
+          "offX": -0.01,
+          "offY": 0.26000002,
+          "offZ": 0.04,
+          "rotX": 4.0,
+          "rotY": 24.0,
+          "rotZ": -3.0,
+          "pivotX": 0.01,
+          "pivotY": -0.03,
+          "pivotZ": 0.09999999
+        }
+      }
+    }
+  }
+}

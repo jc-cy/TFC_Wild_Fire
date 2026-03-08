@@ -329,7 +329,7 @@ TFCEvents.data(event => {
       f.hunger(1.5);
       f.saturation(0.5);
       f.grain(0.2);
-      f.decayModifier(0.35)
+      f.decayModifier(0.15);
       f.water(-15)
     })
   });
@@ -346,27 +346,38 @@ TFCEvents.data(event => {
       f.hunger(1.5);
       f.saturation(0.5);
       f.grain(0.02);
-      f.decayModifier(0.45)
+      f.decayModifier(0.45);
       f.water(-3)
     })
   });
-  event.foodItem('cuisinedelight:suspicious_mix', f => { // 蛋奶沙司
-    f.hunger(5 / 5); f.saturation(2 / 5); f.dairy(3); f.fruit(3); f.water(15); f.decayModifier(0.2);
+
+  event.foodItem('farmersdelight:cooked_rice', f => { // 米饭
+    f.hunger(10)
+    f.saturation(3)
+    f.grain(2)
+    f.decayModifier(0.9)
   })
-  event.foodItem('cuisinedelight:suspicious_mix', f => { // 泡菜
-    f.hunger(5 / 5); f.saturation(2 / 5); f.vegetables(1.8); f.water(1); f.decayModifier(0.2);
+
+  event.foodItem('farmersdelight:glow_berry_custard', f => { // 蛋奶沙司
+    f.hunger(5 / 5); f.saturation(2 / 5); f.dairy(3); f.fruit(3); f.water(15); f.decayModifier(0.9)
   })
-  event.foodItem('cuisinedelight:suspicious_mix', f => { // 蛆
-    f.hunger(5 / 5); f.saturation(2 / 5); f.protein(0.5); f.water(0.1); f.decayModifier(16);
+  event.foodItem('brewinandchewin:kimchi', f => { // 泡菜
+    f.hunger(5 / 5); f.saturation(2 / 5); f.vegetables(1.8); f.water(1); f.decayModifier(0.2)
   })
-  event.foodItem('cuisinedelight:suspicious_mix', f => { // 油炸蛆
-    f.hunger(5 / 5); f.saturation(2 / 5); f.protein(2); f.water(0.1); f.decayModifier(7);
+  event.foodItem('born_in_chaos_v1:corpse_maggot', f => { // 蛆
+    f.hunger(5 / 5); f.saturation(2 / 5); f.protein(0.5); f.water(0.1); f.decayModifier(16)
+  })
+  event.foodItem('alexsmobs:maggot', f => { // 蛆
+    f.hunger(5 / 5); f.saturation(2 / 5); f.protein(0.5); f.water(0.1); f.decayModifier(16)
+  })
+  event.foodItem('born_in_chaos_v1:fried_maggot', f => { // 油炸蛆
+    f.hunger(5 / 5); f.saturation(2 / 5); f.protein(2); f.water(0.1); f.decayModifier(7)
   })
   event.foodItem('butcher:pigcorpse', f => { // 猪
-    f.decayModifier(7);
+    f.decayModifier(7)
   })
   event.foodItem('butcher:pig_corpse_item', f => { // 猪
-    f.decayModifier(7);
+    f.decayModifier(7)
   })
 
   event.foodItem('minecraft:enchanted_golden_apple', food => { // 附魔金苹果
@@ -381,7 +392,7 @@ TFCEvents.data(event => {
     food.decayModifier(0)
   })
   /*food_data("minecraft:enchanted_golden_apple", 100, 100, 100, 0, 100, 100, 100, 100, 100)*/
-  food_data("cuisinedelight:suspicious_mix", 2, 0, null, 3)
+  /*food_data("cuisinedelight:suspicious_mix", 2, 0, null, 3)*/
   /*
     event.foodItem('cuisinedelight:suspicious_mix', food => { // 炒锅乐事-可疑大杂烩
       food.hunger(2)

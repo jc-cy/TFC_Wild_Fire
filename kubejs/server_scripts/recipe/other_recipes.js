@@ -784,6 +784,7 @@ ServerEvents.recipes(event => {
     { item1: 'tfc:metal/rod/wrought_iron', item2: 'kubejs:material_component_wrought_iron' },
     { item1: 'tfc:metal/rod/steel', item2: 'kubejs:material_component_steel' },
     { item1: 'tfc:metal/rod/black_steel', item2: 'kubejs:material_component_black_steel' },
+    { item1: 'tfc:metal/rod/brass', item2: 'tfc:anvil/brass_mechanisms' }
     
   ]
   component.forEach(item => {
@@ -818,7 +819,7 @@ ServerEvents.recipes(event => {
       "type": "tfc:barrel_sealed",
       "input_fluid": { "ingredient": item, "amount": 100 },
       "output_item": { "item": "kaleidoscope_cookery:oil" },
-      "duration": 1000
+      "duration": 7000
     })
       .id(`tfc:barrel_sealed/oil/${idPath}`); 
   });
@@ -889,9 +890,97 @@ ServerEvents.recipes(event => {
       }]
     }).id(`create:heatslurry/food/${dough.name1}_dough`)
   });
+  //=========================================================
+  //=========================================================
 
-/*000
-*/
+  //蒸米饭啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+
+  event.custom({
+    "type": "kaleidoscope_cookery:stockpot",
+    //提取物
+    "carrier": { "item": "minecraft:bowl" },
+    //烹饪贴图
+    "cooking_texture": "kubejs:stockpot/rice_cooking",
+    //完成贴图
+    "finished_texture": "kubejs:stockpot/rice_finished",
+    //输入食材
+    "ingredients": [
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" }
+    ],
+    //输出食材
+    "result":
+      { "item": "farmersdelight:cooked_rice" },
+    //所需汤底
+    "soup_base": "minecraft:water",
+    //所需时间
+    "time": 600,
+  }).id(`kaleidoscope_cookery:stockpot/food/rice_cooking_1`);
+
+  event.custom({
+    "type": "kaleidoscope_cookery:stockpot",
+    "carrier": { "item": "minecraft:bowl" },
+    "cooking_texture": "kubejs:stockpot/rice_cooking", "finished_texture": "kubejs:stockpot/rice_finished",
+    "ingredients": [
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" }
+    ],
+    "result": { "count": 2, "item": "farmersdelight:cooked_rice" }, "soup_base": "minecraft:water", "time": 600,
+  }).id(`kaleidoscope_cookery:stockpot/food/rice_cooking_2`);
+
+  event.custom({
+    "type": "kaleidoscope_cookery:stockpot",
+    "carrier": { "item": "minecraft:bowl" },
+    "cooking_texture": "kubejs:stockpot/rice_cooking", "finished_texture": "kubejs:stockpot/rice_finished",
+    "ingredients": [
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" }
+    ],
+    "result": { "count": 3, "item": "farmersdelight:cooked_rice" }, "soup_base": "minecraft:water", "time": 600,
+  }).id(`kaleidoscope_cookery:stockpot/food/rice_cooking_3`);
+
+  event.custom({
+    "type": "kaleidoscope_cookery:stockpot",
+    "carrier": { "item": "minecraft:bowl" },
+    "cooking_texture": "kubejs:stockpot/rice_cooking", "finished_texture": "kubejs:stockpot/rice_finished",
+    "ingredients": [
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" }
+    ],
+    "result": { "count": 4, "item": "farmersdelight:cooked_rice" }, "soup_base": "minecraft:water", "time": 600,
+  }).id(`kaleidoscope_cookery:stockpot/food/rice_cooking_4`);
+
+  event.custom({
+    "type": "kaleidoscope_cookery:stockpot",
+    "carrier": { "item": "minecraft:bowl" },
+    "cooking_texture": "kubejs:stockpot/rice_cooking", "finished_texture": "kubejs:stockpot/rice_finished",
+    "ingredients": [
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" },
+      { "item": "tfc:food/rice_grain" }
+    ],
+    "result": { "count": 5, "item": "farmersdelight:cooked_rice" }, "soup_base": "minecraft:water", "time": 600,
+  }).id(`kaleidoscope_cookery:stockpot/food/rice_cooking_5`);
+  //=========================================================
+  //=========================================================
 
   event.custom(
     {

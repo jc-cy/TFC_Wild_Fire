@@ -1,0 +1,63 @@
+{
+  "customGroups": [
+    {
+      "name": "skillet",
+      "items": [
+        "farmersdelight:skillet",
+        "survivorsdelight:skillet/farmer",
+        "survivorsdelight:unfinished_skillet/copper",
+        "survivorsdelight:skillet/copper",
+        "survivorsdelight:skillet/copper_silver",
+        "survivorsdelight:skillet/copper_tin",
+        "survivorsdelight:unfinished_skillet/cast_iron",
+        "survivorsdelight:skillet/cast_iron",
+        "survivorsdelight:unfinished_skillet/steel",
+        "survivorsdelight:skillet/steel",
+        "survivorsdelight:unfinished_skillet/black_steel",
+        "survivorsdelight:skillet/black_steel",
+        "survivorsdelight:unfinished_skillet/red_steel",
+        "survivorsdelight:skillet/red_steel",
+        "survivorsdelight:unfinished_skillet/blue_steel",
+        "survivorsdelight:skillet/blue_steel"
+      ]
+    }
+  ],
+  "item": {
+    "skillet": {
+      "kind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offZ": 0.1,
+          "offX": 0.04,
+          "rotX": 0.0,
+          "offY": -0.2
+        },
+        "left": {
+          "scale": 1.0,
+          "offZ": 0.1,
+          "offX": 0.04,
+          "rotX": 0.0,
+          "offY": -0.2
+        }
+      }
+    }
+  }
+}

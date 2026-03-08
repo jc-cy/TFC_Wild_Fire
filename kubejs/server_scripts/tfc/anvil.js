@@ -258,6 +258,13 @@ ServerEvents.recipes(e => {
     ]
   ).tier(1).bonus(false).id("kubejs:tfc/anvil/andesite_alloy_sheet/anvil")//安山合金板
   tfc.anvil(
+    'vintageimprovements:andesite_rod',
+    'create:andesite_alloy',
+    [
+      'hit_any',
+    ]
+  ).tier(1).bonus(false).id("kubejs:tfc/anvil/andesite_rod/anvil")//安山合金棍
+  tfc.anvil(
     '4x create:shaft',
     'create:andesite_alloy',
     [

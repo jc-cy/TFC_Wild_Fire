@@ -8464,11 +8464,5 @@
     "tfc.advancements.world.minerologist.title": "矿物学家",
     "tfc.advancements.world.minerologist.description": "收集所有非金属矿物",
     "tfc.advancements.world.metallurgist.title": "炼金术师",
-    "tfc.advancements.world.metallurgist.description": "收集所有金属样本",
-    "tfc.jei.diamond_knapping": "钻石敲制",
-    "tfc.jei.obsidian_knapping": "黑曜石敲制",
-    "block.tfc.white_kaolin_clay.prospected": "白高岭土",
-    "block.tfc.pink_kaolin_clay.prospected": "粉高岭土",
-    "block.tfc.red_kaolin_clay.prospected": "红高岭土",
-    "block.tfc.kaolin_clay_grass.prospected": "高岭土"
+    "tfc.advancements.world.metallurgist.description": "收集所有金属样本"
 }
