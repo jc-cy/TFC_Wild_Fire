@@ -1,0 +1,5 @@
+
+[common]
+	#是否计算负重 / enable equips' load attribute or not
+	enable_equip_load = true
+

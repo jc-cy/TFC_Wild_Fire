@@ -21,13 +21,6 @@
             "legendarysurvivaloverhaul:large_canteen",
             "legendarysurvivaloverhaul:canteen",
             "legendarysurvivaloverhaul:seasonal_calendar",
-            "brewinandchewin:pizza_slice",
-            "brewinandchewin:scarlet_cheese_wedge",
-            "brewinandchewin:scarlet_cheese_wheel",
-            "brewinandchewin:unripe_scarlet_cheese_wheel",
-            "brewinandchewin:flaxen_cheese_wheel",
-            "brewinandchewin:unripe_flaxen_cheese_wheel",
-            "brewinandchewin:pizza",
             "createdieselgenerators:mold",
             "createdieselgenerators:wire_cutters",
             "createdieselgenerators:hammer",
@@ -110,6 +103,12 @@
             "butcher:diorite_brick_slab",
             "butcher:straynecklace_chestplate", 
 
+            "kaleidoscope_cookery:transmutation_lunch_bag",
+
+            "sns:crafting/lunchbox",
+            "sns:mob_net",
+            "sns:quiver",
+
             "farm_and_charm:beetroot_bag",
             "farm_and_charm:onion_bag",
             "farm_and_charm:potato_bag",
@@ -126,6 +125,14 @@
 
             "patchouli:guide_book",
 
+            "brewinandchewin:pizza_slice",
+            "brewinandchewin:scarlet_cheese_wedge",
+            "brewinandchewin:scarlet_cheese_wheel",
+            "brewinandchewin:unripe_scarlet_cheese_wheel",
+            "brewinandchewin:flaxen_cheese_wheel",
+            "brewinandchewin:unripe_flaxen_cheese_wheel",
+            "brewinandchewin:pizza",
+            
             "alexsmobs:animal_dictionary"
         ],
         "resultItems": "minecraft:air"

@@ -1,0 +1,33 @@
+
+[ItemZoomConfig]
+	#是否启用物品尺寸缩放。
+	enable = false
+	#不会对第一人称下自己手中的物品生效。
+	DisableFirstPersonal = false
+	#缩放系数。
+	scale = 3.0
+	#白名单里填物品ID。如果不为空，则只对填上的物品生效。
+	Whitelist = []
+
+[NoDamageBarConfig]
+	#是否启用隐藏物品耐久条。
+	enable = false
+	#白名单里填物品ID。如果不为空，则只对填上的物品生效。
+	Whitelist = []
+
+[VariedModelConfig]
+	#是否自动读取所有闲置模型。
+	loadIdleModel = false
+	#强制预加载的模型。
+	PresetModel = []
+
+[MerrySnowConfig]
+	#细雪有台阶碰撞箱且无冷冻伤害。
+	merryPowderSnow = true
+	#下雪区块不刷怪。
+	merrySnowWeather = true
+
+[RaidAnywhereConfig]
+	#使袭击的发生与村庄、村民或者工作方块再也没有关系。
+	enable = false
+

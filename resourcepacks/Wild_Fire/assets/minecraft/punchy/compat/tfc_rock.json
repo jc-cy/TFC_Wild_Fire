@@ -1,0 +1,60 @@
+{
+  "customGroups": [
+    {
+      "name": "tfc_rock",
+      "items": [
+        "tfc:rock/loose/granite",
+        "tfc:rock/loose/mossy_granite",
+        "tfc:rock/loose/diorite",
+        "tfc:rock/loose/gabbro",
+        "tfc:rock/loose/shale",
+        "tfc:rock/loose/claystone",
+        "tfc:rock/loose/limestone",
+        "tfc:rock/loose/conglomerate",
+        "tfc:rock/loose/quartzite",
+        "tfc:rock/loose/dacite",
+        "tfc:rock/loose/andesite",
+        "tfc:rock/loose/basalt",
+        "tfc:rock/loose/rhyolite",
+        "tfc:rock/loose/chalk",
+        "tfc:rock/loose/chert",
+        "tfc:rock/loose/dolomite",
+        "tfc:rock/loose/slate",
+        "tfc:rock/loose/phyllite",
+        "tfc:rock/loose/schist",
+        "tfc:rock/loose/gneiss",
+        "tfc:rock/loose/marble"
+      ]
+    }
+  ],
+  "item": {
+    "tfc_rock": {
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": -0.059999995,
+          "offY": -0.27,
+          "offZ": -0.01,
+          "rotX": -1.0,
+          "rotY": -1.0,
+          "rotZ": 8.0,
+          "pivotX": 0.0,
+          "pivotY": 0.049999997,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 0.97,
+          "offX": 0.059999995,
+          "offY": -0.25000003,
+          "offZ": 0.09999999,
+          "rotX": -1.0,
+          "rotY": -167.0,
+          "rotZ": -4.0,
+          "pivotX": 0.09999999,
+          "pivotY": 0.049999997,
+          "pivotZ": -0.03
+        }
+      }
+    }
+  }
+}

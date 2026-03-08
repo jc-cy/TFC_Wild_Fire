@@ -38,7 +38,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(li)$(item)黑色染料$()用作$(l:mechanics/scribing_table)命名台$()。$(li)$(item)红色染料$()用作$(l:mechanics/powderkegs)火药桶$()。$(li)未硬化的$(l:mechanics/decay#small_vessels)小缸$()与$(l:mechanics/decay#large_vessels)大缸$()也可以被染色哦$()！",
+      "text": "$(li)$(item)黑色染料$()用作$(l:mechanics/scribing_table)命名台$()。$(li)$(item)红色染料$()用作$(l:mechanics/powderkegs)火药桶$()。$(li)未烧制的$(l:mechanics/decay#small_vessels)小缸$()与$(l:mechanics/decay#large_vessels)大缸$()也可以被染色哦$()！",
       "title": "Miscellaneous"
     }
   ],

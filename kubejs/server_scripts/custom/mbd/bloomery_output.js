@@ -10,8 +10,7 @@ MBDMachineEvents.onTick("mbd2:bloomery_output", e => {
         return
     }
     
-    let storage = outputTrait.storage
-    
+    let storage = outputTrait.storage   
     // 检查是否有物品
     let hasItems = false
     for (let i = 0; i < storage.getSlots(); i++) {
@@ -20,8 +19,7 @@ MBDMachineEvents.onTick("mbd2:bloomery_output", e => {
             hasItems = true
             break
         }
-    }
-    
+    }    
     if (hasItems) {
         machine.setMachineState("working")
     } else {

@@ -67,9 +67,6 @@
   "immersiveengineering": {
     "multiblock_icon": true
   },
-  "mbd2thread": {
-    "recipe_thread_hud": true
-  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -180,11 +177,21 @@
   "jadeaddons.lootr": {
     "info": true
   },
+  "kaleidoscope_cookery": {
+    "chopping_board": true,
+    "shawarma_spit": true,
+    "recipe_block": true,
+    "millstone": true,
+    "enamel_basin": true
+  },
   "supplementaries": {
     "hat_stand": true
   },
   "petrolpark": {
     "contamination": true
+  },
+  "kaleidoscope_tavern": {
+    "barrel": true
   },
   "survivorsdelight": {
     "feast_decay": true

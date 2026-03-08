@@ -11,7 +11,7 @@
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/bowl_4",
-      "text": "使用敲的方法一次可以制作多个未硬化的碗。"
+      "text": "使用敲的方法一次可以制作多个未烧制的碗。"
     },
     {
       "type": "patchouli:crafting",

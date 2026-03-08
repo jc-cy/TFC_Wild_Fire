@@ -1,0 +1,41 @@
+
+[CelestialBody]
+	#是否启用行星感知增强，该效果为对过远的星球进行非线性放大。
+	#Whether to enable planetary perception enhancement, which nonlinearly magnifies distant planets.
+	celestial_body_perception_enhancement = false
+
+[Shader]
+	#曝光。
+	#Exposure.
+	exposure = 10.0
+
+	[Shader.Star]
+		#是否启用恒星泛光。
+		#Whether to enable star bloom.
+		star_bloom = true
+		#恒星泛光范围。
+		#Whether to enable star bloom.
+		star_bloom_size = 1.0
+		#镜头散射光线条数。
+		#Number of lens flare streaks.
+		star_scatter_count = 16
+
+	[Shader.Planet]
+		#是否启用行星大气层绘制。
+		#Enable planetary atmosphere rendering.
+		planet_atmosphere = true
+		#大气积分步数。
+		#Atmospheric integration steps.
+		planet_atmosphere_step_count = 10
+
+	[Shader.BlackHole]
+		#是否启用黑洞引力透镜。
+		#Enable black hole gravitational lensing.
+		black_hole = true
+		#黑洞引力透镜光速。
+		#Black hole gravitational lensing speed of light.
+		black_hole_light_speed = 2.99792458E8
+		#黑洞引力透镜引力常数。
+		#Black hole gravitational lensing gravitational constant.
+		black_hole_gravitational_constant = 6.676E-11
+

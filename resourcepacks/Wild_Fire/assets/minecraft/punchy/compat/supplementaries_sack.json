@@ -1,0 +1,53 @@
+{
+  "customGroups": [
+    {
+      "name": "supplementaries_sack",
+      "items": [
+        "supplementaries:sack"
+      ]
+    }
+  ],
+  "item": {
+    "supplementaries_sack": {
+      "kind": "LANTERN",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.05,
+          "offY": -0.4,
+          "rotX": 0.0,
+          "offZ": 0.1
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.05,
+          "offY": -0.4,
+          "rotX": 0.0,
+          "offZ": 0.1
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offY": 0.2,
+          "rotX": -15.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offY": 0.2,
+          "rotX": -15.0
+        }
+      },
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 55.0,
+          "force": 0.1,
+          "speed": 1.0,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ]
+    }
+  }
+}

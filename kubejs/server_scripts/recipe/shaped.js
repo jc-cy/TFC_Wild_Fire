@@ -3,49 +3,49 @@ ServerEvents.recipes(event => {
     const id_in = "kubejs:recipe/shaped/"
     event.shaped('minecraft:anvil', ['aaa', ' a ', 'aaa'], { a: 'tfc:metal/double_ingot/cast_iron' })//铁砧
 
- event.shaped("create:copper_diving_helmet", [' a ', ' b ', 'cdc'], {
-        a: "tfc:metal/unfinished_helmet/copper", 
+    event.shaped("create:copper_diving_helmet", [' a ', ' b ', 'cdc'], {
+        a: "tfc:metal/unfinished_helmet/copper",
         b: "firmalife:reinforced_glass",
         c: "sns:leather_strip",
-        d:"kubejs:copper_fragments",
-       
+        d: "kubejs:copper_fragments",
+
     })//潜水头盔
 
-     event.shaped("create:copper_diving_boots", ['aba', 'c c'], {
-        a: "sns:leather_strip", 
+    event.shaped("create:copper_diving_boots", ['aba', 'c c'], {
+        a: "sns:leather_strip",
         b: "tfc:metal/unfinished_boots/copper",
         c: "immersiveengineering:ingot_lead"
-       
+
     })//潜水鞋子
 
-       event.shaped("alexscaves:diving_leggings", ['aba', 'c c', 'aba'], {
-        a: "sns:leather_strip", 
+    event.shaped("alexscaves:diving_leggings", ['aba', 'c c', 'aba'], {
+        a: "sns:leather_strip",
         b: "tfc:metal/unfinished_greaves/copper",
         c: "kubejs:copper_fragments",
-       
+
     })//潜水裤子
 
 
 
-    
-   event.shaped("moreburners:electric_burner", ['dbd', 'aca', ' e '], {
-        a: "vintageimprovements:andesite_sheet", 
+
+    event.shaped("moreburners:electric_burner", ['dbd', 'aca', ' e '], {
+        a: "vintageimprovements:andesite_sheet",
         b: "firmalife:reinforced_glass",
         c: "moreburners:copper_coil",
-        d:"tfc:metal/sheet/wrought_iron",
+        d: "tfc:metal/sheet/wrought_iron",
         e: "immersiveengineering:furnace_heater"
     })//电磁炉
 
-   event.shaped("immersiveengineering:furnace_heater", ['aba', 'cdc', 'aba'], {
-        a: "immersiveengineering:sheetmetal_iron", 
+    event.shaped("immersiveengineering:furnace_heater", ['aba', 'cdc', 'aba'], {
+        a: "immersiveengineering:sheetmetal_iron",
         b: "tfc:metal/sheet/copper",
         c: "immersiveengineering:wirecoil_copper",
         d: "moreburners:copper_coil"
     })//外置加热
 
 
-     event.shaped("create_connected:empty_fan_catalyst", ['aba', 'b b', 'aba'], {
-        a: TFC.ingredient.heatable( "tfc:metal/rod/brass", 600, null), 
+    event.shaped("create_connected:empty_fan_catalyst", ['aba', 'b b', 'aba'], {
+        a: TFC.ingredient.heatable("tfc:metal/rod/brass", 600, null),
         b: "tfc:metal/bars/wrought_iron"
     })//黄铜触媒
 
@@ -230,6 +230,15 @@ ServerEvents.recipes(event => {
         b: '#tfc:rock/smooth',
         c: 'tfc:brass_mechanisms'
     }) //石切机
+
+    event.shaped('farmersdelight:cooked_rice',
+        [
+            'aa ',
+            'b  '
+        ], {
+        a: 'tfc:food/cooked_rice',
+        b: 'minecraft:bowl'
+    }) //米饭
 
 
     event.shaped('immersiveengineering:workbench',
@@ -904,6 +913,34 @@ ServerEvents.recipes(event => {
     //动力合成器
 
 
+    event.shaped('firmalife:drying_mat', [
+
+        'a a',
+        'bbb',
+        'aca'
+    ],
+        {
+            a: '#forge:rods/wooden',
+            b: 'farmersdelight:canvas',
+            c: '#tfc:lumber'
+
+        })
+    //干燥垫
+
+    event.shaped('firmalife:solar_drier', [
+
+        'ada',
+        ' b ',
+        'ccc'
+    ],
+        {
+            a: 'vintageimprovements:andesite_rod',
+            b: 'farmersdelight:canvas',
+            c: '#tfc:lumber',
+            d: 'minecraft:glass_pane'
+
+        })
+    //太阳干燥垫
 
     //=============================================================
     //=======================功能性存储配方==========================

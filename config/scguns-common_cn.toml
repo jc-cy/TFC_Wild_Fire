@@ -1,0 +1,248 @@
+[common]
+
+	#游戏玩法相关属性
+	[common.gameplay]
+		#若为true，启用武器的拔枪动画
+		drawAnimation = true
+		#所有弹药箱容量的调整倍率。
+		#范围：0.1 ~ 100.0
+		ammoBoxCapacityMultiplier = 1.0
+		#若为true，枪械会有耐久损耗并可能损坏，不敢开这个就是胆小鬼（模组趣味注释）
+		enableGunDamage = true
+		#若为true，枪械配件会有耐久损耗并可能损坏，同样，不敢开也是胆小鬼（模组趣味注释）
+		enableAttachmentDamage = true
+		#检测抛射物碰撞时，实体碰撞箱的额外扩展量。该值越高，越容易击中实体。
+		#范围：0.0 ~ 1.0
+		growBoundingBoxAmount = 0.3
+		#启用玩家爆头判定。击中玩家头部的抛射物会造成更高伤害。
+		enableHeadShots = true
+		#抛射物击中玩家头部时的伤害倍率。
+		#范围：1.0 ~ 1.7976931348623157E308
+		headShotDamageMultiplier = 1.25
+		#若为true，抛射物碰撞检测时会忽略树叶方块
+		ignoreLeaves = true
+		#被子弹击中时的击退强度。需先启用击退功能该参数才会生效；若值为0，将使用《我的世界》原版击退数值。
+		#范围：0.0 ~ 1.0
+		knockbackStrength = 0.15
+		#若为true，会结合玩家网络延迟优化武器命中精度。该设置对单人游戏无影响，启用后会产生少量性能开销。
+		improvedHitboxes = false
+		#敌方枪械的基础伤害值。
+		#范围：0.0 ~ 1.7976931348623157E308
+		enemyBulletDamage = 4.5
+		#极地发电机每刻产生的能量值。调整该值可平衡发电机的能量输出效率。
+		#范围：> 1
+		energyProductionRate = 50
+		#若为true，枪械的瞄准（ADS）模式改为“切换式”（按一次开镜，再按一次关镜）；false则为“按住式”。
+		toggleADS = false
+		#全局枪械伤害倍率。1.0 = 正常伤害，0.5 = 半伤，2.0 = 双倍伤害。该值影响所有枪械抛射物的伤害。
+		#范围：0.01 ~ 100.0
+		globalDamageMultiplier = 1.0
+		#若为true，黄铜面具仪式将不再生成村民；禁用该选项时，仪式会按下方概率生成异见者（Dissident）。
+		disableVillagerSpawning = false
+		#禁用村民生成后，仪式生成异见者的概率（0.0至1.0）。若未生成异见者，该仪式不会产生任何实体。
+		#范围：0.0 ~ 1.0
+		dissidentSpawnChance = 0.1
+		#若为true，弹匣打空且有备用弹药时，枪械会自动开始换弹
+		enableAutoReload = true
+		#若为true，允许火焰喷射器在方块上放置火焰
+		enableFirePlacement = true
+		#全局炮塔伤害倍率。1.0 = 正常伤害，0.5 = 半伤，2.0 = 双倍伤害。该值影响所有炮塔抛射物的伤害。
+		#范围：0.01 ~ 100.0
+		globalTurretDamageMultiplier = 1.0
+		#若为true，允许火焰喷射器净化幽匿（Sculk）方块
+		enableSculkPurification = true
+		#玩家开火音效的音量，默认值为8
+		#范围：1 ~ 10
+		playerGunfireVolume = 8
+		#生物开火音效的音量，默认值为8
+		#范围：1 ~ 10
+		mobGunfireVolume = 8
+		#生物射速全局倍率。1.0 = 正常射速，0.5 = 射速加快（间隔减半），2.0 = 射速减慢（间隔加倍）。数值越低，开火速度越快。
+		#范围：0.1 ~ 5.0
+		mobFireRateMultiplier = 1.0
+		#生物连射间隔倍率。数值越高，连射之间的间隔越长。1.0 = 正常间隔，2.0 = 间隔加倍。
+		#范围：0.1 ~ 5.0
+		mobBurstDelayMultiplier = 1.0
+		#生物枪械伤害全局倍率。1.0 = 正常伤害，0.5 = 半伤，2.0 = 双倍伤害。该值影响所有生物枪械抛射物的伤害。
+		#范围：0.01 ~ 100.0
+		mobGunDamageMultiplier = 1.0
+		#齿轮（Cog）敌人死亡时生成信号信标的概率（0.0至1.0）。设为0.0可禁用该掉落。
+		#范围：0.0 ~ 1.0
+		cogBeaconSpawnChance = 0.15
+
+		#枪械破坏地形相关属性
+		[common.gameplay.griefing]
+			#若启用，爆炸会移除方块
+			enableBlockRemovalOnExplosions = true
+			#若启用，枪械可击碎玻璃及其他易碎方块
+			enableGlassBreaking = true
+			#若启用，易碎方块被破坏时会掉落对应物品
+			fragileBlockDrops = true
+			#子弹击中时易碎方块被破坏的基础概率。方块硬度会影响最终概率：硬度越高，最终破坏概率越低。
+			#范围：0.0 ~ 1.0
+			fragileBlockBreakChance = 1.0
+			#若为true，附魔“纵火者（Fire Starter）”的枪械可点燃方块并让火焰扩散
+			setFireToBlocks = true
+			#若为true，允许重型弹药破坏方块
+			enableBlockBreaking = true
+			#若为true，允许光束武器挖掘方块
+			enableBeamMining = true
+			#若启用，生物武器爆炸会移除方块（仅在enableBlockRemovalOnExplosions为true时生效）
+			enableMobExplosionBlockRemoval = false
+
+		[common.gameplay.gameplay]
+			#设为false可禁用开火时弹壳物品的生成。
+			spawnCasings = true
+
+	#网络相关属性
+	[common.network]
+		#玩家可追踪新抛射物轨迹的最大距离。数值越高，能看到的抛射物初始生成位置越远。
+		#范围：1.0 ~ 1.7976931348623157E308
+		projectileTrackingRange = 200.0
+
+	#枪械开火引发生物仇恨相关属性
+	[common.aggro_mobs]
+		#若为true，附近的敌对生物可能因枪械开火变得具有攻击性。
+		enabled = true
+		#敌对生物可检测到无消音枪械开火并作出反应的范围。
+		#范围：0.0 ~ 1.7976931348623157E308
+		unsilencedRange = 20.0
+		#敌对生物检测到枪械开火后，将射击者列为目标的概率（0.0至1.0）。
+		#范围：0.0 ~ 1.0
+		aggroChance = 0.25
+		#当一只生物产生仇恨后，附近同类型生物也产生仇恨的概率（0.0至1.0）。
+		#范围：0.0 ~ 1.0
+		chainAggroChance = 0.5
+		#连锁仇恨效果可扩散至同类型生物的半径范围。
+		#范围：0.0 ~ 32.0
+		chainAggroRadius = 8.0
+		#【遗留配置】不会因枪械开火产生仇恨的实体列表。建议使用实体标签“scguns:aggro_from_guns”以获得更好的模组兼容性。
+		exemptMobs = []
+
+	#枪械开火引发生物逃跑相关属性
+	[common.fleeing_mobs]
+		#若为true，附近的生物会因枪械开火逃跑。
+		enabled = true
+		#无消音枪械开火时，该半径范围内的所有生物会逃离射击者。
+		#范围：0.0 ~ 1.7976931348623157E308
+		unsilencedRange = 20.0
+		#消音枪械开火时，该半径范围内的所有生物会逃离射击者。
+		#范围：0.0 ~ 1.7976931348623157E308
+		silencedRange = 5.0
+		#【遗留配置】会因枪声逃跑的额外实体列表（动物会被自动识别）。建议使用实体标签“scguns:fleeing_from_guns”以获得更好的模组兼容性。
+		fleeingEntities = ["minecraft:villager"]
+
+	#手榴弹相关属性
+	[common.grenades]
+		#爆炸的最大有效作用半径
+		#范围：0.0 ~ 1.7976931348623157E308
+		explosionRadius = 5.0
+
+	#震撼弹相关属性
+	[common.stun_grenades]
+
+		#震撼弹致盲效果属性
+		[common.stun_grenades.blind]
+			#若为true，敌对生物被震撼弹致盲期间无法锁定目标实体。
+			blindMobs = true
+
+			[common.stun_grenades.blind.effect_criteria]
+				#震撼弹必须在该距离（米）内才能触发致盲效果。
+				#范围：0.0 ~ 1.7976931348623157E308
+				radius = 15.0
+				#若玩家直视且震撼弹处于玩家眼前时，致盲效果的最长持续时间（单位：刻）。
+				#范围：> 0
+				durationMax = 220
+				#若玩家直视且震撼弹处于最大有效距离时，致盲效果的最短持续时间（单位：刻）。
+				#范围：> 0
+				durationMin = 10
+				#玩家视线方向与玩家-震撼弹连线的夹角，必须小于该角度的一半才会触发致盲效果（单位：度）。
+				#范围：0.0 ~ 360.0
+				angleEffect = 170.0
+				#距离衰减后的致盲时长，会根据玩家视线与震撼弹的夹角（度）进一步衰减：夹角为0时无衰减（乘以1）；夹角达到最大有效角度时，乘以该值衰减。
+				#范围：0.0 ~ 1.0
+				angleAttenuationMax = 0.75
+				#若为true，仅当玩家眼睛与震撼弹之间的射线未穿过不透明度>0的非液体方块时，才会触发致盲效果。
+				raytraceOpaqueBlocks = true
+
+		#震撼弹失聪效果属性
+		[common.stun_grenades.deafen]
+			#若为true，和平生物被震撼弹失聪后会陷入恐慌状态。
+			panicMobs = true
+
+			[common.stun_grenades.deafen.effect_criteria]
+				#震撼弹必须在该距离（米）内才能触发失聪效果。
+				#范围：0.0 ~ 1.7976931348623157E308
+				radius = 15.0
+				#若玩家直视且震撼弹处于玩家眼前时，失聪效果的最长持续时间（单位：刻）。
+				#范围：> 0
+				durationMax = 280
+				#若玩家直视且震撼弹处于最大有效距离时，失聪效果的最短持续时间（单位：刻）。
+				#范围：> 0
+				durationMin = 100
+				#玩家视线方向与玩家-震撼弹连线的夹角，必须小于该角度的一半才会触发失聪效果（单位：度）。
+				#范围：0.0 ~ 360.0
+				angleEffect = 360.0
+				#距离衰减后的失聪时长，会根据玩家视线与震撼弹的夹角（度）进一步衰减：夹角为0时无衰减（乘以1）；夹角达到最大有效角度时，乘以该值衰减。
+				#范围：0.0 ~ 1.0
+				angleAttenuationMax = 0.75
+				#若为true，仅当玩家眼睛与震撼弹之间的射线未穿过不透明度>0的非液体方块时，才会触发失聪效果。
+				raytraceOpaqueBlocks = false
+
+	#抛射物扩散相关属性
+	[common.projectile_spread]
+		#跳过扩散逻辑的超时时间（毫秒）。该值代表武器恢复稳定所需的合理时长。
+		#范围：0 ~ 1000
+		spreadThreshold = 300
+		#在扩散阈值时间内，玩家需要射击的次数达到该值才会触发最大扩散效果。数值越高，达到最大扩散所需的射击次数越多。
+		#范围：> 1
+		maxCount = 10
+
+	#外骨骼核心（ExoSuit Core）容量相关属性
+	[common.exosuit_cores]
+		#基础外骨骼核心的能量容量
+		#范围：1000 ~ 100000
+		basicCoreCapacity = 10000
+		#高级外骨骼核心的能量容量
+		#范围：1000 ~ 100000
+		advancedCoreCapacity = 20000
+		#精英外骨骼核心的能量容量
+		#范围：1000 ~ 100000
+		eliteCoreCapacity = 30000
+
+	#持枪生物生成配置
+	[common.gunner_config]
+		#若启用，生物有概率携带枪械生成。
+		gunnerMobSpawning = true
+		#基于进度的持枪生物基础生成概率（0.0=永不生成，1.0=必定生成）。
+		#该值为普通（NORMAL）难度下的概率，主题生物使用独立配置。
+		#范围：0.0 ~ 1.0
+		gunnerSpawnChance = 0.3
+		#若启用，生成概率会随游戏难度缩放。
+		#和平（PEACEFUL）：基础概率的50%，简单（EASY）：75%，普通（NORMAL）：100%，困难（HARD）：150%
+		scaleToDifficulty = true
+		#若启用，持枪生物有概率以“精英”形态生成（配备更好的护甲）。
+		eliteSpawning = true
+		#精英持枪生物的基础生成概率（0.0=永不生成，1.0=必定生成）。
+		#该值为普通（NORMAL）难度下的概率。
+		#范围：0.0 ~ 1.0
+		eliteChance = 0.2
+
+	#小型突袭（Mini-Raid）配置
+	[common.raids]
+		#若启用，夜间会基于玩家进度生成小型突袭事件。
+		raidsEnabled = true
+		#每晚在有效玩家附近生成突袭的概率（0.0=永不生成，1.0=必定生成）。
+		#设为0.0可在不完全关闭系统的情况下禁用突袭。
+		#范围：0.0 ~ 1.0
+		nightlyRaidChance = 0.0
+		#自然生成的突袭之间的最小间隔天数。
+		#设为0则每晚都可能生成（若概率判定成功）；
+		#设为1则每隔一晚可生成；
+		#设为2及以上可进一步延长间隔。
+		#范围：0 ~ 100
+		minDaysBetweenRaids = 2
+		#若未击败突袭首领，突袭会在该时长后自动失败（单位：分钟）。
+		#默认值：10分钟
+		#范围：0 ~ 60
+		raidTimeoutMinutes = 30

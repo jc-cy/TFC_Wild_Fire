@@ -1,0 +1,37 @@
+{
+  "emptyHand": {
+    "armTransforms": {
+      "right": {
+        "scale": 1.0,
+        "offX": 0.0,
+        "offY": 0.11000002,
+        "offZ": -0.09999999,
+        "rotX": -10.0,
+        "rotY": 0.0,
+        "rotZ": -1.0,
+        "pivotX": 0.0,
+        "pivotY": 0.0,
+        "pivotZ": 0.0
+      },
+      "left": {
+        "scale": 1.0,
+        "offX": 0.0,
+        "offY": 0.11000002,
+        "offZ": -0.09999999,
+        "rotX": -10.0,
+        "rotY": 0.0,
+        "rotZ": -1.0,
+        "pivotX": 0.0,
+        "pivotY": 0.0,
+        "pivotZ": 0.0
+      }
+    },
+    "customAnimation": [
+      {
+        "type": "attack",
+        "var_1": "punch_air_1",
+        "var_2": "punch_air_2"
+      }
+    ]
+  }
+}

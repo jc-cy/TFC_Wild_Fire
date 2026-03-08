@@ -431,5 +431,128 @@
             "butcher:foxmeat"
         ],
         "resultItems": "tfc:food/cooked_fox"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:lettuce"
+        ],
+        "resultItems": "farmersdelight:cabbage_leaf"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:red_chili"
+        ],
+        "resultItems": "tfc:food/red_bell_pepper"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:green_chili"
+        ],
+        "resultItems": "tfc:food/green_bell_pepper"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:raw_pork_belly"
+        ],
+        "resultItems": "farmersdelight:bacon"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:cooked_pork_belly"
+        ],
+        "resultItems": "farmersdelight:cooked_bacon"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:raw_cow_offal"
+        ],
+        "resultItems": "farmersdelight:minced_beef"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:cooked_cow_offal"
+        ],
+        "resultItems": "farmersdelight:beef_patty"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:raw_lamb_chops"
+        ],
+        "resultItems": "farmersdelight:mutton_chops"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:cooked_lamb_chops"
+        ],
+        "resultItems": "farmersdelight:cooked_mutton_chops"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:raw_cut_small_meats"
+        ],
+        "resultItems": "farmersdelight:chicken_cuts"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:cooked_cut_small_meats"
+        ],
+        "resultItems": "farmersdelight:cooked_chicken_cuts"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:cooked_rice"
+        ],
+        "resultItems": "farmersdelight:cooked_rice"
+    },
+    {
+        "matchItems": [
+            "farmersdelight:fried_egg"
+        ],
+        "resultItems": "kaleidoscope_cookery:fried_egg"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:sashimi"
+        ],
+        "resultItems": "farmersdelight:salmon_slice"
+    },
+    {
+        "matchItems": [
+            "farmersdelight:raw_pasta",
+            "firmalife:food/raw_egg_noodles"
+        ],
+        "resultItems": "kaleidoscope_cookery:raw_noodles"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:rice",
+            "farmersdelight:rice"
+        ],
+        "resultItems": "tfc:food/rice_grain"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:tomato"
+        ],
+        "resultItems": "tfc:food/tomato"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:raw_donkey_meat"
+        ],
+        "resultItems": "tfc:food/horse_meat"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:cooked_donkey_meat"
+        ],
+        "resultItems": "tfc:food/cooked_horse_meat"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:rice_panicle"
+        ],
+        "resultItems": "tfc:food/rice"
     }
+
 ]

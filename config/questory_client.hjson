@@ -1,0 +1,54 @@
+//═══════════════════════════════════════════════════════════════
+// Questory Client Configuration
+//═══════════════════════════════════════════════════════════════
+// Client-specific settings for UI, HUD, and telemetry
+// This file is automatically managed - edit with care
+//═══════════════════════════════════════════════════════════════
+
+{
+  // ══════ UI STATE ══════
+  "pinnedGroups": [],  // Pinned quest groups
+  "collapsedSections": [],  // Collapsed UI sections
+  "trackedQuests": [],  // Tracked quests in HUD
+  "chapterPanelPinned": false,  // Chapter panel pinned open
+  "lastSelectedGroup": "60FF961959EB11F1",  // Last selected quest chapter/group
+
+  // ══════ EDITOR ══════
+  "clientEnableAdvancedEditor": true,  // Enable advanced editor (client-side)
+  "suppressUiScaleEditorWarning": false,  // Suppress UI scale warning
+
+  // ══════ MINI-MAP ══════
+  "miniMapX": 216,  // X position (-1 = default)
+  "miniMapY": 32,  // Y position
+  "miniMapW": 140,  // Width
+  "miniMapH": 90,  // Height
+  "miniMapOpacityPct": 75,  // Opacity % (0-100)
+
+  // ══════ HEATMAP ══════
+  "heatX": 452,  // Legend X position
+  "heatY": 318,  // Legend Y position
+  "heatW": 180,  // Legend width
+  "heatH": 74,  // Legend height
+  "heatOpacityPct": 90,  // Opacity % (0-100)
+  "heatmapCacheTtl": 300,  // Cache TTL in seconds
+
+  // ══════ MAP INTEGRATION ══════
+  "mapIntegrationEnabled": true,  // Enable map mod integration
+  "journeyMapEnabled": true,  // Enable JourneyMap integration
+
+  // ══════ HUD CUSTOMIZATION ══════
+  "hudPosition": "BOTTOM_RIGHT",  // Position (TOP_LEFT|TOP_RIGHT|BOTTOM_LEFT|BOTTOM_RIGHT)
+  "hudScale": 0.5,  // Scale (0.5 - 2.0)
+  "hudOpacity": 30,  // Opacity % (0-100)
+  "hudCompactMode": true,  // Compact mode
+  "hudShowIcons": true,  // Show quest icons
+  "hudShowProgressBars": true,  // Show progress bars
+  "hudOffsetX": 10,  // X offset from edge (pixels)
+  "hudOffsetY": 10,  // Y offset from edge (pixels)
+
+  // ══════ TELEMETRY ══════
+  // Anonymous usage data to help improve quests
+  "telemetryEnabled": false,  // Enable telemetry
+  "telemetryConsentShown": false  // Consent dialog shown
+
+}

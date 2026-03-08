@@ -1,0 +1,46 @@
+{
+    selectors: [
+        {
+            form: {
+                pose_overlay: {},
+                hitboxHeight: 1.8f,
+                color: -1,
+                hp: 20.0f,
+                shaderShadow: 1b,
+                states: [],
+                shape_keys: {
+                    keys: {}
+                },
+                transform: {},
+                step_height: 0.5f,
+                model: "player/steve_bends",
+                id: "bbs:model",
+                track_name: "",
+                hitboxWidth: 0.5f,
+                visible: 1b,
+                hitboxEyeHeight: 0.9f,
+                pose: {},
+                hitboxSneakMultiplier: 0.9f,
+                animatable: 1b,
+                lighting: 1.0f,
+                hitbox: 0b,
+                movement_speed: 0.1f,
+                uiScale: 1.0f,
+                anchor: {
+                    actor: -1,
+                    attachment: "",
+                    scale: 0b,
+                    translate: 0b
+                },
+                keybind: 0,
+                name: "",
+                parts: [],
+                transform_overlay: {},
+                actions: {}
+            },
+            name: "1",
+            enabled: 1b,
+            entity: "minecraft:1"
+        }
+    ]
+}

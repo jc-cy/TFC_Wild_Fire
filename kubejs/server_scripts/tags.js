@@ -34,7 +34,7 @@ ServerEvents.tags("item", event => {
     ];
 
     toolMetals.forEach(metal => {
-        if(metal=="copper")return
+        if (metal == "copper") return
         toolHeadTemplates.forEach(template => {
             // 替换模板中的 {metal} 为当前金属名（生成完整的物品ID）
             const toolHeadId = template.replace(/{metal}/g, metal);
@@ -137,10 +137,48 @@ ServerEvents.tags("block", event => {
             )
         })
     })
-})
+});
+
+const loose = [
+    'andesite',
+    'basalt',
+    'chalk',
+    'chert',
+    'claystone',
+    'conglomerate',
+    'dacite',
+    'diorite',
+    'dolomite',
+    'gabbro',
+    'gneiss',
+    'granite',
+    'limestone',
+    'marble',
+    'phyllite',
+    'quartzite',
+    'rhyolite',
+    'schist',
+    'shale',
+    'slate'
+];
+ServerEvents.tags("item", event => {
+    loose.forEach(loose => {
+        event.add('supplementaries:throwable_bricks',
+            [
+                `tfc:brick/${loose}`
+            ]
+        )
+    })
+});
 ServerEvents.tags("block", event => {
 
-
+    event.add('create_compatible_storage:silent_mounted_storage',
+        [
+            "ae2:smooth_sky_stone_chest",
+            "immersiveengineering:crate",
+            "immersiveengineering:reinforced_crate"
+        ]
+    )
 
     event.add('create:chest_mounted_storage',
         [
@@ -373,7 +411,28 @@ ServerEvents.tags("block", event => {
                 "tfc:ore/rich_vanadium"
             ])
 
-
+        //投掷砖块
+        event.add('supplementaries:throwable_bricks',
+            [
+                `kubejs:rotten_meat`,
+                `kubejs:rotten_fish`,
+                `kubejs:rotten_vegetables`,
+                `kubejs:rotten_fruit`,
+                `kubejs:rot`,
+                `tfc:mud_brick/loam`,
+                `tfc:mud_brick/sandy_loam`,
+                `tfc:mud_brick/silty_loam`,
+                `tfc:mud_brick/silt`,
+                `tfc:drying_bricks/loam`,
+                `tfc:drying_bricks/sandy_loam`,
+                `tfc:drying_bricks/silty_loam`,
+                `tfc:drying_bricks/silt`,
+                `tfc:alabaster_brick`,
+                `tfc:ceramic/unfired_brick`,
+                `tfc:ceramic/unfired_fire_brick`,
+                `tfc:ceramic/fire_brick`
+            ]
+        )
 
 
         // 将手套加入进饰品tag
@@ -575,6 +634,54 @@ ServerEvents.tags("block", event => {
 
             ])
 
+        //森罗物语油脂
+        event.add('kaleidoscope_cookery:oil',
+            [
+                "butcher:raw_pork_belly",
+                "butcher:pork_belly",
+                "firmalife:food/butter",
+                "artisanal:animal_fat",
+                "artisanal:suet",
+                "artisanal:pork_fat",
+                "artisanal:poultry_fat",
+                "artisanal:bear_fat",
+                "tfc:blubber"
+
+            ])
+            
+            //合理的种子物品
+        event.add('tfc:seeds',
+            [
+                "tfc:seeds/wheat",
+                "tfc:seeds/barley",
+                "tfc:seeds/oat",
+                "tfc:seeds/rye",
+                "tfc:seeds/maize",
+                "tfc:seeds/rice",
+                "tfc:seeds/beet",
+                "tfc:seeds/cabbage",
+                "tfc:seeds/carrot",
+                "tfc:seeds/garlic",
+                "tfc:seeds/green_bean",
+                "tfc:seeds/red_bell_pepper",
+                "tfc:seeds/yellow_bell_pepper",
+                "tfc:seeds/melon",
+                "tfc:crop/horsetail_seeds",
+                "tfc:seeds/onion",
+                "tfc:seeds/soybean",
+                "tfc:seeds/squash",
+                "tfc:seeds/sugarcane",
+                "tfc:seeds/tomato",
+                "tfc:seeds/jute",
+                "tfc:seeds/papyrus",
+                "tfc:seeds/pumpkin",
+                "tfc:crop/hops_seeds",
+                "tfc:crop/marigold_seeds",
+                "tfc:crop/trillium_seeds",
+                "tfc:crop/labrador_tea_seeds",
+                "tfc:crop/red_palm_seeds"
+            ])
+
         //可以作为杠杆锤的砧的砧
         event.add('vintageimprovements:anvils',
             [
@@ -610,7 +717,7 @@ ServerEvents.tags("block", event => {
                 "kubejs:rotten_meat",
                 "kubejs:rotten_platter"
             ])
-            
+
         event.add('sliceanddice:allowed_tools', '#minecraft:tools')
         //石墨铸模
         event.add('forge:graphite_molds',
@@ -897,14 +1004,67 @@ ServerEvents.tags("item", event => {
             "tfc:ore/rich_sphalerite",
             "tfc:ore/rich_tetrahedrite",
         ])
-        //删除ie坚韧布料tag
-        event.remove('forge:fabric_hemp', [
-            "tfc:burlap_cloth",
-            "immersiveengineering:hemp_fabric"
-        ])
-        event.add('forge:fabric_hemp', [
-            "sns:reinforced_fabric",
-        ])
+    //删除ie坚韧布料tag
+    event.remove('forge:fabric_hemp', [
+        "tfc:burlap_cloth",
+        "immersiveengineering:hemp_fabric"
+    ])
+    event.add('forge:fabric_hemp', [
+        "sns:reinforced_fabric",
+    ]);
+
+    //删除一些没用的配方tag
+    //柴油动力的锤子
+    event.remove('immersiveengineering:tools/hammers', [
+        "createdieselgenerators:hammer"
+    ])
+    //金属线
+    event.remove('forge:wires', [
+        "vintageimprovements:aluminum_wire",
+        "vintageimprovements:andesite_wire",
+        "vintageimprovements:brass_wire",
+        "vintageimprovements:bronze_wire",
+        "vintageimprovements:calorite_wire",
+        "vintageimprovements:cast_iron_wire",
+        "vintageimprovements:constantan_wire",
+        "vintageimprovements:desh_wire",
+        "vintageimprovements:lead_wire",
+        "vintageimprovements:netherite_wire",
+        "vintageimprovements:nickel_wire",
+        "vintageimprovements:ostrum_wire",
+        "vintageimprovements:rose_gold_wire",
+        "vintageimprovements:silver_wire",
+        "vintageimprovements:steel_wire",
+        "vintageimprovements:tin_wire",
+        "vintageimprovements:vanadium_wire",
+        "vintageimprovements:zinc_wire",
+        "vintageimprovements:amethyst_bronze_wire",
+        "vintageimprovements:cobalt_wire",
+        "vintageimprovements:enderium_wire",
+        "vintageimprovements:hepatizon_wire",
+        "vintageimprovements:invar_wire",
+        "vintageimprovements:lumium_wire",
+        "vintageimprovements:manyullyn_wire",
+        "vintageimprovements:osmium_wire",
+        "vintageimprovements:palladium_wire",
+        "vintageimprovements:pig_iron_wire",
+        "vintageimprovements:platinum_wire",
+        "vintageimprovements:pure_gold_wire",
+        "vintageimprovements:refined_glowstone_wire",
+        "vintageimprovements:refined_obsidian_wire",
+        "vintageimprovements:rhodium_wire",
+        "vintageimprovements:signalum_wire",
+        "vintageimprovements:uranium_wire",
+        "vintageimprovements:refined_radiance_wire",
+        "vintageimprovements:ironwood_wire",
+        "vintageimprovements:knightmetal_wire",
+        "vintageimprovements:queens_slime_wire",
+        "vintageimprovements:slimesteel_wire",
+        "vintageimprovements:fiery_wire",
+        "vintageimprovements:shadow_steel_wire",
+        "vintageimprovements:nethersteel_wire",
+        "vintageimprovements:aluminum_wire"
+    ])
     /*
     
     //删除群峦的箱子tag

@@ -1,0 +1,24 @@
+# 
+#The stove provides the highest temperature that can be reached by a cluster of heat sources. (default 450)
+#炉灶提供群峦热源可达到的最高温度（默认450）
+#Range: 200.0 ~ 2000.0
+stoveTemperature = 450.0
+# 
+#A value about flatulence effect add movement when shift key down. (default 0)
+#在胀气效果下，当玩家下蹲时给玩家加的移动速度
+#Range: 0.0 ~ 0.75
+flatulenceAddFlyMovement = 0.0
+# 
+#A damage amount modifier during satiated shield effect. The lower the value, the higher the damage. (default 2)
+#饱腹代偿时的伤害修改器，值越小伤害越高
+#Range: 0.25 ~ 4.0
+satiatedShieldModifier = 1.0
+# 
+#Turn on or turn off food tooltips
+#开启或关闭工具提示
+foodTooltips = false
+# 
+#Turn on or turn off Farmer's Delight Compat
+#开关农夫乐事兼容
+farmersdelightCompat = false
+

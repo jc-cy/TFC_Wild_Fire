@@ -106,7 +106,7 @@ StartupEvents.registry('block', event => {
 
 });
 StartupEvents.registry('block', event => {
-        event.create('unfired_crucible_mold') // 未硬化的坩埚模具
+        event.create('unfired_crucible_mold') // 未烧制的坩埚模具
         event.create('corundum_brick_block').tag("tfc:blast_furnace_insulation").tag("tfc:bloomery_insulation")// 刚玉砖块
         event.create('crucible_mold') // 坩埚模具
         event.create('kubejs:tfc/dried_sinew')

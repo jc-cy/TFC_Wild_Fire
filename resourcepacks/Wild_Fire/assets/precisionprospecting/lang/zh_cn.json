@@ -56,13 +56,13 @@
   "item.precisionprospecting.metal.mineral_prospector_head.bronze": "青铜地质锤头",
   "item.precisionprospecting.metal.mineral_prospector_head.copper": "铜地质锤头",
 
-  "item.precisionprospecting.ceramic.unfired_prospector_hammer_head_mold": "未硬化的剥岩锤头模具",
+  "item.precisionprospecting.ceramic.unfired_prospector_hammer_head_mold": "未烧制的剥岩锤头模具",
   "item.precisionprospecting.ceramic.prospector_hammer_head_mold": "剥岩锤头模具",
 
-  "item.precisionprospecting.ceramic.unfired_prospector_drill_head_mold": "未硬化的凿岩钻头模具",
+  "item.precisionprospecting.ceramic.unfired_prospector_drill_head_mold": "未烧制的凿岩钻头模具",
   "item.precisionprospecting.ceramic.prospector_drill_head_mold": "凿岩钻头模具",
 
-  "item.precisionprospecting.ceramic.unfired_mineral_prospector_head_mold": "未硬化的地质锤头模具",
+  "item.precisionprospecting.ceramic.unfired_mineral_prospector_head_mold": "未烧制的地质锤头模具",
   "item.precisionprospecting.ceramic.mineral_prospector_head_mold": "地质锤头模具",
 
   "precisionprospecting.advancements.story.prospector_hammer.title": "小型勘探者",
