@@ -41,6 +41,26 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}anvil/${stone}`
         })
     });
+    const grass = [
+        'silt',
+        'loam',
+        'sandy_loam',
+        'silty_loam'
+    ]
+    grass.forEach((grass) => {
+        recipes.push({
+            item_in: { tag: 'tfc:hoes' },
+            block_in: `tfc:grass/${grass}`,
+            comment: 'lychee.comment.worm_digging',
+            post: [
+                { type: 'damage_item', damage: 1.0 },
+                { type: 'drop_item', item: 'aquaculture:worm', count: 1, contextual: {type: 'chance', chance: 0.2}},
+                { type: 'place', block: `tfc:farmland/${grass}` },
+                { type: "execute", command: "playsound minecraft:block.wet_grass.break player @p ~ ~ ~", hide: true, },
+            ],
+            id: `${id_prefix}worm_digging/${grass}`
+        })
+    });
 
     recipes.forEach((recipe) => {
         recipe.type = 'lychee:block_interacting';

@@ -65,13 +65,13 @@
   "block.clanginghowl.extraterrestrial_pebble": "界外陨石",
   "block.clanginghowl.incandescent_extraterrestrial_stone": "炽热陨岩",
 
-  "block.clanginghowl.meteorite_steel_ore": "陨石钢矿石",
+  "block.clanginghowl.meteorite_steel_ore": "异星陨矿石",
   "block.clanginghowl.extraterrestrial_steel_ore": "异星陨矿",
 
   "block.clanginghowl.extraterrestrial_energy_cluster": "异星晶簇",
   "block.clanginghowl.huge_extraterrestrial_energy_cluster": "巨型异星晶簇",
 
-  "block.clanginghowl.raw_extraterrestrial_steel_block": "异星金属块",
+  "block.clanginghowl.raw_extraterrestrial_steel_block": "粗异星钢块",
   "block.clanginghowl.extraterrestrial_steel_block": "异星钢块",
 
   "block.clanginghowl.steel_plate_block": "异星钢板块",
@@ -81,7 +81,8 @@
   "block.clanginghowl.carved_steel_plate_stairs": "雕花异星钢板台阶",
   "block.clanginghowl.carved_steel_plate_slab": "雕花异星钢板半砖",
   "block.clanginghowl.damaged_carved_steel_plate_block": "受损雕花异星钢板块",
-  "block.clanginghowl.extraterrestrial_steel_grate": "异星格栅",
+  "block.clanginghowl.extraterrestrial_steel_grate": "异星钢格栅",
+  "block.clanginghowl.steel_bridge": "异星钢桥梁",
 
   "block.clanginghowl.steel_rod": "异星钢杆",
 
@@ -94,10 +95,18 @@
 
   "block.clanginghowl.cracked_calcite_tiles": "裂纹方解石砖",
 
+  "block.clanginghowl.cryogenic_icicle": "低温冰柱",
+  "block.clanginghowl.big_cryogenic_icicle": "低温冰柱",
+
   "block.clanginghowl.technoflesh_block": "活体肉块",
   "block.clanginghowl.technoflesh_slab": "活体肉块半砖",
+  "block.clanginghowl.frozen_technoflesh": "冰封科技血肉",
+  "block.clanginghowl.tubular_technoflesh": "管状肉脉",
   "block.clanginghowl.technoflesh_membrane": "血管隔膜",
-  "block.clanginghowl.technoflesh_nest": "肉巢",
+  "block.clanginghowl.hanging_technoflesh": "悬挂肉脉",
+  "block.clanginghowl.big_hanging_technoflesh": "悬挂肉脉",
+  "block.clanginghowl.nerve_endings": "肉块末梢",
+  "block.clanginghowl.technoflesh_nest": "寄宿虫巢",
 
   "block.clanginghowl.crystal_former": "§e冰寒覆盖器",
   "block.clanginghowl.stationary_charging_station": "§b固定式充电站",
@@ -121,7 +130,7 @@
   "effect.clanginghowl.neurotoxin": "神经毒素",
   "effect.clanginghowl.neurotoxin.description": "移动时造成持续伤害，等级越高每秒伤害越大。",
   "effect.clanginghowl.beyond_flesh": "进化？",
-  "effect.clanginghowl.beyond_flesh.description": "效果即将结束时，受影响者会转化为血肉感染生物。",
+  "effect.clanginghowl.beyond_flesh.description": "效果即将结束时，受影响者会产生不可逆的转化。",
 
   "enchantment.clanginghowl.energy_efficiency": "能量效率",
   "enchantment.clanginghowl.energy_efficiency.desc": "每级减少1点能量消耗。",
@@ -166,23 +175,24 @@
   "info.clanginghowl.item.charger.0": "§7被动将存储电池中的§e能量§7传输到背包中的高级工具。",
   "info.clanginghowl.item.charger.1": "§8右键打开电池存储界面。",
   "info.clanginghowl.block.former.0": "§8激活时在周围形成小型寒冷区域。",
-  "info.clanginghowl.block.former.1": "§8激活状态下，§7异星量水晶§8会在其上逐渐生长，生物群系越寒冷，水晶可生长得越大。",
-  "info.clanginghowl.block.former.2": "§8可通过红石信号或工业活动扳手控制水晶生成器的开关。",
+  "info.clanginghowl.block.former.1": "§8激活状态下，§7异星晶簇§8会在其上逐渐生长，生物群系越寒冷，晶簇可生长得越大。",
+  "info.clanginghowl.block.former.2": "§8可通过红石信号或工业活动扳手控制晶簇生成的开关。",
   "info.clanginghowl.block.charger": "§7为放置其上的高级工具缓慢充能§e能量§7。",
 
-  "subtitle.clanginghowl.techno_flesh_idle": "活体肉块|喘息",
-  "subtitle.clanginghowl.techno_flesh_hurt": "活体肉块|受创",
-  "subtitle.clanginghowl.techno_flesh_death": "活体肉块|死亡",
+  "subtitle.clanginghowl.techno_flesh_idle": "活体肉块：喘息",
+  "subtitle.clanginghowl.techno_flesh_hurt": "活体肉块：受创",
+  "subtitle.clanginghowl.techno_flesh_death": "活体肉块：死亡",
+  "subtitle.clanginghowl.techno_flesh_step": "活体肉块：游荡",
 
-  "subtitle.clanginghowl.heart_of_decay_death": "寄宿幼体|死亡",
+  "subtitle.clanginghowl.heart_of_decay_death": "寄宿幼体：死亡",
 
-  "subtitle.clanginghowl.flesh_whipping": "血肉|鞭打声",
-  "subtitle.clanginghowl.flesh_maiden_death": "血肉裂躯|死亡",
+  "subtitle.clanginghowl.flesh_whipping": "血肉：鞭打声",
+  "subtitle.clanginghowl.flesh_maiden_death": "血肉裂躯：死亡",
 
   "subtitle.clanginghowl.inject": "注射",
   "subtitle.clanginghowl.infect": "感染",
 
-  "subtitle.clanginghowl.flesh_rupture_beginning": "血肉撕裂开始",
+  "subtitle.clanginghowl.flesh_rupture_beginning": "血肉撕裂：开始",
   "subtitle.clanginghowl.flesh_rupture_ending": "血肉撕裂",
 
   "subtitle.clanginghowl.flesh_tear": "血肉快速撕裂",

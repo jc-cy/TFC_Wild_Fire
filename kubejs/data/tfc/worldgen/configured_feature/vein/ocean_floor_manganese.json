@@ -2,12 +2,12 @@
   "__comment__": "This file was automatically created by mcresources",
   "type": "tfc:cluster_vein",
   "config": {
-    "rarity": 30,
+    "rarity": 18,
     "density": 0.5,
-    "min_y": 15,
-    "max_y": 65,
-    "biomes": "#tfc:is_ocean",
-    "size": 16,
+    "min_y": -40,
+    "max_y": 20,
+    "biomes": "#tfc:is_deep_ocean",
+    "size": 18,
     "random_name": "ocean_floor_manganese",
     "blocks": [
       {
@@ -516,6 +516,17 @@
           }
         ]
       }
-    ]
+    ],
+    "indicator": {
+      "rarity": 0,
+      "depth": 35,
+      "underground_rarity": 1,
+      "underground_count": 4,
+      "blocks": [
+        {
+          "block": "kubejs:ore/small_manganese"
+        }
+      ]
+    }
   }
 }

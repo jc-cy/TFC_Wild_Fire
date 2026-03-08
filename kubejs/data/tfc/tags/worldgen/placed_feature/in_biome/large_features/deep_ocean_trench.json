@@ -4,6 +4,7 @@
   "values": [
     "#tfc:feature/icebergs",
     "#tfc:feature/boulders",
-    "tfc:lava_hot_spring"
+    "tfc:lava_hot_spring",
+    "tfc:manganese_deposit"
   ]
 }

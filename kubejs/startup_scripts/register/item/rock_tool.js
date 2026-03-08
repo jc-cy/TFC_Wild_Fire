@@ -9,8 +9,6 @@ StartupEvents.registry('item', event => {
         "knife_head"
     ];
     //attackDamageBaseline
-    //黑曜石碎片
-    event.create("obsidian_shards", "basic").texture('kubejs:item/tfc/obsidian_shards');
     // 注册工具部件
     toolParts.forEach(part => {
         event.create(`diamond_${part}`, "basic")
