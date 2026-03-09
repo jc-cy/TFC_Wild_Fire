@@ -7,6 +7,12 @@
     },
     {
         "matchItems": [
+            "scguns:war_axe"
+        ],
+        "resultItems": "kubejs:wrought_iron_halberd"
+    },
+    {
+        "matchItems": [
             "spartanweaponry:bronze_greatsword"
         ],
         "resultItems": "kubejs:bronze_greatsword"
