@@ -1,0 +1,58 @@
+{
+  "customGroups": [
+    {
+      "name": "weapons_parrying_dagger",
+      "items": [
+        "spartanweaponry:wooden_parrying_dagger",
+        "spartanweaponry:stone_parrying_dagger",
+        "spartanweaponry:golden_parrying_dagger",
+        "spartanweaponry:netherite_parrying_dagger",
+        "spartanweaponry:tin_parrying_dagger",
+        "spartanweaponry:silver_parrying_dagger",
+        "spartanweaponry:electrum_parrying_dagger",
+        "spartanweaponry:lead_parrying_dagger",
+        "spartanweaponry:nickel_parrying_dagger",
+        "spartanweaponry:invar_parrying_dagger",
+        "spartanweaponry:constantan_parrying_dagger",
+        "spartanweaponry:platinum_parrying_dagger",
+        "spartanweaponry:aluminum_parrying_dagger",
+        "kubejs:copper_parrying_dagger",
+        "kubejs:wrought_iron_parrying_dagger",
+        "kubejs:steel_parrying_dagger",
+        "kubejs:bismuth_bronze_parrying_dagger",
+        "kubejs:black_bronze_parrying_dagger",
+        "kubejs:bronze_parrying_dagger",
+        "kubejs:black_steel_parrying_dagger",
+        "kubejs:blue_steel_parrying_dagger",
+        "kubejs:red_steel_parrying_dagger"
+      ]
+    }
+  ],
+  "item": {
+    "weapons_parrying_dagger": {
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "var_3": "attack_3",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "hand_in",
+          "name": "hand_in_daggers"
+        },
+        {
+          "type": "useItem",
+          "name": "use_parrying_dagger"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1,
+          "offZ": 0.052
+        }
+      }
+    }
+  }
+}

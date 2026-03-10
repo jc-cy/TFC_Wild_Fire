@@ -1,0 +1,43 @@
+{
+    "customGroups": [
+        {
+            "name": "glove",
+            "items": [
+                "spartanweaponry:cestus",
+                "spartanweaponry:studded_cestus",
+                "kubejs:glove",
+                "alexsmobs:falconry_glove"
+            ]
+        }
+    ],
+    "item": {
+        "glove": {
+            "transforms": {
+                "right": {
+                    "scale": 1.0,
+                    "offX": 0,
+                    "offZ": 0,
+                    "rotX": 0,
+                    "rotY": 0,
+                    "rotZ": 0.0,
+                    "pivotX": 0,
+                    "pivotY": 0,
+                    "pivotZ": 0,
+                    "offY": 0.05
+                },
+                "left": {
+                    "scale": 1.0,
+                    "offX": 0,
+                    "offZ": 0,
+                    "rotX": 0,
+                    "rotY": 0,
+                    "rotZ": 0.0,
+                    "pivotX": 0,
+                    "pivotY": 0,
+                    "pivotZ": 0,
+                    "offY": 0.05
+                }
+            }
+        }
+    }
+}

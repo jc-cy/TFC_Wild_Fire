@@ -3,19 +3,65 @@
         {
             "name": "shovel",
             "items": [
-                "kaleidoscope_cookery:kitchen_shovel"
+                "kaleidoscope_cookery:kitchen_shovel",
+                "tfc_hammer_time:metal/excavator/black_bronze",
+                "tfc_hammer_time:metal/excavator/bismuth_bronze",
+                "tfc_hammer_time:metal/excavator/bronze",
+                "tfc_hammer_time:metal/excavator/copper",
+                "tfc_hammer_time:metal/excavator/wrought_iron",
+                "tfc_hammer_time:metal/excavator/steel",
+                "tfc_hammer_time:metal/excavator/black_steel",
+                "tfc_hammer_time:metal/excavator/blue_steel",
+                "tfc_hammer_time:metal/excavator/red_steel",
+                "kubejs:rock_tool/diamond_shovel",
+                "kubejs:rock_tool/obsidian_shovel",
+                "kubejs:rock_tool/flint_shovel"
             ]
         }
     ],
     "item": {
         "shovel": {
+            "transforms": {
+                "right": {
+                    "scale": 1.0,
+                    "offX": 0.0,
+                    "offY": 0.0,
+                    "offZ": 0.0,
+                    "rotX": -17.0,
+                    "rotY": 89.0,
+                    "rotZ": -4.0,
+                    "pivotX": 0.03,
+                    "pivotY": 0.049999997,
+                    "pivotZ": -0.02
+                },
+                "left": {
+                    "scale": 1.0,
+                    "offX": 0.0,
+                    "offY": 0.0,
+                    "offZ": 0.0,
+                    "rotX": -17.0,
+                    "rotY": -89.0,
+                    "rotZ": 4.0,
+                    "pivotX": -0.03,
+                    "pivotY": 0.049999997,
+                    "pivotZ": -0.02
+                }
+            },
             "customAnimation": [
                 {
                     "type": "useItem",
                     "name": "mining_digging"
+                },
+                {
+                    "type": "mining",
+                    "name": "mining_digging"
+                },
+                {
+                    "type": "attack",
+                    "var_1": "attack_1",
+                    "var_2": "attack_2"
                 }
             ]
-            
         }
     }
 }
