@@ -121,7 +121,7 @@ ServerEvents.recipes(event => {
             }).id(`${recipedid}mixing/heatslurry/${ore.ore}`);
 
 
-            washoretype.forEach(ore1 => {
+          /*  washoretype.forEach(ore1 => {
                 if (ore1.type != "dirty_dust") {
                     event.custom({//加热搅拌矿石融化
                         "type": "woodencog:heated_mixing",
@@ -145,7 +145,7 @@ ServerEvents.recipes(event => {
                         ]
                     }).id(`${recipedid}mixing/${ore1.type}/${ore.ore}`);
                 }
-            })
+            })*/
 
 
 
