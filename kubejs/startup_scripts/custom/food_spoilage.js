@@ -1,7 +1,12 @@
-NativeEvents.onEvent(Java.loadClass("first.wildfires.api.customEvent.FoodRottenEvent"),/**@param {Internal.FoodRottenEvent} event*/ event => {
- if (event.getItemStack().getItem().id == "tfc:food/beef") {
-        event.setItemStack('tfc:wood/encased_axle/birch')
-    }/*
+
+
+//NativeEvents.onEvent(Java.loadClass("first.wildfires.api.customEvent.FoodRottenEvent"),/**@param {Internal.FoodRottenEvent} event*/ event => {
+  /*  if (event.getItemStack().getItem().id == "tfc:food/beef") {
+        let count1 = event.getItemStack().getCount()
+        console.log(count1)
+        event.setItemStack(Item.of('tfc:wood/encased_axle/birch',count1))
+        
+    }*//*
     const rotten_meat = [
         'tfc:food/hyena', 'tfc:food/duck', 'tfc:food/chevon', 'tfc:food/gran_feline',
         'tfc:food/camelidae', 'tfc:food/cooked_beef', 'tfc:food/cooked_pork',
@@ -186,5 +191,5 @@ NativeEvents.onEvent(Java.loadClass("first.wildfires.api.customEvent.FoodRottenE
 例子：
    
 */
-    
-})
+
+//})

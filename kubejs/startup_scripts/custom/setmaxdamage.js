@@ -119,7 +119,8 @@ ItemEvents.modification(event => {
     ]
     attack.forEach(att =>
         event.modify(att.name, modification => {
-            modification.setAttackDamage(att.att);
+            //modification.setAttackDamage(att.att);
+            modification.setAttackSpeed(0.6);
         })
     )
 

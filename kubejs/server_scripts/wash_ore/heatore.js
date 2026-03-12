@@ -122,29 +122,29 @@ ServerEvents.recipes(event => {
 
 
             washoretype.forEach(ore1 => {
+                if (ore1.type != "dirty_dust") {
+                    event.custom({//加热搅拌矿石融化
+                        "type": "woodencog:heated_mixing",
+                        "heatRequirement": ore.temperature,
+                        "processingTime": 100,
+                        "ingredients": [
+                            {
+                                "type": "woodencog:heated",
+                                "ingredient": {
+                                    "item": `kubejs:item/ore/${ore1.type}/${ore.ore}`
+                                },
 
-                event.custom({//加热搅拌矿石融化
-                    "type": "woodencog:heated_mixing",
-                    "heatRequirement": ore.temperature,
-                    "processingTime": 100,
-                    "ingredients": [
-                        {
-                            "type": "woodencog:heated",
-                            "ingredient": {
-                                "item": `kubejs:item/ore/${ore1.type}/${ore.ore}`
-                            },
 
-
-                        }
-                    ],
-                    "results": [
-                        {
-                            "amount": ore1.num,
-                            "fluid": ore.out
-                        }
-                    ]
-                }).id(`${recipedid}mixing/${ore1.type}/${ore.ore}`);
-
+                            }
+                        ],
+                        "results": [
+                            {
+                                "amount": ore1.num,
+                                "fluid": ore.out
+                            }
+                        ]
+                    }).id(`${recipedid}mixing/${ore1.type}/${ore.ore}`);
+                }
             })
 
 
