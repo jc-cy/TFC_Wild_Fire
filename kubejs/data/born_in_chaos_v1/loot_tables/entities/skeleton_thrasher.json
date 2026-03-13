@@ -25,7 +25,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "born_in_chaos_v1:pieceofdarkmetal",
+          "name": "kubejs:rusty_iron_scrap",
           "weight": 50,
           "functions": [
             {
@@ -48,13 +48,20 @@
         {
           "type": "minecraft:item",
           "name": "born_in_chaos_v1:skullbreaker_hammer",
-          "weight": 5,
+          "weight": 15,
           "functions": [
             {
               "function": "set_count",
               "count": {
                 "min": 1,
                 "max": 1
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 0.5,
+                "max": 0.9
               }
             },
             {
@@ -70,7 +77,21 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:shield",
-          "weight": 30,
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:rags",
+          "weight": 25,
           "functions": [
             {
               "function": "set_count",
@@ -88,7 +109,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "born_in_chaos_v1:shattered_skull",
+          "name": "kubejs:copper_link",
           "weight": 35,
           "functions": [
             {

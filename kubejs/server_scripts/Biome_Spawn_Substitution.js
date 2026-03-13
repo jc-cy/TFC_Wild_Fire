@@ -84,7 +84,8 @@ TFCEvents.data(event => {
     // 沙漠蛛蜂：0-50mm降雨，1只
     event.fauna(climate => {
         climate.minRain(0);
-        climate.maxRain(50);
+        climate.maxRain(100);
+        climate.minTemp(10);
     }, fauna => { }, 'alexsmobs:tarantula_hawk');
 
     // 大猩猩：140-500mm降雨，>16°C，2-6只
@@ -132,9 +133,9 @@ TFCEvents.data(event => {
 
     // 犀牛：130-330mm降雨，>18°C，1-3只
     event.fauna(climate => {
-        climate.minRain(130);
+        climate.minRain(10);
         climate.maxRain(330);
-        climate.minTemp(18);
+        climate.minTemp(15);
     }, fauna => { }, 'alexsmobs:rhinoceros');
 
     // 走鹃：0-150mm降雨，1-3只
@@ -159,9 +160,9 @@ TFCEvents.data(event => {
 
     // 响尾蛇：130-330mm降雨，>18°C，1只
     event.fauna(climate => {
-        climate.minRain(130);
-        climate.maxRain(330);
-        climate.minTemp(18);
+        climate.minRain(0);
+        climate.maxRain(130);
+        climate.minTemp(10);
     }, fauna => { }, 'alexsmobs:rattlesnake');
 
     // 科莫多巨蜥：140-500mm降雨，>16°C，1-2只
@@ -188,7 +189,8 @@ TFCEvents.data(event => {
     // 秃鹫：0-100mm降雨，1-4只
     event.fauna(climate => {
         climate.minRain(0);
-        climate.maxRain(100);
+        climate.maxRain(130);
+        climate.minTemp(8);
     }, fauna => { }, 'naturalist:vulture');
 
     // 蜻蜓：200-500mm降雨，>16°C，1-2只
@@ -203,14 +205,14 @@ TFCEvents.data(event => {
         climate.minRain(90);
         climate.maxRain(380);
         climate.minTemp(-15);
-        climate.maxTemp(10);
+        climate.maxTemp(15);
     }, fauna => { }, 'alexsmobs:bison');
 
     // 獠牙兽：90-380mm降雨，<-15°C，1只（整合不同标识，统一气候）
     event.fauna(climate => {
         climate.minRain(90);
         climate.maxRain(380);
-        climate.maxTemp(-15);
+        climate.maxTemp(-2);
     }, fauna => { }, 'alexsmobs:tusklin'); // 保留主要标识
 
     // 切叶蚁：250-350mm降雨，2-15°C，1-3只
@@ -223,9 +225,9 @@ TFCEvents.data(event => {
 
     // 大象：130-330mm降雨，>18°C，1-4只
     event.fauna(climate => {
-        climate.minRain(130);
-        climate.maxRain(330);
-        climate.minTemp(18);
+        climate.minRain(10);
+        climate.maxRain(500);
+        climate.minTemp(1);
     }, fauna => { }, 'alexsmobs:elephant');
 
     // 袋鼠：130-330mm降雨，>18°C，2-3只
@@ -237,16 +239,16 @@ TFCEvents.data(event => {
 
     // 食蚁兽：250-350mm降雨，2-15°C，1只
     event.fauna(climate => {
-        climate.minRain(250);
-        climate.maxRain(350);
+        climate.minRain(260);
+        climate.maxRain(400);
         climate.minTemp(2);
         climate.maxTemp(15);
     }, fauna => { }, 'alexsmobs:anteater');
 
     // 臭鼬：200-300mm降雨，10-28°C，1只
     event.fauna(climate => {
-        climate.minRain(200);
-        climate.maxRain(300);
+        climate.minRain(160);
+        climate.maxRain(320);
         climate.minTemp(10);
         climate.maxTemp(28);
     }, fauna => { }, 'alexsmobs:skunk');
@@ -255,22 +257,38 @@ TFCEvents.data(event => {
     event.fauna(climate => {
         climate.minRain(130);
         climate.maxRain(330);
-        climate.minTemp(18);
+        climate.minTemp(0);
     }, fauna => { }, 'naturalist:giraffe');
 
     // 河马（水中）：130-430mm降雨，>18°C，1-2只
     event.fauna(climate => {
-        climate.minRain(130);
+        climate.minRain(10);
         climate.maxRain(430);
-        climate.minTemp(18);
-    }, fauna => { }, 'naturalist:hippo');
+        climate.minTemp(0);
+    }, fauna => {
+    fauna.distanceBelowSeaLevel(0)
+    }, 'naturalist:hippo');
 
     // 蜗牛：400-500mm降雨，>16°C，1-2只
     event.fauna(climate => {
-        climate.minRain(400);
+        climate.minRain(100);
         climate.maxRain(500);
-        climate.minTemp(16);
+        climate.minTemp(10);
     }, fauna => { }, 'naturalist:snail');
+
+    // 狮子：400-500mm降雨，>16°C，1-3只
+    event.fauna(climate => {
+        climate.minRain(80);
+        climate.maxRain(260);
+        climate.minTemp(14);
+    }, fauna => { }, 'naturalist:lion');
+
+    // 蜥蜴：400-500mm降雨，>16°C，1-3只
+    event.fauna(climate => {
+        climate.minRain(0);
+        climate.maxRain(350);
+        climate.minTemp(5);
+    }, fauna => { }, 'naturalist:lizard');
 
     // 白头海雕：>5°C，1-3只
     event.fauna(climate => {
@@ -279,7 +297,7 @@ TFCEvents.data(event => {
 
     // 香蕉蛞蝓：300-500mm降雨，4-15°C，1只
     event.fauna(climate => {
-        climate.minRain(300);
+        climate.minRain(220);
         climate.maxRain(500);
         climate.minTemp(4);
         climate.maxTemp(15);
@@ -287,7 +305,7 @@ TFCEvents.data(event => {
 
     // 浣熊：300-500mm降雨，10-28°C，1-3只
     event.fauna(climate => {
-        climate.minRain(300);
+        climate.minRain(100);
         climate.maxRain(500);
         climate.minTemp(10);
         climate.maxTemp(28);
@@ -295,17 +313,16 @@ TFCEvents.data(event => {
 
     // 乌鸦：300-500mm降雨，10-28°C，1-4只
     event.fauna(climate => {
-        climate.minRain(300);
+        climate.minRain(0);
         climate.maxRain(500);
-        climate.minTemp(10);
-        climate.maxTemp(28);
+        climate.minTemp(9);
     }, fauna => { }, 'alexsmobs:crow');
 
     // 冠蓝鸦：300-500mm降雨，10-28°C，1-2只
     event.fauna(climate => {
-        climate.minRain(300);
-        climate.maxRain(500);
-        climate.minTemp(10);
+        climate.minRain(100);
+        climate.maxRain(300);
+        climate.minTemp(8);
         climate.maxTemp(28);
     }, fauna => { }, 'alexsmobs:blue_jay');
 
@@ -333,20 +350,63 @@ TFCEvents.data(event => {
     // 跳鼠：0-50mm降雨，>10°C，1只
     event.fauna(climate => {
         climate.minRain(0);
-        climate.maxRain(50);
+        climate.maxRain(100);
         climate.minTemp(10);
     }, fauna => { }, 'alexsmobs:jerboa');
-    // 跳鼠：0-50mm降雨，>10°C，1只
 
-    
     event.fauna(climate => {
-        climate.minRain(0);
-        climate.maxRain(50);
-        climate.minTemp(10);
-    }, fauna => { }, 'alexsmobs:jerboa');
-     event.fauna(climate => {
-        climate.minRain(0);
-        climate.maxRain(50);
-        climate.minTemp(10);
-    }, fauna => { }, 'alexsmobs:jerboa');
+    }, fauna => {
+    fauna.maxBrightness(0);
+    }, 'born_in_chaos_v1:decrepit_skeleton');
+
+    event.fauna(climate => {
+    }, fauna => {
+    fauna.maxBrightness(0);
+    fauna.distanceBelowSeaLevel(40);
+    }, 'alexsmobs:centipede_head');
+
+    event.fauna(climate => {
+    }, fauna => {
+    fauna.maxBrightness(0);
+    }, 'born_in_chaos_v1:decaying_zombie');
+
+    event.fauna(climate => {
+    }, fauna => {
+    fauna.maxBrightness(0);
+    }, 'born_in_chaos_v1:zombie_fisherman');
+
+    event.fauna(climate => {
+    }, fauna => {
+    fauna.maxBrightness(0);
+    }, 'born_in_chaos_v1:zombie_lumberjack');
+
+    event.fauna(climate => {
+    }, fauna => {
+    fauna.maxBrightness(0);
+        fauna.distanceBelowSeaLevel(15);
+    }, 'born_in_chaos_v1:baby_spider');
+
+    event.fauna(climate => {
+    }, fauna => {
+    fauna.maxBrightness(0);
+        fauna.distanceBelowSeaLevel(30);
+    }, 'born_in_chaos_v1:mother_spider');
+
+    event.fauna(climate => {
+    }, fauna => {
+    fauna.maxBrightness(0);
+        fauna.distanceBelowSeaLevel(50);
+    }, 'born_in_chaos_v1:skeleton_thrasher');
+
+    event.fauna(climate => {
+    }, fauna => {
+    fauna.maxBrightness(0);
+        fauna.distanceBelowSeaLevel(50);
+    }, 'born_in_chaos_v1:zombie_bruiser');
+
+    event.fauna(climate => {
+    }, fauna => {
+    fauna.maxBrightness(0);
+        fauna.distanceBelowSeaLevel(10);
+    }, 'alexsmobs:cockroach');
 });

@@ -1,0 +1,34 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    [
+      {
+      "item": "kubejs:rags"
+      }
+    ]
+  ],
+  "result": [
+    {
+      "count": 1,
+      "item": "tfc:jute_fiber"
+    },
+    {
+      "chance": 0.1,
+      "count": 1,
+      "item": "tfc:wool_cloth"
+    },
+    {
+      "chance": 0.25,
+      "count": 1,
+      "item": "tfc:burlap_cloth"
+    },
+    {
+      "chance": 0.3,
+      "count": 2,
+      "item": "tfc:wool_yarn"
+    }
+  ],
+  "tool": {
+    "tag": "tfc:shears"
+  }
+}

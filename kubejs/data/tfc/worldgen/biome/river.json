@@ -72,14 +72,38 @@
             },
             {
                 "type": "born_in_chaos_v1:baby_spider",
-                "weight": 100,
-                "minCount": 4,
+                "weight": 80,
+                "minCount": 2,
                 "maxCount": 4
             },
             {
+                "type": "born_in_chaos_v1:mother_spider",
+                "weight": 2,
+                "minCount": 1,
+                "maxCount": 1
+            },
+            {
+                "type": "born_in_chaos_v1:skeleton_thrasher",
+                "weight": 5,
+                "minCount": 1,
+                "maxCount": 1
+            },
+            {
+                "type": "born_in_chaos_v1:zombie_bruiser",
+                "weight": 5,
+                "minCount": 1,
+                "maxCount": 1
+            },
+            {
+                "type": "alexsmobs:cockroach",
+                "weight": 20,
+                "minCount": 2,
+                "maxCount": 6
+            },
+            {
                 "type": "minecraft:zombie",
-                "weight": 95,
-                "minCount": 4,
+                "weight": 80,
+                "minCount": 2,
                 "maxCount": 4
             },
             {
@@ -90,26 +114,26 @@
             },
             {
                 "type": "born_in_chaos_v1:zombie_fisherman",
-                "weight": 5,
+                "weight": 10,
                 "minCount": 1,
                 "maxCount": 2
             },
             {
                 "type": "born_in_chaos_v1:zombie_lumberjack",
-                "weight": 5,
+                "weight": 10,
                 "minCount": 1,
                 "maxCount": 2
             },
             {
                 "type": "minecraft:skeleton",
-                "weight": 50,
-                "minCount": 4,
-                "maxCount": 4
+                "weight": 60,
+                "minCount": 2,
+                "maxCount": 3
             },
             {
                 "type": "born_in_chaos_v1:decrepit_skeleton",
-                "weight": 80,
-                "minCount": 4,
+                "weight": 60,
+                "minCount": 3,
                 "maxCount": 4
             },
             {
@@ -120,9 +144,15 @@
             },
             {
                 "type": "minecraft:creeper",
-                "weight": 100,
-                "minCount": 4,
+                "weight": 80,
+                "minCount": 3,
                 "maxCount": 4
+            },
+            {
+                "type": "alexsmobs:centipede_head",
+                "weight": 5,
+                "minCount": 1,
+                "maxCount": 1
             },
             {
                 "type": "minecraft:slime",
@@ -217,8 +247,8 @@
                 "maxCount": 1
             },
             {
-                "type": "naturalist:lion",
-                "weight": 2,
+                "type": "naturalist:hippo",
+                "weight": 1,
                 "minCount": 1,
                 "maxCount": 3
             },

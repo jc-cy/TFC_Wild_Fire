@@ -1,0 +1,19 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "stage=0": {
+      "model": "firmalife:block/plant/cilantro_0"
+    },
+    "stage=1": [
+      {
+      "model": "firmalife:block/plant/cilantro_1"
+		},
+		{
+      "model": "firmalife:block/plant/cilantro_2"
+		},
+		{
+      "model": "firmalife:block/plant/cilantro_3"
+		}
+    ]
+  }
+}

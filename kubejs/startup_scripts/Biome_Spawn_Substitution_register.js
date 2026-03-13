@@ -77,7 +77,7 @@ TFCEvents.registerFaunas(event => {
     // 切叶蚁（地面）→ 世界表面（热带草地）
     event.replace('alexsmobs:leafcutter_ant', 'on_ground', 'world_surface_wg');
     // 大象（地面）→ 世界表面（热带草原草地）
-    event.replace('alexsmobs:elephant', 'on_ground', 'world_surface');
+    event.replace('alexsmobs:elephant', 'on_ground', 'world_surface_wg');
     // 袋鼠（地面）→ 世界表面（澳大利亚内陆）
     event.replace('alexsmobs:kangaroo', 'on_ground', 'world_surface_wg');
     // 食蚁兽（地面）→ 世界表面（热带草原）
@@ -87,6 +87,10 @@ TFCEvents.registerFaunas(event => {
     // 长颈鹿（地面）→ 世界表面（热带稀树草原）
     event.replace('naturalist:giraffe', 'on_ground', 'world_surface');
     // 蜗牛（地面）→ 世界表面（温带森林地面）
+    event.replace('naturalist:lion', 'on_ground', 'world_surface');
+    // 狮子（地面）→ 世界表面（温带森林地面）
+    event.replace('naturalist:lizard', 'on_ground', 'world_surface');
+    // 蜥蜴（地面）→ 世界表面（温带森林地面）
     event.replace('naturalist:snail', 'on_ground', 'world_surface_wg');
     // 白头海雕（无限制，模拟飞行）→ 世界表面（温带天空）
     event.replace('alexsmobs:bald_eagle', 'on_ground', 'world_surface');
@@ -105,8 +109,16 @@ TFCEvents.registerFaunas(event => {
     // 跳鼠（地面）→ 世界表面（干旱沙漠）
     event.replace('alexsmobs:jerboa', 'on_ground', 'world_surface_wg');
     // 为犀牛注册动物群定义
-    // 这里使用replace方法，会覆盖其可能已有的任何生成条件
-    // 假设犀牛是地面生物，使用on_ground放置类型和world_surface_wg高度图
     event.replace('alexsmobs:rhinoceros', 'on_ground', 'world_surface_wg');
-     event.replace("alexsmobs:elephant", 'in_water',  'world_surface_wg');
+    // 为怪物生成注册动物群定义
+    event.replace('born_in_chaos_v1:decrepit_skeleton', 'on_ground', 'world_surface_wg');
+    event.replace('alexsmobs:centipede_head', 'on_ground', 'world_surface_wg');
+    event.replace('born_in_chaos_v1:decaying_zombie', 'on_ground', 'world_surface_wg');
+    event.replace('born_in_chaos_v1:zombie_fisherman', 'on_ground', 'world_surface_wg');
+    event.replace('born_in_chaos_v1:zombie_lumberjack', 'on_ground', 'world_surface_wg');
+    event.replace('born_in_chaos_v1:baby_spider', 'on_ground', 'world_surface_wg');
+    event.replace('born_in_chaos_v1:mother_spider', 'on_ground', 'world_surface_wg');
+    event.replace('born_in_chaos_v1:skeleton_thrasher', 'on_ground', 'world_surface_wg');
+    event.replace('born_in_chaos_v1:zombie_bruiser', 'on_ground', 'world_surface_wg');
+    event.replace('alexsmobs:cockroach', 'on_ground', 'world_surface_wg');
 });

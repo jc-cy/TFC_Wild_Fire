@@ -3,10 +3,122 @@
   "pools": [
     {
       "rolls": {
-        "min": 2,
+        "min": 3,
         "max": 5
       },
       "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tfc:empty_jar",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:compost",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:egg",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:food/wheat",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:food/barley",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:food/oat",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:food/rye",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
         {
           "type": "minecraft:item",
           "name": "minecraft:ink_sac",
@@ -37,92 +149,64 @@
         },
         {
           "type": "minecraft:item",
-          "name": "tfc:food/red_apple",
+          "name": "tfc:ore/poor_native_copper",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/poor_native_silver",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/small_native_gold",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/small_sphalerite",
           "weight": 20,
           "functions": [
             {
               "function": "set_count",
               "count": {
                 "min": 1,
-                "max": 2
+                "max": 1
               }
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "tfc:food/wheat",
+          "name": "tfc:ore/small_hematite",
           "weight": 15,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "tfc:food/rye",
-          "weight": 15,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "tfc:food/maize",
-          "weight": 15,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "tfc:food/barley",
-          "weight": 15,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "tfc:food/oat",
-          "weight": 15,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "tfc:plant/green_algae",
-          "weight": 10,
           "functions": [
             {
               "function": "set_count",
@@ -135,8 +219,8 @@
         },
         {
           "type": "minecraft:item",
-          "name": "tfc:plant/moss",
-          "weight": 10,
+          "name": "tfc:ore/amethyst",
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -149,8 +233,8 @@
         },
         {
           "type": "minecraft:item",
-          "name": "tfc:plant/turtle_grass",
-          "weight": 10,
+          "name": "tfc:ore/opal",
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -163,8 +247,22 @@
         },
         {
           "type": "minecraft:item",
-          "name": "tfc:food/green_apple",
-          "weight": 10,
+          "name": "tfc:ore/topaz",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:ore/pyrite",
+          "weight": 3,
           "functions": [
             {
               "function": "set_count",
@@ -177,8 +275,8 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:brick",
-          "weight": 15,
+          "name": "minecraft:bone",
+          "weight": 30,
           "functions": [
             {
               "function": "set_count",
@@ -191,14 +289,71 @@
         },
         {
           "type": "minecraft:item",
-          "name": "tfc:small_raw_hide",
-          "weight": 40,
+          "name": "tfc:metal/fishing_rod/copper",
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
               "count": {
                 "min": 1,
-                "max": 2
+                "max": 1
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 0.5,
+                "max": 0.9
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "treasure": true,
+              "levels": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:food/carrot",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:food/potato",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:food/cabbage",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
               }
             }
           ]
@@ -213,20 +368,6 @@
               "count": {
                 "min": 2,
                 "max": 4
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:stick",
-          "weight": 20,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 2
               }
             }
           ]
@@ -248,13 +389,13 @@
         {
           "type": "minecraft:item",
           "name": "tfc:food/cod",
-          "weight": 40,
+          "weight": 20,
           "functions": [
             {
               "function": "set_count",
               "count": {
                 "min": 1,
-                "max": 2
+                "max": 1
               }
             }
           ]
@@ -262,13 +403,27 @@
         {
           "type": "minecraft:item",
           "name": "tfc:food/salmon",
-          "weight": 40,
+          "weight": 20,
           "functions": [
             {
               "function": "set_count",
               "count": {
                 "min": 1,
-                "max": 2
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:food/calamari",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
               }
             }
           ]
@@ -296,62 +451,6 @@
               "function": "set_count",
               "count": {
                 "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "tfc:glue",
-          "weight": 20,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "tfc;straw",
-          "weight": 15,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:bone",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "tfc:burlap_cloth",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 0,
                 "max": 1
               }
             }
@@ -360,7 +459,49 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:book",
-          "weight": 5,
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:rotten_fish",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:rotten_fruit",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:food/lake_trout",
+          "weight": 10,
           "functions": [
             {
               "function": "set_count",

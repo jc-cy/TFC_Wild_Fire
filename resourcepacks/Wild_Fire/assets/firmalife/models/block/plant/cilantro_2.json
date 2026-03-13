@@ -1,0 +1,8 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/wild_crop/crop_cross_alt",
+  "textures": {
+    "1": "tfc:block/crop/wild_crop_grass_1",
+    "crop": "firmalife:block/plant/cilantro/2"
+  }
+}

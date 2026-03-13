@@ -141,9 +141,12 @@
       ]
     },
     {
+      "rolls": 1,
+      "entries": [
+        {
           "type": "minecraft:item",
           "name": "born_in_chaos_v1:wood_splitter_axe",
-          "weight": 7,
+          "weight": 5,
           "functions": [
             {
               "function": "set_count",
