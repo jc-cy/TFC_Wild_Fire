@@ -1,0 +1,52 @@
+{
+  "customGroups": [
+    {
+      "name": "weapons_dagger",
+      "items": [
+        "spartanweaponry:wooden_dagger",
+        "spartanweaponry:stone_dagger",
+        "spartanweaponry:golden_dagger",
+        "spartanweaponry:netherite_dagger",
+        "spartanweaponry:tin_dagger",
+        "spartanweaponry:silver_dagger",
+        "spartanweaponry:electrum_dagger",
+        "spartanweaponry:lead_dagger",
+        "spartanweaponry:nickel_dagger",
+        "spartanweaponry:invar_dagger",
+        "spartanweaponry:constantan_dagger",
+        "spartanweaponry:platinum_dagger",
+        "spartanweaponry:aluminum_dagger",
+        "kubejs:copper_dagger",
+        "kubejs:wrought_iron_dagger",
+        "kubejs:steel_dagger",
+        "kubejs:bismuth_bronze_dagger",
+        "kubejs:black_bronze_dagger",
+        "kubejs:bronze_dagger",
+        "kubejs:black_steel_dagger",
+        "kubejs:blue_steel_dagger",
+        "kubejs:red_steel_dagger"
+      ]
+    }
+  ],
+  "item": {
+    "weapons_dagger": {
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "var_3": "attack_3",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "hand_in",
+          "name": "hand_in_daggers"
+        },
+        {
+          "type": "useItem",
+          "name": "use_throwing_weapons"
+        }
+      ]
+    }
+  }
+}

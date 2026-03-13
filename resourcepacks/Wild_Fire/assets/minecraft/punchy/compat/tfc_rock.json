@@ -1,60 +1,46 @@
 {
   "customGroups": [
-    {
-      "name": "tfc_rock",
-      "items": [
-        "tfc:rock/loose/granite",
-        "tfc:rock/loose/mossy_granite",
-        "tfc:rock/loose/diorite",
-        "tfc:rock/loose/gabbro",
-        "tfc:rock/loose/shale",
-        "tfc:rock/loose/claystone",
-        "tfc:rock/loose/limestone",
-        "tfc:rock/loose/conglomerate",
-        "tfc:rock/loose/quartzite",
-        "tfc:rock/loose/dacite",
-        "tfc:rock/loose/andesite",
-        "tfc:rock/loose/basalt",
-        "tfc:rock/loose/rhyolite",
-        "tfc:rock/loose/chalk",
-        "tfc:rock/loose/chert",
-        "tfc:rock/loose/dolomite",
-        "tfc:rock/loose/slate",
-        "tfc:rock/loose/phyllite",
-        "tfc:rock/loose/schist",
-        "tfc:rock/loose/gneiss",
-        "tfc:rock/loose/marble"
-      ]
-    }
+    {"name": "granite","items": ["tfc:rock/loose/granite","tfc:rock/mossy_loose/granite"]}, 
+    {"name": "diorite","items": ["tfc:rock/loose/diorite","tfc:rock/mossy_loose/diorite"]},
+    {"name": "gabbro","items": ["tfc:rock/loose/gabbro","tfc:rock/mossy_loose/gabbro"]},
+    {"name": "shale","items": ["tfc:rock/loose/shale","tfc:rock/mossy_loose/shale"]},
+    {"name": "claystone","items": ["tfc:rock/loose/claystone","tfc:rock/mossy_loose/claystone"]},
+    {"name": "limestone","items": ["tfc:rock/loose/limestone","tfc:rock/mossy_loose/limestone"]},
+    {"name": "conglomerate","items": ["tfc:rock/loose/conglomerate","tfc:rock/mossy_loose/conglomerate"]},
+    {"name": "quartzite","items": ["tfc:rock/loose/quartzite","tfc:rock/mossy_loose/quartzite"]},
+    {"name": "dacite","items": ["tfc:rock/loose/dacite","tfc:rock/mossy_loose/dacite"]},
+    {"name": "andesite","items": ["tfc:rock/loose/andesite","tfc:rock/mossy_loose/andesite"]},
+    {"name": "basalt","items": ["tfc:rock/loose/basalt","tfc:rock/mossy_loose/basalt"]},
+    {"name": "rhyolite","items": ["tfc:rock/loose/rhyolite","tfc:rock/mossy_loose/rhyolite"]},
+    {"name": "chalk","items": ["tfc:rock/loose/chalk","tfc:rock/mossy_loose/chalk"]},
+    {"name": "chert","items": ["tfc:rock/loose/chert","tfc:rock/mossy_loose/chert"]},
+    {"name": "dolomite","items": ["tfc:rock/loose/dolomite","tfc:rock/mossy_loose/dolomite"]},
+    {"name": "slate","items": ["tfc:rock/loose/slate","tfc:rock/mossy_loose/slate"]},
+    {"name": "phyllite","items": ["tfc:rock/loose/phyllite","tfc:rock/mossy_loose/phyllite"]},
+    {"name": "schist","items": ["tfc:rock/loose/schist","tfc:rock/mossy_loose/schist"]},
+    {"name": "gneiss","items": ["tfc:rock/loose/gneiss","tfc:rock/mossy_loose/gneiss"]},
+    {"name": "marble","items": ["tfc:rock/loose/marble","tfc:rock/mossy_loose/marble"]}
   ],
   "item": {
-    "tfc_rock": {
-      "transforms": {
-        "right": {
-          "scale": 1.0,
-          "offX": -0.059999995,
-          "offY": -0.27,
-          "offZ": -0.01,
-          "rotX": -1.0,
-          "rotY": -1.0,
-          "rotZ": 8.0,
-          "pivotX": 0.0,
-          "pivotY": 0.049999997,
-          "pivotZ": 0.0
-        },
-        "left": {
-          "scale": 0.97,
-          "offX": 0.059999995,
-          "offY": -0.25000003,
-          "offZ": 0.09999999,
-          "rotX": -1.0,
-          "rotY": -167.0,
-          "rotZ": -4.0,
-          "pivotX": 0.09999999,
-          "pivotY": 0.049999997,
-          "pivotZ": -0.03
-        }
-      }
-    }
+    "granite": {"customAnimation": [ {"type": "attack","name": "pick_granite"}]},
+    "diorite": {"customAnimation": [ {"type": "attack","name": "pick_diorite"}]},
+    "gabbro": {"customAnimation": [ {"type": "attack","name": "pick_gabbro"}]},
+    "shale": {"customAnimation": [ {"type": "attack","name": "pick_shale"}]},
+    "claystone": {"customAnimation": [ {"type": "attack","name": "pick_claystone"}]},
+    "limestone": {"customAnimation": [ {"type": "attack","name": "pick_limestone"}]},
+    "conglomerate": {"customAnimation": [ {"type": "attack","name": "pick_conglomerate"}]},
+    "quartzite": {"customAnimation": [ {"type": "attack","name": "pick_quartzite"}]},
+    "dacite": {"customAnimation": [ {"type": "attack","name": "pick_dacite"}]},
+    "andesite": {"customAnimation": [ {"type": "attack","name": "pick_andesite"}]},
+    "basalt": {"customAnimation": [ {"type": "attack","name": "pick_basalt"}]},
+    "rhyolite": {"customAnimation": [ {"type": "attack","name": "pick_rhyolite"}]},
+    "chalk": {"customAnimation": [ {"type": "attack","name": "pick_chalk"}]},
+    "chert": {"customAnimation": [ {"type": "attack","name": "pick_chert"}]},
+    "dolomite": {"customAnimation": [ {"type": "attack","name": "pick_dolomite"}]},
+    "slate": {"customAnimation": [ {"type": "attack","name": "pick_slate"}]},
+    "phyllite": {"customAnimation": [ {"type": "attack","name": "pick_phyllite"}]},
+    "schist": {"customAnimation": [ {"type": "attack","name": "pick_schist"}]},
+    "gneiss": {"customAnimation": [ {"type": "attack","name": "pick_gneiss"}]},
+    "marble": {"customAnimation": [ {"type": "attack","name": "pick_marble"}]}
   }
 }

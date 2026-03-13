@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
 
             //medium
             event.recipes.kubejs.shapeless(
-                Item.of(`tfc:stone/${tool.name}/${rock.name}`, '{"tfc:forging_bonus":2}'),
+                Item.of(`tfc:stone/${tool.name}/${rock.name}`, '{"tfc:forging_bonus":2,TempDuration:50}'),
                 [
                     "#kubejs:medium_binding",`tfc:stone/${tool.type}/${rock.name}`, "#forge:rods/wooden"
                 
@@ -108,7 +108,7 @@ ServerEvents.recipes(event => {
 
             //strong
             event.recipes.kubejs.shapeless(
-                Item.of(`tfc:stone/${tool.name}/${rock.name}`, '{"tfc:forging_bonus":4}'),
+                Item.of(`tfc:stone/${tool.name}/${rock.name}`, '{"tfc:forging_bonus":4,TempDuration:100}'),
                 [
                     "#kubejs:advanced_binding",`tfc:stone/${tool.type}/${rock.name}`,"#forge:rods/wooden"
                     
@@ -174,6 +174,11 @@ ServerEvents.recipes(event => {
         "copper",
         "red_steel",
         "wrought_iron"
+    ]
+    const advanced_metals = [//高级金属
+
+
+
     ]
     const tools = [//金属工具
         { name: 'hoe', type: 'hoe_head' },

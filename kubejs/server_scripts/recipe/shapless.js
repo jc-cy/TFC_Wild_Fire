@@ -2,6 +2,7 @@ ServerEvents.recipes(event => {
     const { tfc, create, kubejs, immersiveengineering } = event.recipes;
     const id_in = "kubejs:recipe/shapeless/"
 
+    event.shapeless("spartanweaponry:handle", ["sns:leather_strip", "minecraft:stick"]);//武器手柄
 
     //传动杆
     event.shapeless("create:shaft", ['#kubejs:shaft', "create:andesite_alloy"]).keepIngredient({ item: "minecraft:glass" });//安山传动杆

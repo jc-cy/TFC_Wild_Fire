@@ -1,56 +1,37 @@
 {
   "attributes": {
     "attack_range": 2.75,
+    "two_handed": false,
     "category": "rapier",
     "attacks": [
       {
-        "hitbox": "HORIZONTAL_PLANE",
-        "damage_multiplier": 0.9,
-        "angle": 60,
-        "upswing": 0.5,
-        "animation": "malfu_combat_animation:rapier_rl",
+        "hitbox": "FORWARD_BOX",
+        "damage_multiplier": 1,
+        "angle": 0,
+        "upswing": 0.2,
+        "animation": "bettercombat:one_handed_stab",
         "swing_sound": {
-          "id": "bettercombat:rapier_slash"
-        }
-      },
-      {
-        "hitbox": "HORIZONTAL_PLANE",
-        "damage_multiplier": 0.9,
-        "angle": 60,
-        "upswing": 0.5,
-        "animation": "malfu_combat_animation:rapier_lr",
-        "swing_sound": {
-          "id": "bettercombat:rapier_slash"
-        }
-      },
-      {
-        "hitbox": "HORIZONTAL_PLANE",
-        "damage_multiplier": 0.9,
-        "angle": 60,
-        "upswing": 0.5,
-        "animation": "malfu_combat_animation:rapier_rl_down",
-        "swing_sound": {
-          "id": "bettercombat:rapier_slash"
+          "id": "bettercombat:dagger_slash"
         }
       },
       {
         "hitbox": "FORWARD_BOX",
-        "damage_multiplier": 1.2,
+        "damage_multiplier": 1,
         "angle": 0,
-        "upswing": 0.5,
-        "animation": "malfu_combat_animation:rapier_lr_stab",
+        "upswing": 0.2,
+        "animation": "bettercombat:two_handed_stab_left",
         "swing_sound": {
-          "id": "bettercombat:rapier_stab"
+          "id": "bettercombat:dagger_slash"
         }
       },
       {
         "hitbox": "HORIZONTAL_PLANE",
-        "damage_multiplier": 0.9,
-        "angle": 60,
+        "damage_multiplier": 1,
+        "angle": 120,
         "upswing": 0.5,
-        "animation": "malfu_combat_animation:rapier_lr",
+        "animation": "bettercombat:one_handed_slash_horizontal_left",
         "swing_sound": {
-          "id": "bettercombat:rapier_slash"
+          "id": "bettercombat:dagger_slash"
         }
       }
     ]

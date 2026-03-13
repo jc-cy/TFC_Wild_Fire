@@ -1,0 +1,27 @@
+{
+  "customGroups": [
+    {
+      "name": "peel",
+      "items": [
+        "kubejs:peel",
+        "kubejs:cast_iron_peel",
+        "kubejs:stainless_steel_peel"
+      ]
+    }
+  ],
+  "item": {
+    "peel": {
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2"
+        },
+        {
+          "type": "useItem",
+          "name": "use_peel"
+        }
+      ]
+    }
+  }
+}

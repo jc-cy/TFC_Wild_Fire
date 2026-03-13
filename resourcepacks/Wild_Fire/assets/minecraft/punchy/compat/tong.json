@@ -1,0 +1,86 @@
+{
+    "customGroups": [
+        {
+            "name": "tong",
+            "items": [
+                "kubejs:bismuth_bronze_tong",
+                "kubejs:black_bronze_tong",
+                "kubejs:bronze_tong",
+                "kubejs:copper_tong",
+                "kubejs:wrought_iron_tong",
+                "kubejs:steel_tong",
+                "kubejs:cast_iron_tong",
+                "kubejs:gold_tong",
+                "kubejs:rose_gold_tong",
+                "kubejs:brass_tong",
+                "kubejs:bismuth_tong",
+                "kubejs:silver_tong",
+                "kubejs:sterling_silver_tong",
+                "kubejs:nickel_tong",
+                "kubejs:chromium_tong",
+                "kubejs:zinc_tong",
+                "kubejs:stainless_steel_tong",
+                "kubejs:black_steel_tong",
+                "kubejs:blue_steel_tong",
+                "kubejs:red_steel_tong",
+                "kubejs:wooden_tong"
+            ]
+        }
+    ],
+    "item": {
+        "tong": {
+            "transforms": {
+                "right": {
+                    "scale": 1.0,
+                    "offX": 0.13999999,
+                    "offY": -0.13999997,
+                    "offZ": 0.06999999,
+                    "rotX": -45.0,
+                    "rotY": 93.0,
+                    "rotZ": 0.0,
+                    "pivotX": -0.06999999,
+                    "pivotY": 0.089999974,
+                    "pivotZ": -0.059999995
+                },
+                "left": {
+                    "scale": 1.0,
+                    "offX": 0.14999999,
+                    "offY": -0.13999997,
+                    "offZ": 0.059999995,
+                    "rotX": -132.0,
+                    "rotY": -89.0,
+                    "rotZ": 1.0,
+                    "pivotX": 0.06999999,
+                    "pivotY": 0.089999974,
+                    "pivotZ": -0.059999995
+                }
+            },
+            "armTransforms": {
+                "right": {
+                    "scale": 1.0,
+                    "offX": 0.0,
+                    "offY": 0.14000002,
+                    "offZ": -0.09999999,
+                    "rotX": -23.0,
+                    "rotY": 0.0,
+                    "rotZ": -1.0,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                },
+                "left": {
+                    "scale": 1.0,
+                    "offX": 0.0,
+                    "offY": 0.14000002,
+                    "offZ": -0.09999999,
+                    "rotX": -23.0,
+                    "rotY": 0.0,
+                    "rotZ": -1.0,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                }
+            }
+        }
+    }
+}

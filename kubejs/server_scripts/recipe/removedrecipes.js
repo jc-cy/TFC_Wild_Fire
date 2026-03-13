@@ -12,6 +12,7 @@ ServerEvents.recipes(e => {
  e.replaceInput({}, "create:shaft",'#kubejs:shaft')
  
   const iddd = [
+    'tfc:handle',
     'woodencog:crafting/appliances/copper_diving_boots',
     'create:crafting/appliances/copper_diving_boots',
     'woodencog:crafting/appliances/copper_diving_helmet',

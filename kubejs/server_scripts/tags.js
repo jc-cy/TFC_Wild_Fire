@@ -256,7 +256,7 @@ ServerEvents.tags("block", event => {
         event.add('kubejs:petroleum_gas', 'kubejs:petroleum_gas')
     }),
     ServerEvents.tags("item", event => {
-
+        /*
         //合理的种子物品
         event.add('tfc:small_fishing_bait',
             [
@@ -288,6 +288,11 @@ ServerEvents.tags("block", event => {
                 "tfc:crop/trillium_seeds",
                 "tfc:crop/labrador_tea_seeds",
                 "tfc:crop/red_palm_seeds"
+            ])*/
+        //可以夹三明治的小吃
+        event.add('tfc:foods/usable_in_sandwich',
+            [
+                "#forge:cooked_eggs",
             ])
 
         event.add('forge:tools/tridents',
