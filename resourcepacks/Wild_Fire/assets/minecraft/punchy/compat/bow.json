@@ -1,0 +1,46 @@
+{
+    "customGroups": [
+        {
+            "name": "bow",
+            "items": [
+                "alexscaves:dreadbow"
+            ]
+        }
+    ],
+    "item": {
+        "bow": {
+            "transforms": {
+                "right": {
+                    "scale": 1.0,
+                    "offX": 0.0,
+                    "offY": 0.0,
+                    "offZ": 0.0,
+                    "rotX": 4.0,
+                    "rotY": 0.0,
+                    "rotZ": -10.0,
+                    "pivotX": -0.049999997,
+                    "pivotY": 0.049999997,
+                    "pivotZ": -0.01
+                },
+                "left": {
+                    "scale": 1.0,
+                    "offX": -0.0,
+                    "offY": 0.0,
+                    "offZ": 0.0,
+                    "rotX": 4.0,
+                    "rotY": -0.0,
+                    "rotZ": 10.0,
+                    "pivotX": 0.049999997,
+                    "pivotY": 0.049999997,
+                    "pivotZ": -0.01
+                }
+            },
+            "customAnimation": [
+                {
+                    "type": "useItem",
+                    "name": "use_bow"
+                }
+            ]
+        }
+    }
+}

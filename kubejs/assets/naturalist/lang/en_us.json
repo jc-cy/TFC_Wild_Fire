@@ -1,0 +1,14 @@
+{
+  "naturalist.midnightconfig.elephantRemoved": "§7Remove Mammoth",
+  "naturalist.midnightconfig.elephantRemoved.tooltip": "§8§o[?]§7§o If set to 'Yes', Mammoths will not spawn, and existing Mammoths will be removed.",
+  "naturalist.midnightconfig.elephantSpawnWeight": "§9Mammoth Spawn Weight",
+  "naturalist.midnightconfig.elephantSpawnWeight.tooltip": "§8§o[?]§7§o The chance of Mammoths spawning in the world.",
+  "naturalist.midnightconfig.elephantSpawnMinGroupSize": "§7§oMammoth Minimum Group Size",
+  "naturalist.midnightconfig.elephantSpawnMinGroupSize.tooltip": "§8§o[?]§7§o The minimum number of Mammoths that can spawn in a group.",
+  "naturalist.midnightconfig.elephantSpawnMaxGroupSize": "§7§oMammoth Maximum Group Size",
+  "naturalist.midnightconfig.elephantSpawnMaxGroupSize.tooltip": "§8§o[?]§7§o The maximum number of Mammoths that can spawn in a group.",
+  "entity.naturalist.elephant": "Mammoth",
+  "item.naturalist.elephant_spawn_egg": "Mammoth Spawn Egg",
+  "naturalist.subtitles.entity.elephant.hurt": "Mammoth hurts",
+  "naturalist.subtitles.entity.elephant.ambient": "Mammoth trumpets"
+}

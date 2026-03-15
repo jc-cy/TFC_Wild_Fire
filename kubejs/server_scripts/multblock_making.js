@@ -5,15 +5,15 @@ MultiBlockCreateVehicle(
     //生成的实体名称
     'alexscaves:submarine',
     //搭建的核心方块
-    'kubejs:submarine_core',
+    'wildfires:submarine_core',
     //搭建需要的工具
     "#tfc:hammers"
 );
 const MultiBlock = [
-    { name: "biplane", block: "kubejs:biplane_engine" },
-    { name: "airship", block: "kubejs:small_engine" },
-    { name: "cargo_airship", block: "kubejs:rugged_small_engine" },
-    { name: "warship", block: "kubejs:large_airship_engine" },
+    { name: "biplane", block: "wildfires:biplane_engine" },
+    { name: "airship", block: "wildfires:small_engine" },
+    { name: "cargo_airship", block: "wildfires:rugged_small_engine" },
+    { name: "warship", block: "wildfires:large_airship_engine" },
     { name: "gyrodyne", block: "minecraft:beehive" },
     { name: "quadrocopter", block: "minecraft:observer" },
     { name: "bamboo_hopper", block: "minecraft:lectern" }

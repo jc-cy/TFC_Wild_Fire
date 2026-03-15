@@ -3391,8 +3391,8 @@
 		}
 		{
 			dependencies: ["1EE460638F892AB5"]
-			hide_until_deps_complete: true
 			id: "50255A3D0E3C4394"
+			invisible: true
 			rewards: [{
 				id: "6E656103123A2EB7"
 				type: "xp"

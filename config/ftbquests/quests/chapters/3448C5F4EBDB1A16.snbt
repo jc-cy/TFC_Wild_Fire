@@ -989,8 +989,8 @@
 			dependencies: ["7D7A0D519A2C0B53"]
 			description: ["现在你可以用钢来制作保存食物的冰箱，只不过这个冰箱需要耗电制冷，要确保他通入Fe电源再开启使用"]
 			hide_dependency_lines: true
-			hide_until_deps_complete: true
 			id: "61925C98524F93F2"
+			invisible: true
 			rewards: [{
 				id: "20320B9966828B27"
 				type: "xp"

@@ -104,6 +104,7 @@ StartupEvents.registry('item', event => {
     event.create('pulp_film', 'basic').texture('kubejs:item/pulp_film'); // 纸浆膜
     event.create('paper_film', 'basic').texture('kubejs:item/paper_film'); // 纸膜
 
+    event.create('air', 'basic').texture('kubejs:item/air'); // 透明物品
     const dough = [
         { name1: "barley_dough", name2: "barley_flatbread_dough" },
         { name1: "maize_dough", name2: "maize_flatbread_dough" },

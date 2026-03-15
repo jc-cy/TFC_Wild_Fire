@@ -1,6 +1,16 @@
 [
     {
         "matchItems": [ 
+            "brewinandchewin:scarlet_cheese_wedge",
+            "brewinandchewin:scarlet_cheese_wheel",
+            "brewinandchewin:unripe_scarlet_cheese_wheel",
+            "brewinandchewin:flaxen_cheese_wheel",
+            "brewinandchewin:unripe_flaxen_cheese_wheel"
+        ],
+        "resultItems": "minecraft:barrier"
+    },
+    {
+        "matchItems": [
             "design_decor:queen_slime_large_chain",
             "design_decor:knightslime_large_chain",
             "design_decor:invar_large_chain",
@@ -38,13 +48,7 @@
             "immersiveengineering:toolupgrade_revolver_bayonet",
             "immersiveengineering:toolupgrade_revolver_magazine",
             "immersiveengineering:toolupgrade_revolver_electro",
-            "immersiveengineering:turret_gun"
-        ],
-        "resultItems": "minecraft:barrier"
-    },
-    {
-        "matchItems": [
-            "#minecraft:boats",
+            "immersiveengineering:turret_gun",
 
             "illagerinvasion:unusual_dust",
             "illagerinvasion:imbuing_table",
@@ -53,8 +57,6 @@
             "illagerinvasion:hallowed_gem",
             "illagerinvasion:magical_fire_charge",
             "illagerinvasion:lost_candle",
-            "illagerinvasion:platinum_sheet",
-            "illagerinvasion:platinum_chunk",
 
             "sophisticatedbackpacks:auto_blasting_upgrade",
             "sophisticatedbackpacks:auto_smoking_upgrade",
@@ -73,15 +75,11 @@
             "supplementaries:lunch_basket",
             "supplementaries:strings",
             "supplementaries:slingshot",
-            "supplementaries:rope_arrow",
             "supplementaries:faucet",
             "supplementaries:cannon",
             "supplementaries:quiver",
             "supplementaries:cage",
 
-            "shieldeexp:iron_shield",
-            "shieldeexp:wooden_shield",
-            "shieldeexp:netherite_shield",
             
             "born_in_chaos_v1:krampuss_bag",
             "butcher:butcherspapers",
@@ -101,7 +99,6 @@
             "butcher:emptyskinrack",
             "butcher:dioritebrickstairs",
             "butcher:diorite_brick_slab",
-            "butcher:straynecklace_chestplate", 
 
             "kaleidoscope_cookery:transmutation_lunch_bag",
 
@@ -109,32 +106,12 @@
             "sns:mob_net",
             "sns:quiver",
 
-            "farm_and_charm:beetroot_bag",
-            "farm_and_charm:onion_bag",
-            "farm_and_charm:potato_bag",
-            "farm_and_charm:carrot_bag",
-            "farm_and_charm:tomato_bag",
-            "farm_and_charm:lettuce_bag",
-            "farm_and_charm:window_sill",
-            "farm_and_charm:plow",
-            "farm_and_charm:supply_cart",
-            "farm_and_charm:flour_bag",
-            "farm_and_charm:strawberry_bag",
-            "farm_and_charm:feeding_trough",
-            "farm_and_charm:water_sprinkler",
 
             "patchouli:guide_book",
 
-            "brewinandchewin:pizza_slice",
-            "brewinandchewin:scarlet_cheese_wedge",
-            "brewinandchewin:scarlet_cheese_wheel",
-            "brewinandchewin:unripe_scarlet_cheese_wheel",
-            "brewinandchewin:flaxen_cheese_wheel",
-            "brewinandchewin:unripe_flaxen_cheese_wheel",
-            "brewinandchewin:pizza",
             
             "alexsmobs:animal_dictionary"
         ],
-        "resultItems": "minecraft:air"
+        "resultItems": "kubejs:air"
     }
 ]

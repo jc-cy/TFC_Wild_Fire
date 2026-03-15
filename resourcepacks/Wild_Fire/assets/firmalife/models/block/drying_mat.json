@@ -4,24 +4,14 @@
 	"parent": "block/thin_block",
 	"render_type": "cutout_mipped",
 	"textures": {
-<<<<<<< HEAD
 		"1": "firmalife:block/drying_mat_frame",
-=======
-		"1": "firmalife:block/drying_mat_2",
->>>>>>> 5ecce3a4346f546fc9d2a193832e1f8deb5f7ecf
 		"particle": "firmalife:block/drying_mat",
 		"texture": "firmalife:block/drying_mat"
 	},
 	"elements": [
 		{
-<<<<<<< HEAD
 			"from": [2, 0, 2],
 			"to": [14, 2, 14],
-=======
-			"from": [2, 2.5, 2],
-			"to": [14, 1.5, 14],
-			"rotation": {"angle": 0, "axis": "y", "origin": [0, 2.5, 0]},
->>>>>>> 5ecce3a4346f546fc9d2a193832e1f8deb5f7ecf
 			"faces": {
 				"north": {"uv": [2, 16, 14, 14], "texture": "#texture", "cullface": "north"},
 				"east": {"uv": [2, 16, 14, 14], "texture": "#texture", "cullface": "east"},
@@ -33,7 +23,6 @@
 		},
 		{
 			"from": [0, 0, 0],
-<<<<<<< HEAD
 			"to": [2, 2.75, 14],
 			"faces": {
 				"north": {"uv": [14, 0, 16, 2], "texture": "#1"},
@@ -81,16 +70,6 @@
 				"west": {"uv": [0, 0, 2, 2], "texture": "#1"},
 				"up": {"uv": [16, 16, 14, 2], "rotation": 90, "texture": "#1"},
 				"down": {"uv": [18, 14, 16, 28], "rotation": 270, "texture": "#1"}
-=======
-			"to": [16, 2.5, 16],
-			"faces": {
-				"north": {"uv": [0, 0.1, 16, 2], "texture": "#1"},
-				"east": {"uv": [0, 0.1, 16, 2], "texture": "#1"},
-				"south": {"uv": [0, 0.1, 16, 2], "texture": "#1"},
-				"west": {"uv": [0, 0.1, 16, 2], "texture": "#1"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#texture"}
->>>>>>> 5ecce3a4346f546fc9d2a193832e1f8deb5f7ecf
 			}
 		}
 	]

@@ -1,37 +1,45 @@
- /*
-  event.shaped('minecraft:prismarine_shard', ['aaa', 'aab', ' aa'], {
-        a: {
-            "type": "tfc:heatable",
-            "min_temp": 120,
-            "ingredient": { "item": "tfc:ore/normal_hematite" }
+/*
+ event.shaped('minecraft:prismarine_shard', ['aaa', 'aab', ' aa'], {
+       a: {
+           "type": "tfc:heatable",
+           "min_temp": 120,
+           "ingredient": { "item": "tfc:ore/normal_hematite" }
 
-        }, b: '#tfc:knives'
-    }).damageIngredient({ tag: '#tfc:knives' }, 20)//测试  
-    // event.custom(
-    {
-        "type":"minecraft:crafting_shaped",
-        "pattern":[
-            "aba",
-            "bab",
-            "aba"
-        ],
-        "key":{
-            "a":{
-                "item":"tfc:burlap_cloth",
-                "count":1 
-            },
-            "b":{
-                "item":"tfc:jute_fiber",
-                "count":1 
-            }            
-        },
-        "result":{
-            "item":"vc_gliders:reinforced_paper",
-            "count":1
-        }
-    }
+       }, b: '#tfc:knives'
+   }).damageIngredient({ tag: '#tfc:knives' }, 20)//测试  
+   // event.custom(
+   {
+       "type":"minecraft:crafting_shaped",
+       "pattern":[
+           "aba",
+           "bab",
+           "aba"
+       ],
+       "key":{
+           "a":{
+               "item":"tfc:burlap_cloth",
+               "count":1 
+           },
+           "b":{
+               "item":"tfc:jute_fiber",
+               "count":1 
+           }            
+       },
+       "result":{
+           "item":"vc_gliders:reinforced_paper",
+           "count":1
+       }
+   }
 ).id('kubejs:vc_gliders/reinforced_paper')//普通布
 */
+
+
+
+
+//=============================================================================
+//==========================因为滑翔翼模组删除暂时禁用！==========================
+//=============================================================================
+/*
 ServerEvents.recipes(event => {
      event.custom(
     {
@@ -221,3 +229,4 @@ event.shaped('vc_gliders:paraglider_iron',
         e:"vc_gliders:reinforced_paper",
     })//普
 })
+    */
