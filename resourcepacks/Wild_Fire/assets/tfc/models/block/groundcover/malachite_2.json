@@ -3,7 +3,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "tfc:block/groundcover/template/ore_0",
 	"textures": {
-		"texture": "tfc:block/ore/groundcover_malachite_2"
+		"texture": "tfc:block/ore/groundcover_malachite_2",
+		"particle": "tfc:item/ore/rich_malachite"
 	},
 	"elements": [
 		{

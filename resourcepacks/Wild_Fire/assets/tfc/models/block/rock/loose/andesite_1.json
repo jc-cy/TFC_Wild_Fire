@@ -1,1 +1,1 @@
-{"parent":"tfc:block/rock/loose_igneous_extrusive_1","textures":{"texture":"tfc:block/rock/cobble/andesite"}}
+{"parent":"tfc:block/rock/loose_igneous_extrusive_1","textures":{"texture":"tfc:block/rock/cobble/andesite"},"particle":{"texture":"tfc:block/rock/cobble/andesite"}}

@@ -1,0 +1,19 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "chunk_count": 10
+    },
+    "frequency": 0.5,
+    "frequency_reduction_method": "legacy_type_1",
+    "salt": 918225296,
+    "separation": 4,
+    "spacing": 8
+  },
+  "structures": [
+    {
+      "structure": "wildfire:geothermal_vent",
+      "weight": 1
+    }
+  ]
+}

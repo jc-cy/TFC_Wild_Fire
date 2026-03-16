@@ -1,0 +1,15 @@
+{
+  "placement": {
+    "type": "valhelsia_structures:valhelsia_random_spread",
+    "exclusion_zones": [],
+    "salt": 92517451,
+    "separation": 10,
+    "spacing": 30
+  },
+  "structures": [
+    {
+      "structure": "wildfire:mineshaft",
+      "weight": 1
+    }
+  ]
+}

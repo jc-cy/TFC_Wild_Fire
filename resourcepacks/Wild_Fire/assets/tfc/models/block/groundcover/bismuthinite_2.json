@@ -4,7 +4,7 @@
 	"parent": "tfc:block/groundcover/template/ore_0",
 	"textures": {
 		"1": "tfc:block/ore/groundcover_bismuthinite_2",
-		"particle": "tfc:block/ore/groundcover_bismuthinite_2"
+		"particle": "tfc:item/ore/rich_bismuthinite"
 	},
 	"elements": [
 		{

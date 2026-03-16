@@ -1,1 +1,1 @@
-{"parent":"tfc:block/rock/loose_sedimentary_1","textures":{"texture":"tfc:block/rock/cobble/conglomerate"}}
+{"parent":"tfc:block/rock/loose_sedimentary_1","textures":{"texture":"tfc:block/rock/cobble/conglomerate"},"particle":{"texture":"tfc:block/rock/cobble/conglomerate"}}

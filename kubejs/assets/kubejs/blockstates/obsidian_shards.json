@@ -1,0 +1,52 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "kubejs:block/obsidian_shards_0"
+      },
+      {
+        "model": "kubejs:block/obsidian_shards_0",
+	"y": 90
+      },
+      {
+        "model": "kubejs:block/obsidian_shards_0",
+	"y": 180
+      },
+      {
+        "model": "kubejs:block/obsidian_shards_0",
+	"y": 270
+      },
+      {
+        "model": "kubejs:block/obsidian_shards_1"
+      },
+      {
+        "model": "kubejs:block/obsidian_shards_1",
+	"y": 90
+      },
+      {
+        "model": "kubejs:block/obsidian_shards_1",
+	"y": 180
+      },
+      {
+        "model": "kubejs:block/obsidian_shards_1",
+	"y": 270
+      },
+      {
+        "model": "kubejs:block/obsidian_shards_2"
+      },
+      {
+        "model": "kubejs:block/obsidian_shards_2",
+	"y": 90
+      },
+      {
+        "model": "kubejs:block/obsidian_shards_2",
+	"y": 180
+      },
+      {
+        "model": "kubejs:block/obsidian_shards_2",
+	"y": 270
+      }
+    ]
+  }
+}

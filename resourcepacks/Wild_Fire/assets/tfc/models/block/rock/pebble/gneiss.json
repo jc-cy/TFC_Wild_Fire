@@ -1,1 +1,1 @@
-{"parent":"tfc:block/groundcover/pebble","textures":{"all":"tfc:block/rock/raw/gneiss"}}
+{"parent":"tfc:block/groundcover/pebble","textures":{"all":"tfc:block/rock/raw/gneiss"},"particle":{"all":"tfc:block/rock/raw/gneiss"}}

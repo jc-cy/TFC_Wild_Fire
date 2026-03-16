@@ -1,10 +1,10 @@
 {
 	"format_version": "1.21.6",
-	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
+	"credit": "Made with Blockbench",
 	"parent": "tfc:block/groundcover/template/ore_0",
 	"textures": {
 		"1": "tfc:block/ore/groundcover_bismuthinite_1",
-		"particle": "tfc:block/ore/groundcover_bismuthinite_1"
+		"particle": "tfc:item/ore/rich_bismuthinite"
 	},
 	"elements": [
 		{
