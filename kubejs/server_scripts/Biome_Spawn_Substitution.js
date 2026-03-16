@@ -408,5 +408,13 @@ TFCEvents.data(event => {
     }, fauna => {
     fauna.maxBrightness(0);
         fauna.distanceBelowSeaLevel(10);
+    }, 'majruszsdifficulty:creeperling');
+
+    event.fauna(climate => {
+    }, fauna => {
+    fauna.maxBrightness(0);
+        fauna.distanceBelowSeaLevel(10);
     }, 'alexsmobs:cockroach');
+
+
 });

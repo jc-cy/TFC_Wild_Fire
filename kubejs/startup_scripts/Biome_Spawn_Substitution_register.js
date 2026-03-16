@@ -110,15 +110,28 @@ TFCEvents.registerFaunas(event => {
     event.replace('alexsmobs:jerboa', 'on_ground', 'world_surface_wg');
     // 为犀牛注册动物群定义
     event.replace('alexsmobs:rhinoceros', 'on_ground', 'world_surface_wg');
-    // 为怪物生成注册动物群定义
+
+
+    // 注册怪物生成-破碎骷髅
     event.replace('born_in_chaos_v1:decrepit_skeleton', 'on_ground', 'world_surface_wg');
+    // 注册怪物生成-巨型蜈蚣
     event.replace('alexsmobs:centipede_head', 'on_ground', 'world_surface_wg');
+    // 注册怪物生成-腐烂僵尸
     event.replace('born_in_chaos_v1:decaying_zombie', 'on_ground', 'world_surface_wg');
+    // 注册怪物生成-僵尸渔夫
     event.replace('born_in_chaos_v1:zombie_fisherman', 'on_ground', 'world_surface_wg');
+    // 注册怪物生成-僵尸伐木工
     event.replace('born_in_chaos_v1:zombie_lumberjack', 'on_ground', 'world_surface_wg');
+    // 注册怪物生成-幼年蜘蛛
     event.replace('born_in_chaos_v1:baby_spider', 'on_ground', 'world_surface_wg');
+    // 注册怪物生成-蜘蛛之母
     event.replace('born_in_chaos_v1:mother_spider', 'on_ground', 'world_surface_wg');
+    // 注册怪物生成-骷髅猛击者（大锤骷髅）
     event.replace('born_in_chaos_v1:skeleton_thrasher', 'on_ground', 'world_surface_wg');
+    // 注册怪物生成-强壮僵尸
     event.replace('born_in_chaos_v1:zombie_bruiser', 'on_ground', 'world_surface_wg');
+    // 注册怪物生成-小苦力怕
+    event.replace('majruszsdifficulty:creeperling', 'on_ground', 'world_surface_wg');
+    // 注册南方小精灵生成
     event.replace('alexsmobs:cockroach', 'on_ground', 'world_surface_wg');
 });

@@ -1,0 +1,48 @@
+{
+	"processors": [
+		{
+			"rules": [
+				{
+					"output_state": {
+						"Name": "tfc:rock/cracked_bricks/andesite"
+					},
+					"input_predicate": {
+						"block": "tfc:rock/bricks/andesite",
+						"probability": 0.25,
+						"predicate_type": "minecraft:random_block_match"
+					},
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					}
+				},
+				{
+					"output_state": {
+						"Name": "tfc:rock/mossy_bricks/andesite"
+					},
+					"input_predicate": {
+						"block": "tfc:rock/bricks/andesite",
+						"probability": 0.1,
+						"predicate_type": "minecraft:random_block_match"
+					},
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					}
+				},
+				{
+					"output_state": {
+						"Name": "tfc:rock/raw/andesite"
+					},
+					"input_predicate": {
+						"block": "tfc:rock/bricks/andesite",
+						"probability": 0.15,
+						"predicate_type": "minecraft:random_block_match"
+					},
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					}
+				}
+			],
+			"processor_type": "minecraft:rule"
+		}
+	]
+}
