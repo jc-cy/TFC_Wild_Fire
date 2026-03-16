@@ -1,7 +1,7 @@
 
 [LookInMyEyes]
 	#Range: 0.0 ~ 360.0
-	"ViewField(Angle, default 180°)" = 110.0
+	"ViewField(Angle, default 180°)" = 150.0
 	#If enabled, PathfinderMobs would turn to the sound source when they heard sth.
 	MobsCheckSoundSource = true
 	#The possibility of mobs checking sound source when they heard sth.

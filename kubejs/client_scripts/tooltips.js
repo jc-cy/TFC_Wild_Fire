@@ -15,6 +15,7 @@ let tooltips = [
     ["tfc:gem/ruby", "§8切制的§r", "§8polishing§r"],
     ["tfc:gem/sapphire", "§8切制的§r", "§8polishing§r"], 
     ["tfc:gem/topaz", "§8切制的§r", "§8polishing§r"],
+    ["kubejs:super_support_block", "§8创造模式下的支撑方块:可支撑极大的范围§r", "§8Support block in creative mode: can support a vast area§r"],
     ["kubejs:corundum_brick_block", "§7在§r2600°C温度下可熔化成 200 mb 刚玉", "§7Fluids can be melted at §r2600°C to 200 mb of molten_corundum"],
     ["kubejs:corundum_brick", "§7在§r2600°C温度下可熔化成 50 mb 刚玉", "§7Fluids can be melted at §r2600°C to 50 mb of molten_corundum"]
 ]

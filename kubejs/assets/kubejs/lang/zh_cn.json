@@ -355,6 +355,7 @@
   "item.kubejs.obsidian_knife": "黑曜石小刀",
   "item.kubejs.obsidian_knife_head": "黑曜石刀刃",
   "block.kubejs.obsidian_shards": "黑曜石碎片",
+  "item.kubejs.obsidian_shards": "黑曜石碎片",
   "item.kubejs.obsidian_shovel": "黑曜石铲",
   "item.kubejs.obsidian_shovel_head": "黑曜石铲头",
   "item.kubejs.obsidian_tool": "黑曜石小刀",
@@ -1906,7 +1907,7 @@
   "block.kubejs.tfc.whetstone": "磨刀石",
   "block.kubejs.tfc.diamond_whetstone": "金刚石磨刀石",
   "block.kubejs.tfc.ceramic_stone": "铝陶瓷磨刀石",
-  
+
   "item.kubejs.air": "空气物品",
   "tfc.jei.diamond_knapping": "钻石敲制",
   "tfc.jei.obsidian_knapping": "黑曜石敲制",
@@ -1916,6 +1917,18 @@
   "block.tfc.red_kaolin_clay.prospected": "红高岭土",
   "block.tfc.kaolin_clay_grass.prospected": "高岭土",
 
+  
+  "block.kubejs.wood.stripped_log_support.cypress": "支撑中的柏木",
+  "block.kubejs.wood.stripped_log_support.ironwood": "支撑中的铁木",
+  "block.kubejs.wood.stripped_log_support.pine": "支撑中的松木",
+  "block.kubejs.wood.stripped_log_support.rosewood": "支撑中的蔷薇木",
+  "block.kubejs.wood.stripped_log_support.chestnut": "支撑中的栗木",
+  "block.kubejs.wood.stripped_log_support.birch": "支撑中的白桦木",
+  "block.kubejs.wood.stripped_log_support.blackwood": "支撑中的黑檀木",
+
+  
+  "block.kubejs.super_support_block": "创造模式支撑方块",
+  
   "item.tfc.food.yeast_dough.wheat_dough": "小麦酵母面团",
   "item.tfc.food.yeast_dough.maize_dough": "玉米酵母面团",
   "item.tfc.food.yeast_dough.oat_dough": "燕麦酵母面团",
@@ -1949,15 +1962,15 @@
   "block.mbd2.bloomery_input":"锻炉坯料输入口",
 
   "attribute.more_attributes.critical_chance": "致命一击几率",
-"attribute.more_attributes.critical_damage": "致命一击伤害",
-"attribute.more_attributes.damage_reduction": "伤害减免",
-"attribute.more_attributes.equip_load_current": "当前负重",
-"attribute.more_attributes.equip_load_max": "最大负重",
-"attribute.more_attributes.hunger_consumption": "饥饿消耗",
-"attribute.more_attributes.jump_force": "跳跃高度",
-"attribute.more_attributes.life_regeneration": "生命回复",
-"attribute.more_attributes.melee_damage": "近战伤害",
-"attribute.more_attributes.ranged_damage": "远程伤害",
+  "attribute.more_attributes.critical_damage": "致命一击伤害",
+  "attribute.more_attributes.damage_reduction": "伤害减免",
+  "attribute.more_attributes.equip_load_current": "当前负重",
+  "attribute.more_attributes.equip_load_max": "最大负重",
+  "attribute.more_attributes.hunger_consumption": "饥饿消耗",
+  "attribute.more_attributes.jump_force": "跳跃高度",
+  "attribute.more_attributes.life_regeneration": "生命回复",
+  "attribute.more_attributes.melee_damage": "近战伤害",
+  "attribute.more_attributes.ranged_damage": "远程伤害",
 
   "tooltip.kubejs.shift_crimson_cogwheel": "§7齿轮应力上限32768，齿轮转速上限512",
   "tooltip.kubejs.shift_crimson_large_cogwheel": "§7齿轮应力上限32768，齿轮转速上限512",

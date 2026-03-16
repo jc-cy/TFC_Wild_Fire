@@ -302,6 +302,66 @@ StartupEvents.registry("block", event => {
         })
 });
 */
+//结构用支撑原木
+StartupEvents.registry('block', event => {
+        const wood_support = [
+                { name: "oak" },
+                { name: "cypress" },
+                { name: "ironwood" },
+                { name: "pine" },
+                { name: "rosewood" },
+                { name: "chestnut" },
+                { name: "birch" },
+                { name: "blackwood" }
+        ]
+        wood_support.forEach(wood => {
+                event.create(`kubejs:wood/stripped_log_support/${wood.name}`, `basic`)
+                        .soundType("wood")
+                        .textureAll(`kubejs:block/wood/stripped_log/${wood.name}`)
+                        .tagBlock('minecraft:mineable/axe')
+                        .tagBlock('tfc:needs_stone_tool')
+                        .tagBlock('minecraft:logs')
+                        .requiresTool()
+        })
+        //创造支撑梁
+        event.create('kubejs:super_support_block', 'basic')
+                .soundType("netherite_block")
+                .texture("up", 'kubejs:block/super_support_block_top')
+                .texture("down", 'kubejs:block/super_support_block_top')
+                .texture("east", 'kubejs:block/super_support_block_side')
+                .texture("north", 'kubejs:block/super_support_block')
+                .texture("west", 'kubejs:block/super_support_block')
+                .texture("south", 'kubejs:block/super_support_block_side')
+                .hardness(-1)
+                .noDrops()
+})
+
+
+//金属支撑梁
+StartupEvents.registry('block', event => {
+        const metal_support = [
+                { name: "copper", need: "copper", sound: "copper" },
+                { name: "bismuth_bronze", need: "copper", sound: "copper" },
+                { name: "black_bronze", need: "copper", sound: "copper" },
+                { name: "bronze", need: "copper", sound: "copper" },
+                { name: "cast_iron", need: "copper", sound: "copper" },
+                { name: "wrought_iron", need: "wrought_iron", sound: "netherite_block" },
+                { name: "steel", need: "wrought_iron", sound: "netherite_block" },
+                { name: "black_steel", need: "wrought_iron", sound: "netherite_block" },
+                { name: "red_steel", need: "wrought_iron", sound: "netherite_block" },
+                { name: "blue_steel", need: "wrought_iron", sound: "netherite_block" },
+                { name: "galvanized_steel", need: "wrought_iron", sound: "netherite_block" },
+        ]
+        metal_support.forEach(support => {
+                event.create(`kubejs:${support.name}_support`, `tfc:support`)
+                        .hardness(13)
+                        .tagBlock(`minecraft:mineable/pickaxe`)
+                        .model(`kubejs:block/${support.name}_support`)
+                        .soundType(`${support.sound}`)
+                        .tagBlock(`tfc:needs_${support.need}_tool`)
+                        .requiresTool()
+        })
+})
 StartupEvents.registry("block", event => {
         const sand = [
                 { name: "brown", type: "sand", sound: "sand", float: 0.5 },
