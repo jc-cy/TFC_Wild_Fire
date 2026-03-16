@@ -209,7 +209,7 @@
 	#Notify if auto resynchronization of Limitation is executed
 	notify_limitation_auto_resync = false
 	#Whether ParCool is active
-	parcool_activation = false
+	parcool_activation = true
 
 [Stamina]
 	#Allowed Values: Default, Hunger, Feathers, Paraglider, EpicFight

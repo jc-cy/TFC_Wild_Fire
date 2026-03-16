@@ -21,7 +21,7 @@ StartupEvents.postInit((event) => {
                 ['A___A', 'FG0GF', 'IJJJI', '_GGG_', '_____', '_____']
             ],
             new $Character('0'),
-            "kubejs:submarine_core[facing=west]",
+            "wildfires:submarine_core[facing=west]",
             new $Character('A'),
             "create:encased_fan[facing=west]",
             new $Character('B'),
@@ -45,7 +45,7 @@ StartupEvents.postInit((event) => {
             new $Character('K'),
             "create:black_seat",
             new $Character('M'),
-            "kubejs:underwater_turbine[facing=east]"
+            "wildfires:underwater_turbine[facing=east]"
 
         )
     );
@@ -57,21 +57,21 @@ StartupEvents.postInit((event) => {
                 ['___t___', '___ONNN', 'MMM0___', '__IHL__', '___T___', '__mTm__',]
             ],
             new $Character('0'),
-            "kubejs:biplane_engine[facing=west]",
+            "wildfires:biplane_engine[facing=east]",
             new $Character('O'),
             "create:mechanical_bearing[facing=west]",
-            new $Character('N'),
-            "kubejs:double_wing[facing=east]",
             new $Character('M'),
-            "kubejs:double_wing[facing=west]",
-            new $Character('I'),
-            "kubejs:airship_slats[facing=south]",
+            "wildfires:double_wing[facing=east]",
+            new $Character('N'),
+            "wildfires:double_wing[facing=west]",
             new $Character('L'),
-            "kubejs:airship_slats[facing=north]",
+            "wildfires:airship_slats[facing=south]",
+            new $Character('I'),
+            "wildfires:airship_slats[facing=north]",
             new $Character('H'),
             "create:black_seat",
             new $Character('t'),
-            "kubejs:medium_propeller[facing=east]",
+            "wildfires:medium_propeller[facing=west]",
             new $Character('T'),
             "create:andesite_casing",
             new $Character('m'),
@@ -91,21 +91,21 @@ StartupEvents.postInit((event) => {
                 ['_Z_', 'itl', 'itl', '_0_', '_K_',]
             ],
             new $Character('0'),
-            "kubejs:small_engine[facing=east]",
+            "wildfires:small_engine[facing=west]",
             new $Character('t'),
             "create:black_seat",
-            new $Character('i'),
-            "kubejs:airship_slats[facing=south]",
             new $Character('l'),
-            "kubejs:airship_slats[facing=north]",
+            "wildfires:airship_slats[facing=south]",
+            new $Character('i'),
+            "wildfires:airship_slats[facing=north]",
             new $Character('I'),
             "farmersdelight:rope",
             new $Character('Z'),
             "create:white_sail[facing=south]",
             new $Character('H'),
-            "kubejs:simple_air_cushion",
+            "wildfires:simple_air_cushion",
             new $Character('K'),
-            "kubejs:small_propeller[facing=west]"
+            "wildfires:small_propeller[facing=east]"
         )
     );
     $PatchouliAPI.registerMultiblock(
@@ -118,23 +118,23 @@ StartupEvents.postInit((event) => {
                 ['_Z_', 'MtU', 'MtU', '_0_', '_k_',]
             ],
             new $Character('0'),
-            "kubejs:rugged_small_engine[facing=east]",
+            "wildfires:rugged_small_engine[facing=west]",
             new $Character('t'),
             "create:black_seat",
             new $Character('U'),
-            "minecraft:chest[facing=south]",
+            "minecraft:chest",
             new $Character('M'),
-            "minecraft:chest[facing=north]",
+            "minecraft:chest",
             new $Character('I'),
             "farmersdelight:rope",
             new $Character('Z'),
             "create:white_sail[facing=south]",
             new $Character('H'),
-            "kubejs:simple_air_cushion",
+            "wildfires:simple_air_cushion",
             new $Character('k'),
-            "kubejs:small_propeller[facing=west]",
+            "wildfires:small_propeller[facing=east]",
             new $Character('K'),
-            "kubejs:small_side_engine[facing=east]"
+            "wildfires:small_side_engine[facing=west]"
         )
     );
     $PatchouliAPI.registerMultiblock(
@@ -151,7 +151,7 @@ StartupEvents.postInit((event) => {
                 ['_________', '_________', '___TRT___', '___ILI___', '___RAR___', '___RtR___', '__cRtRC__', '__cRARC__', '_________', '_________', '_________', '_________',]
             ],
             new $Character('0'),
-            "kubejs:large_airship_engine[facing=east]",
+            "wildfires:large_airship_engine[facing=west]",
             new $Character('H'),
             "create:white_sail[facing=south]",
             new $Character('M'),
@@ -171,7 +171,7 @@ StartupEvents.postInit((event) => {
             new $Character('i'),
             "farmersdelight:rope",
             new $Character('O'),
-            "kubejs:air_cushion",
+            "wildfires:air_cushion",
             new $Character('B'),
             "tfc:metal/block/copper",
             new $Character('C'),
@@ -179,9 +179,9 @@ StartupEvents.postInit((event) => {
             new $Character('c'),
             "minecraft:chest[facing=north]",
             new $Character('D'),
-            "kubejs:large_airship_engine[facing=east]",
+            "wildfires:large_airship_engine[facing=west]",
             new $Character('w'),
-            "kubejs:large_propeller[facing=west]"
+            "wildfires:large_propeller[facing=east]"
         )
     );
     $PatchouliAPI.registerMultiblock(
@@ -199,9 +199,9 @@ StartupEvents.postInit((event) => {
             new $Character('t'),
             "create:black_seat",
             new $Character('l'),
-            "kubejs:airship_slats[facing=south]",
+            "wildfires:airship_slats[facing=south]",
             new $Character('i'),
-            "kubejs:airship_slats[facing=north]",
+            "wildfires:airship_slats[facing=north]",
             new $Character('L'),
             "create:shaft[axis=y]",
             new $Character('B'),
@@ -221,10 +221,10 @@ StartupEvents.postInit((event) => {
             "minecraft:observer[facing=east]",
             new $Character('t'),
             "create:black_seat",
-            new $Character('i'),
-            "kubejs:airship_slats[facing=south]",//需要全部木头的靠墙告示牌【
             new $Character('l'),
-            "kubejs:airship_slats[facing=north]",//需要全部木头的靠墙告示牌【
+            "wildfires:airship_slats[facing=south]",//需要全部木头的靠墙告示牌【
+            new $Character('i'),
+            "wildfires:airship_slats[facing=north]",//需要全部木头的靠墙告示牌【
             new $Character('I'),
             $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'minecraft:fences')),
             new $Character('B'),
@@ -238,7 +238,7 @@ StartupEvents.postInit((event) => {
         $PatchouliAPI.makeMultiblock(
             [
                 ['______MMM______', '______M_M______', '___v_______v___', '___v_______v___', '___v_______v___', '_______________', '_______________', '___I_______I___', '___I_______I___', '_______________',],
-                ['______RRR______', '______A0A______', 'TTTpTT_L_TTpTTT', '___T__L_L__T___', '___O__APA__O___', '___I_______I___', '___I_______I___', '__ToT_____ToT__', '___T_______T___', '___K_______K___',],
+                ['______RRR______', '___B__A0A__B___', 'TTTpTT_L_TTpTTT', '___T__L_L__T___', '___O__APA__O___', '___I___b___I___', '___I_______I___', '__ToT_____ToT__', '___T_______T___', '___K_______K___',],
                 ['_______________', '___Q__AAA__Q___', '___Q__AAA__Q___', '___Q__AAA__Q___', '___I_______I___', '_______________', '_______________', '_______________', '_______________', '_______________',]
             ],
             new $Character('0'),
@@ -250,13 +250,13 @@ StartupEvents.postInit((event) => {
             new $Character('A'),
             "create:andesite_casing",
             new $Character('L'),
-            "bits_n_bobs:black_chair[facing=west]",//不知道怎么写方向、方向为[facing=east]
+            "bits_n_bobs:black_chair[facing=west]",
             new $Character('K'),
             "create:white_sail[facing=south]",
             new $Character('p'),
-            "minecraft:piston[facing=west]",
+            "wildfires:biplane_engine[facing=west]",
             new $Character('P'),
-            "minecraft:piston[facing=east]",
+            "wildfires:large_airship_engine[facing=east]",
             new $Character('Q'),
             "immersiveengineering:cushion",
             new $Character('T'),
@@ -269,6 +269,10 @@ StartupEvents.postInit((event) => {
             "tfc:metal/block/brass_stairs[facing=east,half=top]",//[half=top]
             new $Character('I'),
             "create:brass_bars",
+            new $Character('B'),
+            "wildfires:small_propeller[facing=west]",
+            new $Character('b'),
+            "wildfires:small_propeller[facing=east]"
         )
     );
 });

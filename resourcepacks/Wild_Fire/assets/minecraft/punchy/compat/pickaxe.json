@@ -1,0 +1,75 @@
+{
+    "customGroups": [
+        {
+            "name": "pickaxe",
+            "items": [
+                "kubejs:rock_tool/diamond_hammer",
+                "kubejs:rock_tool/obsidian_hammer",
+                "kubejs:rock_tool/flint_hammer",
+                "scguns:anthralite_pickaxe",
+                "call_of_yucutan:jade_pickaxe",
+                "eidolon:reversal_pick",
+                "eidolon:silver_pickaxe",
+                "tfc:stone/hammer/igneous_extrusive",
+                "tfc:stone/hammer/igneous_intrusive",
+                "tfc:stone/hammer/metamorphic",
+                "tfc:stone/hammer/sedimentary",
+                "precisionprospecting:metal/mineral_prospector/black_bronze",
+                "precisionprospecting:metal/mineral_prospector/bismuth_bronze",
+                "precisionprospecting:metal/mineral_prospector/bronze",
+                "precisionprospecting:metal/mineral_prospector/copper",
+                "precisionprospecting:metal/mineral_prospector/wrought_iron",
+                "precisionprospecting:metal/mineral_prospector/steel",
+                "precisionprospecting:metal/mineral_prospector/black_steel",
+                "precisionprospecting:metal/mineral_prospector/blue_steel",
+                "precisionprospecting:metal/mineral_prospector/red_steel",
+                "precisionprospecting:metal/prospector_hammer/black_bronze",
+                "precisionprospecting:metal/prospector_hammer/bismuth_bronze",
+                "precisionprospecting:metal/prospector_hammer/bronze",
+                "precisionprospecting:metal/prospector_hammer/copper",
+                "precisionprospecting:metal/prospector_hammer/wrought_iron",
+                "precisionprospecting:metal/prospector_hammer/steel",
+                "precisionprospecting:metal/prospector_hammer/black_steel",
+                "precisionprospecting:metal/prospector_hammer/blue_steel",
+                "precisionprospecting:metal/prospector_hammer/red_steel",
+                "tfc:metal/hammer/black_bronze",
+                "tfc:metal/hammer/bismuth_bronze",
+                "tfc:metal/hammer/bronze",
+                "tfc:metal/hammer/copper",
+                "tfc:metal/hammer/wrought_iron",
+                "tfc:metal/hammer/steel",
+                "tfc:metal/hammer/black_steel",
+                "tfc:metal/hammer/blue_steel",
+                "tfc:metal/hammer/red_steel",
+                "tfc_hammer_time:metal/sledgehammer/black_bronze",
+                "tfc_hammer_time:metal/sledgehammer/bismuth_bronze",
+                "tfc_hammer_time:metal/sledgehammer/bronze",
+                "tfc_hammer_time:metal/sledgehammer/copper",
+                "tfc_hammer_time:metal/sledgehammer/wrought_iron",
+                "tfc_hammer_time:metal/sledgehammer/steel",
+                "tfc_hammer_time:metal/sledgehammer/black_steel",
+                "tfc_hammer_time:metal/sledgehammer/blue_steel",
+                "tfc_hammer_time:metal/sledgehammer/red_steel"
+            ]
+        }
+    ],
+    "item": {
+        "pickaxe": {
+            "customAnimation": [
+                {
+                    "type": "useItem",
+                    "name": "mining_foward"
+                },
+                {
+                    "type": "mining",
+                    "name": "mining_foward"
+                },
+                {
+                    "type": "attack",
+                    "var_1": "attack_1",
+                    "var_2": "attack_2"
+                }
+            ]
+        }
+    }
+}

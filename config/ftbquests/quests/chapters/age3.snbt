@@ -9215,7 +9215,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
-			icon: "born_in_chaos_v1:fried_maggot"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 942000L
+						traits: [ ]
+					}
+				}
+				id: "born_in_chaos_v1:fried_maggot"
+			}
 			id: "728B350B98915D16"
 			require_sequential_tasks: true
 			rewards: [{

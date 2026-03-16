@@ -21,4 +21,9 @@ foodTooltips = false
 #Turn on or turn off Farmer's Delight Compat
 #开关农夫乐事兼容
 farmersdelightCompat = false
+# 
+#Nutrients ratio when eat food block (default 0.8)
+#食用食物方块时的营养倍率
+#Range: 0.0 ~ 1.0
+eatFoodBlockNutrientsRatio = 0.8
 
