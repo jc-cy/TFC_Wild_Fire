@@ -1,0 +1,21 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"particle": "brewinandchewin:item/glittering_grenadine_item"
+	},
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "brewinandchewin:item/glittering_grenadine_handheld"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "brewinandchewin:item/glittering_grenadine_item"
+		},
+		"ground": {
+			"parent": "brewinandchewin:item/glittering_grenadine_handheld"
+		},
+		"fixed": {
+			"parent": "brewinandchewin:item/glittering_grenadine_item"
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"particle": "brewinandchewin:item/red_rum_item"
+	},
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "brewinandchewin:item/red_rum_handheld"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "brewinandchewin:item/red_rum_item"
+		},
+		"ground": {
+			"parent": "brewinandchewin:item/red_rum_handheld"
+		},
+		"fixed": {
+			"parent": "brewinandchewin:item/red_rum_item"
+		}
+	}
+}

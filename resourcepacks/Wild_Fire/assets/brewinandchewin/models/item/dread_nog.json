@@ -1,0 +1,21 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"particle": "brewinandchewin:item/dread_nog_item"
+	},
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "brewinandchewin:item/dread_nog_handheld"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "brewinandchewin:item/dread_nog_item"
+		},
+		"ground": {
+			"parent": "brewinandchewin:item/dread_nog_handheld"
+		},
+		"fixed": {
+			"parent": "brewinandchewin:item/dread_nog_item"
+		}
+	}
+}
