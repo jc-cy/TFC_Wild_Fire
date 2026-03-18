@@ -34,5 +34,25 @@
 			}
 		}
 	],
-	"display": {}
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [60, 0, 0],
+			"translation": [0, 4, 4]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [60, 0, 0],
+			"translation": [0, 4, 4]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 0, 15],
+			"translation": [-1.5, 8.5, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 0, 15],
+			"translation": [-1.5, 8.5, 0]
+		},
+		"head": {
+			"translation": [0, 0, -8.5]
+		}
+	}
 }

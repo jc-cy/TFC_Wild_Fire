@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/beet"
+	},
+    "base": {
+        "parent": "brewinandchewin:block/coaster_beetroot"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/beet_item"
+        },
+        "ground": {
+            "parent": "brewinandchewin:block/coaster_beetroot"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/beet_item"
+        }
+    }
+}

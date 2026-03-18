@@ -1,7 +1,7 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "ingredient": {
-    "item": "brewery:beer_wheat"
+    "item": "wildfire:beer_maize"
   },
   "decay_modifier": 0,
   "water": 20

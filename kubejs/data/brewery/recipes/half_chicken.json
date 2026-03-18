@@ -15,7 +15,7 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-      "item": "brewery:hops"
+      "item": "wildfire:dried_hops"
       }
     }
   ],

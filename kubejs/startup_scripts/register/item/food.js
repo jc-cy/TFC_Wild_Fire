@@ -1,5 +1,5 @@
 StartupEvents.registry('item', event => {
-	event.create("repas_de_survie:iceland_mutton")
+	event.create("wildfire:iceland_mutton")
     .texture("kubejs:item/food/iceland_mutton")
 	.displayName("冻原羊肉")
 	.food(foodBuilder=>{
@@ -8,7 +8,7 @@ StartupEvents.registry('item', event => {
 		foodBuilder.meat()
 		foodBuilder.effect("minecraft:nausea",20*20,2,0.9)
 	})
-	event.create("repas_de_survie:instant_gel_love")
+	event.create("wildfire:instant_gel_love")
     .texture("kubejs:item/food/instant_gel_love")
 	.displayName("速食凝胶")
 	.tooltip('航空食品监管局批准的仿肉凝胶；恋爱口味')
@@ -17,7 +17,7 @@ StartupEvents.registry('item', event => {
 		foodBuilder.saturation(0.1)
 		foodBuilder.meat()
 	})
-	event.create("repas_de_survie:instant_gel_nature")
+	event.create("wildfire:instant_gel_nature")
     .texture("kubejs:item/food/instant_gel_nature")
 	.displayName("速食凝胶")
 	.tooltip('航空食品监管局批准的蔬菜凝胶；甘草糖味')
@@ -25,7 +25,7 @@ StartupEvents.registry('item', event => {
 		foodBuilder.hunger(16)
 		foodBuilder.saturation(0.1)
 	})
-	event.create("repas_de_survie:instant_gel_sky")
+	event.create("wildfire:instant_gel_sky")
     .texture("kubejs:item/food/instant_gel_sky")
 	.displayName("速食凝胶")
 	.tooltip('航空食品监管局批准的果汁凝胶；蓝色草莓味')
@@ -33,7 +33,7 @@ StartupEvents.registry('item', event => {
 		foodBuilder.hunger(16)
 		foodBuilder.saturation(0.1)
 	})
-	event.create("repas_de_survie:instant_gel_classic")
+	event.create("wildfire:instant_gel_classic")
     .texture("kubejs:item/food/instant_gel_classic")
 	.displayName("速食凝胶")
 	.tooltip('航空食品监管局批准的经典款凝胶；橘子口味')
@@ -41,7 +41,7 @@ StartupEvents.registry('item', event => {
 		foodBuilder.hunger(16)
 		foodBuilder.saturation(0.1)
 	})
-	event.create("repas_de_survie:pemmican")
+	event.create("wildfire:pemmican")
     .texture("kubejs:item/food/pemmican")
     .displayName("干肉饼")
 	.tooltip('硬的能敲钟')
@@ -49,11 +49,11 @@ StartupEvents.registry('item', event => {
 		foodBuilder.hunger(10)
 		foodBuilder.saturation(0.1)
 	})
-	event.create("repas_de_survie:meat_mixture")
+	event.create("wildfire:meat_mixture")
     .texture("kubejs:item/food/meat_mixture")
 	.displayName("肉末混合物")
 
-	event.create("repas_de_survie:cooked_red_mushroom")
+	event.create("wildfire:cooked_red_mushroom")
     .texture("kubejs:item/food/cooked_red_mushroom")
 	.displayName("熟红蘑菇")
 	.food(foodBuilder=>{
@@ -62,14 +62,14 @@ StartupEvents.registry('item', event => {
 		foodBuilder.effect("minecraft:poison",100,0,0.8)
 	})
 
-	event.create("repas_de_survie:cooked_brown_mushroom")
+	event.create("wildfire:cooked_brown_mushroom")
     .texture("kubejs:item/food/cooked_brown_mushroom")
 	.displayName("熟棕蘑菇")
 	.food(foodBuilder=>{
 		foodBuilder.hunger(4)
 		foodBuilder.saturation(0.1)
 	})
-	event.create("repas_de_survie:fluorescyst_shroom")
+	event.create("wildfire:fluorescyst_shroom")
     .texture("kubejs:item/food/fluorescyst_shroom")
 	.displayName("荧泡菌")
 	.food(foodBuilder=>{
@@ -80,15 +80,15 @@ StartupEvents.registry('item', event => {
 		.effect("minecraft:nausea",120,2,0.9)
 		.effect("minecraft:blindness",440,2,0.9)
 	})
-
-	event.create("repas_de_survie:rat")
+	//食物：生老鼠
+	event.create("wildfire:rat")
     .texture("kubejs:item/food/rat")
 	.food(foodBuilder=>{
 		foodBuilder.hunger(4)
 		foodBuilder.saturation(0.05)
 	})
-
-	event.create("repas_de_survie:urchin")
+	//食物：海胆
+	event.create("wildfire:urchin")
     .texture("kubejs:item/food/urchin")
 	.tag('tfc:foods')
 	.tag('tfc:foods/meats')
@@ -97,42 +97,137 @@ StartupEvents.registry('item', event => {
 		foodBuilder.hunger(6)
 		foodBuilder.saturation(0.05)
 	})
-
-	event.create("repas_de_survie:cooked_rat")
+	//食物：熟老鼠
+	event.create("wildfire:cooked_rat")
     .texture("kubejs:item/food/cooked_rat")
 	.food(foodBuilder=>{
 		foodBuilder.hunger(6)
 		foodBuilder.saturation(0.15)
 	})
-
-	event.create("repas_de_survie:thick_meat")
+	//食物：厚皮动物肉
+	event.create("wildfire:thick_meat")
     .texture("kubejs:item/food/thick_meat")
 	.food(foodBuilder=>{
 		foodBuilder.hunger(8)
 		foodBuilder.saturation(0.15)
 	})
-	event.create("repas_de_survie:cooked_thick_meat")
+	//食物：熟厚皮动物肉
+	event.create("wildfire:cooked_thick_meat")
     .texture("kubejs:item/food/cooked_thick_meat")
 	.food(foodBuilder=>{
 		foodBuilder.hunger(12)
 		foodBuilder.saturation(0.2)
 	})
-	event.create("repas_de_survie:snake")
+	//食物：生蛇肉
+	event.create("wildfire:snake")
     .texture("kubejs:item/food/snake")
 	.food(foodBuilder=>{
 		foodBuilder.hunger(3)
 		foodBuilder.saturation(0.1)
 	})
-	event.create("repas_de_survie:cooked_snake")
+	//食物：熟蛇肉
+	event.create("wildfire:cooked_snake")
     .texture("kubejs:item/food/cooked_snake")
 	.food(foodBuilder=>{
 		foodBuilder.hunger(8)
 		foodBuilder.saturation(0.15)
 	})
-	event.create("repas_de_survie:slug")
+	//食物：蛞蝓
+	event.create("wildfire:slug")
     .texture("kubejs:item/food/slug")
 	.food(foodBuilder=>{
 		foodBuilder.hunger(4)
 		foodBuilder.saturation(0.1)
+	})
+
+	//食物：玉米啤酒
+	event.create("wildfire:beer_maize")
+    .texture("kubejs:item/food/beer_maize")
+	.useAnimation('drink')
+	.food(foodBuilder=>{
+		foodBuilder.hunger(1)
+		foodBuilder.saturation(0.1)
+	})
+	//食物：大麦啤酒
+	event.create("wildfire:beer_barley")
+    .texture("kubejs:item/food/beer_barley")
+	.useAnimation('drink')
+	.food(foodBuilder=>{
+		foodBuilder.hunger(1)
+		foodBuilder.saturation(0.1)
+	})
+	//食物：酒花啤酒
+	event.create("wildfire:beer_hops")
+    .texture("kubejs:item/food/beer_hops")
+	.useAnimation('drink')
+	.food(foodBuilder=>{
+		foodBuilder.hunger(1)
+		foodBuilder.saturation(0.1)
+	})
+	//食物：黑麦啤酒
+	event.create("wildfire:beer_rye")
+    .texture("kubejs:item/food/beer_rye")
+	.useAnimation('drink')
+	.food(foodBuilder=>{
+		foodBuilder.hunger(1)
+		foodBuilder.saturation(0.1)
+	})
+	//食物：燕麦啤酒
+	event.create("wildfire:beer_oat")
+    .texture("kubejs:item/food/beer_oat")
+	.useAnimation('drink')
+	.food(foodBuilder=>{
+		foodBuilder.hunger(1)
+		foodBuilder.saturation(0.1)
+	})
+	//食物：果汁啤酒
+	event.create("wildfire:beer_berries")
+    .texture("kubejs:item/food/beer_berries")
+	.useAnimation('drink')
+	.food(foodBuilder=>{
+		foodBuilder.hunger(1)
+		foodBuilder.saturation(0.1)
+	})
+	//食物：扭结面包
+	event.create("wildfire:pretzel")
+    .texture("kubejs:item/food/pretzel")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(6)
+		foodBuilder.saturation(0.1)
+	})
+	//食物：生肉肠
+	event.create("wildfire:raw_sausage")
+    .texture("kubejs:item/food/raw_sausage")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(6)
+		foodBuilder.saturation(0.1)
+	})
+	//食物：熟肉肠
+	event.create("wildfire:cooked_sausage")
+    .texture("kubejs:item/food/cooked_sausage")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(8)
+		foodBuilder.saturation(0.15)
+	})
+	//食物：烟熏肉肠
+	event.create("wildfire:smoked_sausage")
+    .texture("kubejs:item/food/smoked_sausage")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(8)
+		foodBuilder.saturation(0.15)
+	})
+	//食物：煎香肠
+	event.create("wildfire:seasoned_sausage")
+    .texture("kubejs:item/food/seasoned_sausage")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(12)
+		foodBuilder.saturation(0.2)
+	})
+	//材料：干啤酒花
+	event.create("wildfire:dried_hops")
+    .texture("kubejs:item/food/dried_hops")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(1)
+		foodBuilder.saturation(0.0)
 	})
 })

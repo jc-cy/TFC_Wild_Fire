@@ -1220,9 +1220,9 @@ ServerEvents.recipes(e => {
   tfc.heating('kubejs:heating_warmer', 60)
     .resultItem(Item.of('kubejs:heating_warmer'))
   tfc.heating('minecraft:brown_mushroom', 200)
-    .resultItem(Item.of('repas_de_survie:cooked_brown_mushroom'))
+    .resultItem(Item.of('wildfire:cooked_brown_mushroom'))
   tfc.heating('minecraft:red_mushroom', 200)
-    .resultItem(Item.of('repas_de_survie:cooked_red_mushroom'))
-  tfc.heating('repas_de_survie:rat', 200)
-    .resultItem(Item.of('repas_de_survie:cooked_rat'))
+    .resultItem(Item.of('wildfire:cooked_red_mushroom'))
+  tfc.heating('wildfire:rat', 200)
+    .resultItem(Item.of('wildfire:cooked_rat'))
 });

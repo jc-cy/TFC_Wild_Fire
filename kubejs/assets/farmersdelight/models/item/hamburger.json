@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "farmersdelight:item/hamburger"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_hamburger"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "farmersdelight:item/hamburger_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_hamburger"
+        },
+        "fixed": {
+            "parent": "farmersdelight:item/hamburger_item"
+        }
+    }
+}

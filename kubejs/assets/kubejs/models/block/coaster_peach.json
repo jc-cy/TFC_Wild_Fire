@@ -43,8 +43,29 @@
 				"south": {"uv": [11.33333, 10, 16, 10], "texture": "#0"},
 				"west": {"uv": [8, 10, 11.33333, 10], "texture": "#0"},
 				"up": {"uv": [8, 10, 3.33333, 6.66667], "texture": "#0"},
-				"down": {"uv": [12.66667, 6.66667, 8, 10], "texture": "#0"}
+				"down": {"uv": [8, 6.66667, 3.33333, 10], "texture": "#0"}
 			}
 		}
-	]
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [100, -20, 0],
+			"translation": [0, -1, 6]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [100, -20, 0],
+			"translation": [0, -1, 6]
+		},
+		"firstperson_righthand": {
+			"rotation": [70, 15, 0],
+			"translation": [0, 6, 6]
+		},
+		"firstperson_lefthand": {
+			"rotation": [70, 15, 0],
+			"translation": [0, 6, 6]
+		},
+		"head": {
+			"translation": [0, 15.75, 0]
+		}
+	}
 }

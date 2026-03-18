@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "repas_de_survie:rat",
+          "name": "wildfire:rat",
           "weight": 100,
           "functions": [
             {

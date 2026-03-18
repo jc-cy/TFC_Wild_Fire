@@ -5,7 +5,7 @@
   },
   "recipe_type": "MEAT",
   "result": {
-    "item": "brewery:hops",
+    "item": "wildfire:dried_hops",
     "count": 1
   }
 }

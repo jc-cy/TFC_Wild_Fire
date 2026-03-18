@@ -14,7 +14,7 @@
       "tag": "forge:vegetables/potato"
     },
     {
-      "item": "brewery:hops"
+      "item": "wildfire:dried_hops"
     }
   ],
   "recipe_book_tab": "drinks",

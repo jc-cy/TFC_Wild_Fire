@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_native_gold/schist"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_native_gold_1/schist"
+      },
+      {
+        "model": "tfc:block/ore/poor_native_gold_2/schist"
+      },
+      {
+        "model": "tfc:block/ore/poor_native_gold_3/schist"
+      }
+    ]
+  }
+}

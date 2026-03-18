@@ -387,7 +387,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "brewery:hops",
+          "name": "wildfire:dried_hops",
           "weight": 1
         }
       ],

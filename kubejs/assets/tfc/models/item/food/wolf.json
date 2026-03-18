@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/wolf"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_wolf"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/wolf_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_wolf"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/wolf_item"
+        }
+    }
+}

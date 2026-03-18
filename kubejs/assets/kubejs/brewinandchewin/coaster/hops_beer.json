@@ -1,4 +1,4 @@
 {
-  "item": "brewery:beer_hops",
+  "item": "wildfire:beer_hops",
   "models": "kubejs:block/coaster_hops_beer"
 }

@@ -23,7 +23,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "repas_de_survie:fluorescyst_shroom",
+              "name": "wildfire:fluorescyst_shroom",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",

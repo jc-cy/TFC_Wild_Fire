@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/rye_bread"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_rye_bread"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/rye_bread_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_rye_bread"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/rye_bread_item"
+        }
+    }
+}

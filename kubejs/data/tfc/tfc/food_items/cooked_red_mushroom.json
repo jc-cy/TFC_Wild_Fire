@@ -1,6 +1,6 @@
 {
   "ingredient": {
-    "item": "repas_de_survie:cooked_red_mushroom"
+    "item": "wildfire:cooked_red_mushroom"
   },
   "decay_modifier": 1.7,
   "hunger": 3,

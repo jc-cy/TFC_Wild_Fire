@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/maize"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_maize"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/maize_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_maize"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/maize_item"
+        }
+    }
+}

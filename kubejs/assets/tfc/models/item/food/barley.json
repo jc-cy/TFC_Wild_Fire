@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/barley"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_barley"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/barley_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_barley"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/barley_item"
+        }
+    }
+}

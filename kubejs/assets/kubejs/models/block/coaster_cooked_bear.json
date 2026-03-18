@@ -59,5 +59,27 @@
 				"down": {"uv": [8.66667, 9.33333, 2.66667, 11.33333], "texture": "#0"}
 			}
 		}
-	]
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [70, 20, 0],
+			"translation": [-0.5, 4, 7]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [70, -20, 0],
+			"translation": [0.5, 4, 7]
+		},
+		"firstperson_righthand": {
+			"rotation": [45, -2, 15],
+			"translation": [-1.5, 8.5, 4.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [45, -2, 15],
+			"translation": [-1.5, 8.5, 4.5]
+		},
+		"head": {
+			"rotation": [-15, 0, 0],
+			"translation": [-0.25, 1.5, -10.5]
+		}
+	}
 }

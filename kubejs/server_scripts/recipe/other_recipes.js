@@ -711,12 +711,12 @@ ServerEvents.recipes(event => {
 
   create.filling('kubejs:galvanized_steel_support', ['kubejs:steel_support', Fluid.of('tfc:metal/zinc', 10)])//镀锌方钢梁
 
-  create.filling('brewery:beer_wheat', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_maize', 250)])//玉米啤酒
-  create.filling('brewery:beer_barley', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_barley', 250)])//大麦啤酒
-  create.filling('brewery:beer_hops', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_hops', 250)])//酒花啤酒
-  create.filling('brewery:beer_nettle', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_rye', 250)])//玉米啤酒
-  create.filling('brewery:beer_oat', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_oat', 250)])//燕麦啤酒
-  create.filling('brewery:beer_haley', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_haley', 250)])//海利啤酒
+  create.filling('wildfire:beer_maize', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_maize', 250)])//玉米啤酒
+  create.filling('wildfire:beer_barley', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_barley', 250)])//大麦啤酒
+  create.filling('wildfire:beer_hops', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_hops', 250)])//酒花啤酒
+  create.filling('wildfire:beer_rye', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_rye', 250)])//玉米啤酒
+  create.filling('wildfire:beer_oat', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_oat', 250)])//燕麦啤酒
+  create.filling('wildfire:beer_berries', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_haley', 250)])//海利啤酒
 
   create.filling('brewery:whiskey_jojannik', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_jojannik', 250)])//酒
   create.filling('brewery:whiskey_lilitusinglemalt', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_lilitusinglemalt', 250)])//酒
@@ -729,12 +729,12 @@ ServerEvents.recipes(event => {
   create.filling('brewery:whiskey_jamesons_malt', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_jamesons_malt', 250)])//酒
 
   //分液
-  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_maize', 250)], 'brewery:beer_wheat')//玉米啤酒
-  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_barley', 250)], 'brewery:beer_barley')//大麦啤酒
-  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_hops', 250)], 'brewery:beer_hops')//酒花啤酒
-  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_rye', 250)], 'brewery:beer_nettle')//玉米啤酒
-  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_oat', 250)], 'brewery:beer_oat')//燕麦啤酒
-  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_haley', 250)], 'brewery:beer_haley')//海利啤酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_maize', 250)], 'wildfire:beer_maize')//玉米啤酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_barley', 250)], 'wildfire:beer_barley')//大麦啤酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_hops', 250)], 'wildfire:beer_hops')//酒花啤酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_rye', 250)], 'wildfire:beer_rye')//玉米啤酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_oat', 250)], 'wildfire:beer_oat')//燕麦啤酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_haley', 250)], 'wildfire:beer_berries')//海利啤酒
 
   create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_jojannik', 250)], 'brewery:whiskey_jojannik')//酒
   create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_lilitusinglemalt', 250)], 'brewery:whiskey_lilitusinglemalt')//酒

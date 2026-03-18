@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/venison"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_venison"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/venison_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_venison"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/venison_item"
+        }
+    }
+}

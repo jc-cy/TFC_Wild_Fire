@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/rich_native_gold/limestone"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/rich_native_gold_1/limestone"
+      },
+      {
+        "model": "tfc:block/ore/rich_native_gold_2/limestone"
+      },
+      {
+        "model": "tfc:block/ore/rich_native_gold_3/limestone"
+      }
+    ]
+  }
+}

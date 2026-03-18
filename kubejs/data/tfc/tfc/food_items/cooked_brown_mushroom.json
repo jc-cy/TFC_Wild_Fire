@@ -1,6 +1,6 @@
 {
   "ingredient": {
-    "item": "repas_de_survie:cooked_brown_mushroom"
+    "item": "wildfire:cooked_brown_mushroom"
   },
   "decay_modifier": 1.7,
   "hunger": 4,

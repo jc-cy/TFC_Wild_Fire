@@ -1,6 +1,6 @@
 {
   "ingredient": {
-    "item": "repas_de_survie:rat"
+    "item": "wildfire:rat"
   },
   "decay_modifier": 1.9,
   "hunger": 2,

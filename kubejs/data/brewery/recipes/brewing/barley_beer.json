@@ -14,7 +14,7 @@
       "item": "tfc:food/barley_flour"
     },
     {
-      "item": "brewery:hops"
+      "item": "wildfire:dried_hops"
     }
   ],
   "recipe_book_tab": "drinks",

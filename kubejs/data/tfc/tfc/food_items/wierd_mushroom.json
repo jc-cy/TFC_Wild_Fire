@@ -1,6 +1,6 @@
 {
   "ingredient": {
-    "item": "repas_de_survie:fluorescyst_shroom"
+    "item": "wildfire:fluorescyst_shroom"
   },
   "decay_modifier": 2.5,
   "hunger": 1,

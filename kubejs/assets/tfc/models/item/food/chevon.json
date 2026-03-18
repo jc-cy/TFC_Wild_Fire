@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/chevon"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_chevon"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/chevon_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_chevon"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/chevon_item"
+        }
+    }
+}

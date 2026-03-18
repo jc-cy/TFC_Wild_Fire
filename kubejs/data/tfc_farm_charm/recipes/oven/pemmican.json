@@ -3,12 +3,12 @@
 	"ingredient": {
 		"type": "tfc:not_rotten",
 		"ingredient": {
-			"item": "repas_de_survie:meat_mixture"
+			"item": "wildfire:meat_mixture"
 		}
 	},
 	"result_item": {
 		"stack": {
-			"item": "repas_de_survie:pemmican"
+			"item": "wildfire:pemmican"
     },
     "modifiers": [
       "firmalife:copy_dynamic_food"

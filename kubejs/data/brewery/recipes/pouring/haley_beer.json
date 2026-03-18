@@ -8,7 +8,7 @@
   "filling": true,
   "fluid": "kubejs:beer_haley",
   "output": {
-    "item": "brewery:beer_haley"
+    "item": "wildfire:beer_berries"
   },
   "strict": false
 }

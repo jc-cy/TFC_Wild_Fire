@@ -8,7 +8,7 @@
   "filling": true,
   "fluid": "kubejs:beer_maize",
   "output": {
-    "item": "brewery:beer_wheat"
+    "item": "wildfire:beer_maize"
   },
   "strict": false
 }

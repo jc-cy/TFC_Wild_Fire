@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "repas_de_survie:slug",
+          "name": "wildfire:slug",
           "weight": 1,
           "functions": [
             {

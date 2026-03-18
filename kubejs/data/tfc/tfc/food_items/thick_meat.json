@@ -1,7 +1,7 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "ingredient": {
-    "item": "repas_de_survie:thick_meat"
+    "item": "wildfire:thick_meat"
   },
   "hunger": 5,
   "saturation": 0.5,

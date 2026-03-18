@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/duck"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_duck"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/duck_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_duck"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/duck_item"
+        }
+    }
+}

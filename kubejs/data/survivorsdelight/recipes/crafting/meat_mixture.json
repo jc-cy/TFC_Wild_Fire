@@ -29,7 +29,7 @@
     },
     "result": {
       "stack": {
-        "item": "repas_de_survie:meat_mixture",
+        "item": "wildfire:meat_mixture",
         "count": 2
       },
       "modifiers": [

@@ -1,6 +1,6 @@
 {
   "ingredient": {
-    "item": "repas_de_survie:slug"
+    "item": "wildfire:slug"
   },
   "hunger": 2.0,
   "saturation": 0.1,

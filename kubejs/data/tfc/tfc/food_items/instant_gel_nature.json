@@ -1,6 +1,6 @@
 {
   "ingredient": {
-    "item": "repas_de_survie:instant_gel_nature"
+    "item": "wildfire:instant_gel_nature"
   },
   "hunger": 8.5,
   "saturation": 0.2,

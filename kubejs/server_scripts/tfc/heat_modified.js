@@ -46,7 +46,7 @@ TFCEvents.data(e => {
 
   e.itemHeat('minecraft:brown_mushroom', 0.9, null, null)
   e.itemHeat('minecraft:red_mushroom', 0.9, null, null)
-  e.itemHeat('repas_de_survie:rat', 0.9, null, null)
+  e.itemHeat('wildfire:rat', 0.9, null, null)
   e.itemHeat('kubejs:unfired_crucible_mold', 3.5, null, null)
   e.itemHeat('kubejs:corundum_brick', 2.6, null, null)
   e.itemHeat('kubejs:corundum_brick_block', 2.6, null, null)

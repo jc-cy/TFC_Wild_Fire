@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "kubejs:item/food/beer_barley"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_barley_beer"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "kubejs:item/food/beer_barley_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_barley_beer"
+        },
+        "fixed": {
+            "parent": "kubejs:item/food/beer_barley_item"
+        }
+    }
+}

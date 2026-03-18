@@ -267,7 +267,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "brewery:beer_barley",
+          "name": "wildfire:beer_barley",
           "weight": 1
         }
       ],

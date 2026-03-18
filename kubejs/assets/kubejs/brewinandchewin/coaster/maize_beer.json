@@ -1,4 +1,4 @@
 {
-  "item": "brewery:beer_wheat",
+  "item": "wildfire:beer_maize",
   "models": "kubejs:block/coaster_maize_beer"
 }

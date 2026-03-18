@@ -51,7 +51,7 @@ StartupEvents.registry('item', event => {
     event.create('rotten_fruit', 'basic').texture('kubejs:item/rotten_fruit');// 注册腐烂的水果
     event.create('rot', 'basic').texture('kubejs:item/rot');// 注册腐烂物
     event.create('burnt_food_residue', 'basic').texture('kubejs:item/burnt_food_residue');// 注册烧焦的食物残渣
-    event.create('rotten_jam', 'basic').texture('kubejs:item/rotten_jam');   // 注册腐烂的果酱
+    event.create('rotten_jam', 'basic').texture('kubejs:item/rotten_jam').tag("tfc:foods/sealed_preserves");   // 注册腐烂的果酱
     event.create('brass_forge_door', 'basic').texture('kubejs:item/brass_forge_door');// 黄铜锻炉门
     event.create('bad_brass_forge_door', 'basic').texture('kubejs:item/bad_brass_forge_door');   // 黄铜坏门
     event.create('oldcrown', 'basic').texture('kubejs:item/scraps/oldcrown');   // 古老金币

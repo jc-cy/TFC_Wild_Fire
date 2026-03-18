@@ -5,6 +5,6 @@
   "grain": 1.7,
   "dairy": 0.5,
   "ingredient": {
-    "item": "brewery:pretzel"
+    "item": "wildfire:pretzel"
   }
 }

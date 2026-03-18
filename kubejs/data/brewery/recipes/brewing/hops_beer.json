@@ -8,13 +8,13 @@
   "fermentingtime": 19200,
   "ingredients": [
     {
-      "item": "brewery:hops"
+      "item": "wildfire:dried_hops"
     },
     {
-      "item": "brewery:hops"
+      "item": "wildfire:dried_hops"
     },
     {
-      "item": "brewery:hops"
+      "item": "wildfire:dried_hops"
     }
   ],
   "recipe_book_tab": "drinks",

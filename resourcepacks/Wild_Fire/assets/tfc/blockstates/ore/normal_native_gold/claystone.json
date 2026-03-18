@@ -1,0 +1,16 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/normal_native_gold_1/claystone"
+      },
+      {
+        "model": "tfc:block/ore/normal_native_gold_2/claystone"
+      },
+      {
+        "model": "tfc:block/ore/normal_native_gold_3/claystone"
+      }
+    ]
+  }
+}

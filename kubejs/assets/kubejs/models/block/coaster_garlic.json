@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "kubejs:block/garlic",
-		"particle": "#0"
+		"particle": "kubejs:block/garlic"
 	},
 	"elements": [
 		{
@@ -32,5 +32,26 @@
 				"down": {"uv": [2, 2, 0, 4], "texture": "#0"}
 			}
 		}
-	]
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [60, 0, 0],
+			"translation": [0, 4, 4]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [60, 0, 0],
+			"translation": [0, 4, 4]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 0, 15],
+			"translation": [-1.5, 8.5, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 0, 15],
+			"translation": [-1.5, 8.5, 0]
+		},
+		"head": {
+			"translation": [0, 15, 0]
+		}
+	}
 }

@@ -8,7 +8,7 @@
   "fermentingtime": 25600,
   "ingredients": [
     {
-      "item": "brewery:hops"
+      "item": "wildfire:dried_hops"
     },
     {
       "item": "tfc:gem/ruby"

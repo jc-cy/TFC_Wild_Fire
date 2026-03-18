@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/rich_native_gold/slate"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/rich_native_gold_1/slate"
+      },
+      {
+        "model": "tfc:block/ore/rich_native_gold_2/slate"
+      },
+      {
+        "model": "tfc:block/ore/rich_native_gold_3/slate"
+      }
+    ]
+  }
+}
