@@ -1,9 +1,8 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "parent": "tfc:block/ore",
-  "render_type": "translucent",
   "textures": {
     "all": "tfc:block/rock/raw/limestone",
-    "overlay": "tfc:block/ore/native_gold/poor_native_gold_2_normal"
+    "overlay": "tfc:block/ore/native_gold/poor_native_gold_2_B"
   }
 }
