@@ -1,7 +1,21 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "tfc:item/food/hyena"
-  }
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/hyena"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_hyena"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/hyena_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_hyena"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/hyena_item"
+        }
+    }
 }

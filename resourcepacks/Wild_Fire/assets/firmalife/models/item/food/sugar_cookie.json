@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "firmalife:item/food/sugar_cookie"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_sugar_cookie"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "firmalife:item/food/sugar_cookie_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_sugar_cookie"
+        },
+        "fixed": {
+            "parent": "firmalife:item/food/sugar_cookie_item"
+        }
+    }
+}

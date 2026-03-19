@@ -60,5 +60,26 @@
 			}
 		}
 	],
-	"display": {}
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [25, 75, 0],
+			"translation": [0.5, 5.5, 1.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [25, 75, 0],
+			"translation": [0.5, 5.5, 1.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [-110, 0, 15],
+			"translation": [-2, 0.75, -4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-110, 0, 15],
+			"translation": [-2, 0.75, -4]
+		},
+		"head": {
+			"rotation": [-15, -90, 0],
+			"translation": [-0.75, -0.75, -9]
+		}
+	}
 }

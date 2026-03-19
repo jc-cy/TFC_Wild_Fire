@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "bakery:item/strawberry_glazed_cookie"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_strawberry_glazed_cookie"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "bakery:item/strawberry_glazed_cookie_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_strawberry_glazed_cookie"
+        },
+        "fixed": {
+            "parent": "bakery:item/strawberry_glazed_cookie_item"
+        }
+    }
+}

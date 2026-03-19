@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "firmalife:item/food/wheat_slice"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_wheat_slice"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "firmalife:item/food/wheat_slice_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_wheat_slice"
+        },
+        "fixed": {
+            "parent": "firmalife:item/food/wheat_slice_item"
+        }
+    }
+}

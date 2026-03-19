@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "firmalife:item/food/gouda"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_gouda"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "firmalife:item/food/gouda_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_gouda"
+        },
+        "fixed": {
+            "parent": "firmalife:item/food/gouda_item"
+        }
+    }
+}

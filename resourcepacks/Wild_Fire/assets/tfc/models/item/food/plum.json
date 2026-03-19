@@ -1,0 +1,29 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "textures": {
+		"particle": "tfc:item/food/plum"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_plum"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/plum_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_plum"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/plum_item"
+        }
+    },
+"overrides": [
+    {
+      "predicate": {
+        "firmalife:dry": 1
+      },
+      "model": "firmalife:item/dried/plum"
+    }
+  ]
+}

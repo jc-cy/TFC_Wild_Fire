@@ -1,0 +1,21 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"particle": "farmersdelight:item/mixed_salad"
+	},
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "brewinandchewin:block/coaster_mixed_salad"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "farmersdelight:item/mixed_salad_item"
+		},
+		"ground": {
+			"parent": "brewinandchewin:block/coaster_mixed_salad"
+		},
+		"fixed": {
+			"parent": "farmersdelight:item/mixed_salad_item"
+		}
+	}
+}

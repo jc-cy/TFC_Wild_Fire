@@ -1,7 +1,21 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "tfc:item/food/bear"
-  }
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/bear"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_bear"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/bear_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_bear"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/bear_item"
+        }
+    }
 }

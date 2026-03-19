@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "firmalife:item/food/barley_flatbread"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_barley_flatbread"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "firmalife:item/food/barley_flatbread_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_barley_flatbread"
+        },
+        "fixed": {
+            "parent": "firmalife:item/food/barley_flatbread_item"
+        }
+    }
+}

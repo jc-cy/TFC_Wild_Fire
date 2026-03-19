@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "firmalife:item/food/garlic_bread"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_garlic_bread"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "firmalife:item/food/garlic_bread_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_garlic_bread"
+        },
+        "fixed": {
+            "parent": "firmalife:item/food/garlic_bread_item"
+        }
+    }
+}

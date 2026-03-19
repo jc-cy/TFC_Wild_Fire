@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "farm_and_charm:item/corn_grits"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_corn_grits"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "farm_and_charm:item/corn_grits_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_corn_grits"
+        },
+        "fixed": {
+            "parent": "farm_and_charm:item/corn_grits_item"
+        }
+    }
+}

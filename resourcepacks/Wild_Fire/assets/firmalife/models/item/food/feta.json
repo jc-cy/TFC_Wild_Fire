@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "firmalife:item/food/feta"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_feta"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "firmalife:item/food/feta_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_feta"
+        },
+        "fixed": {
+            "parent": "firmalife:item/food/feta_item"
+        }
+    }
+}

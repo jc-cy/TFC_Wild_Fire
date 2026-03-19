@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "firmalife:item/food/maize_slice"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_maize_slice"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "firmalife:item/food/maize_slice_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_maize_slice"
+        },
+        "fixed": {
+            "parent": "firmalife:item/food/maize_slice_item"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "farm_and_charm:item/pasta_with_onion_sauce"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_pasta_with_onion_sauce"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "farm_and_charm:item/pasta_with_onion_sauce_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_pasta_with_onion_sauce"
+        },
+        "fixed": {
+            "parent": "farm_and_charm:item/pasta_with_onion_sauce_item"
+        }
+    }
+}

@@ -9,13 +9,13 @@
     },
     "perspectives": {
         "gui": {
-            "parent": "kubejs:item/food/beer_rye_item"
+            "parent": "wildfire:item/food/beer_rye_item"
         },
         "ground": {
             "parent": "kubejs:block/coaster_rye_beer"
         },
         "fixed": {
-            "parent": "kubejs:item/food/beer_rye_item"
+            "parent": "wildfire:item/food/beer_rye_item"
         }
     }
 }

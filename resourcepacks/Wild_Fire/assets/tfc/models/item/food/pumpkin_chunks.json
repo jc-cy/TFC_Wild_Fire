@@ -1,0 +1,29 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "textures": {
+		"particle": "tfc:item/food/pumpkin_chunks"
+	},
+    "base": {
+        "parent": "brewinandchewin:block/coaster_pumpkin_slice"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/pumpkin_chunks_item"
+        },
+        "ground": {
+            "parent": "brewinandchewin:block/coaster_pumpkin_slice"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/pumpkin_chunks_item"
+        }
+    },
+"overrides": [
+    {
+      "predicate": {
+        "firmalife:dry": 1
+      },
+      "model": "firmalife:item/dried/pumpkin_chunks"
+    }
+  ]
+}

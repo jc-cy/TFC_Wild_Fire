@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "firmalife:item/food/toast_with_butter"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_toast_with_butter"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "firmalife:item/food/toast_with_butter_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_toast_with_butter"
+        },
+        "fixed": {
+            "parent": "firmalife:item/food/toast_with_butter_item"
+        }
+    }
+}

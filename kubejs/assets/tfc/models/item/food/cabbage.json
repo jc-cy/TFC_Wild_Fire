@@ -2,7 +2,7 @@
     "parent": "minecraft:item/handheld",
     "loader": "forge:separate_transforms",
       "textures": {
-		"particle": "tfc:item/food/cabbage_item"
+		"particle": "tfc:item/food/cabbage"
 	},
     "base": {
         "parent": "brewinandchewin:block/coaster_cabbage"

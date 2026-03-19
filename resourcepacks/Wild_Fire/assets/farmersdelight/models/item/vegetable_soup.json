@@ -1,0 +1,21 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"particle": "farmersdelight:item/vegetable_soup"
+	},
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "brewinandchewin:block/coaster_vegetable_soup"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "farmersdelight:item/vegetable_soup_item"
+		},
+		"ground": {
+			"parent": "brewinandchewin:block/coaster_vegetable_soup"
+		},
+		"fixed": {
+			"parent": "farmersdelight:item/vegetable_soup_item"
+		}
+	}
+}

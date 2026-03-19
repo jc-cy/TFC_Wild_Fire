@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "bakery:item/sweetberry_cupcake"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_sweetberry_cupcake"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "bakery:item/sweetberry_cupcake_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_sweetberry_cupcake"
+        },
+        "fixed": {
+            "parent": "bakery:item/sweetberry_cupcake_item"
+        }
+    }
+}

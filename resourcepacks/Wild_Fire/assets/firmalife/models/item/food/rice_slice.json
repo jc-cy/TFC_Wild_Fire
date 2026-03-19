@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "firmalife:item/food/rice_slice"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_rice_slice"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "firmalife:item/food/rice_slice_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_rice_slice"
+        },
+        "fixed": {
+            "parent": "firmalife:item/food/rice_slice_item"
+        }
+    }
+}

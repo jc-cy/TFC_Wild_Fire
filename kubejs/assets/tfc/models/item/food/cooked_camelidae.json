@@ -1,7 +1,21 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "tfc:item/food/cooked_camelidae"
-  }
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/cooked_camelidae"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_cooked_camelidae"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/cooked_camelidae_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_cooked_camelidae"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/cooked_camelidae_item"
+        }
+    }
 }

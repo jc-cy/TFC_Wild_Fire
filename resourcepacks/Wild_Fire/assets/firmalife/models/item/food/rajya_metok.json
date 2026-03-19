@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "firmalife:item/food/rajya_metok"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_rajya_metok"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "firmalife:item/food/rajya_metok_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_rajya_metok"
+        },
+        "fixed": {
+            "parent": "firmalife:item/food/rajya_metok_item"
+        }
+    }
+}

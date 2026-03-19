@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "farm_and_charm:item/farmer_salad"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_farmer_salad"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "farm_and_charm:item/farmer_salad_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_farmer_salad"
+        },
+        "fixed": {
+            "parent": "farm_and_charm:item/farmer_salad_item"
+        }
+    }
+}

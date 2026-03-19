@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "firmalife:item/food/rye_slice"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_rye_slice"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "firmalife:item/food/rye_slice_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_rye_slice"
+        },
+        "fixed": {
+            "parent": "firmalife:item/food/rye_slice_item"
+        }
+    }
+}

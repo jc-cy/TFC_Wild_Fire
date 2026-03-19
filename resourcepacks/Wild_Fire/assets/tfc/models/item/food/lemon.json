@@ -1,0 +1,29 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "textures": {
+		"particle": "tfc:item/food/lemon"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_lemon"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/lemon_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_lemon"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/lemon_item"
+        }
+    },
+"overrides": [
+    {
+      "predicate": {
+        "firmalife:dry": 1
+      },
+      "model": "firmalife:item/dried/lemon"
+    }
+  ]
+}

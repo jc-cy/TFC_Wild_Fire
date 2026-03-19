@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "firmalife:item/food/shosha"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_shosha"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "firmalife:item/food/shosha_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_shosha"
+        },
+        "fixed": {
+            "parent": "firmalife:item/food/shosha_item"
+        }
+    }
+}

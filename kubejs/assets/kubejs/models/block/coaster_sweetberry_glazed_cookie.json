@@ -1,0 +1,45 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "kubejs:block/sweetberry_glazed_cookie",
+		"cookie": "kubejs:block/sweetberry_glazed_cookie"
+	},
+	"elements": [
+		{
+			"from": [6, 0, 6],
+			"to": [10, 1, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 0, 6]},
+			"faces": {
+				"north": {"uv": [1, 6, 5, 7], "texture": "#cookie"},
+				"east": {"uv": [5, 6, 1, 7], "texture": "#cookie"},
+				"south": {"uv": [1, 6, 5, 7], "texture": "#cookie"},
+				"west": {"uv": [5, 6, 1, 7], "texture": "#cookie"},
+				"up": {"uv": [1, 1, 5, 5], "texture": "#cookie"},
+				"down": {"uv": [6, 1, 10, 5], "texture": "#cookie"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [25, -20, 0],
+			"translation": [0.5, 7.5, 2.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [25, -20, 0],
+			"translation": [1.5, 7.5, 2.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 10, 15],
+			"translation": [0, 8.5, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 10, 15],
+			"translation": [0, 8.5, 0]
+		},
+		"head": {
+			"rotation": [-15, 0, 0],
+			"translation": [-0.25, 1.5, -10.5]
+		}
+	}
+}

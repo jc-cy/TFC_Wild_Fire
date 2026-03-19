@@ -1,7 +1,21 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "tfc:item/food/cooked_chicken"
-  }
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/cooked_chicken"
+	},
+    "base": {
+        "parent": "brewinandchewin:block/coaster_cooked_chicken"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/cooked_chicken_item"
+        },
+        "ground": {
+            "parent": "brewinandchewin:block/coaster_cooked_chicken"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/cooked_chicken_item"
+        }
+    }
 }

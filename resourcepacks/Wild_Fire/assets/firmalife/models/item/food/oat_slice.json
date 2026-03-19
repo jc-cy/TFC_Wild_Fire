@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "firmalife:item/food/oat_slice"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_oat_slice"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "firmalife:item/food/oat_slice_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_oat_slice"
+        },
+        "fixed": {
+            "parent": "firmalife:item/food/oat_slice_item"
+        }
+    }
+}

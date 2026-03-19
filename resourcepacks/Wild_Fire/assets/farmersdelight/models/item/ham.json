@@ -1,0 +1,21 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"particle": "farmersdelight:item/ham"
+	},
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "kubejs:block/coaster_ham"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "farmersdelight:item/ham_item"
+		},
+		"ground": {
+			"parent": "kubejs:block/coaster_ham"
+		},
+		"fixed": {
+			"parent": "farmersdelight:item/ham_item"
+		}
+	}
+}
