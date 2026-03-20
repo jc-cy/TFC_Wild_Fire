@@ -19,7 +19,9 @@
     {"name": "phyllite","items": ["tfc:rock/loose/phyllite","tfc:rock/mossy_loose/phyllite"]},
     {"name": "schist","items": ["tfc:rock/loose/schist","tfc:rock/mossy_loose/schist"]},
     {"name": "gneiss","items": ["tfc:rock/loose/gneiss","tfc:rock/mossy_loose/gneiss"]},
-    {"name": "marble","items": ["tfc:rock/loose/marble","tfc:rock/mossy_loose/marble"]}
+    {"name": "marble","items": ["tfc:rock/loose/marble","tfc:rock/mossy_loose/marble"]},
+    {"name": "obsidian","items": ["kubejs:obsidian_shards"]},
+    {"name": "flint","items": ["minecraft:flint"]}
   ],
   "item": {
     "granite": {"customAnimation": [ {"type": "attack","name": "pick_granite"}]},
@@ -41,6 +43,8 @@
     "phyllite": {"customAnimation": [ {"type": "attack","name": "pick_phyllite"}]},
     "schist": {"customAnimation": [ {"type": "attack","name": "pick_schist"}]},
     "gneiss": {"customAnimation": [ {"type": "attack","name": "pick_gneiss"}]},
-    "marble": {"customAnimation": [ {"type": "attack","name": "pick_marble"}]}
+    "marble": {"customAnimation": [ {"type": "attack","name": "pick_marble"}]},
+    "obsidian": {"customAnimation": [ {"type": "attack","name": "pick_obsidian"}]},
+    "flint": {"customAnimation": [ {"type": "attack","name": "pick_flint"}]}
   }
 }

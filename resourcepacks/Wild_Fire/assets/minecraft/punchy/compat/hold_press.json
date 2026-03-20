@@ -1,0 +1,25 @@
+{
+  "customGroups": [
+    {
+      "name": "hold_press",
+      "items": [
+        "tfc:firestarter",
+        "alexsmobs:stink_ray",
+        "firmalife:watering_can",
+        "supplementaries:bubble_blower",
+        "alexsmobs:blood_sprayer",
+        "alexsmobs:squid_grapple"
+      ]
+    }
+  ],
+  "item": {
+    "hold_press": {
+      "customAnimation": [
+        {
+          "type": "useItem",
+          "name": "hold_press"
+        }
+      ]
+    }
+  }
+}

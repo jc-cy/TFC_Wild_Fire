@@ -1918,6 +1918,7 @@
   "block.tfc.kaolin_clay_grass.prospected": "高岭土",
 
   
+  "block.kubejs.wood.stripped_log_support.oak": "支撑中的橡木",
   "block.kubejs.wood.stripped_log_support.cypress": "支撑中的柏木",
   "block.kubejs.wood.stripped_log_support.ironwood": "支撑中的铁木",
   "block.kubejs.wood.stripped_log_support.pine": "支撑中的松木",
@@ -1928,7 +1929,7 @@
 
   
   "block.kubejs.super_support_block": "创造模式支撑方块",
-  
+
   "item.tfc.food.yeast_dough.wheat_dough": "小麦酵母面团",
   "item.tfc.food.yeast_dough.maize_dough": "玉米酵母面团",
   "item.tfc.food.yeast_dough.oat_dough": "燕麦酵母面团",

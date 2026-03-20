@@ -3,7 +3,7 @@
 [General]
 	#Decides whether the spawner is on blacklist, whitelist-only or player_placed mode [Default: WHITELIST]
 	#Allowed Values: BLACKLIST, WHITELIST
-	spawnerMode = "BLACKLIST"
+	spawnerMode = "WHITELIST"
 	#Decides whether only player placed spawners age [Default: false]
 	playerPlacedOnly = false
 
