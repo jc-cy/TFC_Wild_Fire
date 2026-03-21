@@ -5,9 +5,14 @@
             "brewinandchewin:scarlet_cheese_wheel",
             "brewinandchewin:unripe_scarlet_cheese_wheel",
             "brewinandchewin:flaxen_cheese_wheel",
-            "brewinandchewin:unripe_flaxen_cheese_wheel"
+            "brewinandchewin:unripe_flaxen_cheese_wheel",
+
+            
+            "alexsmobs:animal_dictionary",
+            
+            "patchouli:guide_book"
         ],
-        "resultItems": "minecraft:barrier"
+        "resultItems": "minecraft:air"
     },
     {
         "matchItems": [
@@ -104,13 +109,11 @@
 
             "sns:crafting/lunchbox",
             "sns:mob_net",
-            "sns:quiver",
+            "sns:quiver"
 
 
-            "patchouli:guide_book",
 
             
-            "alexsmobs:animal_dictionary"
         ],
         "resultItems": "kubejs:air"
     }

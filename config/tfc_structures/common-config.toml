@@ -4,7 +4,7 @@ biomesTagsStructuresToLogs = false
 #Should Dynamic TFC Structures fallback to mod built-in loot tables or not
 #It will be happen if mod can't get overridden loot table from lootTablesOverrideMap of Structure
 #(eg, it will use tfc_structures:chests/desert_pyramid instead of minecraft:chests/desert_pyramid)
-fallbackToTfcStructuresLoot = true
+fallbackToTfcStructuresLoot = false
 #Dimensions where structure blocks will be replaced
 allowedDimensions = ["minecraft:overworld"]
 #List to separate mossy blocks from others (it will generate #mossy_stones tag)

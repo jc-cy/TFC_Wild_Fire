@@ -586,7 +586,7 @@
       "lootTablesOverrideMap": {}
     },
     "takesapillage:pillager_camp": {
-      "replacementPreset": "overworld-common",
+      "replacementPreset": "wild_fire_common",
       "emptyChestLootTable": "",
       "lootTablesOverrideMap": {}
     },

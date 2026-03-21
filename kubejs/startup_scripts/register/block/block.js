@@ -61,7 +61,7 @@ StartupEvents.registry('block', event => {
                 .requiresTool(false)
                 .tagBlock("kubejs:polisher")
 
-                //损毁炮塔（仅用于拆解的装饰方块）
+        //损毁炮塔（仅用于拆解的装饰方块）
         event.create('kubejs:disabled_turret', "cardinal")
                 .soundType('netherite_block')
                 .box(0, 0, 0, 16, 10, 16)
@@ -70,7 +70,7 @@ StartupEvents.registry('block', event => {
                 .tagBlock('tfc:needs_copper_tool')
                 .requiresTool()
                 .defaultCutout()
-                //棕熊皮地毯
+        //棕熊皮地毯
         event.create('kubejs:grizzly_bear_rug', "cardinal")
                 .hardness(0.1)
                 .soundType('wool')
@@ -78,7 +78,7 @@ StartupEvents.registry('block', event => {
                 .defaultCutout()
                 .noCollision()
                 .notSolid()
-                //北极熊皮地毯
+        //北极熊皮地毯
         event.create('kubejs:polar_bear_rug', "cardinal")
                 .hardness(0.1)
                 .soundType('wool')
@@ -86,7 +86,7 @@ StartupEvents.registry('block', event => {
                 .defaultCutout()
                 .noCollision()
                 .notSolid()
-                //黑熊皮地毯
+        //黑熊皮地毯
         event.create('kubejs:black_bear_rug', "cardinal")
                 .hardness(0.1)
                 .soundType('wool')
@@ -95,33 +95,33 @@ StartupEvents.registry('block', event => {
                 .noCollision()
                 .notSolid()
 
-                //受损混凝土
+        //受损混凝土
         event.create('kubejs:damaged_concrete', "basic")
                 .hardness(5)
                 .tagBlock('minecraft:mineable/pickaxe')
                 .soundType('deepslate')
-                //锈迹混凝土
+        //锈迹混凝土
         event.create('kubejs:rusty_concrete', "basic")
                 .hardness(5)
                 .tagBlock('minecraft:mineable/pickaxe')
                 .soundType('deepslate')
-                //锈蚀金属板块
+        //锈蚀金属板块
         event.create('kubejs:damaged_metal_plate', "basic")
                 .hardness(10)
                 .tagBlock('minecraft:mineable/pickaxe')
                 .soundType('deepslate')
-                //氧化金属板块
+        //氧化金属板块
         event.create('kubejs:rusty_metal_plate', "basic")
                 .hardness(10)
                 .tagBlock('minecraft:mineable/pickaxe')
                 .soundType('deepslate')
-                //锰矿粒（石子地物）
+        //锰矿粒（石子地物）
         event.create('kubejs:ore/small_manganese', "tfc:ground_cover")
                 .hardness(0.2)
                 .soundType('deepslate')
                 .noCollision()
                 .notSolid()
-                ///黑曜石碎片（石子地物）
+        ///黑曜石碎片（石子地物）
         event.create('kubejs:obsidian_shards', "tfc:ground_cover")
                 .hardness(0.2)
                 .soundType('deepslate')
@@ -339,18 +339,25 @@ StartupEvents.registry('block', event => {
                         .tagBlock('minecraft:logs')
                         .requiresTool()
         })
-        //创造支撑梁
+        //创造支撑方块
         event.create('kubejs:super_support_block', 'basic')
                 .soundType("netherite_block")
                 .texture("up", 'kubejs:block/super_support_block_top')
                 .texture("down", 'kubejs:block/super_support_block_top')
                 .texture("east", 'kubejs:block/super_support_block_side')
-                .texture("north", 'kubejs:block/super_support_block')
+                .texture("north", 'kubejs:block/super_support_block_side')
                 .texture("west", 'kubejs:block/super_support_block')
                 .texture("south", 'kubejs:block/super_support_block_side')
                 .hardness(-1)
                 .noDrops()
+        // 结构用缠根壤土支撑方块 
+        event.create('kubejs:suppors_rooted_dirt/loam', 'basic')
+                .textureAll("tfc:block/rooted_dirt/loam")
+                .tagBlock('minecraft:mineable/shovel')
+                .gravelSoundType()
+                .noDrops()
 })
+
 
 
 //金属支撑梁

@@ -38,6 +38,16 @@ TFCEvents.data(event => {
         event.support([
            "kubejs:super_support_block"
         ], 10, 10, 25)
+    //结构用缠根壤土支撑方块
+        event.support([
+           "kubejs:suppors_rooted_dirt/loam"
+        ], 0, 0, 8)
+
+
+
+        event.support([
+           "lootr:lootr_chest"
+        ], 1, 4, 0)
 })
 //装饰用木梁战利品表
 ServerEvents.blockLootTables(event => {

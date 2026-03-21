@@ -1,0 +1,91 @@
+{
+  "directReplacements": [],
+  "randomReplacements": [
+    {
+      "original": "refurbished_furniture:spruce_crate",
+      "replacements": [
+        "everycomp:rfm/tfc/white_cedar_crate",
+        "everycomp:rfm/tfc/sycamore_crate",
+        "everycomp:rfm/afc/cypress_crate",
+        "everycomp:rfm/tfc/aspen_crate"
+      ]
+    },
+    {
+      "original": "minecraft:white_wool",
+      "replacements": [
+        "tfc:metal/block/bismuth_bronze",
+        "tfc:metal/block/black_bronze",
+        "tfc:metal/block/bronze",
+        "tfc:metal/block/copper"
+      ]
+    },
+    {
+      "original": "minecraft:light_gray_wool",
+      "replacements": [
+        "tfc:metal/block/bismuth_bronze",
+        "tfc:metal/block/black_bronze",
+        "tfc:metal/block/bronze",
+        "tfc:metal/block/copper"
+      ]
+    },
+    {
+      "original": "tfc:metal/lamp/copper",
+      "replacements": [
+        "tfc:metal/block/bismuth_bronze",
+        "tfc:metal/block/black_bronze",
+        "tfc:metal/block/bronze",
+        "tfc:metal/block/copper"
+      ]
+    }
+  ],
+  "tfcWorldReplacements": [
+    {
+      "original": "tfc:grass/loam",
+      "type": "SOIL"
+    },
+    {
+      "original": "tfc:grass/sandy_loam",
+      "type": "SOIL"
+    },
+    {
+      "original": "tfc:grass/silty_loam",
+      "type": "SOIL"
+    },
+    {
+      "original": "tfc:grass/silt",
+      "type": "SOIL"
+    },
+    {
+      "original": "tfc:dirt/loam",
+      "type": "SOIL"
+    },
+    {
+      "original": "tfc:dirt/sandy_loam",
+      "type": "SOIL"
+    },
+    {
+      "original": "tfc:dirt/silty_loam",
+      "type": "SOIL"
+    },
+    {
+      "original": "tfc:dirt/silt",
+      "type": "SOIL"
+    },
+    {
+      "original": "tfc:wood/planks/hickory_stairs",
+      "type": "WOOD"
+    },
+    {
+      "original": "tfc:wood/planks/hickory_fence",
+      "type": "WOOD"
+    },
+    {
+      "original": "tfc:wood/stripped_log/hickory",
+      "type": "WOOD"
+    },
+    {
+      "original": "tfc:wood/planks/hickory_slab",
+      "type": "WOOD"
+    }
+  ]
+}
