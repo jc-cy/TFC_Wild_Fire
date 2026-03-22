@@ -9,13 +9,13 @@
     },
     "perspectives": {
         "gui": {
-            "parent": "bakery:item/bakery:waffle_item"
+            "parent": "tfc_farm_charm:item/waffle_item"
         },
         "ground": {
             "parent": "kubejs:block/coaster_waffle"
         },
         "fixed": {
-            "parent": "bakery:item/bakery:waffle_item"
+            "parent": "tfc_farm_charm:item/waffle_item"
         }
     }
 }

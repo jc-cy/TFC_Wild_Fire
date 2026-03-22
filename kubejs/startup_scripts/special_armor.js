@@ -29,6 +29,16 @@ StartupEvents.registry('item', event => {
         .boneVisibility((renderer, slot) => {
             renderer.setAllVisible(true);
         })
+    event.create('geckojs:gelatic_attachment', 'anim_helmet')
+        .texture('kubejs:item/hood')
+        .tooltip('a')
+        .geoModel(geo => {
+            geo.setSimpleModel('geckojs:geo/awhites.geo.json')
+            geo.setSimpleTexture('geckojs:textures/awhites.png')
+        })
+        .boneVisibility((renderer, slot) => {
+            renderer.setAllVisible(true);
+        })
     /*
     event.create('geckojs:furry_plugins','anim_helmet')
     .texture('kubejs:item/hood')

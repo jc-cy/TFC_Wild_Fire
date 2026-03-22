@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "minecraft:item/bowl"
+	},
+    "base": {
+        "parent": "brewinandchewin:block/coaster_bowl"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "minecraft:item/bowl_item"
+        },
+        "ground": {
+            "parent": "brewinandchewin:block/coaster_bowl"
+        },
+        "fixed": {
+            "parent": "minecraft:item/bowl_item"
+        }
+    }
+}
