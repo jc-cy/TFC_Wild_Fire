@@ -1,0 +1,39 @@
+{
+  "name": "非金属矿咋找？",
+  "category": "tfc:mechanics",
+  "icon": "precisionprospecting:metal/mineral_prospector/copper",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "你正为寻找建筑用的$(thing)石膏$()或者造$(l:mechanics/blast_furnace)高炉$()用的$(thing)高岭土$()和$(thing)石墨$()而疲于奔命，但你的勘矿镐却成天报金属矿？让$(thing)非金属勘矿镐$()来帮你吧。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "precisionprospecting:metal/mineral_prospector/bismuth_bronze",
+      "title": "Mineral Prospector",
+      "text": "非金属勘矿镐是$(l:mechanics/prospecting)勘矿镐$()的一种变体。它会勘探45x45x45范围内的$(t:Non-metal ores)非金属矿物$()而非金属矿物。"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "precisionprospecting:knapping/mineral_prospector_head_mold",
+      "text": "你可以按上面的方法塑形其模具。"
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "precisionprospecting:anvil/mineral_prospector/bronze_head",
+      "text": "用锻造的方法则需要$(thing)双锭$()。记得跟木棍合成。"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "precisionprospecting:metal/mineral_prospector/bismuth_bronze":  1,
+    "precisionprospecting:metal/mineral_prospector/black_bronze": 1,
+    "precisionprospecting:metal/mineral_prospector/bronze": 1,
+    "precisionprospecting:metal/mineral_prospector/copper": 1,
+    "precisionprospecting:metal/mineral_prospector/wrought_iron": 1,
+    "precisionprospecting:metal/mineral_prospector/steel": 1,
+    "precisionprospecting:metal/mineral_prospector/black_steel": 1,
+    "precisionprospecting:metal/mineral_prospector/blue_steel": 1,
+    "precisionprospecting:metal/mineral_prospector/red_steel": 1
+  }
+}

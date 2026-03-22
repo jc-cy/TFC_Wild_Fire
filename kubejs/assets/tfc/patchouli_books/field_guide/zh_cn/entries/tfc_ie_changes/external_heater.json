@@ -1,0 +1,22 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "电热坩埚？",
+  "category": "tfc:tfc_ie_changes",
+  "icon": "tfc:crucible",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "想啥呢？没有。但是，有一个$(thing)外置加热器$()可以像$(l:mechanics/charcoal_forge)木炭炉$()一样地加热$(l:mechanics/crucible)坩埚$()。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "immersiveengineering:crafting/furnace_heater",
+      "text": "默认情况下，它可以将一个$(thing)坩埚$()加热到最高2000°C，消耗20IF/t。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 11,
+  "extra_recipe_mappings": {
+    "immersiveengineering:furnace_heater": 0
+  }
+}

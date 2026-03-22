@@ -1,0 +1,24 @@
+{
+  "category": "tfc:survivors_delight",
+  "extra_recipe_mappings": {
+    "tag:survivorsdelight:feast_blocks": 0,
+    "tag:survivorsdelight:pie_blocks": 0
+  },
+  "icon": "farmersdelight:honey_glazed_ham_block",
+  "name": "派和大餐",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "派和大餐都是可以作为方块放置的食物。大多数大餐都会给予$(l:survivorsdelight/effects)滋养$()效果，派提供的则是速度。大餐需要用碗右键盛装来食用，派则可以直接吃或者用刀切片。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "tag": "survivorsdelight:food_model_coating"
+      },
+      "text": "这些食物方块会和普通食物一样变质，当完全变质时，它会变绿。你可以使用一些方法使其永远不会变质，但这也会使其变得不可食用。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 8
+}

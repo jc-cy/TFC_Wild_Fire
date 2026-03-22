@@ -1,0 +1,73 @@
+{
+  "name": "缩小勘矿范围",
+  "category": "tfc:mechanics",
+  "icon": "precisionprospecting:metal/prospector_hammer/bronze",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "明明$(l:mechanics/prospecting)勘矿镐$()报了有矿却半天挖不到？别急，$(thing)勘矿锤$()和$(thing)勘矿钻$()也许能帮到你。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "precisionprospecting:metal/prospector_hammer/bismuth_bronze",
+      "title": "Prospector's Hammer",
+      "text": "勘矿锤和勘矿镐相比探测范围小得多，只有13x13x13，这有助于帮助你精准定位矿脉。"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "precisionprospecting:knapping/prospector_hammer_head_mold",
+      "text": "勘矿锤头同样可以浇筑而成。"
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "precisionprospecting:anvil/prospector_hammer/bronze_head",
+      "text": "若锻造则需要一个金属双锭。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "precisionprospecting:metal/prospector_drill/bismuth_bronze",
+      "title": "Prospector's Drill",
+      "text": "勘矿钻能助你辨别矿脉的方向，它的探测距离是7x25x7，方向取决于你右键方块的哪个面。"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "precisionprospecting:knapping/prospector_drill_head_mold",
+      "text": "勘矿钻头模具的制作方法如上图所示。"
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "precisionprospecting:anvil/prospector_drill/bronze_head",
+      "text": "若锻造则需要一个鼓风口，也就是一个金属双层薄板。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "precisionprospecting:crafting/metal/prospector_drill/bronze",
+      "text": "你得用两根木棍才能做出勘矿钻。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "请注意：因为探查范围较小，勘矿锤和勘矿钻很少勘探出“巨量”矿物。"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "precisionprospecting:metal/prospector_hammer/bismuth_bronze": 1,
+    "precisionprospecting:metal/prospector_hammer/black_bronze": 1,
+    "precisionprospecting:metal/prospector_hammer/bronze": 1,
+    "precisionprospecting:metal/prospector_hammer/copper": 1,
+    "precisionprospecting:metal/prospector_hammer/wrought_iron": 1,
+    "precisionprospecting:metal/prospector_hammer/steel": 1,
+    "precisionprospecting:metal/prospector_hammer/black_steel": 1,
+    "precisionprospecting:metal/prospector_hammer/blue_steel": 1,
+    "precisionprospecting:metal/prospector_hammer/red_steel": 1,
+    "precisionprospecting:metal/prospector_drill/bismuth_bronze": 4,
+    "precisionprospecting:metal/prospector_drill/black_bronze": 4,
+    "precisionprospecting:metal/prospector_drill/bronze": 4,
+    "precisionprospecting:metal/prospector_drill/copper": 4,
+    "precisionprospecting:metal/prospector_drill/wrought_iron": 4,
+    "precisionprospecting:metal/prospector_drill/steel": 4,
+    "precisionprospecting:metal/prospector_drill/black_steel": 4,
+    "precisionprospecting:metal/prospector_drill/blue_steel": 4,
+    "precisionprospecting:metal/prospector_drill/red_steel": 4
+  }
+}

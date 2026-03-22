@@ -1,0 +1,35 @@
+{
+  "category": "tfc:survivors_delight",
+  "extra_recipe_mappings": {
+    "tag:survivorsdelight:cabinets": 0
+  },
+  "icon": "survivorsdelight:planks/cabinet/ash",
+  "name": "橱柜",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "橱柜是一种用于储存食物和厨具的木质容器。手持$(l:mechanics/lamps#tallow)一桶蜡脂$()对其$(item)$(k:key.use)$()来使其能够$(l:mechanics/decay)延长食物的保质期$()。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "X": "#survivorsdelight:cabinets"
+        },
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ]
+      },
+      "name": "各种类的橱柜",
+      "text": ""
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 3
+}

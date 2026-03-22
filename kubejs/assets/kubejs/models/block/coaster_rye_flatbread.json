@@ -1,15 +1,16 @@
 {
-	"format_version": "1.21.6",
+	"format_version": "1.9",
 	"credit": "Made with Blockbench",
+	"parent": "kubejs:block/flatbread_display",
 	"textures": {
 		"0": "kubejs:block/rye_flatbread",
 		"particle": "kubejs:block/rye_flatbread"
 	},
 	"elements": [
 		{
-			"from": [5, -0.5, 5],
-			"to": [12, 1.5, 10],
-			"rotation": {"angle": 22.5, "axis": "y", "origin": [8.5, 0.5, 7]},
+			"from": [4.5, 0, 5.5],
+			"to": [11.5, 2, 10.5],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [8, 8, 8]},
 			"faces": {
 				"north": {"uv": [7, 0, 14, 2], "texture": "#0"},
 				"east": {"uv": [7, 4, 12, 6], "texture": "#0"},
@@ -19,27 +20,5 @@
 				"down": {"uv": [7, 5, 0, 10], "texture": "#0"}
 			}
 		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [25, -20, 0],
-			"translation": [0.5, 7.5, 2.5]
-		},
-		"thirdperson_lefthand": {
-			"rotation": [25, -20, 0],
-			"translation": [1.5, 7.5, 2.5]
-		},
-		"firstperson_righthand": {
-			"rotation": [0, 10, 15],
-			"translation": [0, 8.5, 0]
-		},
-		"firstperson_lefthand": {
-			"rotation": [0, 10, 15],
-			"translation": [0, 8.5, 0]
-		},
-		"head": {
-			"rotation": [-15, 0, 0],
-			"translation": [-0.25, 1.5, -10.5]
-		}
-	}
+	]
 }

@@ -1,0 +1,19 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "蓝图配方",
+  "category": "tfc:tfc_ie_changes",
+  "icon": "immersiveengineering:blueprint",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "由于群峦星中没有村庄，你无法找到卖蓝图的村民。不过，现在新增了它们的合成配方！会有点复杂，不过努力是值得的！"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc_ie_addon:crafting/blueprint_electrode",
+      "recipe2": "tfc_ie_addon:crafting/blueprint_special_bullet"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 5
+}

@@ -1,0 +1,32 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "新的合金！",
+  "category": "tfc:tfc_ie_changes",
+  "icon": "immersiveengineering:ingot_electrum",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "由于群峦自带了合金获取系统，你现在可以直接用群峦自己的方式——像获取$(thing)琥珀金$()或$(thing)康铜$()般——获取沉浸工程中的合金啦！你只需要知道它们的配方（不复杂的！）"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "immersiveengineering:ingot_electrum",
+      "title": "琥珀金",
+      "link_recipes": false,
+      "text": "$(br)$(bold)需求:$()$(br)$(li)40 - 60 % : $(thing)金$()$(li)40 - 60 % : $(thing)银$()$(br2)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "immersiveengineering:ingot_constantan",
+      "title": "康铜",
+      "link_recipes": false,
+      "text": "$(br)$(bold)需求:$()$(br)$(li)40 - 60 % : $(thing)铜$()$(li)40 - 60 % : $(thing)镍$()$(br2)"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1,
+  "extra_recipe_mappings": {
+    "immersiveengineering:ingot_electrum": 1,
+    "immersiveengineering:ingot_constantan": 2
+  }
+}

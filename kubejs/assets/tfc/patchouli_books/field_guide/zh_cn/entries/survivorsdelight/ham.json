@@ -1,0 +1,22 @@
+{
+  "category": "tfc:survivors_delight",
+  "extra_recipe_mappings": {
+    "farmersdelight:ham": 0,
+    "farmersdelight:smoked_ham": 0
+  },
+  "icon": "farmersdelight:smoked_ham",
+  "name": "火腿",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "火腿是猪类动物身上会掉落的一种食物。无论是$(l:mechanics/animal_husbandry#pig)家猪$()还是$(l:the_world/wild_animals#ramming_prey)野猪$()都会掉落。只有使用$(l:mechanics/damage_types)穿刺伤害$()才会掉落火腿。每头猪最多掉落两根火腿，掉落几率受其体型和亲密度（如果有的话）影响。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "farmersdelight:ham",
+      "text": "一根火腿。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 7
+}

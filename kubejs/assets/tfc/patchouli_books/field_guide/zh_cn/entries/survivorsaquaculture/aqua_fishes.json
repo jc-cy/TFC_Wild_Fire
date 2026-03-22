@@ -1,0 +1,34 @@
+{
+  "category": "tfc:survivors_aquaculture",
+  "extra_recipe_mappings": {},
+  "icon": "aquaculture:atlantic_cod",
+  "name": "更多的鱼",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "水产品的鱼类现在遵照群峦传说的气候生成，每种鱼各有其偏好的水体、降雨和气温。能切出$(thing)8片鱼排$()的鱼都属于大型鱼，需要用大型鱼饵抓捕。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "冷水海鱼如$(thing)鳕鱼、黑鱼、比目鱼、鲱鱼、鲑鱼、青鳕和虹鳟等$()通常在气温$(thing)≤0°C$()，降水量$(thing)≥75$()的地方生成。这些鱼通常体型更大，能切出更多鱼排。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "咸水鱼如$(thing)水母、赤点石斑鱼和金枪鱼等$()通常在至少$(thing)0°C$()的咸水中生成。$(thing)金枪鱼$()的体型尤其大，必须使用大型鱼饵抓捕。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "淡水鱼如$(thing)小口黑鲈、蓝鳃太阳鱼、褐鳟鱼、鲤鱼、鲶鱼、雀鳝、鲦鱼、北美狗鱼和河鲈鱼等$()在$(thing)0–20°C$()的淡水中生成，没有降水量限制。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "干旱地区鱼如$(thing)鲿鱼，尼罗罗非鱼，尼罗河尖吻鲈和反游猫鱼等$()喜好温度$(thing)≥13°C$()且降雨量高达$(thing)300$()的地区，常见于温暖干燥的河流。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "丛林鱼如$(thing)巨骨舌鱼，水虎鱼，大盖巨脂鲤和巨型侧颈龟等$()需要茂密的丛林环境且温度约为$(thing)15–30°C$()降水量$(thing)≥300$()。$(thing)巨骨舌鱼$()是一种体型巨大的鱼，必须使用大型鱼饵抓捕。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1
+}

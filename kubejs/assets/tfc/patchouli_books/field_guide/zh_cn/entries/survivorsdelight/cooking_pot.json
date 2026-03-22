@@ -1,0 +1,43 @@
+{
+  "category": "tfc:survivors_delight",
+  "extra_recipe_mappings": {
+    "farmersdelight:cooking_pot": 0
+  },
+  "icon": "farmersdelight:cooking_pot",
+  "name": "厨锅",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "厨锅是陶锅的一种变体，它能够比陶锅更快的烹饪汤或其他食物，但它无法执行流体配方。除了陶锅原本的配方外，有一些食物的配方只有厨锅才能够执行。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "X": "farmersdelight:cooking_pot"
+        },
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ]
+      },
+      "name": "厨锅",
+      "text": ""
+    },
+    {
+      "type": "patchouli:text",
+      "text": "厨锅UI的左侧现在出现了一个桶的按钮，点击它会进入厨锅的流体面板，你可以将流体倒入锅中以用于后续的烹饪配方。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "有些烹饪配方的产物需要容器来盛装，比如碗和玻璃瓶。木碗和陶碗都可以用来盛装，同理四种不同原料的玻璃瓶也是一样。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 4
+}

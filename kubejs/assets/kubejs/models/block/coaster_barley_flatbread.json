@@ -1,15 +1,16 @@
 {
-	"format_version": "1.21.6",
+	"format_version": "1.9",
 	"credit": "Made with Blockbench",
+	"parent": "kubejs:block/flatbread_display",
 	"textures": {
 		"0": "kubejs:block/barley_flatbread",
 		"particle": "kubejs:block/barley_flatbread"
 	},
 	"elements": [
 		{
-			"from": [4.5, -0.5, 5],
-			"to": [11.5, 1.5, 11],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, -0.5, 7]},
+			"from": [4.5, 0, 5],
+			"to": [11.5, 2, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 7, 7]},
 			"faces": {
 				"north": {"uv": [7, 0, 14, 2], "texture": "#0"},
 				"east": {"uv": [7, 4, 13, 6], "texture": "#0"},
@@ -20,26 +21,5 @@
 			}
 		}
 	],
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [25, -20, 0],
-			"translation": [0.5, 7.5, 2.5]
-		},
-		"thirdperson_lefthand": {
-			"rotation": [25, -20, 0],
-			"translation": [1.5, 7.5, 2.5]
-		},
-		"firstperson_righthand": {
-			"rotation": [0, 10, 15],
-			"translation": [0, 8.5, 0]
-		},
-		"firstperson_lefthand": {
-			"rotation": [0, 10, 15],
-			"translation": [0, 8.5, 0]
-		},
-		"head": {
-			"rotation": [-15, 0, 0],
-			"translation": [-0.25, 1.5, -10.5]
-		}
-	}
+	"display": {}
 }

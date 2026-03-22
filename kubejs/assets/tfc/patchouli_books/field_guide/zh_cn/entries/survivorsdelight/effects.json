@@ -1,0 +1,29 @@
+{
+  "category": "tfc:survivors_delight",
+  "extra_recipe_mappings": {},
+  "icon": "survivorsdelight:effect_icon/nourishment",
+  "name": "特殊效果",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "农夫乐事的食品有时会给予你一些特殊的效果以帮助你在这个严酷的世界中生存，需要注意的是变质的食品不会提供任何效果。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "survivorsdelight:effect_icon/nourishment",
+      "text": "滋养可以使你的饱食度和水分停止减少，但它会在你受伤或开始自然恢复生命值时停止作用。一旦回满生命值或是饱食度和水分低到无法自然恢复，它就会重新开始作用。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "survivorsdelight:effect_icon/comfort",
+      "text": "舒适能够使你在饱食度和水分过低时仍能进行自然恢复，还会使你的自然恢复速度提升到吃饱喝足时的水平。配合滋养可以使你在恶劣的环境中仍能生存。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "survivorsdelight:effect_icon/workhorse",
+      "text": "负重允许马和玩家携带更多巨大且沉重的物品而不会负担过重。将马食喂给亲密度在35%以上的马可以使其获得这个效果。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 5
+}

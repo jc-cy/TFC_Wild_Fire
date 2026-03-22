@@ -1,0 +1,33 @@
+{
+  "category": "tfc:survivors_aquaculture",
+  "extra_recipe_mappings": {
+    "aquaculture:fish_bones": 2,
+    "aquaculture:fish_fillet_raw": 1,
+    "survivorsaquaculture:neptunian_pearl": 3
+  },
+  "icon": "aquaculture:neptunium_fillet_knife",
+  "name": "鱼类加工",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "水产品模组的鱼不能像其他模组一样直接食用或烹饪。它们要先被加工才能作为合适的食材使用。获取$(thing)鱼片$()是最核心的第一步。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "aquaculture:fish_fillet_raw",
+      "text": "要获得$(thing)鱼片$()只需要简单的将$(thing)刀$()和$(thing)生鱼$()合成即可。产出的$(thing)鱼片$()可用于后续的烹饪配方中。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "aquaculture:fish_bones",
+      "text": "大型的鱼产出更多鱼片的同时也产出更多$(thing)鱼骨$()。鱼骨可以制成$(thing)骨粉$()用作肥料或参与其他配方。大型鱼也可能脂肪含量够高，在加工的时候同时产出$(thing)鲸脂$()。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "survivorsaquaculture:neptunian_pearl",
+      "text": "大型鱼的体内还有可能蕴藏着奇妙的物品。其中最有价值的是$(thing)海王珍珠$()，一种制作$(thing)海王钢$()的核心原材料。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 2
+}
