@@ -1,6 +1,7 @@
 {
 	"format_version": "1.9",
 	"credit": "Made with Blockbench",
+	"parent": "kubejs:block/flatbread_display",
 	"textures": {
 		"particle": "kubejs:block/sugar_cookie",
 		"cookie": "kubejs:block/sugar_cookie"
@@ -19,27 +20,5 @@
 				"down": {"uv": [6, 1, 10, 5], "texture": "#cookie"}
 			}
 		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [25, -20, 0],
-			"translation": [0.5, 7.5, 2.5]
-		},
-		"thirdperson_lefthand": {
-			"rotation": [25, -20, 0],
-			"translation": [1.5, 7.5, 2.5]
-		},
-		"firstperson_righthand": {
-			"rotation": [0, 10, 15],
-			"translation": [0, 8.5, 0]
-		},
-		"firstperson_lefthand": {
-			"rotation": [0, 10, 15],
-			"translation": [0, 8.5, 0]
-		},
-		"head": {
-			"rotation": [-15, 0, 0],
-			"translation": [-0.25, 1.5, -10.5]
-		}
-	}
+	]
 }

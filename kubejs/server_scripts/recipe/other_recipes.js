@@ -899,8 +899,12 @@ ServerEvents.recipes(event => {
     "type": "kaleidoscope_cookery:stockpot",
     //提取物
     "carrier": { "item": "minecraft:bowl" },
+    //泡泡颜色
+    "cooking_bubble_color": 12501441,
     //烹饪贴图
     "cooking_texture": "kubejs:stockpot/rice_cooking",
+    //完成泡泡
+    "finished_bubble_color": 16119285,
     //完成贴图
     "finished_texture": "kubejs:stockpot/rice_finished",
     //输入食材
@@ -920,7 +924,10 @@ ServerEvents.recipes(event => {
   event.custom({
     "type": "kaleidoscope_cookery:stockpot",
     "carrier": { "item": "minecraft:bowl" },
-    "cooking_texture": "kubejs:stockpot/rice_cooking", "finished_texture": "kubejs:stockpot/rice_finished",
+    "cooking_bubble_color": 12501441,
+    "cooking_texture": "kubejs:stockpot/rice_cooking",
+    "finished_bubble_color": 16119285,
+    "finished_texture": "kubejs:stockpot/rice_finished",
     "ingredients": [
       { "item": "tfc:food/rice_grain" },
       { "item": "tfc:food/rice_grain" },
@@ -933,7 +940,10 @@ ServerEvents.recipes(event => {
   event.custom({
     "type": "kaleidoscope_cookery:stockpot",
     "carrier": { "item": "minecraft:bowl" },
-    "cooking_texture": "kubejs:stockpot/rice_cooking", "finished_texture": "kubejs:stockpot/rice_finished",
+    "cooking_bubble_color": 12501441,
+    "cooking_texture": "kubejs:stockpot/rice_cooking",
+    "finished_bubble_color": 16119285,
+    "finished_texture": "kubejs:stockpot/rice_finished",
     "ingredients": [
       { "item": "tfc:food/rice_grain" },
       { "item": "tfc:food/rice_grain" },
@@ -948,7 +958,10 @@ ServerEvents.recipes(event => {
   event.custom({
     "type": "kaleidoscope_cookery:stockpot",
     "carrier": { "item": "minecraft:bowl" },
-    "cooking_texture": "kubejs:stockpot/rice_cooking", "finished_texture": "kubejs:stockpot/rice_finished",
+    "cooking_bubble_color": 12501441,
+    "cooking_texture": "kubejs:stockpot/rice_cooking",
+    "finished_bubble_color": 16119285,
+    "finished_texture": "kubejs:stockpot/rice_finished",
     "ingredients": [
       { "item": "tfc:food/rice_grain" },
       { "item": "tfc:food/rice_grain" },
@@ -965,7 +978,10 @@ ServerEvents.recipes(event => {
   event.custom({
     "type": "kaleidoscope_cookery:stockpot",
     "carrier": { "item": "minecraft:bowl" },
-    "cooking_texture": "kubejs:stockpot/rice_cooking", "finished_texture": "kubejs:stockpot/rice_finished",
+    "cooking_bubble_color": 12501441,
+    "cooking_texture": "kubejs:stockpot/rice_cooking",
+    "finished_bubble_color": 16119285,
+    "finished_texture": "kubejs:stockpot/rice_finished",
     "ingredients": [
       { "item": "tfc:food/rice_grain" },
       { "item": "tfc:food/rice_grain" },
@@ -991,8 +1007,8 @@ ServerEvents.recipes(event => {
         { "fluid": "immersiveengineering:creosote", "amount": 50 }, { "tag": "tfc:lumber" }],
       "results": [{ "item": "tfc_ie_addon:treated_wood_lumber" }]
     })
-//压缩抽屉配方
-//金属粉末
+  //压缩抽屉配方
+  //金属粉末
   const ore_dust =
     [
       { mod: 'tfc_ie_addon', type: '/type_', ore: 'uraninite' },
@@ -1073,12 +1089,12 @@ ServerEvents.recipes(event => {
       }
     )
   })
-//激光焊接脆钢
+  //激光焊接脆钢
   const weak_metal =
     [
-      { metal1: 'tfc:metal/ingot/weak_steel', metal2: 'tfc:metal/ingot/pig_iron', metal3: 'tfc:metal/ingot/high_carbon_black_steel',},
-      { metal1: 'tfc:metal/ingot/weak_blue_steel', metal2: 'tfc:metal/ingot/black_steel', metal3: 'tfc:metal/ingot/high_carbon_blue_steel',},
-      { metal1: 'tfc:metal/ingot/weak_red_steel', metal2: 'tfc:metal/ingot/black_steel', metal3: 'tfc:metal/ingot/high_carbon_red_steel',}
+      { metal1: 'tfc:metal/ingot/weak_steel', metal2: 'tfc:metal/ingot/pig_iron', metal3: 'tfc:metal/ingot/high_carbon_black_steel', },
+      { metal1: 'tfc:metal/ingot/weak_blue_steel', metal2: 'tfc:metal/ingot/black_steel', metal3: 'tfc:metal/ingot/high_carbon_blue_steel', },
+      { metal1: 'tfc:metal/ingot/weak_red_steel', metal2: 'tfc:metal/ingot/black_steel', metal3: 'tfc:metal/ingot/high_carbon_red_steel', }
     ];
   weak_metal.forEach(metal => {
     create.sequenced_assembly(metal.metal3, metal.metal1,

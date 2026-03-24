@@ -15,7 +15,7 @@
             "parent": "brewinandchewin:block/coaster_bowl"
         },
         "fixed": {
-            "parent": "minecraft:item/bowl_item"
+            "parent": "brewinandchewin:block/coaster_bowl"
         }
     }
 }

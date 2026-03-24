@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_baked_potato"
         },
         "fixed": {
-            "parent": "tfc:item/food/baked_potato_item"
+            "parent": "tfc:item/food/coaster_baked_potato"
         }
     }
 }

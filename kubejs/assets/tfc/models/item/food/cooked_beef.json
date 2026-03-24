@@ -15,7 +15,7 @@
             "parent": "brewinandchewin:block/coaster_cooked_beef"
         },
         "fixed": {
-            "parent": "tfc:item/food/cooked_beef_item"
+            "parent": "brewinandchewin:block/coaster_cooked_beef"
         }
     }
 }

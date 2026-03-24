@@ -7,7 +7,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "kubejs:ore/ilmenite"
+            "tag": "kubejs:ore/normal_ilmenite"
           }
         ]
       }

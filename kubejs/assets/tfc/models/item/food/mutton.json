@@ -5,17 +5,17 @@
 		"particle": "tfc:item/food/mutton"
 	},
     "base": {
-        "parent": "brewinandchewin:block/coaster_mutton"
+        "parent": "kubejs:block/coaster_mutton"
     },
     "perspectives": {
         "gui": {
             "parent": "tfc:item/food/mutton_item"
         },
         "ground": {
-            "parent": "brewinandchewin:block/coaster_mutton"
+            "parent": "kubejs:block/coaster_mutton"
         },
         "fixed": {
-            "parent": "tfc:item/food/mutton_item"
+            "parent": "kubejs:block/coaster_mutton"
         }
     }
 }

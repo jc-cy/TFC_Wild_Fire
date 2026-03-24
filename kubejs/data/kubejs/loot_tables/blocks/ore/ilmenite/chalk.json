@@ -24,7 +24,7 @@
                                     }
                                 }
                             ],
-                            "name": "kubejs:ore/ilmenite/chalk"
+                            "name": "kubejs:ore/normal_ilmenite/chalk"
                         },
                         {
                             "type": "minecraft:item",
@@ -38,7 +38,7 @@
                                     "function": "minecraft:explosion_decay"
                                 }
                             ],
-                            "name": "tfc:ore/ilmenite"
+                            "name": "tfc:ore/normal_ilmenite"
                         }
                     ]
                 }
@@ -46,5 +46,5 @@
             "rolls": 1.0
         }
     ],
-    "random_sequence": "kubejs:ore/ilmenite/chalk"
+    "random_sequence": "kubejs:ore/normal_ilmenite/chalk"
 }

@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_strawberry_glazed_cookie"
         },
         "fixed": {
-            "parent": "bakery:item/strawberry_glazed_cookie_item"
+            "parent": "kubejs:block/coaster_strawberry_glazed_cookie"
         }
     }
 }

@@ -463,8 +463,8 @@ StartupEvents.registry("block", event => {
                         .hardness(12)
                         .requiresTool()
 
-                event.create(`kubejs:ore/ilmenite/${deposit}`)
-                        .model(`kubejs:block/ore/ilmenite/${deposit}`)
+                event.create(`kubejs:ore/normal_ilmenite/${deposit}`)
+                        .model(`kubejs:block/ore/normal_ilmenite/${deposit}`)
                         .tag('forge:ores')
                         .tag('forge:ores/ilmenite')
                         .tagBlock('minecraft:mineable/pickaxe')
@@ -491,8 +491,8 @@ StartupEvents.registry("block", event => {
                         .hardness(5)
                         .requiresTool()
 
-                event.create(`kubejs:ore/native_vanadium/${deposit}`)
-                        .model(`kubejs:block/ore/native_vanadium/${deposit}`)
+                event.create(`kubejs:ore/normal_native_vanadium/${deposit}`)
+                        .model(`kubejs:block/ore/normal_native_vanadium/${deposit}`)
                         .tag('forge:ores')
                         .tag('forge:ores/native_vanadium')
                         .tagBlock('minecraft:mineable/pickaxe')
@@ -519,8 +519,8 @@ StartupEvents.registry("block", event => {
                         .hardness(12)
                         .requiresTool()
 
-                event.create(`kubejs:ore/manganese/${deposit}`)
-                        .model(`kubejs:block/ore/manganese/${deposit}`)
+                event.create(`kubejs:ore/normal_manganese/${deposit}`)
+                        .model(`kubejs:block/ore/normal_manganese/${deposit}`)
                         .tag('forge:ores')
                         .tag('forge:ores/manganese')
                         .tagBlock('minecraft:mineable/pickaxe')

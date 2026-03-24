@@ -1,0 +1,21 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"particle": "farmersdelight:item/nether_salad"
+	},
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "brewinandchewin:block/coaster_nether_salad"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "farmersdelight:item/nether_salad_item"
+		},
+		"ground": {
+			"parent": "brewinandchewin:block/coaster_nether_salad"
+		},
+		"fixed": {
+			"parent": "brewinandchewin:block/coaster_nether_salad"
+		}
+	}
+}

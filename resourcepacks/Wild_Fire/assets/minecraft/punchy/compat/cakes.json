@@ -1,0 +1,42 @@
+{
+    "customGroups": [
+        {
+            "name": "cakes",
+            "items": [
+                "bakery:apple_cupcake",
+                "bakery:sweetberry_cupcake",
+                "bakery:strawberry_cupcake"
+            ]
+        }
+    ],
+    "item": {
+        "cakes": {
+            "transforms": {
+                "right": {
+                    "scale": 1.0,
+                    "offX": 0.0,
+                    "offY": 0.082386255,
+                    "offZ": 0.09943175,
+                    "rotX": -23.267044,
+                    "rotY": 15.340912,
+                    "rotZ": 2.045456,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                },
+                "left": {
+                    "scale": 1.0,
+                    "offX": 0.0,
+                    "offY": 0.0,
+                    "offZ": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                }
+            }
+        }
+    }
+}

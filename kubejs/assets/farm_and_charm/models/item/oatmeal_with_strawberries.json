@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "farm_and_charm:item/oatmeal_with_strawberries"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_oatmeal_with_strawberries"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "farm_and_charm:item/oatmeal_with_strawberries_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_oatmeal_with_strawberries"
+        },
+        "fixed": {
+            "parent": "kubejs:block/coaster_oatmeal_with_strawberries"
+        }
+    }
+}

@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_oat_beer"
         },
         "fixed": {
-            "parent": "kubejs:item/food/beer_oat_item"
+            "parent": "kubejs:item/food/coaster_oat_beer"
         }
     }
 }

@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_gran_feline"
         },
         "fixed": {
-            "parent": "tfc:item/food/gran_feline_item"
+            "parent": "kubejs:block/coaster_gran_feline"
         }
     }
 }

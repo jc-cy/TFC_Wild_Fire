@@ -5,17 +5,17 @@
 		"particle": "tfc:item/food/cooked_mutton"
 	},
     "base": {
-        "parent": "brewinandchewin:block/coaster_cooked_mutton"
+        "parent": "kubejs:block/coaster_cooked_mutton"
     },
     "perspectives": {
         "gui": {
             "parent": "tfc:item/food/cooked_mutton_item"
         },
         "ground": {
-            "parent": "brewinandchewin:block/coaster_cooked_mutton"
+            "parent": "kubejs:block/coaster_cooked_mutton"
         },
         "fixed": {
-            "parent": "tfc:item/food/cooked_mutton_item"
+            "parent": "kubejs:block/coaster_cooked_mutton"
         }
     }
 }

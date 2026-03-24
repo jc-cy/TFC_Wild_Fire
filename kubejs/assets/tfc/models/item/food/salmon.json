@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_salmon"
         },
         "fixed": {
-            "parent": "tfc:item/food/salmon_item"
+            "parent": "kubejs:block/coaster_salmon"
         }
     }
 }

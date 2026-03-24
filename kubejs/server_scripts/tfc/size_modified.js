@@ -115,7 +115,14 @@ TFCEvents.data(e => {
     "minecraft:waxed_weathered_cut_copper_slab",
     "minecraft:waxed_weathered_cut_copper_stairs",
     "minecraft:waxed_weathered_cut_copper",
-    "minecraft:waxed_weathered_copper"
+    "minecraft:waxed_weathered_copper",
+    "wildfires:biplane_engine",
+    "wildfires:large_airship_engine",
+    "wildfires:rugged_small_engine",
+    "wildfires:small_engine",
+    "wildfires:small_side_engine",
+    "wildfires:submarine_core",
+    "wildfires:underwater_turbine"
   ]
   large_very_heavy_items.forEach(item => {
     e.itemSize(item, 'large', 'very_heavy')
@@ -980,7 +987,35 @@ TFCEvents.data(e => {
   })
 
 
-
+  //正常、中等
+  const normal_medium_items = [
+    'brewinandchewin:tankard',
+    'brewinandchewin:beer',
+    'brewinandchewin:vodka',
+    'brewinandchewin:mead',
+    'brewinandchewin:rice_wine',
+    'brewinandchewin:pale_jane',
+    'brewinandchewin:egg_grog',
+    'brewinandchewin:glittering_grenadine',
+    'brewinandchewin:saccharine_rum',
+    'brewinandchewin:salty_folly',
+    'brewinandchewin:bloody_mary',
+    'brewinandchewin:red_rum',
+    'brewinandchewin:strongroot_ale',
+    'brewinandchewin:steel_toe_stout',
+    'brewinandchewin:dread_nog',
+    'brewinandchewin:withering_dross',
+    'brewinandchewin:kombucha',
+    'wildfire:beer_maize',
+    'wildfire:beer_barley',
+    'wildfire:beer_hops',
+    'wildfire:beer_rye',
+    'wildfire:beer_oat',
+    'wildfire:beer_berries'
+  ]
+  normal_medium_items.forEach(item => {
+    e.itemSize(item, 'normal', 'medium')
+  })
 
 
 

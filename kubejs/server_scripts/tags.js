@@ -125,13 +125,13 @@ ServerEvents.tags("block", event => {
             event.add(tag,
                 [
                     `kubejs:ore/rich_manganese/${rock}`,
-                    `kubejs:ore/manganese/${rock}`,
+                    `kubejs:ore/normal_manganese/${rock}`,
                     `kubejs:ore/poor_manganese/${rock}`,
                     `kubejs:ore/rich_ilmenite/${rock}`,
-                    `kubejs:ore/ilmenite/${rock}`,
+                    `kubejs:ore/normal_ilmenite/${rock}`,
                     `kubejs:ore/poor_ilmenite/${rock}`,
                     `kubejs:ore/rich_native_vanadium/${rock}`,
-                    `kubejs:ore/native_vanadium/${rock}`,
+                    `kubejs:ore/normal_native_vanadium/${rock}`,
                     `kubejs:ore/poor_native_vanadium/${rock}`,
                 ]
             )
@@ -498,16 +498,16 @@ ServerEvents.tags("block", event => {
                 "minecraft:slime_ball"
             ])
 
-        event.add('kubejs:ore/ilmenite',
+        event.add('kubejs:ore/normal_ilmenite',
             [
                 "tfc:ore/poor_ilmenite",
-                "tfc:ore/ilmenite",
+                "tfc:ore/normal_ilmenite",
                 "tfc:ore/rich_ilmenite"
             ])
-        event.add('kubejs:ore/manganese',
+        event.add('kubejs:ore/normal_manganese',
             [
                 "tfc:ore/poor_manganese",
-                "tfc:ore/manganese",
+                "tfc:ore/normal_manganese",
                 "tfc:ore/rich_manganese"
             ])
         event.add('kubejs:ore/vanadium',

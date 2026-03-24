@@ -27,27 +27,27 @@
             "transforms": {
                 "right": {
                     "scale": 1.0,
-                    "offX": 0,
-                    "offY": 0,
-                    "offZ": 0.11,
-                    "rotX": -20,
-                    "rotY": 25.0,
-                    "rotZ": 5,
-                    "pivotX": 0,
-                    "pivotY": 0,
-                    "pivotZ": 0
+                    "offX": 0.03977275,
+                    "offY": -0.028409123,
+                    "offZ": 0.059659004,
+                    "rotX": -20.0,
+                    "rotY": 24.999985,
+                    "rotZ": 5.0,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
                 },
                 "left": {
                     "scale": 1.0,
-                    "offX": 0.0,
-                    "offY": 0.0,
-                    "offZ": 0.5,
-                    "rotX": -10,
-                    "rotY": 20.0,
-                    "rotZ": 0,
-                    "pivotX": 0,
-                    "pivotY": 0,
-                    "pivotZ": 0
+                    "offX": -0.03977275,
+                    "offY": -0.028409123,
+                    "offZ": 0.059659004,
+                    "rotX": -20.0,
+                    "rotY": -24.999985,
+                    "rotZ": -5.0,
+                    "pivotX": -0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
                 },
                 "armTransforms": {
                     "right": {
@@ -61,13 +61,7 @@
                         "offX": 0.0,
                         "offY": 0,
                         "offZ": 0
-                    },
-                    "customAnimation": [
-                        {
-                            "type": "useItem",
-                            "name": "use_drink_beer"
-                        }
-                    ]
+                    }
                 }
             }
         }

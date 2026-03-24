@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_tropical_fish"
         },
         "fixed": {
-            "parent": "tfc:item/food/tropical_fish_item"
+            "parent": "kubejs:block/coaster_tropical_fish"
         }
     }
 }

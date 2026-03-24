@@ -28,7 +28,7 @@
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/ilmenite/rhyolite"
+            "block": "kubejs:ore/normal_ilmenite/rhyolite"
           },
           {
             "weight": 15,
@@ -40,7 +40,7 @@
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/native_vanadium/rhyolite"
+            "block": "kubejs:ore/normal_native_vanadium/rhyolite"
           },
           {
             "weight": 10,
@@ -67,7 +67,7 @@
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/ilmenite/basalt"
+            "block": "kubejs:ore/normal_ilmenite/basalt"
           },
           {
             "weight": 15,
@@ -79,7 +79,7 @@
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/native_vanadium/basalt"
+            "block": "kubejs:ore/normal_native_vanadium/basalt"
           },
           {
             "weight": 5,
@@ -110,7 +110,7 @@
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/ilmenite/andesite"
+            "block": "kubejs:ore/normal_ilmenite/andesite"
           },
           {
             "weight": 15,
@@ -122,7 +122,7 @@
           },
           {
             "weight": 5,
-            "block": "kubejs:ore/native_vanadium/andesite"
+            "block": "kubejs:ore/normal_native_vanadium/andesite"
           }
         ]
       },
@@ -149,7 +149,7 @@
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/ilmenite/claystone"
+            "block": "kubejs:ore/normal_ilmenite/claystone"
           },
           {
             "weight": 10,
@@ -157,7 +157,7 @@
           },
           {
             "weight": 5,
-            "block": "kubejs:ore/native_vanadium/claystone"
+            "block": "kubejs:ore/normal_native_vanadium/claystone"
           }
         ]
       },
@@ -184,7 +184,7 @@
           },
           {
             "weight": 5,
-            "block": "kubejs:ore/ilmenite/limestone"
+            "block": "kubejs:ore/normal_ilmenite/limestone"
           },
           {
             "weight": 5,
@@ -215,7 +215,7 @@
           },
           {
             "weight": 8,
-            "block": "kubejs:ore/ilmenite/dolomite"
+            "block": "kubejs:ore/normal_ilmenite/dolomite"
           },
           {
             "weight": 1,
@@ -246,7 +246,7 @@
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/ilmenite/chert"
+            "block": "kubejs:ore/normal_ilmenite/chert"
           },
           {
             "weight": 2,
@@ -277,7 +277,7 @@
           },
           {
             "weight": 10,
-            "block": "kubejs:ore/ilmenite/chalk"
+            "block": "kubejs:ore/normal_ilmenite/chalk"
           },
           {
             "weight": 1,
@@ -308,7 +308,7 @@
           },
           {
             "weight": 15,
-            "block": "kubejs:ore/ilmenite/dacite"
+            "block": "kubejs:ore/normal_ilmenite/dacite"
           },
           {
             "weight": 10,

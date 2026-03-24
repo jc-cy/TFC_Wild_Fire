@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_bear"
         },
         "fixed": {
-            "parent": "tfc:item/food/bear_item"
+            "parent": "tfc:item/food/coaster_bear"
         }
     }
 }

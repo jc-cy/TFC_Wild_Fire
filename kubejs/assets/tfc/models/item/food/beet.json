@@ -15,7 +15,7 @@
             "parent": "brewinandchewin:block/coaster_beetroot"
         },
         "fixed": {
-            "parent": "tfc:item/food/beet_item"
+            "parent": "brewinandchewin:block/coaster_beetroot"
         }
     }
 }

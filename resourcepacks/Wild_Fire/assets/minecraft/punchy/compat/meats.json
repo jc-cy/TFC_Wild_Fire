@@ -1,0 +1,63 @@
+{
+    "customGroups": [
+        {
+            "name": "meats",
+            "items": [
+                "tfc:food/pork",
+                "tfc:food/mutton",
+                "tfc:food/chevon",
+                "tfc:food/beef",
+                "tfc:food/cooked_rabbit",
+                "tfc:food/cooked_chevon",
+                "tfc:food/cooked_mutton",
+                "tfc:food/rabbit",
+                "tfc:food/cooked_horse_meat",
+                "tfc:food/bear",
+                "tfc:food/camelidae",
+                "tfc:food/gran_feline",
+                "tfc:food/hyena",
+                "tfc:food/venison",
+                "tfc:food/wolf",
+                "tfc:food/cooked_bear",
+                "tfc:food/cooked_camelidae",
+                "tfc:food/cooked_gran_feline",
+                "tfc:food/cooked_pork",
+                "tfc:food/cooked_beef",
+                "tfc:food/cooked_wolf",
+                "tfc:food/cooked_venison",
+                "tfc:food/cooked_hyena",
+                "tfc:food/horse_meat"
+            ]
+        }
+    ],
+    "item": {
+        "meats": {
+            "transforms": {
+                "right": {
+                    "scale": 1.0,
+                    "offX": -0.113636374,
+                    "offY": -0.073863626,
+                    "offZ": -0.051136374,
+                    "rotX": 30.9375,
+                    "rotY": -19.176132,
+                    "rotZ": -16.363632,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                },
+                "left": {
+                    "scale": 1.0,
+                    "offX": 0.113636374,
+                    "offY": -0.073863626,
+                    "offZ": -0.051136374,
+                    "rotX": 30.9375,
+                    "rotY": 19.176132,
+                    "rotZ": 16.363632,
+                    "pivotX": -0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                }
+            }
+        }
+    }
+}

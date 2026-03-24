@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_oat"
         },
         "fixed": {
-            "parent": "tfc:item/food/oat_item"
+            "parent": "kubejs:block/coaster_oat"
         }
     }
 }

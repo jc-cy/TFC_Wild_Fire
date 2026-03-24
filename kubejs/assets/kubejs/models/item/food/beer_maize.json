@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_maize_beer"
         },
         "fixed": {
-            "parent": "kubejs:item/food/beer_maize_item"
+            "parent": "kubejs:item/food/coaster_maize_beer"
         }
     }
 }

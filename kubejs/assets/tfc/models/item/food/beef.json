@@ -15,7 +15,7 @@
             "parent": "brewinandchewin:block/coaster_beef"
         },
         "fixed": {
-            "parent": "tfc:item/food/beef_item"
+            "parent": "brewinandchewin:block/coaster_beef"
         }
     }
 }

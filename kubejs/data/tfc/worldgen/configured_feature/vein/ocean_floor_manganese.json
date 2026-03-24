@@ -21,7 +21,7 @@
           },
           {
             "weight": 30,
-            "block": "kubejs:ore/manganese/shale"
+            "block": "kubejs:ore/normal_manganese/shale"
           },
           {
             "weight": 25,
@@ -44,7 +44,7 @@
           },
           {
             "weight": 30,
-            "block": "kubejs:ore/manganese/claystone"
+            "block": "kubejs:ore/normal_manganese/claystone"
           },
           {
             "weight": 25,
@@ -67,7 +67,7 @@
           },
           {
             "weight": 30,
-            "block": "kubejs:ore/manganese/limestone"
+            "block": "kubejs:ore/normal_manganese/limestone"
           },
           {
             "weight": 25,
@@ -90,7 +90,7 @@
           },
           {
             "weight": 30,
-            "block": "kubejs:ore/manganese/conglomerate"
+            "block": "kubejs:ore/normal_manganese/conglomerate"
           },
           {
             "weight": 25,
@@ -113,7 +113,7 @@
           },
           {
             "weight": 30,
-            "block": "kubejs:ore/manganese/dolomite"
+            "block": "kubejs:ore/normal_manganese/dolomite"
           },
           {
             "weight": 25,
@@ -136,7 +136,7 @@
           },
           {
             "weight": 30,
-            "block": "kubejs:ore/manganese/chert"
+            "block": "kubejs:ore/normal_manganese/chert"
           },
           {
             "weight": 25,
@@ -159,7 +159,7 @@
           },
           {
             "weight": 30,
-            "block": "kubejs:ore/manganese/chalk"
+            "block": "kubejs:ore/normal_manganese/chalk"
           },
           {
             "weight": 25,
@@ -182,7 +182,7 @@
           },
           {
             "weight": 30,
-            "block": "kubejs:ore/manganese/rhyolite"
+            "block": "kubejs:ore/normal_manganese/rhyolite"
           },
           {
             "weight": 25,
@@ -205,7 +205,7 @@
           },
           {
             "weight": 30,
-            "block": "kubejs:ore/manganese/basalt"
+            "block": "kubejs:ore/normal_manganese/basalt"
           },
           {
             "weight": 25,
@@ -228,7 +228,7 @@
           },
           {
             "weight": 30,
-            "block": "kubejs:ore/manganese/andesite"
+            "block": "kubejs:ore/normal_manganese/andesite"
           },
           {
             "weight": 25,
@@ -251,7 +251,7 @@
           },
           {
             "weight": 30,
-            "block": "kubejs:ore/manganese/shale"
+            "block": "kubejs:ore/normal_manganese/shale"
           },
           {
             "weight": 25,
@@ -274,7 +274,7 @@
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/claystone"
+            "block": "kubejs:ore/normal_manganese/claystone"
           },
           {
             "weight": 10,
@@ -297,7 +297,7 @@
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/limestone"
+            "block": "kubejs:ore/normal_manganese/limestone"
           },
           {
             "weight": 10,
@@ -320,7 +320,7 @@
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/conglomerate"
+            "block": "kubejs:ore/normal_manganese/conglomerate"
           },
           {
             "weight": 10,
@@ -343,7 +343,7 @@
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/dolomite"
+            "block": "kubejs:ore/normal_manganese/dolomite"
           },
           {
             "weight": 10,
@@ -366,7 +366,7 @@
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/chert"
+            "block": "kubejs:ore/normal_manganese/chert"
           },
           {
             "weight": 10,
@@ -389,7 +389,7 @@
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/chalk"
+            "block": "kubejs:ore/normal_manganese/chalk"
           },
           {
             "weight": 10,
@@ -412,7 +412,7 @@
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/rhyolite"
+            "block": "kubejs:ore/normal_manganese/rhyolite"
           },
           {
             "weight": 10,
@@ -435,7 +435,7 @@
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/basalt"
+            "block": "kubejs:ore/normal_manganese/basalt"
           },
           {
             "weight": 10,
@@ -458,7 +458,7 @@
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/andesite"
+            "block": "kubejs:ore/normal_manganese/andesite"
           },
           {
             "weight": 10,
@@ -481,7 +481,7 @@
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/dacite"
+            "block": "kubejs:ore/normal_manganese/dacite"
           },
           {
             "weight": 10,
@@ -504,7 +504,7 @@
           },
           {
             "weight": 25,
-            "block": "kubejs:ore/manganese/dacite"
+            "block": "kubejs:ore/normal_manganese/dacite"
           },
           {
             "weight": 10,

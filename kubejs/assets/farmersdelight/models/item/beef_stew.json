@@ -1,0 +1,21 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"particle": "farmersdelight:item/beef_stew"
+	},
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "brewinandchewin:block/coaster_beef_stew"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "farmersdelight:item/beef_stew_item"
+		},
+		"ground": {
+			"parent": "brewinandchewin:block/coaster_beef_stew"
+		},
+		"fixed": {
+			"parent": "brewinandchewin:block/coaster_beef_stew"
+		}
+	}
+}

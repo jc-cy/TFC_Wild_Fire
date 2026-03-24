@@ -1,0 +1,21 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"particle": "farmersdelight:item/bone_broth"
+	},
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "brewinandchewin:block/coaster_bone_broth"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "farmersdelight:item/bone_broth_item"
+		},
+		"ground": {
+			"parent": "brewinandchewin:block/coaster_bone_broth"
+		},
+		"fixed": {
+			"parent": "brewinandchewin:block/coaster_bone_broth"
+		}
+	}
+}

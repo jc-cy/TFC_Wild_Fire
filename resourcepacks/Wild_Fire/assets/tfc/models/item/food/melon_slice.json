@@ -15,7 +15,7 @@
             "parent": "brewinandchewin:block/coaster_melon_slice"
         },
         "fixed": {
-            "parent": "tfc:item/food/melon_slice_item"
+            "parent": "brewinandchewin:block/coaster_melon_slice"
         }
     },
 "overrides": [

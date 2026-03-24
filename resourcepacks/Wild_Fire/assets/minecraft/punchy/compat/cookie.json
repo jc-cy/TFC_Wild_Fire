@@ -1,0 +1,76 @@
+{
+    "customGroups": [
+        {
+            "name": "cookie",
+            "items": [
+                "firmalife:food/wheat_slice",
+                "bakery:strawberry_glazed_cookie",
+                "firmalife:food/rice_flatbread",
+                "firmalife:food/rye_flatbread",
+                "firmalife:food/wheat_flatbread",
+                "firmalife:food/oat_flatbread",
+                "firmalife:food/maize_flatbread",
+                "firmalife:food/barley_flatbread",
+                "firmalife:food/barley_slice",
+                "firmalife:food/maize_slice",
+                "firmalife:food/oat_slice",
+                "firmalife:food/rice_slice",
+                "firmalife:food/rye_slice",
+                "firmalife:food/toast",
+                "firmalife:food/toast_with_butter",
+                "firmalife:food/toast_with_jam",
+                "firmalife:food/garlic_bread",
+                "firmalife:food/chocolate_chip_cookie",
+                "firmalife:food/sugar_cookie",
+                "bakery:chocolate_glazed_cookie",
+                "tfc:food/melon_slice",
+                "tfc:food/pumpkin_chunks",
+                "bakery:sweetberry_glazed_cookie"
+            ]
+        }
+    ],
+    "item": {
+        "cookie": {
+            "transforms": {
+                "right": {
+                    "scale": 1,
+                    "offX": -0.0625,
+                    "offY": -0.1392045,
+                    "offZ": -0.09090912,
+                    "rotX": 60.59659,
+                    "rotY": 7.670456,
+                    "rotZ": 28.380692,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                },
+                "left": {
+                    "scale": 1,
+                    "offX": 0.0625,
+                    "offY": -0.1392045,
+                    "offZ": -0.09090912,
+                    "rotX": 60.59659,
+                    "rotY": -7.670456,
+                    "rotZ": -28.380692,
+                    "pivotX": -0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                },
+                "armTransforms": {
+                    "right": {
+                        "scale": 1.0,
+                        "offX": 0.0,
+                        "offY": 0,
+                        "offZ": -1.2
+                    },
+                    "left": {
+                        "scale": 1.0,
+                        "offX": 0.0,
+                        "offY": 0,
+                        "offZ": 0
+                    }
+                }
+            }
+        }
+    }
+}

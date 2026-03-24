@@ -1,0 +1,21 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"particle": "farmersdelight:item/cooked_rice"
+	},
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "brewinandchewin:block/coaster_cooked_rice"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "farmersdelight:item/cooked_rice_item"
+		},
+		"ground": {
+			"parent": "brewinandchewin:block/coaster_cooked_rice"
+		},
+		"fixed": {
+			"parent": "brewinandchewin:block/coaster_cooked_rice"
+		}
+	}
+}

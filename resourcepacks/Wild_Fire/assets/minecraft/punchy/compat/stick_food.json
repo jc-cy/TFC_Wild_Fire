@@ -1,0 +1,48 @@
+{
+    "customGroups": [
+        {
+            "name": "stick_food",
+            "items": [
+                "tfc:food/crappie",
+                "tfc:food/bluegill",
+                "tfc:food/lake_trout",
+                "tfc:food/rainbow_trout",
+                "tfc:food/tropical_fish",
+                "tfc:food/smallmouth_bass",
+                "tfc:food/salmon",
+                "tfc:food/cod",
+                "tfc:food/largemouth_bass"
+            ]
+        }
+    ],
+    "item": {
+        "stick_food": {
+            "transforms": {
+                "right": {
+                    "scale": 1.0,
+                    "offX": -0.03125,
+                    "offY": -0.32386363,
+                    "offZ": -0.10227275,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                },
+                "left": {
+                    "scale": 1.0,
+                    "offX": 0.03125,
+                    "offY": -0.32386363,
+                    "offZ": -0.10227275,
+                    "rotX": 0.0,
+                    "rotY": -0.0,
+                    "rotZ": -0.0,
+                    "pivotX": -0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                }
+            }
+        }
+    }
+}

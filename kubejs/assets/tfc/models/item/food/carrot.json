@@ -15,7 +15,7 @@
             "parent": "brewinandchewin:block/coaster_carrot"
         },
         "fixed": {
-            "parent": "tfc:item/food/carrot_item"
+            "parent": "brewinandchewin:block/coaster_carrot"
         }
     }
 }

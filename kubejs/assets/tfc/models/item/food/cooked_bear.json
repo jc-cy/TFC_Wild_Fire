@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_cooked_bear"
         },
         "fixed": {
-            "parent": "tfc:item/food/cooked_bear_item"
+            "parent": "kubejs:block/coaster_cooked_bear"
         }
     }
 }

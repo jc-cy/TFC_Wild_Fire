@@ -1,4 +1,5 @@
 {
+
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [25, -20, 0],
@@ -23,6 +24,11 @@
 		"head": {
 			"rotation": [-15, 0, 0],
 			"translation": [-0.25, 1.5, -10.5]
+		},
+		"fixed": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0, -15],
+			"scale": [2, 2, 2]
 		}
 	}
 }

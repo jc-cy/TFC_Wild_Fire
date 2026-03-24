@@ -1,0 +1,24 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"particle": "brewinandchewin:item/salty_folly_item"
+	},
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "brewinandchewin:item/salty_folly_handheld"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "brewinandchewin:item/salty_folly_item"
+		},
+		"ground": {
+			"parent": "brewinandchewin:item/salty_folly_handheld"
+		},
+		"head": {
+			"parent": "brewinandchewin:item/salty_folly_handheld"
+		},
+		"fixed": {
+			"parent": "brewinandchewin:item/salty_folly_handheld"
+		}
+	}
+}

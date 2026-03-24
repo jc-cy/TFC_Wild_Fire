@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_cooked_horse_meat"
         },
         "fixed": {
-            "parent": "tfc:item/food/cooked_horse_meat_item"
+            "parent": "kubejs:block/coaster_cooked_horse_meat"
         }
     }
 }

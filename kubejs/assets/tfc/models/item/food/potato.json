@@ -15,7 +15,7 @@
             "parent": "brewinandchewin:block/coaster_potato"
         },
         "fixed": {
-            "parent": "tfc:item/food/potato_item"
+            "parent": "brewinandchewin:block/coaster_potato"
         }
     }
 }

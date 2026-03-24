@@ -7,7 +7,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "kubejs:ore/manganese"
+            "tag": "kubejs:ore/normal_manganese"
           }
         ]
       }

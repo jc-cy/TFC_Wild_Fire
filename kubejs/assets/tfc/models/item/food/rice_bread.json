@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_rice_bread"
         },
         "fixed": {
-            "parent": "tfc:item/food/rice_bread_item"
+            "parent": "kubejs:block/coaster_rice_bread"
         }
     }
 }

@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_rye_bread"
         },
         "fixed": {
-            "parent": "tfc:item/food/rye_bread_item"
+            "parent": "kubejs:block/coaster_rye_bread"
         }
     }
 }

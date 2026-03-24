@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_duck"
         },
         "fixed": {
-            "parent": "tfc:item/food/duck_item"
+            "parent": "kubejs:block/coaster_duck"
         }
     }
 }

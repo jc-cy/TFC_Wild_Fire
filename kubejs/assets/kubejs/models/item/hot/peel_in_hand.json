@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.6",
+	"format_version": "1.9",
 	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
 	"parent": "block/block",
 	"texture_size": [24, 24],

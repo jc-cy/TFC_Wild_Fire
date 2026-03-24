@@ -15,7 +15,7 @@
             "parent": "brewinandchewin:block/coaster_cabbage"
         },
         "fixed": {
-            "parent": "tfc:item/food/cabbage_item"
+            "parent": "brewinandchewin:block/coaster_cabbage"
         }
     }
 }

@@ -15,7 +15,7 @@
             "parent": "brewinandchewin:block/coaster_cooked_porkchop"
         },
         "fixed": {
-            "parent": "tfc:item/food/cooked_pork_item"
+            "parent": "brewinandchewin:block/coaster_cooked_porkchop"
         }
     }
 }

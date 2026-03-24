@@ -15,7 +15,7 @@
             "parent": "brewinandchewin:block/coaster_rabbit"
         },
         "fixed": {
-            "parent": "tfc:item/food/rabbit_item"
+            "parent": "brewinandchewin:block/coaster_rabbit"
         }
     }
 }

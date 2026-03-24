@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_venison"
         },
         "fixed": {
-            "parent": "tfc:item/food/venison_item"
+            "parent": "kubejs:block/coaster_venison"
         }
     }
 }

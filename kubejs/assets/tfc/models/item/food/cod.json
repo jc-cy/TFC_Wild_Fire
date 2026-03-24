@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.6",
+	"format_version": "1.9",
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/handheld",
 	"textures": {
@@ -17,7 +17,7 @@
 			"parent": "kubejs:block/coaster_cod"
 		},
 		"fixed": {
-			"parent": "tfc:item/food/cod_item"
+			"parent": "kubejs:block/coaster_cod"
 		}
 	}
 }

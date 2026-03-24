@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_cooked_camelidae"
         },
         "fixed": {
-            "parent": "tfc:item/food/cooked_camelidae_item"
+            "parent": "kubejs:block/coaster_cooked_camelidae"
         }
     }
 }

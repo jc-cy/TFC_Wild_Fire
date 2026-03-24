@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "farm_and_charm:item/goulash"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_goulash"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "farm_and_charm:item/goulash_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_goulash"
+        },
+        "fixed": {
+            "parent": "kubejs:block/coaster_goulash"
+        }
+    }
+}

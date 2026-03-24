@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_oat_bread"
         },
         "fixed": {
-            "parent": "tfc:item/food/oat_bread_item"
+            "parent": "kubejs:block/coaster_oat_bread"
         }
     }
 }

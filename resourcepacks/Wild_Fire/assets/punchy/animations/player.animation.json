@@ -2115,6 +2115,9 @@
 						"1.7917": [0, 0, 0]
 					}
 				}
+			},
+			"timeline": {
+				"0.0": "anim_speed_1;lock_mesh_animation;"
 			}
 		},
 		"mining_sideways": {
@@ -6753,7 +6756,7 @@
 		},
 		"use_spear_pose_3_right": {
 			"loop": "hold_on_last_frame",
-			"animation_length": 1.2483,
+			"animation_length": 2.9167,
 			"bones": {
 				"right_arm": {
 					"rotation": {
@@ -14458,8 +14461,9 @@
 				}
 			}
 		},
-		"use_drink_beer": {
-			"animation_length": 1.805,
+		"drink_beer_right": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.7917,
 			"bones": {
 				"right_arm": {
 					"rotation": {
@@ -14485,6 +14489,53 @@
 						"1.4167": [6.5, -4.8, -1],
 						"1.625": [6.5, -3, -1],
 						"1.7917": [0, 0, 0]
+					}
+				},
+				"left_arm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0417": [30, 0, 0],
+						"0.25": [80, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, -16, 0]
+					}
+				},
+				"itemgrip_right": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.625": [-6, 11, -31],
+						"0.7917": [-9, 8, -31],
+						"0.9167": [-7, 14, -31],
+						"1.0833": [-7, 11, -31],
+						"1.25": [-5, 14, -31],
+						"1.4167": [-7, 12, -31],
+						"1.625": [-14, 7, -31],
+						"1.7917": [0, 0, 0]
+					}
+				},
+				"itemgrip_left": {
+					"rotation": [0, 0, 0]
+				}
+			},
+			"timeline": {
+				"1.42": "dual_handed;right_switch_item_brewinandchewin:tankard;"
+			}
+		},
+		"drink_beer_left": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 2.7083,
+			"bones": {
+				"right_arm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0417": [30, 0, 0],
+						"0.25": [80, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, -16, 0]
 					}
 				},
 				"left_arm": {
@@ -14525,23 +14576,10 @@
 						"1.625": [-14, -7, 31],
 						"1.7917": [0, 0, 0]
 					}
-				},
-				"itemgrip_right": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"0.625": [-6, 11, -31],
-						"0.7917": [-9, 8, -31],
-						"0.9167": [-7, 14, -31],
-						"1.0833": [-7, 11, -31],
-						"1.25": [-5, 14, -31],
-						"1.4167": [-7, 12, -31],
-						"1.625": [-14, 7, -31],
-						"1.7917": [0, 0, 0]
-					}
-				},
+				}
+			},
 			"timeline": {
-				"1.63": "left_switch_item_brewinandchewin:tankard;right_switch_item_brewinandchewin:tankard;"
-			}
+				"1.42": "dual_handed;left_switch_item_brewinandchewin:tankard;"
 			}
 		}
 	}

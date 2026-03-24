@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_barley_beer"
         },
         "fixed": {
-            "parent": "wildfire:item/food/beer_barley_item"
+            "parent": "kubejs:block/coaster_barley_beer"
         }
     }
 }
