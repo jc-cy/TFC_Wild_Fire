@@ -1,4 +1,4 @@
-StartupEvents.registry('item', event => {
+/*StartupEvents.registry('item', event => {
     event.create('geckojs:fungus_cape', 'anim_helmet')
         .texture('kubejs:item/hood')
         .tooltip('闻起来像蘑菇，很多蘑菇')
@@ -51,7 +51,7 @@ StartupEvents.registry('item', event => {
             renderer.setAllVisible(true);
             event.create('geckojs:furry_plugins','anim_helmet')
     })
-            */
+            
     event.create('geckojs:hanabi_hair', 'anim_helmet')
         .texture('kubejs:item/hood')
         .tooltip('长不大的幼苗')
@@ -61,5 +61,5 @@ StartupEvents.registry('item', event => {
         })
         .boneVisibility((renderer, slot) => {
             renderer.setAllVisible(true);
-        })
-})
+        }) 
+})*/

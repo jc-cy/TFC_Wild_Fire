@@ -52,12 +52,18 @@ const lockPickConfigs = {
 }
 BlockEvents.rightClicked(e => {
   const { player, block } = e
+
+  const blockId = block.id;
+  if (blockId.endsWith('_crate')) {
+    return;
+  }
   const isLoot = block.entityData?.LootTable
   // const item = player.getMainHandItem()
   // let value = block.getEntity().persistentData.getInt("Lock")
   // if(item.id === "minecraft:stick"){
   //   player.tell(`lockValue:${value}`)
   // }
+
   if (isLoot) {
     const lockPick = player.getMainHandItem()
     let chestData = block.getEntity().persistentData
@@ -72,7 +78,7 @@ BlockEvents.rightClicked(e => {
       //无钥匙
       if (!allLockPick.includes(lockPick.id)) {
         player.setStatusMessage(Component.translate("message.kubejs.no_lockpick"))
-        player.sendData("kubejs_player_playsound", {soundEvent: "minecraft:block.chain.break", volume: 1.0, pitch: 0.8})
+        player.sendData("kubejs_player_playsound", { soundEvent: "minecraft:block.chain.break", volume: 1.0, pitch: 0.8 })
         e.cancel()
       }
       //开锁参数
@@ -97,7 +103,7 @@ BlockEvents.rightClicked(e => {
       if (lockValue - reduceValue <= 0) {
         chestData.putInt("Lock", 114514)
         player.setStatusMessage(Component.translate("message.kubejs.lockpick_success"))
-        player.sendData("kubejs_player_playsound", {soundEvent: "minecraft:block.note_block.bell", volume: 2.0, pitch: 1.2})
+        player.sendData("kubejs_player_playsound", { soundEvent: "minecraft:block.note_block.bell", volume: 2.0, pitch: 1.2 })
         // 技巧经验获取
         let currentExp = player.persistentData.getDouble('skill_exp')//当前经验
         let expGain = Math.round(Math.abs(200 - reduceValue) / (currentLevel - 9)) / 10//计算经验
@@ -110,7 +116,7 @@ BlockEvents.rightClicked(e => {
         player.setStatusMessage(Component.translate("message.kubejs.lockpick_failure"))
         player.damageHeldItem("main_hand", durabilityCost)
         chestData.putInt("Lock", lockValue)
-        player.sendData("kubejs_player_playsound", {soundEvent: "minecraft:block.iron_trapdoor.close", volume: 2.0, pitch: 1.2})
+        player.sendData("kubejs_player_playsound", { soundEvent: "minecraft:block.iron_trapdoor.close", volume: 2.0, pitch: 1.2 })
         // 技巧经验获取
         let currentExp = player.persistentData.getDouble('skill_exp')//当前经验
         let expGain = Math.round(2 * Math.abs(200 - reduceValue) / (currentLevel - 9)) / 10//计算经验
