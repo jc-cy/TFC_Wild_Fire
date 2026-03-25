@@ -1,53 +1,399 @@
 {
   "item": {
-    "FULL_BLOCK": {
+    "LANTERN": {
       "transforms": {
         "right": {
-          "scale": 0.8600003,
-          "offX": -0.19000006,
-          "offY": 0.4857955,
-          "offZ": 0.03999996,
-          "rotX": 4.0000153,
-          "rotY": -24.0,
-          "rotZ": 3.0,
-          "pivotX": -0.00999999,
-          "pivotY": -0.029999971,
-          "pivotZ": 0.100000024
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": -1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": 0.1844319,
+          "offZ": -0.25909087,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": -0.036931753,
+          "offY": 0.1844319,
+          "offZ": -0.25909087,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "EMPTY_HAND": {
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": 0.084431894,
+          "offZ": -0.25909087,
+          "rotX": -10.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": -0.036931753,
+          "offY": 0.084431894,
+          "offZ": -0.25909087,
+          "rotX": -10.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
         }
       }
     }
   },
   "itemSpecific": {
-    "tfc:food/bear": {
-      "kind": "FOOD",
-      "armKind": "FOOD",
+    "kubejs:wooden_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
       "transforms": {
         "right": {
           "scale": 1.0,
-          "offX": -0.1704545,
-          "offY": -0.13636363,
-          "offZ": 0.09943175,
-          "rotX": 8.181808,
-          "rotY": -17.89772,
-          "rotZ": -17.130676,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
           "pivotX": 0.0,
           "pivotY": 0.0,
           "pivotZ": 0.0
         },
         "left": {
           "scale": 1.0,
-          "offX": 0.113636374,
-          "offY": -0.073863626,
-          "offZ": -0.051136374,
-          "rotX": 30.9375,
-          "rotY": 19.176132,
-          "rotZ": 16.363632,
-          "pivotX": -0.0,
+          "offX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
           "pivotY": 0.0,
           "pivotZ": 0.0
         }
+      }
+    },
+    "tfc:metal/lamp/bronze": {
+      "kind": "BLOCK",
+      "armKind": "BLOCK",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": -1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        }
       },
       "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "kubejs:gold_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "sns:frame_pack": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 0.0,
+          "pivotY": -0.05999998,
+          "pivotZ": 0.0,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": 0.0,
+          "pivotY": -0.05999998,
+          "pivotZ": 0.0,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "kubejs:brass_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "kubejs:stainless_steel_peel": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
         "right": {
           "scale": 1.0,
           "offX": 0.0,
@@ -60,69 +406,1527 @@
           "pivotY": 0.0,
           "pivotZ": 0.0
         }
-      }
-    },
-    "minecraft:spruce_leaves": {
-      "kind": "FULL_BLOCK",
-      "armKind": "FULL_BLOCK",
-      "transforms": {
+      },
+      "armTransforms": {
         "right": {
-          "scale": 0.8600003,
-          "offX": -0.19000006,
-          "offY": 0.4857955,
-          "offZ": 0.03999996,
-          "rotX": 4.0000153,
-          "rotY": -24.0,
-          "rotZ": 3.0,
-          "pivotX": -0.00999999,
-          "pivotY": -0.029999971,
-          "pivotZ": 0.100000024
-        },
-        "left": {
-          "scale": 0.8600003,
-          "offX": 0.19000001,
-          "offY": 0.26000002,
-          "offZ": 0.04,
-          "rotX": 4.0,
-          "rotY": 24.0,
-          "rotZ": -3.0,
-          "pivotX": 0.01,
-          "pivotY": -0.03,
-          "pivotZ": 0.09999999
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
         }
       }
     },
-    "farm_and_charm:onion_soup": {
-      "kind": "FOOD",
-      "armKind": "FOOD",
+    "sns:burlap_sack": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
       "transforms": {
         "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 0.0,
+          "pivotY": -0.05999998,
+          "pivotZ": 0.0,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": 0.0,
+          "pivotY": -0.05999998,
+          "pivotZ": 0.0,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
           "scale": 1.0,
-          "offX": 0.13352275,
-          "offY": -0.07102275,
-          "offZ": 0.33238626,
-          "rotX": -73.892044,
-          "rotY": 5.625,
-          "rotZ": 43.977264,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
           "pivotX": 0.0,
           "pivotY": 0.0,
           "pivotZ": 0.0
         },
         "left": {
           "scale": 1.0,
-          "offX": -0.13352275,
-          "offY": -0.07102275,
-          "offZ": 0.33238626,
-          "rotX": -73.892044,
-          "rotY": -5.625,
-          "rotZ": -43.977264,
-          "pivotX": -0.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
           "pivotY": 0.0,
           "pivotZ": 0.0
+        }
+      }
+    },
+    "kubejs:bronze_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
         }
       },
       "armTransforms": {
         "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "kubejs:sterling_silver_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "kubejs:copper_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "tfc:metal/lamp/wrought_iron": {
+      "kind": "BLOCK",
+      "armKind": "BLOCK",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": -1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "kubejs:bismuth_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "kubejs:black_steel_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "kubejs:steel_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "tfc:metal/lamp/red_steel": {
+      "kind": "BLOCK",
+      "armKind": "BLOCK",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": -1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "kubejs:blue_steel_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "tfc:metal/lamp/black_bronze": {
+      "kind": "BLOCK",
+      "armKind": "BLOCK",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": -1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "tfc:metal/lamp/steel": {
+      "kind": "BLOCK",
+      "armKind": "BLOCK",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": -1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "sns:leather_sack": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 0.0,
+          "pivotY": -0.05999998,
+          "pivotZ": 0.0,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": 0.0,
+          "pivotY": -0.05999998,
+          "pivotZ": 0.0,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "kubejs:cast_iron_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "sns:seed_pouch": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 0.0,
+          "pivotY": -0.05999998,
+          "pivotZ": 0.0,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": 0.0,
+          "pivotY": -0.05999998,
+          "pivotZ": 0.0,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "kubejs:zinc_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "tfc:metal/unfinished_lamp/bronze": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": -1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "tfc:metal/lamp/bismuth_bronze": {
+      "kind": "BLOCK",
+      "armKind": "BLOCK",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": -1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "kubejs:silver_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "tfc:metal/unfinished_lamp/blue_steel": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": -1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "supplementaries:sack": {
+      "kind": "BLOCK",
+      "armKind": "BLOCK",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 55.0,
+          "force": 0.1,
+          "speed": 1.0,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.05,
+          "offY": -0.4,
+          "offZ": 0.1,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.05,
+          "offY": -0.4,
+          "offZ": 0.1,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.2,
+          "offZ": 0.0,
+          "rotX": -15.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "tfc:metal/unfinished_lamp/steel": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": -1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "kubejs:wrought_iron_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "tfc:metal/lamp/copper": {
+      "kind": "BLOCK",
+      "armKind": "BLOCK",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": -1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "tfc:metal/shield/steel": {
+      "kind": "SHIELD",
+      "armKind": "SHIELD",
+      "transforms": {
+        "left": {
           "scale": 1.0,
           "offX": 0.0,
           "offY": 0.0,
@@ -133,7 +1937,9 @@
           "pivotX": 0.0,
           "pivotY": 0.0,
           "pivotZ": 0.0
-        },
+        }
+      },
+      "armTransforms": {
         "left": {
           "scale": 1.0,
           "offX": -0.0,
@@ -148,405 +1954,1007 @@
         }
       }
     },
-    "minecraft:azalea_leaves": {
-      "kind": "FULL_BLOCK",
-      "armKind": "FULL_BLOCK",
+    "kubejs:stainless_steel_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
       "transforms": {
         "right": {
-          "scale": 0.8600003,
-          "offX": -0.19000006,
-          "offY": 0.4857955,
-          "offZ": 0.03999996,
-          "rotX": 4.0000153,
-          "rotY": -24.0,
-          "rotZ": 3.0,
-          "pivotX": -0.00999999,
-          "pivotY": -0.029999971,
-          "pivotZ": 0.100000024
+          "scale": 1.0,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
         },
         "left": {
-          "scale": 0.8600003,
-          "offX": 0.19000001,
-          "offY": 0.26000002,
-          "offZ": 0.04,
-          "rotX": 4.0,
-          "rotY": 24.0,
-          "rotZ": -3.0,
-          "pivotX": 0.01,
-          "pivotY": -0.03,
-          "pivotZ": 0.09999999
-        }
-      }
-    },
-    "minecraft:cherry_leaves": {
-      "kind": "FULL_BLOCK",
-      "armKind": "FULL_BLOCK",
-      "transforms": {
-        "right": {
-          "scale": 0.8600003,
-          "offX": -0.19000006,
-          "offY": 0.4857955,
-          "offZ": 0.03999996,
-          "rotX": 4.0000153,
-          "rotY": -24.0,
-          "rotZ": 3.0,
-          "pivotX": -0.00999999,
-          "pivotY": -0.029999971,
-          "pivotZ": 0.100000024
-        },
-        "left": {
-          "scale": 0.8600003,
-          "offX": 0.19000001,
-          "offY": 0.26000002,
-          "offZ": 0.04,
-          "rotX": 4.0,
-          "rotY": 24.0,
-          "rotZ": -3.0,
-          "pivotX": 0.01,
-          "pivotY": -0.03,
-          "pivotZ": 0.09999999
-        }
-      }
-    },
-    "firmalife:food/oat_flatbread": {
-      "kind": "FOOD",
-      "armKind": "FOOD",
-      "transforms": {
-        "right": {
-          "scale": 0.7693892,
-          "offX": -0.0625,
-          "offY": -0.1392045,
-          "offZ": -0.09090912,
-          "rotX": 60.59659,
-          "rotY": 7.670456,
-          "rotZ": 28.380692,
-          "pivotX": 0.0,
-          "pivotY": 0.0,
-          "pivotZ": 0.0
-        },
-        "left": {
-          "scale": 0.7693892,
-          "offX": 0.0625,
-          "offY": -0.1392045,
-          "offZ": -0.09090912,
-          "rotX": 60.59659,
-          "rotY": -7.670456,
-          "rotZ": -28.380692,
-          "pivotX": -0.0,
-          "pivotY": 0.0,
-          "pivotZ": 0.0
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
         }
       },
       "armTransforms": {
         "right": {
           "scale": 1.0,
-          "offX": 0.0,
-          "offY": 0.0,
-          "offZ": 0.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
           "rotX": 0.0,
           "rotY": 0.0,
           "rotZ": 0.0,
           "pivotX": 0.0,
           "pivotY": 0.0,
           "pivotZ": 0.0
-        }
-      }
-    },
-    "minecraft:oak_leaves": {
-      "kind": "FULL_BLOCK",
-      "armKind": "FULL_BLOCK",
-      "transforms": {
-        "right": {
-          "scale": 0.8600003,
-          "offX": -0.19000006,
-          "offY": 0.4857955,
-          "offZ": 0.03999996,
-          "rotX": 4.0000153,
-          "rotY": -24.0,
-          "rotZ": 3.0,
-          "pivotX": -0.00999999,
-          "pivotY": -0.029999971,
-          "pivotZ": 0.100000024
         },
         "left": {
-          "scale": 0.8600003,
-          "offX": 0.19000001,
-          "offY": 0.26000002,
-          "offZ": 0.04,
-          "rotX": 4.0,
-          "rotY": 24.0,
-          "rotZ": -3.0,
-          "pivotX": 0.01,
-          "pivotY": -0.03,
-          "pivotZ": 0.09999999
-        }
-      }
-    },
-    "minecraft:mangrove_leaves": {
-      "kind": "FULL_BLOCK",
-      "armKind": "FULL_BLOCK",
-      "transforms": {
-        "right": {
-          "scale": 0.8600003,
-          "offX": -0.19000006,
-          "offY": 0.4857955,
-          "offZ": 0.03999996,
-          "rotX": 4.0000153,
-          "rotY": -24.0,
-          "rotZ": 3.0,
-          "pivotX": -0.00999999,
-          "pivotY": -0.029999971,
-          "pivotZ": 0.100000024
-        },
-        "left": {
-          "scale": 0.8600003,
-          "offX": 0.19000001,
-          "offY": 0.26000002,
-          "offZ": 0.04,
-          "rotX": 4.0,
-          "rotY": 24.0,
-          "rotZ": -3.0,
-          "pivotX": 0.01,
-          "pivotY": -0.03,
-          "pivotZ": 0.09999999
-        }
-      }
-    },
-    "minecraft:jungle_leaves": {
-      "kind": "FULL_BLOCK",
-      "armKind": "FULL_BLOCK",
-      "transforms": {
-        "right": {
-          "scale": 0.8600003,
-          "offX": -0.19000006,
-          "offY": 0.4857955,
-          "offZ": 0.03999996,
-          "rotX": 4.0000153,
-          "rotY": -24.0,
-          "rotZ": 3.0,
-          "pivotX": -0.00999999,
-          "pivotY": -0.029999971,
-          "pivotZ": 0.100000024
-        },
-        "left": {
-          "scale": 0.8600003,
-          "offX": 0.19000001,
-          "offY": 0.26000002,
-          "offZ": 0.04,
-          "rotX": 4.0,
-          "rotY": 24.0,
-          "rotZ": -3.0,
-          "pivotX": 0.01,
-          "pivotY": -0.03,
-          "pivotZ": 0.09999999
-        }
-      }
-    },
-    "minecraft:flowering_azalea_leaves": {
-      "kind": "FULL_BLOCK",
-      "armKind": "FULL_BLOCK",
-      "transforms": {
-        "right": {
-          "scale": 0.8600003,
-          "offX": -0.19000006,
-          "offY": 0.4857955,
-          "offZ": 0.03999996,
-          "rotX": 4.0000153,
-          "rotY": -24.0,
-          "rotZ": 3.0,
-          "pivotX": -0.00999999,
-          "pivotY": -0.029999971,
-          "pivotZ": 0.100000024
-        },
-        "left": {
-          "scale": 0.8600003,
-          "offX": 0.19000001,
-          "offY": 0.26000002,
-          "offZ": 0.04,
-          "rotX": 4.0,
-          "rotY": 24.0,
-          "rotZ": -3.0,
-          "pivotX": 0.01,
-          "pivotY": -0.03,
-          "pivotZ": 0.09999999
-        }
-      }
-    },
-    "tfc:rock/cobble/dacite": {
-      "kind": "FULL_BLOCK",
-      "armKind": "FULL_BLOCK",
-      "transforms": {
-        "right": {
-          "scale": 0.8600003,
-          "offX": -0.19000006,
-          "offY": 0.17897725,
-          "offZ": 0.005681753,
-          "rotX": -65.454544,
-          "rotY": 2.8125,
-          "rotZ": 3.0,
-          "pivotX": -0.00999999,
-          "pivotY": -0.029999971,
-          "pivotZ": 0.100000024
-        },
-        "left": {
-          "scale": 0.8600003,
-          "offX": 0.19000001,
-          "offY": 0.26000002,
-          "offZ": 0.04,
-          "rotX": 4.0,
-          "rotY": 24.0,
-          "rotZ": -3.0,
-          "pivotX": 0.01,
-          "pivotY": -0.03,
-          "pivotZ": 0.09999999
-        }
-      },
-      "armTransforms": {
-        "right": {
           "scale": 1.0,
           "offX": 0.0,
-          "offY": 0.0,
-          "offZ": 0.0,
-          "rotX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
           "rotY": 0.0,
-          "rotZ": 0.0,
+          "rotZ": -1.0,
           "pivotX": 0.0,
           "pivotY": 0.0,
           "pivotZ": 0.0
         }
       }
     },
-    "tfc:grass/loam": {
-      "kind": "FULL_BLOCK",
-      "armKind": "FULL_BLOCK",
+    "tfc:metal/unfinished_lamp/black_steel": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
       "transforms": {
         "right": {
-          "scale": 0.8600003,
-          "offX": -0.19000006,
-          "offY": 0.55397725,
-          "offZ": 0.03999996,
-          "rotX": 4.0000153,
-          "rotY": -24.0,
-          "rotZ": 3.0,
-          "pivotX": -0.00999999,
-          "pivotY": -0.029999971,
-          "pivotZ": 0.100000024
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
         },
         "left": {
-          "scale": 0.8600003,
-          "offX": 0.19000001,
-          "offY": 0.26000002,
-          "offZ": 0.04,
-          "rotX": 4.0,
-          "rotY": 24.0,
-          "rotZ": -3.0,
-          "pivotX": 0.01,
-          "pivotY": -0.03,
-          "pivotZ": 0.09999999
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": -1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
         }
       },
       "armTransforms": {
         "right": {
           "scale": 1.0,
-          "offX": 0.0,
-          "offY": 0.0,
-          "offZ": 0.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
           "rotX": 0.0,
           "rotY": 0.0,
           "rotZ": 0.0,
           "pivotX": 0.0,
           "pivotY": 0.0,
           "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
         }
       }
     },
-    "minecraft:birch_leaves": {
-      "kind": "FULL_BLOCK",
-      "armKind": "FULL_BLOCK",
+    "tfc:metal/lamp/blue_steel": {
+      "kind": "BLOCK",
+      "armKind": "BLOCK",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
       "transforms": {
         "right": {
-          "scale": 0.8600003,
-          "offX": -0.19000006,
-          "offY": 0.4857955,
-          "offZ": 0.03999996,
-          "rotX": 4.0000153,
-          "rotY": -24.0,
-          "rotZ": 3.0,
-          "pivotX": -0.00999999,
-          "pivotY": -0.029999971,
-          "pivotZ": 0.100000024
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
         },
         "left": {
-          "scale": 0.8600003,
-          "offX": 0.19000001,
-          "offY": 0.26000002,
-          "offZ": 0.04,
-          "rotX": 4.0,
-          "rotY": 24.0,
-          "rotZ": -3.0,
-          "pivotX": 0.01,
-          "pivotY": -0.03,
-          "pivotZ": 0.09999999
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": -1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
         }
       }
     },
-    "minecraft:dark_oak_leaves": {
-      "kind": "FULL_BLOCK",
-      "armKind": "FULL_BLOCK",
+    "kubejs:bismuth_bronze_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
       "transforms": {
         "right": {
-          "scale": 0.8600003,
-          "offX": -0.19000006,
-          "offY": 0.4857955,
-          "offZ": 0.03999996,
-          "rotX": 4.0000153,
-          "rotY": -24.0,
-          "rotZ": 3.0,
-          "pivotX": -0.00999999,
-          "pivotY": -0.029999971,
-          "pivotZ": 0.100000024
+          "scale": 1.0,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
         },
         "left": {
-          "scale": 0.8600003,
-          "offX": 0.19000001,
-          "offY": 0.26000002,
-          "offZ": 0.04,
-          "rotX": 4.0,
-          "rotY": 24.0,
-          "rotZ": -3.0,
-          "pivotX": 0.01,
-          "pivotY": -0.03,
-          "pivotZ": 0.09999999
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
         }
       }
     },
-    "minecraft:acacia_leaves": {
-      "kind": "FULL_BLOCK",
-      "armKind": "FULL_BLOCK",
+    "tfc:metal/lamp/black_steel": {
+      "kind": "BLOCK",
+      "armKind": "BLOCK",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
       "transforms": {
         "right": {
-          "scale": 0.8600003,
-          "offX": -0.19000006,
-          "offY": 0.4857955,
-          "offZ": 0.03999996,
-          "rotX": 4.0000153,
-          "rotY": -24.0,
-          "rotZ": 3.0,
-          "pivotX": -0.00999999,
-          "pivotY": -0.029999971,
-          "pivotZ": 0.100000024
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
         },
         "left": {
-          "scale": 0.8600003,
-          "offX": 0.19000001,
-          "offY": 0.26000002,
-          "offZ": 0.04,
-          "rotX": 4.0,
-          "rotY": 24.0,
-          "rotZ": -3.0,
-          "pivotX": 0.01,
-          "pivotY": -0.03,
-          "pivotZ": 0.09999999
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": -1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "tfc:metal/unfinished_lamp/black_bronze": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": -1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "sns:ore_sack": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 0.0,
+          "pivotY": -0.05999998,
+          "pivotZ": 0.0,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": 0.0,
+          "pivotY": -0.05999998,
+          "pivotZ": 0.0,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "tfc:metal/unfinished_lamp/bismuth_bronze": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": -1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "kubejs:rose_gold_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "tfc:metal/unfinished_lamp/copper": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": -1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "kubejs:nickel_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "kubejs:black_bronze_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "kubejs:red_steel_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "tfc:metal/unfinished_lamp/red_steel": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": -1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "tfc:metal/unfinished_lamp/wrought_iron": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 75.0,
+          "force": 0.1,
+          "speed": 1.4,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": -1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995,
+          "physics": "FULL_PENDULUM"
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "kubejs:chromium_tong": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.13999999,
+          "offY": -0.13999997,
+          "offZ": 0.06999999,
+          "rotX": -45.0,
+          "rotY": 93.0,
+          "rotZ": 0.0,
+          "pivotX": -0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.14999999,
+          "offY": -0.13999997,
+          "offZ": 0.059999995,
+          "rotX": -132.0,
+          "rotY": -89.0,
+          "rotZ": 1.0,
+          "pivotX": 0.06999999,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.036931753,
+          "offY": -0.025568128,
+          "offZ": -0.15909088,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.14000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
         }
       }
     }

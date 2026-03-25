@@ -63,7 +63,14 @@
                         "offZ": 0
                     }
                 }
-            }
+            },
+            "customAnimation": [
+                {
+                    "type": "useDrink",
+                    "name": "drink_beer",
+                    "skip_hand_equip": true
+                }
+            ]
         }
     }
 }

@@ -4,7 +4,8 @@
 	"parent": "tfc:block/ore",
 	"render_type": "minecraft:cutout",
 	"textures": {
-		"overlay": "kubejs:block/ore/obsidian_shard"
+		"overlay": "kubejs:block/ore/obsidian_shard",
+        "particle": "kubejs:block/ore/obsidian_shard"
 	},
 	"elements": [
 		{
