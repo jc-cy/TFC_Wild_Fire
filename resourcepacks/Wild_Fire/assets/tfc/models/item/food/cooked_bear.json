@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/cooked_bear"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_cooked_bear"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/cooked_bear_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_cooked_bear"
+        },
+        "fixed": {
+            "parent": "kubejs:block/coaster_cooked_bear"
+        }
+    }
+}

@@ -1,0 +1,218 @@
+{
+  "name": "单桅帆船",
+  "category": "tfc:firmaciv",
+  "icon": "firmaciv:sloop_icon_only",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "钢铁时代来啦？是时候造一艘好船啦！单桅帆船宽4方块，长超过8个方块，是划艇的promax版本！它最多可容纳13个容器和7名乘客，而且根据风力的不同，可以以很快的速度航行。它还可以携带多达6门加农炮！"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "firmaciv:textures/gui/book/sloop_isometric.png"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "然而，单桅帆船价格十分昂贵，需要大量的钢、铜、羊毛和其他材料。但仅仅收集材料还不行！你必须学习如何航行，而这可能需要一些练习！如果你打算把船靠近海岸，你也应该建造一个码头和其他基础设施。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "材料清单:$(br2)12钢锭$(br)24铜锭$(br)648木材$(br)34原木$(br)24羊毛布料$(br)6线$(br)72黄麻纤维"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "搭建脚手架",
+      "recipe": "firmaciv:crafting/watercraft_frame_flat",
+      "text": "就像划艇一样，你需要从搭建造船脚手架开始。然而，要建造这么大的船舶您还需要一个新的扁平变体。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "     ",
+            "     ",
+            "     ",
+            "     ",
+            "     ",
+            "     ",
+            "     "
+          ],
+          [
+            "  12 ",
+            "  34 ",
+            " 1562",
+            " 30a4",
+            " 3aa4",
+            " 3aa4",
+            " 7889"
+          ]
+        ],
+        "mapping": {
+          "1": "firmaciv:watercraft_frame_angled[facing=west,shape=inner_right]",
+          "2": "firmaciv:watercraft_frame_angled[facing=west,shape=inner_left]",
+          "3": "firmaciv:watercraft_frame_angled[facing=north,shape=straight]",
+          "4": "firmaciv:watercraft_frame_angled[facing=south,shape=straight]",
+          "5": "firmaciv:watercraft_frame_angled[facing=west,shape=outer_right]",
+          "6": "firmaciv:watercraft_frame_angled[facing=west,shape=outer_left]",
+          "7": "firmaciv:watercraft_frame_angled[facing=east,shape=inner_left]",
+          "8": "firmaciv:watercraft_frame_angled[facing=east,shape=straight]",
+          "9": "firmaciv:watercraft_frame_angled[facing=east,shape=inner_right]",
+          "0": "firmaciv:watercraft_frame_flat",
+          "a": "firmaciv:watercraft_frame_flat"
+        }
+      },
+      "name": "单桅帆船脚手架",
+      "text": "建造单桅帆船船体所需的造船脚手架排布。",
+      "enable_visualize": true
+    },
+
+    {
+      "type": "patchouli:text",
+      "text": "接下来，你需要添加合适的结实硬木木板:$(br2)金合欢$(br)梣木$(br)白杨木$(br)白桦木$(br)红木$(br)栗木$(br)山核桃木$(br)枫木$(br)橡木$(br)檀木$(br)无花果木"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "     ",
+            "     ",
+            "     ",
+            "     ",
+            "     ",
+            "     ",
+            "     "
+          ],
+          [
+            "  12 ",
+            "  34 ",
+            " 1562",
+            " 30a4",
+            " 3aa4",
+            " 3aa4",
+            " 7889"
+          ]
+        ],
+        "mapping": {
+          "1": "firmaciv:wood/watercraft_frame_angled/oak[facing=west,shape=inner_right,frame_processed=3]",
+          "2": "firmaciv:wood/watercraft_frame_angled/oak[facing=west,shape=inner_left,frame_processed=3]",
+          "3": "firmaciv:wood/watercraft_frame_angled/oak[facing=north,shape=straight,frame_processed=3]",
+          "4": "firmaciv:wood/watercraft_frame_angled/oak[facing=south,shape=straight,frame_processed=3]",
+          "5": "firmaciv:wood/watercraft_frame_angled/oak[facing=west,shape=outer_right,frame_processed=3]",
+          "6": "firmaciv:wood/watercraft_frame_angled/oak[facing=west,shape=outer_left,frame_processed=3]",
+          "7": "firmaciv:wood/watercraft_frame_angled/oak[facing=east,shape=inner_left,frame_processed=3]",
+          "8": "firmaciv:wood/watercraft_frame_angled/oak[facing=east,shape=straight,frame_processed=3]",
+          "9": "firmaciv:wood/watercraft_frame_angled/oak[facing=east,shape=inner_right,frame_processed=3]",
+          "0": "firmaciv:wood/watercraft_frame_flat/oak[frame_processed=3]",
+          "a": "firmaciv:wood/watercraft_frame_flat/oak[frame_processed=3]"
+        }
+      },
+      "name": "单桅帆船脚手架",
+      "text": "每个脚手架上都添加了四个木板。",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "     ",
+            "     ",
+            "     ",
+            "     ",
+            "     ",
+            "     ",
+            "     "
+          ],
+          [
+            "  12 ",
+            "  34 ",
+            " 1562",
+            " 30a4",
+            " 3aa4",
+            " 3aa4",
+            " 7889"
+          ]
+        ],
+        "mapping": {
+          "1": "firmaciv:wood/watercraft_frame_angled/oak[facing=west,shape=inner_right,frame_processed=7]",
+          "2": "firmaciv:wood/watercraft_frame_angled/oak[facing=west,shape=inner_left,frame_processed=7]",
+          "3": "firmaciv:wood/watercraft_frame_angled/oak[facing=north,shape=straight,frame_processed=7]",
+          "4": "firmaciv:wood/watercraft_frame_angled/oak[facing=south,shape=straight,frame_processed=7]",
+          "5": "firmaciv:wood/watercraft_frame_angled/oak[facing=west,shape=outer_right,frame_processed=7]",
+          "6": "firmaciv:wood/watercraft_frame_angled/oak[facing=west,shape=outer_left,frame_processed=7]",
+          "7": "firmaciv:wood/watercraft_frame_angled/oak[facing=east,shape=inner_left,frame_processed=7]",
+          "8": "firmaciv:wood/watercraft_frame_angled/oak[facing=east,shape=straight,frame_processed=7]",
+          "9": "firmaciv:wood/watercraft_frame_angled/oak[facing=east,shape=inner_right,frame_processed=7]",
+          "0": "firmaciv:wood/watercraft_frame_flat/oak[frame_processed=7]",
+          "a": "firmaciv:wood/watercraft_frame_flat/oak[frame_processed=7]"
+        }
+      },
+      "name": "单桅帆船脚手架",
+      "text": "在副手放一个锤子，向每个脚手架添加四个铜螺栓。铜螺栓是由铜锭锻造而来的。",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "     ",
+            "     ",
+            " L  R",
+            "     ",
+            "     ",
+            "     ",
+            " L  R"
+          ],
+          [
+            "  12 ",
+            "  34 ",
+            " 1562",
+            " 30a4",
+            " 3aa4",
+            " 3aa4",
+            " 7889"
+          ]
+        ],
+        "mapping": {
+          "1": "firmaciv:wood/watercraft_frame_angled/oak[facing=west,shape=inner_right,frame_processed=7]",
+          "2": "firmaciv:wood/watercraft_frame_angled/oak[facing=west,shape=inner_left,frame_processed=7]",
+          "3": "firmaciv:wood/watercraft_frame_angled/oak[facing=north,shape=straight,frame_processed=7]",
+          "4": "firmaciv:wood/watercraft_frame_angled/oak[facing=south,shape=straight,frame_processed=7]",
+          "5": "firmaciv:wood/watercraft_frame_angled/oak[facing=west,shape=outer_right,frame_processed=7]",
+          "6": "firmaciv:wood/watercraft_frame_angled/oak[facing=west,shape=outer_left,frame_processed=7]",
+          "7": "firmaciv:wood/watercraft_frame_angled/oak[facing=east,shape=inner_left,frame_processed=7]",
+          "8": "firmaciv:wood/watercraft_frame_angled/oak[facing=east,shape=straight,frame_processed=7]",
+          "9": "firmaciv:wood/watercraft_frame_angled/oak[facing=east,shape=inner_right,frame_processed=7]",
+          "0": "firmaciv:wood/watercraft_frame_flat/oak[frame_processed=7]",
+          "a": "firmaciv:wood/watercraft_frame_flat/oak[frame_processed=7]",
+          "L": "firmaciv:cleat[facing=north]",
+          "R": "firmaciv:cleat[facing=south]"
+        }
+      },
+      "name": "单桅帆船脚手架",
+      "text": "最后，将防滑钉添加到船体上。它们是通过钢双锭锻造而来的。",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "然而，建造船体只是单桅帆船建造的第一步！在船体搞定后，找一下蓝色锤子的标识然后使用$(item)$(k:key.use)$()建以放入显示在你准星旁的物品，这样能建完船只的剩余部分。$(br2)后面的页面包含完成建造所需的独特物品的配方。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmaciv:crafting/small_triangular_sail",
+      "recipe2": "firmaciv:crafting/medium_triangular_sail"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe2": "firmaciv:crafting/rope_coil",
+      "text": "你也需要添加一个锚，这能通过钢双锭锻造而成。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 4
+}

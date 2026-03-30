@@ -1,0 +1,21 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "高级钻头",
+  "category": "tfc:tfc_ie_changes",
+  "icon": "tfc_ie_addon:drillhead_black_steel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "用钻头挖矿还是太慢了？你觉得钢钻头不够？$(br)你现在可以制作不同颜色钢的钻头！它们拥有更快的挖矿速度、范围与耐久。"
+    },
+    {
+      "type": "tfc:tri_anvil_recipe",
+      "header": "Drill Heads",
+      "recipe": "tfc_ie_addon:anvil/drillhead_black_steel",
+      "recipe2": "tfc_ie_addon:anvil/drillhead_blue_steel",
+      "recipe3": "tfc_ie_addon:anvil/drillhead_red_steel"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 12
+}

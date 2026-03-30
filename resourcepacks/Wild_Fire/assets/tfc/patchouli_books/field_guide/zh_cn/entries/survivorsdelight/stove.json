@@ -1,0 +1,35 @@
+{
+  "category": "tfc:survivors_delight",
+  "extra_recipe_mappings": {
+    "farmersdelight:stove": 0
+  },
+  "icon": "farmersdelight:stove",
+  "name": "炉灶",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "炉灶是一种进阶的$(l:mechanics/heating)热量$()提供方式。该方块接受$(thing)原木$()，$(thing)煤炭$()，和$(thing)木炭$()作为燃料来烹饪或者为其他厨具提供热量。当炉灶点燃但未处于烹饪状态时，其燃料消耗速度极低。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "X": "farmersdelight:stove"
+        },
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ]
+      },
+      "name": "炉灶",
+      "text": ""
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 2
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "brewinandchewin:item/tankard_handheld",
+	"textures": {
+		"particle": "brewinandchewin:block/glittering_grenadine",
+		"tankard": "brewinandchewin:block/glittering_grenadine"
+	}
+}

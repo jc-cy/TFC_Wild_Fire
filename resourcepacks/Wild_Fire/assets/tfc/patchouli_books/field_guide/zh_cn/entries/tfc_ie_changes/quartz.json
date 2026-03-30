@@ -1,0 +1,45 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "石英",
+  "category": "tfc:tfc_ie_changes",
+  "icon": "tfc_ie_addon:mineral/quartz_shard",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc_ie_addon:mineral/quartz_shard",
+      "title": "石英",
+      "link_recipes": false,
+      "text": "下界没了！但是你需要石英？无所谓！你现在可以在群峦世界中找到含有$(thing)石英块$()与$(thing)石英簇$()的$(thing)石英晶洞$()！它可以帮你开始机械动力，也可以合成沉浸工程所需的物品！"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "   ",
+            " Q ",
+            "   "
+          ],
+          [
+            "   ",
+            " 0 ",
+            "   "
+          ]
+        ],
+        "mapping": {
+          "Q": "tfc_ie_addon:mineral/quartz_cluster",
+          "0": "tfc_ie_addon:mineral/budding_quartz"
+        }
+      },
+      "name": "石英簇",
+      "text": "需要注意的是，随着时间的推移，$(thing)石英母岩$()可以生成更多的$(thing)石英簇$()。",
+      "enable_visualize": false
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 7,
+  "extra_recipe_mappings": {
+    "tfc_ie_addon:mineral/quartz_shard": 0,
+    "tfc_ie_addon:mineral/quartz_block": 0
+  }
+}

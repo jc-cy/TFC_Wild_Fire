@@ -1,0 +1,177 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "新的矿石",
+  "category": "tfc:tfc_ie_changes",
+  "icon": "tfc_ie_addon:ore/normal_bauxite",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "anchor": "bauxite",
+      "text": "铝土矿是$(thing)铝$()矿石的一种，它是高压机械中不可或缺的原料。它可以在任何海拔高度找到，但较深的矿脉往往储藏更丰富。它可以在 $(l:the_world/geology#sedimentary)沉积岩$()与 $(l:the_world/geology#metamorphic)变质岩$()中找到。",
+      "title": "Bauxite"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "铝土矿。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc_ie_addon:ore/poor_bauxite/marble"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc_ie_addon:ore/normal_bauxite/marble"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc_ie_addon:ore/rich_bauxite/marble"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "galena",
+      "text": "方铅矿是$(thing)铅$()矿石的一种，用于制作前期的蓄电池。它可以在 y=75的高度以下找到。它可以在$(l:the_world/geology#metamorphic)变质岩$()、$(l:the_world/geology#igneous_extrusive)火成喷出岩$()和$(l:the_world/geology#igneous_intrusive)火成侵入岩$()中找到。",
+      "title": "Galena"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "大理石中的方铅矿矿石。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc_ie_addon:ore/poor_galena/marble"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc_ie_addon:ore/normal_galena/marble"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc_ie_addon:ore/rich_galena/marble"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "uraninite",
+      "text": "沥青铀矿是$(thing)铀$()的矿石。它可以在 y=75的高度以下找到。它可以在 $(l:the_world/geology#metamorphic)变质岩$()和 $(l:the_world/geology#igneous_extrusive)火成喷出岩$()中找到. 铀块可以作为 $(thing)热传导发电机$()的热源。",
+      "title": "沥青铀矿"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "沥青铀矿。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc_ie_addon:ore/poor_uraninite/marble"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc_ie_addon:ore/normal_uraninite/marble"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc_ie_addon:ore/rich_uraninite/marble"
+          }
+        }
+      ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 0,
+  "extra_recipe_mappings": {
+    "tfc_ie_addon:ore/small_bauxite": 0,
+    "tfc_ie_addon:ore/poor_bauxite": 0,
+    "tfc_ie_addon:ore/normal_bauxite": 0,
+    "tfc_ie_addon:ore/rich_bauxite": 0,
+    "tfc_ie_addon:ore/small_galena": 2,
+    "tfc_ie_addon:ore/poor_galena": 2,
+    "tfc_ie_addon:ore/normal_galena": 2,
+    "tfc_ie_addon:ore/rich_galena": 2,
+    "tfc_ie_addon:ore/small_uraninite": 4,
+    "tfc_ie_addon:ore/poor_uraninite": 4,
+    "tfc_ie_addon:ore/normal_uraninite": 4,
+    "tfc_ie_addon:ore/rich_uraninite": 4
+  }
+}

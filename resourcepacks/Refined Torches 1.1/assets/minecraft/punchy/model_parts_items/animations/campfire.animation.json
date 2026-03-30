@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"camp_off": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.25,
+			"bones": {
+				"fogo": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.25": [0, 0, 0]
+					}
+				},
+				"lit_campfire": {
+						"scale": {
+							 "0.0": [0, 0, 0],
+							 "0.25": [0, 0, 0]
+				         }
+				}
+			}
+		}
+	}
+}

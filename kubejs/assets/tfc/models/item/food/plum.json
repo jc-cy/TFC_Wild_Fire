@@ -1,7 +1,24 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
-  "parent": "firmalife:item/not_dried/plum",
-  "overrides": [
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "textures": {
+		"particle": "tfc:item/food/plum"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_plum"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/plum_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_plum"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/plum_item"
+        }
+    },
+"overrides": [
     {
       "predicate": {
         "firmalife:dry": 1

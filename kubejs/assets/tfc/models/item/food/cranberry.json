@@ -1,12 +1,7 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "parent": "firmalife:item/not_dried/cranberry",
-  "overrides": [
-    {
-      "predicate": {
-        "firmalife:dry": 1
-      },
-      "model": "firmalife:item/dried/cranberry"
-    }
-  ]
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "tfc:item/food/cranberry"
+  }
 }

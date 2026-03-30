@@ -1,0 +1,26 @@
+{
+  "items": [
+    "minecraft:soul_lantern"
+  ],
+  "geo": "minecraft:punchy/model_parts_items/geo/lampiao_alma.geo.json",
+  "texture": "minecraft:punchy/model_parts_items/textures/lampiao_alma",
+  "bone_emission": {
+    "inner_light": 100,
+    "group": 100,
+    "strength": 100,
+    "blur": false,
+    "clamp": true
+  },
+  "bone_texture_anim": {
+    "group": {
+      "frames": 3,
+      "frametime": 10,
+      "frame_height": 16
+    },
+    "inner_light": {
+      "frames": 3,
+      "frametime": 10,
+      "frame_height": 16
+    }
+  }
+}

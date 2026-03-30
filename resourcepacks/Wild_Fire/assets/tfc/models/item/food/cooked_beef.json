@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/cooked_beef"
+	},
+    "base": {
+        "parent": "brewinandchewin:block/coaster_cooked_beef"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/cooked_beef_item"
+        },
+        "ground": {
+            "parent": "brewinandchewin:block/coaster_cooked_beef"
+        },
+        "fixed": {
+            "parent": "brewinandchewin:block/coaster_cooked_beef"
+        }
+    }
+}

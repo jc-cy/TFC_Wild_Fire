@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/crappie"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_crappie"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/crappie_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_crappie"
+        },
+        "fixed": {
+            "parent": "kubejs:block/coaster_crappie"
+        }
+    }
+}

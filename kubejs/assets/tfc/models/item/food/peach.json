@@ -1,7 +1,24 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
-  "parent": "firmalife:item/not_dried/peach",
-  "overrides": [
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/peach"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_peach"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/peach_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_peach"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/peach_item"
+        }
+    },
+"overrides": [
     {
       "predicate": {
         "firmalife:dry": 1

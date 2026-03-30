@@ -1,58 +1,7 @@
 {
-	"format_version": "1.9",
-	"credit": "Made with Blockbench",
-	"textures": {
+  "parent": "kubejs:block/coaster_camelidae",
+  "textures": {
 		"0": "kubejs:block/cooked_camelidae",
 		"particle": "kubejs:block/cooked_camelidae"
-	},
-	"elements": [
-		{
-			"from": [5.5, 0, 5],
-			"to": [11.5, 2, 11],
-			"rotation": {"angle": 0, "axis": "y", "origin": [6.5, 0, 7]},
-			"faces": {
-				"north": {"uv": [9, 6, 15, 8], "texture": "#0"},
-				"east": {"uv": [9, 8, 15, 10], "texture": "#0"},
-				"south": {"uv": [0, 10, 6, 12], "texture": "#0"},
-				"west": {"uv": [6, 10, 12, 12], "texture": "#0"},
-				"up": {"uv": [9, 10, 3, 4], "texture": "#0"},
-				"down": {"uv": [15, 0, 9, 6], "texture": "#0"}
-			}
-		},
-		{
-			"from": [7, 1.75, 6.5],
-			"to": [10, 2.75, 9.5],
-			"rotation": {"angle": 22.5, "axis": "y", "origin": [8.5, 1.75, 8]},
-			"faces": {
-				"north": {"uv": [3, 0, 6, 1], "texture": "#0"},
-				"east": {"uv": [3, 1, 6, 2], "texture": "#0"},
-				"south": {"uv": [3, 2, 6, 3], "texture": "#0"},
-				"west": {"uv": [3, 3, 6, 4], "texture": "#0"},
-				"up": {"uv": [3, 3, 0, 0], "texture": "#0"},
-				"down": {"uv": [3, 3, 0, 6], "texture": "#0"}
-			}
-		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [70, 20, 0],
-			"translation": [-0.5, 4, 7]
-		},
-		"thirdperson_lefthand": {
-			"rotation": [70, -20, 0],
-			"translation": [0.5, 4, 7]
-		},
-		"firstperson_righthand": {
-			"rotation": [0, 0, 15],
-			"translation": [-1.5, 8.5, 0]
-		},
-		"firstperson_lefthand": {
-			"rotation": [0, 0, 15],
-			"translation": [-1.5, 8.5, 0]
-		},
-		"head": {
-			"rotation": [-15, 0, 0],
-			"translation": [-0.25, 1.5, -10.5]
-		}
-	}
+  }
 }

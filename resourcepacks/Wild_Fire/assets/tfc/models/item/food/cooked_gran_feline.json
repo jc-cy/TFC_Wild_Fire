@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/cooked_gran_feline"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_cooked_gran_feline"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/cooked_gran_feline_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_cooked_gran_feline"
+        },
+        "fixed": {
+            "parent": "kubejs:block/coaster_cooked_gran_feline"
+        }
+    }
+}

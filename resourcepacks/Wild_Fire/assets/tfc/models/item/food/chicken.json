@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/chicken"
+	},
+    "base": {
+        "parent": "brewinandchewin:block/coaster_chicken"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/chicken_item"
+        },
+        "ground": {
+            "parent": "brewinandchewin:block/coaster_chicken"
+        },
+        "fixed": {
+            "parent": "brewinandchewin:block/coaster_chicken"
+        }
+    }
+}

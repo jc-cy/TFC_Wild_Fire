@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/potato"
+	},
+    "base": {
+        "parent": "brewinandchewin:block/coaster_potato"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/potato_item"
+        },
+        "ground": {
+            "parent": "brewinandchewin:block/coaster_potato"
+        },
+        "fixed": {
+            "parent": "brewinandchewin:block/coaster_potato"
+        }
+    }
+}

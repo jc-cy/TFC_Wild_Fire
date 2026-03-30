@@ -1,0 +1,70 @@
+{
+  "category": "tfc:survivors_delight",
+  "extra_recipe_mappings": {
+    "farmersdelight:organic_compost": 4,
+    "farmersdelight:rich_soil": 0,
+    "farmersdelight:rich_soil_farmland": 2
+  },
+  "icon": "farmersdelight:rich_soil_farmland",
+  "name": "沃土",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "沃土是一种能够促进自然生长的特殊土壤。它能缩短树苗的生长时间，如果其上方是空气，还会随机长出棕色或红色的蘑菇。随着时间推移，这些蘑菇会长成对应的菌落。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "X": "farmersdelight:rich_soil"
+        },
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ]
+      },
+      "name": "沃土",
+      "text": ""
+    },
+    {
+      "type": "patchouli:text",
+      "text": "沃土可以用锄头锄成沃土耕地。种植在沃土耕地上的作物即使温度和湿度稍微偏移其需求范围也会正常生长。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "X": "farmersdelight:rich_soil_farmland"
+        },
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ]
+      },
+      "name": "沃土耕地",
+      "text": ""
+    },
+    {
+      "type": "patchouli:text",
+      "text": "你可以制作有机肥料并将其作为方块放置。随着时间推移这些肥料会转化为沃土，天空亮度和周围的水、蘑菇、沃土方块都会加速这个过程。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "survivorsdelight:crafting/misc/organic_compost",
+      "recipe2": "survivorsdelight:crafting/misc/organic_compost2",
+      "title": "制作有机肥料"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 6
+}

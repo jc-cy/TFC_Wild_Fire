@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/mutton"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_mutton"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/mutton_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_mutton"
+        },
+        "fixed": {
+            "parent": "kubejs:block/coaster_mutton"
+        }
+    }
+}

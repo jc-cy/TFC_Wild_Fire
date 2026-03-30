@@ -1,7 +1,24 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
-  "parent": "firmalife:item/not_dried/red_apple",
-  "overrides": [
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "textures": {
+		"particle": "tfc:item/food/red_apple"
+	},
+    "base": {
+        "parent": "brewinandchewin:block/coaster_apple"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/red_apple_item"
+        },
+        "ground": {
+            "parent": "brewinandchewin:block/coaster_apple"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/red_apple_item"
+        }
+    },
+"overrides": [
     {
       "predicate": {
         "firmalife:dry": 1

@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/rabbit"
+	},
+    "base": {
+        "parent": "brewinandchewin:block/coaster_rabbit"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/rabbit_item"
+        },
+        "ground": {
+            "parent": "brewinandchewin:block/coaster_rabbit"
+        },
+        "fixed": {
+            "parent": "brewinandchewin:block/coaster_rabbit"
+        }
+    }
+}

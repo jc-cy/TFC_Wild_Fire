@@ -1,0 +1,24 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"particle": "brewinandchewin:item/egg_grog_item"
+	},
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "brewinandchewin:item/egg_grog_handheld"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "brewinandchewin:item/egg_grog_item"
+		},
+		"ground": {
+			"parent": "brewinandchewin:item/egg_grog_handheld"
+		},
+		"head": {
+			"parent": "brewinandchewin:item/egg_grog_handheld"
+		},
+		"fixed": {
+			"parent": "brewinandchewin:item/egg_grog_handheld"
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/baked_potato"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_baked_potato"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/baked_potato_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_baked_potato"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/coaster_baked_potato"
+        }
+    }
+}

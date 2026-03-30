@@ -616,7 +616,7 @@
 				}
 			]
 			title: "更多锻铁"
-			x: 4.0d
+			x: 4.5d
 			y: 5.5d
 		}
 		{
@@ -683,7 +683,7 @@
 					type: "observation"
 				}
 			]
-			x: 5.5d
+			x: 7.0d
 			y: 5.5d
 		}
 		{
@@ -1107,7 +1107,7 @@
 			]
 			title: "&6钢铁是怎样炼成的"
 			x: 14.0d
-			y: 2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -3209,7 +3209,7 @@
 					type: "observation"
 				}
 			]
-			x: 7.5d
+			x: 9.5d
 			y: 5.5d
 		}
 		{

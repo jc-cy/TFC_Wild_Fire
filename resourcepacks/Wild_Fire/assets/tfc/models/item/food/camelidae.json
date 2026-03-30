@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/camelidae"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_camelidae"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/camelidae_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_camelidae"
+        },
+        "fixed": {
+            "parent": "kubejs:block/coaster_camelidae"
+        }
+    }
+}

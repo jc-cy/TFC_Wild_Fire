@@ -1,7 +1,24 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
-  "parent": "firmalife:item/not_dried/melon_slice",
-  "overrides": [
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "textures": {
+		"particle": "tfc:item/food/melon_slice"
+	},
+    "base": {
+        "parent": "brewinandchewin:block/coaster_melon_slice"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/melon_slice_item"
+        },
+        "ground": {
+            "parent": "brewinandchewin:block/coaster_melon_slice"
+        },
+        "fixed": {
+            "parent": "brewinandchewin:block/coaster_melon_slice"
+        }
+    },
+"overrides": [
     {
       "predicate": {
         "firmalife:dry": 1

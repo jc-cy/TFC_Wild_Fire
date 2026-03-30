@@ -1,0 +1,248 @@
+{
+  "item": {
+    "TORCH": {
+      "transforms": {
+        "right": {
+          "scale": 1.2699997,
+          "offX": -0.049999997,
+          "offY": -0.12999998,
+          "offZ": 0.08999999,
+          "rotX": 0.0,
+          "rotY": 449.8,
+          "rotZ": 0.0,
+          "pivotX": 0.01,
+          "pivotY": 0.08999999,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.2699997,
+          "offX": -0.02,
+          "offY": -0.12999998,
+          "offZ": 0.11999998,
+          "rotX": 0.0,
+          "rotY": -360.8,
+          "rotZ": -0.0,
+          "pivotX": -0.01,
+          "pivotY": 0.089999974,
+          "pivotZ": -0.059999995
+        }
+      }
+    },
+    "LANTERN": {
+      "disable_sprint_lateral_tilt": true,
+      "keep_arm_tuning": true,
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 55.0,
+          "force": 0.1,
+          "speed": 1.0,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ],
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": -0.16,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": -103.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": -0.16,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 103.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      },
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": -0.02,
+          "offY": -0.4299999,
+          "offZ": 0.11999998,
+          "rotX": -23.0,
+          "rotY": 35.0,
+          "rotZ": -80.0,
+          "pivotX": -0.10999997,
+          "pivotY": -0.009999985,
+          "pivotZ": -0.02
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": 0.02,
+          "offY": -0.4299999,
+          "offZ": 0.11999998,
+          "rotX": -23.0,
+          "rotY": -35.0,
+          "rotZ": 80.0,
+          "pivotX": 0.10999997,
+          "pivotY": -0.009999985,
+          "pivotZ": -0.02
+        }
+      }
+    }
+  },
+  "itemSpecific": {
+    "minecraft:repeater": {
+      "kind": "BLOCK",
+      "transforms": {
+        "right": {
+          "scale": 0.83000016,
+          "offX": 0.01,
+          "offY": -0.13999997,
+          "offZ": 0.09999999,
+          "rotX": 4.0,
+          "rotY": 17.0,
+          "rotZ": -2.0,
+          "pivotX": -0.03,
+          "pivotY": 0.19000001,
+          "pivotZ": -0.07999999
+        },
+        "left": {
+          "scale": 0.83000016,
+          "offX": -0.01,
+          "offY": -0.13999997,
+          "offZ": 0.09999999,
+          "rotX": 4.0,
+          "rotY": -113.0,
+          "rotZ": 2.0,
+          "pivotX": 0.03,
+          "pivotY": 0.19000001,
+          "pivotZ": -0.07999999
+        }
+      }
+    },
+    "minecraft:comparator": {
+      "kind": "BLOCK",
+      "transforms": {
+        "right": {
+          "scale": 0.83000016,
+          "offX": 0.01,
+          "offY": -0.13999997,
+          "offZ": 0.09999999,
+          "rotX": 4.0,
+          "rotY": 113.0,
+          "rotZ": -2.0,
+          "pivotX": -0.03,
+          "pivotY": 0.19000001,
+          "pivotZ": -0.07999999
+        },
+        "left": {
+          "scale": 0.83000016,
+          "offX": -0.01,
+          "offY": -0.13999997,
+          "offZ": 0.09999999,
+          "rotX": 4.0,
+          "rotY": -113.0,
+          "rotZ": 2.0,
+          "pivotX": 0.03,
+          "pivotY": 0.19000001,
+          "pivotZ": -0.07999999
+        }
+      }
+    },
+    "minecraft:redstone_torch": {
+      "kind": "BLOCK",
+      "transforms": {
+        "right": {
+          "scale": 1.2099998,
+          "offX": -0.01,
+          "offY": -0.12999998,
+          "offZ": 0.109999985,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.01,
+          "pivotY": 0.09999997,
+          "pivotZ": -0.049999997
+        },
+        "left": {
+          "scale": 1.2099998,
+          "offX": -0.049999997,
+          "offY": -0.12999998,
+          "offZ": 0.109999985,
+          "rotX": 0.0,
+          "rotY": -0.0,
+          "rotZ": -0.0,
+          "pivotX": -0.01,
+          "pivotY": 0.12999997,
+          "pivotZ": -0.049999997
+        }
+      }
+    },
+    "minecraft:soul_campfire": {
+      "kind": "BLOCK",
+      "disable_sprint_lateral_tilt": true,
+      "transforms": {
+        "right": {
+          "scale": 1.1099999,
+          "offX": 0.0,
+          "offY": -0.13999997,
+          "offZ": 0.109999985,
+          "rotX": -1.0,
+          "rotY": -88.0,
+          "rotZ": 3.0,
+          "pivotX": -0.049999997,
+          "pivotY": 0.19,
+          "pivotZ": -0.04
+        },
+        "left": {
+          "scale": 1.1099999,
+          "offX": -0.0,
+          "offY": -0.13999997,
+          "offZ": 0.109999985,
+          "rotX": 10.0,
+          "rotY": 229.0,
+          "rotZ": 8.0,
+          "pivotX": 0.049999997,
+          "pivotY": 0.19,
+          "pivotZ": -0.04,
+          "disable_sprint_lateral_tilt": true
+        }
+      }
+    },
+    "minecraft:campfire": {
+      "kind": "BLOCK",
+      "disable_sprint_lateral_tilt": true,
+      "transforms": {
+        "right": {
+          "scale": 1.1099999,
+          "offX": 0.0,
+          "offY": -0.13999997,
+          "offZ": 0.109999985,
+          "rotX": -18.0,
+          "rotY": 274.0,
+          "rotZ": -16.0,
+          "pivotX": -0.049999997,
+          "pivotY": 0.19,
+          "pivotZ": -0.04
+        },
+        "left": {
+          "scale": 1.1099999,
+          "offX": -0.0,
+          "offY": -0.13999997,
+          "offZ": 0.109999985,
+          "rotX": 8.0,
+          "rotY": -132.0,
+          "rotZ": 8.0,
+          "pivotX": 0.049999997,
+          "pivotY": 0.19,
+          "pivotZ": -0.04
+        }
+      }
+    }
+  }
+}

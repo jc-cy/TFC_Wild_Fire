@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "textures": {
+		"particle": "tfc:item/food/tropical_fish"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_tropical_fish"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/tropical_fish_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_tropical_fish"
+        },
+        "fixed": {
+            "parent": "kubejs:block/coaster_tropical_fish"
+        }
+    }
+}

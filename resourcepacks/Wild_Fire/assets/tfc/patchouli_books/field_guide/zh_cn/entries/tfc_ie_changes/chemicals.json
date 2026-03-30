@@ -1,0 +1,39 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "化学原料",
+  "category": "tfc:tfc_ie_changes",
+  "icon": "tfc:powder/saltpeter",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "在重工业中，原料不可能像木头、石头或者其他金属一样容易搞。你有必要对化学反应过程有一定理解以拓宽你能获取的材料范围。"
+    },
+    {
+      "type": "tfc:quern_recipe",
+      "recipe": "tfc:quern/saltpeter",
+      "text": "$(thing)硝石粉$()是一种可以通过在$(thing)粉碎机$()中处理$(l:the_world/ores_and_minerals#saltpeter)硝石矿石$()与$(thing)沙石$()得到的金属盐。$(thing)硝石矿石$()同样可以在$(l:mechanics/quern)手推磨$()中加工。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "immersiveengineering:crafting/fertilizer",
+      "text": "$(thing)硝石粉$()可以在生产$(thing)生物柴油$()的工序中起到催化剂的作用，还可以像上方展示的一样用来合成$(thing)化肥$()。"
+    },
+    {
+      "type": "tfc:quern_recipe",
+      "anchor": "sulfur",
+      "recipe": "tfc:quern/sulfur",
+      "text": "$(thing)硫磺$()是一种可以在特定矿物（通常是$(thing)矿床$()）中找到的粉末。它可以通过在$(thing)粉碎机$()中处理$(l:the_world/ores_and_minerals#sulfur)硫矿石$()与$(thing)石英块$()获得。$(thing)硫矿石$()同样可以在$(l:mechanics/quern)手推磨$()中加工。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/gunpowder",
+      "recipe2": "tfc:crafting/gunpowder_graphite"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "混合$(thing)硝石粉$()、$(thing)硫磺$()与$(thing)木炭$()可以得到$(thing)火药$()作为产物，这种获取方式远比杀苦力怕要来的科学。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 3
+}

@@ -1,58 +1,7 @@
 {
-	"format_version": "1.9",
-	"credit": "Made with Blockbench",
-	"textures": {
+  "parent": "kubejs:block/coaster_duck",
+  "textures": {
 		"0": "kubejs:block/cooked_duck",
 		"particle": "kubejs:block/cooked_duck"
-	},
-	"elements": [
-		{
-			"from": [7.5, 0, 6.5],
-			"to": [11.5, 3, 9.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [5.5, 0, 5.5]},
-			"faces": {
-				"north": {"uv": [4, 0, 8, 3], "texture": "#0"},
-				"east": {"uv": [8, 0, 11, 3], "texture": "#0"},
-				"south": {"uv": [4, 3, 8, 6], "texture": "#0"},
-				"west": {"uv": [8, 3, 11, 6], "texture": "#0"},
-				"up": {"uv": [8, 9, 4, 6], "texture": "#0"},
-				"down": {"uv": [8, 9, 4, 12], "texture": "#0"}
-			}
-		},
-		{
-			"from": [3.5, 1.5, 6],
-			"to": [7.5, 1.5, 10],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 0.5, 10]},
-			"faces": {
-				"north": {"uv": [0, 0, 4, 0], "texture": "#0"},
-				"east": {"uv": [0, 0, 4, 0], "texture": "#0"},
-				"south": {"uv": [0, 0, 4, 0], "texture": "#0"},
-				"west": {"uv": [0, 0, 4, 0], "texture": "#0"},
-				"up": {"uv": [4, 4, 0, 0], "texture": "#0"},
-				"down": {"uv": [4, 4, 0, 8], "texture": "#0"}
-			}
-		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [90, 90, 0],
-			"translation": [0, 3, 7.25]
-		},
-		"thirdperson_lefthand": {
-			"rotation": [-90, 90, 0],
-			"translation": [0, 3, -5.75]
-		},
-		"firstperson_righthand": {
-			"rotation": [60, 90, 0],
-			"translation": [0, 8.25, 6]
-		},
-		"firstperson_lefthand": {
-			"rotation": [60, -90, 0],
-			"translation": [0, 8.25, 6]
-		},
-		"head": {
-			"rotation": [-34, 0, 0],
-			"translation": [-0.5, 0, -10.75]
-		}
-	}
+  }
 }

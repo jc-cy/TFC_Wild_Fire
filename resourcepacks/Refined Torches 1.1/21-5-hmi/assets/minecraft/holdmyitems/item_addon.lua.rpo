@@ -1,0 +1,12 @@
+{
+  expansions: {
+    fumacas: "refinedTorches.holdMyItems.campfireSmoke",
+    particulasfogueiras: "refinedTorches.holdMyItems.campfireSparkParticles",
+    particulastochas: "refinedTorches.holdMyItems.torchSparkParticles",
+    particulasred: "refinedTorches.holdMyItems.redstoneTorchDustParticles",
+    alminhas: "refinedTorches.holdMyItems.soulParticles",
+    sonstocha: "refinedTorches.holdMyItems.torchSounds",
+    sonsfogo: "refinedTorches.holdMyItems.campfireSounds"
+
+      }
+}

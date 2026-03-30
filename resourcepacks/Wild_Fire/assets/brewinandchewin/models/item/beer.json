@@ -1,0 +1,24 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"particle": "brewinandchewin:item/beer_item"
+	},
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "brewinandchewin:item/beer_handheld"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "brewinandchewin:item/beer_item"
+		},
+		"ground": {
+			"parent": "brewinandchewin:item/beer_handheld"
+		},
+		"head": {
+			"parent": "brewinandchewin:item/beer_handheld"
+		},
+		"fixed": {
+			"parent": "brewinandchewin:item/beer_handheld"
+		}
+	}
+}

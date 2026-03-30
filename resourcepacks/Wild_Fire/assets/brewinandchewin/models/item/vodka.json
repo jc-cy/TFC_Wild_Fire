@@ -1,0 +1,24 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"particle": "brewinandchewin:item/vodka_item"
+	},
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "brewinandchewin:item/vodka_handheld"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "brewinandchewin:item/vodka_item"
+		},
+		"ground": {
+			"parent": "brewinandchewin:item/vodka_handheld"
+		},
+		"head": {
+			"parent": "brewinandchewin:item/vodka_handheld"
+		},
+		"fixed": {
+			"parent": "brewinandchewin:item/vodka_handheld"
+		}
+	}
+}

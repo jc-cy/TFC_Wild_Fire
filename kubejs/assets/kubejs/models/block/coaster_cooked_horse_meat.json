@@ -1,58 +1,7 @@
 {
-	"format_version": "1.9",
-	"credit": "Made with Blockbench",
-	"textures": {
+  "parent": "kubejs:block/coaster_horse_meat",
+  "textures": {
 		"0": "kubejs:block/cooked_horse_meat",
 		"particle": "kubejs:block/cooked_horse_meat"
-	},
-	"elements": [
-		{
-			"from": [8, 0, 7],
-			"to": [12, 2, 11],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 7]},
-			"faces": {
-				"north": {"uv": [4, 0, 8, 2], "texture": "#0"},
-				"east": {"uv": [4, 2, 8, 4], "texture": "#0"},
-				"south": {"uv": [4, 4, 8, 6], "texture": "#0"},
-				"west": {"uv": [4, 6, 8, 8], "texture": "#0"},
-				"up": {"uv": [4, 4, 0, 0], "texture": "#0"},
-				"down": {"uv": [4, 4, 0, 8], "texture": "#0"}
-			}
-		},
-		{
-			"from": [4, 0, 6],
-			"to": [8, 2, 11],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 7]},
-			"faces": {
-				"north": {"uv": [9, 7, 13, 9], "texture": "#0"},
-				"east": {"uv": [4, 8, 9, 10], "texture": "#0"},
-				"south": {"uv": [9, 9, 13, 11], "texture": "#0"},
-				"west": {"uv": [8, 5, 13, 7], "texture": "#0"},
-				"up": {"uv": [4, 13, 0, 8], "texture": "#0"},
-				"down": {"uv": [12, 0, 8, 5], "texture": "#0"}
-			}
-		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [70, 20, 0],
-			"translation": [-0.5, 4, 7]
-		},
-		"thirdperson_lefthand": {
-			"rotation": [70, -20, 0],
-			"translation": [0.5, 4, 7]
-		},
-		"firstperson_righthand": {
-			"rotation": [0, 0, 15],
-			"translation": [-1.5, 8.5, 0]
-		},
-		"firstperson_lefthand": {
-			"rotation": [0, 0, 15],
-			"translation": [-1.5, 8.5, 0]
-		},
-		"head": {
-			"rotation": [-15, 0, 0],
-			"translation": [-0.25, 1.5, -10.5]
-		}
-	}
+  }
 }

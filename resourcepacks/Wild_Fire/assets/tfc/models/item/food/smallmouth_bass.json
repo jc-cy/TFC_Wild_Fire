@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/smallmouth_bass"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_smallmouth_bass"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/smallmouth_bass_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_smallmouth_bass"
+        },
+        "fixed": {
+            "parent": "kubejs:block/coaster_smallmouth_bass"
+        }
+    }
+}

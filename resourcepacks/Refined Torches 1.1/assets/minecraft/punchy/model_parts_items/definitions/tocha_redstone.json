@@ -1,0 +1,101 @@
+{
+  "items": [
+    "minecraft:redstone_torch"
+  ],
+  "geo": "minecraft:punchy/model_parts_items/geo/tocha_redstone.geo.json",
+  "texture": "minecraft:punchy/model_parts_items/textures/tochas",
+  "animations": [
+    "minecraft:punchy/model_parts_items/animations/tocha.animation.json"
+  ],
+  "modelPartsAnimation": [
+    {
+      "type": "idle",
+      "name": "tocha_idle",
+      "disable_walk_on_water_animation": true
+    },
+    {
+      "type": "idle",
+      "name": "tocha_off",
+      "disable_all_particles": true,
+      "inside_water": true,
+      "skip_blend_in": true,
+      "skip_blend_out": true,
+      "disable_swim_animation": true,
+      "disable_walk_on_water_animation": true
+    }
+  ],
+  "bone_texture_anim": {
+    "fogo": {
+      "frames": 32,
+      "frametime": 2,
+      "frame_height": 16
+    }
+  },
+  "camera_transparent_bones": [
+    "bordas"
+  ],
+  "bone_emission": {
+    "bordas": 100,
+    "cabo_on": 100,
+    "strength": 100,
+    "blur": false,
+    "clamp": true
+  },
+  "particles": [
+    {
+      "type": "minecraft:dust",
+      "bone": "bordas",
+      "rate": 30,
+      "count": 3,
+      "offset": [0, 0, 0],
+      "spread": [0.1, 0.2, 0.3],
+      "velocity": [0, 0.05, 0],
+      "life": 1.3,
+      "size": 0.03,
+      "size_end": 0.008,
+      "alpha": 0.95,
+      "alpha_end": 0,
+      "drag": 0.93,
+      "gravity": 0.01,
+      "fullbright": true,
+      "tint": [1, 0, 0],
+      "triggers": {
+        "mining": true
+      }
+    },
+    {
+      "type": "minecraft:dust",
+      "bone": "bordas",
+      "rate": 10,
+      "count": 1,
+      "offset": [0, 0.1, 0],
+      "spread": [0.1, 0, 0],
+      "velocity": [0, 0.004, 0],
+      "life": 1,
+      "size": 0.02,
+      "size_end": 0.04,
+      "alpha": 0.95,
+      "alpha_end": 0,
+      "drag": 0.93,
+      "gravity": 0.5,
+      "fullbright": true,
+      "emit_full_anim": true,
+      "offset_space": "bone",
+      "velocity_space": "bone",
+      "ease": "linear",
+      "emit_ease": "linear",
+      "tint": [1, 0, 0]
+    },
+    {
+      "type": "minecraft:campfire_cosy_smoke",
+      "texture": "minecraft:punchy/model_parts_items/textures/particles/vermelho",
+      "bone": "bordas",
+      "offset": [0.1, 0, -0.1],
+      "size": 0.5,
+      "alpha": 1,
+      "lock_in_model": true,
+      "fullbright": true,
+      "emissive_blur": false
+    }
+  ]
+}

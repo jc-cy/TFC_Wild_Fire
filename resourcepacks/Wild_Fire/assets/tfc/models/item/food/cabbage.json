@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/cabbage"
+	},
+    "base": {
+        "parent": "brewinandchewin:block/coaster_cabbage"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/cabbage_item"
+        },
+        "ground": {
+            "parent": "brewinandchewin:block/coaster_cabbage"
+        },
+        "fixed": {
+            "parent": "brewinandchewin:block/coaster_cabbage"
+        }
+    }
+}

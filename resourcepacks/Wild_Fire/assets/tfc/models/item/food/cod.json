@@ -1,0 +1,23 @@
+{
+	"format_version": "1.9",
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"particle": "tfc:item/food/cod"
+	},
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "kubejs:block/coaster_cod"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "tfc:item/food/cod_item"
+		},
+		"ground": {
+			"parent": "kubejs:block/coaster_cod"
+		},
+		"fixed": {
+			"parent": "kubejs:block/coaster_cod"
+		}
+	}
+}

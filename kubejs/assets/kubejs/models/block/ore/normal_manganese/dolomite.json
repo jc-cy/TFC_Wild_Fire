@@ -1,1 +1,8 @@
-{"parent":"tfc:block/ore","textures":{"all":"tfc:block/rock/raw/dolomite","overlay":"kubejs:block/ore/normal_manganese"},"render_type":"minecraft:cutout"}
+{
+    "parent": "tfc:block/ore",
+    "textures": {
+        "all": "tfc:block/rock/raw/dolomite",
+        "overlay": "kubejs:block/ore/normal_manganese"
+    },
+    "render_type": "minecraft:cutout"
+}

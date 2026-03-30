@@ -1,0 +1,20 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "除草剂附属",
+  "category": "tfc:tfc_ie_changes",
+  "icon": "immersiveengineering:herbicide_bucket",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)除草剂$()也在群峦星中适用！把它装载进$(thing)化学喷射器$()，除草剂会以喷雾形式喷出，并摧毁它碰到的每一株植物。这种液体可以摧毁花卉与作物，还能将草方块转变为泥土。它还会使农田缺水，最终摧毁农田，因此可以作为$(thing)腐烂堆肥$()的替代品。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "immersiveengineering:herbicide_bucket",
+      "link_recipes": false,
+      "text": "在$(thing)搅拌机$()中将半桶$(thing)乙醇$()、$(l:tfc:tfc_ie_changes/chemicals#sulfur)硫磺$()任何种类的的$(thing)铜粉$()混合以制作除草剂。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 10
+}

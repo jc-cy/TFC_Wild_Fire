@@ -1,0 +1,7 @@
+{
+  "parent": "kubejs:block/coaster_mutton",
+  "textures": {
+		"0": "kubejs:block/cooked_mutton",
+		"particle": "kubejs:block/cooked_mutton"
+  }
+}

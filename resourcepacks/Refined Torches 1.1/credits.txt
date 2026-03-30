@@ -1,0 +1,11 @@
+Author
+patovskiz (https://modrinth.com/user/patovskiz)
+
+Credits
+Campfire, Soul Campfire, Redstone Repeater and Redstone Comparator models by Cyber (https://modrinth.com/user/cyber)
+- Used with full permission, and at his insistence.
+
+Fresh Animations player compatibility files are the property of FreshLX (https://modrinth.com/user/FreshLX)
+- Used with full permission.
+
+All remaining assets, code, and implementation by patovskiz.

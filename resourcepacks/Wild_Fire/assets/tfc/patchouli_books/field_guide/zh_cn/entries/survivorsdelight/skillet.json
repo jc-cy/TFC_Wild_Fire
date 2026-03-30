@@ -1,0 +1,76 @@
+{
+  "category": "tfc:survivors_delight",
+  "extra_recipe_mappings": {
+    "tag:survivorsdelight:skillets": 0
+  },
+  "icon": "survivorsdelight:skillet/copper",
+  "name": "煎锅",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "你可以使用煎锅来$(l:mechanics/heating)加热物品$()。煎锅既可以作为方块使用也可以作为手持物品使用，使用钢及以上等级金属制作的煎锅还可以作为造成$(l:mechanics/damage_types)打击伤害$()的近战武器使用。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "要手持煎锅进行加热需要主手持煎锅副手持食材，并靠近热源。这之后按住$(item)$(k:key.use)$()来从副手中分出一个食材开始加热。此过程会消耗煎锅的耐久度。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "放置的煎锅最多可以一次加热8份同种食材，这是一种更高效的方式。但如果热源的温度超过了煎锅的$(l:mechanics/anvils#working)熔点$()，可能会使煎锅消耗额外的耐久度。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "X": "#survivorsdelight:skillets"
+        },
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ]
+      },
+      "name": "不同种类的煎锅",
+      "text": ""
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "make_a_skillet",
+      "text": "可用于制作煎锅的金属包括$(thing)铜、铸铁、钢、高锰钢、精金和秘银$()。更高等级金属制作的煎锅耐久度更高。$(thing)铜$()煎锅在投入使用前需要更多的加工工序。",
+      "title": "制作煎锅"
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "survivorsdelight:anvil/skillet_head/steel",
+      "text": "首先，将金属双层薄板锻造成煎锅头。"
+    },
+    {
+      "type": "tfc:welding_recipe",
+      "recipe": "survivorsdelight:welding/unfinished_skillet/steel",
+      "text": "再焊接上一根同种金属的金属棒。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "survivorsdelight:crafting/skillet/steel",
+      "recipe2": "survivorsdelight:crafting/skillet/farmer",
+      "title": "组装煎锅"
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "survivorsdelight:anvil/skillet_lining/silver",
+      "text": "用特殊金属制成为铜煎锅制作镀层可以防止烹饪时有毒铜离子进入食物。你可以用$(thing)银$()或$(thing)锡$()制作镀层。铜煎锅必须焊接上镀层才能真正投入使用。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "repair",
+      "text": "当煎锅只剩下一点耐久度时，它就不能再作为煎锅使用，放置状态下的煎锅也会变成掉落物。你可以将其放在砧上锻造以恢复其全部耐久度或者将其熔化而没有任何损失。与其他煎锅不同的是，铜煎锅只需要重新焊接一个镀层即可重新使用。",
+      "title": "修理煎锅"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1
+}

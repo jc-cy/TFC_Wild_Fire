@@ -1,0 +1,7 @@
+{
+	"parent": "brewinandchewin:item/tankard_handheld",
+	"textures": {
+		"particle": "brewinandchewin:block/vodka",
+		"tankard": "brewinandchewin:block/vodka"
+	}
+}

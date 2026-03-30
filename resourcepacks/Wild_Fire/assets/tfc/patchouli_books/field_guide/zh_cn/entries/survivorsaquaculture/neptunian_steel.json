@@ -1,0 +1,50 @@
+{
+  "category": "tfc:survivors_aquaculture",
+  "extra_recipe_mappings": {
+    "survivorsaquaculture:metal/ingot/neptunian_steel": 3,
+    "survivorsaquaculture:metal/ingot/neptunium": 3
+  },
+  "icon": "survivorsaquaculture:metal/block/neptunian_steel",
+  "name": "海王钢",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "你可以使用$(thing)海王钢$()打造水下环境专用的装备。"
+    },
+    {
+      "type": "tfc:welding_recipe",
+      "recipe": "survivorsaquaculture:welding/neptunian_steel_ingot",
+      "text": "$(thing)海王钢锭$()由$(thing)海王锭$()和$(thing)高锰钢锭$()焊接得来，这使其成为了一种十分高级的金属材料。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "aquaculture:neptunium_chestplate",
+      "text": "每种用$(thing)海王钢$()打造的工具或装备的效果都会直接在物品描述中列出，方便你直接查阅。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "除装备之外，$(thing)海王锭$()和$(thing)海王钢$()也可以制成方块、台阶和楼梯，以便于在以水为主题的建筑中保持风格一致。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "enable_visualize": false,
+      "multiblock": {
+        "mapping": {
+          "X": "survivorsaquaculture:metal/block/neptunium"
+        },
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ]
+      },
+      "name": "",
+      "text": ""
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 3
+}

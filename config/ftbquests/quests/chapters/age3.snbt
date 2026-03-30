@@ -2697,7 +2697,7 @@
 			dependencies: ["3AC19D6A80ACC6EF"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
-			icon: "totemic:eagle_feather"
+			icon: "alexsmobs:falconry_glove"
 			id: "5ADE7F8606CA6E5C"
 			rewards: [{
 				id: "3072E0DE316171FF"
@@ -9219,7 +9219,7 @@
 				Count: 1
 				ForgeCaps: {
 					"tfc:food": {
-						creationDate: 942000L
+						creationDate: -9223372036854775808L
 						traits: [ ]
 					}
 				}

@@ -1,0 +1,24 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "新的模具",
+  "category": "tfc:tfc_ie_changes",
+  "icon": "tfc_ie_addon:mold_sheet",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc_ie_addon:mold_sheet",
+      "title": "薄板模具",
+      "link_recipes": false,
+      "text": "$(thing)薄板模具$()可通过$(thing)工程师蓝图$()在$(thing)工程师装配台$()中制作。有了它，你就可以在$(thing)金属冲压机$()中制作所有金属的金属板。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc_ie_addon:mold_block",
+      "title": "方块模具",
+      "link_recipes": false,
+      "text": "$(thing)方块模具$()也是通过一样的方式制造的。你可以用它制造$(thing)钢块$()与$(thing)铀块$()。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 2
+}

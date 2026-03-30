@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/carrot"
+	},
+    "base": {
+        "parent": "brewinandchewin:block/coaster_carrot"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/carrot_item"
+        },
+        "ground": {
+            "parent": "brewinandchewin:block/coaster_carrot"
+        },
+        "fixed": {
+            "parent": "brewinandchewin:block/coaster_carrot"
+        }
+    }
+}

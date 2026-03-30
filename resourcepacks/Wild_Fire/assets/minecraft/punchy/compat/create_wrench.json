@@ -1,0 +1,72 @@
+{
+  "customGroups": [
+    {
+      "name": "create_wrench",
+      "items": [
+        "create:wrench"
+      ]
+    }
+  ],
+  "item": {
+    "create_wrench": {
+      "kind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 0.73849434,
+          "offX": 0.03999996,
+          "offY": 0.049999952,
+          "offZ": 0.099999905,
+          "rotX": 20.000015,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.2,
+          "offX": 0.0,
+          "offY": 0.1,
+          "offZ": 0.1,
+          "rotX": 20.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.0,
+          "offZ": 0.0,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    }
+  }
+}

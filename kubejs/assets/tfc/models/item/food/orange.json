@@ -1,7 +1,24 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
-  "parent": "firmalife:item/not_dried/orange",
-  "overrides": [
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/orange"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_orange"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/orange_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_orange"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/orange_item"
+        }
+    },
+"overrides": [
     {
       "predicate": {
         "firmalife:dry": 1

@@ -1,6 +1,7 @@
 {
 	"format_version": "1.9",
 	"credit": "Made with Blockbench",
+	"parent": "kubejs:block/meat_display",
 	"textures": {
 		"0": "kubejs:block/chevon",
 		"particle": "kubejs:block/chevon"
@@ -32,23 +33,5 @@
 				"down": {"uv": [14, 10, 7, 12], "texture": "#0"}
 			}
 		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [70, 20, 0],
-			"translation": [-0.5, 4, 7]
-		},
-		"thirdperson_lefthand": {
-			"rotation": [70, -20, 0],
-			"translation": [0.5, 4, 7]
-		},
-		"firstperson_righthand": {
-			"rotation": [0, 0, 15],
-			"translation": [-1.5, 8.5, 0]
-		},
-		"firstperson_lefthand": {
-			"rotation": [0, 0, 15],
-			"translation": [-1.5, 8.5, 0]
-		}
-	}
+	]
 }
