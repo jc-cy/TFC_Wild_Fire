@@ -169,11 +169,11 @@ MBDMachineEvents.onStructureInvalid("wildfire:loom", (e) => {
 ServerEvents.recipes((event) => {
     event.recipes.wildfire.loom()
         .id('wildfire:loom/string')
-        .duration(480)
-        .inputItems('4x minecraft:string')
+        .duration(480)      //配方时间
+        .inputItems('4x minecraft:string') //输入物品
         .inputStress(256)
         .inputRPM(32)
-        .outputItems("minecraft:white_wool")
+        .outputItems("minecraft:white_wool") //输出物品
 })
 
 MBDMachineEvents.onPlaced("wildfire:loom", (e) => {
@@ -189,8 +189,22 @@ MBDMachineEvents.onBeforeRecipeWorking("wildfire:loom", (event) => {
         let partmachine = part
         /** @type {Internal.KineticBlockEntity} */
         let KineticMachine = partmachine.machineHolder
-        console.log(KineticMachine.speed.toFixed(2))
-        if (KineticMachine.speed.toFixed(2) < 32) {
+        let speedcondition;
+        switch (controller.frontFacing.get().toString()) {
+            case "south":
+                speedcondition = KineticMachine.speed < 32;
+                break;
+            case "west":
+                speedcondition = KineticMachine.speed < 32;
+                break;
+            case "north":
+                speedcondition = KineticMachine.speed > -32;
+                break;
+            case "east":
+                speedcondition = KineticMachine.speed > -32;
+                break;
+        }
+        if (speedcondition) {
             event.getEvent().setCanceled(true);
             return;
         } else {
@@ -201,11 +215,6 @@ MBDMachineEvents.onBeforeRecipeWorking("wildfire:loom", (event) => {
     })
 })
 
-MBDMachineEvents.onRecipeFinish("wildfire:loom", (event) => {
-    let { machine } = event.getEvent();
-    machine.triggerGeckolibAnim("idle", 1)
-})
-
 const $IMachine = Java.loadClass('com.lowdragmc.mbd2.api.machine.IMachine')
 MBDMachineEvents.onBeforeRecipeModify("wildfire:loom", (event) => {
     let { machine, recipe } = event.getEvent();
@@ -214,6 +223,44 @@ MBDMachineEvents.onBeforeRecipeModify("wildfire:loom", (event) => {
     let partmachine = $IMachine.ofMachine(machine.level, machine.pos.relative(machine.frontFacing.get().opposite)).orElse(null);
     /** @type {Internal.KineticBlockEntity} */
     let KineticMachine = partmachine.machineHolder
-    copyRecipe.duration = recipe.duration * (32 / KineticMachine.speed);
+    copyRecipe.duration = recipe.duration * Math.abs(32 / KineticMachine.speed);
     event.getEvent().setRecipe(copyRecipe);
+})
+
+MBDMachineEvents.onStateChanged("wildfire:loom", (event) => {
+    let { machine, newState} = event.getEvent();
+    if (newState == "formed") {
+        machine.triggerGeckolibAnim("idle", 1)
+    }
+})
+
+MBDMachineEvents.onRecipeWorking("wildfire:loom", (event) => {
+    let { machine } = event.getEvent();
+    if (machine.level.time % 20 != 0) return;
+    /** @type {Internal.IMultiController_} */
+    let controller = machine
+    controller.parts.forEach(part => {
+        /** @type {Internal.MBDPartMachine} */
+        let partmachine = part
+        /** @type {Internal.KineticBlockEntity} */
+        let KineticMachine = partmachine.machineHolder
+        let speedcondition;
+        switch (controller.frontFacing.get().toString()) {
+            case "south":
+                speedcondition = KineticMachine.speed < 32;
+                break;
+            case "west":
+                speedcondition = KineticMachine.speed < 32;
+                break;
+            case "north":
+                speedcondition = KineticMachine.speed > -32;
+                break;
+            case "east":
+                speedcondition = KineticMachine.speed > -32;
+                break;
+        }
+        if (speedcondition) {
+            event.getEvent().setCanceled(true);
+        }
+    })
 })
