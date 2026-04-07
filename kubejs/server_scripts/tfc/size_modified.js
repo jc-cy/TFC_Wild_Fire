@@ -35,8 +35,8 @@ TFCEvents.data(e => {
     e.itemSize(`kubejs:${material}_halberd_weapon_part`, 'large', 'heavy');             // 戟部件
   });
 
-  //小、轻
-  const small_light_items = [
+
+  const small_light_items = [  //小、轻
     '#kubejs:8ore',
     'kubejs:silicon',
     'kubejs:leather_plate',
@@ -57,8 +57,8 @@ TFCEvents.data(e => {
   })
 
 
-  //小、非常轻
-  const small_very_light_items = [
+
+  const small_very_light_items = [  //小、非常轻
     '#tfc:seeds'
   ]
   small_very_light_items.forEach(item => {
@@ -66,8 +66,8 @@ TFCEvents.data(e => {
   })
 
   //实心金属块
-  //大、非常重
-  const large_very_heavy_items = [
+
+  const large_very_heavy_items = [  //大、非常重
     "moreburners:electric_burner",
     "immersiveengineering:coil_lv",
     "immersiveengineering:coil_mv",
@@ -128,8 +128,8 @@ TFCEvents.data(e => {
     e.itemSize(item, 'large', 'very_heavy')
   })
 
-  //极大、非常重
-  const huge_very_heavy_items = [
+
+  const huge_very_heavy_items = [  //极大、非常重
     "immersive_aircraft:phull",
     "immersive_aircraft:engine",
     "immersive_aircraft:boiler",
@@ -165,7 +165,13 @@ TFCEvents.data(e => {
     "siegemachines:counterweight",
     "trotting_wagons:armored_wagon",
     "trotting_wagons:conestoga_wagon",
-    "trotting_wagons:royal_wagon"]
+    "trotting_wagons:royal_wagon",
+    "simplytents:zip_tent",
+    "simplytents:roof_tent",
+    "simplytents:wall_tent",
+    "simplytents:tent",
+    "simplytents:canvas_wall"
+  ]
   huge_very_heavy_items.forEach(item => {
     e.itemSize(item, 'huge', 'very_heavy')
   })
@@ -185,8 +191,8 @@ TFCEvents.data(e => {
   })
 
 
-  //大、重
-  const large_heavy_items = [
+
+  const large_heavy_items = [  //大、重
     "#kubejs:triple_ingot",
     "siegemachines:turret_base",
     "siegemachines:beam",
@@ -250,15 +256,16 @@ TFCEvents.data(e => {
     "tfc:metal/greaves/bismuth_bronze",
     "immersiveengineering:armor_faraday_leggings",
     "immersiveengineering:armor_faraday_boots",
-    "tfc:metal/boots/copper"
+    "tfc:metal/boots/copper",
+    "kaleidoscope_tavern:barrel"
   ]
 
   large_heavy_items.forEach(item => {
     e.itemSize(item, 'large', 'heavy')
   })
 
-  //大,中
-  const large_medium_items = [
+
+  const large_medium_items = [  //大,中
     '#kubejs:16ore',
     '#kubejs:tongs',
     "kubejs:wrought_iron_crowbar",
@@ -603,8 +610,8 @@ TFCEvents.data(e => {
     e.itemSize(item, 'large', 'medium')
 
   })
-  //非常大,重
-  const very_large_heavy_items = [
+
+  const very_large_heavy_items = [  //非常大,重
 
     "create:track_station",
     "create:mechanical_press",
@@ -826,14 +833,15 @@ TFCEvents.data(e => {
     "sophisticatedbackpacks:iron_backpack",
     "sophisticatedbackpacks:gold_backpack",
     "sophisticatedbackpacks:diamond_backpack",
-    "sophisticatedbackpacks:netherite_backpack"
+    "sophisticatedbackpacks:netherite_backpack",
+    "rubberworks:sapper"
   ]
   very_large_heavy_items.forEach(item => {
     e.itemSize(item, 'very_large', 'heavy')
 
   })
-  //非常大、非常重
-  const very_large_very_heavy_items = [
+  
+  const very_large_very_heavy_items = [//非常大、非常重
     "alexscaves:diving_boots",
     "alexscaves:diving_leggings",
     "alexscaves:diving_chestplate",
@@ -868,8 +876,8 @@ TFCEvents.data(e => {
     e.itemSize(item, 'large', 'Light')
   })
 
-  //小、重
-  const small_heavy_items = [
+  
+  const small_heavy_items = [//小、重
     'farmersdelight:ham',
     'farmersdelight:smoked_ham',
     "#tfc:jars",
@@ -878,8 +886,7 @@ TFCEvents.data(e => {
     e.itemSize(item, 'small', 'heavy')
   })
 
-  //大、轻
-  const large_light_items = [
+  const large_light_items = [ //大、轻
     "create:copper_shingles",
     "create:exposed_copper_shingles",
     "create:weathered_copper_shingles",
@@ -979,7 +986,8 @@ TFCEvents.data(e => {
     "majruszsdifficulty:tattered_leggings",
     "brewery:brewfest_hat_red",
     "brewery:brewfest_hat",
-    "brewery:brewfest_regalia"
+    "brewery:brewfest_regalia",
+    "rubberworks:compressor"
 
   ]
   large_light_items.forEach(item => {
@@ -987,8 +995,8 @@ TFCEvents.data(e => {
   })
 
 
-  //正常、中等
-  const normal_medium_items = [
+
+  const normal_medium_items = [  //正常、中等
     'brewinandchewin:tankard',
     'brewinandchewin:beer',
     'brewinandchewin:vodka',
@@ -1011,7 +1019,21 @@ TFCEvents.data(e => {
     'wildfire:beer_hops',
     'wildfire:beer_rye',
     'wildfire:beer_oat',
-    'wildfire:beer_berries'
+    'wildfire:beer_berries',
+    'kaleidoscope_tavern:molotov',
+    'kaleidoscope_tavern:vinegar',
+    'kaleidoscope_tavern:wine',
+    'kaleidoscope_tavern:ice_wine',
+    'kaleidoscope_tavern:sakura_wine',
+    'kaleidoscope_tavern:plum_wine',
+    'kaleidoscope_tavern:champagne',
+    'kaleidoscope_tavern:vodka',
+    'kaleidoscope_tavern:brandy ',
+    'kaleidoscope_tavern:carignan',
+    'kaleidoscope_tavern:whiskey',
+    'kaleidoscope_tavern:trellis',
+    'kaleidoscope_tavern:empty_bottle',
+    'kaleidoscope_tavern:tap'
   ]
   normal_medium_items.forEach(item => {
     e.itemSize(item, 'normal', 'medium')
