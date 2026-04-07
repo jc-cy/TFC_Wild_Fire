@@ -1,20 +1,20 @@
 {
   "block.simplytents.tent": "隧道帐篷",
-  "tooltip.simplytents.tent": "一个基础的两端开口帐篷。潜行点击以收起。",
+  "tooltip.simplytents.tent": "一个基础的两端开口帐篷，收起时，可以内含些许方块，潜行点击以收起",
 
   "block.simplytents.wall_tent": "靠墙帐篷",
-  "tooltip.simplytents.wall_tent": "一个前部开放的靠背帐篷。潜行点击以收起。",
+  "tooltip.simplytents.wall_tent": "一个前部开放的帐篷，适合摆摊，收起时，可以内含些许方块，潜行点击以收起",
 
   "block.simplytents.roof_tent": "天篷帐篷",
-  "tooltip.simplytents.roof_tent": "一个开放的头顶天篷。潜行点击以收起。",
+  "tooltip.simplytents.roof_tent": "一个开放的头顶天篷，收起时，可以内含些许方块，潜行点击以收起",
 
   "block.simplytents.zip_tent": "密封帐篷",
-  "tooltip.simplytents.zip_tent": "一个封闭帐篷，带有可以开关的帘子。潜行点击以收起。",
+  "tooltip.simplytents.zip_tent": "一个封闭帐篷，适合暂住，带有可以开关的帘子，收起时，可以内含些许方块，潜行点击以收起",
 
   "block.simplytents.tent_roof_block":"帐篷框架",
   
   "block.simplytents.canvas_wall_block": "帆布墙",
-  "tooltip.simplytents.canvas_wall_block": "一个模块化的织物隔断。当破坏附近的帐篷时会自动收起。",
+  "tooltip.simplytents.canvas_wall_block": "一个模块化的隔断墙。当破坏附近的帐篷时会自动收起",
 
   "tooltip.simplytents.contents": "内含:",
   "tooltip.simplytents.frame": "框架:"

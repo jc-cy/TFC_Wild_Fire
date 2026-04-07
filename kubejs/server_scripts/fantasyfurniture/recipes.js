@@ -1,4 +1,4 @@
-
+/*
 ServerEvents.recipes(event => {
   //家具>右键互动>死亡领主系列
   event.recipes.create.item_application('fantasyfurniture:necrolord/lockbox',['#handcrafted:chests','majruszsdifficulty:cloth'])
@@ -362,3 +362,4 @@ ServerEvents.recipes(event => {
   event.shapeless(Item.of('fantasyfurniture:bone/wither/table_wide'),['fantasyfurniture:bone/wither/table_small','fantasyfurniture:bone/wither/table_small'])
   event.shapeless(Item.of('fantasyfurniture:bone/wither/table_large'),['fantasyfurniture:bone/wither/table_small','fantasyfurniture:bone/wither/table_small','fantasyfurniture:bone/wither/table_small','fantasyfurniture:bone/wither/table_small'])
 })  
+  */
