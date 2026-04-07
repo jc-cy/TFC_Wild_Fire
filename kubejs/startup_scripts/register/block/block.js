@@ -539,6 +539,7 @@ StartupEvents.registry("block", event => {
                         .requiresTool()
         })
 })
+/*
 BlockEvents.modification(event => {//帐篷框架⛺️
         event.modify("simplytents:tent_roof_block", block => {
                 block.destroySpeed = 1.0;
@@ -546,3 +547,4 @@ BlockEvents.modification(event => {//帐篷框架⛺️
                 block.setSoundType('scaffolding')
         })
 })
+        */

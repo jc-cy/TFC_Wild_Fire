@@ -120,76 +120,58 @@ BlockEvents.placed('wildfire:loom', (event) => {
 ServerEvents.tags('block', event => {
     event.add('wildfire:loom_blocks', ['wildfire:loom', 'wildfire:loom_shaft', 'wildfire:loom_frame'])
 })
+const $IMultiController = Java.loadClass('com.lowdragmc.mbd2.api.machine.IMultiController');
+const $IMultiPart = Java.loadClass('com.lowdragmc.mbd2.api.machine.IMultiPart');
 BlockEvents.broken((event) => {
     let { block, level } = event;
-    if (block.hasTag('wildfire:loom_blocks')) {
-        let x = block.pos.x;
-        let y = block.pos.y;
-        let z = block.pos.z;
-
-        // 周围八格的水平偏移 (dx, dz)
-        let offsets = [
-            [-1, -1], [0, -1], [1, -1],
-            [-1, 0], [1, 0],
-            [-1, 1], [0, 1], [1, 1]
-        ];
-
-        for (let [dx, dz] of offsets) {
-            let neighbor = level.getBlock(x + dx, y, z + dz);
-            if (neighbor && neighbor.hasTag('wildfire:loom_blocks')) {
-                level.destroyBlock(neighbor.pos, true);
+    if (block.id == "wildfire:loom") {
+        let controller = $IMultiController.ofController(level, block.pos).orElse(null);
+        if (controller) {
+            if (!controller.isFormed()) {
+                event.cancel();
+                return;
+            } else {
+                controller.getParts().map(part => part.pos).forEach(pos => {
+                    level.destroyBlock(pos, true)
+                });
             }
         }
     }
+    if (block.id == "wildfire:loom_shaft" || block.id == "wildfire:loom_frame") {
+        let part = $IMultiPart.ofPart(level, block.pos).orElse(null);
+        if (!part.isFormed()) {
+            event.cancel();
+            return;
+        } else {
+            let controllers = part.getControllers();
+            controllers.forEach(controller => {
+                controller.getParts().map(part => part.pos).forEach(pos => {
+                    level.destroyBlock(pos, true)
+                });
+                level.destroyBlock(controller.pos, true)
+            })
+        }
+    }
 });
-MBDMachineEvents.onStructureInvalid("wildfire:loom", (e) => {
-    let { machine } = e.getEvent();
+MBDMachineEvents.onStructureInvalid("wildfire:loom", (event) => {
+    let { machine } = event.getEvent();
     let { level } = machine;
-    if (level.getBlock(machine.pos).hasTag('wildfire:loom_blocks')) {
-        let x = machine.pos.x;
-        let y = machine.pos.y;
-        let z = machine.pos.z;
-
-        // 周围八格的水平偏移 (dx, dz)
-        let offsets = [
-            [-1, -1], [0, -1], [1, -1],
-            [-1, 0], [0, 0], [1, 0],
-            [-1, 1], [0, 1], [1, 1]
-        ];
-
-        for (let [dx, dz] of offsets) {
-            let neighbor = level.getBlock(x + dx, y, z + dz);
-            if (neighbor && neighbor.hasTag('wildfire:loom_blocks')) {
-                level.destroyBlock(neighbor.pos, true);
-            }
-        }
-    }
-});
-
-ServerEvents.recipes((event) => {
-
-    const string = [
-        { id: "string", input: "16x minecraft:string", output: "tfc:silk_cloth" },
-        { id: "flax_fiber", input: "16x textile:flax_fiber", output: "textile:linen_cloth" },
-        { id: "jute_fiber", input: "16x tfc:jute_fiber", output: "tfc:burlap_cloth" },
-        { id: "pineapple_yarn", input: "16x firmalife:pineapple_yarn", output: "firmalife:pineapple_leather" },
-        { id: "wool_yarn", input: "16x tfc:wool_yarn", output: "tfc:wool_cloth" },
-        { id: "cotton_string", input: "16x textile:cotton_string", output: "textile:cotton_cloth" },
-        { id: "reinforced_fiber", input: "16x sns:reinforced_fiber", output: "sns:reinforced_fabric" }
-    ];
-    string.forEach(string => {
-        event.recipes.wildfire.loom()
-            .id(`wildfire:loom/${string.id}`)
-            .duration(480)      //配方时间
-            .inputItems(`${string.input}`) //输入物品
-            .inputStress(256)
-            .inputRPM(32)
-            .outputItems(`${string.output}`) //输出物品
-    })
+    /** @type {Internal.IMultiController_} */
+    let controller = machine;
+    controller.getParts().map(part => part.pos).forEach(pos => {
+        level.destroyBlock(pos, true)
+    });
+    level.destroyBlock(controller.pos, true)
 })
 
-MBDMachineEvents.onPlaced("wildfire:loom", (e) => {
-    e.event.machine.triggerGeckolibAnim("idle", 1)
+ServerEvents.recipes((event) => {
+    event.recipes.wildfire.loom()
+        .id('wildfire:loom/string')
+        .duration(480)      //配方时间
+        .inputItems('4x minecraft:string') //输入物品
+        .inputStress(256)
+        .inputRPM(32)
+        .outputItems("minecraft:white_wool") //输出物品
 })
 
 MBDMachineEvents.onBeforeRecipeWorking("wildfire:loom", (event) => {
@@ -221,7 +203,7 @@ MBDMachineEvents.onBeforeRecipeWorking("wildfire:loom", (event) => {
             return;
         } else {
             let AnimSpeed = 1;
-            AnimSpeed = Math.abs(KineticMachine.speed / 32) * 0.33395
+            AnimSpeed = Math.abs(KineticMachine.speed / 32) * 0.38
             machine.triggerGeckolibAnim("weaving", AnimSpeed)
         }
     })
@@ -240,10 +222,14 @@ MBDMachineEvents.onBeforeRecipeModify("wildfire:loom", (event) => {
 })
 
 MBDMachineEvents.onStateChanged("wildfire:loom", (event) => {
-    let { machine, newState } = event.getEvent();
+    let { machine, newState} = event.getEvent();
     if (newState == "formed") {
         machine.triggerGeckolibAnim("idle", 1)
     }
+})
+
+MBDMachineEvents.onPlaced("wildfire:loom", (e) => {
+    e.event.machine.triggerGeckolibAnim("idle", 1)
 })
 
 MBDMachineEvents.onRecipeWorking("wildfire:loom", (event) => {
