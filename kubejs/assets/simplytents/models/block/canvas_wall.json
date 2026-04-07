@@ -1,6 +1,6 @@
 {
   "parent": "block/block",
   "textures": {
-    "particle": "simplytents:block/tent"
+    "particle": "simplytents:block/tent/frame"
   }
 }

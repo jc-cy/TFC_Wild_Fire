@@ -1,0 +1,18 @@
+
+#Simply Tents Blacklist Configuration
+[blacklist]
+	#List of block registry names that should not be picked up by tents.
+	#Format: modid:block_name (e.g., "minecraft:chest", "minecraft:diamond_block")
+	blacklistBlocks = ["immersiveengineering:crate", "immersiveengineering:reinforced_crate", "create_connected:item_silo", "create:item_vault", "create:water_wheel", "create:large_water_wheel", "create:fluid_tank", "create_connected:fluid_vessel", "minecraft:spawner"]
+	#List of item registry names that should prevent entities/block entities from being picked up.
+	#If an entity or block entity contains any of these items, it will not be picked up.
+	#Format: modid:item_name (e.g., "minecraft:diamond", "minecraft:emerald")
+	blacklistItems = ["immersiveengineering:crate", "immersiveengineering:reinforced_crate", "create_connected:item_silo", "simplytents:zip_tent", "simplytents:roof_tent", "simplytents:wall_tent", "simplytents:tent", "simplytents:canvas_wall", "immersiveengineering:minecart_woodencrate", "immersiveengineering:minecart_reinforcedcrate", "kaleidoscope_cookery:fruit_basket", "sns:frame_pack", "ad_astra:tier_1_rocket", "ad_astra:tier_2_rocket", "ad_astra:tier_3_rocket", "ad_astra:tier_4_rocket", "ad_astra:tier_1_rover", "afc:wood/water_wheel/baobab", "siegemachines:cannonball", "siegemachines:barrel", "siegemachines:counterweight", "functionalstorage:fluid_1", "functionalstorage:fluid_2", "functionalstorage:fluid_4", "supplementaries:sack"]
+	#List of block tag names that should not be picked up by tents.
+	#Format: #modid:tag_name (e.g., "#minecraft:logs", "#forge:ores")
+	blacklistBlockTags = ["#minecraft:shulker_boxes", "#minecraft:water", "#tfc:crops", "#tfc:water_wheels", "#firmalife:big_barrels", "#sophisticatedbackpacks:backpack"]
+	#List of item tag names that should prevent entities/block entities from being picked up.
+	#If an entity or block entity contains any items with these tags, it will not be picked up.
+	#Format: #modid:tag_name (e.g., "#minecraft:logs", "#forge:gems")
+	blacklistItemTags = ["#functionalstorage:drawer", "#minecraft:shulker_boxes", "#tfc:water_wheels", "#firmalife:big_barrels", "#immersive_aircraft:aircraft", "#curios:back", "#ad_astra:held_over_head"]
+

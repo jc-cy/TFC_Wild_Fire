@@ -1028,7 +1028,7 @@ TFCEvents.data(e => {
     'kaleidoscope_tavern:plum_wine',
     'kaleidoscope_tavern:champagne',
     'kaleidoscope_tavern:vodka',
-    'kaleidoscope_tavern:brandy ',
+    'kaleidoscope_tavern:brandy',
     'kaleidoscope_tavern:carignan',
     'kaleidoscope_tavern:whiskey',
     'kaleidoscope_tavern:trellis',

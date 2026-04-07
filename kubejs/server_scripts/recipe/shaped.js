@@ -15,19 +15,19 @@ ServerEvents.recipes(event => {
         a: "sns:leather_strip",
         b: "tfc:metal/unfinished_boots/copper",
         c: "immersiveengineering:ingot_lead"
-       
+
     })//潜水鞋子--配重
 
 
-     event.shaped("alexscaves:diving_boots", ['aba', 'c c'], {
-        a: "sns:leather_strip", 
+    event.shaped("alexscaves:diving_boots", ['aba', 'c c'], {
+        a: "sns:leather_strip",
         b: "tfc:metal/unfinished_boots/copper",
         c: "tfc:metal/ingot/copper"
-       
+
     })//潜水鞋子
 
-       event.shaped("alexscaves:diving_leggings", ['aba', 'c c', 'a a'], {
-        a: "sns:leather_strip", 
+    event.shaped("alexscaves:diving_leggings", ['aba', 'c c', 'a a'], {
+        a: "sns:leather_strip",
         b: "tfc:metal/unfinished_greaves/copper",
         c: "kubejs:copper_fragments",
 
@@ -215,9 +215,10 @@ ServerEvents.recipes(event => {
         c: '#tfc:saws'
     }).damageIngredient({ tag: '#tfc:saws' }, 5) //箱子合成
 
-    event.shaped('minecraft:barrel', ['aba', 'a a', 'aba'], {
+    event.shaped('minecraft:barrel', ['aba', 'aca', 'aba'], {
         a: '#tfc:lumber',
-        b: 'firmaciv:copper_bolt'
+        b: 'firmaciv:copper_bolt',
+        c: "minecraft:chest"
     }) //桶合成
     event.shaped('create:schematicannon',
         [
