@@ -165,14 +165,31 @@ MBDMachineEvents.onStructureInvalid("wildfire:loom", (event) => {
 })
 
 ServerEvents.recipes((event) => {
-    event.recipes.wildfire.loom()
-        .id('wildfire:loom/string')
-        .duration(480)      //配方时间
-        .inputItems('4x minecraft:string') //输入物品
-        .inputStress(256)
-        .inputRPM(32)
-        .outputItems("minecraft:white_wool") //输出物品
+
+    const string = [
+        { id: "string", input: "16x minecraft:string", output: "tfc:silk_cloth" },
+        { id: "flax_fiber", input: "16x textile:flax_fiber", output: "textile:linen_cloth" },
+        { id: "jute_fiber", input: "16x tfc:jute_fiber", output: "tfc:burlap_cloth" },
+        { id: "pineapple_yarn", input: "16x firmalife:pineapple_yarn", output: "firmalife:pineapple_leather" },
+        { id: "wool_yarn", input: "16x tfc:wool_yarn", output: "tfc:wool_cloth" },
+        { id: "cotton_string", input: "16x textile:cotton_string", output: "textile:cotton_cloth" },
+        { id: "reinforced_fiber", input: "16x sns:reinforced_fiber", output: "sns:reinforced_fabric" }
+    ];
+    string.forEach(string => {
+        event.recipes.wildfire.loom()
+            .id(`wildfire:loom/${string.id}`)
+            .duration(480)      //配方时间
+            .inputItems(`${string.input}`) //输入物品
+            .inputStress(256)
+            .inputRPM(32)
+            .outputItems(`${string.output}`) //输出物品
+    })
 })
+
+MBDMachineEvents.onPlaced("wildfire:loom", (e) => {
+    e.event.machine.triggerGeckolibAnim("idle", 1)
+})
+
 
 MBDMachineEvents.onBeforeRecipeWorking("wildfire:loom", (event) => {
     let { machine } = event.getEvent();
@@ -203,7 +220,7 @@ MBDMachineEvents.onBeforeRecipeWorking("wildfire:loom", (event) => {
             return;
         } else {
             let AnimSpeed = 1;
-            AnimSpeed = Math.abs(KineticMachine.speed / 32) * 0.38
+            AnimSpeed = Math.abs(KineticMachine.speed / 32) * 0.338
             machine.triggerGeckolibAnim("weaving", AnimSpeed)
         }
     })

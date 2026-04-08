@@ -1810,13 +1810,9 @@
 			"loop": true,
 			"bones": {
 				"shaxian": {
-					"scale": [0, 1, 1]
-				},
-				"shazhuan": {
-					"scale": 0
-				},
-				"shaxianjuan": {
-					"scale": 0
+					"scale": {
+						"vector": [0, 1, 1]
+					}
 				}
 			}
 		}
