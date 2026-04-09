@@ -1,0 +1,80 @@
+{
+  "item": {
+    "SWORD": {
+      "kind": "SWORD",
+      "customAnimation": [
+      { "type": "attack", "var_1": "attack_1", "var_2": "attack_2", "var_3": "attack_3", "critical_hit": "attack_critical" },
+      {
+        "type": "hand_in",
+        "name": "hand_in_sword"
+      },
+      {
+        "type": "mining",
+        "name": "sword_mining",
+        "stop_immediate": true
+      },
+      { "type": "inspect", "name": "sword_inspect_test" },
+      {
+          "type": "interaction",
+          "items": [ "minecraft:chest" ],
+          "animation": "hand_chest_interact"
+      },
+            {
+        "type": "interaction",
+        "items": [
+          "minecraft:oak_door",
+        "minecraft:spruce_door",
+        "minecraft:birch_door",
+        "minecraft:jungle_door",
+        "minecraft:acacia_door",
+        "minecraft:dark_oak_door",
+        "minecraft:mangrove_door",
+        "minecraft:cherry_door",
+        "minecraft:bamboo_door",
+        "minecraft:crimson_door",
+        "minecraft:warped_door",
+        "minecraft:iron_door"
+        ],
+        "blockState": { "open": true },
+        "animation": "hand_door_open_interact"
+      },
+      {
+          "type": "interaction",
+          "items": [
+        "minecraft:oak_door",
+        "minecraft:spruce_door",
+        "minecraft:birch_door",
+        "minecraft:jungle_door",
+        "minecraft:acacia_door",
+        "minecraft:dark_oak_door",
+        "minecraft:mangrove_door",
+        "minecraft:cherry_door",
+        "minecraft:bamboo_door",
+        "minecraft:crimson_door",
+        "minecraft:warped_door",
+        "minecraft:iron_door"
+      ],
+        "blockState": { "open": false },
+        "animation": "hand_door_close_interact"
+      }
+    ]
+    }
+    
+  },
+
+  "itemSpecific": {
+    "minecraft:bow": {
+      "kind": "minecraft:bow",
+      "customAnimation": [
+      { "type": "attack", "var_1": "attack_1"},
+      {
+        "type": "mining",
+        "name": "sword_mining",
+        "stop_immediate": true
+      },
+      { "type": "inspect", "name": "sword_inspect" }
+    ]
+  }
+  }
+}
+

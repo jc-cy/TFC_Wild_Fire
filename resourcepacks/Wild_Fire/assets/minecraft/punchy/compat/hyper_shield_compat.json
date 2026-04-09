@@ -1,0 +1,22 @@
+{
+  "itemSpecific": {
+    "minecraft:shield": {
+      "customAnimation": [
+	      {
+          "type": "mining",
+          "name": "hand_punch",
+          "stop_immediate": true
+	      },
+        {
+          "type": "useItem",
+          "left": "use_shield"
+        },
+        {
+          "type": "interaction",
+          "items": [ "minecraft:chest" ],
+          "animation": "hand_chest_interact"
+        }
+      ]
+    }
+}
+}

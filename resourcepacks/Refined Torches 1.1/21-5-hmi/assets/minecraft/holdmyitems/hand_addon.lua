@@ -9,7 +9,7 @@ local andandoRe = velFrente < -0.05
 local apenasCorrer = ${apenasCorrer} == true
 local correndo = velTotal > 0.12
 local baixoDaAgua = P:isSubmergedInWater(player)
-local tochas = {"minecraft:torch", "minecraft:soul_torch", "minecraft:redstone_torch"}
+local tochas = {"minecraft:torch","tfc:torch", "minecraft:soul_torch", "minecraft:redstone_torch"}
 
 local smootherAndando = RefinedTorches_InternalState.smootherAndando or 0.0
 local smootherAgua    = RefinedTorches_InternalState.smootherAgua    or 1.0

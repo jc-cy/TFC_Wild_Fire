@@ -1,0 +1,72 @@
+{
+  "item": {
+    "FULL_BLOCK": {
+      "transforms": {
+        "right": {
+          "scale": 0.6600003,
+          "offX": -0.11999998,
+          "offY": 0.14999998,
+          "offZ": 0.07000001,
+          "rotX": 4.0,
+          "rotY": -25.0,
+          "rotZ": 0.0,
+          "pivotX": 0.01,
+          "pivotY": 0.079999976,
+          "pivotZ": -0.049999997
+        }
+      },
+      "customAnimation": [
+        { "type": "useItem", "name": "interact" },
+	{
+          "type": "mining",
+          "name": "hand_punch",
+          "stop_immediate": true
+	},
+        {
+          "type": "interaction",
+          "items": [ "minecraft:chest" ],
+          "animation": "hand_chest_interact"
+        },
+              {
+        "type": "interaction",
+        "items": [
+          "minecraft:oak_door",
+        "minecraft:spruce_door",
+        "minecraft:birch_door",
+        "minecraft:jungle_door",
+        "minecraft:acacia_door",
+        "minecraft:dark_oak_door",
+        "minecraft:mangrove_door",
+        "minecraft:cherry_door",
+        "minecraft:bamboo_door",
+        "minecraft:crimson_door",
+        "minecraft:warped_door",
+        "minecraft:iron_door"
+        ],
+        "blockState": { "open": true },
+        "animation": "hand_door_open_interact"
+      },
+      {
+          "type": "interaction",
+          "items": [
+        "minecraft:oak_door",
+        "minecraft:spruce_door",
+        "minecraft:birch_door",
+        "minecraft:jungle_door",
+        "minecraft:acacia_door",
+        "minecraft:dark_oak_door",
+        "minecraft:mangrove_door",
+        "minecraft:cherry_door",
+        "minecraft:bamboo_door",
+        "minecraft:crimson_door",
+        "minecraft:warped_door",
+        "minecraft:iron_door"
+      ],
+        "blockState": { "open": false },
+        "animation": "hand_door_close_interact"
+      },
+        { "type": "inspect", "name": "throwable_inspect" }
+      ]
+    }
+  }
+}

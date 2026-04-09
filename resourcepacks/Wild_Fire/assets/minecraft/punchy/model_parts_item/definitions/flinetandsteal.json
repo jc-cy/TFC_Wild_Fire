@@ -1,0 +1,24 @@
+{
+  "items": [
+    "minecraft:flint_and_steel"
+  ],
+  "particles": [
+
+    {
+          "type": "minecraft:crit",
+          "target": "face:up",
+          "count": 8,
+          "spread": [0.3, 0.3, 0.3],
+          "on_animation_name": "set_fire_right",
+          "on_animation_timecode": 0.25
+        },
+        {
+          "type": "minecraft:flame",
+          "target": "face:up",
+          "count": 3,
+          "spread": [0.03, 0.03, 0.03],
+          "on_animation_name": "set_fire_right",
+          "on_animation_timecode": 0.25
+        }
+  ]
+}
