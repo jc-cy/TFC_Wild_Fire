@@ -1,7 +1,6 @@
 {
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
-	"parent": "tfc:block/groundcover/template/ore_0",
 	"textures": {
 		"2": "tfc:block/ore/groundcover_native_silver_1",
 		"particle": "tfc:item/ore/rich_native_silver"

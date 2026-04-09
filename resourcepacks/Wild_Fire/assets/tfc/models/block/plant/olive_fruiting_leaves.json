@@ -1,6 +1,5 @@
 {
-	"format_version": "1.21.11",
-	"credit": "Made by Vexxel#9727 with Blockbench || https://github.com/Vexxel || © Vexxel. All rights reserved.",
+	"format_version": "1.9",
 	"textures": {
 		"1": "tfc:block/fruit_tree/fruit/olive",
 		"3": "tfc:block/fruit_tree/olive_fruiting_leaves",

@@ -1,5 +1,4 @@
 {
-	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
 	"parent": "minecraft:block/block",
 	"textures": {
 		"2": "tfc:block/devices/crucible/side_inside",

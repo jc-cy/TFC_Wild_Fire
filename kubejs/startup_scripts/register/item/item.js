@@ -517,7 +517,7 @@ StartupEvents.registry("item", event => {   //新金属
     ore.forEach(ore => {
         event.create(`tfc:ore/rich_${ore}`).texture(`kubejs:item/ore/rich_${ore}`)
             .tag('tfc:ore_pieces');
-        event.create(`tfc:ore/${ore}`).texture(`kubejs:item/ore/normal_${ore}`)
+        event.create(`tfc:ore/normal_${ore}`).texture(`kubejs:item/ore/normal_${ore}`)
             .tag('tfc:ore_pieces');
         event.create(`tfc:ore/poor_${ore}`).texture(`kubejs:item/ore/poor_${ore}`)
             .tag('tfc:ore_pieces');

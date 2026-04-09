@@ -1,6 +1,5 @@
 {
 	"format_version": "1.21.6",
-	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
 	"parent": "tfc:block/cube_column_overlay",
 	"textures": {
 		"particle": "tfc:block/wattle/wattle_sides_woven",

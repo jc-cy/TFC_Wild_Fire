@@ -1,6 +1,5 @@
 {
 	"format_version": "1.21.6",
-	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
 	"ambientocclusion": false,
 	"textures": {
 		"particle": "#crop"

@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "kubejs:block/display_bread",
 	"textures": {
 		"onion": "brewinandchewin:block/onion",
 		"particle": "#onion"

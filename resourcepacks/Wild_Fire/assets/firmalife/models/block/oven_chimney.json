@@ -1,5 +1,4 @@
 {
-	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
 	"parent": "block/block",
 	"textures": {
 		"side": "firmalife:block/oven/chimney/bricks_side",

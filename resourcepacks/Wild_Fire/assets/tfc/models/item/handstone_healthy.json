@@ -1,5 +1,4 @@
 {
-	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
 	"textures": {
 		"0": "tfc:block/devices/quern/handstone",
 		"particle": "#0"

@@ -96,6 +96,12 @@
     }
   },
   "itemSpecific": {
+    "tfc:dead_torch": {
+      "kind": "TORCH"
+    },
+    "tfc:torch": {
+      "kind": "TORCH"
+    },
     "minecraft:repeater": {
       "kind": "BLOCK",
       "transforms": {

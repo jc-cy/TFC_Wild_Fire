@@ -2,6 +2,6 @@
     "parent": "kubejs:block/coaster_barley_beer",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "kubejs:block/coaster_barley_beer"
+		"1": "kubejs:block/berries_beer"
 	}
 }

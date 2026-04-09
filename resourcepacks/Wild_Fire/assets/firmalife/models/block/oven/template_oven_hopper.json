@@ -1,5 +1,4 @@
 {
-	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
 	"parent": "block/block",
 	"textures": {
 		"2": "firmalife:block/oven/bottom/hopper_top",

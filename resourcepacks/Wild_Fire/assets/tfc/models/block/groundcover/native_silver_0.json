@@ -1,7 +1,5 @@
 {
 	"format_version": "1.21.6",
-	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
-	"parent": "tfc:block/groundcover/template/ore_0",
 	"textures": {
 		"2": "tfc:block/ore/groundcover_native_silver_0",
 		"particle": "tfc:item/ore/rich_native_silver"

@@ -1,6 +1,7 @@
 {
 	"format_version": "1.9",
 	"credit": "Made with Blockbench",
+	"parent": "kubejs:block/display_bread",
 	"textures": {
 		"particle": "brewinandchewin:block/apple",
 		"apple": "brewinandchewin:block/apple"
@@ -28,27 +29,5 @@
 				"south": {"uv": [12, 7, 7, 10], "texture": "#apple"}
 			}
 		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [25, -20, 0],
-			"translation": [0.5, 5.5, 1.5]
-		},
-		"thirdperson_lefthand": {
-			"rotation": [25, -20, 0],
-			"translation": [0.5, 5.5, 1.5]
-		},
-		"firstperson_righthand": {
-			"rotation": [0, 0, 15],
-			"translation": [-2, 8, 0]
-		},
-		"firstperson_lefthand": {
-			"rotation": [0, 0, 15],
-			"translation": [-2, 8, 0]
-		},
-		"head": {
-			"rotation": [-15, -90, 0],
-			"translation": [0.25, -2, -9]
-		}
-	}
+	]
 }

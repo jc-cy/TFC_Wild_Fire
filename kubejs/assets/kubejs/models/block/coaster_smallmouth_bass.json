@@ -1,6 +1,7 @@
 {
 	"format_version": "1.9",
 	"credit": "Made with Blockbench",
+	"parent": "kubejs:block/display_fish",
 	"texture_size": [24, 24],
 	"textures": {
 		"0": "kubejs:block/smallmouth_bass",
@@ -98,26 +99,5 @@
 				"down": {"uv": [8, 7.33333, 5.33333, 10], "texture": "#0"}
 			}
 		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [0, 0, 90],
-			"translation": [-7, 4, 1]
-		},
-		"thirdperson_lefthand": {
-			"rotation": [0, 0, -90],
-			"translation": [7, 4, 1]
-		},
-		"firstperson_righthand": {
-			"rotation": [-30, 0, 90],
-			"translation": [-6, 5, 0]
-		},
-		"firstperson_lefthand": {
-			"rotation": [-30, 0, -90],
-			"translation": [8, 5, 0]
-		},
-		"ground": {
-			"translation": [0, 6.5, 0]
-		}
-	}
+	]
 }

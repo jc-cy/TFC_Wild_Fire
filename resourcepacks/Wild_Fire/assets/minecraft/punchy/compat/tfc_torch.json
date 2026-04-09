@@ -1,0 +1,116 @@
+{
+    "customGroups": [
+        {
+            "name": "tfc_torch",
+            "items": [
+                "tfc:torch"
+            ]
+        },
+        {
+            "name": "deda_torch",
+            "items": [
+                "tfc:deda_torch"
+            ]
+        }
+    ],
+    "item": {
+        "dead_torch": {
+            "transforms": {
+                "right": {
+                    "scale": 1.2699997,
+                    "offX": -0.05397725,
+                    "offY": 0.082386255,
+                    "offZ": 0.08522725,
+                    "rotX": 0.0,
+                    "rotY": 92.55682,
+                    "rotZ": 0.0,
+                    "pivotX": 0.00999999,
+                    "pivotY": 0.09000003,
+                    "pivotZ": -0.060000002
+                },
+                "left": {
+                    "scale": 1.2699997,
+                    "offX": 0.05397725,
+                    "offY": 0.082386255,
+                    "offZ": 0.08522725,
+                    "rotX": 0.0,
+                    "rotY": -92.55682,
+                    "rotZ": -0.0,
+                    "pivotX": -0.00999999,
+                    "pivotY": 0.09000003,
+                    "pivotZ": -0.060000002
+                }
+            },
+            "armTransforms": {
+                "right": {
+                    "scale": 1.0,
+                    "offX": 0.0,
+                    "offY": 0.0,
+                    "offZ": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                }
+            }
+        },
+        "tfc_torch": {
+            "kind": "TORCH",
+            "armKind": "TORCH",
+            "transforms": {
+                "right": {
+                    "scale": 1.2699997,
+                    "offX": -0.034090877,
+                    "offY": -0.09090912,
+                    "offZ": 0.153409,
+                    "rotX": 21.732956,
+                    "rotY": -6.136368,
+                    "rotZ": 0.0,
+                    "pivotX": 0.00999999,
+                    "pivotY": 0.09000003,
+                    "pivotZ": -0.060000002
+                },
+                "left": {
+                    "scale": 1.2699997,
+                    "offX": 0.034090877,
+                    "offY": -0.09090912,
+                    "offZ": 0.153409,
+                    "rotX": 21.732956,
+                    "rotY": 6.136368,
+                    "rotZ": -0.0,
+                    "pivotX": -0.00999999,
+                    "pivotY": 0.09000003,
+                    "pivotZ": -0.060000002
+                }
+            },
+            "armTransforms": {
+                "right": {
+                    "scale": 1.0,
+                    "offX": 0.0,
+                    "offY": 0.0,
+                    "offZ": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                },
+                "left": {
+                    "scale": 1.0,
+                    "offX": 0.0,
+                    "offY": 0.0,
+                    "offZ": 0.0,
+                    "rotX": 0.0,
+                    "rotY": -0.0,
+                    "rotZ": -0.0,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                }
+            }
+        }
+    }
+}

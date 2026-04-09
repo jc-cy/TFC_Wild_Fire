@@ -1,6 +1,7 @@
 {
 	"parent": "brewinandchewin:block/coaster_apple",
 	"textures": {
-		"1": "kubejs:block/green_apple"
+		"particle": "kubejs:block/green_apple",
+		"apple": "kubejs:block/green_apple"
 	}
 }

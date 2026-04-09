@@ -1,6 +1,7 @@
 {
 	"format_version": "1.9",
 	"credit": "Made with Blockbench",
+	"parent": "kubejs:block/display_bread",
 	"textures": {
 		"particle": "brewinandchewin:block/tomato",
 		"tomato": "brewinandchewin:block/tomato"
@@ -20,35 +21,20 @@
 			}
 		},
 		{
-			"from": [6, 4, 8],
-			"to": [10, 6, 8],
-			"rotation": {"angle": 45, "axis": "y", "origin": [8, 4, 8]},
+			"from": [6, 4.1, 6],
+			"to": [10, 4.1, 10],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8, 4.1, 8]},
 			"faces": {
-				"north": {"uv": [7, 1, 11, 3], "texture": "#tomato"},
-				"south": {"uv": [11, 1, 7, 3], "texture": "#tomato"}
+				"up": {"uv": [7, 0, 11, 4], "rotation": 180, "texture": "#tomato"}
+			}
+		},
+		{
+			"from": [7, 4.2, 7],
+			"to": [9, 4.2, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 4.2, 8]},
+			"faces": {
+				"up": {"uv": [12, 1, 14, 3], "rotation": 180, "texture": "#tomato"}
 			}
 		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [25, -20, 0],
-			"translation": [0.5, 5.5, 1.5]
-		},
-		"thirdperson_lefthand": {
-			"rotation": [25, -20, 0],
-			"translation": [0.5, 5.5, 1.5]
-		},
-		"firstperson_righthand": {
-			"rotation": [0, 0, 15],
-			"translation": [-2, 8, 0]
-		},
-		"firstperson_lefthand": {
-			"rotation": [0, 0, 15],
-			"translation": [-2, 8, 0]
-		},
-		"head": {
-			"rotation": [-15, -90, 0],
-			"translation": [0.25, -2, -9]
-		}
-	}
+	]
 }
