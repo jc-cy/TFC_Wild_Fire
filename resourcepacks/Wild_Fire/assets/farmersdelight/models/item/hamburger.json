@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_hamburger"
         },
         "fixed": {
-            "parent": "farmersdelight:item/hamburger_item"
+            "parent": "kubejs:block/coaster_hamburger"
         }
     }
 }

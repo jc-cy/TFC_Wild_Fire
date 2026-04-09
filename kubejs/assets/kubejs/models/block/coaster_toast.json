@@ -1,7 +1,7 @@
 {
 	"format_version": "1.9",
 	"credit": "Made with Blockbench",
-	"parent": "kubejs:block/flatbread_display",
+	"parent": "kubejs:block/display_flatbread",
 	"texture_size": [24, 24],
 	"textures": {
 		"0": "kubejs:block/toast",

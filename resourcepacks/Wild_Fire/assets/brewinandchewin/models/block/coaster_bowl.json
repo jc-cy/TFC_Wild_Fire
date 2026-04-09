@@ -1,7 +1,7 @@
 {
 	"format_version": "1.9",
 	"credit": "Made with Blockbench",
-	"parent": "kubejs:block/bowl_display",
+	"parent": "kubejs:block/display_bowl",
 	"textures": {
 		"particle": "brewinandchewin:block/bowl",
 		"bowl": "brewinandchewin:block/bowl"

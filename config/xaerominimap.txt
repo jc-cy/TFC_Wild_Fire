@@ -19,8 +19,8 @@ deathpoints:false
 oldDeathpoints:false
 distance:1
 lockNorth:false
-zoom:0
-minimapSize:0
+zoom:3
+minimapSize:187
 chunkGrid:-1
 slimeChunks:false
 mapSafeMode:false
@@ -33,7 +33,7 @@ antiAliasing:true
 blockColours:0
 lighting:true
 dotsStyle:0
-dotNameScale:1.0
+dotNameScale:1.5
 compassOverEverything:true
 showFlowers:true
 keepWaypointNames:true

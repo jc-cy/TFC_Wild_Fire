@@ -116,8 +116,8 @@
     "ad_astra:tier_4_rocket": false,
     "ad_astra:tier_1_rover": false,
     "ad_astra:launch_pad": false,
-    "tfc:pan/empty": false,
-    "tfc:pan/filled": false
+    "tfc:pan/empty": true,
+    "tfc:pan/filled": true
   },
   "animationPackSelections": {},
   "animationPackTypeSelections": {},

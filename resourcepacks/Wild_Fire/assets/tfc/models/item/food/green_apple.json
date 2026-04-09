@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_green_apple"
         },
         "fixed": {
-            "parent": "tfc:item/food/green_apple_item"
+            "parent": "kubejs:block/coaster_green_apple"
         }
     },
 "overrides": [

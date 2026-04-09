@@ -1,7 +1,7 @@
 {
 	"format_version": "1.9",
 	"credit": "Made with Blockbench",
-	"parent": "kubejs:block/beer_display",
+	"parent": "kubejs:block/display_beer",
 	"texture_size": [32, 32],
 	"textures": {
 		"1": "kubejs:block/barley_beer"
@@ -84,4 +84,6 @@
 			}
 		}
 	]
+	
+
 }
