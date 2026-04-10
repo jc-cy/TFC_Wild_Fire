@@ -151,6 +151,10 @@ StartupEvents.registry('item', event => {
     event.create('oldcrown', 'basic').texture('kubejs:item/scraps/oldcrown');   // 古老金币
     event.create('rotten_platter', 'basic').texture('kubejs:item/rotten_platter'); // 注册一盘腐烂物
 
+   event.create('unvacuumed_tube', 'basic').texture('kubejs:item/unvacuumed_tube'); // 没抽真空的电子管
+   event.create('unvacuumed_precision_tube', 'basic').texture('kubejs:item/unvacuumed_precision_tube'); // 未抽真空的精密电子管
+    event.create('vacuumed_precision_tube', 'basic').texture('kubejs:item/vacuumed_precision_tube'); // 抽真空的精密电子管
+
     event.create('leather_hot_water_bag', 'basic').texture('kubejs:item/tfc/leather_hot_water_bag').maxStackSize(1);// 皮革热水袋
     event.create('rubber_hot_water_bag', 'basic').texture('kubejs:item/tfc/rubber_hot_water_bag').maxStackSize(1);// 橡胶热水袋
     event.create('metal_hot_water_bag', 'basic').texture('kubejs:item/tfc/metal_hot_water_bag').maxStackSize(1);// 金属热水袋

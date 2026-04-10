@@ -6,5 +6,9 @@ ServerEvents.recipes(e => {//手动合成
     // create.item_application('create:mechanical_saw',["wildfire:andesite_chassis",'immersiveengineering:sawblade'],600,"none",false)//手动合成切割机
     // create.item_application('create:mechanical_drill',["wildfire:andesite_chassis",'createoreexcavation:drill'],600,"none",false)//手动合成动力钻头
     // create.item_application('create:mechanical_mixer',["wildfire:andesite_chassis",'create:whisk'],600,"none",false)//手动合成搅拌机
+
+
+
+    
     
 })
