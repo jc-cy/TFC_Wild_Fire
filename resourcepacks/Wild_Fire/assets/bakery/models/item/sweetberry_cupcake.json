@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_sweetberry_cupcake"
         },
         "fixed": {
-            "parent": "bakery:item/sweetberry_cupcake_item"
+            "parent": "kubejs:block/coaster_sweetberry_cupcake"
         }
     }
 }

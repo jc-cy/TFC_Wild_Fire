@@ -1,0 +1,72 @@
+{
+  "customGroups": [
+    {
+      "name": "tent",
+      "items": [
+        "simplytents:canvas_wall",
+        "simplytents:tent",
+        "simplytents:wall_tent",
+        "simplytents:roof_tent",
+        "simplytents:zip_tent"
+      ]
+    }
+  ],
+  "item": {
+    "tent": {
+      "kind": "BLOCK",
+      "armKind": "BLOCK",
+      "transforms": {
+        "right": {
+          "scale": 2.009304,
+          "offX": -0.190341,
+          "offY": -0.16193187,
+          "offZ": -0.06534088,
+          "rotX": 20.710236,
+          "rotY": -21.988647,
+          "rotZ": 19.6875,
+          "pivotX": -0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 2.009304,
+          "offX": 0.190341,
+          "offY": -0.16193187,
+          "offZ": -0.06534088,
+          "rotX": 20.710236,
+          "rotY": 21.988647,
+          "rotZ": -19.6875,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": -0.03693199,
+          "offY": 0.13068175,
+          "offZ": -0.15625,
+          "rotX": -53.181824,
+          "rotY": -25.823853,
+          "rotZ": 0.255661,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.03693199,
+          "offY": 0.051136255,
+          "offZ": -0.15625,
+          "rotX": -53.181824,
+          "rotY": 25.823853,
+          "rotZ": -0.25567627,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    }
+  }
+}

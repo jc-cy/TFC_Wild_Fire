@@ -266,7 +266,14 @@ ServerEvents.tags("block", event => {
             "tfc:wood/trapped_chest/white_cedar",
             "tfc:wood/trapped_chest/willow"
         ]
-    )
+    ),
+        event.add('tfc:bloomery_insulation','tfc:charcoal_pile' ),
+        event.add('tfc:forge_insulation','tfc:charcoal_pile' ),
+        event.add('tfc:bloomery_insulation','tfc:charcoal_forge' ),
+        event.add('tfc:forge_insulation','tfc:charcoal_forge' ),
+
+        event.add('minecraft:mineable/axe','simplytents:tent_roof_block' ),
+        event.add('tfc:needs_copper_tool','simplytents:tent_roof_block' )
 }),
     /*
     ,

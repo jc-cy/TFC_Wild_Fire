@@ -9,33 +9,6 @@
         "everycomp:rfm/afc/cypress_crate",
         "everycomp:rfm/tfc/aspen_crate"
       ]
-    },
-    {
-      "original": "minecraft:white_wool",
-      "replacements": [
-        "tfc:metal/block/bismuth_bronze",
-        "tfc:metal/block/black_bronze",
-        "tfc:metal/block/bronze",
-        "tfc:metal/block/copper"
-      ]
-    },
-    {
-      "original": "minecraft:light_gray_wool",
-      "replacements": [
-        "tfc:metal/block/bismuth_bronze",
-        "tfc:metal/block/black_bronze",
-        "tfc:metal/block/bronze",
-        "tfc:metal/block/copper"
-      ]
-    },
-    {
-      "original": "tfc:metal/lamp/copper",
-      "replacements": [
-        "tfc:metal/block/bismuth_bronze",
-        "tfc:metal/block/black_bronze",
-        "tfc:metal/block/bronze",
-        "tfc:metal/block/copper"
-      ]
     }
   ],
   "tfcWorldReplacements": [
@@ -72,6 +45,14 @@
       "type": "SOIL"
     },
     {
+      "original": "tfc:wood/planks/hickory",
+      "type": "WOOD"
+    },
+    {
+      "original": "tfc:wood/planks/chestnut_slab",
+      "type": "WOOD"
+    },
+    {
       "original": "tfc:wood/planks/hickory_stairs",
       "type": "WOOD"
     },
@@ -86,6 +67,22 @@
     {
       "original": "tfc:wood/planks/hickory_slab",
       "type": "WOOD"
+    },
+    {
+      "original": "tfc:rock/cobble/shale_slab",
+      "type": "STONE"
+    },
+    {
+      "original": "tfc:rock/cobble/shale_stairs",
+      "type": "STONE"
+    },
+    {
+      "original": "tfc:rock/cobble/shale_wall",
+      "type": "STONE"
+    },
+    {
+      "original": "tfc:rock/cobble/shale",
+      "type": "STONE"
     }
   ]
 }

@@ -1,0 +1,97 @@
+{
+  "customGroups": [
+    {
+      "name": "barrel",
+      "items": [
+        "afc:wood/barrel/baobab",
+        "afc:wood/barrel/eucalyptus",
+        "afc:wood/barrel/mahogany",
+        "afc:wood/barrel/hevea",
+        "afc:wood/barrel/tualang",
+        "afc:wood/barrel/teak",
+        "afc:wood/barrel/cypress",
+        "afc:wood/barrel/fig",
+        "afc:wood/barrel/ironwood",
+        "afc:wood/barrel/ipe",
+        "tfc:wood/barrel/acacia",
+        "tfc:wood/barrel/ash",
+        "tfc:wood/barrel/aspen",
+        "tfc:wood/barrel/birch",
+        "tfc:wood/barrel/blackwood",
+        "tfc:wood/barrel/chestnut",
+        "tfc:wood/barrel/douglas_fir",
+        "tfc:wood/barrel/hickory",
+        "tfc:wood/barrel/kapok",
+        "tfc:wood/barrel/mangrove",
+        "tfc:wood/barrel/maple",
+        "tfc:wood/barrel/oak",
+        "tfc:wood/barrel/palm ",
+        "tfc:wood/barrel/pine",
+        "tfc:wood/barrel/rosewood",
+        "tfc:wood/barrel/sequoia",
+        "tfc:wood/barrel/spruce",
+        "tfc:wood/barrel/sycamore",
+        "tfc:wood/barrel/white_cedar  ",
+        "tfc:wood/barrel/willow"
+      ]
+    }
+  ],
+  "item": {
+    "barrel": {
+      "kind": "BLOCK",
+      "armKind": "BLOCK",
+      "transforms": {
+        "right": {
+          "scale": 1.2,
+          "offX": -0.2045455,
+          "offY": -0.045454502,
+          "offZ": 0.15056825,
+          "rotX": 13.039764,
+          "rotY": -28.892044,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.2,
+          "offX": 0.2045455,
+          "offY": -0.045454502,
+          "offZ": 0.16761374,
+          "rotX": 13.039764,
+          "rotY": 28.892044,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.393466,
+          "offX": -0.3125,
+          "offY": 0.2045455,
+          "offZ": -0.19318187,
+          "rotX": -57.528404,
+          "rotY": -14.318176,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.393466,
+          "offX": 0.3125,
+          "offY": 0.1732955,
+          "offZ": -0.19318187,
+          "rotX": -57.528404,
+          "rotY": 6.6477203,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,21 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "tfc:item/food/onion"
-  }
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "textures": {
+		"particle": "tfc:item/food/onion"
+	},
+    "base": {
+        "parent": "brewinandchewin:block/coaster_onion"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/onion_item"
+        },
+        "ground": {
+            "parent": "brewinandchewin:block/coaster_onion"
+        },
+        "fixed": {
+            "parent": "brewinandchewin:block/coaster_onion"
+        }
+    }
 }

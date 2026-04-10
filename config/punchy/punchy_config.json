@@ -20,6 +20,7 @@
   "enableSwimAnimation": true,
   "enableWalkOnWaterAnimation": false,
   "enableDryOutAnimation": true,
+  "enableElytraFlightAnimation": true,
   "enableCustomWalk": false,
   "enableSprintArmSwing": false,
   "enableFallArmAnimation": true,
@@ -41,8 +42,6 @@
     "createdieselgenerators:chemical_sprayer",
     "createdieselgenerators:chemical_sprayer_lighter",
     "alexscaves:raygun",
-    "tfccanes:walking_cane",
-    "tfccanes:refined_walking_cane",
     "immersiveengineering:shield",
     "alexsmobs:shield_of_the_deep",
     "kaleidoscope_cookery:stockpot_lid",
@@ -74,7 +73,8 @@
     "ad_astra:tier_1_rover",
     "ad_astra:launch_pad",
     "tfc:pan/empty",
-    "tfc:pan/filled"
+    "tfc:pan/filled",
+    "alexscaves:shot_gum"
   ],
   "blacklistApplyDualHanded": {
     "scguns": false,
@@ -84,8 +84,6 @@
     "createdieselgenerators:chemical_sprayer": false,
     "createdieselgenerators:chemical_sprayer_lighter": false,
     "alexscaves:raygun": false,
-    "tfccanes:walking_cane": false,
-    "tfccanes:refined_walking_cane": false,
     "immersiveengineering:shield": false,
     "alexsmobs:shield_of_the_deep": false,
     "kaleidoscope_cookery:stockpot_lid": false,
@@ -98,7 +96,7 @@
     "irons_spellbooks:autoloader_crossbow": false,
     "create:potato_cannon": false,
     "create:handheld_worldshaper": false,
-    "create:extendo_grip": false,
+    "create:extendo_grip": true,
     "trotting_wagons:armored_wagon": false,
     "trotting_wagons:conestoga_wagon": false,
     "trotting_wagons:royal_wagon": false,
@@ -116,8 +114,9 @@
     "ad_astra:tier_4_rocket": false,
     "ad_astra:tier_1_rover": false,
     "ad_astra:launch_pad": false,
-    "tfc:pan/empty": false,
-    "tfc:pan/filled": false
+    "tfc:pan/empty": true,
+    "tfc:pan/filled": true,
+    "alexscaves:shot_gum": false
   },
   "animationPackSelections": {},
   "animationPackTypeSelections": {},

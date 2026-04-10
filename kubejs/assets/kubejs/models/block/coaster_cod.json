@@ -1,6 +1,7 @@
 {
 	"format_version": "1.9",
 	"credit": "Made with Blockbench",
+	"parent": "kubejs:block/display_fish",
 	"textures": {
 		"cod": "kubejs:block/cod",
 		"particle": "tfc:item/food/cod"
@@ -68,26 +69,5 @@
 				"down": {"uv": [1, 14, 2, 15], "texture": "#cod"}
 			}
 		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [0, 0, 90],
-			"translation": [-7, 4, 1]
-		},
-		"thirdperson_lefthand": {
-			"rotation": [0, 0, -90],
-			"translation": [7, 4, 1]
-		},
-		"firstperson_righthand": {
-			"rotation": [-30, 0, 90],
-			"translation": [-6, 4, 0]
-		},
-		"firstperson_lefthand": {
-			"rotation": [-30, 0, -90],
-			"translation": [8, 4, 0]
-		},
-		"ground": {
-			"translation": [0, 6.5, 0]
-		}
-	}
+	]
 }

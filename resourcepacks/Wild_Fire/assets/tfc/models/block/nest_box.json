@@ -1,5 +1,4 @@
 {
-	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
 	"parent": "minecraft:block/block",
 	"textures": {
 		"1": "tfc:block/devices/nest_box/inside",

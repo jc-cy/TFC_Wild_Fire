@@ -56,15 +56,24 @@
 			"translation": [0, 3.75, 5.75]
 		},
 		"firstperson_righthand": {
-			"rotation": [60, 90, 0],
-			"translation": [0, 8.25, 6]
+			"rotation": [90, 120, 0],
+			"translation": [0, 5.25, 6]
 		},
 		"firstperson_lefthand": {
-			"rotation": [60, -90, 0],
-			"translation": [0, 8.25, 6]
+			"rotation": [80, -90, 0],
+			"translation": [0, 6.25, 6]
+		},
+		"ground": {
+			"rotation": [-90, 22.5, 0],
+			"translation": [0, 0, -7]
 		},
 		"head": {
 			"translation": [-1, -1, -9]
+		},
+		"fixed": {
+			"rotation": [-90, 22.5, 0],
+			"translation": [0, 0, -14],
+			"scale": [2, 2, 2]
 		}
 	}
 }

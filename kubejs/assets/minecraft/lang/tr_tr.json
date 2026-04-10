@@ -1,0 +1,12 @@
+{
+    "rpo.HyperPunchy": "Hyper Punchy",
+
+    "rpo.HyperPunchy.CamShake": "Kamera Sarsıntısı",
+    "rpo.HyperPunchy.CamShake.tooltip": "Eşya kullanımı sırasında kamera sarsıntısı efektini etkinleştirir.",
+
+    "rpo.HyperPunchy.PVPMode": "PvP Modu",
+    "rpo.HyperPunchy.PVPMode.tooltip": "PvP için basitleştirilmiş animasyonları kullanarak görsel hataların önüne geçer.",
+
+    "rpo.HyperPunchy.Enable3d": "3D Modelleri Aç",
+    "rpo.HyperPunchy.Enable3d.tooltip": "Eşya ve blokların özel 3D modellerini aktifleştirir (HyperPunchy tarzı)."
+}

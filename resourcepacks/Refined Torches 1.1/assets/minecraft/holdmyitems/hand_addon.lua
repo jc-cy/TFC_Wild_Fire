@@ -20,7 +20,7 @@ local correndo = velTotal > 0.12
 local walking = emMovimento and not tocandoAgua and (not apenasCorrer and (fall > -1.1 and fall < 3) or apenasCorrer and (correndo and (fall > -1.1 and fall < 3) or not correndo))
 local baixoDaAgua = P:isSubmergedInWater(player)
 local tocandoAgua = P:isTouchingWater(player) and not baixoDaAgua and P:isOnGround(player)
-local tochas = {"minecraft:torch", "minecraft:soul_torch", "minecraft:copper_torch", "minecraft:redstone_torch"}
+local tochas = {"minecraft:torch", "tfc:torch","minecraft:soul_torch", "minecraft:copper_torch", "minecraft:redstone_torch"}
 
 local chaveSmoother  = mainHand and "smootherWalk_MAIN"   or "smootherWalk_OFF"
 local chaveAgua      = mainHand and "smootherAgua_MAIN"   or "smootherAgua_OFF"

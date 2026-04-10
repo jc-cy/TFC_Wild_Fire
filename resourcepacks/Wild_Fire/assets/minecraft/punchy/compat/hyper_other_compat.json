@@ -1,0 +1,519 @@
+{
+  "itemSpecific": {
+    "minecraft:slime_block": {
+      "kind": "FULL_BLOCK",
+      "customAnimation": [
+        {
+          "type": "hand_in",
+          "name": "hand_in_jumpy"
+        },
+        {
+          "type": "interaction",
+          "items": [
+            "minecraft:chest",
+            "ae2:sky_stone_chest",
+            "ae2:smooth_sky_stone_chest",
+            "afc:wood/chest/baobab",
+            "afc:wood/chest/eucalyptus",
+            "afc:wood/chest/mahogany",
+            "afc:wood/chest/hevea",
+            "afc:wood/chest/teak",
+            "afc:wood/chest/tualang",
+            "afc:wood/chest/cypress",
+            "afc:wood/chest/ironwood",
+            "afc:wood/chest/ipe",
+            "createutilities:void_chest",
+            "lootr:lootr_chest",
+            "lootr:lootr_trapped_chest",
+            "lootr:lootr_inventory",
+            "tfc:wood/chest/acacia",
+            "tfc:wood/chest/ash",
+            "tfc:wood/chest/aspen",
+            "tfc:wood/chest/birch",
+            "tfc:wood/chest/blackwood",
+            "tfc:wood/chest/chestnut",
+            "tfc:wood/chest/douglas_fir",
+            "tfc:wood/chest/hickory",
+            "tfc:wood/chest/kapok",
+            "tfc:wood/chest/mangrove",
+            "tfc:wood/chest/maple",
+            "tfc:wood/chest/oak",
+            "tfc:wood/chest/palm",
+            "tfc:wood/chest/pine",
+            "tfc:wood/chest/rosewood",
+            "tfc:wood/chest/sequoia",
+            "tfc:wood/chest/spruce",
+            "tfc:wood/chest/sycamore",
+            "tfc:wood/chest/white_cedar",
+            "tfc:wood/chest/willow",
+            "afc:wood/chest/fig"
+          ],
+          "animation": "hand_chest_interact"
+        }
+      ]
+    },
+    "minecraft:honey_block": {
+      "kind": "FULL_BLOCK",
+      "customAnimation": [
+        {
+          "type": "hand_in",
+          "name": "hand_in_jumpy"
+        },
+        {
+          "type": "interaction",
+          "items": [
+            "minecraft:chest",
+            "ae2:sky_stone_chest",
+            "ae2:smooth_sky_stone_chest",
+            "afc:wood/chest/baobab",
+            "afc:wood/chest/eucalyptus",
+            "afc:wood/chest/mahogany",
+            "afc:wood/chest/hevea",
+            "afc:wood/chest/teak",
+            "afc:wood/chest/tualang",
+            "afc:wood/chest/cypress",
+            "afc:wood/chest/ironwood",
+            "afc:wood/chest/ipe",
+            "createutilities:void_chest",
+            "lootr:lootr_chest",
+            "lootr:lootr_trapped_chest",
+            "lootr:lootr_inventory",
+            "tfc:wood/chest/acacia",
+            "tfc:wood/chest/ash",
+            "tfc:wood/chest/aspen",
+            "tfc:wood/chest/birch",
+            "tfc:wood/chest/blackwood",
+            "tfc:wood/chest/chestnut",
+            "tfc:wood/chest/douglas_fir",
+            "tfc:wood/chest/hickory",
+            "tfc:wood/chest/kapok",
+            "tfc:wood/chest/mangrove",
+            "tfc:wood/chest/maple",
+            "tfc:wood/chest/oak",
+            "tfc:wood/chest/palm",
+            "tfc:wood/chest/pine",
+            "tfc:wood/chest/rosewood",
+            "tfc:wood/chest/sequoia",
+            "tfc:wood/chest/spruce",
+            "tfc:wood/chest/sycamore",
+            "tfc:wood/chest/white_cedar",
+            "tfc:wood/chest/willow",
+            "afc:wood/chest/fig"
+          ],
+          "animation": "hand_chest_interact"
+        }
+      ]
+    },
+    "minecraft:slime_ball": {
+      "kind": "INGREDIENT",
+      "customAnimation": [
+        {
+          "type": "hand_in",
+          "name": "hand_in_jumpy"
+        },
+        {
+          "type": "interaction",
+          "items": [
+            "minecraft:chest",
+            "ae2:sky_stone_chest",
+            "ae2:smooth_sky_stone_chest",
+            "afc:wood/chest/baobab",
+            "afc:wood/chest/eucalyptus",
+            "afc:wood/chest/mahogany",
+            "afc:wood/chest/hevea",
+            "afc:wood/chest/teak",
+            "afc:wood/chest/tualang",
+            "afc:wood/chest/cypress",
+            "afc:wood/chest/ironwood",
+            "afc:wood/chest/ipe",
+            "createutilities:void_chest",
+            "lootr:lootr_chest",
+            "lootr:lootr_trapped_chest",
+            "lootr:lootr_inventory",
+            "tfc:wood/chest/acacia",
+            "tfc:wood/chest/ash",
+            "tfc:wood/chest/aspen",
+            "tfc:wood/chest/birch",
+            "tfc:wood/chest/blackwood",
+            "tfc:wood/chest/chestnut",
+            "tfc:wood/chest/douglas_fir",
+            "tfc:wood/chest/hickory",
+            "tfc:wood/chest/kapok",
+            "tfc:wood/chest/mangrove",
+            "tfc:wood/chest/maple",
+            "tfc:wood/chest/oak",
+            "tfc:wood/chest/palm",
+            "tfc:wood/chest/pine",
+            "tfc:wood/chest/rosewood",
+            "tfc:wood/chest/sequoia",
+            "tfc:wood/chest/spruce",
+            "tfc:wood/chest/sycamore",
+            "tfc:wood/chest/white_cedar",
+            "tfc:wood/chest/willow",
+            "afc:wood/chest/fig"
+          ],
+          "animation": "hand_chest_interact"
+        }
+      ]
+    },
+    "minecraft:snowball": {
+      "kind": "INGREDIENT",
+      "transforms": {
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": -0.1,
+          "offZ": 0.06999999,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.05,
+          "pivotY": 0.1,
+          "pivotZ": -0.06999999
+        },
+        "right": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": -0.1,
+          "offZ": 0.06999999,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": -0.05,
+          "pivotY": 0.1,
+          "pivotZ": -0.06999999
+        }
+      },
+      "customAnimation": [
+        {
+          "type": "useItem",
+          "name": "interact"
+        },
+        {
+          "type": "attack",
+          "var_1": "throw_item"
+        },
+        {
+          "type": "inspect",
+          "name": "throwable_inspect"
+        },
+        {
+          "type": "interaction",
+          "items": [
+            "minecraft:chest",
+            "ae2:sky_stone_chest",
+            "ae2:smooth_sky_stone_chest",
+            "afc:wood/chest/baobab",
+            "afc:wood/chest/eucalyptus",
+            "afc:wood/chest/mahogany",
+            "afc:wood/chest/hevea",
+            "afc:wood/chest/teak",
+            "afc:wood/chest/tualang",
+            "afc:wood/chest/cypress",
+            "afc:wood/chest/ironwood",
+            "afc:wood/chest/ipe",
+            "createutilities:void_chest",
+            "lootr:lootr_chest",
+            "lootr:lootr_trapped_chest",
+            "lootr:lootr_inventory",
+            "tfc:wood/chest/acacia",
+            "tfc:wood/chest/ash",
+            "tfc:wood/chest/aspen",
+            "tfc:wood/chest/birch",
+            "tfc:wood/chest/blackwood",
+            "tfc:wood/chest/chestnut",
+            "tfc:wood/chest/douglas_fir",
+            "tfc:wood/chest/hickory",
+            "tfc:wood/chest/kapok",
+            "tfc:wood/chest/mangrove",
+            "tfc:wood/chest/maple",
+            "tfc:wood/chest/oak",
+            "tfc:wood/chest/palm",
+            "tfc:wood/chest/pine",
+            "tfc:wood/chest/rosewood",
+            "tfc:wood/chest/sequoia",
+            "tfc:wood/chest/spruce",
+            "tfc:wood/chest/sycamore",
+            "tfc:wood/chest/white_cedar",
+            "tfc:wood/chest/willow",
+            "afc:wood/chest/fig"
+          ],
+          "animation": "hand_chest_interact"
+        }
+      ]
+    },
+    "minecraft:wind_charge": {
+      "kind": "minecraft:wind_charge",
+      "customAnimation": [
+        {
+          "type": "useItem",
+          "name": "interact"
+        },
+        {
+          "type": "attack",
+          "var_1": "throw_item"
+        },
+        {
+          "type": "interaction",
+          "items": [
+            "minecraft:chest",
+            "ae2:sky_stone_chest",
+            "ae2:smooth_sky_stone_chest",
+            "afc:wood/chest/baobab",
+            "afc:wood/chest/eucalyptus",
+            "afc:wood/chest/mahogany",
+            "afc:wood/chest/hevea",
+            "afc:wood/chest/teak",
+            "afc:wood/chest/tualang",
+            "afc:wood/chest/cypress",
+            "afc:wood/chest/ironwood",
+            "afc:wood/chest/ipe",
+            "createutilities:void_chest",
+            "lootr:lootr_chest",
+            "lootr:lootr_trapped_chest",
+            "lootr:lootr_inventory",
+            "tfc:wood/chest/acacia",
+            "tfc:wood/chest/ash",
+            "tfc:wood/chest/aspen",
+            "tfc:wood/chest/birch",
+            "tfc:wood/chest/blackwood",
+            "tfc:wood/chest/chestnut",
+            "tfc:wood/chest/douglas_fir",
+            "tfc:wood/chest/hickory",
+            "tfc:wood/chest/kapok",
+            "tfc:wood/chest/mangrove",
+            "tfc:wood/chest/maple",
+            "tfc:wood/chest/oak",
+            "tfc:wood/chest/palm",
+            "tfc:wood/chest/pine",
+            "tfc:wood/chest/rosewood",
+            "tfc:wood/chest/sequoia",
+            "tfc:wood/chest/spruce",
+            "tfc:wood/chest/sycamore",
+            "tfc:wood/chest/white_cedar",
+            "tfc:wood/chest/willow",
+            "afc:wood/chest/fig"
+          ],
+          "animation": "hand_chest_interact"
+        }
+      ]
+    },
+    "minecraft:ender_pearl": {
+      "kind": "INGREDIENT",
+      "customAnimation": [
+        {
+          "type": "useItem",
+          "name": "interact"
+        },
+        {
+          "type": "attack",
+          "var_1": "throw_item"
+        },
+        {
+          "type": "interaction",
+          "items": [
+            "minecraft:chest",
+            "ae2:sky_stone_chest",
+            "ae2:smooth_sky_stone_chest",
+            "afc:wood/chest/baobab",
+            "afc:wood/chest/eucalyptus",
+            "afc:wood/chest/mahogany",
+            "afc:wood/chest/hevea",
+            "afc:wood/chest/teak",
+            "afc:wood/chest/tualang",
+            "afc:wood/chest/cypress",
+            "afc:wood/chest/ironwood",
+            "afc:wood/chest/ipe",
+            "createutilities:void_chest",
+            "lootr:lootr_chest",
+            "lootr:lootr_trapped_chest",
+            "lootr:lootr_inventory",
+            "tfc:wood/chest/acacia",
+            "tfc:wood/chest/ash",
+            "tfc:wood/chest/aspen",
+            "tfc:wood/chest/birch",
+            "tfc:wood/chest/blackwood",
+            "tfc:wood/chest/chestnut",
+            "tfc:wood/chest/douglas_fir",
+            "tfc:wood/chest/hickory",
+            "tfc:wood/chest/kapok",
+            "tfc:wood/chest/mangrove",
+            "tfc:wood/chest/maple",
+            "tfc:wood/chest/oak",
+            "tfc:wood/chest/palm",
+            "tfc:wood/chest/pine",
+            "tfc:wood/chest/rosewood",
+            "tfc:wood/chest/sequoia",
+            "tfc:wood/chest/spruce",
+            "tfc:wood/chest/sycamore",
+            "tfc:wood/chest/white_cedar",
+            "tfc:wood/chest/willow",
+            "afc:wood/chest/fig"
+          ],
+          "animation": "hand_chest_interact"
+        }
+      ]
+    },
+    "minecraft:ender_eye": {
+      "kind": "INGREDIENT",
+      "customAnimation": [
+        {
+          "type": "useItem",
+          "name": "interact"
+        },
+        {
+          "type": "attack",
+          "var_1": "throw_item"
+        },
+        {
+          "type": "interaction",
+          "items": [
+            "minecraft:chest",
+            "ae2:sky_stone_chest",
+            "ae2:smooth_sky_stone_chest",
+            "afc:wood/chest/baobab",
+            "afc:wood/chest/eucalyptus",
+            "afc:wood/chest/mahogany",
+            "afc:wood/chest/hevea",
+            "afc:wood/chest/teak",
+            "afc:wood/chest/tualang",
+            "afc:wood/chest/cypress",
+            "afc:wood/chest/ironwood",
+            "afc:wood/chest/ipe",
+            "createutilities:void_chest",
+            "lootr:lootr_chest",
+            "lootr:lootr_trapped_chest",
+            "lootr:lootr_inventory",
+            "tfc:wood/chest/acacia",
+            "tfc:wood/chest/ash",
+            "tfc:wood/chest/aspen",
+            "tfc:wood/chest/birch",
+            "tfc:wood/chest/blackwood",
+            "tfc:wood/chest/chestnut",
+            "tfc:wood/chest/douglas_fir",
+            "tfc:wood/chest/hickory",
+            "tfc:wood/chest/kapok",
+            "tfc:wood/chest/mangrove",
+            "tfc:wood/chest/maple",
+            "tfc:wood/chest/oak",
+            "tfc:wood/chest/palm",
+            "tfc:wood/chest/pine",
+            "tfc:wood/chest/rosewood",
+            "tfc:wood/chest/sequoia",
+            "tfc:wood/chest/spruce",
+            "tfc:wood/chest/sycamore",
+            "tfc:wood/chest/white_cedar",
+            "tfc:wood/chest/willow",
+            "afc:wood/chest/fig"
+          ],
+          "animation": "hand_chest_interact"
+        }
+      ]
+    },
+    "minecraft:iron_nugget": {
+      "kind": "INGREDIENT",
+      "transforms": {
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": -0.29,
+          "offZ": 0.06999999,
+          "rotX": 0.0,
+          "rotY": -10.0,
+          "rotZ": 0.0,
+          "pivotX": 0.05,
+          "pivotY": 0.22,
+          "pivotZ": -0.06999999
+        },
+        "right": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": -0.29,
+          "offZ": 0.06999999,
+          "rotX": 0.0,
+          "rotY": 10.0,
+          "rotZ": 0.0,
+          "pivotX": -0.05,
+          "pivotY": 0.22,
+          "pivotZ": -0.06999999
+        }
+      },
+      "customAnimation": [
+        {
+          "type": "hand_in",
+          "name": "hand_in_flip"
+        }
+      ]
+    },
+    "minecraft:gold_nugget": {
+      "kind": "INGREDIENT",
+      "transforms": {
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": -0.29,
+          "offZ": 0.06999999,
+          "rotX": 0.0,
+          "rotY": -10.0,
+          "rotZ": 0.0,
+          "pivotX": 0.05,
+          "pivotY": 0.29,
+          "pivotZ": -0.06999999
+        },
+        "right": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": -0.29,
+          "offZ": 0.06999999,
+          "rotX": 0.0,
+          "rotY": 10.0,
+          "rotZ": 0.0,
+          "pivotX": -0.05,
+          "pivotY": 0.29,
+          "pivotZ": -0.06999999
+        }
+      },
+      "customAnimation": [
+        {
+          "type": "hand_in",
+          "name": "hand_in_flip"
+        }
+      ]
+    },
+    "minecraft:copper_nugget": {
+      "kind": "INGREDIENT",
+      "transforms": {
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": -0.29,
+          "offZ": 0.06999999,
+          "rotX": 0.0,
+          "rotY": -10.0,
+          "rotZ": 0.0,
+          "pivotX": 0.05,
+          "pivotY": 0.29,
+          "pivotZ": -0.06999999
+        },
+        "right": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": -0.29,
+          "offZ": 0.06999999,
+          "rotX": 0.0,
+          "rotY": 10.0,
+          "rotZ": 0.0,
+          "pivotX": -0.05,
+          "pivotY": 0.29,
+          "pivotZ": -0.06999999
+        }
+      },
+      "customAnimation": [
+        {
+          "type": "hand_in",
+          "name": "hand_in_flip"
+        }
+      ]
+    }
+  }
+}

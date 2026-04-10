@@ -1,5 +1,4 @@
 {
-	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
 	"textures": {
 		"0": "block/composter_ready",
 		"particle": "block/composter_ready"

@@ -1,0 +1,85 @@
+{
+  "customGroups": [
+    {
+      "name": "unfired_large_vessel",
+      "items": [
+        "tfc:ceramic/unfired_crucible",
+        "tfc:ceramic/unfired_large_vessel",
+        "tfc:ceramic/unfired_large_vessel/white",
+        "tfc:ceramic/unfired_large_vessel/orange",
+        "tfc:ceramic/unfired_large_vessel/magenta",
+        "tfc:ceramic/unfired_large_vessel/light_blue",
+        "tfc:ceramic/unfired_large_vessel/yellow",
+        "tfc:ceramic/unfired_large_vessel/yellow",
+        "tfc:ceramic/unfired_large_vessel/lime",
+        "tfc:ceramic/unfired_large_vessel/pink",
+        "tfc:ceramic/unfired_large_vessel/gray",
+        "tfc:ceramic/unfired_large_vessel/light_gray",
+        "tfc:ceramic/unfired_large_vessel/cyan",
+        "tfc:ceramic/unfired_large_vessel/purple",
+        "tfc:ceramic/unfired_large_vessel/blue",
+        "tfc:ceramic/unfired_large_vessel/brown",
+        "tfc:ceramic/unfired_large_vessel/green",
+        "tfc:ceramic/unfired_large_vessel/red",
+        "tfc:ceramic/unfired_large_vessel/black"
+      ]
+    }
+  ],
+  "item": {
+    "unfired_large_vessel": {
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.762145,
+          "offX": -0.014204502,
+          "offY": -0.0625,
+          "offZ": 0.3892045,
+          "rotX": -64.6875,
+          "rotY": -2.3011322,
+          "rotZ": 13.039764,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.762145,
+          "offX": 0.014204502,
+          "offY": -0.0625,
+          "offZ": 0.3892045,
+          "rotX": -64.6875,
+          "rotY": 2.3011322,
+          "rotZ": -13.039764,
+          "pivotX": -0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.0,
+          "offZ": 0.0,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": -0.042613626,
+          "offZ": 0.0,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    }
+  }
+}

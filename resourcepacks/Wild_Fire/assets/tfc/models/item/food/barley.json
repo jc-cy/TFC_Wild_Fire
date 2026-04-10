@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_barley"
         },
         "fixed": {
-            "parent": "tfc:item/food/coaster_barley"
+            "parent": "kubejs:block/coaster_barley"
         }
     }
 }

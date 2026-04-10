@@ -2061,6 +2061,11 @@
   "block.mbd2.bloomery_output":"锻炉方坯输出口",
   "block.mbd2.bloomery_input":"锻炉坯料输入口",
 
+  "block.wildfire.loom_shaft": "织布机框架",
+  "block.wildfire.loom_frame": "织布机框架",
+  "block.wildfire.loom": "织布机",
+  "wildfire.loom": "织布",
+
   "attribute.more_attributes.critical_chance": "致命一击几率",
   "attribute.more_attributes.critical_damage": "致命一击伤害",
   "attribute.more_attributes.damage_reduction": "伤害减免",

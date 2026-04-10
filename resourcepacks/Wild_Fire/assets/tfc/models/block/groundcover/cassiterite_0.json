@@ -1,7 +1,5 @@
 {
 	"format_version": "1.21.6",
-	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
-	"parent": "tfc:block/groundcover/template/ore_0",
 	"textures": {
 		"texture": "tfc:block/ore/groundcover_cassiterite_0",
 		"particle": "tfc:item/ore/rich_cassiterite"

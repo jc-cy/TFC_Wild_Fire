@@ -1,6 +1,6 @@
 {
 	"format_version": "1.9",
-	"parent": "kubejs:block/flatbread_display",
+	"parent": "kubejs:block/display_flatbread",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"particle": "brewinandchewin:block/pumpkin_slice",

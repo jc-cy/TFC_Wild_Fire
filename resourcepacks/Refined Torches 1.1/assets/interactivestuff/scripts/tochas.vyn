@@ -183,14 +183,14 @@ task onItemUpdate takes itemRendered do
 end
 task isHoldingHotItem takes itemRendered do
     make id = itemRendered.getName()
-    reply id == "minecraft:campfire" || id == "minecraft:torch" || id == "minecraft:soul_campfire" || id == "minecraft:soul_torch" || id == "minecraft:wall_torch" || id == "minecraft:copper_torch"
+    reply id == "minecraft:campfire" || id == "minecraft:torch" || id == "tfc:torch" || id == "minecraft:soul_campfire" || id == "minecraft:soul_torch" || id == "minecraft:wall_torch" || id == "minecraft:copper_torch"
 end
 task isPlayerHoldingAnyHotItem do
-    reply player.isHoldingItem("minecraft:campfire") || player.isHoldingItem("minecraft:torch") || player.isHoldingItem("minecraft:soul_campfire") || player.isHoldingItem("minecraft:soul_torch") || player.isHoldingItem("minecraft:wall_torch") || player.isHoldingItem("minecraft:copper_torch")
+    reply player.isHoldingItem("minecraft:campfire") || player.isHoldingItem("minecraft:torch") || player.isHoldingItem("tfc:torch") || player.isHoldingItem("minecraft:soul_campfire") || player.isHoldingItem("minecraft:soul_torch") || player.isHoldingItem("minecraft:wall_torch") || player.isHoldingItem("minecraft:copper_torch")
 end
 task isWaterTorch takes itemHeld do
     make id = itemHeld.getName()
-    reply id == "minecraft:torch" || id == "minecraft:soul_torch" || id == "minecraft:copper_torch"
+    reply id == "minecraft:torch" ||id == "tfc:torch" || id == "minecraft:soul_torch" || id == "minecraft:copper_torch"
 end
 
 end

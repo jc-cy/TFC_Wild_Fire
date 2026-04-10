@@ -1,53 +1,7 @@
 {
-	"format_version": "1.9",
-	"credit": "Made with Blockbench",
+	"parent": "brewinandchewin:block/coaster_apple",
 	"textures": {
-		"1": "kubejs:block/green_apple"
-	},
-	"elements": [
-		{
-			"from": [5.5, 0, 5.5],
-			"to": [10.5, 5, 10.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [5.5, 0, 5.5]},
-			"faces": {
-				"north": {"uv": [1, 7, 6, 12], "texture": "#1"},
-				"east": {"uv": [1, 7, 6, 12], "texture": "#1"},
-				"south": {"uv": [1, 7, 6, 12], "texture": "#1"},
-				"west": {"uv": [1, 7, 6, 12], "texture": "#1"},
-				"up": {"uv": [1, 1, 6, 6], "texture": "#1"},
-				"down": {"uv": [7, 1, 12, 6], "texture": "#1"}
-			}
-		},
-		{
-			"from": [4.5, 5, 8],
-			"to": [9.5, 8, 8],
-			"rotation": {"angle": 45, "axis": "y", "origin": [8, 5, 8]},
-			"faces": {
-				"north": {"uv": [7, 7, 12, 10], "texture": "#1"},
-				"south": {"uv": [12, 7, 7, 10], "texture": "#1"}
-			}
-		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [25, -20, 0],
-			"translation": [0.5, 5.5, 1.5]
-		},
-		"thirdperson_lefthand": {
-			"rotation": [25, -20, 0],
-			"translation": [1.5, 6.5, 1.5]
-		},
-		"firstperson_righthand": {
-			"rotation": [0, 0, 15],
-			"translation": [-2, 8, 0]
-		},
-		"firstperson_lefthand": {
-			"rotation": [0, 0, 15],
-			"translation": [-2, 8, 0]
-		},
-		"head": {
-			"rotation": [-15, -90, 0],
-			"translation": [0.25, -2, -9]
-		}
+		"particle": "kubejs:block/green_apple",
+		"apple": "kubejs:block/green_apple"
 	}
 }

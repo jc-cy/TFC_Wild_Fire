@@ -1,6 +1,7 @@
 {
   "items": [
-    "minecraft:torch"
+    "minecraft:torch",
+    "tfc:torch"
   ],
   "geo": "minecraft:punchy/model_parts_items/geo/tocha.geo.json",
   "texture": "minecraft:punchy/model_parts_items/textures/tochas",

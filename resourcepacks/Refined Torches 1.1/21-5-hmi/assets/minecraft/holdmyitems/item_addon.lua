@@ -2,7 +2,7 @@ RefinedTorches_InternalState = RefinedTorches_InternalState or {}
 
 local l = (bl and 1) or -1
 local isMainHand = mainHand
-local tochas = {"minecraft:torch", "minecraft:soul_torch", "minecraft:redstone_torch"}
+local tochas = {"minecraft:torch","tfc:torch", "minecraft:soul_torch", "minecraft:redstone_torch"}
 local lanterns = {"minecraft:lantern", "minecraft:soul_lantern"}
 local fogueiras = {"minecraft:campfire", "minecraft:soul_campfire"}
 local reds = {"minecraft:repeater", "minecraft:comparator"}
@@ -14,7 +14,7 @@ local chaveSomFogo = isMainHand and "somFogo_MAIN" or "somFogo_OFF"
 local chaveBolhas = isMainHand and "bolhas_MAIN" or "bolhas_OFF"
 local tickSom = math.floor(age / 8)
 local BUBBLE_POP  = 5
-local itensReagemAgua = {"minecraft:torch", "minecraft:soul_torch", "minecraft:campfire", "minecraft:soul_campfire"}
+local itensReagemAgua = {"minecraft:torch", "tfc:torch","minecraft:soul_torch", "minecraft:campfire", "minecraft:soul_campfire"}
 local underWater = baixoDaAgua and 0.0 or 1.0
 local ease = 1 - M:cos(underWater * 3.14159 / 2)
 local pulso = M:sin(age * 0.15) * 22 + M:sin(age * 0.37) * 10
@@ -208,6 +208,10 @@ if I:isOf(item, Items:get("minecraft:torch")) then
     particleManager:addParticle(particles,false,0,0.25,0,0,0,0,0,0,0,0,0,0,2.5,Texture:of("minecraft","textures/particle/laranja.png"),"ITEM",hand,"SPAWN","ADDITIVE",0,Mz)
 end
 
+if I:isOf(item, Items:get("tfc:torch")) then
+    particleManager:addParticle(particles,false,0,0.25,0,0,0,0,0,0,0,0,0,0,2.5,Texture:of("minecraft","textures/particle/laranja.png"),"ITEM",hand,"SPAWN","ADDITIVE",0,Mz)
+end
+
 if I:isOf(item, Items:get("minecraft:soul_torch")) then
     particleManager:addParticle(particles,false,0,0.25,0,0,0,0,0,0,0,0,0,0,2.5,Texture:of("minecraft","textures/particle/azul.png"),"ITEM",hand,"SPAWN","ADDITIVE",0,Mz)
 end
@@ -233,6 +237,13 @@ if I:isOf(item,Items:get("minecraft:soul_campfire")) then
 end
 
 if I:isOf(item, Items:get("minecraft:torch")) and not baixoDaAgua then
+    if (${particulastochas}) then emitirFasca(cfgTocha, 0.003) end
+    if (${sonstocha}) and tickSom ~= RefinedTorches_InternalState[chaveSomTocha] then
+        S:playSound("block.campfire.crackle", math.random()*0.2, 1.0)
+        RefinedTorches_InternalState[chaveSomTocha] = tickSom
+    end
+end
+if I:isOf(item, Items:get("tfc:torch")) and not baixoDaAgua then
     if (${particulastochas}) then emitirFasca(cfgTocha, 0.003) end
     if (${sonstocha}) and tickSom ~= RefinedTorches_InternalState[chaveSomTocha] then
         S:playSound("block.campfire.crackle", math.random()*0.2, 1.0)

@@ -1,0 +1,97 @@
+{
+  "itemSpecific": {
+    "minecraft:flint_and_steel": {
+      "particles": [
+        {
+          "type": "minecraft:crit",
+          "target": "face:up",
+          "count": 8,
+          "spread": [0.3, 0.3, 0.3],
+          "on_animation_name": "set_fire_right",
+          "on_animation_timecode": 0.25
+        },
+        {
+          "type": "minecraft:flame",
+          "target": "face:up",
+          "count": 3,
+          "spread": [0.03, 0.03, 0.03],
+          "on_animation_name": "set_fire_right",
+          "on_animation_timecode": 0.25
+        }
+      ]
+    },
+    "minecraft:redstone_torch": {
+      "particles": [
+        {
+          "type": "minecraft:dust",
+          "target": "face:up",
+          "count": 2,
+          "rate": 5,
+          "tint": [0.9, 0.0, 0.0],
+          "spread": [0.1, 0.03, 0.03],
+          "fullbright": true,
+          "trigger_mode": "any", 
+          "triggers": {
+            "walking": true,
+            "sprinting": true,
+            "falling": true,
+            "jump": true
+          }
+        }
+      ]
+    },
+    "minecraft:redstone": {
+      "particles": [
+        {
+          "type": "minecraft:dust",
+          "target": "face:up",
+          "count": 2,
+          "rate": 5,
+          "tint": [0.9, 0.0, 0.0],
+          "spread": [0.1, 0.03, 0.03],
+          "fullbright": false,
+          "trigger_mode": "any", 
+          "triggers": {
+            "walking": true,
+            "sprinting": true,
+            "falling": true,
+            "jump": true
+          }
+        }
+      ]
+    },
+    "minecraft:powder_snow_bucket": {
+      "particles": [
+        {
+          "type": "minecraft:dust",
+          "target": "face:up",
+          "count": 5,
+          "rate": 5,
+          "spread": [0.1, 0.03, 0.2],
+          "fullbright": false,
+          "trigger_mode": "any", 
+          "triggers": {
+            "landing": true,
+            "falling": true,
+            "jump": true
+          }
+        },
+        {
+          "type": "minecraft:dripping_water",
+          "target": "face:up",
+          "count": 5,
+          "rate": 30,
+          "life": 1.5,
+          "gravity": -0.1,
+          "spread": [0.2, 0.0, 0.0],
+          "tint": [0.5, 0.5, 0.9],
+          "fullbright": false,
+          "triggers": {
+            "biome": "#minecraft:is_nether",
+            "landing": true
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,154 @@
+{
+    "customGroups": [
+  {
+    "name": "PhysicalSigns",
+    "items": [
+      "minecraft:painting",
+      "minecraft:item_frame",
+      "minecraft:glow_item_frame",
+      "minecraft:oak_hanging_sign",
+      "minecraft:spruce_hanging_sign",
+      "minecraft:birch_hanging_sign",
+      "minecraft:jungle_hanging_sign",
+      "minecraft:acacia_hanging_sign",
+      "minecraft:dark_oak_hanging_sign",
+      "minecraft:mangrove_hanging_sign",
+      "minecraft:cherry_hanging_sign",
+      "minecraft:bamboo_hanging_sign",
+      "minecraft:crimson_hanging_sign",
+      "minecraft:warped_hanging_sign"
+    ]
+  }
+],
+
+"item": {
+    "LANTERN": {
+      "disable_sprint_lateral_tilt": true,
+      "keep_arm_tuning": true,
+        "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 40.0,
+          "force": 0.03,
+          "speed": 1.0,
+          "handSpace": true,
+          "cameraSens": 0.75,
+          "gravity": 25.0
+        }
+      ],
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": -0.4,
+          "offZ": 0.0,
+          "rotX": -17.0,
+          "rotY": 0.0,
+          "rotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": -0.4,
+          "offZ": 0.0,
+          "rotX": -17.0,
+          "rotY": 0.0,
+          "rotZ": 0.0
+        }
+      },
+      "customAnimation": [
+        { "type": "hand_in", "name": "lantern_in" }
+      ]
+    },
+    "PhysicalSigns": {
+      "disable_sprint_lateral_tilt": true,
+      "keep_arm_tuning": true,
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 40.0,
+          "force": 0.03,
+          "speed": 1.0,
+          "handSpace": true,
+          "cameraSens": 0.75,
+          "gravity": 25.0
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": -11.0,
+          "rotZ": 14.0,
+          "pivotX": 1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995
+        },
+        "left": {
+          "scale": 1.01,
+          "offX": -0.0,
+          "offY": -0.49999982,
+          "offZ": 0.06999999,
+          "rotX": -26.0,
+          "rotY": 11.0,
+          "rotZ": -14.0,
+          "pivotX": -1.4901161E-8,
+          "pivotY": -0.05999998,
+          "pivotZ": -0.059999995
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": -0.4,
+          "offZ": 0.0,
+          "rotX": -17.0,
+          "rotY": 0.0,
+          "rotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": -0.4,
+          "offZ": 0.0,
+          "rotX": -17.0,
+          "rotY": 0.0,
+          "rotZ": 0.0
+        }
+      }
+    }
+  },
+  "itemSpecific": {
+    "minecraft:wheat": {
+      "kind": "INGREDIENT",
+      "customAnimation": [
+        {
+            "type": "useItem",
+            "name": "give_food"
+            }
+      ]
+    },
+    "minecraft:wheat_seeds": {
+      "kind": "INGREDIENT",
+      "customAnimation": [
+        {
+            "type": "useItem",
+            "name": "give_food"
+        }
+      ]
+    },
+    "minecraft:carrot": {
+      "kind": "INGREDIENT",
+      "customAnimation": [
+        {
+            "type": "useItem",
+            "name": "give_food"
+            }
+      ]
+    }
+  }
+}

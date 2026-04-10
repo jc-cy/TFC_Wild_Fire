@@ -1,5 +1,4 @@
 {
-	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
 	"parent": "minecraft:block/block",
 	"textures": {
 		"side": "tfc:block/ceramic/large_vessel/side",

@@ -2,7 +2,6 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
-	"particle": "firmalife:block/berry_bush/pineapple_bush_large",
 	"textures": {
 		"2": "firmalife:block/berry_bush/pineapple",
 		"3": "firmalife:block/berry_bush/pineapple_bush",
@@ -15,9 +14,9 @@
 			"to": [10, 18, 9],
 			"rotation": {"angle": 22.5, "axis": "x", "origin": [8, 10, 8]},
 			"faces": {
-				"north": {"uv": [7, 0, 11, 8], "texture": "#2"},
+				"north": {"uv": [4, 8, 8, 16], "texture": "#2"},
 				"east": {"uv": [0, 0, 0, 2], "texture": "#missing"},
-				"south": {"uv": [7, 0, 11, 8], "texture": "#2"},
+				"south": {"uv": [4, 8, 8, 16], "texture": "#2"},
 				"west": {"uv": [0, 0, 0, 2], "texture": "#missing"},
 				"up": {"uv": [0, 0, 2, 0], "texture": "#missing"},
 				"down": {"uv": [0, 0, 2, 0], "texture": "#missing"}
@@ -29,9 +28,9 @@
 			"rotation": {"angle": -22.5, "axis": "z", "origin": [8, 10, 8]},
 			"faces": {
 				"north": {"uv": [0, 0, 0, 2], "texture": "#missing"},
-				"east": {"uv": [7, 0, 11, 8], "texture": "#2"},
+				"east": {"uv": [4, 8, 8, 16], "texture": "#2"},
 				"south": {"uv": [0, 0, 0, 2], "texture": "#missing"},
-				"west": {"uv": [7, 0, 11, 8], "texture": "#2"},
+				"west": {"uv": [4, 8, 8, 16], "texture": "#2"},
 				"up": {"uv": [0, 0, 2, 0], "rotation": 270, "texture": "#missing"},
 				"down": {"uv": [0, 0, 2, 0], "rotation": 90, "texture": "#missing"}
 			}
@@ -41,9 +40,9 @@
 			"to": [10, 18, 7],
 			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 10, 8]},
 			"faces": {
-				"north": {"uv": [7, 0, 11, 8], "texture": "#2"},
+				"north": {"uv": [4, 8, 8, 16], "texture": "#2"},
 				"east": {"uv": [0, 0, 0, 2], "texture": "#missing"},
-				"south": {"uv": [7, 0, 11, 8], "texture": "#2"},
+				"south": {"uv": [4, 8, 8, 16], "texture": "#2"},
 				"west": {"uv": [0, 0, 0, 2], "texture": "#missing"},
 				"up": {"uv": [0, 0, 2, 0], "rotation": 180, "texture": "#missing"},
 				"down": {"uv": [0, 0, 2, 0], "rotation": 180, "texture": "#missing"}
@@ -55,24 +54,37 @@
 			"rotation": {"angle": 22.5, "axis": "z", "origin": [8, 10, 8]},
 			"faces": {
 				"north": {"uv": [0, 0, 0, 2], "texture": "#missing"},
-				"east": {"uv": [7, 0, 11, 8], "texture": "#2"},
+				"east": {"uv": [4, 8, 8, 16], "texture": "#2"},
 				"south": {"uv": [0, 0, 0, 2], "texture": "#missing"},
-				"west": {"uv": [7, 0, 11, 8], "texture": "#2"},
+				"west": {"uv": [4, 8, 8, 16], "texture": "#2"},
 				"up": {"uv": [0, 0, 2, 0], "rotation": 90, "texture": "#missing"},
 				"down": {"uv": [0, 0, 2, 0], "rotation": 270, "texture": "#missing"}
 			}
 		},
 		{
-			"from": [6.5, 4, 6.5],
+			"from": [6.5, 2, 6.5],
 			"to": [9.5, 10, 9.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 4, 7.5]},
 			"faces": {
-				"north": {"uv": [0, 0, 3, 6], "texture": "#2"},
-				"east": {"uv": [0, 0, 3, 6], "texture": "#2"},
-				"south": {"uv": [0, 0, 3, 6], "texture": "#2"},
-				"west": {"uv": [0, 0, 3, 6], "texture": "#2"},
+				"north": {"uv": [0, 0, 3, 8], "texture": "#2"},
+				"east": {"uv": [0, 0, 3, 8], "texture": "#2"},
+				"south": {"uv": [0, 0, 3, 8], "texture": "#2"},
+				"west": {"uv": [0, 0, 3, 8], "texture": "#2"},
 				"up": {"uv": [3, 0, 6, 3], "texture": "#2"},
 				"down": {"uv": [0, 6, 3, 9], "texture": "#2"}
+			}
+		},
+		{
+			"from": [6, 4.5, 6],
+			"to": [10, 8.5, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 4, 7.5]},
+			"faces": {
+				"north": {"uv": [8, 1, 13, 6], "texture": "#2"},
+				"east": {"uv": [8, 1, 13, 6], "texture": "#2"},
+				"south": {"uv": [8, 1, 13, 6], "texture": "#2"},
+				"west": {"uv": [8, 1, 13, 6], "texture": "#2"},
+				"up": {"uv": [11, 9, 16, 14], "texture": "#2"},
+				"down": {"uv": [8, 4, 13, 9], "texture": "#2"}
 			}
 		},
 		{
@@ -298,26 +310,31 @@
 		{
 			"name": "core",
 			"origin": [0, 10, 0],
+			"scope": 0,
 			"color": 0,
-			"children": [0, 1, 2, 3, 4]
+			"children": [0, 1, 2, 3, 4, 5]
 		},
 		{
 			"name": "leaves_top",
 			"origin": [0, -2, 0],
+			"scope": 0,
 			"color": 0,
-			"children": [5, 6, 7, 8, 9, 10, 11, 12]
+			"children": [6, 7, 8, 9, 10, 11, 12, 13]
 		},
 		{
 			"name": "leaves_middle",
 			"origin": [0, -2, 0],
+			"scope": 0,
 			"color": 0,
-			"children": [13, 14, 15, 16, 17, 18, 19, 20]
+			"children": [14, 15, 16, 17, 18, 19, 20, 21]
 		},
 		{
 			"name": "leaves_bottom",
 			"origin": [0, -2, 0],
+			"scope": 0,
 			"color": 0,
-			"children": [21, 22, 23, 24, 25, 26, 27, 28]
+			"children": [22, 23, 24, 25, 26, 27, 28, 29]
 		}
-	]
+	],
+	"particle": "firmalife:block/berry_bush/pineapple_bush_large"
 }

@@ -23,8 +23,6 @@
                 "firmalife:food/chocolate_chip_cookie",
                 "firmalife:food/sugar_cookie",
                 "bakery:chocolate_glazed_cookie",
-                "tfc:food/melon_slice",
-                "tfc:food/pumpkin_chunks",
                 "bakery:sweetberry_glazed_cookie"
             ]
         }
@@ -33,25 +31,25 @@
         "cookie": {
             "transforms": {
                 "right": {
-                    "scale": 1,
-                    "offX": -0.0625,
-                    "offY": -0.1392045,
-                    "offZ": -0.09090912,
-                    "rotX": 60.59659,
-                    "rotY": 7.670456,
-                    "rotZ": 28.380692,
+                    "scale": 1.0,
+                    "offX": 0.0,
+                    "offY": 0.0,
+                    "offZ": 0.14772725,
+                    "rotX": -28.125,
+                    "rotY": 30.681808,
+                    "rotZ": 37.073853,
                     "pivotX": 0.0,
                     "pivotY": 0.0,
                     "pivotZ": 0.0
                 },
                 "left": {
-                    "scale": 1,
-                    "offX": 0.0625,
-                    "offY": -0.1392045,
-                    "offZ": -0.09090912,
-                    "rotX": 60.59659,
-                    "rotY": -7.670456,
-                    "rotZ": -28.380692,
+                    "scale": 1.0,
+                    "offX": -0.0,
+                    "offY": 0.0,
+                    "offZ": 0.14772725,
+                    "rotX": -28.125,
+                    "rotY": -30.681808,
+                    "rotZ": -37.073853,
                     "pivotX": -0.0,
                     "pivotY": 0.0,
                     "pivotZ": 0.0

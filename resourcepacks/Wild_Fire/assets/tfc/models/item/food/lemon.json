@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_lemon"
         },
         "fixed": {
-            "parent": "tfc:item/food/lemon_item"
+            "parent": "kubejs:block/coaster_lemon"
         }
     },
 "overrides": [

@@ -1,0 +1,9 @@
+{
+    "rpo.HyperPunchy": "Hyper Punchy",
+    "rpo.HyperPunchy.CamShake": "Tremor de Câmera",
+    "rpo.HyperPunchy.CamShake.tooltip": "Ativa o efeito de tremor de câmera ao usar itens.",
+    "rpo.HyperPunchy.PVPMode": "Modo PvP",
+    "rpo.HyperPunchy.PVPMode.tooltip": "Usa animações simplificadas para PvP para evitar bugs visuais.",
+    "rpo.HyperPunchy.Enable3d": "Ativar Modelos 3D",
+    "rpo.HyperPunchy.Enable3d.tooltip": "Ativa modelos 3D personalizados para itens e blocos (estilo HyperPunchy)."
+}

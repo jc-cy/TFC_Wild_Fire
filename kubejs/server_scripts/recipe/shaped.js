@@ -274,9 +274,10 @@ ServerEvents.recipes(event => {
         c: '#tfc:saws'
     }).damageIngredient({ tag: '#tfc:saws' }, 5) //箱子合成
 
-    event.shaped('minecraft:barrel', ['aba', 'a a', 'aba'], {
+    event.shaped('minecraft:barrel', ['aba', 'aca', 'aba'], {
         a: '#tfc:lumber',
-        b: 'firmaciv:copper_bolt'
+        b: 'firmaciv:copper_bolt',
+        c: "minecraft:chest"
     }) //桶合成
     event.shaped('create:schematicannon',
         [

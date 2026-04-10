@@ -15,7 +15,7 @@
             "parent": "kubejs:block/coaster_peach"
         },
         "fixed": {
-            "parent": "tfc:item/food/peach_item"
+            "parent": "kubejs:block/coaster_peach"
         }
     },
 "overrides": [

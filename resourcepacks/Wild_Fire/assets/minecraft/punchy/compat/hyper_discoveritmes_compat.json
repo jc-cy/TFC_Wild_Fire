@@ -1,0 +1,34 @@
+{
+  "itemSpecific": {
+    "minecraft:spyglass": {
+      "customAnimation": [
+        { "type": "useItem", "name": "spyglass_look"},
+	    {
+          "type": "mining",
+          "name": "hand_punch",
+          "stop_immediate": true
+	    },
+        {
+          "type": "interaction",
+          "items": [ "minecraft:chest" ],
+          "animation": "hand_chest_interact"
+        }
+      ]
+    },
+    "minecraft:brush": {
+      "customAnimation": [
+        { "type": "useItem", "name": "use_brush"},
+	    {
+          "type": "mining",
+          "name": "hand_punch",
+          "stop_immediate": true
+	    },
+        {
+          "type": "interaction",
+          "items": [ "minecraft:chest" ],
+          "animation": "hand_chest_interact"
+        }
+      ]
+    }
+  }
+}

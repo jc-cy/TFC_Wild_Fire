@@ -17,12 +17,12 @@ ForgeEvents.onEvent("first.wildfires.api.customEvent.TemperatureEnumModifyEvent"
             tempEventInstance.setUpperBound(28);
             break;
         case "hot":
-            tempEventInstance.setLowerBound(28);
-            tempEventInstance.setUpperBound(35);
+            tempEventInstance.setLowerBound(33);
+            tempEventInstance.setUpperBound(40);
             break;
         case "heat_stroke":
-            tempEventInstance.setLowerBound(35);
-            tempEventInstance.setUpperBound(48);
+            tempEventInstance.setLowerBound(40);
+            tempEventInstance.setUpperBound(50);
             break;
     }
 

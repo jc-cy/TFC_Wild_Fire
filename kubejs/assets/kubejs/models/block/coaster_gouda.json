@@ -1,6 +1,7 @@
 {
 	"format_version": "1.9",
 	"credit": "Made with Blockbench",
+	"parent": "kubejs:block/display_cheese",
 	"texture_size": [24, 24],
 	"textures": {
 		"0": "kubejs:block/gouda",
@@ -20,26 +21,5 @@
 				"down": {"uv": [11.33333, 0, 7.33333, 3.33333], "texture": "#0"}
 			}
 		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [60, 0, 0],
-			"translation": [0, 4, 4]
-		},
-		"thirdperson_lefthand": {
-			"rotation": [60, 0, 0],
-			"translation": [0, 4, 4]
-		},
-		"firstperson_righthand": {
-			"rotation": [0, 0, 15],
-			"translation": [-1.5, 8.5, 0]
-		},
-		"firstperson_lefthand": {
-			"rotation": [0, 0, 15],
-			"translation": [-1.5, 8.5, 0]
-		},
-		"head": {
-			"translation": [0, 0.75, -8.5]
-		}
-	}
+	]
 }

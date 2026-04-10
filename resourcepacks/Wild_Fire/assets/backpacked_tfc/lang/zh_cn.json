@@ -1,8 +1,0 @@
-{
-  "advancements.backpack_task.title": "你小背包在哪里？",
-  "advancements.backpack_task.descr": "制作一个简易背包",
-  "gui.backpacked_tfc.backpack_gui.label_inventory": "物品栏",
-  "item.backpacked_tfc.backpack": "简易背包",
-  "key.backpacked_tfc.backpack_open": "打开简易背包",
-  "gui.backpacked_tfc.backpack_gui.label_backpack": "简易背包"
-}
