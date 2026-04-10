@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 4,
-  "ingredient": {
-      "item": "tfc:metal/ingot/cast_iron"
-  },
-  "result": "create:industrial_iron_block"
-}

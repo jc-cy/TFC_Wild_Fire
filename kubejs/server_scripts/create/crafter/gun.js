@@ -1,7 +1,7 @@
 ServerEvents.recipes(event =>{
     const create = event.recipes.create
 
-   create.mechanical_crafting("design_decor:scorchia_crushing_wheel", [
+   /*create.mechanical_crafting("design_decor:scorchia_crushing_wheel", [
         " aba ",
         "accca",
         "bdedb",
@@ -12,7 +12,7 @@ ServerEvents.recipes(event =>{
         c:"tfc:metal/rod/steel",
         d:"immersiveengineering:steel_scaffolding_standard",
         e:"design_decor:industrial_gear_large"
-    }) // 钢粉碎轮 动力合成
+    })*/ // 钢粉碎轮 动力合成
    /* create.mechanical_crafting("kubejs:brass_cartridge_nest", [
         "ba",
         "ab"

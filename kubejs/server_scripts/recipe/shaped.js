@@ -15,23 +15,82 @@ ServerEvents.recipes(event => {
         a: "sns:leather_strip",
         b: "tfc:metal/unfinished_boots/copper",
         c: "immersiveengineering:ingot_lead"
-       
+        
     })//潜水鞋子--配重
 
 
-     event.shaped("alexscaves:diving_boots", ['aba', 'c c'], {
+        event.shaped("alexscaves:diving_boots", ['aba', 'c c'], {
         a: "sns:leather_strip", 
         b: "tfc:metal/unfinished_boots/copper",
         c: "tfc:metal/ingot/copper"
-       
+        
     })//潜水鞋子
 
-       event.shaped("alexscaves:diving_leggings", ['aba', 'c c', 'a a'], {
+        event.shaped("alexscaves:diving_leggings", ['aba', 'c c', 'a a'], {
         a: "sns:leather_strip", 
         b: "tfc:metal/unfinished_greaves/copper",
         c: "kubejs:copper_fragments",
 
     })//潜水裤子
+
+        event.shaped("supplementaries:altimeter", ['c', 'b', 'a'], {
+        a: "tfc:metal/sheet/copper", 
+        b: "tfc:lamp_glass",
+        c: "minecraft:redstone",
+
+    })//高度计
+
+        event.shaped("4x create:chute", ['a', 'b', 'a'], {
+        a: "tfc:metal/sheet/cast_iron", 
+        b: "create:industrial_iron_block",
+
+    })//溜槽
+
+        event.shaped("create:mechanical_arm", ['aab', 'c  ', 'de '], {
+        a: "kubejs:material_component_steel", 
+        b: "create:brass_hand",
+        c: "createcasing:jungle_cogwheel",
+        d: "create:precision_mechanism",
+        e: "create:industrial_iron_block", 
+    })//动力机械臂
+
+        event.shaped("2x create:mechanical_harvester", ['bab', 'cac', ' d '], {
+        a: "tfc:metal/bars/wrought_iron", 
+        b: "tfc:metal/rod/cast_iron",
+        c: "create:andesite_alloy",
+        d: "create:andesite_casing",
+    })//动力收割机（真的会有人做这个吗）
+
+        event.shaped("2x create:mechanical_plough", ['aca', 'bbb', ' d '], {
+        a: "tfc:metal/bars/wrought_iron", 
+        b: "create:andesite_alloy",
+        c: "tfc:metal/sheet/cast_iron",
+        d: "create:andesite_casing",
+    })//动力犁（种地套x2，真的会有人在群峦当大农场主然后被工业革命一脚踹死吗）
+
+        event.shaped("2x create:encased_chain_drive", [' c ', 'aba', ' c '], {
+        a: "#forge:chains", 
+        b: "create:andesite_casing",
+        c: "#kubejs:shaft",
+    })//链式传动箱
+
+        event.shaped("16x create:controller_rail", ['aca', 'aba', 'aca'], {
+        a: "tfc:metal/rod/rose_gold", 
+        b: "create:electron_tube",
+        c: "#tfc:can_be_lit_on_torch",
+    })//控制铁轨
+
+    event.shaped("4x create:package_filter", [' c ', 'aba'], {
+        a: "tfc:metal/rod/zinc", 
+        b: "#tfc:lumber",
+        c: "farmersdelight:canvas",
+    })//包裹过滤器
+
+    event.shaped("supplementaries:candle_holder", ['a', 'b'], {
+        a: "tfc:candle", 
+        b: "tfc:metal/rod/cast_iron",
+    })//烛台
+
 
 
 
@@ -610,7 +669,7 @@ ServerEvents.recipes(event => {
         a: 'create:fluid_pipe',
         b: '#kubejs:flint',
         c: 'tfc:metal/rod/cast_iron',
-        d: 'design_decor:gas_tank',
+        d: 'createdieselgenerators:canister',
         e: 'tfc:metal/double_sheet/wrought_iron',
         f: 'create:fluid_valve',
     })//燃气炉
@@ -640,7 +699,7 @@ ServerEvents.recipes(event => {
         'cdc'
     ], {
         a: 'create:fluid_pipe',
-        b: 'design_decor:gas_tank',
+        b: 'createdieselgenerators:canister',
         c: 'vintageimprovements:andesite_sheet',
         d: 'create:mechanical_pump',
         e: 'vintageimprovements:andesite_sheet',
@@ -776,7 +835,7 @@ ServerEvents.recipes(event => {
         'bab',
         ' d '
     ], {
-        a: 'design_decor:copper_gas_tank',
+        a: 'createdieselgenerators:canister',
         b: 'tfc:metal/rod/copper',
         d: 'tfc:metal/unfinished_chestplate/copper',
         c: 'create:shaft',

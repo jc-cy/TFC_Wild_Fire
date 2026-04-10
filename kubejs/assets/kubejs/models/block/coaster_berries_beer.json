@@ -1,7 +1,7 @@
 {
-    "parent": "kubejs:block/coaster_barley_beer",
-	"texture_size": [32, 32],
-	"textures": {
-		"1": "kubejs:block/coaster_barley_beer"
-	}
+  "parent": "brewinandchewin:block/coaster_tankard",
+  "textures": {
+    "particle": "kubejs:block/berries_beer",
+    "tankard": "kubejs:block/berries_beer"
+  }
 }

@@ -414,8 +414,10 @@ ServerEvents.tags("block", event => {
 
         event.add('kubejs:tongs', 'create:extendo_grip')//机械臂
 
-        event.add('kubejs:wild_mushroom', 'kubejs:wild_red_mushroom')//机械臂
-        event.add('kubejs:wild_mushroom', 'kubejs:wild_brown_mushroom')//机械臂
+        event.add('kubejs:shaft', 'create:shaft')//机械臂
+
+        event.add('kubejs:wild_mushroom', 'kubejs:wild_red_mushroom')//野生红蘑菇
+        event.add('kubejs:wild_mushroom', 'kubejs:wild_brown_mushroom')//野生棕蘑菇
 
         event.add('firmalife:oven_fuel', 'kubejs:wood_briquette')
         event.add('firmalife:smoking_fuel', 'kubejs:wood_briquette')

@@ -577,63 +577,12 @@ ServerEvents.recipes(e => {
     crucible(`immersiveengineering:slab_sheetmetal_colored_${color.name}`, "tfc:metal/unknown", 40, 400)
 
 
-    tfc.heating(`design_decor:${color.name}_metal_plate`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
-    crucible(`design_decor:${color.name}_metal_plate`, "tfc:metal/cast_iron", 25, 1535)
-
-    tfc.heating(`design_decor:${color.name}_metal_plate_wall`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
-    crucible(`design_decor:${color.name}_metal_plate_wall`, "tfc:metal/cast_iron", 25, 1535)
-
-    tfc.heating(`design_decor:${color.name}_metal_plate_stairs`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
-    crucible(`design_decor:${color.name}_metal_plate_stairs`, "tfc:metal/cast_iron", 25, 1535)
-
-    tfc.heating(`design_decor:${color.name}_metal_plate_slab`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 12))//金属板材融化
-    crucible(`design_decor:${color.name}_metal_plate_slab`, "tfc:metal/cast_iron", 12, 1535)
-
-
-
-    tfc.heating(`design_decor:${color.name}_metal_sheet`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
-    crucible(`design_decor:${color.name}_metal_sheet`, "tfc:metal/cast_iron", 25, 1535)
-
-    tfc.heating(`design_decor:${color.name}_metal_sheet_wall`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
-    crucible(`design_decor:${color.name}_metal_sheet_wall`, "tfc:metal/cast_iron", 25, 1535)
-
-    tfc.heating(`design_decor:${color.name}_metal_sheet_stairs`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
-    crucible(`design_decor:${color.name}_metal_sheet_stairs`, "tfc:metal/cast_iron", 25, 1535)
-
-    tfc.heating(`design_decor:${color.name}_metal_sheet_slab`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 12))//金属镶板融化
-    crucible(`design_decor:${color.name}_metal_sheet_slab`, "tfc:metal/cast_iron", 12, 1535)
-
     //工业灯融化
     tfc.heating(`ad_astra:${color.name}_industrial_lamp`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 50))
     crucible(`ad_astra:${color.name}_industrial_lamp`, "tfc:metal/cast_iron", 50, 1535)
 
     tfc.heating(`ad_astra:small_${color.name}_industrial_lamp`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 12))
     crucible(`ad_astra:small_${color.name}_industrial_lamp`, "tfc:metal/cast_iron", 12, 1535)
-  })
-
-  const large_chain = [
-
-    { name: "bronze", temperature: 950, metal: "tfc:metal/bronze" },
-    { name: "copper", temperature: 1085, metal: "tfc:metal/copper" },
-    { name: "iron", temperature: 1535, metal: "tfc:metal/cast_iron" },
-    { name: "steel", temperature: 1540, metal: "tfc:metal/steel" },
-    { name: "cast_iron", temperature: 1535, metal: "tfc:metal/cast_iron" },
-    { name: "gold", temperature: 1060, metal: "tfc:metal/gold" },
-    { name: "brass", temperature: 930, metal: "tfc:metal/brass" },
-    { name: "silver", temperature: 961, metal: "tfc:metal/silver" },
-    { name: "zinc", temperature: 419, metal: "tfc:metal/zinc" },
-    { name: "electrum", temperature: 900, metal: "tfc_ie_addon:metal/electrum" },//琥珀金
-    { name: "aluminium", temperature: 650, metal: "tfc_ie_addon:metal/aluminum" },//铝
-    { name: "lead", temperature: 500, metal: "tfc_ie_addon:metal/lead" },//铅
-    { name: "silver", temperature: 961, metal: "tfc:metal/silver" },//银
-    { name: "tin", temperature: 961, metal: "tfc:metal/tin" },//锡
-
-  ];
-  large_chain.forEach(block => {
-    //大型锁链融化
-    tfc.heating(`design_decor:${block.name}_large_chain`, block.temperature).resultFluid(Fluid.of(block.metal, 25))
-    crucible(`design_decor:${block.name}_large_chain`, block.metal, 25, block.temperature)
-
   })
 
   //精金秘银黑钢工具熔融补充
@@ -874,7 +823,6 @@ ServerEvents.recipes(e => {
     { name: "create:brass_scaffolding", temperature: 930, metal: "tfc:metal/brass", number: 50 },
     { name: "create:brass_table_cloth", temperature: 930, metal: "tfc:metal/brass", number: 50 },
     { name: "create:brass_bars", temperature: 930, metal: "tfc:metal/brass", number: 25 },
-    { name: "design_decor:brass_floor", temperature: 930, metal: "tfc:metal/brass", number: 25 },
     { name: "create:brass_casing", temperature: 930, metal: "tfc:metal/brass", number: 100 },
     { name: "create:copper_casing", temperature: 930, metal: "tfc:metal/brass", number: 50 },
     { name: "createprism:brass_glass_casing", temperature: 930, metal: "tfc:metal/brass", number: 100 },
@@ -974,24 +922,20 @@ ServerEvents.recipes(e => {
     { name: "create:waxed_oxidized_copper_tile_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 60 },
 
     //锌制品和伪装方块的融化
-    { name: "design_decor:zinc_screw", temperature: 419, metal: "tfc:metal/zinc", number: 20 },
     { name: "copycats:copycat_byte", temperature: 419, metal: "tfc:metal/zinc", number: 10 },
     { name: "copycats:copycat_vertical_stairs", temperature: 419, metal: "tfc:metal/zinc", number: 90 },
     { name: "copycats:copycat_vertical_half_layer", temperature: 419, metal: "tfc:metal/zinc", number: 5 },
-    { name: "design_decor:zinc_bolt", temperature: 419, metal: "tfc:metal/zinc", number: 20 },
     { name: "copycats:copycat_half_panel", temperature: 419, metal: "tfc:metal/zinc", number: 10 },
     { name: "copycats:copycat_vertical_slice", temperature: 419, metal: "tfc:metal/zinc", number: 5 },
     { name: "copycats:copycat_wooden_pressure_plate", temperature: 419, metal: "tfc:metal/zinc", number: 15 },
     { name: "copycats:copycat_layer", temperature: 419, metal: "tfc:metal/zinc", number: 10 },
     { name: "copycats:copycat_slope", temperature: 419, metal: "tfc:metal/zinc", number: 40 },
-    { name: "design_decor:zinc_railing", temperature: 419, metal: "tfc:metal/zinc", number: 22 },
     { name: "copycats:copycat_half_layer", temperature: 419, metal: "tfc:metal/zinc", number: 5 },
     { name: "copycats:copycat_trapdoor", temperature: 419, metal: "tfc:metal/zinc", number: 20 },
     { name: "copycats:copycat_wooden_button", temperature: 419, metal: "tfc:metal/zinc", number: 2 },
     { name: "copycats:copycat_folding_door", temperature: 419, metal: "tfc:metal/zinc", number: 80 },
     { name: "copycats:copycat_slab", temperature: 419, metal: "tfc:metal/zinc", number: 35 },
     { name: "copycats:copycat_stairs", temperature: 419, metal: "tfc:metal/zinc", number: 80 },
-    { name: "design_decor:zinc_catwalk", temperature: 419, metal: "tfc:metal/zinc", number: 20 },
     { name: "copycats:copycat_block", temperature: 419, metal: "tfc:metal/zinc", number: 80 },
     { name: "copycats:copycat_sliding_door", temperature: 419, metal: "tfc:metal/zinc", number: 80 },
     { name: "create:copycat_panel", temperature: 419, metal: "tfc:metal/zinc", number: 20 },
@@ -1016,11 +960,9 @@ ServerEvents.recipes(e => {
     { name: "copycats:copycat_heavy_weighted_pressure_plate", temperature: 419, metal: "tfc:metal/zinc", number: 30 },
     { name: "copycats:copycat_flat_pane", temperature: 419, metal: "tfc:metal/zinc", number: 10 },
     { name: "copycats:copycat_light_weighted_pressure_plate", temperature: 419, metal: "tfc:metal/zinc", number: 30 },
-    { name: "design_decor:zinc_floor", temperature: 419, metal: "tfc:metal/zinc", number: 20 },
     { name: "copycats:copycat_ghost_block", temperature: 419, metal: "tfc:metal/zinc", number: 45 },
     { name: "copycats:copycat_slope_layer", temperature: 419, metal: "tfc:metal/zinc", number: 9 },
     { name: "copycats:copycat_vertical_step", temperature: 419, metal: "tfc:metal/zinc", number: 19 },
-    { name: "design_decor:zinc_checker_tiles", temperature: 419, metal: "tfc:metal/zinc", number: 23 },
 
     // ============================
     //非方块凑数的
@@ -1120,47 +1062,11 @@ ServerEvents.recipes(e => {
   tfc.heating('create:metal_girder', 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 70))//金属梁融化
   crucible('create:metal_girder', 'tfc:metal/cast_iron', 70, 1535)
 
-  tfc.heating('design_decor:diagonal_girder', 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 70))//金属斜梁融化
-  crucible('design_decor:diagonal_girder', 'tfc:metal/cast_iron', 70, 1535)
-
-  tfc.heating('design_decor:metal_support', 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 20))//金属支柱融化
-  crucible('design_decor:metal_support', 'tfc:metal/cast_iron', 20, 1535)
-
-  tfc.heating('design_decor:diagonal_metal_support', 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 20))//金属斜柱融化
-  crucible('design_decor:diagonal_metal_support', 'tfc:metal/cast_iron', 20, 1535)
-
   tfc.heating('create:metal_bracket', 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 80))//金属支架融化
   crucible('create:metal_bracket', 'tfc:metal/cast_iron', 80, 1535)
 
-
-  tfc.heating(`design_decor:metal_plate`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
-  crucible(`design_decor:metal_plate`, "tfc:metal/cast_iron", 25, 1535)
-
-  tfc.heating(`design_decor:metal_plate_wall`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
-  crucible(`design_decor:metal_plate_wall`, "tfc:metal/cast_iron", 25, 1535)
-
-  tfc.heating(`design_decor:metal_plate_stairs`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
-  crucible(`design_decor:metal_plate_stairs`, "tfc:metal/cast_iron", 25, 1535)
-
-  tfc.heating(`design_decor:metal_plate_slab`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 13))//金属板材融化
-  crucible(`design_decor:metal_plate_slab`, "tfc:metal/cast_iron", 13, 1535)
-
-  tfc.heating(`design_decor:metal_sheet`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
-  crucible(`design_decor:metal_sheet`, "tfc:metal/cast_iron", 25, 1535)
-
-  tfc.heating(`design_decor:metal_sheet_wall`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
-  crucible(`design_decor:metal_sheet_wall`, "tfc:metal/cast_iron", 25, 1535)
-
-  tfc.heating(`design_decor:metal_sheet_stairs`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
-  crucible(`design_decor:metal_sheet_stairs`, "tfc:metal/cast_iron", 25, 1535)
-
-  tfc.heating(`design_decor:metal_sheet_slab`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 13))//金属镶板融化
-  crucible(`design_decor:metal_sheet_slab`, "tfc:metal/cast_iron", 13, 1535)
-
   tfc.heating(`create:industrial_iron_block`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//工业铁块融化
   crucible(`create:industrial_iron_block`, "tfc:metal/cast_iron", 25, 1535)
-  tfc.heating(`design_decor:industrial_plating_block`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//工业铁块融化
-  crucible(`design_decor:industrial_plating_block`, "tfc:metal/cast_iron", 25, 1535)
 
 
   tfc.heating(`create:industrial_iron_window`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 35))//工业窗户融化
@@ -1171,18 +1077,6 @@ ServerEvents.recipes(e => {
   crucible(`create:industrial_iron_window_pane`, "tfc:metal/cast_iron", 15, 1535)
   tfc.heating(`create:weathered_iron_window_pane`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 11))
   crucible(`create:weathered_iron_window_pane`, "tfc:metal/cast_iron", 11, 1535)
-  tfc.heating(`design_decor:industrial_iron_floor`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 3))
-  crucible(`design_decor:industrial_iron_floor`, "tfc:metal/cast_iron", 3, 1535)
-  tfc.heating(`design_decor:industrial_iron_large_chain`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 12))
-  crucible(`design_decor:industrial_iron_large_chain`, "tfc:metal/cast_iron", 12, 1535)
-  tfc.heating(`design_decor:industrial_gear_large`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))
-  crucible(`design_decor:industrial_gear_large`, "tfc:metal/cast_iron", 25, 1535)
-  tfc.heating(`design_decor:industrial_gear`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))
-  crucible(`design_decor:industrial_gear`, "tfc:metal/cast_iron", 25, 1535)
-  tfc.heating(`design_decor:industrial_iron_boiler_large`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//工业铁块融化
-  crucible(`design_decor:industrial_iron_boiler_large`, "tfc:metal/cast_iron", 25, 1535)
-  tfc.heating(`design_decor:industrial_iron_boiler`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//工业铁块融化
-  crucible(`design_decor:industrial_iron_boiler`, "tfc:metal/cast_iron", 25, 1535)
 
   tfc.heating(`create:weathered_iron_block`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 18))//锈蚀工业铁块融化
   crucible(`create:weathered_iron_block`, "tfc:metal/cast_iron", 18, 1535)

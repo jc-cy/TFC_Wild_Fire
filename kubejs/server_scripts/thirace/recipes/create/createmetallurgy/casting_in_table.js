@@ -34,36 +34,6 @@ ServerEvents.recipes((event) => {
     },
     {
       ingredients: [
-        { item: 'minecraft:glowstone_dust' },
-        { amount: 100, fluid: 'tfc:metal/copper' }
-      ],
-      mold_consumed: 'true',
-      processingTime: 100,
-      result: { item: 'design_decor:copper_lamp' },
-      id: `${id_prefix}copper_lamp`
-    },
-    {
-      ingredients: [
-        { item: 'minecraft:glowstone_dust' },
-        { amount: 100, fluid: 'tfc:metal/zinc' }
-      ],
-      mold_consumed: 'true',
-      processingTime: 100,
-      result: { item: 'design_decor:zinc_lamp' },
-      id: `${id_prefix}zinc_lamp`
-    },
-    {
-      ingredients: [
-        { item: 'minecraft:glowstone_dust' },
-        { amount: 100, fluid: 'tfc:metal/brass' }
-      ],
-      mold_consumed: 'true',
-      processingTime: 100,
-      result: { item: 'design_decor:brass_lamp' },
-      id: `${id_prefix}brass_lamp`
-    },
-    {
-      ingredients: [
         { item: 'tfc:powder/soda_ash' },
         { amount: 100, fluid: 'kubejs:molten_glass' }
       ],

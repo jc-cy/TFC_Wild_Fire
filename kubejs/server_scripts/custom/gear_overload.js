@@ -46,8 +46,6 @@ NativeEvents.onEvent(Java.loadClass("first.wildfires.api.customEvent.KineticData
     event.addKineticData("create:brass_encased_warped_cogwheel", 256, 8192, "create:cogwheel")
     event.addKineticData("create:brass_encased_warped_large_cogwheel", 256, 8192, "create:large_cogwheel")
 
-    event.addKineticData("design_decor:industrial_gear", 256, 10240, "design_decor:industrial_gear")
-    event.addKineticData("design_decor:industrial_gear_large", 256, 10240, "design_decor:industrial_gear_large")
     casing.forEach(c => {
 
         cogwheels.forEach(cog => {

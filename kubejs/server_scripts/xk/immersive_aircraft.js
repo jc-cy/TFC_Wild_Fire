@@ -506,7 +506,7 @@ ServerEvents.recipes(event => {
             ],
             "key": {
                 "a": {
-                    "item": "design_decor:industrial_gear",
+                    "item": "create:cogwheel",
                     "count": 2
                 },
                 "b": {
@@ -518,7 +518,7 @@ ServerEvents.recipes(event => {
                     "count": 1
                 },
                 "d": {
-                    "item": "design_decor:industrial_gear_large",
+                    "item": "create:large_cogwheel",
                     "count": 2
                 }
             },
@@ -706,7 +706,7 @@ ServerEvents.recipes(event => {
                     "count": 1
                 },
                 "b": {
-                    "item": "design_decor:industrial_gear",
+                    "item": "create:cogwheel",
                     "count": 2
                 },
                 "c": {
@@ -714,7 +714,7 @@ ServerEvents.recipes(event => {
                     "count": 4
                 },
                 "d": {
-                    "item": "design_decor:industrial_gear_large",
+                    "item": "create:large_cogwheel",
                     "count": 2
                 }
             },

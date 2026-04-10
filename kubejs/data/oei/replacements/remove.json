@@ -16,17 +16,6 @@
     },
     {
         "matchItems": [
-            "design_decor:queen_slime_large_chain",
-            "design_decor:knightslime_large_chain",
-            "design_decor:invar_large_chain",
-            "design_decor:nickel_large_chain",
-            "design_decor:rose_gold_large_chain",
-            "design_decor:cobalt_large_chain",
-            "design_decor:manyullyn_large_chain",
-            "design_decor:hepatizon_large_chain",
-            "design_decor:pig_iron_large_chain",
-            "design_decor:mithril_large_chain",
-            "design_decor:nethersteel_large_chain",
             "immersiveengineering:pickaxe_steel",
             "legendarysurvivaloverhaul:water_plant_seeds",
             "legendarysurvivaloverhaul:water_purifier",

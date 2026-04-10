@@ -222,8 +222,6 @@ ServerEvents.recipes(event => {
         glue.setDamageValue(damageValue)
         return glue
     });//回耐久
-    event.shapeless('supplementaries:candle_holder', ['tfc:candle', 'tfc:metal/ingot/cast_iron']).keepIngredient({ item: '#tfc:chisels' })//橡木原木  橡木
-
     event.shapeless('minecraft:oak_log', ['#tfc:chisels', 'tfc:wood/log/oak']).keepIngredient({ item: '#tfc:chisels' })//橡木原木  橡木
     event.shapeless('minecraft:oak_log', ['#tfc:chisels', 'afc:wood/log/ancient_oak']).keepIngredient({ item: '#tfc:chisels' })//橡木原木  古代
     event.shapeless('minecraft:spruce_log', ['#tfc:chisels', 'tfc:wood/log/spruce']).keepIngredient({ item: '#tfc:chisels' })//云杉木原木  云杉

@@ -1,9 +1,0 @@
-
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "tfc:metal/ingot/copper"
-  },
-  "result": "design_decor:copper_screw",
-  "count": 4
-}

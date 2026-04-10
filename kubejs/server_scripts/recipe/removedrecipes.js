@@ -19,6 +19,26 @@ ServerEvents.recipes(e => {
     'create:crafting/appliances/copper_diving_helmet',
     'create:deploying/cogwheel',
     'create:crafting/kinetics/large_cogwheel',
+    'tfc:crafting/vanilla/name_tag',
+
+    'create:crafting/mechanical_crafting/wand_of_symmetry',
+    'create:crafting/kinetics/encased_chain_drive_from_zinc',
+    'create:crafting/kinetics/encased_chain_drive',
+    'woodencog:crafting/kinetics/encased_chain_drive',
+    'woodencog:crafting/item_application/raliway_casing_using_deployer',
+    'woodencog:crafting/item_application/raliway_casing',
+    'create:crafting/kinetics/chute',
+    'create:crafting/kinetics/adjustable_chain_gearshift',
+    'create:crafting/kinetics/large_cogwheel',
+    'create:crafting/schematics/schematic_table',
+    'create:crafting/kinetics/mechanical_plough',
+    'create:crafting/kinetics/mechanical_harvester',
+    'create:crafting/kinetics/mechanical_arm',
+    'create:crafting/kinetics/package_filter',
+    'create:crafting/appliances/cardboard_chestplate',
+    'create:crafting/appliances/cardboard_leggings',
+    'create:crafting/appliances/cardboard_boots',
+
     'petrolsparts:crafting/large_cog_from_coaxial_gear',
     'create:crafting/kinetics/large_cogwheel_from_little',
     'petrolsparts:crafting/cog_from_coaxial_gear',
@@ -142,7 +162,6 @@ ServerEvents.recipes(e => {
     "woodencog:rock_knapping/andesite_alloy",
     "woodencog:rock_knapping/andesite_alloy_deploying",
     // "firmalife:crafting/bacon",
-    "design_decor:mechanical_crafting/enchanted_golden_apple",
     "create_new_age:enchanted_golden_apple",
     "tfc:crafting/parchment",
     "minecraft:paper",
@@ -237,17 +256,6 @@ ServerEvents.recipes(e => {
     "illagerinvasion:platinum_infused_hatchet",
     "illagerinvasion:platinum_sheet",
     "illagerinvasion:platinum_chunk",
-    "design_decor:queen_slime_large_chain",
-    "design_decor:knightslime_large_chain",
-    "design_decor:invar_large_chain",
-    "design_decor:nickel_large_chain",
-    "design_decor:rose_gold_large_chain",
-    "design_decor:cobalt_large_chain",
-    "design_decor:manyullyn_large_chain",
-    "design_decor:hepatizon_large_chain",
-    "design_decor:pig_iron_large_chain",
-    "design_decor:mithril_large_chain",
-    "design_decor:nethersteel_large_chain",
     "vintageimprovements:small_native_vanadium_spring",
     "vintageimprovements:pig_iron_sheet",
     "vintageimprovements:pig_iron_rod",
@@ -393,7 +401,6 @@ ServerEvents.recipes(e => {
     "shieldeexp:wooden_shield",
     "butcher:butcherspapers",
     "patchouli:guide_book",
-    "design_decor:mechanical_crafting/enchanted_golden_apple",
     "supplementaries:strings",
     "tfc:crafting/sandpaper",
 
@@ -1325,7 +1332,6 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'scguns:create/plasma_nugget_from_plasma_milling' })
   e.remove({ id: 'scguns:flare_pistol' })
 
-  e.remove({ id: 'design_decor:crafting/gas_tank' })
   e.remove({ id: 'create:milling/sugar_cane' })
   e.remove({ id: 'create:milling/blue_orchid' })
   e.remove({ id: 'create:milling/allium' })

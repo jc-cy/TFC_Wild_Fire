@@ -1,0 +1,27 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "illagerinvasion:single_pool_element",
+        "location": "wildfire:mineshaft/gabbro/empty",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 13
+    },
+    {
+      "element": {
+        "element_type": "illagerinvasion:single_pool_element",
+        "location": "wildfire:mineshaft/gabbro/bounty_chest",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

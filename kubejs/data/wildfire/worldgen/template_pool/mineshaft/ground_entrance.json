@@ -3,13 +3,35 @@
     {
       "element": {
         "element_type": "illagerinvasion:single_pool_element",
-        "location": "wildfire:mineshaft/ground_entrance",
+        "location": "wildfire:mineshaft/ground_entrance_1",
         "processors": {
           "processors": []
         },
         "projection": "rigid"
       },
-      "weight": 1
+      "weight": 8
+    },
+    {
+      "element": {
+        "element_type": "illagerinvasion:single_pool_element",
+        "location": "wildfire:mineshaft/ground_entrance_2",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 6
+    },
+    {
+      "element": {
+        "element_type": "illagerinvasion:single_pool_element",
+        "location": "wildfire:mineshaft/ground_entrance_3",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 4
     }
   ],
   "fallback": "minecraft:empty"

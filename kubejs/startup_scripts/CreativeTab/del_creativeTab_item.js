@@ -97,40 +97,6 @@
                 "vintageimprovements:shadow_steel_sheet",
             ])
     })
-    //删除design_decor的无用金属装饰
-    StartupEvents.modifyCreativeTab("design_decor:cdd_tab", event => {
-        event.remove(
-            [
-                "design_decor:queen_slime_large_chain",
-                "design_decor:knightslime_large_chain",
-                "design_decor:pig_iron_large_chain",
-                "design_decor:hepatizon_large_chain",
-                "design_decor:manyullyn_large_chain",
-                "design_decor:cobalt_large_chain",
-                "design_decor:rose_gold_large_chain",
-                "design_decor:nickel_large_chain",
-                "design_decor:invar_large_chain",
-                "design_decor:aluminium_large_chain",
-                "design_decor:brass_large_chain",
-                "design_decor:bronze_large_chain",
-                "design_decor:electrum_large_chain",
-                "design_decor:lead_large_chain",
-                "design_decor:mithril_large_chain",
-                "design_decor:nethersteel_large_chain",
-                "design_decor:tin_large_chain",
-                "design_decor:queen_slime_large_chain",
-                "design_decor:knightslime_large_chain",
-                "design_decor:invar_large_chain",
-                "design_decor:nickel_large_chain",
-                "design_decor:rose_gold_large_chain",
-                "design_decor:cobalt_large_chain",
-                "design_decor:manyullyn_large_chain",
-                "design_decor:hepatizon_large_chain",
-                "design_decor:pig_iron_large_chain",
-                "design_decor:mithril_large_chain",
-                "design_decor:nethersteel_large_chain",
-            ])
-    })
     StartupEvents.modifyCreativeTab("lootr:lootr", event => {
         event.remove("lootr:trophy")
     })

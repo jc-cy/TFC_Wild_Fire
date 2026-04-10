@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "tfc:metal/ingot/gold"
-  },
-  "result": "design_decor:industrial_gold_block,
-  "count": 4
-}

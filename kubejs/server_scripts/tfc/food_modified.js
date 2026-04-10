@@ -303,7 +303,8 @@ TFCEvents.data(event => {
     "firmalife:food/barley_dough",
     "firmalife:food/maize_dough",
     "firmalife:food/rice_dough",
-    "firmalife:food/rye_dough"
+    "firmalife:food/rye_dough",
+    "wildfire:pumpkin_dough"
   ];
   good_dough.forEach(good_dough => {
     event.foodItem(good_dough, f => {
@@ -358,6 +359,69 @@ TFCEvents.data(event => {
     f.decayModifier(0.9)
   })
 
+  event.foodItem('wildfire:baked_carrot', f => { // 烤胡萝卜
+    f.hunger(5)
+    f.saturation(3)
+    f.vegetables(1.5)
+    f.decayModifier(0.9)
+  })
+  event.foodItem('wildfire:baked_red_pepper', f => { // 烤红辣椒
+    f.hunger(5)
+    f.saturation(2)
+    f.vegetables(1.5)
+    f.decayModifier(1.5)
+  })
+  event.foodItem('wildfire:baked_yellow_bell_pepper', f => { // 烤黄甜椒
+    f.hunger(5)
+    f.saturation(3)
+    f.vegetables(1.5)
+    f.decayModifier(2.5)
+  })
+  event.foodItem('wildfire:baked_green_pepper', f => { // 烤青椒
+    f.hunger(5)
+    f.saturation(2)
+    f.vegetables(1.5)
+    f.decayModifier(2)
+  })
+  event.foodItem('wildfire:baked_garlic', f => { // 烤大蒜
+    f.hunger(5)
+    f.saturation(3)
+    f.vegetables(2)
+    f.decayModifier(0.8)
+  })
+  event.foodItem('wildfire:baked_maize', f => { // 烤玉米
+    f.hunger(5)
+    f.saturation(2)
+    f.grain(1)
+    f.decayModifier(0.8)
+  })
+  event.foodItem('wildfire:baked_maize', f => { // 烤红苹果
+    f.hunger(5)
+    f.saturation(0.5)
+    f.fruit(1)
+    f.decayModifier(3)
+  })
+  event.foodItem('wildfire:baked_maize', f => { // 烤青苹果
+    f.hunger(5)
+    f.saturation(0.5)
+    f.fruit(1)
+    f.decayModifier(3)
+  })
+  event.foodItem('wildfire:pumpkin_bread', f => { // 南瓜面包
+    f.hunger(4)
+    f.saturation(1.25)
+    f.grain(1.5)
+    f.vegetables(1)
+    f.decayModifier(0.95)
+  })
+  event.foodItem('wildfire:pumpkin_bread_slice', f => { // 南瓜面包片
+    f.hunger(3)
+    f.saturation(0.75)
+    f.grain(0.75)
+    f.vegetables(0.5)
+    f.decayModifier(0.95)
+  })
+  
   event.foodItem('farmersdelight:glow_berry_custard', f => { // 蛋奶沙司
     f.hunger(5 / 5); f.saturation(2 / 5); f.dairy(3); f.fruit(3); f.water(15); f.decayModifier(0.9)
   })
