@@ -1,0 +1,41 @@
+{
+  "customGroups": [
+    {
+      "name": "baton",
+      "items": [
+        "fluid:baton",
+        "create:wand_of_symmetry"
+      ]
+    }
+  ],
+  "item": {
+    "baton": {
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.090909004,
+          "offY": 0.10227275,
+          "offZ": 0.17897725,
+          "rotX": -16.875,
+          "rotY": 2.3011475,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": -0.090909004,
+          "offY": 0.10227275,
+          "offZ": 0.17897725,
+          "rotX": -16.875,
+          "rotY": -2.3011475,
+          "rotZ": -0.0,
+          "pivotX": -0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    }
+  }
+}

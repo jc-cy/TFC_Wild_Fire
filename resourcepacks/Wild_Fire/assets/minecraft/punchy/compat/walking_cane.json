@@ -1,0 +1,79 @@
+{
+  "customGroups": [
+    {
+      "name": "walking_cane",
+      "items": [
+        "tfccanes:walking_cane",
+        "tfccanes:refined_walking_cane"
+      ]
+    }
+  ],
+  "item": {
+    "walking_cane": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.000071,
+          "offX": -0.008522749,
+          "offY": -0.4204545,
+          "offZ": 0.18181825,
+          "rotX": 0.0,
+          "rotY": 146.50568,
+          "rotZ": 88.72159,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.000071,
+          "offX": 0.008522749,
+          "offY": -0.4204545,
+          "offZ": 0.18181825,
+          "rotX": 0.0,
+          "rotY": -146.50568,
+          "rotZ": -88.72159,
+          "pivotX": -0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": -0.11931813,
+          "offY": -0.13352275,
+          "offZ": -0.1420455,
+          "rotX": -15.08522,
+          "rotY": -96.90341,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.11931813,
+          "offY": -0.13352275,
+          "offZ": -0.1420455,
+          "rotX": -15.08522,
+          "rotY": 96.90341,
+          "rotZ": -0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      },
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 20,
+          "speed":0.3,
+          "force": 0.1,
+          "cameraSens": 0.25,
+          "gravity": 100.0
+        }
+      ]
+    }
+  }
+}

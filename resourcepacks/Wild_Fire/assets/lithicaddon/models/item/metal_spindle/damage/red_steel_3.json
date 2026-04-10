@@ -1,6 +1,0 @@
-{
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "lithicaddon:item/metal/metal_spindle/red_steel_3"
-    }
-}

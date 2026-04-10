@@ -1,0 +1,10 @@
+{
+    "rpo.HyperPunchy": "Hyper Punchy",
+    "rpo.HyperPunchy.CamShake": "Kamerawackeln",
+    "rpo.HyperPunchy.CamShake.tooltip": "Aktiviert den Kamerawackeleffekt bei der Verwendung von Gegenständen.",
+    "rpo.HyperPunchy.PVPMode": "PvP-Modus",
+    "rpo.HyperPunchy.PVPMode.tooltip": "Verwendet vereinfachte Animationen für PvP, um visuelle Fehler zu vermeiden.",
+
+    "rpo.HyperPunchy.Enable3d": "3D-Modelle aktivieren",
+    "rpo.HyperPunchy.Enable3d.tooltip": "Aktiviert benutzerdefinierte 3D-Modelle für Gegenstände und Blöcke (HyperPunchy-Stil)."
+}

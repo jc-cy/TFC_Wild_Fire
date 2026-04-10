@@ -1,0 +1,83 @@
+{
+    "customGroups": [
+        {
+            "name": "backpack",
+            "items": [
+                "sophisticatedbackpacks:backpack",
+                "sophisticatedbackpacks:copper_backpack",
+                "sophisticatedbackpacks:iron_backpack",
+                "sophisticatedbackpacks:gold_backpack",
+                "sophisticatedbackpacks:diamond_backpack",
+                "sophisticatedbackpacks:netherite_backpack"
+            ]
+        }
+    ],
+    "item": {
+        "backpack": {
+            "kind": "INGREDIENT",
+            "armKind": "INGREDIENT",
+            "transforms": {
+                "right": {
+                    "scale": 1.0,
+                    "offX": -0.07102275,
+                    "offY": -0.06534088,
+                    "offZ": 0.065340996,
+                    "rotX": 0.0,
+                    "rotY": 98.69318,
+                    "rotZ": 180.0,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                },
+                "left": {
+                    "scale": 1.0,
+                    "offX": 0.07102275,
+                    "offY": -0.06534088,
+                    "offZ": 0.065340996,
+                    "rotX": 0.0,
+                    "rotY": -98.69318,
+                    "rotZ": -180.0,
+                    "pivotX": -0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                }
+            },
+            "armTransforms": {
+                "right": {
+                    "scale": 1.0,
+                    "offX": -0.048295498,
+                    "offY": -0.22159088,
+                    "offZ": 0.025568247,
+                    "rotX": -0.5113678,
+                    "rotY": -97.15909,
+                    "rotZ": 0.0,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                },
+                "left": {
+                    "scale": 1.0,
+                    "offX": 0.048295498,
+                    "offY": -0.22159088,
+                    "offZ": 0.025568247,
+                    "rotX": -0.5113678,
+                    "rotY": 97.15909,
+                    "rotZ": -0.0,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                }
+            },
+            "physics": [
+                {
+                    "name": "FULL_PENDULUM",
+                    "limitDeg": 20,
+                    "speed": 0.3,
+                    "force": 0.1,
+                    "cameraSens": 0.25,
+                    "gravity": 100.0
+                }
+            ]
+        }
+    }
+}

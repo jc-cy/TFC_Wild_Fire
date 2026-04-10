@@ -1,0 +1,190 @@
+{
+  "itemSpecific": {
+    "immersiveengineering:drill": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.125,
+          "offY": -0.11931813,
+          "offZ": 0.082386255,
+          "rotX": -76.19318,
+          "rotY": -4.857956,
+          "rotZ": -15.340912,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": -0.125,
+          "offY": -0.11931813,
+          "offZ": 0.082386255,
+          "rotX": -76.19318,
+          "rotY": 4.857956,
+          "rotZ": 15.340912,
+          "pivotX": -0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.1236507,
+          "offX": 0.059659004,
+          "offY": 0.13068175,
+          "offZ": 0.0,
+          "rotX": -2.045456,
+          "rotY": -16.107956,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.1236507,
+          "offX": -0.059659004,
+          "offY": 0.13068175,
+          "offZ": 0.0,
+          "rotX": -2.045456,
+          "rotY": 16.107956,
+          "rotZ": -0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      },
+      "customAnimation": [
+        {
+          "type": "mining",
+          "name": "hold_press"
+        }
+      ]
+    },
+    "immersiveengineering:chemthrower": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.059659004,
+          "offY": 0.025568247,
+          "offZ": 0.028409004,
+          "rotX": -76.19318,
+          "rotY": -4.857956,
+          "rotZ": -15.340912,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": -0.059659004,
+          "offY": 0.025568247,
+          "offZ": 0.028409004,
+          "rotX": -76.19318,
+          "rotY": 4.857956,
+          "rotZ": 15.340912,
+          "pivotX": -0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.1236507,
+          "offX": 0.017045498,
+          "offY": 0.073863745,
+          "offZ": 0.278409,
+          "rotX": -2.045456,
+          "rotY": -16.107956,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.1236507,
+          "offX": -0.017045498,
+          "offY": 0.073863745,
+          "offZ": 0.278409,
+          "rotX": -2.045456,
+          "rotY": 16.107956,
+          "rotZ": -0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      },
+      "customAnimation": [
+        {
+          "type": "useItem",
+          "name": "hold_press"
+        }
+      ]
+    },
+    "immersiveengineering:buzzsaw": {
+      "kind": "INGREDIENT",
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.019886255,
+          "offY": 0.07102275,
+          "offZ": 0.13352275,
+          "rotX": -76.19318,
+          "rotY": -4.857956,
+          "rotZ": -15.340912,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": -0.019886255,
+          "offY": 0.07102275,
+          "offZ": 0.13352275,
+          "rotX": -76.19318,
+          "rotY": 4.857956,
+          "rotZ": 15.340912,
+          "pivotX": -0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0453836,
+          "offX": 0.017045498,
+          "offY": -0.051136374,
+          "offZ": 0.17613626,
+          "rotX": -1.7897797,
+          "rotY": -16.107956,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0453836,
+          "offX": -0.017045498,
+          "offY": -0.051136374,
+          "offZ": 0.17613626,
+          "rotX": -1.7897797,
+          "rotY": 16.107956,
+          "rotZ": -0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      },
+      "customAnimation": [
+        {
+          "type": "mining",
+          "name": "hold_press"
+        }
+      ]
+    }
+  }
+}

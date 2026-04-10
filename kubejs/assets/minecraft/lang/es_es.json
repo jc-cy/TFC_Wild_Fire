@@ -1,0 +1,10 @@
+{
+    "rpo.HyperPunchy": "Hyper Punchy",
+    "rpo.HyperPunchy.CamShake": "Sacudida de cámara",
+    "rpo.HyperPunchy.CamShake.tooltip": "Activa el efecto de sacudida de cámara al usar objetos.",
+    "rpo.HyperPunchy.PVPMode": "Modo PvP",
+    "rpo.HyperPunchy.PVPMode.tooltip": "Usa animaciones simplificadas para PvP para evitar errores visuales.",
+
+    "rpo.HyperPunchy.Enable3d": "Activar modelos 3D",
+    "rpo.HyperPunchy.Enable3d.tooltip": "Activa modelos 3D personalizados para objetos y bloques (estilo HyperPunchy)."
+}

@@ -3,46 +3,37 @@
     {
       "name": "sacks",
       "items": [
-        "sns:frame_pack",
         "sns:ore_sack",
         "sns:burlap_sack",
         "sns:leather_sack",
         "sns:seed_pouch"
       ]
-    },
-    {
-      "name": "straw_basket",
-      "items": [
-        "sns:straw_basket"
-      ]
     }
   ],
   "item": {
     "sacks": {
-      "kind": "BLOCK",
-      "armKind": "BLOCK",
       "transforms": {
         "right": {
-          "scale": 1.1586648,
-          "offX": 0.049999952,
-          "offY": -0.39488637,
-          "offZ": 0.0767045,
-          "rotX": -8.693176,
-          "rotY": 22.755692,
-          "rotZ": 16.107956,
+          "scale": 1.0,
+          "offX": 0.042613745,
+          "offY": -0.1079545,
+          "offZ": 0.0795455,
+          "rotX": -126.5625,
+          "rotY": -10.482956,
+          "rotZ": -180.0,
           "pivotX": 0.0,
           "pivotY": 0.0,
           "pivotZ": 0.0,
           "physics": "FULL_PENDULUM"
         },
         "left": {
-          "scale": 1.1586648,
-          "offX": -0.049999952,
-          "offY": -0.39488637,
-          "offZ": 0.0767045,
-          "rotX": -8.693176,
-          "rotY": -22.755692,
-          "rotZ": -16.107956,
+          "scale": 1.0,
+          "offX": -0.042613745,
+          "offY": -0.1079545,
+          "offZ": 0.0795455,
+          "rotX": -126.5625,
+          "rotY": 10.482956,
+          "rotZ": 180.0,
           "pivotX": -0.0,
           "pivotY": 0.0,
           "pivotZ": 0.0,
@@ -53,7 +44,7 @@
         "right": {
           "scale": 1.0,
           "offX": 0.014204502,
-          "offY": -0.13636363,
+          "offY": -0.28693187,
           "offZ": -0.06818187,
           "rotX": -5.625,
           "rotY": 0.25569153,
@@ -65,7 +56,7 @@
         "left": {
           "scale": 1.0,
           "offX": -0.014204502,
-          "offY": -0.13636363,
+          "offY": -0.28693187,
           "offZ": -0.06818187,
           "rotX": -5.625,
           "rotY": -0.25569153,
@@ -74,17 +65,118 @@
           "pivotY": 0.0,
           "pivotZ": 0.0
         }
-      },
-      "physics": [
-        {
-          "name": "FULL_PENDULUM",
-          "limitDeg": 75.0,
-          "force": 0.1,
-          "speed": 1.4,
-          "cameraSens": 0.25,
-          "gravity": 50.0
+      }
+    }
+  },
+  "itemSpecific": {
+    "sns:straw_basket": {
+      "armKind": "INGREDIENT",
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": -0.082386374,
+          "offZ": 0.09943175,
+          "rotX": -92.8125,
+          "rotY": -29.14772,
+          "rotZ": -61.875,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": -0.0,
+          "offY": -0.082386374,
+          "offZ": 0.09943175,
+          "rotX": -92.8125,
+          "rotY": 29.14772,
+          "rotZ": 61.875,
+          "pivotX": -0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
         }
-      ]
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.014204502,
+          "offY": -0.28693187,
+          "offZ": -0.06818187,
+          "rotX": -5.625,
+          "rotY": 0.25569153,
+          "rotZ": 0.51135254,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": -0.014204502,
+          "offY": -0.28693187,
+          "offZ": -0.06818187,
+          "rotX": -5.625,
+          "rotY": -0.25569153,
+          "rotZ": -0.51135254,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    },
+    "sns:frame_pack": {
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.13352275,
+          "offY": -0.40625,
+          "offZ": -0.16761363,
+          "rotX": 64.6875,
+          "rotY": 180.0,
+          "rotZ": -36.051132,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": -0.13352275,
+          "offY": -0.40625,
+          "offZ": -0.16761363,
+          "rotX": 64.6875,
+          "rotY": -180.0,
+          "rotZ": 36.051132,
+          "pivotX": -0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.014204502,
+          "offY": -0.28693187,
+          "offZ": -0.06818187,
+          "rotX": -5.625,
+          "rotY": 0.25569153,
+          "rotZ": 0.51135254,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": -0.014204502,
+          "offY": -0.28693187,
+          "offZ": -0.06818187,
+          "rotX": -5.625,
+          "rotY": -0.25569153,
+          "rotZ": -0.51135254,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
     }
   }
 }

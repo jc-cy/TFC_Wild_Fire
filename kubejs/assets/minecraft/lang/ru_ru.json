@@ -1,0 +1,9 @@
+{
+    "rpo.HyperPunchy": "Hyper Punchy",
+    "rpo.HyperPunchy.CamShake": "Тряска камеры",
+    "rpo.HyperPunchy.CamShake.tooltip": "Включает эффект тряски камеры при использовании предметов.",
+    "rpo.HyperPunchy.PVPMode": "Режим PvP",
+    "rpo.HyperPunchy.PVPMode.tooltip": "Использует упрощённые анимации для PvP, чтобы предотвратить визуальные баги.",
+    "rpo.HyperPunchy.Enable3d": "Включить 3D-модели",
+    "rpo.HyperPunchy.Enable3d.tooltip": "Активирует специальные 3D-модели для предметов и блоков (в стиле HyperPunchy)."
+}

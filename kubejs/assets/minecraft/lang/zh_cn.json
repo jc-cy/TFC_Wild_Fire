@@ -1,0 +1,12 @@
+{
+    "rpo.HyperPunchy": "Hyper Punchy",
+
+    "rpo.HyperPunchy.CamShake": "相机抖动",
+    "rpo.HyperPunchy.CamShake.tooltip": "在物品使用期间启用相机抖动效果。",
+
+    "rpo.HyperPunchy.PVPMode": "PvP 模式",
+    "rpo.HyperPunchy.PVPMode.tooltip": "使用简化的 PvP 动画，以防止视觉异常。",
+
+    "rpo.HyperPunchy.Enable3d": "启用 3D 模型",
+    "rpo.HyperPunchy.Enable3d.tooltip": "启用物品和方块的自定义 3D 模型（HyperPunchy 风格）。"
+}

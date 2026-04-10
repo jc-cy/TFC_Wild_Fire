@@ -1,0 +1,88 @@
+{
+    "itemSpecific": {
+        "tfc:food/melon_slice": {
+            "transforms": {
+                "right": {
+                    "scale": 1.0556818,
+                    "offX": -0.15340912,
+                    "offY": -0.019886374,
+                    "offZ": 0.008522749,
+                    "rotX": 131.16476,
+                    "rotY": 17.130692,
+                    "rotZ": 141.13635,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                },
+                "left": {
+                    "scale": 1.0,
+                    "offX": 0.0,
+                    "offY": 0.0,
+                    "offZ": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                }
+            },
+            "armTransforms": {
+                "right": {
+                    "scale": 1.0,
+                    "offX": -0.056818128,
+                    "offY": 0.15056825,
+                    "offZ": -0.22443187,
+                    "rotX": -23.267044,
+                    "rotY": -31.96022,
+                    "rotZ": 0.0,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                }
+            }
+        },
+        "tfc:food/pumpkin_chunks": {
+            "transforms": {
+                "right": {
+                    "scale": 1.0556818,
+                    "offX": -0.15340912,
+                    "offY": -0.019886374,
+                    "offZ": 0.008522749,
+                    "rotX": 131.16476,
+                    "rotY": 17.130692,
+                    "rotZ": 141.13635,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                },
+                "left": {
+                    "scale": 1.0,
+                    "offX": 0.0,
+                    "offY": 0.0,
+                    "offZ": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                }
+            },
+            "armTransforms": {
+                "right": {
+                    "scale": 1.0,
+                    "offX": -0.056818128,
+                    "offY": 0.15056825,
+                    "offZ": -0.22443187,
+                    "rotX": -23.267044,
+                    "rotY": -31.96022,
+                    "rotZ": 0.0,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "customGroups": [
+        {
+            "name": "lance",
+            "items": [
+                "spartanweaponry:wooden_lance",
+                "spartanweaponry:stone_lance",
+                "spartanweaponry:golden_lance",
+                "spartanweaponry:netherite_lance",
+                "spartanweaponry:tin_lance",
+                "spartanweaponry:silver_lance",
+                "spartanweaponry:electrum_lance",
+                "spartanweaponry:lead_lance",
+                "spartanweaponry:nickel_lance",
+                "spartanweaponry:invar_lance",
+                "spartanweaponry:constantan_lance",
+                "spartanweaponry:platinum_lance",
+                "kubejs:copper_lance",
+                "kubejs:wrought_iron_lance",
+                "kubejs:steel_lance",
+                "kubejs:bismuth_bronze_lance",
+                "kubejs:black_bronze_lance",
+                "kubejs:bronze_lance",
+                "kubejs:black_steel_lance",
+                "kubejs:blue_steel_lance",
+                "kubejs:red_steel_lance"
+            ]
+        }
+    ],
+    "item": {
+        "lance": {
+            "kind": "INGREDIENT",
+            "armKind": "INGREDIENT",
+            "transforms": {
+                "right": {
+                    "scale": 1.0,
+                    "offX": 0.0,
+                    "offY": 0.042613745,
+                    "offZ": 0.014204502,
+                    "rotX": -38.35228,
+                    "rotY": 8.4375,
+                    "rotZ": -1.5340881,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                },
+                "left": {
+                    "scale": 1.0,
+                    "offX": -0.0,
+                    "offY": 0.042613745,
+                    "offZ": 0.014204502,
+                    "rotX": -38.35228,
+                    "rotY": -8.4375,
+                    "rotZ": 1.5340881,
+                    "pivotX": -0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                }
+            },
+            "armTransforms": {
+                "right": {
+                    "scale": 1.0,
+                    "offX": -0.14488637,
+                    "offY": -0.017045498,
+                    "offZ": -0.15625,
+                    "rotX": 11.25,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "pivotX": 0.0,
+                    "pivotY": 0.0,
+                    "pivotZ": 0.0
+                }
+            }
+        }
+    }
+}

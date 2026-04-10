@@ -1,0 +1,12 @@
+{
+    "rpo.HyperPunchy": "Hyper Punchy",
+
+    "rpo.HyperPunchy.CamShake": "Camera Shake",
+    "rpo.HyperPunchy.CamShake.tooltip": "Enables camera shake effects while using items.",
+
+    "rpo.HyperPunchy.PVPMode": "PvP Mode",
+    "rpo.HyperPunchy.PVPMode.tooltip": "Uses simplified animations for PvP to prevent visual glitches.",
+
+    "rpo.HyperPunchy.Enable3d": "Enable 3D Models",
+    "rpo.HyperPunchy.Enable3d.tooltip": "Activates custom 3D models for items and blocks (HyperPunchy style)."
+}
