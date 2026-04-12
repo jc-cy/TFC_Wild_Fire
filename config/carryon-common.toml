@@ -1,81 +1,85 @@
 
 [settings]
-	#General Settings
-	#Maximum distance from where Blocks and Entities can be picked up
-	#Range: 0.0 ~ 1.7976931348623157E308
+	# 常规设置
+	# 可以从哪里拾取方块和实体的最大距离
+	# Range: 0.0 ~ 1.7976931348623157E308
 	maxDistance = 2.5
-	#Max width of entities that can be picked up in survival mode
-	#Range: 0.0 ~ 10.0
+	# 在生存模式下可以抱起来的实体的最大宽度
+	# Range: 0.0 ~ 10.0
 	maxEntityWidth = 1.5
-	#Max height of entities that can be picked up in survival mode
-	#Range: 0.0 ~ 10.0
+	# 在生存模式下可以抱起来的实体的最大高度
+	# Range: 0.0 ~ 10.0
 	maxEntityHeight = 2.5
-	#Slowness multiplier for blocks
+	# 抱起方块的移动速度减缓倍率
 	#Range: 0.0 ~ 1.7976931348623157E308
 	blockSlownessMultiplier = 1.0
-	#Slowness multiplier for entities
+	# 抱起实体的移动速度减缓倍率
 	#Range: 0.0 ~ 1.7976931348623157E308
 	entitySlownessMultiplier = 1.0
-	#Maximum stack limit for entities
+	# 实体的最大堆叠限制
 	#Range: > 1
 	maxEntityStackLimit = 10
-	#More complex Tile Entities slow down the player more
+	# 非常规方块实体抱起后玩家的移动速度更慢
 	heavyTiles = true
-	#Allow all blocks to be picked up, not just Tile Entites. White/Blacklist will still be respected.
+	# 允许抱起所有方块，而不仅仅是方块实体(遵守白名单/黑名单)
 	pickupAllBlocks = false
-	#Whether Blocks and Entities slow the creative player down when carried
+	# 在创造模式下，抱起方块实体是否会导致玩家移动速度变慢
 	slownessInCreative = true
-	#Whether hostile mobs should be able to picked up in survival mode
+	# 在生存模式下，是否允许抱起敌对生物
 	pickupHostileMobs = false
-	#Larger Entities slow down the player more
+	# 大型的实体抱起后是否让玩家移动速度变慢
 	heavyEntities = true
-	#Allow babies to be carried even when adult mob is blacklisted (or not whitelisted)
+	# 即便成年的生物实体在黑名单(或者未在白名单中)，也允许抱起未成年的这个生物实体
 	allowBabies = false
-	#Use Whitelist instead of Blacklist for Blocks
+	# 对方块使用白名单而不是黑名单
 	useWhitelistBlocks = true
-	#Use Whitelist instead of Blacklist for Entities
+	# 对实体使用白名单而不是黑名单
 	useWhitelistEntities = false
-	#Use Whitelist instead of Blacklist for Stacking
+	# 对堆叠使用白名单而不是黑名单
 	useWhitelistStacking = false
-	#Whether the player can hit blocks and entities while carrying or not
+	# 玩家在抱起方块或实体的时候是否能被攻击
 	hitWhileCarrying = false
-	#Whether the player drops the carried object when hit or not
+	# 玩家在受到攻击后是否会丢掉抱起的物品
 	dropCarriedWhenHit = false
-	#Use custom Pickup Scripts. Having this set to false, will not allow you to run scripts, but will increase your performance
+	# 是否允许执行自定义抱起脚本(原文是Pickup Scripts)，默认为false不允许运行，会显著提升性能
 	useScripts = false
-	#Allows entities to be stacked on top of each other
+	# 是否允许实体堆叠在一起
 	stackableEntities = true
-	#Whether entities' size matters when stacking or not. This means that larger entities cannot be stacked on smaller ones
+	# 堆叠时的实体宽度和高度是否重要，如果开启，较大的实体将不能叠在较小的实体上
 	entitySizeMattersStacking = true
-	#Usually all the block state information is retained when placing a block that was picked up. But some information is changed to a modified property, like rotation or orientation. In this list, add additional properties that should NOT be saved and instead be updated when placed. Format: modid:block[propertyname]. Note: You don't need to add an entry for every subtype of a same block. For example, we only add an entry for one type of slab, but the change is applied to all slabs.
+	# 正常来说，放下抱起的方块时，会保留方块的所有状态数据，但是！某些数据会被更改为修改后的数据，比如台阶他有方向数据，会变更为你放下后的方向。在这个列表当中，添加不应该保存而应该在放置的时候自动更新的数据，示例:
+	# modid:block[propertyname] 
+	# PS: 你不需要给同一个方块的每个子类属性都添加上，比如，为台阶添加一个属性，那么他将适用于所有的不同的台阶的相同属性
 	placementStateExceptions = ["minecraft:chest[type]", "minecraft:stone_button[face]", "minecraft:vine[north,east,south,west,up]", "minecraft:creeper_head[rotation]", "minecraft:glow_lichen[north,east,south,west,up,down]", "minecraft:oak_sign[rotation]", "minecraft:oak_trapdoor[half]"]
-	#Whether Players can be picked up. Creative players can't be picked up in Survival Mode
+	# 生存模式的玩家是否可以被抱起
+	# PS: 创造玩家无法被抱起
 	pickupPlayers = true
-	#Whether players in Survival Mode can pick up unbreakable blocks. Creative players always can.
+	# 生存模式的玩家是否可以抱起无法破坏的方块
+	# PS: 不影响创造
 	pickupUnbreakableBlocks = false
 
 [whitelist]
-	#Whitelist. Read about the format here: https://github.com/Tschipp/CarryOn/wiki/Black---and-Whitelist-Config
-	#Entities that CAN be picked up (useWhitelistEntities must be true)
+	# 白名单，关于详细的格式，需要访问 "https://github.com/Tschipp/CarryOn/wiki/Black---and-Whitelist-Config"
+	# 可以被抱起的实体(useWhitelistEntities 必须为 true)
 	allowedEntities = []
-	#Blocks that CAN be picked up (useWhitelistBlocks must be true)
+	# 可以被抱起的方块 (useWhitelistBlocks 必须为 true)
 	allowedBlocks = []
-	#Entities that CAN have other entities stacked on top of them (useWhitelistStacking must be true)
+	# 可以让其他实体堆叠在自身以上的实体 (useWhitelistStacking 必须为 true)
 	allowedStacking = []
 
 [blacklist]
-	#Blacklist. Read about the format here: https://github.com/Tschipp/CarryOn/wiki/Black---and-Whitelist-Config
-	#Blocks that cannot be picked up
+	# 黑名单，关于详细格式，需要访问"https://github.com/Tschipp/CarryOn/wiki/Black---and-Whitelist-Config"
+	# 无法被抱起的方块
 	forbiddenTiles = ["#forge:immovable", "#forge:relocation_not_supported", "minecraft:end_portal", "minecraft:piston_head", "minecraft:end_gateway", "minecraft:tall_grass", "minecraft:large_fern", "minecraft:peony", "minecraft:rose_bush", "minecraft:lilac", "minecraft:sunflower", "minecraft:*_bed", "minecraft:*_door", "minecraft:big_dripleaf_stem", "minecraft:waterlily", "minecraft:cake", "minecraft:nether_portal", "minecraft:tall_seagrass", "animania:block_trough", "animania:block_invisiblock", "colossalchests:*", "ic2:*", "bigreactors:*", "forestry:*", "tconstruct:*", "rustic:*", "botania:*", "astralsorcery:*", "quark:colored_bed_*", "immersiveengineering:*", "embers:block_furnace", "embers:ember_bore", "embers:ember_activator", "embers:mixer", "embers:heat_coil", "embers:large_tank", "embers:crystal_cell", "embers:alchemy_pedestal", "embers:boiler", "embers:combustor", "embers:catalzyer", "embers:field_chart", "embers:inferno_forge", "storagedrawers:framingtable", "skyresources:*", "lootbags:*", "exsartagine:*", "aquamunda:tank", "opencomputers:*", "malisisdoors:*", "industrialforegoing:*", "minecolonies:*", "thaumcraft:pillar*", "thaumcraft:infernal_furnace", "thaumcraft:placeholder*", "thaumcraft:infusion_matrix", "thaumcraft:golem_builder", "thaumcraft:thaumatorium*", "magneticraft:oil_heater", "magneticraft:solar_panel", "magneticraft:steam_engine", "magneticraft:shelving_unit", "magneticraft:grinder", "magneticraft:sieve", "magneticraft:solar_tower", "magneticraft:solar_mirror", "magneticraft:container", "magneticraft:pumpjack", "magneticraft:solar_panel", "magneticraft:refinery", "magneticraft:oil_heater", "magneticraft:hydraulic_press", "magneticraft:multiblock_gap", "refinedstorage:*", "mcmultipart:*", "enderstorage:*", "betterstorage:*", "practicallogistics2:*", "wearablebackpacks:*", "rftools:screen", "rftools:creative_screen", "create:*", "magic_doorknob:*", "iceandfire:*", "ftbquests:*", "waystones:*", "framedblocks:*", "securitycraft:*", "forgemultipartcbe:*", "integrateddynamics:cable", "mekanismgenerators:wind_generator", "cookingforblockheads:cabinet", "cookingforblockheads:corner", "cookingforblockheads:counter", "cookingforblockheads:oven", "cookingforblockheads:toaster", "cookingforblockheads:milk_jar", "cookingforblockheads:cow_jar", "cookingforblockheads:fruit_basket", "cookingforblockheads:cooking_table", "cookingforblockheads:fridge", "cookingforblockheads:sink", "powah:*", "advancementtrophies:trophy", "mekanismgenerators:heat_generator", "mna:filler_block", "tfc:*", "create:*", "mekanism:*", "ae2:*"]
-	#Entities that cannot be picked up
+	# 无法被抱起的实体
 	forbiddenEntities = ["minecraft:end_crystal", "minecraft:ender_dragon", "minecraft:ghast", "minecraft:shulker", "minecraft:leash_knot", "minecraft:armor_stand", "minecraft:item_frame", "minecraft:painting", "minecraft:shulker_bullet", "animania:hamster", "animania:ferret*", "animania:hedgehog*", "animania:cart", "animania:wagon", "mynko:*", "pixelmon:*", "mocreatures:*", "quark:totem", "vehicle:*", "securitycraft:*", "taterzens:npc", "easy_npc:*", "bodiesbodies:dead_body"]
-	#Entities that cannot have other entities stacked on top of them
+	# 无法让其他实体堆叠在自身以上的实体
 	forbiddenStacking = ["minecraft:horse"]
 
 [customPickupConditions]
-	#Custom Pickup Conditions. Read about the format here: https://github.com/Tschipp/CarryOn/wiki/Custom-Pickup-Condition-Config
-	#Custom Pickup Conditions for Blocks
+	# 自定义抱起条件 关于详细格式，需要访问"https://github.com/Tschipp/CarryOn/wiki/Custom-Pickup-Condition-Config"
+	# 方块的自定义抱起条件
 	customPickupConditionsBlocks = []
-	#Custom Pickup Conditions for Entities
+	# 实体的自定义抱起条件
 	customPickupConditionsEntities = []
 
