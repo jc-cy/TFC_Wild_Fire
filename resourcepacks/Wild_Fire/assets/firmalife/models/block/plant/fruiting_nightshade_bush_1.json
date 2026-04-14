@@ -1,7 +1,8 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "parent": "tfc:block/plant/stationary_bush_1",
+  "parent": "firmalife:block/plant/fruiting_nightshade_bush_2",
   "textures": {
-    "bush": "firmalife:block/berry_bush/fruiting_nightshade_bush_1"
+    "bush": "firmalife:block/berry_bush/fruiting_nightshade_bush_1",
+    "berry": "firmalife:block/berry_bush/fruiting_nightshade_layer_1"
   }
 }

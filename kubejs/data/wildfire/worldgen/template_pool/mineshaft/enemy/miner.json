@@ -1,0 +1,55 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "illagerinvasion:single_pool_element",
+        "location": "wildfire:mineshaft/enemy/miner_pillager",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 8
+    },
+    {
+      "element": {
+        "element_type": "illagerinvasion:single_pool_element",
+        "location": "wildfire:mineshaft/enemy/miner_vindicator",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 5
+    },
+    {
+      "element": {
+        "element_type": "illagerinvasion:single_pool_element",
+        "location": "wildfire:mineshaft/enemy/miner_skirmisher",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "illagerinvasion:single_pool_element",
+        "location": "wildfire:mineshaft/enemy/miner_propicker",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:empty_pool_element"
+      },
+      "weight": 10
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

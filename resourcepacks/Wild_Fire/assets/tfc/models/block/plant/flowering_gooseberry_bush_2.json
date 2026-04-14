@@ -1,7 +1,8 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "parent": "tfc:block/plant/stationary_bush_2",
+  "parent": "tfc:block/plant/stationary_bush",
   "textures": {
-    "bush": "tfc:block/berry_bush/flowering_gooseberry_bush_2"
+    "bush": "tfc:block/berry_bush/flowering_gooseberry_bush_2",
+    "berry": "tfc:block/berry_bush/empty"
   }
 }

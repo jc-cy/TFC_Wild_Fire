@@ -395,13 +395,13 @@ TFCEvents.data(event => {
     f.grain(1)
     f.decayModifier(0.8)
   })
-  event.foodItem('wildfire:baked_maize', f => { // 烤红苹果
+  event.foodItem('wildfire:baked_red_apple', f => { // 烤红苹果
     f.hunger(5)
     f.saturation(0.5)
     f.fruit(1)
     f.decayModifier(3)
   })
-  event.foodItem('wildfire:baked_maize', f => { // 烤青苹果
+  event.foodItem('wildfire:baked_green_apple', f => { // 烤青苹果
     f.hunger(5)
     f.saturation(0.5)
     f.fruit(1)

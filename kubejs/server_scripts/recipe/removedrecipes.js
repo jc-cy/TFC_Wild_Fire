@@ -20,6 +20,9 @@ ServerEvents.recipes(e => {
     'create:deploying/cogwheel',
     'create:crafting/kinetics/large_cogwheel',
     'tfc:crafting/vanilla/name_tag',
+    'firmalife:vat/beet_sugar',
+    'firmalife:pot/beet_sugar_freshwater',
+    'firmalife:pot/beet_sugar',
 
     'create:crafting/mechanical_crafting/wand_of_symmetry',
     'create:crafting/kinetics/encased_chain_drive_from_zinc',

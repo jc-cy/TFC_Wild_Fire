@@ -36,6 +36,17 @@
     {
       "element": {
         "element_type": "illagerinvasion:single_pool_element",
+        "location": "wildfire:mineshaft/gabbro/passage_short_0",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 4
+    },
+    {
+      "element": {
+        "element_type": "illagerinvasion:single_pool_element",
         "location": "wildfire:mineshaft/gabbro/passage_short_1",
         "processors": {
           "processors": []
