@@ -2,6 +2,25 @@
 ServerEvents.recipes(event => {
     const create = event.recipes.create
     const id_prefix = 'kubejs:create/reciped/';
+
+
+    event.custom({
+        "type": "vintageimprovements:vacuumizing",
+        "ingredients": [{ "item": "kubejs:unvacuumed_tube" }],
+        "results": [{ "item": "create:electron_tube", "count": 1 }],
+        "processingTime": 40
+    })//真空抽电子管
+    event.custom({
+        "type": "vintageimprovements:vacuumizing",
+        "ingredients": [{ "item": "kubejs:unvacuumed_precision_tube" }],
+        "results": [{ "item": "kubejs:vacuumed_precision_tube", "count": 1 }],
+        "processingTime": 40
+    })//真空抽精密电子管
+
+
+    
+
+
     event.shaped('create:water_wheel',
         [
             'AAA',

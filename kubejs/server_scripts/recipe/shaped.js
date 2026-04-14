@@ -3,6 +3,22 @@ ServerEvents.recipes(event => {
     const id_in = "kubejs:recipe/shaped/"
     event.shaped('minecraft:anvil', ['aaa', ' a ', 'aaa'], { a: 'tfc:metal/double_ingot/cast_iron' })//铁砧
 
+
+event.shaped("kubejs:unvacuumed_tube", ['a', 'b', 'c'], {
+        a: "tfc:empty_jar",
+        b: "create:polished_rose_quartz",
+        c: "kubejs:wrought_iron_fragments",
+
+    })//电子管半成品
+event.shaped("2x kubejs:unvacuumed_precision_tube", ['a', 'b', 'c'], {
+        a: "tfc:empty_jar",
+        b: "create:polished_rose_quartz",
+        c: "vintageimprovements:nickel_wire",
+
+    })//精密电子管半成品
+
+
+
     event.shaped("create:copper_diving_helmet", [' a ', ' b ', 'cdc'], {
         a: "tfc:metal/unfinished_helmet/copper",
         b: "firmalife:reinforced_glass",

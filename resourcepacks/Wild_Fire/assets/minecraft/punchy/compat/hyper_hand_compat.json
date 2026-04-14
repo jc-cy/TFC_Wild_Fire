@@ -38,6 +38,10 @@
           "minecraft:chest",
           "ae2:sky_stone_chest",
           "ae2:smooth_sky_stone_chest",
+          "createutilities:void_chest",
+          "lootr:lootr_chest",
+          "lootr:lootr_trapped_chest",
+          "lootr:lootr_inventory",
           "afc:wood/chest/baobab",
           "afc:wood/chest/eucalyptus",
           "afc:wood/chest/mahogany",
@@ -47,10 +51,7 @@
           "afc:wood/chest/cypress",
           "afc:wood/chest/ironwood",
           "afc:wood/chest/ipe",
-          "createutilities:void_chest",
-          "lootr:lootr_chest",
-          "lootr:lootr_trapped_chest",
-          "lootr:lootr_inventory",
+          "afc:wood/chest/fig",
           "tfc:wood/chest/acacia",
           "tfc:wood/chest/ash",
           "tfc:wood/chest/aspen",
@@ -70,8 +71,7 @@
           "tfc:wood/chest/spruce",
           "tfc:wood/chest/sycamore",
           "tfc:wood/chest/white_cedar",
-          "tfc:wood/chest/willow",
-          "afc:wood/chest/fig"
+          "tfc:wood/chest/willow"
         ],
         "animation": "hand_chest_interact"
       },
