@@ -23,6 +23,7 @@
         "#tfc:in_biome/surface_structures",
         "#tfc:in_biome/strongholds",
         "#tfc:in_biome/veins",
+        "#tfc:in_biome/veins/river",
         "#tfc:in_biome/underground_decoration",
         "#tfc:in_biome/large_features/oceanic_mountain_lake",
         "#tfc:in_biome/surface_decoration/oceanic_mountain_lake",
@@ -411,10 +412,10 @@
                 "maxCount": 3
             },
             {
-            "type": "alexsmobs:bald_eagle",
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 3
+                "type": "alexsmobs:bald_eagle",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 3
             },
             {
                 "type": "tfc:frog",
@@ -424,7 +425,7 @@
             }
         ]
     },
-    "creature_spawn_probability": 0.20,
+    "creature_spawn_probability": 0.2,
     "spawn_costs": {
         "tfc:octopoteuthis": {
             "energy_budget": 0.12,

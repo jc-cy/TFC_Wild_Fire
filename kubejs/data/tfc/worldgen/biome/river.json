@@ -23,6 +23,7 @@
         "#tfc:in_biome/surface_structures",
         "#tfc:in_biome/strongholds",
         "#tfc:in_biome/veins",
+        "#tfc:in_biome/veins/river",
         "#tfc:in_biome/underground_decoration",
         "#tfc:in_biome/large_features/river",
         "#tfc:in_biome/surface_decoration/river",
@@ -398,6 +399,6 @@
             }
         ]
     },
-    "creature_spawn_probability": 0.20,
+    "creature_spawn_probability": 0.2,
     "spawn_costs": {}
 }

@@ -1,0 +1,40 @@
+{
+    "customGroups": [
+        {
+            "name": "eat_long_strip",
+            "items": [
+                "tfc:food/carrot",
+                "farmersdelight:smoked_ham",
+                "tfc:food/maize",
+                "tfc:food/cod",
+                "tfc:food/crappie",
+                "tfc:food/smallmouth_bass",
+                "tfc:food/salmon",
+                "tfc:food/rainbow_trout",
+                "tfc:food/rice",
+                "tfc:food/cooked_duck",
+                "farmersdelight:ham",
+                "tfc:food/largemouth_bass",
+                "tfc:food/duck",
+                "tfc:food/bluegill",
+                "tfc:food/tropical_fish",
+                "tfc:food/wheat",
+                "tfc:food/lake_trout",
+                "tfc:food/oat",
+                "tfc:food/barley"
+            ]
+        }
+    ],
+    "item": {
+        "eat_long_strip": {
+            "disable_sprint_lateral_tilt": true,
+            "customAnimation": [
+                {
+                    "type": "useEat",
+                    "name": "use_eat_long_strip",
+                    "skip_hand_equip": true
+                }
+            ]
+        }
+    }
+}
