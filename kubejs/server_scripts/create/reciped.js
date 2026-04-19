@@ -18,7 +18,41 @@ ServerEvents.recipes(event => {
     })//真空抽精密电子管
 
 
-    
+
+
+    event.custom(
+        {
+            "type": "vintageimprovements:turning",
+            "ingredients": [{ "item": "kubejs:cast_iron_indenter" }],
+            "results": [{ "item": "vintageimprovements:w_shaped_curving_head", "count": 1 }],
+            "processingTime": 200
+        }
+    )//车床加工成型头
+    event.custom(
+        {
+            "type": "vintageimprovements:turning",
+            "ingredients": [{ "item": "kubejs:cast_iron_indenter" }],
+            "results": [{ "item": "vintageimprovements:concave_curving_head", "count": 1 }],
+            "processingTime": 200
+        }
+    )//车床加工成型头
+    event.custom(
+        {
+            "type": "vintageimprovements:turning",
+            "ingredients": [{ "item": "kubejs:cast_iron_indenter" }],
+            "results": [{ "item": "vintageimprovements:convex_curving_head", "count": 1 }],
+            "processingTime": 200
+        }
+    )//车床加工成型头
+    event.custom(
+        {
+            "type": "vintageimprovements:turning",
+            "ingredients": [{ "item": "kubejs:cast_iron_indenter" }],
+            "results": [{ "item": "vintageimprovements:v_shaped_curving_head", "count": 1 }],
+            "processingTime": 200
+        }
+    )//车床加工成型头
+  
 
 
     event.shaped('create:water_wheel',

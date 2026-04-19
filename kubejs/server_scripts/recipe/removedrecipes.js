@@ -13,6 +13,7 @@ ServerEvents.recipes(e => {
  
   const iddd = [
     'tfc:handle',
+    "vintageimprovements:turning/convex_curving_head1",
     'woodencog:crafting/appliances/copper_diving_boots',
     'create:crafting/appliances/copper_diving_boots',
     'woodencog:crafting/appliances/copper_diving_helmet',
