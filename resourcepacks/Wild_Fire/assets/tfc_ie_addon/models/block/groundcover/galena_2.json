@@ -1,6 +1,7 @@
 {
 	"parent": "tfc:block/groundcover/malachite_2",
 	"textures": {
-		"texture": "tfc_ie_addon:block/ore/groundcover_galena_2"
+		"texture": "tfc_ie_addon:block/ore/groundcover_galena_2",
+		"particle": "tfc_ie_addon:item/ore/rich_galena"
 	}
 }

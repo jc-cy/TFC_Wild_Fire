@@ -877,7 +877,7 @@ ServerEvents.recipes(event => {
         "count": 10,
         "item": `firmalife:food/${dough.name1}_dough`
       }]
-    }).id(`create:heatslurry/food/much_${dough.name1}_dough`)
+    }).id(`create:fermenting/food/much_${dough.name1}_dough`)
     event.custom({
       "type": "createdieselgenerators:basin_fermenting",
       "ingredients": [
@@ -888,7 +888,7 @@ ServerEvents.recipes(event => {
         "count": 1,
         "item": `firmalife:food/${dough.name1}_dough`
       }]
-    }).id(`create:heatslurry/food/${dough.name1}_dough`)
+    }).id(`create:fermenting/food/${dough.name1}_dough`)
   });
   //=========================================================
   //=========================================================

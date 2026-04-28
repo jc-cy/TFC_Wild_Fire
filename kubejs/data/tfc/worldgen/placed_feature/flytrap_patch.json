@@ -13,7 +13,7 @@
       "type": "tfc:climate",
       "min_temperature": 13,
       "max_temperature": 40,
-      "min_rainfall": 120,
+      "min_rainfall": 220,
       "max_rainfall": 400,
       "min_forest": "edge",
       "max_forest": "old_growth"

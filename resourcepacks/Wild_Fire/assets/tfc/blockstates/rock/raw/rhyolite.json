@@ -1,9 +1,27 @@
 {
-	"variants": {
-		"": [
-			{
-				"model": "tfc:block/rock/raw/rhyolite"
-			}
-		]
-	}
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/rock/raw/variants/rhyolite_0"
+      },
+      {
+        "model": "tfc:block/rock/raw/variants/rhyolite_1"
+      },
+      {
+        "model": "tfc:block/rock/raw/variants/rhyolite_2"
+      },
+      {
+        "model": "tfc:block/rock/raw/variants/rhyolite_0",
+        "y": 180
+      },
+      {
+        "model": "tfc:block/rock/raw/variants/rhyolite_1",
+        "y": 180
+      },
+      {
+        "model": "tfc:block/rock/raw/variants/rhyolite_2",
+        "y": 180
+      }
+    ]
+  }
 }

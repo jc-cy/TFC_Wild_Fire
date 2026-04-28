@@ -304,6 +304,8 @@ TFCEvents.data(event => {
     "firmalife:food/maize_dough",
     "firmalife:food/rice_dough",
     "firmalife:food/rye_dough",
+    "wildfire:pumpkin_rough_dough",
+    "wildfire:pumpkin_yeast_dough",
     "wildfire:pumpkin_dough"
   ];
   good_dough.forEach(good_dough => {
@@ -406,6 +408,13 @@ TFCEvents.data(event => {
     f.saturation(0.5)
     f.fruit(1)
     f.decayModifier(3)
+  })
+  event.foodItem('wildfire:pumpkin_bread', f => { // 南瓜粗饼
+    f.hunger(4)
+    f.saturation(0.75)
+    f.grain(0.25)
+    f.vegetables(0.25)
+    f.decayModifier(1)
   })
   event.foodItem('wildfire:pumpkin_bread', f => { // 南瓜面包
     f.hunger(4)

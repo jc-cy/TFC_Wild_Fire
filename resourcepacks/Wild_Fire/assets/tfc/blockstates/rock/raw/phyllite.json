@@ -1,12 +1,27 @@
 {
-	"variants": {
-		"": [
-			{
-				"model": "tfc:block/rock/raw/phyllite"
-			},
-			{
-				"model": "tfc:block/rock/raw/mirrored/phyllite"
-			}
-		]
-	}
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/rock/raw/variants/phyllite_0"
+      },
+      {
+        "model": "tfc:block/rock/raw/variants/phyllite_1"
+      },
+      {
+        "model": "tfc:block/rock/raw/variants/phyllite_2"
+      },
+      {
+        "model": "tfc:block/rock/raw/variants/phyllite_0",
+        "y": 180
+      },
+      {
+        "model": "tfc:block/rock/raw/variants/phyllite_1",
+        "y": 180
+      },
+      {
+        "model": "tfc:block/rock/raw/variants/phyllite_2",
+        "y": 180
+      }
+    ]
+  }
 }

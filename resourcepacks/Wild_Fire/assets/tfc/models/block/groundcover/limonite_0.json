@@ -2,7 +2,8 @@
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"texture": "tfc:block/ore/groundcover_limonite"
+		"texture": "tfc:block/ore/groundcover_limonite",
+                   "particle": "tfc:item/ore/rich_limonite"
 	},
 	"elements": [
 		{

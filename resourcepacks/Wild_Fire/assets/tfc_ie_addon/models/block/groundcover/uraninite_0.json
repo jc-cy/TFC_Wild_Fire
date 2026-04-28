@@ -1,6 +1,7 @@
 {
 	"parent": "tfc:block/groundcover/native_gold_0",	
 	"textures": {
-		"texture": "tfc_ie_addon:block/ore/groundcover_uraninite"
+		"texture": "tfc_ie_addon:block/ore/groundcover_uraninite",
+		"particle": "tfc_ie_addon:item/ore/rich_uraninite"
 	}
 }

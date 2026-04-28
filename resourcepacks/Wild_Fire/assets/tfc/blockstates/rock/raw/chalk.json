@@ -2,17 +2,24 @@
   "variants": {
     "": [
       {
-        "model": "tfc:block/rock/raw/chalk"
+        "model": "tfc:block/rock/raw/variants/chalk_0"
       },
       {
-        "model": "tfc:block/rock/raw/chalk_mirrored"
+        "model": "tfc:block/rock/raw/variants/chalk_1"
       },
       {
-        "model": "tfc:block/rock/raw/chalk",
+        "model": "tfc:block/rock/raw/variants/chalk_2"
+      },
+      {
+        "model": "tfc:block/rock/raw/variants/chalk_0",
         "y": 180
       },
       {
-        "model": "tfc:block/rock/raw/chalk_mirrored",
+        "model": "tfc:block/rock/raw/variants/chalk_1",
+        "y": 180
+      },
+      {
+        "model": "tfc:block/rock/raw/variants/chalk_2",
         "y": 180
       }
     ]

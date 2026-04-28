@@ -2,17 +2,24 @@
   "variants": {
     "": [
       {
-        "model": "tfc:block/rock/raw/dacite"
+        "model": "tfc:block/rock/raw/variants/dacite_0"
       },
       {
-        "model": "tfc:block/rock/raw/dacite_mirrored"
+        "model": "tfc:block/rock/raw/variants/dacite_1"
       },
       {
-        "model": "tfc:block/rock/raw/dacite",
+        "model": "tfc:block/rock/raw/variants/dacite_2"
+      },
+      {
+        "model": "tfc:block/rock/raw/variants/dacite_0",
         "y": 180
       },
       {
-        "model": "tfc:block/rock/raw/dacite_mirrored",
+        "model": "tfc:block/rock/raw/variants/dacite_1",
+        "y": 180
+      },
+      {
+        "model": "tfc:block/rock/raw/variants/dacite_2",
         "y": 180
       }
     ]

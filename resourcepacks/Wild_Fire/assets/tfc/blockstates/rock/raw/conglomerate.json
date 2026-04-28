@@ -2,76 +2,25 @@
   "variants": {
     "": [
       {
-        "model": "tfc:block/rock/raw/conglomerate"
+        "model": "tfc:block/rock/raw/variants/conglomerate_0"
       },
       {
-        "model": "tfc:block/rock/raw/conglomerate",
-        "x": 90
+        "model": "tfc:block/rock/raw/variants/conglomerate_1"
       },
       {
-        "model": "tfc:block/rock/raw/conglomerate",
-        "x": 180
+        "model": "tfc:block/rock/raw/variants/conglomerate_2"
       },
       {
-        "model": "tfc:block/rock/raw/conglomerate",
-        "x": 270
-      },
-      {
-        "model": "tfc:block/rock/raw/conglomerate",
-        "y": 90
-      },
-      {
-        "model": "tfc:block/rock/raw/conglomerate",
-        "x": 90,
-        "y": 90
-      },
-      {
-        "model": "tfc:block/rock/raw/conglomerate",
-        "x": 180,
-        "y": 90
-      },
-      {
-        "model": "tfc:block/rock/raw/conglomerate",
-        "x": 270,
-        "y": 90
-      },
-      {
-        "model": "tfc:block/rock/raw/conglomerate",
+        "model": "tfc:block/rock/raw/variants/conglomerate_0",
         "y": 180
       },
       {
-        "model": "tfc:block/rock/raw/conglomerate",
-        "x": 90,
+        "model": "tfc:block/rock/raw/variants/conglomerate_1",
         "y": 180
       },
       {
-        "model": "tfc:block/rock/raw/conglomerate",
-        "x": 180,
+        "model": "tfc:block/rock/raw/variants/conglomerate_2",
         "y": 180
-      },
-      {
-        "model": "tfc:block/rock/raw/conglomerate",
-        "x": 270,
-        "y": 180
-      },
-      {
-        "model": "tfc:block/rock/raw/conglomerate",
-        "y": 270
-      },
-      {
-        "model": "tfc:block/rock/raw/conglomerate",
-        "x": 90,
-        "y": 270
-      },
-      {
-        "model": "tfc:block/rock/raw/conglomerate",
-        "x": 180,
-        "y": 270
-      },
-      {
-        "model": "tfc:block/rock/raw/conglomerate",
-        "x": 270,
-        "y": 270
       }
     ]
   }

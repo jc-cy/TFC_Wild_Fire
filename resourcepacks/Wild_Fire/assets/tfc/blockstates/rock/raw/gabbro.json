@@ -2,76 +2,25 @@
   "variants": {
     "": [
       {
-        "model": "tfc:block/rock/raw/gabbro"
+        "model": "tfc:block/rock/raw/variants/gabbro_0"
       },
       {
-        "model": "tfc:block/rock/raw/gabbro",
-        "x": 90
+        "model": "tfc:block/rock/raw/variants/gabbro_1"
       },
       {
-        "model": "tfc:block/rock/raw/gabbro",
-        "x": 180
+        "model": "tfc:block/rock/raw/variants/gabbro_2"
       },
       {
-        "model": "tfc:block/rock/raw/gabbro",
-        "x": 270
-      },
-      {
-        "model": "tfc:block/rock/raw/gabbro",
-        "y": 90
-      },
-      {
-        "model": "tfc:block/rock/raw/gabbro",
-        "x": 90,
-        "y": 90
-      },
-      {
-        "model": "tfc:block/rock/raw/gabbro",
-        "x": 180,
-        "y": 90
-      },
-      {
-        "model": "tfc:block/rock/raw/gabbro",
-        "x": 270,
-        "y": 90
-      },
-      {
-        "model": "tfc:block/rock/raw/gabbro",
+        "model": "tfc:block/rock/raw/variants/gabbro_0",
         "y": 180
       },
       {
-        "model": "tfc:block/rock/raw/gabbro",
-        "x": 90,
+        "model": "tfc:block/rock/raw/variants/gabbro_1",
         "y": 180
       },
       {
-        "model": "tfc:block/rock/raw/gabbro",
-        "x": 180,
+        "model": "tfc:block/rock/raw/variants/gabbro_2",
         "y": 180
-      },
-      {
-        "model": "tfc:block/rock/raw/gabbro",
-        "x": 270,
-        "y": 180
-      },
-      {
-        "model": "tfc:block/rock/raw/gabbro",
-        "y": 270
-      },
-      {
-        "model": "tfc:block/rock/raw/gabbro",
-        "x": 90,
-        "y": 270
-      },
-      {
-        "model": "tfc:block/rock/raw/gabbro",
-        "x": 180,
-        "y": 270
-      },
-      {
-        "model": "tfc:block/rock/raw/gabbro",
-        "x": 270,
-        "y": 270
       }
     ]
   }

@@ -2,17 +2,24 @@
   "variants": {
     "": [
       {
-        "model": "tfc:block/rock/raw/schist"
+        "model": "tfc:block/rock/raw/variants/schist_0"
       },
       {
-        "model": "tfc:block/rock/raw/schist_mirrored"
+        "model": "tfc:block/rock/raw/variants/schist_1"
       },
       {
-        "model": "tfc:block/rock/raw/schist",
+        "model": "tfc:block/rock/raw/variants/schist_2"
+      },
+      {
+        "model": "tfc:block/rock/raw/variants/schist_0",
         "y": 180
       },
       {
-        "model": "tfc:block/rock/raw/schist_mirrored",
+        "model": "tfc:block/rock/raw/variants/schist_1",
+        "y": 180
+      },
+      {
+        "model": "tfc:block/rock/raw/variants/schist_2",
         "y": 180
       }
     ]

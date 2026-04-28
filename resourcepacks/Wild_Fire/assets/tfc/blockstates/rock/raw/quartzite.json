@@ -2,76 +2,25 @@
   "variants": {
     "": [
       {
-        "model": "tfc:block/rock/raw/quartzite"
+        "model": "tfc:block/rock/raw/variants/quartzite_0"
       },
       {
-        "model": "tfc:block/rock/raw/quartzite",
-        "x": 90
+        "model": "tfc:block/rock/raw/variants/quartzite_1"
       },
       {
-        "model": "tfc:block/rock/raw/quartzite",
-        "x": 180
+        "model": "tfc:block/rock/raw/variants/quartzite_2"
       },
       {
-        "model": "tfc:block/rock/raw/quartzite",
-        "x": 270
-      },
-      {
-        "model": "tfc:block/rock/raw/quartzite",
-        "y": 90
-      },
-      {
-        "model": "tfc:block/rock/raw/quartzite",
-        "x": 90,
-        "y": 90
-      },
-      {
-        "model": "tfc:block/rock/raw/quartzite",
-        "x": 180,
-        "y": 90
-      },
-      {
-        "model": "tfc:block/rock/raw/quartzite",
-        "x": 270,
-        "y": 90
-      },
-      {
-        "model": "tfc:block/rock/raw/quartzite",
+        "model": "tfc:block/rock/raw/variants/quartzite_0",
         "y": 180
       },
       {
-        "model": "tfc:block/rock/raw/quartzite",
-        "x": 90,
+        "model": "tfc:block/rock/raw/variants/quartzite_1",
         "y": 180
       },
       {
-        "model": "tfc:block/rock/raw/quartzite",
-        "x": 180,
+        "model": "tfc:block/rock/raw/variants/quartzite_2",
         "y": 180
-      },
-      {
-        "model": "tfc:block/rock/raw/quartzite",
-        "x": 270,
-        "y": 180
-      },
-      {
-        "model": "tfc:block/rock/raw/quartzite",
-        "y": 270
-      },
-      {
-        "model": "tfc:block/rock/raw/quartzite",
-        "x": 90,
-        "y": 270
-      },
-      {
-        "model": "tfc:block/rock/raw/quartzite",
-        "x": 180,
-        "y": 270
-      },
-      {
-        "model": "tfc:block/rock/raw/quartzite",
-        "x": 270,
-        "y": 270
       }
     ]
   }

@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:powder/uraninite"
+          "name": "tfc_ie_addon:powder/uraninite"
         }
       ]
     },

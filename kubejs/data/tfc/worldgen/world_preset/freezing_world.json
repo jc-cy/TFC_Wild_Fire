@@ -33,7 +33,8 @@
                             "phyllite": "tfc:phyllite",
                             "schist": "tfc:schist",
                             "gneiss": "tfc:gneiss",
-                            "marble": "tfc:marble"
+                            "marble": "tfc:marble",
+                            "tuff": "tfc:tuff"
                         },
                         "bottom": [
                             "gneiss",
@@ -64,34 +65,33 @@
                             {
                                 "id": "igneous_extrusive",
                                 "layers": {
-                                    "rhyolite": "felsic",
                                     "andesite": "intermediate",
+                                    "basalt": "mafic",
                                     "dacite": "intermediate",
-                                    "basalt": "mafic"
+                                    "rhyolite": "felsic"
                                 }
                             },
                             {
                                 "id": "igneous_extrusive_x2",
                                 "layers": {
-                                    "rhyolite": "igneous_extrusive",
                                     "andesite": "igneous_extrusive",
+                                    "basalt": "igneous_extrusive",
                                     "dacite": "igneous_extrusive",
-                                    "basalt": "igneous_extrusive"
+                                    "rhyolite": "igneous_extrusive"
                                 }
                             },
                             {
-                                "id": "phyllite",
+                                "id": "high_grade",
                                 "layers": {
-                                    "phyllite": "bottom",
                                     "gneiss": "bottom",
                                     "schist": "bottom"
                                 }
                             },
                             {
-                                "id": "slate",
+                                "id": "low_grade",
                                 "layers": {
-                                    "slate": "bottom",
-                                    "phyllite": "phyllite"
+                                    "phyllite": "high_grade",
+                                    "slate": "high_grade"
                                 }
                             },
                             {
@@ -109,24 +109,25 @@
                             {
                                 "id": "sedimentary",
                                 "layers": {
-                                    "shale": "slate",
-                                    "claystone": "slate",
-                                    "conglomerate": "slate",
-                                    "limestone": "marble",
-                                    "dolomite": "marble",
                                     "chalk": "marble",
-                                    "chert": "quartzite"
+                                    "chert": "quartzite",
+                                    "claystone": "low_grade",
+                                    "conglomerate": "low_grade",
+                                    "dolomite": "marble",
+                                    "limestone": "marble",
+                                    "shale": "low_grade"
                                 }
                             },
                             {
                                 "id": "uplift",
                                 "layers": {
-                                    "slate": "phyllite",
+                                    "diorite": "low_grade",
+                                    "gabbro": "low_grade",
+                                    "granite": "low_grade",
                                     "marble": "bottom",
+                                    "phyllite": "high_grade",
                                     "quartzite": "bottom",
-                                    "diorite": "sedimentary",
-                                    "granite": "sedimentary",
-                                    "gabbro": "sedimentary"
+                                    "slate": "high_grade"
                                 }
                             }
                         ],
@@ -146,11 +147,11 @@
                             "uplift"
                         ]
                     },
-                    "temperature_constant":-1,
+                    "temperature_constant": -1,
                     "temperature_scale": 0,
                     "rainfall_scale": 20000,
                     "flat_bedrock": false,
-                    "continentalness": 0.2
+                    "continentalness": 0.5
                 }
             }
         },

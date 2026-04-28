@@ -2,76 +2,25 @@
   "variants": {
     "": [
       {
-        "model": "tfc:block/rock/raw/limestone"
+        "model": "tfc:block/rock/raw/variants/limestone_0"
       },
       {
-        "model": "tfc:block/rock/raw/limestone",
-        "x": 90
+        "model": "tfc:block/rock/raw/variants/limestone_1"
       },
       {
-        "model": "tfc:block/rock/raw/limestone",
-        "x": 180
+        "model": "tfc:block/rock/raw/variants/limestone_2"
       },
       {
-        "model": "tfc:block/rock/raw/limestone",
-        "x": 270
-      },
-      {
-        "model": "tfc:block/rock/raw/limestone",
-        "y": 90
-      },
-      {
-        "model": "tfc:block/rock/raw/limestone",
-        "x": 90,
-        "y": 90
-      },
-      {
-        "model": "tfc:block/rock/raw/limestone",
-        "x": 180,
-        "y": 90
-      },
-      {
-        "model": "tfc:block/rock/raw/limestone",
-        "x": 270,
-        "y": 90
-      },
-      {
-        "model": "tfc:block/rock/raw/limestone",
+        "model": "tfc:block/rock/raw/variants/limestone_0",
         "y": 180
       },
       {
-        "model": "tfc:block/rock/raw/limestone",
-        "x": 90,
+        "model": "tfc:block/rock/raw/variants/limestone_1",
         "y": 180
       },
       {
-        "model": "tfc:block/rock/raw/limestone",
-        "x": 180,
+        "model": "tfc:block/rock/raw/variants/limestone_2",
         "y": 180
-      },
-      {
-        "model": "tfc:block/rock/raw/limestone",
-        "x": 270,
-        "y": 180
-      },
-      {
-        "model": "tfc:block/rock/raw/limestone",
-        "y": 270
-      },
-      {
-        "model": "tfc:block/rock/raw/limestone",
-        "x": 90,
-        "y": 270
-      },
-      {
-        "model": "tfc:block/rock/raw/limestone",
-        "x": 180,
-        "y": 270
-      },
-      {
-        "model": "tfc:block/rock/raw/limestone",
-        "x": 270,
-        "y": 270
       }
     ]
   }

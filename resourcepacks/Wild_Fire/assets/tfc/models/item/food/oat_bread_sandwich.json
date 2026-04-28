@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "textures": {
+		"particle": "tfc:item/food/oat_bread_sandwich"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_oat_bread_sandwich"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/oat_bread_sandwich_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_oat_bread_sandwich"
+        },
+        "fixed": {
+            "parent": "kubejs:block/coaster_oat_bread_sandwich"
+        }
+    }
+}

@@ -2,17 +2,24 @@
   "variants": {
     "": [
       {
-        "model": "tfc:block/rock/raw/chert"
+        "model": "tfc:block/rock/raw/variants/chert_0"
       },
       {
-        "model": "tfc:block/rock/raw/chert_mirrored"
+        "model": "tfc:block/rock/raw/variants/chert_1"
       },
       {
-        "model": "tfc:block/rock/raw/chert",
+        "model": "tfc:block/rock/raw/variants/chert_2"
+      },
+      {
+        "model": "tfc:block/rock/raw/variants/chert_0",
         "y": 180
       },
       {
-        "model": "tfc:block/rock/raw/chert_mirrored",
+        "model": "tfc:block/rock/raw/variants/chert_1",
+        "y": 180
+      },
+      {
+        "model": "tfc:block/rock/raw/variants/chert_2",
         "y": 180
       }
     ]
