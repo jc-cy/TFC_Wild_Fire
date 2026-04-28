@@ -51,9 +51,6 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "kaleidoscopetfctavern": {
-    "grape_climate": true
-  },
   "jadeaddons.create": {
     "filter": true,
     "backtank_capacity": true,
@@ -70,10 +67,6 @@
   "immersiveengineering": {
     "multiblock_icon": true
   },
-  "mbd2thread": {
-    "long_fe_energy_hud": true,
-    "recipe_thread_hud": true
-  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -81,12 +74,6 @@
     "coordinates": false,
     "registry_name": "OFF",
     "mod_name": false
-  },
-  "functionalstorage": {
-    "armory": true
-  },
-  "balm": {
-    "jade": true
   },
   "ae2": {
     "part_icon": true,
@@ -103,6 +90,29 @@
   "mbd2": {
     "recipe_logic_provider": true,
     "multiblock_provider": true
+  },
+  "kaleidoscope_tavern": {
+    "barrel": true
+  },
+  "afc": {
+    "tap": true
+  },
+  "tfc_farm_charm": {
+    "decaying": true,
+    "crate": true
+  },
+  "kaleidoscopetfctavern": {
+    "grape_climate": true
+  },
+  "mbd2thread": {
+    "long_fe_energy_hud": true,
+    "recipe_thread_hud": true
+  },
+  "functionalstorage": {
+    "armory": true
+  },
+  "balm": {
+    "jade": true
   },
   "firmalife": {
     "barrel_press": true,
@@ -197,17 +207,11 @@
   "petrolpark": {
     "contamination": true
   },
-  "kaleidoscope_tavern": {
-    "barrel": true
-  },
   "survivorsdelight": {
     "feast_decay": true
   },
   "corpse": {
     "corpse": true
-  },
-  "afc": {
-    "tap": true
   },
   "tfc_support_indicator": {
     "support_indicator": true

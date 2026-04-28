@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "textures": {
+        "particle": "kubejs:item/food/baked_green_apple"
+    },
+    "base": {
+        "parent": "kubejs:block/coaster_baked_green_apple"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "wildfire:item/baked_green_apple_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_baked_green_apple"
+        },
+        "fixed": {
+            "parent": "kubejs:block/coaster_baked_green_apple"
+        }
+    }
+}
