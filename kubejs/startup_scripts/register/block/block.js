@@ -351,7 +351,7 @@ StartupEvents.registry('block', event => {
                 .texture("south", 'kubejs:block/super_support_block_side')
                 .hardness(-1)
                 .noDrops()
-        // 结构用缠根壤土支撑方块 
+        // 结构用缠根新成土支撑方块 
         event.create('kubejs:suppors_rooted_dirt/loam', 'basic')
                 .textureAll("tfc:block/rooted_dirt/loam")
                 .tagBlock('minecraft:mineable/shovel')

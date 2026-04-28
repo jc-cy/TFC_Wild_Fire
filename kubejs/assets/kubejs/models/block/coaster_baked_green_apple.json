@@ -1,0 +1,7 @@
+{
+	"parent": "kubejs:block/coaster_baked_red_apple",
+	"textures": {
+		"particle": "kubejs:block/baked_green_apple",
+		"1": "kubejs:block/baked_green_apple"
+	}
+}

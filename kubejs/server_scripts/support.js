@@ -38,7 +38,7 @@ TFCEvents.data(event => {
         event.support([
            "kubejs:super_support_block"
         ], 10, 10, 25)
-    //结构用缠根壤土支撑方块
+    //结构用缠根新成土支撑方块
         event.support([
            "kubejs:suppors_rooted_dirt/loam"
         ], 0, 0, 8)

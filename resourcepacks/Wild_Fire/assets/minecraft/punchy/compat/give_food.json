@@ -1,0 +1,71 @@
+{
+    "customGroups": [
+        {
+            "name": "food",
+            "items": [
+                "firmalife:food/rice",
+                "firmalife:food/rye",
+                "firmalife:food/wheat",
+                "firmalife:food/oat",
+                "firmalife:food/maize",
+                "firmalife:food/barley",
+                "firmalife:food/rice_grain",
+                "firmalife:food/rye_grain",
+                "firmalife:food/wheat_grain",
+                "firmalife:food/oat_grain",
+                "firmalife:food/maize_grain",
+                "firmalife:food/barley_grain",
+                "tfc:food/blackberry",
+                "tfc:food/blueberry",
+                "tfc:food/bunchberry",
+                "tfc:food/cloudberry",
+                "tfc:food/cranberry",
+                "tfc:food/elderberry",
+                "tfc:food/gooseberry",
+                "tfc:food/raspberry",
+                "tfc:food/snowberry",
+                "tfc:food/strawberry",
+                "tfc:food/wintergreen_berry",
+                "tfc:food/cherry",
+                "tfc:food/green_apple",
+                "tfc:food/lemon",
+                "tfc:food/olive",
+                "tfc:food/orange",
+                "tfc:food/peach",
+                "tfc:food/plum",
+                "tfc:food/red_apple",
+                "tfc:food/pumpkin_chunks",
+                "tfc:food/melon_slice",
+                "tfc:food/pumpkin_chunks",
+                "tfc:food/beet",
+                "tfc:food/cabbage",
+                "tfc:food/carrot",
+                "tfc:food/garlic",
+                "tfc:food/green_bean",
+                "tfc:food/green_bell_pepper",
+                "tfc:food/onion ",
+                "tfc:food/potato",
+                "tfc:food/baked_potato",
+                "tfc:food/red_bell_pepper",
+                "tfc:food/soybean",
+                "tfc:food/sugarcane",
+                "tfc:food/squash",
+                "tfc:food/tomato",
+                "tfc:food/yellow_bell_pepper",
+                "tfc:food/cattail_root",
+                "tfc:food/taro_root",
+                "tfc:food/dried_kelp"
+            ]
+        }
+    ],
+    "item": {
+        "food": {
+            "customAnimation": [
+                {
+                    "type": "useItem",
+                    "name": "give_food"
+                }
+            ]
+        }
+    }
+}
