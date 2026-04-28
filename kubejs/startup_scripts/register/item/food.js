@@ -287,6 +287,20 @@ StartupEvents.registry('item', event => {
 		foodBuilder.hunger(2)
 		foodBuilder.saturation(0.2)
 	})
+	//食物：南瓜生面团
+	event.create("wildfire:pumpkin_rough_dough")
+    .texture("kubejs:item/food/pumpkin_rough_dough")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(1)
+		foodBuilder.saturation(0.1)
+	})
+	//食物：南瓜酵母面团
+	event.create("wildfire:pumpkin_yeast_dough")
+    .texture("kubejs:item/food/pumpkin_yeast_dough")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(1)
+		foodBuilder.saturation(0.1)
+	})
 	//食物：南瓜面团
 	event.create("wildfire:pumpkin_dough")
     .texture("kubejs:item/food/pumpkin_dough")
@@ -294,9 +308,38 @@ StartupEvents.registry('item', event => {
 		foodBuilder.hunger(1)
 		foodBuilder.saturation(0.1)
 	})
+	//食物：南瓜粗饼
+	event.create("wildfire:pumpkin_flatbread")
+    .texture("kubejs:item/food/pumpkin_flatbread")
+	.tag("wildfire:pumpkin_bread")
+	.tag("tfc_farm_charm:bread")
+	.tag("tfc:foods/breads")
+	.tag("loot:breads")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(4)
+		foodBuilder.saturation(0.4)
+	})
 	//食物：南瓜面包
 	event.create("wildfire:pumpkin_bread")
     .texture("kubejs:item/food/pumpkin_bread")
+	.tag("wildfire:pumpkin_bread")
+	.tag("tfc_farm_charm:bread")
+	.tag("tfc:foods/breads")
+	.tag("loot:breads")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(4)
+		foodBuilder.saturation(0.4)
+	})
+	//食物：南瓜面包三明治
+	event.create("wildfire:pumpkin_bread_sandwich")
+    .texture("kubejs:item/food/pumpkin_bread_sandwich")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(4)
+		foodBuilder.saturation(0.4)
+	})
+	//食物：南瓜面包果酱三明治
+	event.create("wildfire:pumpkin_bread_jam_sandwich")
+    .texture("kubejs:item/food/pumpkin_bread_jam_sandwich")
 	.food(foodBuilder=>{
 		foodBuilder.hunger(4)
 		foodBuilder.saturation(0.4)
@@ -304,6 +347,10 @@ StartupEvents.registry('item', event => {
 	//食物：南瓜面包片
 	event.create("wildfire:pumpkin_bread_slice")
     .texture("kubejs:item/food/pumpkin_bread_slice")
+	.tag("wildfire:pumpkin_bread")
+	.tag("tfc_farm_charm:bread")
+	.tag("tfc:foods/breads")
+	.tag("loot:breads")
 	.food(foodBuilder=>{
 		foodBuilder.hunger(2)
 		foodBuilder.saturation(0.2)
