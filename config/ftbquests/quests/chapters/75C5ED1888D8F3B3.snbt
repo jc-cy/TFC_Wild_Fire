@@ -2051,7 +2051,16 @@
 			dependencies: ["193B3FD792076CDE"]
 			description: ["来吧！酿造一些啤酒来让你的原始生活来点迷幻色彩！"]
 			hide_until_deps_complete: true
-			icon: "brewery:beer_wheat"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: -2L
+						traits: [ ]
+					}
+				}
+				id: "brewery:beer_wheat"
+			}
 			id: "2B995E82D9168DB4"
 			rewards: [{
 				id: "589DD09C2B270885"
