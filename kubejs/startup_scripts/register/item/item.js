@@ -158,11 +158,11 @@ StartupEvents.registry('item', event => {
     event.create('unvacuumed_precision_tube', 'basic').texture('kubejs:item/unvacuumed_precision_tube'); // 未抽真空的精密电子管
     event.create('vacuumed_precision_tube', 'basic').texture('kubejs:item/vacuumed_precision_tube'); // 抽真空的精密电子管
 
-    event.create('leather_hot_water_bag', 'basic').texture('kubejs:item/tfc/leather_hot_water_bag').maxStackSize(1);// 皮革热水袋
-    event.create('rubber_hot_water_bag', 'basic').texture('kubejs:item/tfc/rubber_hot_water_bag').maxStackSize(1);// 橡胶热水袋
-    event.create('metal_hot_water_bag', 'basic').texture('kubejs:item/tfc/metal_hot_water_bag').maxStackSize(1);// 金属热水袋
+    event.create('leather_hot_water_bag', 'basic').texture('kubejs:item/tfc/leather_hot_water_bag').maxStackSize(1).tag("kubejs:hot_water_bottle");// 皮革热水袋
+    event.create('rubber_hot_water_bag', 'basic').texture('kubejs:item/tfc/rubber_hot_water_bag').maxStackSize(1).tag("kubejs:hot_water_bottle");// 橡胶热水袋
+    event.create('metal_hot_water_bag', 'basic').texture('kubejs:item/tfc/metal_hot_water_bag').maxStackSize(1).tag("kubejs:hot_water_bottle");// 金属热水袋
     event.create('warm_warmer', 'basic').texture('kubejs:item/tfc/warm_warmer').maxStackSize(4);//暖手宝
-    event.create('heating_warmer', 'basic').texture('kubejs:item/tfc/heating_warmer').maxStackSize(4);//暖手宝
+    event.create('heating_warmer', 'basic').texture('kubejs:item/tfc/heating_warmer').maxStackSize(1).tag("kubejs:hot_water_bottle");//暖手宝
 
 
     event.create('kubejs:tfc/crushed_sinew', 'basic').texture('kubejs:item/tfc/crushed_sinew'); // 捣碎的筋腱
