@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
 
     const rock = [//石质
         { rock: "diamond", name: "diamond", num: 350 },
-        { rock: "obsidian", name: "obsidian_shards", num: 125 },
+        { rock: "obsidian", name: "obsidian_shards", num: 40 },
         { rock: "flint", name: "flint", num: 60 }
 
     ]
@@ -197,7 +197,7 @@ ServerEvents.recipes(event => {
     ]
     const { advanced_shapeless_crafting } = event.recipes.tfc
 
-    metals.forEach(metal => {
+    metals.forEach(metal => {//绳子
         tools.forEach(tools => {
             advanced_shapeless_crafting(
                 TFC.itemStackProvider.of(`tfc:metal/${tools.name}/${metal}`, ['kubejs:binding_bonus']),
@@ -207,11 +207,40 @@ ServerEvents.recipes(event => {
                     '#forge:rods/wooden'
                 ],
                 `tfc:metal/${tools.type}/${metal}`
-            ).id(`tfc:metal/binding_bonus/${tools.name}/${metal}`)
+            ).id(`tfc:metal/binding_bonus/${tools.name}/${metal}_bindings`)
 
         })
     })
-     metals.forEach(metal => {
+    metals.forEach(metal => {//螺栓
+        tools.forEach(tools => {
+            advanced_shapeless_crafting(
+                TFC.itemStackProvider.of(`tfc:metal/${tools.name}/${metal}`, ['kubejs:binding_bonus']),
+                [
+                    `tfc:metal/${tools.type}/${metal}`,
+                    '#kubejs:bolts',
+                    '#forge:rods/wooden'
+                ],
+                `tfc:metal/${tools.type}/${metal}`
+            ).id(`tfc:metal/binding_bonus/${tools.name}/${metal}_bolts`)
+
+        })
+    })
+
+     metals.forEach(metal => {//钉子
+        tools.forEach(tools => {
+            advanced_shapeless_crafting(
+                TFC.itemStackProvider.of(`tfc:metal/${tools.name}/${metal}`, ['kubejs:binding_bonus']),
+                [
+                    `tfc:metal/${tools.type}/${metal}`,
+                    '#kubejs:nails',
+                    '#forge:rods/wooden'
+                ],
+                `tfc:metal/${tools.type}/${metal}`
+            ).id(`tfc:metal/binding_bonus/${tools.name}/${metal}_nails`)
+
+        })
+    })
+     metals.forEach(metal => {//无
         tools.forEach(tools => {
             advanced_shapeless_crafting(
                 TFC.itemStackProvider.of(`tfc:metal/${tools.name}/${metal}`, ['kubejs:binding_bonus']),

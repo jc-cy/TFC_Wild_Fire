@@ -5,6 +5,9 @@ const toolMetals = ['bismuth_bronze', 'black_bronze', 'bronze', 'copper', 'wroug
 
 // 工具头可淬火
 ServerEvents.tags("item", event => {
+
+    event.add('kubejs:bolts', "firmaciv:copper_bolt");
+
     // 1. 定义基础数据：工具头模板（金属名用 {metal} 占位） + 金属列表
     const toolHeadTemplates = [
         'tfc_hammer_time:metal/excavator_head/{metal}',
@@ -267,13 +270,13 @@ ServerEvents.tags("block", event => {
             "tfc:wood/trapped_chest/willow"
         ]
     ),
-        event.add('tfc:bloomery_insulation','tfc:charcoal_pile' ),
-        event.add('tfc:forge_insulation','tfc:charcoal_pile' ),
-        event.add('tfc:bloomery_insulation','tfc:charcoal_forge' ),
-        event.add('tfc:forge_insulation','tfc:charcoal_forge' ),
+        event.add('tfc:bloomery_insulation', 'tfc:charcoal_pile'),
+        event.add('tfc:forge_insulation', 'tfc:charcoal_pile'),
+        event.add('tfc:bloomery_insulation', 'tfc:charcoal_forge'),
+        event.add('tfc:forge_insulation', 'tfc:charcoal_forge'),
 
-        event.add('minecraft:mineable/axe','simplytents:tent_roof_block' ),
-        event.add('tfc:needs_copper_tool','simplytents:tent_roof_block' )
+        event.add('minecraft:mineable/axe', 'simplytents:tent_roof_block'),
+        event.add('tfc:needs_copper_tool', 'simplytents:tent_roof_block')
 }),
     /*
     ,

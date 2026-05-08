@@ -18,7 +18,77 @@ ServerEvents.recipes(event => {
     })//真空抽精密电子管
 
 
+    event.custom(
+        {
+            "type": "vintageimprovements:turning",
+            "ingredients": [{ "item": "tfc:metal/rod/copper" }],
+            "results": [{ "item": "firmaciv:copper_bolt", "count": 2 }],
+            "processingTime": 200
+        }
+    )//车床加工螺栓
+    // 青铜螺栓 车床加工
+    event.custom({
+        "type": "vintageimprovements:turning",
+        "ingredients": [{ "item": "tfc:metal/rod/bronze" }],
+        "results": [{ "item": "kubejs:bronze_bolt", "count": 2 }],
+        "processingTime": 200
+    })
 
+    // 黑铜螺栓 车床加工
+    event.custom({
+        "type": "vintageimprovements:turning",
+        "ingredients": [{ "item": "tfc:metal/rod/black_bronze" }],
+        "results": [{ "item": "kubejs:black_bronze_bolt", "count": 2 }],
+        "processingTime": 200
+    })
+
+    // 铋铜螺栓 车床加工
+    event.custom({
+        "type": "vintageimprovements:turning",
+        "ingredients": [{ "item": "tfc:metal/rod/bismuth_bronze" }],
+        "results": [{ "item": "kubejs:bismuth_bronze_bolt", "count": 2 }],
+        "processingTime": 200
+    })
+
+    // 锻铁螺栓 车床加工
+    event.custom({
+        "type": "vintageimprovements:turning",
+        "ingredients": [{ "item": "tfc:metal/rod/wrought_iron" }],
+        "results": [{ "item": "kubejs:wrought_iron_bolt", "count": 2 }],
+        "processingTime": 200
+    })
+
+    // 钢螺栓 车床加工
+    event.custom({
+        "type": "vintageimprovements:turning",
+        "ingredients": [{ "item": "tfc:metal/rod/steel" }],
+        "results": [{ "item": "kubejs:steel_bolt", "count": 2 }],
+        "processingTime": 200
+    })
+
+    // 不锈钢螺栓 车床加工
+    event.custom({
+        "type": "vintageimprovements:turning",
+        "ingredients": [{ "item": "tfc:metal/rod/stainless_steel" }],
+        "results": [{ "item": "kubejs:stainless_steel_bolt", "count": 2 }],
+        "processingTime": 200
+    }) 
+
+    // 高锰钢螺栓 车床加工
+    event.custom({
+        "type": "vintageimprovements:turning",
+        "ingredients": [{ "item": "tfc:metal/rod/high_manganese_steel" }],
+        "results": [{ "item": "kubejs:high_manganese_steel_bolt", "count": 2 }],
+        "processingTime": 200
+    })
+
+    // 钛合金螺栓 车床加工
+    event.custom({
+        "type": "vintageimprovements:turning",
+        "ingredients": [{ "item": "tfc:metal/rod/titanium" }],
+        "results": [{ "item": "kubejs:titanium_alloy_bolt", "count": 2 }],
+        "processingTime": 200
+    })
 
     event.custom(
         {
@@ -52,7 +122,7 @@ ServerEvents.recipes(event => {
             "processingTime": 200
         }
     )//车床加工成型头
-  
+
 
 
     event.shaped('create:water_wheel',

@@ -286,9 +286,15 @@ event.shaped("2x kubejs:unvacuumed_precision_tube", ['a', 'b', 'c'], {
 
     event.shaped('minecraft:chest', ['aaa', 'bcb', 'aaa'], {
         a: '#tfc:lumber',
-        b: 'firmaciv:copper_bolt',
-        c: '#tfc:saws'
-    }).damageIngredient({ tag: '#tfc:saws' }, 5) //箱子合成
+        b: '#kubejs:bolts',
+        c: '#tfc:hammers'
+    }).damageIngredient({ tag: '#tfc:hammers' }, 5) //箱子合成
+
+    event.shaped('minecraft:chest', ['aaa', 'bcb', 'aaa'], {
+        a: '#tfc:lumber',
+        b: '#kubejs:nails',
+        c: '#tfc:hammers'
+    }).damageIngredient({ tag: '#tfc:hammers'}, 5) //箱子合成2
 
     event.shaped('minecraft:barrel', ['aba', 'aca', 'aba'], {
         a: '#tfc:lumber',
