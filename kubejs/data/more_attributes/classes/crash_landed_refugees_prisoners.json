@@ -15,10 +15,6 @@
         {
             "item": "kubejs:homemade_lockpick",
             "count": 1
-        },
-        {
-            "item": "butcher:cookedsilverfishchunks",
-            "count": 4
         }
     ],
     "displayCondition": []

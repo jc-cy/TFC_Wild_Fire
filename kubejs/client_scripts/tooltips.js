@@ -5,7 +5,6 @@ let tooltips = [
     ["kubejs:alumina_dioxide", "§7在§r2980°C温度下可熔化成 100 mb 铝", "§7Fluids can be melted at §r2980°C to 100mb of aluminium"],
     ["eidolon:enchanted_ash", "§8“试试洒在地上围成一个圈，它能驱散亡灵使其无法靠近”§r", "§8“Try sprinkling it on the ground to form a circle! It can repel the undead and keep them from approaching.”§r"],
     ["#tfc:water_wheels", "§8“这种水车需要在流动的§r§7河水§r§8处使用”§r", "§8“This kind of water wheel is best used where there is flowing §r§7river water§r§8.”§r"],
-    ["butcher:hook", "§4此物品因恶性bug而禁用§r", "§4This item is disabled!"],
     ["tfc:gem/amethyst", "§8切制的§r", "§8polishing§r"], 
     ["tfc:gem/diamond", "§8切制的§r", "§8polishing§r"], 
     ["tfc:gem/emerald", "§8切制的§r", "§8polishing§r"], 

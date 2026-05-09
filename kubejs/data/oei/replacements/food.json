@@ -114,7 +114,6 @@
     {
         "matchItems": [
             "scguns:sulfur_chunk",
-            "butcher:sulfur",
             "vintageimprovements:sulfur"
         ],
         "resultItems": "tfc:ore/sulfur"
@@ -419,18 +418,6 @@
             "minecraft:sea_pickle"
         ],
         "resultItems": "tfc:sea_pickle"
-    },
-    {
-        "matchItems": [
-            "butcher:rawfoxmeat"
-        ],
-        "resultItems": "tfc:food/fox"
-    },
-    {
-        "matchItems": [
-            "butcher:foxmeat"
-        ],
-        "resultItems": "tfc:food/cooked_fox"
     },
     {
         "matchItems": [

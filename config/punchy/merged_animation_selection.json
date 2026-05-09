@@ -89,7 +89,7 @@
       "animations": {
         "attack": "pack:punchy:punchy",
         "mining": "pack:punchy:punchy",
-        "hand_in": "pack:diagonalblocks:default_block_models",
+        "hand_in": "pack:punchy:punchy",
         "spear_charge": "pack:punchy:punchy"
       }
     },
@@ -121,7 +121,7 @@
       "kind": "item",
       "definition": "FISHING_ROD",
       "animations": {
-        "useitem": "pack:punchy:punchy",
+        "fishingrod": "pack:punchy:punchy",
         "attack": "pack:punchy:punchy"
       }
     },

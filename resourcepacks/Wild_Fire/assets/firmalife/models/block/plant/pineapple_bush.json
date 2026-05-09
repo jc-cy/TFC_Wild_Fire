@@ -2,7 +2,9 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
+		"particle": "firmalife:block/berry_bush/pineapple_bush",
 	"textures": {
+		"particle": "firmalife:block/berry_bush/pineapple_bush",
 		"1": "firmalife:block/berry_bush/pineapple_bush",
 		"3": "firmalife:block/berry_bush/pineapple_bushlarge"
 	},

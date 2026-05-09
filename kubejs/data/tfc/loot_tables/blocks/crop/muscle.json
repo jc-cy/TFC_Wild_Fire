@@ -8,7 +8,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "butcher:humanflesh",
+          "name": "minecraft:beef",
           "conditions": [
             {
               "condition": "minecraft:block_state_property",

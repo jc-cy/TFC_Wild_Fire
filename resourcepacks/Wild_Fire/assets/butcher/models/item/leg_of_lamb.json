@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "butcher:item/leg_of_lamb"
-  }
-}

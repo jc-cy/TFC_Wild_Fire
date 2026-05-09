@@ -271,9 +271,7 @@
 					"relative_to": {
 						"rotation": "entity"
 					},
-					"rotation": {
-						"vector": [0, -90, 0]
-					}
+					"rotation": [0, 0, 0.01]
 				}
 			}
 		},
@@ -525,11 +523,10 @@
 					"relative_to": {
 						"rotation": "entity"
 					},
-					"rotation": {
-						"vector": [0, -90, 0]
-					}
+					"rotation": [0, 0, 0.01]
 				}
-			}
+			},
+			"particle_effects": {}
 		},
 		"idle": {
 			"loop": true

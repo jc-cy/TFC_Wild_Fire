@@ -267,55 +267,6 @@
             "legendarysurvivaloverhaul:seasonal_calendar",
         ])
     })
-    StartupEvents.modifyCreativeTab("butcher:butcher", event => {
-        event.remove(
-            [
-                "butcher:hook",
-                "butcher:pestleandmortarblock",
-                "butcher:cashregister",
-                "butcher:sulfurore",
-                "butcher:deepslatesulfurore",
-                "butcher:saltblock",
-                "butcher:crusher",
-                "butcher:diorite_brick_slab",
-                "butcher:diorite_brickwall",
-                "butcher:canopybrown",
-                "butcher:canopylightblue",
-                "butcher:canopygray",
-                "butcher:canopyblack",
-                "butcher:canopycyan",
-                "butcher:canopyblue",
-                "butcher:canopyorange",
-                "butcher:canopyyellow",
-                "butcher:canopyviolet",
-                "butcher:canopy_pink",
-                "butcher:canopy_green",
-                "butcher:canopyred",
-                "butcher:canopyblack",
-                "butcher:stomachyjar",
-                "butcher:liverjar",
-                "butcher:kidneyjar",
-                "butcher:intestinesjar",
-                "butcher:heartjar",
-                "butcher:brainjar",
-                "butcher:filled_jar",
-                "butcher:dioritebricks",
-                "butcher:bloodsplatter_1",
-                "butcher:dioritebrickstairs",
-                "butcher:display",
-                "butcher:canopymagenta",
-                "butcher:canopypink",
-                "butcher:canopypurple",
-                "butcher:canopygreen",
-                "butcher:canopylightgray",
-                "butcher:canopylime",
-                "butcher:hook",
-                "butcher:dioritebrickstairs",
-                "butcher:diorite_brick_slab",
-                "butcher:diorite_brickwall",
-                "butcher:display"
-            ])
-    })
 
     //清空斯巴达武器模组材料物品、替换自己注册的工具
     StartupEvents.modifyCreativeTab("spartanweaponry:modded", event => {

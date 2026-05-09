@@ -1,11 +1,6 @@
 {
   "replace": false,
   "values": [
-    "butcher:pork_belly",
-    "butcher:pork_loin",
-    "butcher:pork_shoulder",
-    "butcher:ham",
-    "butcher:pork_leg",
     "tfc:food/cooked_pork",
     "farmersdelight:cooked_bacon"
   ]

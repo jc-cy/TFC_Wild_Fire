@@ -4,6 +4,7 @@
 	"parent": "block/block",
 	"particle": "firmalife:block/berry_bush/pineapple_bush_large",
 	"textures": {
+		"particle": "firmalife:block/berry_bush/pineapple_bush",
 		"3": "firmalife:block/berry_bush/pineapple_bush",
 		"4": "firmalife:block/berry_bush/pineapple_bush_small"
 	},

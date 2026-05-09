@@ -38,41 +38,6 @@ TFCEvents.data(event => {
   }
 
   const drink = [
-    "vinery:red_grapejuice",
-    "vinery:white_grapejuice",
-    "vinery:red_taiga_grapejuice",
-    "vinery:white_taiga_grapejuice",
-    "vinery:red_jungle_grapejuice",
-    "vinery:white_jungle_grapejuice",
-    "vinery:red_savanna_grapejuice",
-    "vinery:white_savanna_grapejuice",
-    "vinery:noir_wine",
-    "vinery:solaris_wine",
-    "vinery:glowing_wine",
-    "vinery:mellohi_wine",
-    "vinery:apple_wine",
-    "vinery:apple_cider",
-    "vinery:mead",
-    "vinery:apple_juice",
-    "vinery:red_wine",
-    "vinery:strad_wine",
-    "vinery:cherry_wine",
-    "vinery:cristel_wine",
-    "vinery:creepers_crush",
-    "vinery:kelp_cider",
-    "vinery:lilitu_wine",
-    "vinery:jo_special_mixture",
-    "vinery:eiswein",
-    "vinery:bottle_mojang_noir",
-    "vinery:chenet_wine",
-    "vinery:stal_wine",
-    "vinery:magnetic_wine",
-    "vinery:clark_wine",
-    "vinery:villagers_fright",
-    "vinery:chorus_wine",
-    "vinery:bolvar_wine",
-    "vinery:aegis_wine",
-    "vinery:jellie_wine",
     "alexscaves:hot_chocolate_bottle",
     "alexscaves:purple_soda_bottle"
 
@@ -87,12 +52,14 @@ TFCEvents.data(event => {
     event.foodItem("farmersdelight:milk_bottle", f => { f.water(20); f.dairy(3); })
     event.foodItem("alexscaves:purple_soda_bottle", f => { f.water(20); })
     event.foodItem("alexscaves:hot_chocolate_bottle", f => { f.water(20); f.dairy(3); })
-  })
+  }) 
+  /*
   const butcher = [
     //格式{ id: "1111111111111", hunger: 11111111, saturation: 11111111, protein: 1111111111, decayModifier: 111111111 },//
     //==================================================//
     //==================================================//
     //大内脏类:生///饱食5、饱和3、蛋0.8/熟///饱食8、饱和7、蛋2
+   
     { id: "butcher:endermanheart", hunger: 5, saturation: 3, protein: 0.8, decayModifier: 5 },
     { id: "butcher:heart", hunger: 5, saturation: 3, protein: 0.8, decayModifier: 5 },
     { id: "butcher:lungs", hunger: 5, saturation: 3, protein: 0.8, decayModifier: 5 },
@@ -251,7 +218,7 @@ TFCEvents.data(event => {
     event.foodItem(`${meat.id}`, f => {
       f.hunger(meat.hunger / 5); f.saturation(meat.saturation / 5); f.protein(meat.protein); f.decayModifier(meat.decayModifier / 0.7);
     })
-  });
+  });*/
   // 食物数据修改
   /**
    * 

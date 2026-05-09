@@ -414,9 +414,6 @@ ServerEvents.tags("block", event => {
         }
         )
 
-        event.add('tfcscraping:quarter_scraping', 'butcher:boneskinningknife')
-        event.add('tfc:usable_on_tool_rack', 'butcher:boneskinningknife')
-        event.add('tfc:sharp_tools', 'butcher:boneskinningknife')
 
         event.add('tfc_farm_charm:raw_dough', 'tfc_farm_charm:unfinished_croissant')
         event.add('tfc_farm_charm:raw_dough', 'tfc_farm_charm:unfinished_braided_bread')
@@ -755,8 +752,6 @@ ServerEvents.tags("block", event => {
         //森罗物语油脂
         event.add('kaleidoscope_cookery:oil',
             [
-                "butcher:raw_pork_belly",
-                "butcher:pork_belly",
                 "firmalife:food/butter",
                 "artisanal:animal_fat",
                 "artisanal:suet",

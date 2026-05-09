@@ -1,11 +1,6 @@
 {
   "replace": false,
   "values": [
-    "butcher:tbonesteak",
-    "butcher:chuck_steak",
-    "butcher:rib_steak",
-    "butcher:rump_steak",
-    "butcher:sirloin_steak",
     "tfc:food/cooked_beef",
     "farmersdelight:beef_patty"
   ]
