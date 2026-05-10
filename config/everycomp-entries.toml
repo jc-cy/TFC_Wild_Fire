@@ -142,6 +142,21 @@
 		[entries.wood_type.farmersdelight]
 			cabinet = true
 
+		[entries.wood_type.bbb]
+			trim = true
+			ladder = true
+			support = true
+			pallet = true
+			frame = true
+			balustrade = true
+			layer = true
+			wall = true
+			beam_stairs = true
+			beam_slab = true
+			lantern = true
+			beam = true
+			lattice = false
+
 	[entries.leaves_type]
 
 		[entries.leaves_type.refurbished_furniture]

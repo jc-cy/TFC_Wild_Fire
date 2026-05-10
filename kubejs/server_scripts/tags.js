@@ -419,6 +419,7 @@ ServerEvents.tags("block", event => {
         event.add('tfc_farm_charm:raw_dough', 'tfc_farm_charm:unfinished_braided_bread')
         event.add('tfc_farm_charm:bread', '#tfc:foods/breads')
 
+        event.add('bbb:hammers', `tfc:hammers`)
         event.add('kubejs:tongs', 'create:extendo_grip')//机械臂
 
         event.add('kubejs:shaft', 'create:shaft')//机械臂
