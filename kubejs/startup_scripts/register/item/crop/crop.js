@@ -158,7 +158,7 @@ StartupEvents.registry('block', event => {
         .nutrient('phosphorous')
         .tagBlock('tfc:mineable_with_sharp_tool')
         .model('tfc:blockstates/crop/muscle')
-        .existingProductItem('butcher:humanflesh')
+        .existingProductItem('minecraft:beef')
         .seedItem(seed => {
             seed.displayName("肉孢子")
             seed.texture('kubejs:item/granulaspore')

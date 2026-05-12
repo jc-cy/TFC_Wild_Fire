@@ -19,12 +19,6 @@
     },
     {
         "matchItems": [
-            "vinery:cherry"
-        ],
-        "resultItems": "tfc:food/cherry"
-    },
-    {
-        "matchItems": [
             "createmetallurgy:graphite"
         ],
         "resultItems": "tfc:ore/graphite"
@@ -74,92 +68,6 @@
     },
     {
         "matchItems": [
-            "butcher:rawbearmeat"
-        ],
-        "resultItems": "tfc:food/bear"
-    },
-    {
-        "matchItems": [
-            "butcher:bearmeat"
-        ],
-        "resultItems": "tfc:food/cooked_bear"
-    },
-    {
-        "matchItems": [
-            "butcher:horsemeat"
-        ],
-        "resultItems": "tfc:food/horse_meat"
-    },
-    {
-        "matchItems": [
-            "butcher:cookedhorsemeat"
-        ],
-        "resultItems": "tfc:food/cooked_horse_meat"
-    },
-    {
-        "matchItems": [
-            "butcher:rawcamelmeat"
-        ],
-        "resultItems": "tfc:food/camelidae"
-    },
-    {
-        "matchItems": [
-            "butcher:camelmeat"
-        ],
-        "resultItems": "tfc:food/cooked_camelidae"
-    },
-    {
-        "matchItems": [
-            "butcher:rawllamameat"
-        ],
-        "resultItems": "tfc:food/mutton"
-    },
-    {
-        "matchItems": [
-            "butcher:llamameat"
-        ],
-        "resultItems": "tfc:food/cooked_mutton"
-    },
-    {
-        "matchItems": [
-            "butcher:turtle_meat"
-        ],
-        "resultItems": "tfc:food/turtle"
-    },
-    {
-        "matchItems": [
-            "butcher:cookedturtlemeat"
-        ],
-        "resultItems": "tfc:food/cooked_turtle"
-    },
-    {
-        "matchItems": [
-            "butcher:wolfmeat"
-        ],
-        "resultItems": "tfc:food/wolf"
-    },
-    {
-        "matchItems": [
-            "butcher:cookedwolfmeat"
-        ],
-        "resultItems": "tfc:food/cooked_wolf"
-    },
-    {
-        "matchItems": [
-            "butcher:raw_mulemeat",
-            "butcher:rawdonkeymeat"
-        ],
-        "resultItems": "tfc:food/horse_meat"
-    },
-    {
-        "matchItems": [
-            "butcher:cooked_mulemeat",
-            "butcher:cookeddonkeymeat"
-        ],
-        "resultItems": "tfc:food/cooked_horse_meat"
-    },
-    {
-        "matchItems": [
             "naturalist:duck"
         ],
         "resultItems": "tfc:food/duck"
@@ -175,19 +83,6 @@
             "brewery:beer_mug"
         ],
         "resultItems": "brewinandchewin:tankard"
-    },
-    {
-        "matchItems": [
-            "butcher:polarbearfur"
-        ],
-        "resultItems": "textile:polar_bear_fur"
-    },
-    {
-        "matchItems": [
-            "butcher:wolffur",
-            "butcher:goatfur"
-        ],
-        "resultItems": "tfc:wool"
     },
     {
         "matchItems": [
@@ -269,54 +164,10 @@
     },
     {
         "matchItems": [
-            "butcher:endermanhead",
             "spartanweaponry:enderman_head"
         ],
         "resultItems": "supplementaries:enderman_head"
-    }
-    ,
-    {
-        "matchItems": [
-            "butcher:spiderhead"
-        ],
-        "resultItems": "spartanweaponry:spider_head"
-    }
-    ,
-    {
-        "matchItems": [
-            "butcher:cavespiderhead"
-        ],
-        "resultItems": "spartanweaponry:cave_spider_head"
-    }
-    ,
-    {
-        "matchItems": [
-            "butcher:huskhead"
-        ],
-        "resultItems": "spartanweaponry:husk_head"
-    }
-    ,
-    {
-        "matchItems": [
-            "butcher:drownedhead"
-        ],
-        "resultItems": "spartanweaponry:drowned_head"
-    }
-    ,
-    {
-        "matchItems": [
-            "spartanweaponry:illager_head"
-        ],
-        "resultItems": "butcher:pillagerhead"
-    }
-    ,
-    {
-        "matchItems": [
-            "butcher:witchhead"
-        ],
-        "resultItems": "spartanweaponry:witch_head"
-    }
-    ,
+    },
     {
         "matchItems": [
             "minecraft:iron_nugget"
@@ -404,12 +255,6 @@
         "resultItems": "kubejs:peel"
     }
     ,
-    {
-        "matchItems": [
-            "butcher:animalfat"
-        ],
-        "resultItems": "artisanal:animal_fat"
-    },
     {
         "matchItems": [
             "tfc:ceramic/bowl"

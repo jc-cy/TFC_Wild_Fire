@@ -482,8 +482,8 @@ ServerEvents.recipes(e => {
   tfc.heating('kubejs:unfired_mold_simple_key', 1399).resultItem('kubejs:mold_simple_key')//钥匙模具
 
 
-   tfc.heating('kubejs:tfc/unfired_diamond_whetstone', 1600).resultItem('kubejs:tfc/diamond_whetstone')//钻石磨刀石
-    tfc.heating('kubejs:tfc/unfired_ceramic_stone', 2100).resultItem('kubejs:tfc/ceramic_stone')//铝陶瓷磨刀石
+  tfc.heating('kubejs:tfc/unfired_diamond_whetstone', 1600).resultItem('kubejs:tfc/diamond_whetstone')//钻石磨刀石
+  tfc.heating('kubejs:tfc/unfired_ceramic_stone', 2100).resultItem('kubejs:tfc/ceramic_stone')//铝陶瓷磨刀石
 
   tfc.heating('kubejs:unfired_mold_sheet', 1399).resultItem('kubejs:mold_sheet')//板模具
   tfc.heating('kubejs:unfired_mold_rods', 1399).resultItem('kubejs:mold_rods')//棒模具
@@ -641,8 +641,6 @@ ServerEvents.recipes(e => {
   })
 
   const metal_block = [
-    { name: "firmaciv:copper_bolt", temperature: 1085, metal: "tfc:metal/copper", number: 20 },//铜螺栓
-
 
 
     //金属板材
@@ -1019,7 +1017,26 @@ ServerEvents.recipes(e => {
     { name: "ad_astra:wrench", temperature: 1535, metal: "tfc:metal/cast_iron", number: 500 },//弹壳    
     { name: "create:goggles", temperature: 1060, metal: "tfc:metal/gold", number: 200 },//工程师护目镜
     { name: "create:item_drain", temperature: 940, metal: "tfc:metal/brass", number: 600 },//分液池
+    //钉子
+    { name: "firmaciv:copper_bolt", temperature: 1085, metal: "tfc:metal/copper", number: 20 },// 铜螺栓
+    { name: "kubejs:bronze_bolt", temperature: 950, metal: "tfc:metal/bronze", number: 20 },// 青铜螺栓
+    { name: "kubejs:black_bronze_bolt", temperature: 960, metal: "tfc:metal/black_bronze", number: 20 },// 黑铜螺栓
+    { name: "kubejs:bismuth_bronze_bolt", temperature: 900, metal: "tfc:metal/bismuth_bronze", number: 20 },// 铋铜螺栓
+    { name: "kubejs:wrought_iron_bolt", temperature: 1538, metal: "tfc:metal/cast_iron", number: 20 },// 锻铁螺栓
+    { name: "kubejs:steel_bolt", temperature: 1540, metal: "tfc:metal/steel", number: 20 },// 钢螺栓
+    //{ name: "kubejs:stainless_steel_bolt", temperature: 1400, metal: "tfc:metal/stainless_steel", number: 20 },// 不锈钢螺栓
+    //{ name: "kubejs:high_carbon_steel_bolt", temperature: 1520, metal: "tfc:metal/high_carbon_steel", number: 20 },// 高锰钢/高碳钢螺栓
+    //{ name: "kubejs:titanium_alloy_bolt", temperature: 1668, metal: "tfc:metal/titanium", number: 20 },// 钛合金螺栓
 
+    { name: "kubejs:copper_nail", temperature: 1085, metal: "tfc:metal/copper", number: 20 },// 铜钉子
+    { name: "kubejs:bronze_nail", temperature: 950, metal: "tfc:metal/bronze", number: 20 },//青铜钉子
+    { name: "kubejs:black_bronze_nail", temperature: 960, metal: "tfc:metal/black_bronze", number: 20 },//黑铜钉子
+    { name: "kubejs:bismuth_bronze_nail", temperature: 900, metal: "tfc:metal/bismuth_bronze", number: 20 },//铋铜钉子
+    { name: "kubejs:wrought_iron_nail", temperature: 950, metal: "tfc:metal/cast_iron", number: 20 },//锻铁钉子
+    { name: "kubejs:steel_nail", temperature: 1540, metal: "tfc:metal/steel", number: 20 },//钢钉子
+    //{ name: "kubejs:stainless_steel_nail", temperature: 1400, metal: "tfc:metal/stainless_steel", number: 20 },//不锈钢钉子
+   // { name: "kubejs:high_manganese_steel_nail", temperature: 1500, metal: "tfc:metal/high_manganese_steel", number: 20 },//高锰钢钉子
+    //{ name: "kubejs:titanium_alloy_nail", temperature: 1668, metal: "tfc:metal/titanium", number: 20 },//钛合金钉子
   ];
   metal_block.forEach(metal_block => {
     //金属方块融化

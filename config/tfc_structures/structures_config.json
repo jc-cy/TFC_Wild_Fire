@@ -280,21 +280,6 @@
       "emptyChestLootTable": "",
       "lootTablesOverrideMap": {}
     },
-    "butcher:saltformationlarge": {
-      "replacementPreset": "overworld-common",
-      "emptyChestLootTable": "",
-      "lootTablesOverrideMap": {}
-    },
-    "butcher:saltformationmedium": {
-      "replacementPreset": "overworld-common",
-      "emptyChestLootTable": "",
-      "lootTablesOverrideMap": {}
-    },
-    "butcher:saltformationsmall": {
-      "replacementPreset": "overworld-common",
-      "emptyChestLootTable": "",
-      "lootTablesOverrideMap": {}
-    },
     "call_of_yucutan:deadly_crypt": {
       "replacementPreset": "overworld-common",
       "emptyChestLootTable": "",

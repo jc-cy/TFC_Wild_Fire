@@ -71,7 +71,6 @@ ServerEvents.recipes(e => {
     'survivorsdelight:cooking/cabbage_rolls',
     'sliceanddice:cooking/farmersdelight/cooking/hot_cocoa_1',
     'sliceanddice:cooking/farmersdelight/cooking/hot_cocoa_0',
-    'butcher:roastedmuttonchopsrecipe',
     'farm_and_carm:crafting_bowl/dough',
     'create_enchantment_industry:crafting/printer',
     'createdieselgenerators:crafting/entity_filter',
@@ -108,14 +107,6 @@ ServerEvents.recipes(e => {
     "createdieselgenerators:hammering/gold_sheet",
     "create:crafting/kinetics/propeller",//扇叶
     "create:crafting/kinetics/whisk",//搅拌头
-    "butcher:hook_recipe",//恶性bug钩子
-    "butcher:lamb_leg_cut",
-    "butcher:cleaverknapping",
-    "butcher:plierknapping",
-    "butcher:skinningknifeknapping",
-    "butcher:firecleavermold",
-    "butcher:firepliermold",
-    "butcher:fireskinningknifemold",
     "farmersdelight:flint_knife",
     "tfc_metal_items:seq_pressing/double_ingots/electrum",//单独删除琥珀金
     "tfc_metal_items:seq_pressing/sheets/electrum",
@@ -210,7 +201,6 @@ ServerEvents.recipes(e => {
 
 
     "create:crafting/kinetics/super_glue",
-    "butcher:tfcspitroastrecipe",
     "scguns:treated_iron/treated_iron_cauldron",
     "tfc:crafting/vanilla/cauldron",
     "minecraft:cauldron",
@@ -275,32 +265,21 @@ ServerEvents.recipes(e => {
     "sophisticatedbackpacks:smoking_upgrade",
     "sophisticatedbackpacks:stonecutter_upgrade",
     "legendarysurvivaloverhaul:water_purifier",
-    "butcher:dioritebrickstairs",
-    "butcher:diorite_brick_slab",
-    "butcher:straynecklace_chestplate",
     "immersiveengineering:pickaxe_steel",
     "immersiveengineering:armor_steel_boots",
     "legendarysurvivaloverhaul:water_plant_seeds",
-    "butcher:guardianspear",
-    "butcher:diorite_brickwall",
-    "butcher:freezer",
     "legendarysurvivaloverhaul:water_plant_bag",
     "immersiveengineering:armor_steel_leggings",
     "immersiveengineering:armor_steel_chestplate",
     "legendarysurvivaloverhaul:large_canteen",
-    "butcher:counterblock",
     "immersiveengineering:armor_steel_helmet",
-    "butcher:display",
     "legendarysurvivaloverhaul:canteen",
-    "butcher:cashregister",
     "legendarysurvivaloverhaul:large_canteen",
     "immersiveengineering:sword_steel",
     "immersiveengineering:hoe_steel",
-    "butcher:emptyskinrack",
     "legendarysurvivaloverhaul:canteen",
     "immersiveengineering:axe_steel",
     "legendarysurvivaloverhaul:seasonal_calendar",
-    "butcher:hook",
     "immersiveengineering:shovel_steel",
     "brewinandchewin:pizza_slice",
     "brewinandchewin:scarlet_cheese_wedge",
@@ -403,7 +382,6 @@ ServerEvents.recipes(e => {
     "supplementaries:cage",
     "shieldeexp:iron_shield",
     "shieldeexp:wooden_shield",
-    "butcher:butcherspapers",
     "patchouli:guide_book",
     "supplementaries:strings",
     "tfc:crafting/sandpaper",
@@ -731,9 +709,7 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'alexscaves:pewen_boat' })
   e.remove({ id: 'afc:crafting/wood/eucalyptus_boat' })
   e.remove({ id: 'afc:crafting/wood/baobab_boat' })
-  e.remove({ id: 'vinery:dark_cherry_boat' })
   e.remove({ id: 'afc:crafting/wood/mahogany_boat' })
-  e.remove({ id: 'vinery:dark_cherry_chest_boat' })
   e.remove({ id: 'afc:crafting/wood/tualang_boat' })
   e.remove({ id: 'afc:crafting/wood/ipe_boat' })
   e.remove({ id: 'alexscaves:pewen_chest_boat' })
@@ -844,14 +820,12 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'scguns:gun_parts_mold' })
   e.remove({ id: 'scguns:disc_mold' })
   e.remove({ id: 'create:crafting/kinetics/brass_hand' })
-  e.remove({ id: 'butcher:crushedflowersrecipe' })
   e.remove({ id: 'sns:leather_knapping/quiver' })
   e.remove({ id: 'sns:crafting/mob_net' })
   e.remove({ id: 'woodencog:crafting/kinetics/item_vault' })
   e.remove({ id: 'create:crafting/kinetics/item_vault' })
   e.remove({ id: 'firmalife:crafting/cheesecloth' })
   e.remove({ id: 'aquaculture:tackle_box' })
-  e.remove({ id: 'vinery:dark_cherry_drawer' })
   e.remove({ id: 'scguns:treated_iron/treated_iron_hopper' })
   e.remove({ id: 'create:crafting/kinetics/water_wheel' })
   e.remove({ id: 'create:crafting/kinetics/large_water_wheel' })
@@ -933,7 +907,6 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'sliceanddice:cooking/brewery/half_chicken_0' })
   e.remove({ id: 'brewery:half_chicken' })
   e.remove({ id: 'sliceanddice:cooking/butcher/calamari_2_recipe_0' })
-  e.remove({ id: 'butcher:calamari_2_recipe' })
   e.remove({ id: 'brewery:dumplings_from_smoking' })
   e.remove({ id: 'sliceanddice:cooking/brewery/dumplings_0' })
   e.remove({ id: 'brewery:dumplings' })
@@ -956,7 +929,6 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'supplementaries:boat_jar' })
   e.remove({ id: 'supplementaries:rope_arrow_add_display' })
   e.remove({ id: 'createdieselgenerators:crushing/wood_chip_boats' })
-  e.remove({ id: 'butcher:halfcowrecipe' })
   e.remove({ id: 'immersiveengineering:crafting/hammercrushing_silver' })
   e.remove({ id: 'immersiveengineering:crafting/raw_hammercrushing_silver' })
   e.remove({ id: 'immersiveengineering:crusher/ore_silver' })
@@ -1156,8 +1128,6 @@ ServerEvents.recipes(e => {
   e.remove({ type: 'kaleidoscope_cookery:millstone' }) // 移除森罗石磨配方
 
   e.remove({ type: 'woodencog:heated_pressing' }) // 移除woodencog加热敲制配方
-  e.remove({ type: 'butcher:pestleandmortar' }) // 移除butchery垃圾配方
-  e.remove({ type: 'butcher:wetspongejeirecipetype' }) // 移除butchery垃圾配方
 
   e.remove({ id: 'map_atlases:craft_atlas' }) // 移除 map_atlases 模组制作地图集的配方
   e.remove({ id: 'simpleradio:radio' }) // 移除 simpleradio 模组制作收音机的配方
@@ -1180,7 +1150,6 @@ ServerEvents.recipes(e => {
   e.remove('tfc:welding/cast_iron_double_ingot')
   e.remove('crafttweaker:backpack')
   e.remove({ id: 'create:crafting/kinetics/empty_blaze_burner' })//移除烈焰人燃烧室
-  e.remove({ id: 'vinery:bamboo_lattice' })//移除竹格
   e.remove({ id: 'brewery:beer_mug' })//移除多余的酒杯配方
   e.remove({ id: 'brewinandchewin:cooking/sweet_berry_jam' })//移除饮酒作乐甜浆果果酱配方
   e.remove({ id: 'brewinandchewin:cooking/glow_berry_marmalade' })//移除饮酒作乐发光果酱配方
@@ -1200,9 +1169,6 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_onions' })//移除空配方 
   e.remove({ id: 'brewinandchewin:fermenting/flaxen_cheese_from_milk' })//移除空配方
   e.remove({ id: 'brewinandchewin:fermenting/scarlet_cheese_from_milk' })//移除空配方
-  e.remove({ id: 'butcher:butchersguidejei' })//移除空配方
-  e.remove({ id: 'butcher:butcherspapersrecipe' })//移除空配方
-  e.remove({ id: 'butcher:forgeguiderecipe' })//移除空配方
 
 
   e.remove('farmersdelight:paper_from_tree_bark')//三个树皮合成纸
@@ -1414,7 +1380,6 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'bakery:jam_roll' })
   e.remove({ id: 'farm_and_charm:stove/improved_bread' })
   e.remove({ id: 'farm_and_charm:mincer/minced_beef' })
-  e.remove({ id: 'butcher:pestle_and_mortar_recipe' })
   e.remove({ id: 'farm_and_charm:drying/fertilizer_from_rotten_flesh' })
   e.remove({ id: 'farm_and_charm:drying/fertilizer_from_bone_meal' })
 
@@ -1443,7 +1408,6 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'scguns:scorched_blueprint' })
 
   e.remove({ id: 'farmersdelight:cooking/pasta_with_meatballs' })
-  e.remove({ id: 'butcher:meatballrecipe' })
 
   e.remove({ id: 'moreburners:electric_burner' })
 

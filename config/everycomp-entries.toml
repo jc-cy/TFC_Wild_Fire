@@ -49,9 +49,6 @@
 		[types.wood_type.valhelsia_structures]
 			lapidified_jungle = true
 
-		[types.wood_type.vinery]
-			dark_cherry = false
-
 		[types.wood_type.born_in_chaos_v1]
 			scorched = true
 
@@ -66,11 +63,6 @@
 
 		[types.leaves_type.ad_astra]
 			glacian = true
-
-		[types.leaves_type.vinery]
-			grapevine = true
-			dark_cherry = true
-			apple = true
 
 		[types.leaves_type.eidolon]
 			illwood = true
@@ -149,6 +141,21 @@
 
 		[entries.wood_type.farmersdelight]
 			cabinet = true
+
+		[entries.wood_type.bbb]
+			trim = true
+			ladder = true
+			support = true
+			pallet = true
+			frame = true
+			balustrade = true
+			layer = true
+			wall = true
+			beam_stairs = true
+			beam_slab = true
+			lantern = true
+			beam = true
+			lattice = false
 
 	[entries.leaves_type]
 

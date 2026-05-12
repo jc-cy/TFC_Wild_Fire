@@ -211,9 +211,6 @@ event.shaped("2x kubejs:unvacuumed_precision_tube", ['a', 'b', 'c'], {
         a: 'minecraft:painting', b: 'kubejs:gold_fragments'
     }) // 高级画
 
-    event.shaped('butcher:spitroast', ['aaa', 'b b', 'c c'], {
-        a: 'tfc:metal/rod/cast_iron', b: '#minecraft:walls', c: '#tfc:rock/bricks'
-    }) // 锻铁烤架
     event.shaped('tfc:bloomery', ['aba', 'c c', 'aba'], {
         a: 'tfc:brass_mechanisms',
         b: 'tfc:metal/double_sheet/brass',
@@ -262,8 +259,6 @@ event.shaped("2x kubejs:unvacuumed_precision_tube", ['a', 'b', 'c'], {
         }, b: '#tfc:knives'
     }).damageIngredient({ tag: '#tfc:knives' }, 20)//测试*/
 
-    event.shaped(Item.of('butcher:boneskinningknife'), ['kubejs:bone_butchersknife_blade', '#forge:rods/wooden'])//骨头刀合成
-    event.shaped(Item.of('butcher:bonebutchersknife'), ['kubejs:bone_skinningknife_blade', '#forge:rods/wooden'])//骨头刀合成
     event.shaped(Item.of('kubejs:bone_fishing_rod'), [['#forge:rods/wooden', 'farmersdelight:rope'], ['#forge:rods/wooden', 'kubejs:bone_fish_hook']])//骨头吊杆合成
 
     event.shaped("kubejs:leather_hot_water_bag", [' a ', 'bcb', 'dbd'], {
@@ -286,9 +281,15 @@ event.shaped("2x kubejs:unvacuumed_precision_tube", ['a', 'b', 'c'], {
 
     event.shaped('minecraft:chest', ['aaa', 'bcb', 'aaa'], {
         a: '#tfc:lumber',
-        b: 'firmaciv:copper_bolt',
-        c: '#tfc:saws'
-    }).damageIngredient({ tag: '#tfc:saws' }, 5) //箱子合成
+        b: '#kubejs:bolts',
+        c: '#tfc:hammers'
+    }).damageIngredient({ tag: '#tfc:hammers' }, 5) //箱子合成
+
+    event.shaped('minecraft:chest', ['aaa', 'bcb', 'aaa'], {
+        a: '#tfc:lumber',
+        b: '#kubejs:nails',
+        c: '#tfc:hammers'
+    }).damageIngredient({ tag: '#tfc:hammers'}, 5) //箱子合成2
 
     event.shaped('minecraft:barrel', ['aba', 'aca', 'aba'], {
         a: '#tfc:lumber',
@@ -1349,7 +1350,6 @@ event.shaped("2x kubejs:unvacuumed_precision_tube", ['a', 'b', 'c'], {
         { mod: 'alexscaves', wooden: 'thornwood' },
         { mod: 'ad_astra', wooden: 'glacian' },
         { mod: 'ad_astra', wooden: 'strophar' },
-        { mod: 'vinery', wooden: 'dark_cherry' },
         { mod: 'ad_astra', wooden: 'aeronos' }
     ];
     wooden.forEach(wood => {

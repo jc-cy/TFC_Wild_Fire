@@ -427,10 +427,6 @@
       {
         "mobs": [
           {
-            "type": "butcher:zombie_cow",
-            "count": 2
-          },
-          {
             "type": "minecraft:zombie",
             "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
             "count": 2
@@ -450,10 +446,6 @@
             "count": 2
           },
           {
-            "type": "butcher:zombiewolf",
-            "count": 1
-          },
-          {
             "type": "born_in_chaos_v1:decaying_zombie",
             "count": 1
           },
@@ -466,10 +458,6 @@
             "type": "minecraft:skeleton",
             "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
             "count": 1
-          },
-          {
-            "type": "butcher:zombiefox",
-            "count": 2
           }
         ],
         "game_stage": "normal",
@@ -487,10 +475,6 @@
             "count": 1
           },
           {
-            "type": "butcher:zombiepanda",
-            "count": 2
-          },
-          {
             "type": "minecraft:skeleton",
             "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
             "count": 2
@@ -505,16 +489,8 @@
             "count": 2
           },
           {
-            "type": "butcher:zombie_cow",
-            "count": 1
-          },
-          {
             "type": "minecraft:skeleton",
             "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
-            "count": 2
-          },
-          {
-            "type": "butcher:zombiewolf",
             "count": 2
           },
           {
@@ -583,10 +559,6 @@
             "count": 2
           },
           {
-            "type": "butcher:zombiewolf",
-            "count": 6
-          },
-          {
             "type": "minecraft:skeleton",
             "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
             "count": 3
@@ -643,20 +615,12 @@
             "count": 1
           },
           {
-            "type": "butcher:zombiewolf",
-            "count": 1
-          },
-          {
             "type": "minecraft:wither_skeleton",
             "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
             "count": 1
           },
           {
             "type": "minecraft:pig",
-            "count": 1
-          },
-          {
-            "type": "butcher:zombiewolf",
             "count": 1
           },
           {

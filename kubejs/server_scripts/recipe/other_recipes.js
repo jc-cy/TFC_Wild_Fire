@@ -339,24 +339,6 @@ create.sandpaper_polishing("kubejs:steel_needle","tfc:metal/rod/steel")
     { furid: 'grizzly_bear_fur', fur: 'grizzly_bear_fur', modid: 'textile', size: 'large' },
     { furid: 'black_bear_fur', fur: 'black_bear_fur', modid: 'textile', size: 'large' },
     //屠宰的
-    { furid: 'cow_skin', fur: 'cow_skin', modid: 'butcher', size: 'large' },
-    { furid: 'panda_skin', fur: 'pandafur', modid: 'butcher', size: 'large' },
-    { furid: 'pig_skin', fur: 'pig_skin', modid: 'butcher', size: 'large' },
-    { furid: 'sheep_skin', fur: 'sheep_skin', modid: 'butcher', size: 'medium' },
-    { furid: 'camel_fur', fur: 'camelfur', modid: 'butcher', size: 'medium' },
-    { furid: 'creamy_llama_skin', fur: 'creamyllamaskin', modid: 'butcher', size: 'medium' },
-    { furid: 'brown_llama_skin', fur: 'brown_llama_skin', modid: 'butcher', size: 'medium' },
-    { furid: 'gray_llama_skin', fur: 'gray_llama_skin', modid: 'butcher', size: 'medium' },
-    { furid: 'white_llama_skin', fur: 'white_llama_skin', modid: 'butcher', size: 'medium' },
-    { furid: 'horse_skin_black', fur: 'blackhorseskin', modid: 'butcher', size: 'medium' },
-    { furid: 'horse_skin_brown', fur: 'brownhorseskin', modid: 'butcher', size: 'medium' },
-    { furid: 'horse_skin_chestnut', fur: 'chestnuthorseskin', modid: 'butcher', size: 'medium' },
-    { furid: 'horse_skin_darkbrown', fur: 'darkbrownhorseskin', modid: 'butcher', size: 'medium' },
-    { furid: 'horse_skin_creamy', fur: 'creamyhorseskin', modid: 'butcher', size: 'medium' },
-    { furid: 'horse_skin_gray', fur: 'grayhorseskin', modid: 'butcher', size: 'medium' },
-    { furid: 'horse_skin_white', fur: 'whitehorseskin', modid: 'butcher', size: 'medium' },
-    { furid: 'donkey_skin', fur: 'donkeyskin', modid: 'butcher', size: 'medium' },
-    { furid: 'mule_skin', fur: 'muleskin', modid: 'butcher', size: 'medium' },
 
 
     //'tfc:large_sheepskin_hide'
@@ -648,10 +630,6 @@ ServerEvents.recipes(event => {
   create.compacting(Fluid.of('tfc:tallow', 100), "artisanal:suet").heated()//牛脂
   create.compacting(Fluid.of('tfc:tallow', 100), "artisanal:animal_fat").heated()//动物脂
   create.compacting(Fluid.of('tfc:tallow', 100), "artisanal:bear_fat").heated()//熊脂
-  create.compacting(Fluid.of('tfc:tallow', 100), "butcher:animalfat").heated()//butchery的动物脂肪
-
-  create.compacting([Fluid.of('artisanal:lard', 100), "3x butcher:porkscratchings", "kubejs:burnt_food_residue"], "butcher:pork_belly").heated()//猪五花榨油
-  create.compacting([Fluid.of('artisanal:lard', 100), "3x butcher:porkscratchings", "kubejs:burnt_food_residue"], "butcher:ham").heated()//猪肘榨油
 
   create.compacting(
     ['4x createdieselgenerators:asphalt_block', Fluid.of('createdieselgenerators:diesel', 20)],
@@ -746,7 +724,6 @@ ServerEvents.recipes(event => {
   create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_smokey_reverie', 250)], 'brewery:whiskey_smokey_reverie')//酒
   create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_jamesons_malt', 250)], 'brewery:whiskey_jamesons_malt')//酒
   //event.recipes.tfc.barrel_sealed(5000).outputItem('tfc:unrefined_paper').inputs('farmersdelight:tree_bark', TFC.fluidStackIngredient('tfc:limewater', 50))//获取未精致纸
-  event.recipes.firmalife.vat().outputFluid(Fluid.of('tfc:tallow', 100)).inputs('butcher:animalfat', Fluid.of('minecraft:water', 100))//获取蜡质
 
 
 
@@ -1404,67 +1381,6 @@ ServerEvents.recipes(event => {
      
     }) */
 
-  //--------------------------------------------------------------------------
-  //--------------------------关于自动化屠宰【WIP】-----------------------------
-  //--------------------------------------------------------------------------
-  /*
-    const pig_corpse = 'butcher:pig_corpse_item'
-    create.sequenced_assembly(
-      'butcher:drained_pig_corpse_item',
-      'butcher:pig_corpse_item',
-      [
-        event.custom({ "type": "create:cutting", "ingredients": [{ "item": pig_corpse }], "processingTime": 200, "results": [{ "item": pig_corpse }] }),
-        event.custom({ "type": "create:cutting", "ingredients": [{ "item": pig_corpse }], "processingTime": 200, "results": [{ "item": pig_corpse }] }),
-        event.custom({ "type": "create:cutting", "ingredients": [{ "item": pig_corpse }], "processingTime": 200, "results": [{ "item": pig_corpse }] }),
-        event.custom({ "type": "create:cutting", "ingredients": [{ "item": pig_corpse }], "processingTime": 200, "results": [{ "item": pig_corpse }] })
-      ]
-    ).transitionalItem(pig_corpse).loops(1)//重复
-    //切猪
-  
-  event.custom({
-    "type": "create:cutting",
-    "ingredients": [
-      { "item": "butcher:drained_pig_corpse_item" }],
-    "results": [
-      { "item": "butcher:pig_corpse_0_leg" },
-      { "item": "4x butcher:raw_pork_leg" }]
-  }) //给猪去腿
-  event.custom({
-    "type": "create:cutting",
-    "ingredients": [
-      { "item": "butcher:pig_corpse_0_leg" }],
-    "results": [
-      { "item": "butcher:pig_corpse_headless" },
-      { "item": "butcher:pighead" }]
-  })//去头
-  event.custom({
-    "type": "create:cutting",
-    "ingredients": [
-      { "item": "butcher:pig_corpse_headless" }],
-    "results": [
-      { "item": "butcher:pig_pork_loin" },
-      { "item": "butcher:raw_pork_loin" },
-      { "item": "butcher:raw_pork_belly" },
-      { "item": "2x artisanal:animal_fat" },
-      { "item": "butcher:stomach" },
-      { "item": "butcher:intestines" },
-      { "item": "2x butcher:kidney" }]
-  })//开腹
-  event.custom({
-    "type": "create:cutting",
-    "ingredients": [
-      { "item": "butcher:pig_pork_loin" }],
-    "results": [
-      { "item": "butcher:pig_skeleton" },
-      { "item": "butcher:heart" },
-      { "item": "butcher:lungs" },
-      { "item": "butcher:liver" },
-      { "item": "2x artisanal:animal_fat" },
-      { "item": "butcher:raw_pork_ham" },
-      { "item": "butcher:raw_pork_shoulder" }]
-  })//开胸
-  create.milling('12x minecraft:bone_meal', 'butcher:pig_skeleton') // 粉碎猪鼓
- */
 
 
 

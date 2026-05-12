@@ -2,7 +2,32 @@ ServerEvents.recipes(event => {
     const { tfc, create, kubejs, immersiveengineering } = event.recipes;
     const id_in = "kubejs:recipe/shapeless/"
 
-    event.shapeless("spartanweaponry:handle", ["sns:leather_strip", "minecraft:stick"]);//武器手柄
+    // event.shapeless("spartanweaponry:handle", ["sns:leather_strip", "minecraft:stick"]);//武器手柄
+
+
+    event.shapeless("kubejs:item/tfc/wrapped_stick", ["sns:leather_strip", "minecraft:stick"]);//缠柄木棍
+    event.shapeless("kubejs:item/tfc/wrapped_preserved_stick", ["sns:leather_strip", "immersiveengineering:stick_treated"]);//缠柄防腐木棍
+
+    //钉子
+    // 铜钉
+    event.shapeless("2x kubejs:copper_nail", ["tfc:metal/rod/copper", '#tfc:saws']).damageIngredient({ tag: '#tfc:saws' }, 1);
+    // 青铜钉
+    event.shapeless("2x kubejs:bronze_nail", ["tfc:metal/rod/bronze", '#tfc:saws']).damageIngredient({ tag: '#tfc:saws' }, 1);
+    // 黑铜钉
+    event.shapeless("2x kubejs:black_bronze_nail", ["tfc:metal/rod/black_bronze", '#tfc:saws']).damageIngredient({ tag: '#tfc:saws' }, 1);
+    // 铋铜钉
+    event.shapeless("2x kubejs:bismuth_bronze_nail", ["tfc:metal/rod/bismuth_bronze", '#tfc:saws']).damageIngredient({ tag: '#tfc:saws' }, 1);
+    // 锻铁钉
+    event.shapeless("2x kubejs:wrought_iron_nail", ["tfc:metal/rod/wrought_iron", '#tfc:saws']).damageIngredient({ tag: '#tfc:saws' }, 1);
+    // 钢钉
+    event.shapeless("2x kubejs:steel_nail", ["tfc:metal/rod/steel", '#tfc:saws']).damageIngredient({ tag: '#tfc:saws' }, 1);
+    // 不锈钢钉
+    event.shapeless("2x kubejs:stainless_steel_nail", ["tfc:metal/rod/stainless_steel", '#tfc:saws']).damageIngredient({ tag: '#tfc:saws' }, 1);
+    // 高锰钢钉
+    event.shapeless("2x kubejs:high_manganese_steel_nail", ["tfc:metal/rod/high_manganese_steel", '#tfc:saws']).damageIngredient({ tag: '#tfc:saws' }, 1);
+    // 钛合金钉
+    event.shapeless("2x kubejs:titanium_alloy_nail", ["tfc:metal/rod/titanium", '#tfc:saws']).damageIngredient({ tag: '#tfc:saws' }, 1);
+
 
     //传动杆
     event.shapeless("create:shaft", ['#kubejs:shaft', "create:andesite_alloy"]).keepIngredient({ item: "minecraft:glass" });//安山传动杆

@@ -1,0 +1,53 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"start": {
+			"animation_length": 2,
+			"bones": {
+				"flywheel": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"2.0": {
+							"vector": [0, 0, 360],
+							"easing": "easeInCubic"
+						}
+					}
+				}
+			}
+		},
+		"idle": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"flywheel": {
+					"rotation": {
+						"0.0": [0, 0, 180],
+						"1.0": {
+							"pre": [0, 0, 360],
+							"post": [0, 0, 360],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"working": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"flywheel": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 360]
+						}
+					}
+				}
+			}
+		}
+	}
+}

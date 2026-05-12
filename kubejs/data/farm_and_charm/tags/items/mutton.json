@@ -1,11 +1,6 @@
 {
   "replace": false,
   "values": [
-    "butcher:cooked_lamb_rib",
-    "butcher:lamb_loin",
-    "butcher:lamb_shoulder",
-    "butcher:lamb_sirloin",
-    "butcher:leg_of_lamb",
     "tfc:food/cooked_mutton",
     "tfc:food/cooked_chevon",
     "farmersdelight:cooked_mutton_chops"

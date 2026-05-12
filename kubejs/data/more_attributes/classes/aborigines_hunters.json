@@ -23,10 +23,6 @@
         {
             "item": "textile:caribou_hat",
             "count": 1
-        },
-        {
-            "item": "butcher:boneskinningknife",
-            "count": 1
         }
     ],
     "displayCondition": []

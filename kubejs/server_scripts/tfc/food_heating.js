@@ -1,5 +1,5 @@
-  ServerEvents.recipes(event => {
-    //目前先把所有添加的食物的加热配方都整合到这里面来
+ServerEvents.recipes(event => {
+  //目前先把所有添加的食物的加热配方都整合到这里面来
   event.forEachRecipe(//所有肉的烤制配方
     {
 
@@ -21,18 +21,10 @@
 
 
 
-  const burnt = ['tfc:food/cooked_tropical_fish', 'tfc:food/protein_soup',
-    'butcher:cookedbatmeat', 'butcher:cookedsalmon', 'butcher:cookedmincebeef',
-    'butcher:cookedmincedlamb', 'butcher:cookedpillagermeat', 'butcher:cookedspiderleg',
-    'butcher:cookedsausages', 'tfc:food/cooked_tropical_fish', 'tfc:food/cooked_calamari',
+  const burnt = ['tfc:food/cooked_tropical_fish', 'tfc:food/protein_soup', 'tfc:food/cooked_tropical_fish', 'tfc:food/cooked_calamari',
     'tfc:food/cooked_shellfish', 'tfc:food/cooked_bluegill', 'tfc:food/cooked_crappie',
     'tfc:food/cooked_lake_trout', 'tfc:food/cooked_largemouth_bass', 'tfc:food/cooked_rainbow_trout',
-    'tfc:food/cooked_smallmouth_bass', 'butcher:cookedintestines', 'butcher:cookedlungs',
-    'butcher:cookedliver', 'butcher:cookedkidney', 'butcher:cookedstomach', 'butcher:pork_belly',
-    'butcher:pork_loin', 'butcher:pork_shoulder', 'butcher:pork_leg', 'butcher:cooked_lamb_rib',
-    'butcher:lamb_loin', 'butcher:lamb_shoulder', 'butcher:lamb_sirloin', 'butcher:leg_of_lamb',
-    'butcher:cooked_villager_meat', 'butcher:cookedhoglinmeat', 'butcher:cooked_green_frogs_leg',
-    'butcher:cooked_orange_frog_leg', 'tfc:food/cooked_turtle', 'tfc:food/cooked_gran_feline',
+    'tfc:food/cooked_smallmouth_bass', 'tfc:food/cooked_turtle', 'tfc:food/cooked_gran_feline',
     'tfc:food/cooked_frog_legs', 'tfc:food/cooked_wolf', 'tfc:food/cooked_fox', 'tfc:food/cooked_hyena',
     'tfc:food/cooked_duck', 'tfc:food/cooked_chevon', 'tfc:food/cooked_camelidae', 'farmersdelight:cooked_chicken_cuts',
     'farmersdelight:cooked_bacon', 'farmersdelight:cooked_cod_slice', 'farmersdelight:cooked_salmon_slice',
@@ -43,15 +35,9 @@
     'tfc:food/cooked_rice', 'tfc:food/cooked_beef', 'tfc:food/cooked_quail', 'tfc:food/cooked_bear',
     'tfc:food/cooked_horse_meat', 'tfc:food/cooked_pheasant', 'tfc:food/cooked_turkey',
     'tfc:food/cooked_peafowl', 'tfc:food/cooked_grouse', 'tfc:food/cooked_venison',
-    'butcher:cookedhumanmeat', 'butcher:cookedsniffermeat', 'alexsmobs:cooked_kangaroo_meat',
+    'alexsmobs:cooked_kangaroo_meat',
     'aquaculture:fish_fillet_cooked', 'alexscaves:cooked_tripodfish', 'alexscaves:cooked_mussel',
-    'butcher:cookedhumanmeat', 'butcher:cookedblueexolotlmeat', 'butcher:cookedcyanaxolotlmeat',
-    'butcher:cookedgoldaxolotlmeat', 'butcher:creepermeat', 'butcher:creeperleg', 'butcher:cookedlucyaxolotlmeat',
-    'butcher:cookedwildaxolotlmeat', 'butcher:cookedocelotmeat', 'butcher:cookedsniffermeat',
-    'butcher:cookedstridermeat', 'butcher:cookedevokermeat', 'butcher:cookedguardianmeat',
-    'butcher:cookedshulkermeat', 'butcher:cookedcatmeat', 'butcher:cookedendermanlungs',
-    'butcher:cookedendermankidney', 'butcher:cookedendermanintestines', 'butcher:cookedendermanliver',
-    'butcher:cookedendermanstomach', 'butcher:cookedbloodsausage', 'butcher:cookedheart',
+
     'alexsmobs:cooked_kangaroo_meat', 'alexsmobs:cooked_catfish', 'alexscaves:cooked_trilocaris_tail',
     'alexscaves:cooked_radgill', 'alexscaves:cooked_lanternfish', 'firmalife:food/corn_tortilla',
     'tfc:food/wheat_bread', 'tfc:food/rice_bread', 'tfc:food/rye_bread', 'tfc:food/oat_bread',
@@ -62,27 +48,27 @@
     event.recipes.tfc.heating(burntfood, 700).resultItem('kubejs:burnt_food_residue')
   })
 
-    /*event.forEachRecipe(//所有的烤制配方烧糊
-    {
+  /*event.forEachRecipe(//所有的烤制配方烧糊
+  {
 
 
-      type: "smoking"
+    type: "smoking"
 
-    }, r => {
+  }, r => {
 
-      var cookmeat_id = r.getOriginalRecipeResult().getId()
-      var meat_id = r.getOriginalRecipeIngredients()[0].getItemIds()[0]
+    var cookmeat_id = r.getOriginalRecipeResult().getId()
+    var meat_id = r.getOriginalRecipeIngredients()[0].getItemIds()[0]
 
-      if ((!cookmeat_id || (!meat_id || meat_id.length === 0) || (!meat_id || meat_id.length === 0))) {
+    if ((!cookmeat_id || (!meat_id || meat_id.length === 0) || (!meat_id || meat_id.length === 0))) {
 
-        return;
-      }
-      if (cookmeat_id == 'immersiveengineering:clinker_brick' || cookmeat_id == 'tfc:food/dried_kelp' || cookmeat_id == 'tfc:food/dried_seaweed' || cookmeat_id == 'tfc:powder/soda_ash' || cookmeat_id == 'tfc:torch' || cookmeat_id == 'tfc:stick_bunch') {
-        return;
-      }
+      return;
+    }
+    if (cookmeat_id == 'immersiveengineering:clinker_brick' || cookmeat_id == 'tfc:food/dried_kelp' || cookmeat_id == 'tfc:food/dried_seaweed' || cookmeat_id == 'tfc:powder/soda_ash' || cookmeat_id == 'tfc:torch' || cookmeat_id == 'tfc:stick_bunch') {
+      return;
+    }
 
-      event.recipes.tfc.heating(cookmeat_id, 700).resultItem('kubejs:burnt_food_residue')
-    })*/
+    event.recipes.tfc.heating(cookmeat_id, 700).resultItem('kubejs:burnt_food_residue')
+  })*/
 
 
 
@@ -106,7 +92,7 @@
     "result_item": { "item": "wildfire:baked_maize" },
     "temperature": 200
   })
-    event.custom({//食物：烤胡萝卜
+  event.custom({//食物：烤胡萝卜
     "type": "tfc:heating",
     "ingredient": { "item": 'tfc:food/carrot' },
     "result_item": { "item": "wildfire:baked_carrot" },

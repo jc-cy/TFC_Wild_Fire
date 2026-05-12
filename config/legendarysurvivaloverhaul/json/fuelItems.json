@@ -99,10 +99,6 @@
     "thermalType": "HEATING",
     "fuelValue": 25
   },
-  "vinery:stackable_log": {
-    "thermalType": "HEATING",
-    "fuelValue": 60
-  },
   "tfc:stick_bundle": {
     "thermalType": "HEATING",
     "fuelValue": 120

@@ -1,0 +1,47 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [128, 128],
+	"textures": {
+		"0": "kubejs:block/steam_engine/brass_steam_engine"
+	},
+	"elements": [
+		{
+			"name": "U",
+			"from": [6, 13, 6],
+			"to": [10, 16, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [9.625, 2, 10, 2.5], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [8, 2, 8.375, 2.5], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [8, 2, 8.375, 2.5], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [9.625, 2, 10, 2.5], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [4, 8.25, 4.5, 8.75], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [4, 8.25, 4.5, 8.75], "rotation": 90, "texture": "#0"}
+			}
+		},
+		{
+			"name": "U",
+			"from": [6, 0, 6],
+			"to": [10, 3, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [8, 2, 8.375, 2.5], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [9.625, 2, 10, 2.5], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [9.625, 2, 10, 2.5], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [8, 2, 8.375, 2.5], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [4, 8.25, 4.5, 8.75], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [4, 8.25, 4.5, 8.75], "rotation": 90, "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "flywheel",
+			"origin": [8, 0, 13.0494],
+			"scope": 0,
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

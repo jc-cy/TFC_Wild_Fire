@@ -2348,17 +2348,9 @@
 			]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "design_decor:industrial_gear_large"
-			}
+			icon: "createcasing:bamboo_cogwheel"
 			id: "5ABCEA9D66EB2104"
+			optional: true
 			rewards: [{
 				id: "5101CEF8047AD49D"
 				type: "xp"
@@ -2396,6 +2388,7 @@
 			dependencies: ["5ABCEA9D66EB2104"]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
+			icon: "createcasing:bamboo_large_cogwheel"
 			id: "12AFE28BA017BFB8"
 			rewards: [{
 				id: "5F487AE7ED2F9DD9"

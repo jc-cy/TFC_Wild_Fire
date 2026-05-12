@@ -1,0 +1,29 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "tfc:item/firestarter"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.3
+            },
+            "model": "tfc:item/firestarter1"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.6
+            },
+            "model": "tfc:item/firestarter2"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.8
+            },
+            "model": "tfc:item/firestarter3"
+        }
+    ]
+}

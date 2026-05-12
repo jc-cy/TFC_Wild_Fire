@@ -5,6 +5,9 @@ const toolMetals = ['bismuth_bronze', 'black_bronze', 'bronze', 'copper', 'wroug
 
 // 工具头可淬火
 ServerEvents.tags("item", event => {
+
+    event.add('kubejs:bolts', "firmaciv:copper_bolt");
+
     // 1. 定义基础数据：工具头模板（金属名用 {metal} 占位） + 金属列表
     const toolHeadTemplates = [
         'tfc_hammer_time:metal/excavator_head/{metal}',
@@ -267,13 +270,13 @@ ServerEvents.tags("block", event => {
             "tfc:wood/trapped_chest/willow"
         ]
     ),
-        event.add('tfc:bloomery_insulation','tfc:charcoal_pile' ),
-        event.add('tfc:forge_insulation','tfc:charcoal_pile' ),
-        event.add('tfc:bloomery_insulation','tfc:charcoal_forge' ),
-        event.add('tfc:forge_insulation','tfc:charcoal_forge' ),
+        event.add('tfc:bloomery_insulation', 'tfc:charcoal_pile'),
+        event.add('tfc:forge_insulation', 'tfc:charcoal_pile'),
+        event.add('tfc:bloomery_insulation', 'tfc:charcoal_forge'),
+        event.add('tfc:forge_insulation', 'tfc:charcoal_forge'),
 
-        event.add('minecraft:mineable/axe','simplytents:tent_roof_block' ),
-        event.add('tfc:needs_copper_tool','simplytents:tent_roof_block' )
+        event.add('minecraft:mineable/axe', 'simplytents:tent_roof_block'),
+        event.add('tfc:needs_copper_tool', 'simplytents:tent_roof_block')
 }),
     /*
     ,
@@ -411,14 +414,12 @@ ServerEvents.tags("block", event => {
         }
         )
 
-        event.add('tfcscraping:quarter_scraping', 'butcher:boneskinningknife')
-        event.add('tfc:usable_on_tool_rack', 'butcher:boneskinningknife')
-        event.add('tfc:sharp_tools', 'butcher:boneskinningknife')
 
         event.add('tfc_farm_charm:raw_dough', 'tfc_farm_charm:unfinished_croissant')
         event.add('tfc_farm_charm:raw_dough', 'tfc_farm_charm:unfinished_braided_bread')
         event.add('tfc_farm_charm:bread', '#tfc:foods/breads')
 
+        event.add('bbb:hammers', `tfc:hammers`)
         event.add('kubejs:tongs', 'create:extendo_grip')//机械臂
 
         event.add('kubejs:shaft', 'create:shaft')//机械臂
@@ -752,8 +753,6 @@ ServerEvents.tags("block", event => {
         //森罗物语油脂
         event.add('kaleidoscope_cookery:oil',
             [
-                "butcher:raw_pork_belly",
-                "butcher:pork_belly",
                 "firmalife:food/butter",
                 "artisanal:animal_fat",
                 "artisanal:suet",

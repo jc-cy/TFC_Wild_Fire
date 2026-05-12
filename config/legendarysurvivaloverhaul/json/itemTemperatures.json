@@ -89,24 +89,6 @@
     "cold_resistance": 0.0,
     "thermal_resistance": 1.0
   },
-  "vinery:straw_hat": {
-    "temperature": 0.0,
-    "heat_resistance": 1.5,
-    "cold_resistance": 0.0,
-    "thermal_resistance": 0.0
-  },
-  "vinery:winemaker_apron": {
-    "temperature": 0.0,
-    "heat_resistance": 1.5,
-    "cold_resistance": 0.0,
-    "thermal_resistance": 0.0
-  },
-  "vinery:winemaker_leggings": {
-    "temperature": 0.0,
-    "heat_resistance": 1.0,
-    "cold_resistance": 0.0,
-    "thermal_resistance": 0.5
-  },
   "sns:hiking_boots": {
     "temperature": 0.0,
     "heat_resistance": 0.0,

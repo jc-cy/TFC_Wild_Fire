@@ -94,7 +94,7 @@ StartupEvents.registry('item', event => {
 
     // 批量注册三种材质的工具//耐久  锤子伤害 标枪伤害 锄头伤害 小刀 斧头 铲子 阿舍利
     registerTFCTools(event, 'diamond', 700, 6, 4.25, 2.5, 3, 5.5, 3.75, 3);    // 钻石基础耐久700 → 阿舍利手斧560（700×0.8）
-    registerTFCTools(event, 'obsidian', 150, 3, 5, 3, 6, 7, 3.75, 4);   // 黑曜石基础耐久250 → 阿舍利手斧200（250×0.8）
+    registerTFCTools(event, 'obsidian', 80, 3, 5, 3, 6, 7, 3.75, 4);   // 黑曜石基础耐久250 → 阿舍利手斧200（250×0.8）
     registerTFCTools(event, 'flint', 120, 3.5, 3, 2.5, 2.5, 4.5, 3.75, 2.5);      // 燧石基础耐久120 → 阿舍利手斧96（120×0.8）
 
 

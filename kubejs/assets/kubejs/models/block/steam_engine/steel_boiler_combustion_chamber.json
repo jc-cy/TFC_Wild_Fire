@@ -1,0 +1,38 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/block",
+	"texture_size": [128, 128],
+	"textures": {
+		"0": "kubejs:block/steam_engine/steel_steam_engine",
+		"particle": "kubejs:block/steam_engine/steel_steam_engine"
+	},
+	"elements": [
+		{
+			"from": [3.25, 11, 0],
+			"to": [12.25, 2, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.25, 8]},
+			"faces": {
+				"north": {"uv": [6.25, 8.125, 7.375, 7], "texture": "#0"},
+				"east": {"uv": [6.25, 8.125, 7.375, 7], "texture": "#0"},
+				"south": {"uv": [6.25, 8.125, 7.375, 7], "texture": "#0"},
+				"west": {"uv": [6.25, 7, 7.375, 8.125], "texture": "#0"},
+				"up": {"uv": [8.5, 7.375, 7.375, 6.25], "rotation": 270, "texture": "#0"},
+				"down": {"uv": [6.25, 7, 7.375, 8.125], "rotation": 90, "texture": "#0"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.25, 8]},
+			"faces": {
+				"north": {"uv": [5, 3, 7, 5], "texture": "#0"},
+				"east": {"uv": [3, 5, 5, 7], "texture": "#0"},
+				"south": {"uv": [3, 5, 5, 7], "texture": "#0"},
+				"west": {"uv": [3, 5, 5, 7], "texture": "#0"},
+				"up": {"uv": [5, 5, 3, 3], "rotation": 270, "texture": "#0"},
+				"down": {"uv": [5, 5, 7, 7], "rotation": 90, "texture": "#0"}
+			}
+		}
+	]
+}

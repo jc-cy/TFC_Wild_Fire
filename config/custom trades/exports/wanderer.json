@@ -1361,25 +1361,7 @@
     {
       "isRare": false,
       "offer": {
-        "itemKey": "vinery:mead",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "request": {
-        "itemKey": "kubejs:crown",
-        "amount": 9,
-        "priceModifier": 0
-      },
-      "tradeExp": 2,
-      "maxUses": 2,
-      "priceMultiplier": 0.05,
-      "demand": 0,
-      "tradeLevel": 1
-    },
-    {
-      "isRare": false,
-      "offer": {
-        "itemKey": "vinery:strad_wine",
+        "itemKey": "kaleidoscopetfctavern:purple_wine",
         "amount": 1,
         "priceModifier": 0
       },
@@ -1397,7 +1379,43 @@
     {
       "isRare": false,
       "offer": {
-        "itemKey": "vinery:eiswein",
+        "itemKey": "kaleidoscopetfctavern:red_wine",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 10,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "kaleidoscopetfctavern:white_wine",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 10,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "kaleidoscopetfctavern:ice_purple_wine",
         "amount": 1,
         "priceModifier": 0
       },
@@ -1415,7 +1433,43 @@
     {
       "isRare": false,
       "offer": {
-        "itemKey": "vinery:apple_cider",
+        "itemKey": "kaleidoscopetfctavern:ice_red_wine",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "kaleidoscopetfctavern:ice_white_wine",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "kaleidoscopetfctavern:cider",
         "amount": 1,
         "priceModifier": 0
       },
@@ -1433,13 +1487,13 @@
     {
       "isRare": false,
       "offer": {
-        "itemKey": "vinery:cristel_wine",
+        "itemKey": "kaleidoscopetfctavern:flower_red_wine",
         "amount": 1,
         "priceModifier": 0
       },
       "request": {
         "itemKey": "kubejs:crown",
-        "amount": 9,
+        "amount": 12,
         "priceModifier": 0
       },
       "tradeExp": 2,
@@ -1451,13 +1505,103 @@
     {
       "isRare": false,
       "offer": {
-        "itemKey": "vinery:glowing_wine",
+        "itemKey": "kaleidoscopetfctavern:flower_white_wine",
         "amount": 1,
         "priceModifier": 0
       },
       "request": {
         "itemKey": "kubejs:crown",
-        "amount": 6,
+        "amount": 12,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "kaleidoscopetfctavern:flower_purple_wine",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 12,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "kaleidoscopetfctavern:kaleidoscopetfctavern:whiskey",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 15,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "kaleidoscopetfctavern:kaleidoscopetfctavern:rye_whiskey",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 15,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "kaleidoscopetfctavern:kaleidoscopetfctavern:corn_whiskey",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 15,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "kaleidoscopetfctavern:vodka",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 15,
         "priceModifier": 0
       },
       "tradeExp": 2,

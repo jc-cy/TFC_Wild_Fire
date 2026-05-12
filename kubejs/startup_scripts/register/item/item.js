@@ -17,9 +17,9 @@ StartupEvents.registry('item', event => {
      event.create('standard_type_gunstock_parts_steel').texture('kubejs:item/gun/standard_type_gunstock_parts_steel'); // 制式枪托配件（钢）
      event.create('standard_type_gunstock_parts_copper').texture('kubejs:item/gun/standard_type_gunstock_parts_copper'); // 制式枪托配件（铜）*/
 
-     //===============================================================
-     //===============================================================
-     
+    //===============================================================
+    //===============================================================
+
     event.create('kubejs:bismuth_bronze_lockpick')
         .texture('kubejs:item/bismuth_bronze_lockpick')
         .displayName("铋铜开锁器")
@@ -158,11 +158,11 @@ StartupEvents.registry('item', event => {
     event.create('unvacuumed_precision_tube', 'basic').texture('kubejs:item/unvacuumed_precision_tube'); // 未抽真空的精密电子管
     event.create('vacuumed_precision_tube', 'basic').texture('kubejs:item/vacuumed_precision_tube'); // 抽真空的精密电子管
 
-    event.create('leather_hot_water_bag', 'basic').texture('kubejs:item/tfc/leather_hot_water_bag').maxStackSize(1);// 皮革热水袋
-    event.create('rubber_hot_water_bag', 'basic').texture('kubejs:item/tfc/rubber_hot_water_bag').maxStackSize(1);// 橡胶热水袋
-    event.create('metal_hot_water_bag', 'basic').texture('kubejs:item/tfc/metal_hot_water_bag').maxStackSize(1);// 金属热水袋
+    event.create('leather_hot_water_bag', 'basic').texture('kubejs:item/tfc/leather_hot_water_bag').maxStackSize(1).tag("kubejs:hot_water_bottle");// 皮革热水袋
+    event.create('rubber_hot_water_bag', 'basic').texture('kubejs:item/tfc/rubber_hot_water_bag').maxStackSize(1).tag("kubejs:hot_water_bottle");// 橡胶热水袋
+    event.create('metal_hot_water_bag', 'basic').texture('kubejs:item/tfc/metal_hot_water_bag').maxStackSize(1).tag("kubejs:hot_water_bottle");// 金属热水袋
     event.create('warm_warmer', 'basic').texture('kubejs:item/tfc/warm_warmer').maxStackSize(4);//暖手宝
-    event.create('heating_warmer', 'basic').texture('kubejs:item/tfc/heating_warmer').maxStackSize(4);//暖手宝
+    event.create('heating_warmer', 'basic').texture('kubejs:item/tfc/heating_warmer').maxStackSize(1).tag("kubejs:hot_water_bottle");//暖手宝
 
 
     event.create('kubejs:tfc/crushed_sinew', 'basic').texture('kubejs:item/tfc/crushed_sinew'); // 捣碎的筋腱
@@ -173,6 +173,38 @@ StartupEvents.registry('item', event => {
 
     event.create('coal_powder', 'basic').texture('kubejs:item/fuel/coal_powder'); // 煤炭粉
     event.create('kubejs:item/tfc/mixedgem_powder', 'basic').texture('kubejs:item/tfc/mixedgem_powder').tag('tfc:gem_powders'); //掺杂宝石粉
+
+    event.create('kubejs:item/tfc/wrapped_stick', 'basic').texture('kubejs:item/tfc/wrapped_stick').tag('forge:rods/wooden'); // 缠柄木棍
+    event.create('kubejs:item/tfc/wrapped_preserved_stick', 'basic').texture('kubejs:item/tfc/wrapped_preserved_stick').tag('forge:rods/wooden'); // 缠柄防腐木棍
+
+
+    // 三种铜合金螺栓（对应TFC的青铜/黑铜/铋铜）
+    event.create('bronze_bolt', 'basic').texture('kubejs:item/bolt/bronze_bolt').tag('kubejs:bolts').tag('kubejs:4ore');
+    event.create('black_bronze_bolt', 'basic').texture('kubejs:item/bolt/black_bronze_bolt').tag('kubejs:bolts').tag('kubejs:4ore');
+    event.create('bismuth_bronze_bolt', 'basic').texture('kubejs:item/bolt/bismuth_bronze_bolt').tag('kubejs:bolts').tag('kubejs:4ore');
+    event.create('wrought_iron_bolt', 'basic').texture('kubejs:item/bolt/wrought_iron_bolt').tag('kubejs:bolts').tag('kubejs:4ore');  // 锻铁/铁螺栓
+    event.create('steel_bolt', 'basic').texture('kubejs:item/bolt/steel_bolt').tag('kubejs:bolts').tag('kubejs:4ore');// 钢螺栓系列
+    event.create('stainless_steel_bolt', 'basic').texture('kubejs:item/bolt/stainless_steel_bolt').tag('kubejs:bolts').tag('kubejs:4ore');
+    event.create('high_manganese_steel_bolt', 'basic').texture('kubejs:item/bolt/high_manganese_steel_bolt').tag('kubejs:bolts').tag('kubejs:4ore');
+    event.create('titanium_alloy_bolt', 'basic').texture('kubejs:item/bolt/titanium_alloy_bolt').tag('kubejs:bolts').tag('kubejs:4ore');    // 钛合金螺栓
+
+    // 铜合金钉子（对应青铜/黑铜/铋铜）
+    event.create('copper_nail', 'basic').texture('kubejs:item/nail/copper_nail').tag('kubejs:nails').tag('kubejs:4ore');
+    event.create('bronze_nail', 'basic').texture('kubejs:item/nail/bronze_nail').tag('kubejs:nails').tag('kubejs:4ore');
+    event.create('black_bronze_nail', 'basic').texture('kubejs:item/nail/black_bronze_nail').tag('kubejs:nails').tag('kubejs:4ore');
+    event.create('bismuth_bronze_nail', 'basic').texture('kubejs:item/nail/bismuth_bronze_nail').tag('kubejs:nails').tag('kubejs:4ore');
+
+    // 锻铁钉子
+    event.create('wrought_iron_nail', 'basic').texture('kubejs:item/nail/wrought_iron_nail').tag('kubejs:nails').tag('kubejs:4ore');
+
+    // 钢钉子系列
+    event.create('steel_nail', 'basic').texture('kubejs:item/nail/steel_nail').tag('kubejs:nails').tag('kubejs:4ore');
+    event.create('stainless_steel_nail', 'basic').texture('kubejs:item/nail/stainless_steel_nail').tag('kubejs:nails').tag('kubejs:4ore');
+    event.create('high_manganese_steel_nail', 'basic').texture('kubejs:item/nail/high_manganese_steel_nail').tag('kubejs:nails').tag('kubejs:4ore');
+
+    // 钛合金钉子
+    event.create('titanium_alloy_nail', 'basic').texture('kubejs:item/nail/titanium_alloy_nail').tag('kubejs:nails').tag('kubejs:4ore');
+
 
     event.create('kubejs:crushed_raw_desh') // 创建粉碎的原始Desh物品.texture('kubejs:item/crushed_raw_desh') 
     event.create('kubejs:crushed_raw_calorite') // 创建粉碎的原始Calorite物品.texture('kubejs:item/crushed_raw_calorite') 
