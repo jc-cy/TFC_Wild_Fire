@@ -1,0 +1,9 @@
+{
+  "format_version": "1.21.6",
+  "credit": "Made with Blockbench",
+  "parent": "kaleidoscopetfctavern:block/brew/drink/ice_white_wine/count2",
+  "textures": {
+    "0": "kaleidoscopetfctavern:block/brew/cherry_wine",
+    "particle": "kaleidoscopetfctavern:block/brew/cherry_wine"
+  }
+}

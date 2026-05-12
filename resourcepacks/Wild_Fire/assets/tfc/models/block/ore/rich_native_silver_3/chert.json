@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/chert",
+    "carve": "tfc:block/ore/ore_carve_A/rich_ore_3/chert",
+    "overlay": "tfc:block/ore/native_silver/rich_native_silver_3_dark"
+  }
+}

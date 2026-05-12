@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/rich_native_silver/rhyolite"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/rich_native_silver_1/rhyolite"
+      },
+      {
+        "model": "tfc:block/ore/rich_native_silver_2/rhyolite"
+      },
+      {
+        "model": "tfc:block/ore/rich_native_silver_3/rhyolite"
+      }
+    ]
+  }
+}

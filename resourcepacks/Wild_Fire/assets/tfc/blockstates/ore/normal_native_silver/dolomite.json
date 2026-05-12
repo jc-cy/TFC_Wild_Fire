@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_native_silver/dolomite"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_native_silver_1/dolomite"
+      },
+      {
+        "model": "tfc:block/ore/normal_native_silver_2/dolomite"
+      },
+      {
+        "model": "tfc:block/ore/normal_native_silver_3/dolomite"
+      }
+    ]
   }
 }

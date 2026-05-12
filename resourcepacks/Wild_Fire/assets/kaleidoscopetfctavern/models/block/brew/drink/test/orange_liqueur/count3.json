@@ -1,0 +1,9 @@
+{
+  "format_version": "1.21.6",
+  "credit": "Made with Blockbench",
+  "parent": "kaleidoscopetfctavern:block/brew/drink/illager_moonshine/count3",
+  "textures": {
+    "0": "kaleidoscopetfctavern:block/brew/orange_liqueur",
+    "particle": "kaleidoscopetfctavern:block/brew/orange_liqueur"
+  }
+}

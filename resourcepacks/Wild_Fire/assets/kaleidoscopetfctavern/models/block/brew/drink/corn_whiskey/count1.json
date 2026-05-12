@@ -1,0 +1,9 @@
+{
+  "format_version": "1.21.6",
+  "credit": "Made with Blockbench",
+  "parent": "kaleidoscopetfctavern:block/brew/drink/whiskey/count1",
+  "textures": {
+  "1": "kaleidoscopetfctavern:block/brew/corn_whiskey",
+  "particle": "kaleidoscopetfctavern:block/brew/corn_whiskey"
+  }
+}

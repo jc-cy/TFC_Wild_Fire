@@ -1,0 +1,9 @@
+{
+  "format_version": "1.21.6",
+  "credit": "Made with Blockbench",
+  "parent": "kaleidoscopetfctavern:block/brew/drink/mushroom_wine/count1",
+  "textures": {
+    "0": "kaleidoscopetfctavern:block/brew/cassava_beer",
+    "particle": "kaleidoscopetfctavern:block/brew/cassava_beer"
+  }
+}

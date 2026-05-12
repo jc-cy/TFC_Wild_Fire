@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_native_silver/phyllite"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_native_silver_1/phyllite"
+      },
+      {
+        "model": "tfc:block/ore/poor_native_silver_2/phyllite"
+      },
+      {
+        "model": "tfc:block/ore/poor_native_silver_3/phyllite"
+      }
+    ]
+  }
+}

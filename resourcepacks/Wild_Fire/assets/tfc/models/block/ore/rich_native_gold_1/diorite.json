@@ -1,8 +1,9 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "parent": "tfc:block/ore",
+  "parent": "tfc:block/ore_alt",
   "textures": {
     "all": "tfc:block/rock/raw/diorite",
-    "overlay": "tfc:block/ore/native_gold/rich_native_gold_1_A"
+    "carve": "tfc:block/ore/ore_carve_A/rich_ore_1/diorite",
+    "overlay": "tfc:block/ore/native_gold/rich_native_gold_1_light"
   }
 }

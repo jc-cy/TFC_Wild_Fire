@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_native_silver/granite"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_native_silver_1/granite"
+      },
+      {
+        "model": "tfc:block/ore/poor_native_silver_2/granite"
+      },
+      {
+        "model": "tfc:block/ore/poor_native_silver_3/granite"
+      }
+    ]
+  }
+}

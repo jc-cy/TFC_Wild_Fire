@@ -1,0 +1,9 @@
+{
+  "format_version": "1.21.6",
+  "credit": "Made with Blockbench",
+  "parent": "kaleidoscopetfctavern:block/brew/drink/normal_wine/count2",
+  "textures": {
+    "0": "kaleidoscopetfctavern:block/brew/flower_purple_wine",
+    "particle": "kaleidoscopetfctavern:block/brew/flower_purple_wine"
+  }
+}

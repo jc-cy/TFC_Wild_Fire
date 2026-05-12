@@ -147,6 +147,8 @@ StartupEvents.registry('item', event => {
 	.food(foodBuilder=>{
 		foodBuilder.hunger(1)
 		foodBuilder.saturation(0.1)
+		foodBuilder.effect("brewinandchewin:tipsy",120*20,0,1)
+		foodBuilder.effect("brewinandchewin:intoxication",90*20,0,1)
 	})
 	//食物：大麦啤酒
 	event.create("wildfire:beer_barley")
@@ -155,6 +157,8 @@ StartupEvents.registry('item', event => {
 	.food(foodBuilder=>{
 		foodBuilder.hunger(1)
 		foodBuilder.saturation(0.1)
+		foodBuilder.effect("brewinandchewin:tipsy",120*20,0,1)
+		foodBuilder.effect("brewinandchewin:intoxication",90*20,0,1)
 	})
 	//食物：酒花啤酒
 	event.create("wildfire:beer_hops")
@@ -163,6 +167,8 @@ StartupEvents.registry('item', event => {
 	.food(foodBuilder=>{
 		foodBuilder.hunger(1)
 		foodBuilder.saturation(0.1)
+		foodBuilder.effect("brewinandchewin:tipsy",120*20,0,1)
+		foodBuilder.effect("brewinandchewin:intoxication",90*20,0,1)
 	})
 	//食物：黑麦啤酒
 	event.create("wildfire:beer_rye")
@@ -171,6 +177,8 @@ StartupEvents.registry('item', event => {
 	.food(foodBuilder=>{
 		foodBuilder.hunger(1)
 		foodBuilder.saturation(0.1)
+		foodBuilder.effect("brewinandchewin:tipsy",120*20,0,1)
+		foodBuilder.effect("brewinandchewin:intoxication",90*20,0,1)
 	})
 	//食物：燕麦啤酒
 	event.create("wildfire:beer_oat")
@@ -179,6 +187,8 @@ StartupEvents.registry('item', event => {
 	.food(foodBuilder=>{
 		foodBuilder.hunger(1)
 		foodBuilder.saturation(0.1)
+		foodBuilder.effect("brewinandchewin:tipsy",120*20,0,1)
+		foodBuilder.effect("brewinandchewin:intoxication",90*20,0,1)
 	})
 	//食物：果汁啤酒
 	event.create("wildfire:beer_berries")
@@ -187,6 +197,8 @@ StartupEvents.registry('item', event => {
 	.food(foodBuilder=>{
 		foodBuilder.hunger(1)
 		foodBuilder.saturation(0.1)
+		foodBuilder.effect("brewinandchewin:tipsy",120*20,0,1)
+		foodBuilder.effect("brewinandchewin:intoxication",90*20,0,1)
 	})
 	//食物：扭结面包
 	event.create("wildfire:pretzel")

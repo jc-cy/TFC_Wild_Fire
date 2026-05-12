@@ -1,8 +1,9 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "parent": "tfc:block/ore",
+  "parent": "tfc:block/ore_alt",
   "textures": {
-    "all": "tfc:block/rock/raw/phylite",
-    "overlay": "tfc:block/ore/native_gold/poor_native_gold_1_E"
+    "all": "tfc:block/rock/raw/phyllite",
+    "carve": "tfc:block/ore/ore_carve_A/poor_ore_1/phyllite",
+    "overlay": "tfc:block/ore/native_gold/poor_native_gold_1_dark"
   }
 }

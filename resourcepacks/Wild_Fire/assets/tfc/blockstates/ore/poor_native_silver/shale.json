@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_native_silver/shale"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_native_silver_1/shale"
+      },
+      {
+        "model": "tfc:block/ore/poor_native_silver_2/shale"
+      },
+      {
+        "model": "tfc:block/ore/poor_native_silver_3/shale"
+      }
+    ]
+  }
+}

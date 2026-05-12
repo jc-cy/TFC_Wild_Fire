@@ -1,0 +1,128 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"render_type": "cutout",
+	"texture_size": [32, 32],
+	"textures": {
+		   "1": "kaleidoscopetfctavern:block/brew/mead",
+		   "particle": "kaleidoscopetfctavern:block/brew/mead"
+	},
+	"elements": [
+		{
+			"name": "count1",
+			"from": [10.5, 0.2, 5.5],
+			"to": [5.5, 11.2, 10.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.52749, 8.2, 6.37749]},
+			"faces": {
+				"north": {"uv": [16, 0, 13.5, 5], "texture": "#1"},
+				"east": {"uv": [11, 0, 13.5, 5], "texture": "#1"},
+				"south": {"uv": [16, 0, 13.5, 5], "texture": "#1"},
+				"west": {"uv": [11, 0, 13.5, 5], "texture": "#1"},
+				"down": {"uv": [8.5, 0, 6, 2.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "count1",
+			"from": [5, 0, 5],
+			"to": [11, 7, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [3.02749, 8, 5.87749]},
+			"faces": {
+				"north": {"uv": [10, 9.5, 13, 13], "texture": "#1"},
+				"east": {"uv": [13, 9.5, 16, 13], "texture": "#1"},
+				"south": {"uv": [10, 9.5, 13, 13], "texture": "#1"},
+				"west": {"uv": [13, 9.5, 16, 13], "texture": "#1"},
+				"down": {"uv": [16, 13, 13, 16], "texture": "#1"}
+			}
+		},
+		{
+			"name": "count1",
+			"from": [4.5, 5, 7.5],
+			"to": [11.5, 6, 13.5],
+			"rotation": {"angle": 45, "axis": "x", "origin": [6.52749, 6, 8.37749]},
+			"faces": {
+				"east": {"uv": [13, 9.5, 16, 10], "texture": "#1"},
+				"south": {"uv": [9.5, 13, 13, 13.5], "texture": "#1"},
+				"west": {"uv": [13, 9.5, 16, 10], "texture": "#1"}
+			}
+		},
+		{
+			"name": "count1",
+			"from": [5.5, 11.2, 5.5],
+			"to": [10.5, 11.2, 10.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.52749, 9.2, 7.37749]},
+			"faces": {
+				"up": {"uv": [11, 2.5, 8.5, 0], "texture": "#1"},
+				"down": {"uv": [11, 0, 8.5, 2.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "count1_outline",
+			"from": [10.35, 9.05, 10.35],
+			"to": [5.65, 0.35, 5.65],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.52749, 8.2, 8.37749]},
+			"faces": {
+				"north": {"uv": [13.5, 9.5, 16, 5], "texture": "#1"},
+				"east": {"uv": [13.5, 9.5, 11, 5], "texture": "#1"},
+				"south": {"uv": [13.5, 9.5, 16, 5], "texture": "#1"},
+				"west": {"uv": [13.5, 9.5, 11, 5], "texture": "#1"},
+				"up": {"uv": [8.5, 7.5, 6, 5], "texture": "#1"},
+				"down": {"uv": [11, 5, 8.5, 7.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "count3",
+			"from": [7.029, 12, 6.979],
+			"to": [9.029, 15, 8.979],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.05649, 7, 7.85649]},
+			"faces": {
+				"north": {"uv": [5, 0, 6, 1.5], "texture": "#1"},
+				"east": {"uv": [6, 0, 5, 1.5], "texture": "#1"},
+				"south": {"uv": [5, 0, 6, 1.5], "texture": "#1"},
+				"west": {"uv": [6, 0, 5, 1.5], "texture": "#1"},
+				"up": {"uv": [6, 3.5, 5, 2.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "count3",
+			"from": [6.829, 12.8, 6.779],
+			"to": [9.229, 14, 9.179],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.05649, 8, 7.85649]},
+			"faces": {
+				"north": {"uv": [10, 2.5, 11, 3], "texture": "#1"},
+				"east": {"uv": [11, 2.5, 10, 3], "texture": "#1"},
+				"south": {"uv": [10, 2.5, 11, 3], "texture": "#1"},
+				"west": {"uv": [11, 2.5, 10, 3], "texture": "#1"}
+			}
+		},
+		{
+			"name": "count3",
+			"from": [7.029, 10, 6.979],
+			"to": [9.029, 12, 8.979],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.05649, 5, 7.85649]},
+			"faces": {
+				"north": {"uv": [5, 1.5, 6, 2.5], "texture": "#1"},
+				"east": {"uv": [6, 1.5, 5, 2.5], "texture": "#1"},
+				"south": {"uv": [5, 1.5, 6, 2.5], "texture": "#1"},
+				"west": {"uv": [6, 1.5, 5, 2.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "count1",
+			"from": [5.5, 9.1, 5.5],
+			"to": [10.5, 9.1, 10.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.52749, 9.1, 7.37749]},
+			"faces": {
+				"up": {"uv": [11, 7.5, 8.5, 5], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "count1",
+			"origin": [0, 0, 0],
+			"scope": 0,
+			"color": 0,
+			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8]
+		}
+	]
+}
