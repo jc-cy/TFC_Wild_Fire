@@ -1,4 +1,0 @@
-{
-  "condition": "!compatOptions.fa_Player & !compatOptions.not_Enough_Animations",
-  "fallback": "assets/minecraft/models/item/fa_nea/lampiao.json"
-}

@@ -1,6 +1,0 @@
-{
-  expansions: {
-    j: "hmi.inspectKeybind",
-    apenasCorrer: "refinedTorches.holdMyItems.torchHandSwayOnlyWhenSprinting"
-  }
-}
