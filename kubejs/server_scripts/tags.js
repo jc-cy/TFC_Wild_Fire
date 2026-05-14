@@ -278,6 +278,7 @@ ServerEvents.tags("block", event => {
         event.add('minecraft:mineable/axe', 'simplytents:tent_roof_block'),
         event.add('tfc:needs_copper_tool', 'simplytents:tent_roof_block')
 }),
+
     /*
     ,
     

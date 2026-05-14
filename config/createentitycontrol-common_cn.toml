@@ -1,0 +1,335 @@
+[blocks_limit]
+#--------------------------------------------------------------------------
+#方块实体中所使用方块的计数限制。第一个参数是数量限制，第二个参数是稳定参数。
+blocks_limit = [
+	[
+		"create:deployer",
+		256,
+		100,
+	],
+	[
+		"create:mechanical_drill",
+		256,
+		100,
+	],
+	[
+		"create:mechanical_roller",
+		64,
+		100,
+	],
+	[
+		"minecraft:dirt",
+		2048,
+		10000,
+	],
+	[
+		"create:linear_chassis",
+		2048,
+		-100,
+	],
+	[
+		"minecraft:netherrack",
+		2048,
+		5000,
+	],
+	[
+		"minecraft:stone",
+		2048,
+		4000,
+	],
+	[
+		"minecraft:deepslate",
+		2048,
+		4000,
+	],
+	[
+		"minecraft:end_stone",
+		2048,
+		4000,
+	],
+	[
+		"minecraft:white_wool",
+		2048,
+		80,
+	],
+	[
+		"create:item_vault",
+		2048,
+		360,
+	],
+	[
+		"metalbarrels:obsidian_barrel",
+		2048,
+		1800,
+	],
+	[
+		"metalbarrels:diamond_barrel",
+		2048,
+		1800,
+	],
+	[
+		"metalbarrels:crystal_barrel",
+		2048,
+		1800,
+	],
+	[
+		"metalbarrels:netherite_barrel",
+		2048,
+		2000,
+	],
+	[
+		"metalbarrels:gold_barrel",
+		2048,
+		1100,
+	],
+	[
+		"metalbarrels:iron_barrel",
+		2048,
+		800,
+	],
+	[
+		"metalbarrels:copper_barrel",
+		2048,
+		700,
+	],
+	[
+		"minecraft:barrel",
+		2048,
+		400,
+	],
+	[
+		"minecraft:chest",
+		2048,
+		800,
+	],
+	[
+		"twilightforest:twilight_oak_chest",
+		2048,
+		800,
+	],
+	[
+		"twilightforest:canopy_chest",
+		2048,
+		800,
+	],
+	[
+		"twilightforest:mangrove_chest",
+		2048,
+		800,
+	],
+	[
+		"twilightforest:dark_chest",
+		2048,
+		800,
+	],
+	[
+		"twilightforest:time_chest",
+		2048,
+		800,
+	],
+	[
+		"twilightforest:transformation_chest",
+		2048,
+		800,
+	],
+	[
+		"twilightforest:mining_chest",
+		2048,
+		800,
+	],
+	[
+		"twilightforest:sorting_chest",
+		2048,
+		800,
+	],
+	[
+		"ae2:smooth_sky_stone_chest",
+		2048,
+		800,
+	],
+	[
+		"quark:ancient_chest",
+		2048,
+		800,
+	],
+	[
+		"quark:azalea_chest",
+		2048,
+		800,
+	],
+	[
+		"quark:blossom_chest",
+		2048,
+		800,
+	],
+	[
+		"quark:oak_chest",
+		2048,
+		800,
+	],
+	[
+		"quark:spruce_chest",
+		2048,
+		800,
+	],
+	[
+		"quark:birch_chest",
+		2048,
+		800,
+	],
+	[
+		"quark:jungle_chest",
+		2048,
+		800,
+	],
+	[
+		"quark:acacia_chest",
+		2048,
+		800,
+	],
+	[
+		"quark:dark_oak_chest",
+		2048,
+		800,
+	],
+	[
+		"quark:crimson_chest",
+		2048,
+		800,
+	],
+	[
+		"quark:mangrove_chest",
+		2048,
+		800,
+	],
+	[
+		"quark:cherry_chest",
+		2048,
+		800,
+	],
+]
+#--------------------------------------------------------------------------
+#此配置默认会在第一次忽略一次实体挤压。
+#这样可以在第一次挤压时保护机器不损坏，从而帮助玩家。
+keep_structure_at_first = true
+#--------------------------------------------------------------------------
+#记录列表刷新时间，默认3600秒。
+#如果一个结构首次被忽略，且第二次发生时间小于3600秒，
+#该结构将由本模组控制；若超过3600秒，则由Create控制。
+#范围：0 ~ 36000
+"keep structure refresh time(s)" = 3600
+#--------------------------------------------------------------------------
+#是否在方块无法转化为方块实体时记录问题。
+"Log block entity problem" = false
+#--------------------------------------------------------------------------
+#是否记录额外运行时控制逻辑（如装置集群）的调试信息。
+debug = false
+#--------------------------------------------------------------------------
+#破坏速度的10倍值 | 若设为14，则实际破坏速度计算为1.4倍。
+#例如：黑曜石硬度40，这里变为400；泥土0.5，变为5。
+#建议使用默认值，因为泥土和沙子会掉落，而石头会保留。
+#范围：> 0
+"10% of destroy speed" = 14
+#--------------------------------------------------------------------------
+#机械轴承旋转的专用最大速度。
+#设为0则禁用此限制。若Create提供256转速，你设为128，则轴承以128旋转。
+#若设置值高于原始Create速度，则保留原始速度。
+#范围：> 0
+"mechanical bearing gear max speed" = 128
+#--------------------------------------------------------------------------
+#方块实体在XZ平面的最大长度 | 若设为20：则17*42*20允许，而20*42*21禁止。
+#范围：3 ~ 500
+"block entity max length XZ" = 40
+#--------------------------------------------------------------------------
+#方块实体在Y轴的最大长度 | 若设为20：42*14*42允许，但42*24*42禁止。
+#范围：3 ~ 500
+"block entity max length Y" = 60
+#--------------------------------------------------------------------------
+#装置集群检测使用的扫描半径。
+#仅在此半径内的装置会被合并为一个集群，以进行集群级别的限制检查。 
+#范围：1.0 ~ 512.0
+"contraption cluster scan radius" = 96.0
+#--------------------------------------------------------------------------
+#本地通知半径，用于附近的动作栏提示和覆盖层同步。
+#范围：1.0 ~ 512.0
+"contraption cluster local notify radius" = 96.0
+#--------------------------------------------------------------------------
+#在全局集群阻塞消息中列出附近玩家的搜索半径。
+#这不会改变谁收到全局消息。
+#范围：1.0 ~ 512.0
+"contraption cluster global nearby players radius" = 96.0
+#--------------------------------------------------------------------------
+#应用于集群级别聚合方块限制的乘数（来自blocks_limit）。
+#单个装置的限制保持不变；只有集群总数使用此乘数。
+#范围：0.0 ~ 64.0
+"contraption cluster block limit multiplier" = 1.5
+#--------------------------------------------------------------------------
+#启用对附近多个装置的链式集群检测。
+#这可以检测多实体集群，但会消耗一些额外性能。
+"contraption cluster chain detection" = true
+#--------------------------------------------------------------------------
+#装置集群验证的运行间隔，单位秒。
+#这控制为了性能控制而添加的定期集群扫描冷却时间。
+#范围：1 ~ 10
+"contraption cluster scan interval seconds" = 1
+#--------------------------------------------------------------------------
+#全局集群阻塞聊天通知的冷却时间，单位分钟。
+#范围：1 ~ 60
+"contraption cluster global notify cooldown minutes" = 5
+#--------------------------------------------------------------------------
+#无法被移动并转化为方块实体的方块列表。
+blocks_unmoved = [
+	"create:mechanical_crafter",
+	"supplementaries:notice_board",
+	"minecraft:cobblestone",
+	"minecraft:stone",
+	"minecraft:deepslate",
+	"create:belt",
+	"create:white_toolbox",
+	"create:orange_toolbox",
+	"create:magenta_toolbox",
+	"create:yellow_toolbox",
+	"create:lime_toolbox",
+	"create:brown_toolbox",
+	"create:pink_toolbox",
+	"create:gray_toolbox",
+	"create:light_gray_toolbox",
+	"create:light_blue_toolbox",
+	"create:blue_toolbox",
+	"create:purple_toolbox",
+	"create:cyan_toolbox",
+	"create:green_toolbox",
+	"create:red_toolbox",
+	"create:black_toolbox",
+	"minecraft:spawner",
+]
+#--------------------------------------------------------------------------
+#不能被方块实体挤压破坏的方块列表。
+#如果你用泥土挤压石头，且石头在此列表中，则泥土掉落而石头保留！
+blocks_uncrushable = [
+	"minecraft:deepslate",
+	"minecraft:stone",
+	"minecraft:cobblestone",
+]
+#--------------------------------------------------------------------------
+#可以被方块实体挤压的方块列表。
+#Create模组的默认配置。
+#如果你用泥土挤压石头，且石头在此列表中，则石头掉落而泥土保留！
+#如果添加流体，这些流体会像原版Create一样消失。
+#警告：被岩浆烧毁的方块可能与玩家冲突，你可以添加minecraft:lava来避免方块被岩浆烧毁！
+blocks_crushable = ["minecraft:water", "minecraft:lava"]
+#--------------------------------------------------------------------------
+#实体控制将忽略的方块列表。
+#一些方块实体使用相同的功能，但有独特的方法和参数。
+#将它们全部添加到此列表中将忽略这些实体。
+#默认配置兼容Create:big cannon！只需添加新方块，不要移除它们！
+#警告！确保新增的方块不会导致bug！
+blocks_ignore = ["create:piston_extension_pole"]
+#--------------------------------------------------------------------------
+#启用时，方块会计算方块实体的实验性参数。这可能会花费极少的时间。
+"calculate block stabilize para" = true
+#--------------------------------------------------------------------------
+#稳定参数的最大限制。一个普通方块默认稳定计数为100。
+#根据存储箱设置可以避免方块实体NBT溢出。
+#范围：> 0
+"block entity max stabilize para" = 204800
