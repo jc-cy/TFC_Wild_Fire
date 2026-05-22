@@ -17,6 +17,6 @@ NativeEvents.onEvent(Java.loadClass("first.wildfires.api.customEvent.MobPoopData
     ]
 
     guanoOnlyMobs.forEach(mob => {
-        event.addMobPoopData(mob, 10, null, "alexscaves:guano_layer")
+        event.addMobPoopData(mob, 12000, null, "alexscaves:guano_layer")
     })
 })
