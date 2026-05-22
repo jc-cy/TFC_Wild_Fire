@@ -2,4 +2,7 @@
 [common]
 	#是否计算负重 / enable equips' load attribute or not
 	enable_equip_load = true
+	#职业显示顺序
+	#列表中的职业将优先按此顺序排列，未列出的职业排在最后
+	class_order = []
 

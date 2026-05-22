@@ -1,111 +1,378 @@
-const FoodCapability = Java.loadClass('net.dries007.tfc.common.capabilities.food.FoodCapability');
-const Nutrient = Java.loadClass('net.dries007.tfc.common.capabilities.food.Nutrient');
+// ============================================
+// 七属性经验系统 — gain_exp.js
+// 属性：力量(strength)、技艺(skill)、体力(endurance)
+//       生命(health)、集中(focus)、敏捷(agility)、耐力(stamina)
+// ============================================
 
-/*
-耐性:受到伤害获得耐性[受到数值越高的伤害单次加成越高、反之越低（例如受到10颗心的伤害+100经验、1颗心为2）]、死亡时清零
-集中:开锁成功和使用远程武器造成伤害获得
-敏捷:负重越少增加的经验越多负重100%后每多1%-2%获得经验最低为0，进行跳跃时增加
-*/
+// ---- 安全读写经验值 ----
+// player.persistentData.getDouble(key) — 读取Double值，键不存在时返回NaN
+// player.persistentData.putDouble(key, val) — 写入Double值
+// NaN检测：val !== val 是Rhino中唯一可靠的NaN判断方式
+function getExp(player, key) {
+    let val = player.persistentData.getDouble(key)
+    return (val !== val) ? 0 : val
+}
+function setExp(player, key, val) {
+    player.persistentData.putDouble(key, (val !== val) ? 0 : val)
+}
 
-//体力/敏捷经验获取
-PlayerEvents.tick(e => {
-    const { player } = e
-    const currentPos = {x: player.getX(), y: player.getY(), z: player.getZ()}//当前位置
-    const speed = player.getAttributeValue("minecraft:generic.movement_speed")//当前速度
-    const speedRounded = Math.round(speed * 100) / 100//当前速度保留两位小数
-    const maxWeight = player.getAttributeValue("more_attributes:equip_load_max")//最大载重
-    const currentWeight = player.getAttributeValue("more_attributes:equip_load_current")//当前载重
-    let currentLevel = Math.max(MoreAttributes.getLevel(player, "endurance"), 10)//当前等级
-    let currentExp = player.persistentData.getDouble('endurance_exp')//当前经验
-    let upExp = 100 + 50 * currentLevel//升级所需经验
+// ---- 升级公式 ----
+// MoreAttributes.getLevel(player, attrName) — 获取属性等级
+// MoreAttributes.upgrade(player, attrName, amount) — 提升属性等级
+function strengthUpExp(lv) { return 1.7 * lv * lv + 11 * lv + 36 }
+function skillUpExp(lv) { return 1.5 * lv * lv + 10 * lv + 30 }
+function enduranceUpExp(lv) { return 70 * lv * lv }
+function healthUpExp(lv) { return 0.5 * lv * lv + 17 * lv + 15 }
+function focusUpExp(lv) { return 0.5 * lv * lv + 17 * lv + 15 }
+function agilityUpExp(lv) { return 1.7 * lv * lv + 11 * lv + 36 }
+function staminaUpExp(lv) { return 1.5 * lv * lv + 10 * lv + 30 }
 
-    if (lastPos && !player.isFallFlying()) {
-        const distance = Math.sqrt(Math.pow((currentPos.x - lastPos.x), 2) + Math.pow((currentPos.z - lastPos.z), 2))
-        let distanceRounded = Math.round(distance * 100) / 100;
-        if ((maxWeight > 0 && currentWeight / maxWeight > 1 && currentWeight !== 0) && speedRounded > 0 && distanceRounded > 0) {
-            let expGain = Math.round(speedRounded * Math.pow((Math.min(currentWeight, 2 * maxWeight)), 2) / (maxWeight * maxWeight) / 2 * 100) / 100
-            currentExp += expGain
-            player.persistentData.putDouble('endurance_exp', currentExp)
-            // player.tell(`currentLevel:${currentLevel}; expGain ${expGain}; currentExp:${currentExp}; upExp:${upExp}`)
-            if (currentExp >= upExp) {
-                MoreAttributes.upgrade(player, "endurance", 1)
-                player.persistentData.putDouble('endurance_exp', 0)
-                player.setStatusMessage(Component.translate("message.kubejs.endurance_upgrade", currentLevel + 1))
-            }
-        }
-    }
-    lastPos = currentPos
-})
-
-//生命经验获取
-ItemEvents.foodEaten(e => {
-    const {player, item} = e
-    let foodData; try {foodData = FoodCapability.get(item).getData()} catch (error) {return}//如果item没有foodCapability则不计算
-    let nutrition = [foodData.nutrient(Nutrient.GRAIN), foodData.nutrient(Nutrient.FRUIT), foodData.nutrient(Nutrient.VEGETABLES), foodData.nutrient(Nutrient.PROTEIN), foodData.nutrient(Nutrient.DAIRY)]//获取item的营养值
-    if(!nutrition || nutrition.every(n => n === 0)) {return}//如果营养值全为0则不计算
-    let avgNutrition = nutrition.reduce((a, b) => a + b, 0) / nutrition.length//计算营养值平均值
-    let foodProperties = item.getItem().foodProperties//获取item的foodProperties
-    let saturation = Math.round(foodProperties.getSaturationModifier() * foodProperties.nutrition * 2 * 10) / 10//计算item的饱食值
-    let expGain = (saturation + avgNutrition) * player.getMaxHealth() / 10//计算经验值
-    const healthLevel = MoreAttributes.getLevel(player, "health") || 10//当前等级
-    let currentExp = player.persistentData.getDouble('health_exp')//当前经验
-    let upExp = 100 + 50 * healthLevel//升级所需经验
-    currentExp += expGain
-    player.persistentData.putDouble('health_exp', currentExp)
-    // player.tell(`saturation ${saturation}; nutrition ${nutrition}; avgNutrition ${avgNutrition}; expGain ${expGain}; currentExp ${currentExp}, upExp:${upExp}`)
+// 通用升级检查
+function tryLevelUp(player, attrName, expKey, upExpFn) {
+    let currentExp = getExp(player, expKey)
+    const currentLevel = MoreAttributes.getLevel(player, attrName) || 10
+    const upExp = upExpFn(currentLevel)
     if (currentExp >= upExp) {
-        MoreAttributes.upgrade(player, "health", 1)
-        player.persistentData.putDouble('health_exp', currentExp - upExp)
-        player.setStatusMessage(Component.translate("message.kubejs.health_upgrade", healthLevel + 1))
-    }
-})
-
-//力量经验获取
-EntityEvents.hurt(e => {
-    const { source, damage } = e
-    if (source.getPlayer() != null) {
-        const player = source.player //获取玩家
-        const currentLevel = MoreAttributes.getLevel(player, "strength") || 10//当前力量等级
-        const enduranceLevel = MoreAttributes.getLevel(player, "endurance") || 10//当前体力等级
-        const maxStrengthLimit = enduranceLevel + 5 //力量等级上限
-        if (currentLevel >= maxStrengthLimit) {
-            return
-        }
-        const maxWeight = player.getAttributeValue("more_attributes:equip_load_max")//最大载重
-        const currentWeight = player.getAttributeValue("more_attributes:equip_load_current")//当前载重
-        let expGain;
-        if (currentWeight <= maxWeight) {
-            expGain = damage / currentLevel;
-        } else if (currentWeight <= 2 * maxWeight) {
-            expGain = damage * (currentWeight / maxWeight) / currentLevel;
-        } else {
-            expGain = 2 * damage / currentLevel;
-        }//计算经验值
-        let currentExp = player.persistentData.getDouble('strength_exp')//当前经验
-        const upExp = 120 + 50 * currentLevel//升级所需经验
-        currentExp += expGain
-        player.persistentData.putDouble('strength_exp', currentExp)
-        // player.tell(`currentLevel:${currentLevel}; damage ${damage}; expGain ${expGain}; currentExp ${currentExp}, upExp:${upExp}`)
-        if (currentExp >= upExp) {
-            MoreAttributes.upgrade(player, "strength", 1)
-            player.persistentData.putDouble('strength_exp', 0);
-            player.setStatusMessage(Component.translate("message.kubejs.strength_upgrade", currentLevel + 1))
-        }
-    }
-})
-
-//耐性经验获取
-//集中经验获取
-//技巧经验获取
-function skillLevelUp(player, currentExp, expGain) {
-    const currentLevel = MoreAttributes.getLevel(player, "skill") || 10//当前技巧等级
-    const upExp = 100 + 50 * currentLevel//升级所需经验
-    currentExp += expGain
-    player.persistentData.putDouble('skill_exp', currentExp)
-    // player.tell(`currentLevel:${currentLevel}; expGain ${expGain}; currentExp ${currentExp}, upExp:${upExp}`)
-    if (currentExp >= upExp) {
-        MoreAttributes.upgrade(player, "skill", 1)
-        player.persistentData.putDouble('skill_exp', 0);
-        player.setStatusMessage(Component.translate("message.kubejs.skill_upgrade", currentLevel + 1))
+        MoreAttributes.upgrade(player, attrName, 1)
+        setExp(player, expKey, currentExp - upExp)
     }
 }
+
+// ---- 负重比例辅助函数 ----
+function getWeightRatio(player) {
+    const maxW = player.getAttributeValue("more_attributes:equip_load_max")
+    const curW = player.getAttributeValue("more_attributes:equip_load_current")
+    return maxW > 0 ? curW / maxW : 0
+}
+
+// ---- TFC食物相关类 ----
+// 在 ItemEvents.foodEaten 中按需加载
+
+// ============================================
+// 事件监听
+// ============================================
+
+// ---- 力量：攻击伤害经验 ----
+// EntityEvents.hurt — 实体受伤事件
+//   e.entity — 受伤的实体
+//   e.source — 伤害来源
+//   e.source.player — 造成伤害的玩家（如果是玩家攻击）
+//   e.damage — 伤害值
+//   e.entity.isPlayer() — 判断受伤实体是否为玩家
+EntityEvents.hurt(e => {
+    const { entity, source } = e
+    if (!source || !source.player) return
+
+    // ---- 力量：玩家攻击造成伤害 ----
+    // 经验值 = 伤害值 × 3
+    {
+        const strDamage = e.damage
+        if (strDamage > 0) {
+            let strExpGain = strDamage * 3
+            let strCurrentExp = getExp(source.player, 'strength_exp')
+            strCurrentExp += strExpGain
+            setExp(source.player, 'strength_exp', strCurrentExp)
+            tryLevelUp(source.player, "strength", 'strength_exp', strengthUpExp)
+            console.log("力量打怪", strCurrentExp)
+        }
+    }
+})
+// ---- 力量：挖掘方块经验 ----
+// BlockEvents.broken — 方块被破坏事件
+//   e.entity — 破坏方块的玩家
+//   e.block — 被破坏的方块
+//   block.blockState.destroySpeed — 方块硬度（挖掘时间）
+//   经验值 = min(硬度×2, 30)，硬度0时给1点保底经验
+BlockEvents.broken(e => {
+    const player = e.entity
+    if (!player || !player.isPlayer()) return
+    const block = e.block
+    const hardness = block.blockState.getDestroySpeed(block.level, block.pos)
+    // NaN检查：destroySpeed可能返回NaN
+    const safeHardness = (hardness !== hardness) ? 0 : hardness
+    if (safeHardness < 0) return
+    let expGain = safeHardness > 0 ? Math.min(safeHardness * 2, 30) : 1
+    let currentExp = getExp(player, 'strength_exp')
+    currentExp += expGain
+    setExp(player, 'strength_exp', currentExp)
+    tryLevelUp(player, "strength", 'strength_exp', strengthUpExp)
+
+
+    console.log("力量挖掘", currentExp)
+})
+
+
+
+
+// ---- 耐力：玩家受伤经验 ----
+// 经验值 = 受到伤害值 × 0.5
+EntityEvents.hurt(e => {
+    const { entity, source } = e
+    // 只处理玩家
+    if (!entity.isPlayer()) return
+    // 排除自己造成的伤害
+    if (source && source.player) {
+        if (entity.uuid.toString() === source.player.uuid.toString()) return
+    }
+    const staDamage = e.damage
+    if (staDamage <= 0) return
+    // 当前游戏 tick
+    const nowTick = entity.age
+    // 读取受伤经验冷却
+    const nextHurtExpTick = entity.persistentData.getInt("stamina_hurt_exp_cd")
+    // 冷却期间不触发经验
+    if (nowTick < nextHurtExpTick) return
+    // 每点伤害获得 0.5 经验，单次最多 25
+    let staExpGain = Math.min(staDamage * 0.5, 25)
+    let staCurrentExp = getExp(entity, 'stamina_exp')
+    staCurrentExp += staExpGain
+
+    setExp(entity, 'stamina_exp', staCurrentExp)
+    tryLevelUp(entity, "stamina", 'stamina_exp', staminaUpExp)
+    // 设置冷却：20 tick = 1 秒
+    entity.persistentData.putInt("stamina_hurt_exp_cd", nowTick + 20)
+    //console.log(`耐力受伤 +${staExpGain}，当前经验：${staCurrentExp}`)
+})
+
+
+
+// ---- 玩家登录：初始化位置和食物记录 ----
+// PlayerEvents.loggedIn — 玩家登录事件
+PlayerEvents.loggedIn(e => {
+    const player = e.player
+    const initPos = new NbtCompound()
+    initPos.putDouble('x', player.x)
+    initPos.putDouble('z', player.z)
+    player.persistentData.put('agility_last_pos', initPos)
+    player.persistentData.putInt('endurance_last_food', player.foodLevel)
+    player.persistentData.putInt('stamina_last_food', player.foodLevel)
+    player.persistentData.putDouble('health_last_hp', player.health)
+})
+
+// ---- 技艺：合成物品经验 ----
+// ItemEvents.crafted — 物品合成事件
+//   e.entity — 合成的玩家
+//   e.result — 合成结果物品
+//   result.count — 物品数量
+//   result.id — 物品ID
+// 经验值 = 数量 × 2（TFC物品额外×3）
+ItemEvents.crafted(e => {
+    const player = e.player || e.entity
+    if (!player || !player.isPlayer()) return
+
+    // 合成产物，优先用 e.item
+    const result = e.item
+    if (!result) return
+
+    const count = result.count || 1
+    const id = String(result.id)
+
+    let expGain = count * 2
+
+    if (id.includes('tfc:')) {
+        expGain *= 3
+    }
+
+    let currentExp = getExp(player, 'skill_exp')
+    currentExp += expGain
+
+    setExp(player, 'skill_exp', currentExp)
+    tryLevelUp(player, "skill", 'skill_exp', skillUpExp)
+
+    console.log(`技巧合成 +${expGain}，当前经验：${currentExp}，物品：${id} x${count}`)
+})
+
+// ---- 每tick事件 ----
+// PlayerEvents.tick — 每tick触发（每秒20tick）
+//   e.player — 当前玩家
+//   player.age — 玩家已存在的tick数
+PlayerEvents.tick(e => {
+    const { player } = e
+
+    // ---- 体力：行走 + 饥饿消耗 ----
+    // 行走：每秒根据速度获得体力经验
+    //   经验 = 速度 × 5 × 负重倍率（负重比例>1时乘min(负重比例,3)，否则乘1）
+    // 饥饿消耗：饥饿值下降时获得等量经验
+    {
+        const endSpeed = player.getAttributeValue("minecraft:generic.movement_speed")
+        const endMaxWeight = player.getAttributeValue("more_attributes:equip_load_max")
+        const endCurrentWeight = player.getAttributeValue("more_attributes:equip_load_current")
+        const endWeightRatio = Math.min(endMaxWeight > 0 ? endCurrentWeight / endMaxWeight : 0, 3)
+        const currentPos = { x: player.getX(), y: player.getY(), z: player.getZ() }//当前位置
+        //const speedRounded = Math.round(speed * 100) / 100//限制小数
+
+        if (!player.isPassenger() && endWeightRatio > 1 && endSpeed > 0 && lastPos && !player.isFallFlying()) {
+
+            const distance = Math.sqrt(Math.pow((currentPos.x - lastPos.x), 2) + Math.pow((currentPos.z - lastPos.z), 2))//水平移动距离
+            let endExpGain = distance * 5 * endWeightRatio
+            let endCurrentExp = getExp(player, 'endurance_exp')
+            endCurrentExp += endExpGain
+            setExp(player, 'endurance_exp', endCurrentExp)
+            tryLevelUp(player, "endurance", 'endurance_exp', enduranceUpExp)
+            // console.log("体力走路", endCurrentExp)
+
+        }
+
+        if (!player.isPassenger() && endWeightRatio < 1 && endSpeed > 0 && lastPos && !player.isFallFlying()&&player.isSprinting()) {
+
+            const distance = Math.sqrt(Math.pow((currentPos.x - lastPos.x), 2) + Math.pow((currentPos.z - lastPos.z), 2))//水平移动距离
+            let endExpGain = distance * Math.max(1 - endWeightRatio, 0)
+    
+            let endCurrentExp = getExp(player, 'agility_exp')
+            endCurrentExp += endExpGain
+            setExp(player, 'agility_exp', endCurrentExp)
+            tryLevelUp(player, "agility", 'agility_exp', enduranceUpExp)
+            console.log("敏捷走路", endCurrentExp)
+
+        }
+
+
+
+
+        lastPos = currentPos
+        // 饥饿消耗经验
+        const lastFood = player.persistentData.getInt('endurance_last_food')
+        const currentFood = player.foodLevel
+
+        if (lastFood > 0 && currentFood < lastFood) {
+            const foodConsumed = lastFood - currentFood
+
+            let enduranceExp = getExp(player, 'endurance_exp')
+            enduranceExp += foodConsumed
+
+            setExp(player, 'endurance_exp', enduranceExp)
+            tryLevelUp(player, "endurance", 'endurance_exp', enduranceUpExp)
+            console.log("饿了", enduranceExp)
+        }
+
+        player.persistentData.putInt('endurance_last_food', currentFood)
+    }
+
+    // ---- 生命：被动回血经验 ----
+    // 检测玩家生命值上升（TFC被动回血约0.1-0.5/秒）
+    // hpHealed >= 0.1 时获得经验 = 回血量 × 2
+  {
+    const hpCurrentHealth = player.health
+    const hpLastHealthRaw = player.persistentData.getDouble('health_last_hp')
+    const hpLastHealth = (hpLastHealthRaw !== hpLastHealthRaw) ? 0 : hpLastHealthRaw
+
+    if (hpLastHealth > 0 && hpCurrentHealth > hpLastHealth) {
+        const hpHealed = hpCurrentHealth - hpLastHealth
+
+        if (hpHealed >= 0.1) {
+            let hpExpGain = Math.max(1, Math.round(hpHealed * 2))
+
+            let hpCurrentExp = getExp(player, 'health_exp')
+            hpCurrentExp += hpExpGain
+
+            setExp(player, 'health_exp', hpCurrentExp)
+            tryLevelUp(player, "health", 'health_exp', healthUpExp)
+
+             console.log("生命回血", hpCurrentExp)
+        }
+    }
+
+    player.persistentData.putDouble('health_last_hp', hpCurrentHealth)
+}
+
+})
+
+// ---- 生命：食物营养经验 ----
+// FoodCapability.get(item) — TFC 静态方法，直接获取物品的 IFood 接口
+//   返回 IFood 实例，如果物品没有食物 Capability 则抛出异常
+// ifood.getData() — 获取食物的详细数据（FoodData）
+// FoodData.nutrient(Nutrient) — 按营养类型获取营养值
+//   Nutrient.GRAIN — 谷物, Nutrient.FRUIT — 水果,
+//   Nutrient.VEGETABLES — 蔬菜, Nutrient.PROTEIN — 蛋白质, Nutrient.DAIRY — 乳制品
+// item.getItem().foodProperties — 获取物品的原版食物属性
+// foodProperties.getSaturationModifier() — 饱和度修饰符
+// foodProperties.nutrition — 食物恢复的饥饿值
+// player.getMaxHealth() — 玩家最大生命值
+// 经验值 = (饱食值 + 平均营养值) × 最大生命值 / 10
+ItemEvents.foodEaten(e => {
+    const { player, item } = e
+    const $FoodCapability = Java.loadClass('net.dries007.tfc.common.capabilities.food.FoodCapability')
+    const $Nutrient = Java.loadClass('net.dries007.tfc.common.capabilities.food.Nutrient')
+    let foodData
+    try { foodData = $FoodCapability.get(item).getData() } catch (error) { return }
+    let nutrition = [foodData.nutrient($Nutrient.GRAIN), foodData.nutrient($Nutrient.FRUIT),
+    foodData.nutrient($Nutrient.VEGETABLES), foodData.nutrient($Nutrient.PROTEIN),
+    foodData.nutrient($Nutrient.DAIRY)]
+    if (!nutrition || nutrition.every(n => n === 0)) return
+    let avgNutrition = nutrition.reduce((a, b) => a + b, 0) / nutrition.length
+    let foodProperties = item.getItem().foodProperties
+    let saturation = Math.round(foodProperties.getSaturationModifier() * foodProperties.nutrition * 2 * 10) / 10
+    let expGain = (saturation + avgNutrition) * player.getMaxHealth() / 10
+    let currentExp = getExp(player, 'health_exp')
+    currentExp += expGain
+    setExp(player, 'health_exp', currentExp)
+    tryLevelUp(player, "health", 'health_exp', healthUpExp)
+    console.log(`吃东西生命 +${expGain}，当前经验：${currentExp}`)
+})
+
+// ---- 死亡：经验惩罚 ----
+// EntityEvents.death — 实体死亡事件
+// 死亡时所有属性扣除当前经验20%
+EntityEvents.death(e => {
+    const player = e.entity
+    if (!player.isPlayer()) return
+    const attrs = ['strength', 'skill', 'endurance', 'health', 'focus', 'agility', 'stamina']
+    for (const attr of attrs) {
+        let currentExp = getExp(player, `${attr}_exp`)
+        let loss = currentExp * 0.2
+        if (loss > 0) {
+            setExp(player, `${attr}_exp`, currentExp - loss)
+        }
+    }
+})
+// ---- 集中：弓箭远距离命中经验 10点，距离大于10格才生效 ----
+// 放在 server_scripts/custom/gain_exp.js
+
+EntityEvents.hurt(e => {
+    const target = e.entity
+    const source = e.source
+
+    if (!target || !source) return
+
+    // 获取攻击者
+    const player = source.player || source.entity || source.actual
+
+    if (!player || !player.isPlayer()) return
+
+    // 防止自己打自己刷经验
+    if (
+        target.uuid &&
+        player.uuid &&
+        target.uuid.toString() === player.uuid.toString()
+    ) {
+        return
+    }
+
+    // 判断是否为箭伤害
+    const sourceText = String(source).toLowerCase()
+
+    // 调试用
+    // console.log(`hurt source = ${sourceText}`)
+
+    if (!sourceText.includes("arrow")) return
+
+    // 计算玩家与目标距离
+    const dx = player.getX() - target.getX()
+    const dy = player.getY() - target.getY()
+    const dz = player.getZ() - target.getZ()
+
+    const distance = Math.sqrt(dx * dx + dy * dy + dz * dz)
+
+    // 距离必须大于10格
+    if (distance <= 10) return
+
+    const expGain = 10
+
+    let currentExp = getExp(player, 'focus_exp')
+    currentExp += expGain
+
+    setExp(player, 'focus_exp', currentExp)
+    tryLevelUp(player, "focus", 'focus_exp', focusUpExp)
+
+    console.log(`弓箭远距离命中，距离:${distance.toFixed(2)}，集中经验 +${expGain}`)
+})
