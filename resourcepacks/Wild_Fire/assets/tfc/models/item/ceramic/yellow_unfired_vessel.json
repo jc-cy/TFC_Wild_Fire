@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/yellow_unfired_vessel"
+	},
+    "base": {
+        "parent": "tfc:item/ceramic/coaster_yellow_unfired_vessel"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/ceramic/yellow_unfired_vessel_item"
+        },
+        "ground": {
+            "parent": "tfc:item/ceramic/coaster_yellow_unfired_vessel"
+        },
+        "fixed": {
+            "parent": "tfc:item/ceramic/coaster_yellow_unfired_vessel"
+        }
+    }
+}

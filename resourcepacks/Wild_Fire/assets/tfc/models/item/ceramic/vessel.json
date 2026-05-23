@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/vessel"
+	},
+    "base": {
+        "parent": "tfc:item/ceramic/coaster_vessel"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/ceramic/vessel_item"
+        },
+        "ground": {
+            "parent": "tfc:item/ceramic/coaster_vessel"
+        },
+        "fixed": {
+            "parent": "tfc:item/ceramic/coaster_vessel"
+        }
+    }
+}

@@ -2,7 +2,6 @@
 	"format_version": "1.8.0",
 	"animations": {
 		"turn_left": {
-			"loop": true,
 			"animation_length": 1.5,
 			"bones": {
 				"Beam X": {
@@ -92,13 +91,19 @@
 					}
 				},
 				"axin2": {
+					"relative_to": {
+						"rotation": "entity"
+					},
 					"rotation": {
-						"vector": [0, 0, 0]
+						"vector": [0, -90, 0]
 					}
 				},
 				"axin": {
+					"relative_to": {
+						"rotation": "entity"
+					},
 					"rotation": {
-						"vector": [0, 0, 0]
+						"vector": [0, -90, 0]
 					}
 				},
 				"flywheel": {
@@ -109,6 +114,14 @@
 						"1.5": {
 							"vector": [0, 0, -445]
 						}
+					}
+				},
+				"bone5": {
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": {
+						"vector": [180, -90, -180]
 					}
 				},
 				"bone6": {
@@ -266,17 +279,10 @@
 							"lerp_mode": "catmullrom"
 						}
 					}
-				},
-				"bone5": {
-					"relative_to": {
-						"rotation": "entity"
-					},
-					"rotation": [0, 0, 0.01]
 				}
 			}
 		},
 		"turn_right": {
-			"loop": true,
 			"animation_length": 1.5,
 			"bones": {
 				"Beam X": {
@@ -359,6 +365,22 @@
 						}
 					}
 				},
+				"axin2": {
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": {
+						"vector": [0, -90, 0]
+					}
+				},
+				"axin": {
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": {
+						"vector": [0, -90, 0]
+					}
+				},
 				"flywheel": {
 					"rotation": {
 						"0.0": {
@@ -367,6 +389,14 @@
 						"1.5": {
 							"vector": [0, 0, 360]
 						}
+					}
+				},
+				"bone5": {
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": {
+						"vector": [180, -90, -180]
 					}
 				},
 				"bone6": {
@@ -518,15 +548,8 @@
 							"lerp_mode": "catmullrom"
 						}
 					}
-				},
-				"bone5": {
-					"relative_to": {
-						"rotation": "entity"
-					},
-					"rotation": [0, 0, 0.01]
 				}
-			},
-			"particle_effects": {}
+			}
 		},
 		"idle": {
 			"loop": true
