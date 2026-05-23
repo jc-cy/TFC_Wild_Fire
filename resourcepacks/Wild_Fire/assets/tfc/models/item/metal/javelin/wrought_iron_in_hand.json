@@ -1,6 +1,1 @@
-{
-  "parent": "tfc:item/template_javelin_in_hand",
-  "textures": {
-	"layer0": "tfc:item/metal/javelin/held/wrought_iron"
-  }
-}
+{"parent":"item/trident_in_hand","textures":{"particle":"tfc:item/metal/javelin/wrought_iron"}}

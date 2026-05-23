@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "artisanal:item/dirty_bowl"
+	},
+    "base": {
+        "parent": "artisanal:item/coaster_dirty_bowl"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "artisanal:item/dirty_bowl_item"
+        },
+        "ground": {
+            "parent": "artisanal:item/coaster_dirty_bowl"
+        },
+        "fixed": {
+            "parent": "artisanal:item/coaster_dirty_bowl"
+        }
+    }
+}

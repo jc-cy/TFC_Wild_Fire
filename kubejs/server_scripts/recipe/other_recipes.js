@@ -1315,7 +1315,7 @@ ServerEvents.recipes(event => {
       { item: 'tfc:jute_fiber', count1: 12, type: 'knitted_cloth', color: '#bfa975', results: 'tfc:burlap_cloth', count2: 1 },
       { item: 'minecraft:string', count1: 16, type: 'knitted_cloth', color: '#f9f9f9', results: 'tfc:silk_cloth', count2: 1 },
       { item: 'textile:flax_fiber', count1: 16, type: 'knitted_cloth', color: '#cfbd8e', results: 'textile:linen_cloth', count2: 1 },
-      { item: 'firmalife:pineapple_yarn', count1: 16, type: 'knitted_cloth', color: '#acae9a', results: 'firmalife:pineapple_leather', count2: 1 },
+      { item: 'firmalife:pineapple_yarn', count1: 16, type: 'knitted_cloth', color: '#9fa285', results: 'firmalife:pineapple_leather', count2: 1 },
       { item: 'tfc:wool_yarn', count1: 16, type: 'knitted_cloth', color: '#ffffff', results: 'tfc:wool_cloth', count2: 1 },
       { item: 'textile:cotton_string', count1: 16, type: 'knitted_cloth', color: '#e0e0e0', results: 'textile:cotton_cloth', count2: 1 },
     ];

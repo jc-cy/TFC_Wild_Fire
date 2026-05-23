@@ -771,7 +771,7 @@ ServerEvents.recipes(e => {
     { name: "immersiveengineering:steel_post", temperature: 1540, metal: "tfc:metal/steel", number: 330 },
     { name: "immersiveengineering:steel_slope", temperature: 1540, metal: "tfc:metal/steel", number: 75 },
 
-    { name: "fluid:copper_tap", temperature: 1540, metal: "tfc:metal/steel", number: 250 },//钢龙头
+    { name: "fluidlogistics:smart_faucet", temperature: 1540, metal: "tfc:metal/steel", number: 250 },//钢龙头
 
     //铝工业方块
     { name: "immersiveengineering:alu_scaffolding_standard", temperature: 650, metal: "tfc_ie_addon:metal/aluminum", number: 50 },

@@ -6,7 +6,7 @@
 	#--------------------------------------------------------------------------
 	#Default on this config will ignore one entity crush at first time.
 	#This can keep miner not broken at the first time crush for helping player.
-	keep_structure_at_first = true
+	keep_structure_at_first = false
 	#--------------------------------------------------------------------------
 	#The time record list refresh default 3600s
 	#If a structure is ignored at first time and if the second time less than 3600s
