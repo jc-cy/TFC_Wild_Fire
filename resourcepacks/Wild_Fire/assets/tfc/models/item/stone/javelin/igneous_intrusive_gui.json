@@ -1,7 +1,1 @@
-{
-  "__comment__": "This file was automatically created by mcresources",
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "tfc:item/stone/javelin_2"
-  }
-}
+{"parent":"item/generated","textures":{"layer0":"tfc:item/stone/javelin"}}

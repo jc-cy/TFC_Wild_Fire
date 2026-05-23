@@ -28,5 +28,33 @@
         }
       }
     }
+  },
+  "itemSpecific": {
+    "minecraft:wheat": {
+      "armKind": "FOOD"
+    },
+    "minecraft:carrot": {
+      "armKind": "FOOD"
+    },
+    "minecraft:wheat_seeds": {
+      "armKind": "BLOCK"
+    },
+    "minecraft:lantern": {
+      "transforms": {
+        "right": {
+          "scale": 1.01,
+          "offX": 0.105113745,
+          "offY": -0.46590912,
+          "offZ": 0.16761374,
+          "rotX": -37.84091,
+          "rotY": 35.0,
+          "rotZ": 10.738647,
+          "pivotX": -0.109999955,
+          "pivotY": -0.00999999,
+          "pivotZ": -0.01999998,
+          "physics": "FULL_PENDULUM"
+        }
+      }
+    }
   }
 }

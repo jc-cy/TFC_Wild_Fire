@@ -46,7 +46,8 @@
   "disabledParticles": [
     "legendarysurvivaloverhaul:sun_fern_blossom",
     "legendarysurvivaloverhaul:ice_fern_blossom",
-    "legendarysurvivaloverhaul:cold_breath"
+    "legendarysurvivaloverhaul:cold_breath",
+    "minecraft:entity_effect"
   ],
   "tileEntityDistanceCulling": true,
   "tileEntityCullingDistanceX": 4096,

@@ -4,13 +4,13 @@ ServerEvents.recipes(event => {
     event.shaped('minecraft:anvil', ['aaa', ' a ', 'aaa'], { a: 'tfc:metal/double_ingot/cast_iron' })//铁砧
 
 
-event.shaped("kubejs:unvacuumed_tube", ['a', 'b', 'c'], {
+    event.shaped("kubejs:unvacuumed_tube", ['a', 'b', 'c'], {
         a: "tfc:empty_jar",
         b: "create:polished_rose_quartz",
         c: "kubejs:wrought_iron_fragments",
 
     })//电子管半成品
-event.shaped("2x kubejs:unvacuumed_precision_tube", ['a', 'b', 'c'], {
+    event.shaped("2x kubejs:unvacuumed_precision_tube", ['a', 'b', 'c'], {
         a: "tfc:empty_jar",
         b: "create:polished_rose_quartz",
         c: "vintageimprovements:nickel_wire",
@@ -31,79 +31,79 @@ event.shaped("2x kubejs:unvacuumed_precision_tube", ['a', 'b', 'c'], {
         a: "sns:leather_strip",
         b: "tfc:metal/unfinished_boots/copper",
         c: "immersiveengineering:ingot_lead"
-        
+
     })//潜水鞋子--配重
 
 
-        event.shaped("alexscaves:diving_boots", ['aba', 'c c'], {
-        a: "sns:leather_strip", 
+    event.shaped("alexscaves:diving_boots", ['aba', 'c c'], {
+        a: "sns:leather_strip",
         b: "tfc:metal/unfinished_boots/copper",
         c: "tfc:metal/ingot/copper"
-        
+
     })//潜水鞋子
 
-        event.shaped("alexscaves:diving_leggings", ['aba', 'c c', 'a a'], {
-        a: "sns:leather_strip", 
+    event.shaped("alexscaves:diving_leggings", ['aba', 'c c', 'a a'], {
+        a: "sns:leather_strip",
         b: "tfc:metal/unfinished_greaves/copper",
         c: "kubejs:copper_fragments",
 
     })//潜水裤子
 
-        event.shaped("supplementaries:altimeter", ['c', 'b', 'a'], {
-        a: "tfc:metal/sheet/copper", 
+    event.shaped("supplementaries:altimeter", ['c', 'b', 'a'], {
+        a: "tfc:metal/sheet/copper",
         b: "tfc:lamp_glass",
         c: "minecraft:redstone",
 
     })//高度计
 
-        event.shaped("4x create:chute", ['a', 'b', 'a'], {
-        a: "tfc:metal/sheet/cast_iron", 
+    event.shaped("4x create:chute", ['a', 'b', 'a'], {
+        a: "tfc:metal/sheet/cast_iron",
         b: "create:industrial_iron_block",
 
     })//溜槽
 
-        event.shaped("create:mechanical_arm", ['aab', 'c  ', 'de '], {
-        a: "kubejs:material_component_steel", 
+    event.shaped("create:mechanical_arm", ['aab', 'c  ', 'de '], {
+        a: "kubejs:material_component_steel",
         b: "create:brass_hand",
         c: "createcasing:jungle_cogwheel",
         d: "create:precision_mechanism",
-        e: "create:industrial_iron_block", 
+        e: "create:industrial_iron_block",
     })//动力机械臂
 
-        event.shaped("2x create:mechanical_harvester", ['bab', 'cac', ' d '], {
-        a: "tfc:metal/bars/wrought_iron", 
+    event.shaped("2x create:mechanical_harvester", ['bab', 'cac', ' d '], {
+        a: "tfc:metal/bars/wrought_iron",
         b: "tfc:metal/rod/cast_iron",
         c: "create:andesite_alloy",
         d: "create:andesite_casing",
     })//动力收割机（真的会有人做这个吗）
 
-        event.shaped("2x create:mechanical_plough", ['aca', 'bbb', ' d '], {
-        a: "tfc:metal/bars/wrought_iron", 
+    event.shaped("2x create:mechanical_plough", ['aca', 'bbb', ' d '], {
+        a: "tfc:metal/bars/wrought_iron",
         b: "create:andesite_alloy",
         c: "tfc:metal/sheet/cast_iron",
         d: "create:andesite_casing",
     })//动力犁（种地套x2，真的会有人在群峦当大农场主然后被工业革命一脚踹死吗）
 
-        event.shaped("2x create:encased_chain_drive", [' c ', 'aba', ' c '], {
-        a: "#forge:chains", 
+    event.shaped("2x create:encased_chain_drive", [' c ', 'aba', ' c '], {
+        a: "#forge:chains",
         b: "create:andesite_casing",
         c: "#kubejs:shaft",
     })//链式传动箱
 
-        event.shaped("16x create:controller_rail", ['aca', 'aba', 'aca'], {
-        a: "tfc:metal/rod/rose_gold", 
+    event.shaped("16x create:controller_rail", ['aca', 'aba', 'aca'], {
+        a: "tfc:metal/rod/rose_gold",
         b: "create:electron_tube",
         c: "#tfc:can_be_lit_on_torch",
     })//控制铁轨
 
     event.shaped("4x create:package_filter", [' c ', 'aba'], {
-        a: "tfc:metal/rod/zinc", 
+        a: "tfc:metal/rod/zinc",
         b: "#tfc:lumber",
         c: "farmersdelight:canvas",
     })//包裹过滤器
 
     event.shaped("supplementaries:candle_holder", ['a', 'b'], {
-        a: "tfc:candle", 
+        a: "tfc:candle",
         b: "tfc:metal/rod/cast_iron",
     })//烛台
 
@@ -289,7 +289,7 @@ event.shaped("2x kubejs:unvacuumed_precision_tube", ['a', 'b', 'c'], {
         a: '#tfc:lumber',
         b: '#kubejs:nails',
         c: '#tfc:hammers'
-    }).damageIngredient({ tag: '#tfc:hammers'}, 5) //箱子合成2
+    }).damageIngredient({ tag: '#tfc:hammers' }, 5) //箱子合成2
 
     event.shaped('minecraft:barrel', ['aba', 'aca', 'aba'], {
         a: '#tfc:lumber',
@@ -771,13 +771,15 @@ event.shaped("2x kubejs:unvacuumed_precision_tube", ['a', 'b', 'c'], {
         d: 'tfc:metal/sheet/brass',
     })//祛魔池
 
-    event.shaped('fluid:copper_tap', [
-        ' ab',
-        ' c '
+    event.shaped('fluidlogistics:smart_faucet', [
+        'd  ',
+        'ab ',
+        'c  '
     ], {
         a: 'kubejs:material_component_steel',
         b: '#tfc:leather_knapping',
         c: 'tfc:metal/sheet/steel',
+        d: 'create:electron_tube'
     })//钢龙头
 
     event.shaped('createmetallurgy:faucet', [
@@ -1027,6 +1029,48 @@ event.shaped("2x kubejs:unvacuumed_precision_tube", ['a', 'b', 'c'], {
         })
     //太阳干燥垫
 
+    event.shaped('fluidlogistics:fluid_pump', [
+
+        ' a ',
+        ' bc',
+        ' a '
+    ],
+        {
+            a: 'create:mechanical_pump',
+            b: 'create:copper_casing',
+            c: '#kubejs:shaft'
+
+        })
+//流体泵
+
+    event.shaped('fluidlogistics:fluid_transporter', [
+
+        'cac',
+        ' b ',
+        ' d '
+    ],
+        {
+            a: 'create:smart_fluid_pipe',
+            b: 'create:copper_casing',
+            c: 'create:electron_tube',
+            d:'fluidlogistics:fluid_pump'
+
+        })
+//流体传输器
+
+    event.shaped('2x fluidlogistics:multi_fluid_tank', [
+
+        'dad',
+        'bdb',
+        'd d'
+    ],
+        {
+            a: 'create:electron_tube',
+            b: 'create:fluid_tank',
+            d:'tfc:metal/sheet/brass'
+
+        })
+//多流体储罐
     //=============================================================
     //=======================功能性存储配方==========================
     //=============================================================

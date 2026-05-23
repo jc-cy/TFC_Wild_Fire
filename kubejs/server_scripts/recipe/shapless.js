@@ -268,7 +268,6 @@ ServerEvents.recipes(event => {
     //event.shapeless(Item.of('create_power_loader:brass_chunk_loader'), ['create_power_loader:empty_brass_chunk_loader']);//黄铜区块加载器
     //event.shapeless(Item.of('create_power_loader:andesite_chunk_loader'), ['create_power_loader:empty_andesite_chunk_loader']);//安山区块加载
 
-    event.shapeless(Item.of('create_new_age:magnetite_block'), ['9x tfcorewashing:rocky_chunks_magnetite']);//磁铁矿块
 
     //event.shapeless(Item.of('4x tfcorewashing:pellet_malachite'),['tfcorewashing:briquet_malachite'])
     event.shapeless(Item.of('minecraft:kelp'), ['tfc:plant/leafy_kelp'])

@@ -1,36 +1,36 @@
-  ServerEvents.recipes(event => {
+ServerEvents.recipes(event => {
   const { tfc, create, kubejs, immersiveengineering } = event.recipes;
 
   tfc.casting('2x tfc:brass_mechanisms', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/brass', 100), 1)//黄铜机件
   tfc.casting('5x firmaciv:copper_bolt', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/copper', 100), 1)//铜螺栓
 
 
-tfc.casting('tfc:metal/sheet/copper', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/copper', 200), 1)//铜板
-tfc.casting('tfc:metal/sheet/rose_gold', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/rose_gold', 200), 1)//玫瑰金板
-tfc.casting('tfc:metal/sheet/silver', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/silver', 200), 1)//银板
-tfc.casting('tfc:metal/sheet/tin', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/tin', 200), 1)//锡板
-tfc.casting('tfc:metal/sheet/zinc', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/zinc', 200), 1)//锌板
-tfc.casting('tfc:metal/sheet/black_bronze', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/black_bronze', 200), 1)//黑青铜板
-tfc.casting('tfc:metal/sheet/cast_iron', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/cast_iron', 200), 1)//铸铁板
-tfc.casting('tfc:metal/sheet/bismuth', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/bismuth', 200), 1)//铋板
-tfc.casting('tfc:metal/sheet/brass', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/brass', 200), 1)//黄铜板
-tfc.casting('tfc:metal/sheet/bronze', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/bronze', 200), 1)//青铜板
-tfc.casting('tfc:metal/sheet/bismuth_bronze', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/bismuth_bronze', 200), 1)//铋青铜板
+  tfc.casting('tfc:metal/sheet/copper', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/copper', 200), 1)//铜板
+  tfc.casting('tfc:metal/sheet/rose_gold', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/rose_gold', 200), 1)//玫瑰金板
+  tfc.casting('tfc:metal/sheet/silver', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/silver', 200), 1)//银板
+  tfc.casting('tfc:metal/sheet/tin', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/tin', 200), 1)//锡板
+  tfc.casting('tfc:metal/sheet/zinc', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/zinc', 200), 1)//锌板
+  tfc.casting('tfc:metal/sheet/black_bronze', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/black_bronze', 200), 1)//黑青铜板
+  tfc.casting('tfc:metal/sheet/cast_iron', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/cast_iron', 200), 1)//铸铁板
+  tfc.casting('tfc:metal/sheet/bismuth', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/bismuth', 200), 1)//铋板
+  tfc.casting('tfc:metal/sheet/brass', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/brass', 200), 1)//黄铜板
+  tfc.casting('tfc:metal/sheet/bronze', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/bronze', 200), 1)//青铜板
+  tfc.casting('tfc:metal/sheet/bismuth_bronze', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/bismuth_bronze', 200), 1)//铋青铜板
 
-tfc.casting("tfc:metal/rod/copper", 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/copper', 50), 1)//铜棒
-tfc.casting("tfc:metal/rod/bronze", 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/bronze', 50), 1)//青铜棒
-tfc.casting('tfc:metal/rod/rose_gold', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/rose_gold', 50), 1)//玫瑰金棒
-tfc.casting('tfc:metal/rod/silver', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/silver', 50), 1)//银棒
-tfc.casting('tfc:metal/rod/tin', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/tin', 50), 1)//锡棒
-tfc.casting('tfc:metal/rod/zinc', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/zinc', 50), 1)//锌棒
-tfc.casting('tfc:metal/rod/black_bronze', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/black_bronze', 50), 1)//黑青铜棒
-tfc.casting('tfc:metal/rod/cast_iron', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/cast_iron', 50), 1)//铸铁棒
-tfc.casting('tfc:metal/rod/bismuth', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/bismuth', 50), 1)//铋棒
-tfc.casting('tfc:metal/rod/brass', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/brass', 50), 1)//黄铜棒
-tfc.casting('tfc:metal/rod/bismuth_bronze', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/bismuth_bronze', 50), 1)//铋青铜棒
+  tfc.casting("tfc:metal/rod/copper", 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/copper', 50), 1)//铜棒
+  tfc.casting("tfc:metal/rod/bronze", 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/bronze', 50), 1)//青铜棒
+  tfc.casting('tfc:metal/rod/rose_gold', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/rose_gold', 50), 1)//玫瑰金棒
+  tfc.casting('tfc:metal/rod/silver', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/silver', 50), 1)//银棒
+  tfc.casting('tfc:metal/rod/tin', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/tin', 50), 1)//锡棒
+  tfc.casting('tfc:metal/rod/zinc', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/zinc', 50), 1)//锌棒
+  tfc.casting('tfc:metal/rod/black_bronze', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/black_bronze', 50), 1)//黑青铜棒
+  tfc.casting('tfc:metal/rod/cast_iron', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/cast_iron', 50), 1)//铸铁棒
+  tfc.casting('tfc:metal/rod/bismuth', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/bismuth', 50), 1)//铋棒
+  tfc.casting('tfc:metal/rod/brass', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/brass', 50), 1)//黄铜棒
+  tfc.casting('tfc:metal/rod/bismuth_bronze', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/bismuth_bronze', 50), 1)//铋青铜棒
 
-create.sandpaper_polishing("kubejs:iron_needle","tfc:metal/rod/wrought_iron")
-create.sandpaper_polishing("kubejs:steel_needle","tfc:metal/rod/steel")
+  create.sandpaper_polishing("kubejs:iron_needle", "tfc:metal/rod/wrought_iron")
+  create.sandpaper_polishing("kubejs:steel_needle", "tfc:metal/rod/steel")
 
   /*create.sequenced_assembly('kubejs:hologram_frontpanel', 'tfc:metal/sheet/black_steel',
     [create.deploying(inputcailiao, [inputcailiao, 'tfc:metal/double_sheet/wrought_iron']),
@@ -42,25 +42,25 @@ create.sandpaper_polishing("kubejs:steel_needle","tfc:metal/rod/steel")
   ).transitionalItem(inputcailiao).loops(2)//六方全息面板*/
 
 
- create.sequenced_assembly("2x kubejs:iron_needle", "tfc:metal/rod/wrought_iron",
+  create.sequenced_assembly("2x kubejs:iron_needle", "tfc:metal/rod/wrought_iron",
     [create.cutting("tfc:metal/rod/wrought_iron", "tfc:metal/rod/wrought_iron"),
-      event.custom({"type":"vintageimprovements:polishing","speedLimits":1,"ingredients":[{"item": "tfc:metal/rod/wrought_iron"}],"results":[{"item": "tfc:metal/rod/wrought_iron","count":1}],"processingTime":20}),
-      event.custom({"type":"vintageimprovements:polishing","speedLimits":1,"ingredients":[{"item": "tfc:metal/rod/wrought_iron"}],"results":[{"item": "tfc:metal/rod/wrought_iron","count":1}],"processingTime":20})
+    event.custom({ "type": "vintageimprovements:polishing", "speedLimits": 1, "ingredients": [{ "item": "tfc:metal/rod/wrought_iron" }], "results": [{ "item": "tfc:metal/rod/wrought_iron", "count": 1 }], "processingTime": 20 }),
+    event.custom({ "type": "vintageimprovements:polishing", "speedLimits": 1, "ingredients": [{ "item": "tfc:metal/rod/wrought_iron" }], "results": [{ "item": "tfc:metal/rod/wrought_iron", "count": 1 }], "processingTime": 20 })
     ]
   ).transitionalItem("tfc:metal/rod/wrought_iron").loops(1)//铁针
 
- create.sequenced_assembly("2x kubejs:steel_needle", "tfc:metal/rod/steel",
+  create.sequenced_assembly("2x kubejs:steel_needle", "tfc:metal/rod/steel",
     [create.cutting("tfc:metal/rod/steel", "tfc:metal/rod/steel"),
-         event.custom({"type":"vintageimprovements:polishing","speedLimits":1,"ingredients":[{"item": "tfc:metal/rod/steel"}],"results":[{"item": "tfc:metal/rod/steel","count":1}],"processingTime":20}),
-         event.custom({"type":"vintageimprovements:polishing","speedLimits":1,"ingredients":[{"item": "tfc:metal/rod/steel"}],"results":[{"item": "tfc:metal/rod/steel","count":1}],"processingTime":20})
-      ]
+    event.custom({ "type": "vintageimprovements:polishing", "speedLimits": 1, "ingredients": [{ "item": "tfc:metal/rod/steel" }], "results": [{ "item": "tfc:metal/rod/steel", "count": 1 }], "processingTime": 20 }),
+    event.custom({ "type": "vintageimprovements:polishing", "speedLimits": 1, "ingredients": [{ "item": "tfc:metal/rod/steel" }], "results": [{ "item": "tfc:metal/rod/steel", "count": 1 }], "processingTime": 20 })
+    ]
   ).transitionalItem("tfc:metal/rod/steel").loops(1)//钢针
 
 
   //create.cutting("2x kubejs:iron_needle","tfc:metal/rod/wrought_iron")
   //create.cutting("2x kubejs:steel_needle","tfc:metal/rod/steel")
   //安山合金合成
-  
+
   tfc.barrel_sealed(16000)
     .outputItem('create:rose_quartz_block')
     .inputs('tfc_ie_addon:mineral/quartz_block', TFC.fluidStackIngredient('immersiveengineering:redstone_acid', 1000))
@@ -734,7 +734,7 @@ ServerEvents.recipes(event => {
     { item: 'artisanal:ceramic/dirty_small_pot', item2: 'artisanal:ceramic/small_pot' },
     { item: 'artisanal:metal/dirty_tin_can', item2: 'artisanal:metal/tin_can' },
     { item: 'artisanal:metal/dirty_dented_tin_can', item2: 'artisanal:metal/dented_tin_can' },
-    
+
   ]
   dirty.forEach(dirty => {
     create.sequenced_assembly(`${dirty.item2}`, `${dirty.item}`,
@@ -753,16 +753,16 @@ ServerEvents.recipes(event => {
         create.filling(`${dirty.item}`, [`${dirty.item}`, Fluid.of('minecraft:water', 25)])
       ]
     ).transitionalItem(`${dirty.item}`).loops(1)
-    create.mixing(Item.of(`${dirty.item2}`), [`${dirty.item}`,Fluid.of('minecraft:water', 1000)])
-    create.mixing(Item.of(`${dirty.item2}`), [`${dirty.item}`,Fluid.of('artisanal:soapy_water', 10),Fluid.of('minecraft:water', 150)])
+    create.mixing(Item.of(`${dirty.item2}`), [`${dirty.item}`, Fluid.of('minecraft:water', 1000)])
+    create.mixing(Item.of(`${dirty.item2}`), [`${dirty.item}`, Fluid.of('artisanal:soapy_water', 10), Fluid.of('minecraft:water', 150)])
   })
-  
+
   const component = [
     { item1: 'tfc:metal/rod/wrought_iron', item2: 'kubejs:material_component_wrought_iron' },
     { item1: 'tfc:metal/rod/steel', item2: 'kubejs:material_component_steel' },
     { item1: 'tfc:metal/rod/black_steel', item2: 'kubejs:material_component_black_steel' },
     { item1: 'tfc:metal/rod/brass', item2: 'tfc:anvil/brass_mechanisms' }
-    
+
   ]
   component.forEach(item => {
     create.sequenced_assembly(`${item.item2}`, `${item.item1}`,
@@ -773,12 +773,13 @@ ServerEvents.recipes(event => {
         event.custom({
           "type": "vintageimprovements:curving",
           "itemAsHead": "immersiveengineering:mold_mechanical",
-          "ingredients": [ {"item": `${item.item1}`}],
-          "results": [{"item": `${item.item1}`,"count": 1}]}),
+          "ingredients": [{ "item": `${item.item1}` }],
+          "results": [{ "item": `${item.item1}`, "count": 1 }]
+        }),
         create.pressing(`${item.item1}`, `${item.item1}`)
       ]
     ).transitionalItem(`${item.item1}`).loops(1)
-  
+
   })
 
   //森罗油脂凝固配方
@@ -798,7 +799,7 @@ ServerEvents.recipes(event => {
       "output_item": { "item": "kaleidoscope_cookery:oil" },
       "duration": 7000
     })
-      .id(`tfc:barrel_sealed/oil/${idPath}`); 
+      .id(`tfc:barrel_sealed/oil/${idPath}`);
   });
 
 
@@ -838,16 +839,16 @@ ServerEvents.recipes(event => {
     event.custom({
       "type": "createdieselgenerators:basin_fermenting",
       "ingredients": [
-        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`},
-        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`},
-        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`},
-        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`},
-        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`},
-        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`},
-        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`},
-        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`},
-        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`},
-        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`},
+        { "item": `tfc:food/yeast_dough/${dough.name1}_dough` },
+        { "item": `tfc:food/yeast_dough/${dough.name1}_dough` },
+        { "item": `tfc:food/yeast_dough/${dough.name1}_dough` },
+        { "item": `tfc:food/yeast_dough/${dough.name1}_dough` },
+        { "item": `tfc:food/yeast_dough/${dough.name1}_dough` },
+        { "item": `tfc:food/yeast_dough/${dough.name1}_dough` },
+        { "item": `tfc:food/yeast_dough/${dough.name1}_dough` },
+        { "item": `tfc:food/yeast_dough/${dough.name1}_dough` },
+        { "item": `tfc:food/yeast_dough/${dough.name1}_dough` },
+        { "item": `tfc:food/yeast_dough/${dough.name1}_dough` },
       ],
       "processingTime": 2000,
       "results": [{
@@ -858,7 +859,7 @@ ServerEvents.recipes(event => {
     event.custom({
       "type": "createdieselgenerators:basin_fermenting",
       "ingredients": [
-        {"item": `tfc:food/yeast_dough/${dough.name1}_dough`}
+        { "item": `tfc:food/yeast_dough/${dough.name1}_dough` }
       ],
       "processingTime": 300,
       "results": [{
@@ -1307,7 +1308,38 @@ ServerEvents.recipes(event => {
 
 
 
+  ///织布机织布配方
 
+  const loom_string =
+    [
+      { item: 'tfc:jute_fiber', count1: 12, type: 'knitted_cloth', color: '#bfa975', results: 'tfc:burlap_cloth', count2: 1 },
+      { item: 'minecraft:string', count1: 16, type: 'knitted_cloth', color: '#f9f9f9', results: 'tfc:silk_cloth', count2: 1 },
+      { item: 'textile:flax_fiber', count1: 16, type: 'knitted_cloth', color: '#cfbd8e', results: 'textile:linen_cloth', count2: 1 },
+      { item: 'firmalife:pineapple_yarn', count1: 16, type: 'knitted_cloth', color: '#9fa285', results: 'firmalife:pineapple_leather', count2: 1 },
+      { item: 'tfc:wool_yarn', count1: 16, type: 'knitted_cloth', color: '#ffffff', results: 'tfc:wool_cloth', count2: 1 },
+      { item: 'textile:cotton_string', count1: 16, type: 'knitted_cloth', color: '#e0e0e0', results: 'textile:cotton_cloth', count2: 1 },
+    ];
+  loom_string.forEach(loom => {
+    event.custom(
+      {
+        "type": "wildfires:weaving",
+        "ingredients": [
+          {
+            "item": `${loom.item}`,
+            "count": loom.count1
+          },
+        ],
+        "results": [
+          {
+            "item": `${loom.results}`,
+            "count": loom.count2
+          }
+        ],
+        "color": `${loom.color}`,
+        "weaving_type": `${loom.type}`
+      }
+    )
+  })
 })
 //弓箭工艺
 /*ServerEvents.recipes(event => {
@@ -1366,20 +1398,20 @@ ServerEvents.recipes(event => {
 
 //辊压机碎矿一次处理
 
-  /*  imdouble_ingots.forEach(di => {
-      const input1 = `tfc_ie_addon:metal/sheet/${di}`
-      const output1 = `tfc_ie_addon:metal/double_sheet/${di}`
-      create.sequenced_assembly(output1, input1,
-        [create.deploying(input1, [input1, input1]),
-        event.custom({
-          "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": input1 }],
-          "results": [{ "item": input1, "count": 1 }], "energy": 2000, "maxChargeRate": 50
-        }),
-        create.pressing(input1, input1),
-        ]
-      ).transitionalItem(input1).loops(1)//
-     
-    }) */
+/*  imdouble_ingots.forEach(di => {
+    const input1 = `tfc_ie_addon:metal/sheet/${di}`
+    const output1 = `tfc_ie_addon:metal/double_sheet/${di}`
+    create.sequenced_assembly(output1, input1,
+      [create.deploying(input1, [input1, input1]),
+      event.custom({
+        "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": input1 }],
+        "results": [{ "item": input1, "count": 1 }], "energy": 2000, "maxChargeRate": 50
+      }),
+      create.pressing(input1, input1),
+      ]
+    ).transitionalItem(input1).loops(1)//
+   
+  }) */
 
 
 
