@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/quartzite",
+    "carve": "tfc:block/ore/ore_carve_A/rich_ore_3/quartzite",
+    "overlay": "kubejs:block/ore/ilmenite/rich_ilmenite_3_light"
+  }
+}

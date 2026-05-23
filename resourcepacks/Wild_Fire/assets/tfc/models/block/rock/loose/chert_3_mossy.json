@@ -1,1 +1,7 @@
-{"parent":"tfc:block/rock/loose_sedimentary_3","textures":{"texture":"tfc:block/rock/mossy_cobble/chert"},"particle":{"texture":"tfc:block/rock/mossy_cobble/chert"}}
+{
+    "parent": "tfc:block/rock/loose_sedimentary_3",
+    "textures": {
+        "texture": "tfc:block/rock/mossy_cobble/chert",
+        "particle": "tfc:block/rock/mossy_cobble/chert"
+    }
+}

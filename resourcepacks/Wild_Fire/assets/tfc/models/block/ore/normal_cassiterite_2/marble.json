@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/marble",
+    "carve": "tfc:block/ore/ore_carve_B/normal_ore_2/marble",
+    "overlay": "tfc:block/ore/cassiterite/normal_cassiterite_2_light"
+  }
+}

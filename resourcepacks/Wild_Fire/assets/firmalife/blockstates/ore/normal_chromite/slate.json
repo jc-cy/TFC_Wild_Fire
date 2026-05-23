@@ -1,0 +1,16 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "firmalife:block/ore/normal_chromite_1/slate"
+      },
+      {
+        "model": "firmalife:block/ore/normal_chromite_2/slate"
+      },
+      {
+        "model": "firmalife:block/ore/normal_chromite_3/slate"
+      }
+    ]
+  }
+}

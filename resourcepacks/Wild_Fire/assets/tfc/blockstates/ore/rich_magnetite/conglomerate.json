@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/rich_magnetite/conglomerate"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/rich_magnetite_1/conglomerate"
+      },
+      {
+        "model": "tfc:block/ore/rich_magnetite_2/conglomerate"
+      },
+      {
+        "model": "tfc:block/ore/rich_magnetite_3/conglomerate"
+      }
+    ]
+  }
+}

@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_sphalerite/rhyolite"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_sphalerite_1/rhyolite"
+      },
+      {
+        "model": "tfc:block/ore/normal_sphalerite_2/rhyolite"
+      },
+      {
+        "model": "tfc:block/ore/normal_sphalerite_3/rhyolite"
+      }
+    ]
   }
 }

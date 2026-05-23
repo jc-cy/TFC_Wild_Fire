@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_malachite/dolomite"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_malachite_1/dolomite"
+      },
+      {
+        "model": "tfc:block/ore/normal_malachite_2/dolomite"
+      },
+      {
+        "model": "tfc:block/ore/normal_malachite_3/dolomite"
+      }
+    ]
   }
 }

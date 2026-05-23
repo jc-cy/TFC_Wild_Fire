@@ -1,0 +1,16 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "kubejs:block/ore/rich_native_vanadium_1/chert"
+      },
+      {
+        "model": "kubejs:block/ore/rich_native_vanadium_2/chert"
+      },
+      {
+        "model": "kubejs:block/ore/rich_native_vanadium_3/chert"
+      }
+    ]
+  }
+}

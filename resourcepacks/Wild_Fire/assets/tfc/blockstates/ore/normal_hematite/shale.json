@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_hematite/shale"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_hematite_1/shale"
+      },
+      {
+        "model": "tfc:block/ore/normal_hematite_2/shale"
+      },
+      {
+        "model": "tfc:block/ore/normal_hematite_3/shale"
+      }
+    ]
   }
 }

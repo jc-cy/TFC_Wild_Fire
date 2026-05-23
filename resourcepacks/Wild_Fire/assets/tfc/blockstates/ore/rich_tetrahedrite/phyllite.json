@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/rich_tetrahedrite/phyllite"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/rich_tetrahedrite_1/phyllite"
+      },
+      {
+        "model": "tfc:block/ore/rich_tetrahedrite_2/phyllite"
+      },
+      {
+        "model": "tfc:block/ore/rich_tetrahedrite_3/phyllite"
+      }
+    ]
+  }
+}

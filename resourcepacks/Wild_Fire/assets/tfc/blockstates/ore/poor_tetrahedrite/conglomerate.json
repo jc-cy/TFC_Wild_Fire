@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_tetrahedrite/conglomerate"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_tetrahedrite_1/conglomerate"
+      },
+      {
+        "model": "tfc:block/ore/poor_tetrahedrite_2/conglomerate"
+      },
+      {
+        "model": "tfc:block/ore/poor_tetrahedrite_3/conglomerate"
+      }
+    ]
+  }
+}

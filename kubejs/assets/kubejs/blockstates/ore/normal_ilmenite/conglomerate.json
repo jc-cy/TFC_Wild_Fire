@@ -1,0 +1,16 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "kubejs:block/ore/normal_ilmenite_1/conglomerate"
+      },
+      {
+        "model": "kubejs:block/ore/normal_ilmenite_2/conglomerate"
+      },
+      {
+        "model": "kubejs:block/ore/normal_ilmenite_3/conglomerate"
+      }
+    ]
+  }
+}

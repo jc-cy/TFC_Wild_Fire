@@ -1,0 +1,16 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc_ie_addon:block/ore/rich_uraninite_1/chert"
+      },
+      {
+        "model": "tfc_ie_addon:block/ore/rich_uraninite_2/chert"
+      },
+      {
+        "model": "tfc_ie_addon:block/ore/rich_uraninite_3/chert"
+      }
+    ]
+  }
+}

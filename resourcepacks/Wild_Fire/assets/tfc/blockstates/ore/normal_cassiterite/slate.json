@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_cassiterite/slate"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_cassiterite_1/slate"
+      },
+      {
+        "model": "tfc:block/ore/normal_cassiterite_2/slate"
+      },
+      {
+        "model": "tfc:block/ore/normal_cassiterite_3/slate"
+      }
+    ]
   }
 }

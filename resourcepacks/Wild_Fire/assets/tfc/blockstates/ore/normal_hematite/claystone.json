@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_hematite/claystone"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_hematite_1/claystone"
+      },
+      {
+        "model": "tfc:block/ore/normal_hematite_2/claystone"
+      },
+      {
+        "model": "tfc:block/ore/normal_hematite_3/claystone"
+      }
+    ]
   }
 }

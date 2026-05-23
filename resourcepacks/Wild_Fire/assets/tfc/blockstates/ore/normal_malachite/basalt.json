@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_malachite/basalt"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_malachite_1/basalt"
+      },
+      {
+        "model": "tfc:block/ore/normal_malachite_2/basalt"
+      },
+      {
+        "model": "tfc:block/ore/normal_malachite_3/basalt"
+      }
+    ]
   }
 }

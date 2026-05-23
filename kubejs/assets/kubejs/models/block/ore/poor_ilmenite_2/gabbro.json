@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/gabbro",
+    "carve": "tfc:block/ore/ore_carve_A/poor_ore_2/gabbro",
+    "overlay": "kubejs:block/ore/ilmenite/poor_ilmenite_2_dark"
+  }
+}

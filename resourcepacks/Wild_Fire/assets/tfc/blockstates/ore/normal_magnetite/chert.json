@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_magnetite/chert"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_magnetite_1/chert"
+      },
+      {
+        "model": "tfc:block/ore/normal_magnetite_2/chert"
+      },
+      {
+        "model": "tfc:block/ore/normal_magnetite_3/chert"
+      }
+    ]
   }
 }

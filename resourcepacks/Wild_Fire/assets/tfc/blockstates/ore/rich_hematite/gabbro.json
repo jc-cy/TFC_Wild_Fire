@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/rich_hematite/gabbro"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/rich_hematite_1/gabbro"
+      },
+      {
+        "model": "tfc:block/ore/rich_hematite_2/gabbro"
+      },
+      {
+        "model": "tfc:block/ore/rich_hematite_3/gabbro"
+      }
+    ]
+  }
+}

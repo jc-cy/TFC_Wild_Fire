@@ -1,1 +1,7 @@
-{"parent":"tfc:block/rock/loose_igneous_extrusive_2","textures":{"texture":"tfc:block/rock/cobble/dacite"},"particle":{"texture":"tfc:block/rock/cobble/dacite"}}
+{
+    "parent": "tfc:block/rock/loose_igneous_extrusive_2",
+    "textures": {
+        "texture": "tfc:block/rock/cobble/dacite",
+        "particle": "tfc:block/rock/cobble/dacite"
+    }
+}

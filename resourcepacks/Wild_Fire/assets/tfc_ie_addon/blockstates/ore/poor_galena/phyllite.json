@@ -1,0 +1,16 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc_ie_addon:block/ore/poor_galena_1/phyllite"
+      },
+      {
+        "model": "tfc_ie_addon:block/ore/poor_galena_2/phyllite"
+      },
+      {
+        "model": "tfc_ie_addon:block/ore/poor_galena_3/phyllite"
+      }
+    ]
+  }
+}

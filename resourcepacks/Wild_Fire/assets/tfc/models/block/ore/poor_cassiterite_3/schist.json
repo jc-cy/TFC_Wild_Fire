@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/schist",
+    "carve": "tfc:block/ore/ore_carve_B/poor_ore_3/schist",
+    "overlay": "tfc:block/ore/cassiterite/poor_cassiterite_3_dark"
+  }
+}

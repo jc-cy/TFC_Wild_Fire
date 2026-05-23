@@ -2,8 +2,8 @@
   "__comment__": "This file was automatically created by mcresources",
   "parent": "tfc:block/ore_alt",
   "textures": {
-    "all": "tfc:block/rock/raw/quarzite",
-    "carve": "tfc:block/ore/ore_carve_A/normal_ore_3/quarzite",
+    "all": "tfc:block/rock/raw/quartzite",
+    "carve": "tfc:block/ore/ore_carve_A/normal_ore_3/quartzite",
     "overlay": "tfc:block/ore/native_gold/normal_native_gold_3_light"
   }
 }

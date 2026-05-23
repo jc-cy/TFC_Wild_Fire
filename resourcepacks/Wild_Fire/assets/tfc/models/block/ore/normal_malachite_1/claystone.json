@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/claystone",
+    "carve": "tfc:block/ore/ore_carve_B/normal_ore_1/claystone",
+    "overlay": "tfc:block/ore/malachite/normal_malachite_1_dark"
+  }
+}

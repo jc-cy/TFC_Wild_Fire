@@ -1,0 +1,16 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc_ie_addon:block/ore/normal_bauxite_1/quartzite"
+      },
+      {
+        "model": "tfc_ie_addon:block/ore/normal_bauxite_2/quartzite"
+      },
+      {
+        "model": "tfc_ie_addon:block/ore/normal_bauxite_3/quartzite"
+      }
+    ]
+  }
+}

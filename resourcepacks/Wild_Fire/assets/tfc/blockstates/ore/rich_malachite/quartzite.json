@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/rich_malachite/quartzite"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/rich_malachite_1/quartzite"
+      },
+      {
+        "model": "tfc:block/ore/rich_malachite_2/quartzite"
+      },
+      {
+        "model": "tfc:block/ore/rich_malachite_3/quartzite"
+      }
+    ]
+  }
+}

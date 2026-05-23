@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_native_copper/schist"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_native_copper_1/schist"
+      },
+      {
+        "model": "tfc:block/ore/normal_native_copper_2/schist"
+      },
+      {
+        "model": "tfc:block/ore/normal_native_copper_3/schist"
+      }
+    ]
   }
 }

@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/rhyolite",
+    "carve": "tfc:block/ore/ore_carve_A/rich_ore_1/rhyolite",
+    "overlay": "tfc:block/ore/hematite/rich_hematite_1_dark"
+  }
+}

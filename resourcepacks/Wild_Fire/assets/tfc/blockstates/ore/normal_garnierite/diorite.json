@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_garnierite/diorite"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_garnierite_1/diorite"
+      },
+      {
+        "model": "tfc:block/ore/normal_garnierite_2/diorite"
+      },
+      {
+        "model": "tfc:block/ore/normal_garnierite_3/diorite"
+      }
+    ]
   }
 }

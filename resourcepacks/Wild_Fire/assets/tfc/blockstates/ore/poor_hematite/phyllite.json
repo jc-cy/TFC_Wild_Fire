@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_hematite/phyllite"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_hematite_1/phyllite"
+      },
+      {
+        "model": "tfc:block/ore/poor_hematite_2/phyllite"
+      },
+      {
+        "model": "tfc:block/ore/poor_hematite_3/phyllite"
+      }
+    ]
+  }
+}

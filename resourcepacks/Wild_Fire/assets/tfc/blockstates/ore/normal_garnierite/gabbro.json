@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_garnierite/gabbro"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_garnierite_1/gabbro"
+      },
+      {
+        "model": "tfc:block/ore/normal_garnierite_2/gabbro"
+      },
+      {
+        "model": "tfc:block/ore/normal_garnierite_3/gabbro"
+      }
+    ]
   }
 }

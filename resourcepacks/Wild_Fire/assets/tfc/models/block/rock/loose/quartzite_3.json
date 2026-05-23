@@ -1,1 +1,7 @@
-{"parent":"tfc:block/rock/loose_metamorphic_3","textures":{"texture":"tfc:block/rock/cobble/quartzite"},"particle":{"texture":"tfc:block/rock/cobble/quartzite"}}
+{
+    "parent": "tfc:block/rock/loose_metamorphic_3",
+    "textures": {
+        "texture": "tfc:block/rock/cobble/quartzite",
+        "particle": "tfc:block/rock/cobble/quartzite"
+    }
+}

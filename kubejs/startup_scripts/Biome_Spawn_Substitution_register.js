@@ -12,6 +12,8 @@ TFCEvents.registerFaunas(event => {
     event.replace('alexsmobs:skelewag', 'in_water', 'world_surface');
     // 鲶鱼（水中）→ 世界表面（河流/湖泊水面下用 world_surface）
     event.replace('alexsmobs:catfish', 'in_water', 'world_surface_wg');
+    // 鳄鱼（水中）→ 世界表面（河流/湖泊水面下用 world_surface）
+    event.replace('alexsmobs:crocodile', 'on_ground', 'ocean_floor');
     // 水龟（水中）→ 世界表面（河岸浅水区）
     event.replace('alexsmobs:terrapin', 'in_water', 'world_surface');
     // 鲈鱼（水中）→ 世界表面（湖泊/河流）
@@ -29,15 +31,15 @@ TFCEvents.registerFaunas(event => {
     // 栉水母（水中）→ 海洋表面（北冰洋表层，用 world_surface 模拟）
     event.replace('alexsmobs:comb_jelly', 'in_water', 'world_surface_wg');
     // 海豹（水中）→ 世界表面（北极海岸浅水区）
-    event.replace('alexsmobs:seal', 'in_water', 'world_surface');
+    event.replace('alexsmobs:seal', 'on_ground', 'world_surface');
     // 大鳄龟（水中）→ 世界表面（沼泽水域）
-    event.replace('alexsmobs:alligator_snapping_turtle', 'in_water', 'world_surface_wg');
+    event.replace('alexsmobs:alligator_snapping_turtle', 'on_ground', 'world_surface_wg');
     // 森蚺（水中）→ 世界表面（丛林沼泽）
-    event.replace('alexsmobs:anaconda', 'in_water', 'world_surface');
+    event.replace('alexsmobs:anaconda', 'on_ground', 'world_surface');
     // 河马（水中）→ 世界表面（热带草原河流）
-    event.replace('naturalist:hippo', 'in_water', 'world_surface_wg');
+    event.replace('naturalist:hippo', 'on_ground', 'world_surface_wg');
     // 鲎虫（水中）→ 世界表面（临时池塘）
-    event.replace('alexsmobs:shoebill', 'in_water', 'world_surface');
+    event.replace('alexsmobs:triops', 'on_ground', 'world_surface');
     // 鲸头鹳（地面）→ 世界表面（湿地）
     event.replace('alexsmobs:shoebill', 'on_ground', 'world_surface_wg');
     // 海鸥（无限制，模拟飞行逻辑用 on_ground）→ 世界表面（海岸天空，用 world_surface 占位）
@@ -72,12 +74,16 @@ TFCEvents.registerFaunas(event => {
     event.replace('naturalist:dragonfly', 'on_ground', 'world_surface');
     // 野牛（地面）→ 世界表面（草原平原）
     event.replace('alexsmobs:bison', 'on_ground', 'world_surface_wg');
+    //老虎（地面）→ 世界表面（草原平原）
+    event.replace('alexsmobs:tiger', 'on_ground', 'world_surface_wg');
     // 獠牙兽（地面）→ 世界表面（北极苔原）
-    event.replace('alexsmobs:tusklin', 'on_ground', 'world_surface');
+    event.replace('alexsmobs:tusklin', 'on_ground', 'world_surface_wg');
     // 切叶蚁（地面）→ 世界表面（热带草地）
     event.replace('alexsmobs:leafcutter_ant', 'on_ground', 'world_surface_wg');
     // 大象（地面）→ 世界表面（热带草原草地）
     event.replace('alexsmobs:elephant', 'on_ground', 'world_surface_wg');
+    // 猛犸象（地面）→ 世界表面（北极苔原）
+    event.replace('naturalist:elephant', 'on_ground', 'world_surface_wg');
     // 袋鼠（地面）→ 世界表面（澳大利亚内陆）
     event.replace('alexsmobs:kangaroo', 'on_ground', 'world_surface_wg');
     // 食蚁兽（地面）→ 世界表面（热带草原）
@@ -102,6 +108,18 @@ TFCEvents.registerFaunas(event => {
     event.replace('alexsmobs:crow', 'on_ground', 'world_surface_wg');
     // 冠蓝鸦（地面/树上，简化为 on_ground）→ 世界表面（温带树木区）
     event.replace('alexsmobs:blue_jay', 'on_ground', 'world_surface');
+
+    // 主红雀（地面/树上，简化为 on_ground）→ 世界表面（温带树木区）
+    event.replace('naturalist:cardinal', 'on_ground', 'world_surface');
+    // 金丝雀（地面/树上，简化为 on_ground）→ 世界表面（温带树木区）
+    event.replace('naturalist:canary', 'on_ground', 'world_surface');
+    // 山雀（地面/树上，简化为 on_ground）→ 世界表面（温带树木区）
+    event.replace('naturalist:finch', 'on_ground', 'world_surface');
+    // 麻雀（地面/树上，简化为 on_ground）→ 世界表面（温带树木区）
+    event.replace('naturalist:sparrow', 'on_ground', 'world_surface');
+    // 知更鸟（地面/树上，简化为 on_ground）→ 世界表面（温带树木区）
+    event.replace('naturalist:robin', 'on_ground', 'world_surface');
+
     // 雨蛙（地面）→ 世界表面（热带雨林地面）
     event.replace('alexsmobs:rain_frog', 'on_ground', 'world_surface_wg');
     // 狮尾狒狒（地面）→ 世界表面（山地草地）

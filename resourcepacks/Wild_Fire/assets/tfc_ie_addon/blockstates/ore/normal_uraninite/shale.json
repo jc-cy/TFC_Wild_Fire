@@ -1,0 +1,16 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc_ie_addon:block/ore/normal_uraninite_1/shale"
+      },
+      {
+        "model": "tfc_ie_addon:block/ore/normal_uraninite_2/shale"
+      },
+      {
+        "model": "tfc_ie_addon:block/ore/normal_uraninite_3/shale"
+      }
+    ]
+  }
+}

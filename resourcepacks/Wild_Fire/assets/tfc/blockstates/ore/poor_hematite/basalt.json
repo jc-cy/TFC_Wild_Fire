@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_hematite/basalt"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_hematite_1/basalt"
+      },
+      {
+        "model": "tfc:block/ore/poor_hematite_2/basalt"
+      },
+      {
+        "model": "tfc:block/ore/poor_hematite_3/basalt"
+      }
+    ]
+  }
+}

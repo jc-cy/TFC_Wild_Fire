@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/rich_limonite/limestone"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/rich_limonite_1/limestone"
+      },
+      {
+        "model": "tfc:block/ore/rich_limonite_2/limestone"
+      },
+      {
+        "model": "tfc:block/ore/rich_limonite_3/limestone"
+      }
+    ]
+  }
+}

@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/rich_native_copper/diorite"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/rich_native_copper_1/diorite"
+      },
+      {
+        "model": "tfc:block/ore/rich_native_copper_2/diorite"
+      },
+      {
+        "model": "tfc:block/ore/rich_native_copper_3/diorite"
+      }
+    ]
+  }
+}

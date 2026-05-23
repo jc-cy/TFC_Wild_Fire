@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_sphalerite/diorite"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_sphalerite_1/diorite"
+      },
+      {
+        "model": "tfc:block/ore/poor_sphalerite_2/diorite"
+      },
+      {
+        "model": "tfc:block/ore/poor_sphalerite_3/diorite"
+      }
+    ]
+  }
+}

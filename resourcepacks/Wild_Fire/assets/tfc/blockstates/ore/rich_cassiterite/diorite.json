@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/rich_cassiterite/diorite"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/rich_cassiterite_1/diorite"
+      },
+      {
+        "model": "tfc:block/ore/rich_cassiterite_2/diorite"
+      },
+      {
+        "model": "tfc:block/ore/rich_cassiterite_3/diorite"
+      }
+    ]
+  }
+}

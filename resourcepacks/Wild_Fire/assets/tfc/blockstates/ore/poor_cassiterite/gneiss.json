@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_cassiterite/gneiss"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_cassiterite_1/gneiss"
+      },
+      {
+        "model": "tfc:block/ore/poor_cassiterite_2/gneiss"
+      },
+      {
+        "model": "tfc:block/ore/poor_cassiterite_3/gneiss"
+      }
+    ]
+  }
+}

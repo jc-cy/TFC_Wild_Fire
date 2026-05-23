@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_sphalerite/quartzite"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_sphalerite_1/quartzite"
+      },
+      {
+        "model": "tfc:block/ore/poor_sphalerite_2/quartzite"
+      },
+      {
+        "model": "tfc:block/ore/poor_sphalerite_3/quartzite"
+      }
+    ]
+  }
+}

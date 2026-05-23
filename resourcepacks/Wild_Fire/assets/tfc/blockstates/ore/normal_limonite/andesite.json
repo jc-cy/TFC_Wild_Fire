@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_limonite/andesite"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_limonite_1/andesite"
+      },
+      {
+        "model": "tfc:block/ore/normal_limonite_2/andesite"
+      },
+      {
+        "model": "tfc:block/ore/normal_limonite_3/andesite"
+      }
+    ]
   }
 }

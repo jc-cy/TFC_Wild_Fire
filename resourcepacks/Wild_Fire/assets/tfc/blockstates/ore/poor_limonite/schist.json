@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_limonite/schist"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_limonite_1/schist"
+      },
+      {
+        "model": "tfc:block/ore/poor_limonite_2/schist"
+      },
+      {
+        "model": "tfc:block/ore/poor_limonite_3/schist"
+      }
+    ]
+  }
+}

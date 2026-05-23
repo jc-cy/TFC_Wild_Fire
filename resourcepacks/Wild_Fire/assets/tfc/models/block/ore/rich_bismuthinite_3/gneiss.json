@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/gneiss",
+    "carve": "tfc:block/ore/ore_carve_A/rich_ore_3/gneiss",
+    "overlay": "tfc:block/ore/bismuthinite/rich_bismuthinite_3_dark"
+  }
+}

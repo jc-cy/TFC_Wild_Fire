@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/dolomite",
+    "carve": "tfc:block/ore/ore_carve_B/poor_ore_1/dolomite",
+    "overlay": "tfc_ie_addon:block/ore/uraninite/poor_uraninite_1_dark"
+  }
+}

@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/rich_hematite/rhyolite"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/rich_hematite_1/rhyolite"
+      },
+      {
+        "model": "tfc:block/ore/rich_hematite_2/rhyolite"
+      },
+      {
+        "model": "tfc:block/ore/rich_hematite_3/rhyolite"
+      }
+    ]
+  }
+}

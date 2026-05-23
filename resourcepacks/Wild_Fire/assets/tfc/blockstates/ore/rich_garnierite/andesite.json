@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/rich_garnierite/andesite"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/rich_garnierite_1/andesite"
+      },
+      {
+        "model": "tfc:block/ore/rich_garnierite_2/andesite"
+      },
+      {
+        "model": "tfc:block/ore/rich_garnierite_3/andesite"
+      }
+    ]
+  }
+}

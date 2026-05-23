@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_malachite/chalk"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_malachite_1/chalk"
+      },
+      {
+        "model": "tfc:block/ore/normal_malachite_2/chalk"
+      },
+      {
+        "model": "tfc:block/ore/normal_malachite_3/chalk"
+      }
+    ]
   }
 }

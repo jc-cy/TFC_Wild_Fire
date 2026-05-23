@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/rich_limonite/diorite"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/rich_limonite_1/diorite"
+      },
+      {
+        "model": "tfc:block/ore/rich_limonite_2/diorite"
+      },
+      {
+        "model": "tfc:block/ore/rich_limonite_3/diorite"
+      }
+    ]
+  }
+}

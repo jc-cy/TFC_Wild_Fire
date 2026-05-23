@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/quartzite",
+    "carve": "tfc:block/ore/ore_carve_B/rich_ore_2/quartzite",
+    "overlay": "tfc:block/ore/garnierite/rich_garnierite_2_light"
+  }
+}

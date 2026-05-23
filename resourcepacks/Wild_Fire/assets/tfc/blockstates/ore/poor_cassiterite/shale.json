@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_cassiterite/shale"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_cassiterite_1/shale"
+      },
+      {
+        "model": "tfc:block/ore/poor_cassiterite_2/shale"
+      },
+      {
+        "model": "tfc:block/ore/poor_cassiterite_3/shale"
+      }
+    ]
+  }
+}

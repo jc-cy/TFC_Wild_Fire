@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/rich_limonite/gneiss"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/rich_limonite_1/gneiss"
+      },
+      {
+        "model": "tfc:block/ore/rich_limonite_2/gneiss"
+      },
+      {
+        "model": "tfc:block/ore/rich_limonite_3/gneiss"
+      }
+    ]
+  }
+}

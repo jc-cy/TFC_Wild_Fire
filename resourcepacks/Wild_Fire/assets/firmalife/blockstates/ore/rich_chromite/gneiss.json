@@ -1,0 +1,16 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "firmalife:block/ore/rich_chromite_1/gneiss"
+      },
+      {
+        "model": "firmalife:block/ore/rich_chromite_2/gneiss"
+      },
+      {
+        "model": "firmalife:block/ore/rich_chromite_3/gneiss"
+      }
+    ]
+  }
+}

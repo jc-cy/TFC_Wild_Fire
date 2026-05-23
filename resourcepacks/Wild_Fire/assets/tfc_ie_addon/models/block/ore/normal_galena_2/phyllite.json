@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/phyllite",
+    "carve": "tfc:block/ore/ore_carve_A/normal_ore_2/phyllite",
+    "overlay": "tfc_ie_addon:block/ore/galena/normal_galena_2_dark"
+  }
+}

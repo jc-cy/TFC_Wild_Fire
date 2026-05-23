@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/rich_malachite/marble"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/rich_malachite_1/marble"
+      },
+      {
+        "model": "tfc:block/ore/rich_malachite_2/marble"
+      },
+      {
+        "model": "tfc:block/ore/rich_malachite_3/marble"
+      }
+    ]
+  }
+}

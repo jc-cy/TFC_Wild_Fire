@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/rich_magnetite/gabbro"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/rich_magnetite_1/gabbro"
+      },
+      {
+        "model": "tfc:block/ore/rich_magnetite_2/gabbro"
+      },
+      {
+        "model": "tfc:block/ore/rich_magnetite_3/gabbro"
+      }
+    ]
+  }
+}

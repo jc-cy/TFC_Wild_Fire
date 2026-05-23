@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_magnetite/gneiss"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_magnetite_1/gneiss"
+      },
+      {
+        "model": "tfc:block/ore/poor_magnetite_2/gneiss"
+      },
+      {
+        "model": "tfc:block/ore/poor_magnetite_3/gneiss"
+      }
+    ]
+  }
+}

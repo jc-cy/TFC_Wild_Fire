@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/limestone",
+    "carve": "tfc:block/ore/ore_carve_A/rich_ore_1/limestone",
+    "overlay": "tfc:block/ore/native_copper/rich_native_copper_1_light"
+  }
+}

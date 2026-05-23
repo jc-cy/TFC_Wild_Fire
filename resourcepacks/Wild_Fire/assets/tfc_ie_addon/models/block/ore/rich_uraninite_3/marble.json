@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/marble",
+    "carve": "tfc:block/ore/ore_carve_B/rich_ore_3/marble",
+    "overlay": "tfc_ie_addon:block/ore/uraninite/rich_uraninite_3_dark"
+  }
+}

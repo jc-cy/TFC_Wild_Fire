@@ -1,0 +1,7 @@
+{
+    "parent":  "tfe:block/crop/canola_age_5",
+    "textures":  {
+                     "0":  "tfe:block/crop/canola_4",
+                     "particle": "tfe:block/crop/canola_4"
+                 }
+}

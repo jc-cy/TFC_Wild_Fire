@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/claystone",
+    "carve": "tfc:block/ore/ore_carve_A/rich_ore_1/claystone",
+    "overlay": "kubejs:block/ore/native_vanadium/rich_native_vanadium_1_dark"
+  }
+}

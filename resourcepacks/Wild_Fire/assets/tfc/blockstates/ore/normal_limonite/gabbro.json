@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_limonite/gabbro"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_limonite_1/gabbro"
+      },
+      {
+        "model": "tfc:block/ore/normal_limonite_2/gabbro"
+      },
+      {
+        "model": "tfc:block/ore/normal_limonite_3/gabbro"
+      }
+    ]
   }
 }

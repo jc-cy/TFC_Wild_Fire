@@ -1,0 +1,16 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "firmalife:block/ore/poor_chromite_1/phyllite"
+      },
+      {
+        "model": "firmalife:block/ore/poor_chromite_2/phyllite"
+      },
+      {
+        "model": "firmalife:block/ore/poor_chromite_3/phyllite"
+      }
+    ]
+  }
+}

@@ -15,6 +15,15 @@ TFCEvents.data(event => {
         climate.minTemp(5);
     }, fauna => { }, 'alexsmobs:catfish');
 
+    // 鳄鱼：50-500mm降雨，>8°C，1-2只
+    event.fauna(climate => {
+        climate.minRain(50);
+        climate.minTemp(8);
+        climate.maxForest(3);
+    }, fauna => {
+    fauna.distanceBelowSeaLevel(-1)
+    }, 'alexsmobs:crocodile');
+
     // 水龟：100-300mm降雨，5-10°C，1-3只
     event.fauna(climate => {
         climate.minRain(100);
@@ -45,10 +54,10 @@ TFCEvents.data(event => {
         climate.minTemp(5);
     }, fauna => { }, 'alexsmobs:mudskipper');
 
-    // 鲸头鹳：>5°C，1-3只
+    // 鲎虫 >5°C，1-3只
     event.fauna(climate => {
         climate.minTemp(5);
-    }, fauna => { }, 'alexsmobs:shoebill');
+    }, fauna => { }, 'alexsmobs:triops');
 
     // 螳螂虾：>13°C，1-3只
     event.fauna(climate => {
@@ -63,7 +72,7 @@ TFCEvents.data(event => {
     // 锤头鲨（不限环境）：1-2只
     event.fauna(climate => { }, fauna => { }, 'alexsmobs:hammerhead_shark');
 
-    // 栉水母：<-15°C，1-4只
+    // 栉水母：<-15°C，1-4只，寒冷气候
     event.fauna(climate => {
         climate.maxTemp(-15);
     }, fauna => { }, 'alexsmobs:comb_jelly');
@@ -81,35 +90,37 @@ TFCEvents.data(event => {
 });
 // 合并相同生物配置
 TFCEvents.data(event => {
-    // 沙漠蛛蜂：0-50mm降雨，1只
+    // 沙漠蛛蜂：0-50mm降雨，1只，干旱气候
     event.fauna(climate => {
         climate.minRain(0);
         climate.maxRain(100);
-        climate.minTemp(10);
+        climate.minTemp(0);
+        climate.maxForest(2);
     }, fauna => { }, 'alexsmobs:tarantula_hawk');
 
-    // 大猩猩：140-500mm降雨，>16°C，2-6只
+    // 大猩猩：140-500mm降雨，>16°C，2-6只，潮湿气候
     event.fauna(climate => {
         climate.minRain(140);
-        climate.maxRain(500);
+        climate.maxRain(520);
         climate.minTemp(16);
     }, fauna => { }, 'alexsmobs:gorilla');
 
-    // 卷尾猴：140-500mm降雨，>16°C，2-6只
+    // 卷尾猴：140-500mm降雨，>16°C，2-6只，潮湿气候
     event.fauna(climate => {
         climate.minRain(140);
-        climate.maxRain(500);
+        climate.maxRain(520);
         climate.minTemp(16);
     }, fauna => { }, 'alexsmobs:capuchin_monkey');
 
-    // 驼鹿：110-500mm降雨，<-9°C，1只
+    // 驼鹿：110-500mm降雨，<-9°C，1只，寒冷气候
     event.fauna(climate => {
         climate.minRain(110);
         climate.maxRain(500);
-        climate.maxTemp(-9);
+        climate.maxTemp(-6);
+        climate.minForest(1);
     }, fauna => { }, 'alexsmobs:moose');
 
-    // 雪豹：150-420mm降雨，<-5°C，1-2只
+    // 雪豹：150-420mm降雨，<-5°C，1-2只，寒冷气候
     event.fauna(climate => {
         climate.minRain(150);
         climate.maxRain(420);
@@ -119,240 +130,317 @@ TFCEvents.data(event => {
     // 袋獾：250-350mm降雨，8-15°C，1-3只（整合1-2只与1-3只范围）
     event.fauna(climate => {
         climate.minRain(250);
-        climate.maxRain(350);
+        climate.maxRain(400);
         climate.minTemp(8);
         climate.maxTemp(15);
     }, fauna => { }, 'alexsmobs:tasmanian_devil');
 
-    // 鬃狼：80-350mm降雨，>18°C，1-2只
+    // 鬃狼：80-350mm降雨，>18°C，1-2只，常规气候和干旱气候
     event.fauna(climate => {
-        climate.minRain(80);
-        climate.maxRain(350);
-        climate.minTemp(18);
+        climate.minRain(50);
+        climate.maxRain(250);
+        climate.minTemp(2);
+        climate.minForest(1);
     }, fauna => { }, 'alexsmobs:maned_wolf');
 
-    // 犀牛：130-330mm降雨，>18°C，1-3只
+    // 犀牛：130-330mm降雨，>18°C，1-3只，常规气候和干旱气候
     event.fauna(climate => {
         climate.minRain(10);
-        climate.maxRain(330);
+        climate.maxRain(430);
         climate.minTemp(15);
     }, fauna => { }, 'alexsmobs:rhinoceros');
 
-    // 走鹃：0-150mm降雨，1-3只
+    // 走鹃：0-150mm降雨，1-3只，干旱气候
     event.fauna(climate => {
         climate.minRain(0);
         climate.maxRain(150);
     }, fauna => { }, 'alexsmobs:roadrunner');
 
-    // 鸸鹋：130-330mm降雨，>18°C，1-4只
+    // 鸸鹋：130-330mm降雨，>18°C，1-4只，常规气候和干旱气候
     event.fauna(climate => {
-        climate.minRain(130);
-        climate.maxRain(330);
+        climate.minRain(10);
+        climate.maxRain(530);
         climate.minTemp(18);
     }, fauna => { }, 'alexsmobs:emu');
 
-    // 巨嘴鸟：140-500mm降雨，>16°C，1-2只（整合1只与1-2只范围）
+    // 巨嘴鸟：100-500mm降雨，>16°C，1-2只（整合1只与1-2只范围），潮湿气候
     event.fauna(climate => {
-        climate.minRain(140);
+        climate.minRain(100);
         climate.maxRain(500);
         climate.minTemp(16);
+        climate.minForest(1);
     }, fauna => { }, 'alexsmobs:toucan');
 
-    // 响尾蛇：130-330mm降雨，>18°C，1只
+    // 响尾蛇：130-330mm降雨，>18°C，1只，干旱气候
     event.fauna(climate => {
         climate.minRain(0);
         climate.maxRain(130);
-        climate.minTemp(10);
+        climate.minTemp(5);
+        climate.maxForest(2);
     }, fauna => { }, 'alexsmobs:rattlesnake');
 
-    // 科莫多巨蜥：140-500mm降雨，>16°C，1-2只
+    // 科莫多巨蜥：140-500mm降雨，>16°C，1-2只，常规气候和潮湿气候
     event.fauna(climate => {
         climate.minRain(140);
         climate.maxRain(500);
-        climate.minTemp(16);
+        climate.minTemp(10);
     }, fauna => { }, 'alexsmobs:komodo_dragon');
 
-    // 大鳄龟：140-500mm降雨，>16°C，1-2只
+    // 大鳄龟：140-500mm降雨，>16°C，1-2只，任意
     event.fauna(climate => {
         climate.minRain(140);
         climate.maxRain(500);
         climate.minTemp(16);
     }, fauna => { }, 'alexsmobs:alligator_snapping_turtle');
 
-    // 森蚺：140-500mm降雨，>16°C，1-2只（整合1只与1-2只范围）
+    // 森蚺：140-500mm降雨，>16°C，1-2只（整合1只与1-2只范围），潮湿气候
     event.fauna(climate => {
         climate.minRain(140);
         climate.maxRain(500);
         climate.minTemp(16);
+        climate.minForest(1);
     }, fauna => { }, 'alexsmobs:anaconda');
 
-    // 秃鹫：0-100mm降雨，1-4只
+    // 秃鹫：0-100mm降雨，1-4只，干旱气候
     event.fauna(climate => {
         climate.minRain(0);
         climate.maxRain(130);
-        climate.minTemp(8);
+        climate.minTemp(0);
     }, fauna => { }, 'naturalist:vulture');
 
-    // 蜻蜓：200-500mm降雨，>16°C，1-2只
+    // 蜻蜓：200-500mm降雨，>16°C，1-2只，任意
     event.fauna(climate => {
-        climate.minRain(200);
-        climate.maxRain(500);
-        climate.minTemp(16);
+        climate.minRain(100);
+        climate.maxRain(400);
+        climate.minTemp(10);
     }, fauna => { }, 'naturalist:dragonfly');
 
-    // 野牛：90-380mm降雨，-15至10°C，1-4只
+    // 野牛：90-380mm降雨，-15至15°C，1-4只，任意
     event.fauna(climate => {
         climate.minRain(90);
         climate.maxRain(380);
         climate.minTemp(-15);
-        climate.maxTemp(15);
+        climate.maxTemp(20);
     }, fauna => { }, 'alexsmobs:bison');
 
-    // 獠牙兽：90-380mm降雨，<-15°C，1只（整合不同标识，统一气候）
+    // 老虎：120-380mm降雨，8至30°C，1只，任意
     event.fauna(climate => {
-        climate.minRain(90);
-        climate.maxRain(380);
-        climate.maxTemp(-2);
-    }, fauna => { }, 'alexsmobs:tusklin'); // 保留主要标识
+        climate.minRain(100);
+        climate.minTemp(8);
+        climate.minForest(1);
+    }, fauna => { }, 'alexsmobs:tiger');
+    
+    // 獠牙兽：110-500mm降雨，<-1°C，1~2只，寒冷气候
+    event.fauna(climate => {
+        climate.minRain(100);
+        climate.maxRain(500);
+        climate.maxTemp(-1);
+    }, fauna => { }, 'alexsmobs:tusklin');
 
-    // 切叶蚁：250-350mm降雨，2-15°C，1-3只
+    // 切叶蚁：250-350mm降雨，2-15°C，1-3只，常规气候和潮湿气候
     event.fauna(climate => {
         climate.minRain(250);
         climate.maxRain(350);
         climate.minTemp(2);
         climate.maxTemp(15);
+        climate.minForest(2);
     }, fauna => { }, 'alexsmobs:leafcutter_ant');
 
-    // 大象：130-330mm降雨，>18°C，1-4只
+    // 大象：130-330mm降雨，>17°C，1-4只，常规气候和干旱气候
     event.fauna(climate => {
-        climate.minRain(10);
-        climate.maxRain(500);
-        climate.minTemp(1);
+        climate.minRain(60);
+        climate.maxRain(550);
+        climate.minTemp(17);
+        climate.minForest(1);
     }, fauna => { }, 'alexsmobs:elephant');
 
-    // 袋鼠：130-330mm降雨，>18°C，2-3只
+    // 猛犸象：130-330mm降雨，>17°C，1-2只，寒冷
     event.fauna(climate => {
-        climate.minRain(130);
-        climate.maxRain(330);
-        climate.minTemp(18);
+        climate.minRain(50);
+        climate.maxRain(450);
+        climate.maxTemp(-3);
+    }, fauna => { }, 'naturalist:elephant');
+
+    // 袋鼠：10-330mm降雨，>18°C，2-3只，常规气候和干旱气候
+    event.fauna(climate => {
+        climate.minRain(10);
+        climate.minTemp(15);
     }, fauna => { }, 'alexsmobs:kangaroo');
 
-    // 食蚁兽：250-350mm降雨，2-15°C，1只
+    // 食蚁兽：250-350mm降雨，2-15°C，1只，常规气候
     event.fauna(climate => {
         climate.minRain(260);
-        climate.maxRain(400);
+        climate.maxRain(450);
         climate.minTemp(2);
         climate.maxTemp(15);
+        climate.minForest(2);
     }, fauna => { }, 'alexsmobs:anteater');
 
-    // 臭鼬：200-300mm降雨，10-28°C，1只
+    // 臭鼬：200-300mm降雨，10-28°C，1只，常规气候
     event.fauna(climate => {
-        climate.minRain(160);
-        climate.maxRain(320);
-        climate.minTemp(10);
+        climate.minRain(80);
+        climate.maxRain(450);
+        climate.minTemp(5);
         climate.maxTemp(28);
     }, fauna => { }, 'alexsmobs:skunk');
 
-    // 长颈鹿：130-330mm降雨，>18°C，1-3只
+    // 长颈鹿：60-330mm降雨，>18°C，1-3只，常规气候和干旱气候
     event.fauna(climate => {
-        climate.minRain(130);
-        climate.maxRain(330);
-        climate.minTemp(0);
+        climate.minRain(60);
+        climate.maxRain(440);
+        climate.minTemp(18);
     }, fauna => { }, 'naturalist:giraffe');
 
-    // 河马（水中）：130-430mm降雨，>18°C，1-2只
+    // 河马（水中）：130-430mm降雨，>18°C，1-2只，常规气候和干旱气候
     event.fauna(climate => {
-        climate.minRain(10);
-        climate.maxRain(430);
-        climate.minTemp(0);
+        climate.minRain(130);
+        climate.maxRain(550);
+        climate.minTemp(10);
+        climate.maxForest(3);
     }, fauna => {
-    fauna.distanceBelowSeaLevel(0)
+    fauna.distanceBelowSeaLevel(-1)
     }, 'naturalist:hippo');
 
-    // 蜗牛：400-500mm降雨，>16°C，1-2只
+    // 蜗牛：400-500mm降雨，>10°C，1-2只，常规气候
     event.fauna(climate => {
         climate.minRain(100);
-        climate.maxRain(500);
+        climate.maxRain(550);
         climate.minTemp(10);
+        climate.minForest(1);
     }, fauna => { }, 'naturalist:snail');
 
-    // 狮子：400-500mm降雨，>16°C，1-3只
+    // 狮子：400-500mm降雨，>9°C，1-3只，常规气候
     event.fauna(climate => {
         climate.minRain(80);
-        climate.maxRain(260);
-        climate.minTemp(14);
+        climate.maxRain(330);
+        climate.minTemp(9);
     }, fauna => { }, 'naturalist:lion');
 
-    // 蜥蜴：400-500mm降雨，>16°C，1-3只
+    // 蜥蜴：400-500mm降雨，>16°C，1-3只，任意
     event.fauna(climate => {
         climate.minRain(0);
-        climate.maxRain(350);
+        climate.maxRain(450);
         climate.minTemp(5);
+        climate.minForest(2);
     }, fauna => { }, 'naturalist:lizard');
 
-    // 白头海雕：>5°C，1-3只
+    // 白头海雕：>5°C，1-3只，任意
     event.fauna(climate => {
         climate.minTemp(5);
+        climate.maxForest(2);
     }, fauna => { }, 'alexsmobs:bald_eagle');
 
-    // 香蕉蛞蝓：300-500mm降雨，4-15°C，1只
+    // 香蕉蛞蝓：300-500mm降雨，4-15°C，1只，潮湿气候
     event.fauna(climate => {
         climate.minRain(220);
-        climate.maxRain(500);
+        climate.maxRain(550);
         climate.minTemp(4);
         climate.maxTemp(15);
+        climate.minForest(2);
     }, fauna => { }, 'alexsmobs:banana_slug');
 
-    // 浣熊：300-500mm降雨，10-28°C，1-3只
+    // 浣熊：300-500mm降雨，10-28°C，1-3只，常规气候
     event.fauna(climate => {
         climate.minRain(100);
         climate.maxRain(500);
-        climate.minTemp(10);
-        climate.maxTemp(28);
+        climate.minTemp(5);
+        climate.maxTemp(20);
     }, fauna => { }, 'alexsmobs:raccoon');
 
-    // 乌鸦：300-500mm降雨，10-28°C，1-4只
+    // 乌鸦：300-500mm降雨，10-28°C，1-4只，常规气候和干旱气候
     event.fauna(climate => {
         climate.minRain(0);
         climate.maxRain(500);
-        climate.minTemp(9);
+        climate.minTemp(8);
     }, fauna => { }, 'alexsmobs:crow');
 
-    // 冠蓝鸦：300-500mm降雨，10-28°C，1-2只
+    // 冠蓝鸦：100-350mm降雨，10-28°C，1-2只，常规气候和潮湿气候
+    event.fauna(climate => {
+        climate.minRain(80);
+        climate.maxRain(450);
+        climate.minTemp(0);
+        climate.maxTemp(15);
+        climate.minForest(1);
+    }, fauna => { }, 'alexsmobs:blue_jay');
+
+    // 鲸头鹳：0-50mm降雨，>10°C，1-2只
+    event.fauna(climate => {
+        climate.minRain(200);
+        climate.maxRain(500);
+        climate.minTemp(18);
+    }, fauna => { }, 'alexsmobs:shoebill');
+
+
+
+    // 主红雀：100-300mm降雨，>10°C，1-2只
     event.fauna(climate => {
         climate.minRain(100);
         climate.maxRain(300);
-        climate.minTemp(8);
-        climate.maxTemp(28);
-    }, fauna => { }, 'alexsmobs:blue_jay');
+        climate.minTemp(-2);
+        climate.maxTemp(20);
+        climate.minForest(2);
+    }, fauna => { }, 'naturalist:cardinal');
 
-    // 鲎虫：0-50mm降雨，>10°C，1-2只
+    // 金丝雀：50-250mm降雨，>10°C，1-2只
+    event.fauna(climate => {
+        climate.minRain(50);
+        climate.maxRain(250);
+        climate.minTemp(5);
+        climate.maxTemp(20);
+        climate.minForest(3);
+    }, fauna => { }, 'naturalist:canary');
+
+    // 山雀：100-350mm降雨，>10°C，1-2只
+    event.fauna(climate => {
+        climate.minRain(100);
+        climate.maxRain(350);
+        climate.minTemp(0);
+        climate.maxTemp(30);
+        climate.minForest(2);
+    }, fauna => { }, 'naturalist:finch');
+
+    // 麻雀：120-400mm降雨，>10°C，1-2只
+    event.fauna(climate => {
+        climate.minRain(120);
+        climate.maxRain(400);
+        climate.minTemp(0);
+        climate.maxTemp(26);
+        climate.minForest(2);
+    }, fauna => { }, 'naturalist:sparrow');
+
+    // 知更鸟：100-350mm降雨，>10°C，1-2只
+    event.fauna(climate => {
+        climate.minRain(100);
+        climate.maxRain(450);
+        climate.minTemp(-5);
+        climate.maxTemp(20);
+        climate.minForest(2);
+    }, fauna => { }, 'naturalist:robin');
+
+
+    
+    // 雨蛙：0-50mm降雨，>10°C，1只，干旱气候
     event.fauna(climate => {
         climate.minRain(0);
-        climate.maxRain(50);
-        climate.minTemp(10);
-    }, fauna => { }, 'alexsmobs:shoebill');
-
-    // 雨蛙：0-50mm降雨，>10°C，1只
-    event.fauna(climate => {
-        climate.minRain(0);
-        climate.maxRain(50);
+        climate.maxRain(100);
         climate.minTemp(10);
     }, fauna => { }, 'alexsmobs:rain_frog');
 
-    // 狮尾狒狒：80-350mm降雨，>18°C，3-6只
+    // 狮尾狒狒：80-350mm降雨，>18°C，3-6只，潮湿气候
     event.fauna(climate => {
         climate.minRain(80);
-        climate.maxRain(350);
+        climate.maxRain(500);
         climate.minTemp(18);
     }, fauna => { }, 'alexsmobs:gelada_monkey');
 
-    // 跳鼠：0-50mm降雨，>10°C，1只
+    // 跳鼠：0-50mm降雨，>10°C，1只，干旱气候
     event.fauna(climate => {
         climate.minRain(0);
         climate.maxRain(100);
         climate.minTemp(10);
     }, fauna => { }, 'alexsmobs:jerboa');
+
+
 
     event.fauna(climate => {
     }, fauna => {

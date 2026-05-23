@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_garnierite/chert"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_garnierite_1/chert"
+      },
+      {
+        "model": "tfc:block/ore/poor_garnierite_2/chert"
+      },
+      {
+        "model": "tfc:block/ore/poor_garnierite_3/chert"
+      }
+    ]
+  }
+}

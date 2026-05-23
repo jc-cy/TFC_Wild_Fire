@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_tetrahedrite/gabbro"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_tetrahedrite_1/gabbro"
+      },
+      {
+        "model": "tfc:block/ore/poor_tetrahedrite_2/gabbro"
+      },
+      {
+        "model": "tfc:block/ore/poor_tetrahedrite_3/gabbro"
+      }
+    ]
+  }
+}

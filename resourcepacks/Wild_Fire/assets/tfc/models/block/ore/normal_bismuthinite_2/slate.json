@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/slate",
+    "carve": "tfc:block/ore/ore_carve_A/normal_ore_2/slate",
+    "overlay": "tfc:block/ore/bismuthinite/normal_bismuthinite_2_dark"
+  }
+}

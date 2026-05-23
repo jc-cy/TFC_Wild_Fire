@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_limonite/phyllite"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_limonite_1/phyllite"
+      },
+      {
+        "model": "tfc:block/ore/poor_limonite_2/phyllite"
+      },
+      {
+        "model": "tfc:block/ore/poor_limonite_3/phyllite"
+      }
+    ]
+  }
+}

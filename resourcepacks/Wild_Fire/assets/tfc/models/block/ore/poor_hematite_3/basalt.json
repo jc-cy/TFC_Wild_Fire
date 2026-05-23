@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/basalt",
+    "carve": "tfc:block/ore/ore_carve_A/poor_ore_3/basalt",
+    "overlay": "tfc:block/ore/hematite/poor_hematite_3_dark"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc_ie_addon:block/ore/poor_uraninite_1/conglomerate"
+      },
+      {
+        "model": "tfc_ie_addon:block/ore/poor_uraninite_2/conglomerate"
+      },
+      {
+        "model": "tfc_ie_addon:block/ore/poor_uraninite_3/conglomerate"
+      }
+    ]
+  }
+}

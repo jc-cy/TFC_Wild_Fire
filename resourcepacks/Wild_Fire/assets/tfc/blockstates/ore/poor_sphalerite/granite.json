@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_sphalerite/granite"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_sphalerite_1/granite"
+      },
+      {
+        "model": "tfc:block/ore/poor_sphalerite_2/granite"
+      },
+      {
+        "model": "tfc:block/ore/poor_sphalerite_3/granite"
+      }
+    ]
+  }
+}

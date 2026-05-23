@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/schist",
+    "carve": "tfc:block/ore/ore_carve_B/normal_ore_2/schist",
+    "overlay": "firmalife:block/ore/chromite/normal_chromite_2_dark"
+  }
+}

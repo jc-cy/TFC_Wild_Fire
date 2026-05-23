@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_garnierite/phyllite"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_garnierite_1/phyllite"
+      },
+      {
+        "model": "tfc:block/ore/poor_garnierite_2/phyllite"
+      },
+      {
+        "model": "tfc:block/ore/poor_garnierite_3/phyllite"
+      }
+    ]
+  }
+}

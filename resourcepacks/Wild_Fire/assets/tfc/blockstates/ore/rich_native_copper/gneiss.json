@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/rich_native_copper/gneiss"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/rich_native_copper_1/gneiss"
+      },
+      {
+        "model": "tfc:block/ore/rich_native_copper_2/gneiss"
+      },
+      {
+        "model": "tfc:block/ore/rich_native_copper_3/gneiss"
+      }
+    ]
+  }
+}

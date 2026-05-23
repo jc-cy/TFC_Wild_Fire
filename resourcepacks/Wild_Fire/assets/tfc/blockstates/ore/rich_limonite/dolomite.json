@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/rich_limonite/dolomite"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/rich_limonite_1/dolomite"
+      },
+      {
+        "model": "tfc:block/ore/rich_limonite_2/dolomite"
+      },
+      {
+        "model": "tfc:block/ore/rich_limonite_3/dolomite"
+      }
+    ]
+  }
+}

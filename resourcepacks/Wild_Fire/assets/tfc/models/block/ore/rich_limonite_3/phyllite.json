@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/phyllite",
+    "carve": "tfc:block/ore/ore_carve_A/rich_ore_3/phyllite",
+    "overlay": "tfc:block/ore/limonite/rich_limonite_3_dark"
+  }
+}

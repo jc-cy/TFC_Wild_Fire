@@ -1,0 +1,16 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "kubejs:block/ore/poor_native_vanadium_1/marble"
+      },
+      {
+        "model": "kubejs:block/ore/poor_native_vanadium_2/marble"
+      },
+      {
+        "model": "kubejs:block/ore/poor_native_vanadium_3/marble"
+      }
+    ]
+  }
+}

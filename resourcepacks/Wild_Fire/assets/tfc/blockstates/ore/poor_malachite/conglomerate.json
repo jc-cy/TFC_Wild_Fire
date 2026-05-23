@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_malachite/conglomerate"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_malachite_1/conglomerate"
+      },
+      {
+        "model": "tfc:block/ore/poor_malachite_2/conglomerate"
+      },
+      {
+        "model": "tfc:block/ore/poor_malachite_3/conglomerate"
+      }
+    ]
+  }
+}

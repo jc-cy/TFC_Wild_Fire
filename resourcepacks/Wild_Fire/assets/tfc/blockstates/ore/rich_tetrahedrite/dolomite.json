@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/rich_tetrahedrite/dolomite"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/rich_tetrahedrite_1/dolomite"
+      },
+      {
+        "model": "tfc:block/ore/rich_tetrahedrite_2/dolomite"
+      },
+      {
+        "model": "tfc:block/ore/rich_tetrahedrite_3/dolomite"
+      }
+    ]
+  }
+}

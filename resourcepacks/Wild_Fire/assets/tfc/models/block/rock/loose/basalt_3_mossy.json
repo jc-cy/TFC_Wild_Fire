@@ -1,1 +1,7 @@
-{"parent":"tfc:block/rock/loose_igneous_extrusive_moss_3","textures":{"texture":"tfc:block/rock/mossy_cobble/basalt"},"particle":{"texture":"tfc:block/rock/mossy_cobble/basalt"}}
+{
+    "parent": "tfc:block/rock/loose_igneous_extrusive_moss_3",
+    "textures": {
+        "texture": "tfc:block/rock/mossy_cobble/basalt",
+        "particle": "tfc:block/rock/mossy_cobble/basalt"
+    }
+}

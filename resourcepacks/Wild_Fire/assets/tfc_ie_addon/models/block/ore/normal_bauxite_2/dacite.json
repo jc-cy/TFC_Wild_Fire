@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/dacite",
+    "carve": "tfc:block/ore/ore_carve_B/normal_ore_2/dacite",
+    "overlay": "tfc_ie_addon:block/ore/bauxite/normal_bauxite_2_dark"
+  }
+}

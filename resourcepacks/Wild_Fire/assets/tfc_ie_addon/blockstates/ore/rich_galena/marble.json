@@ -1,0 +1,16 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc_ie_addon:block/ore/rich_galena_1/marble"
+      },
+      {
+        "model": "tfc_ie_addon:block/ore/rich_galena_2/marble"
+      },
+      {
+        "model": "tfc_ie_addon:block/ore/rich_galena_3/marble"
+      }
+    ]
+  }
+}

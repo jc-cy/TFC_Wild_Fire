@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_sphalerite/slate"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_sphalerite_1/slate"
+      },
+      {
+        "model": "tfc:block/ore/poor_sphalerite_2/slate"
+      },
+      {
+        "model": "tfc:block/ore/poor_sphalerite_3/slate"
+      }
+    ]
+  }
+}

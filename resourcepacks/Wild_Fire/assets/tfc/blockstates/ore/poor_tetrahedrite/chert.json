@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_tetrahedrite/chert"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_tetrahedrite_1/chert"
+      },
+      {
+        "model": "tfc:block/ore/poor_tetrahedrite_2/chert"
+      },
+      {
+        "model": "tfc:block/ore/poor_tetrahedrite_3/chert"
+      }
+    ]
+  }
+}

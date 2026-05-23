@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/rich_cassiterite/chalk"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/rich_cassiterite_1/chalk"
+      },
+      {
+        "model": "tfc:block/ore/rich_cassiterite_2/chalk"
+      },
+      {
+        "model": "tfc:block/ore/rich_cassiterite_3/chalk"
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/diorite",
+    "carve": "tfc:block/ore/ore_carve_B/normal_ore_3/diorite",
+    "overlay": "tfc:block/ore/garnierite/normal_garnierite_3_light"
+  }
+}

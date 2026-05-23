@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_tetrahedrite/limestone"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_tetrahedrite_1/limestone"
+      },
+      {
+        "model": "tfc:block/ore/normal_tetrahedrite_2/limestone"
+      },
+      {
+        "model": "tfc:block/ore/normal_tetrahedrite_3/limestone"
+      }
+    ]
   }
 }

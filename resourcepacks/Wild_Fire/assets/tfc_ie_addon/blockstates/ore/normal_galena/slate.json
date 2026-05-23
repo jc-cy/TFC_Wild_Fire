@@ -1,0 +1,16 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc_ie_addon:block/ore/normal_galena_1/slate"
+      },
+      {
+        "model": "tfc_ie_addon:block/ore/normal_galena_2/slate"
+      },
+      {
+        "model": "tfc_ie_addon:block/ore/normal_galena_3/slate"
+      }
+    ]
+  }
+}

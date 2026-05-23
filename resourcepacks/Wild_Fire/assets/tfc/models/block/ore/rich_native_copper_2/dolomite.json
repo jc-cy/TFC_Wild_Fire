@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/dolomite",
+    "carve": "tfc:block/ore/ore_carve_A/rich_ore_2/dolomite",
+    "overlay": "tfc:block/ore/native_copper/rich_native_copper_2_dark"
+  }
+}

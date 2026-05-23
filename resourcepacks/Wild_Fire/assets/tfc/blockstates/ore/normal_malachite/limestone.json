@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_malachite/limestone"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_malachite_1/limestone"
+      },
+      {
+        "model": "tfc:block/ore/normal_malachite_2/limestone"
+      },
+      {
+        "model": "tfc:block/ore/normal_malachite_3/limestone"
+      }
+    ]
   }
 }

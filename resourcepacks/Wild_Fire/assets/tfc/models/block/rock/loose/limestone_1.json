@@ -1,1 +1,7 @@
-{"parent":"tfc:block/rock/loose_sedimentary_1","textures":{"texture":"tfc:block/rock/cobble/limestone"},"particle":{"texture":"tfc:block/rock/cobble/limestone"}}
+{
+    "parent": "tfc:block/rock/loose_sedimentary_1",
+    "textures": {
+        "texture": "tfc:block/rock/cobble/limestone",
+        "particle": "tfc:block/rock/cobble/limestone"
+    }
+}

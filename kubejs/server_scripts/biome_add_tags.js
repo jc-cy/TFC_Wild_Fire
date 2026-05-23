@@ -24,4 +24,5 @@ ServerEvents.tags("worldgen/biome", event => {
         "tfc:old_mountain_lake",
         "tfc:old_mountains"
     ])
+
 })

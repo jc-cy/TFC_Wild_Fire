@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_cassiterite/limestone"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_cassiterite_1/limestone"
+      },
+      {
+        "model": "tfc:block/ore/normal_cassiterite_2/limestone"
+      },
+      {
+        "model": "tfc:block/ore/normal_cassiterite_3/limestone"
+      }
+    ]
   }
 }

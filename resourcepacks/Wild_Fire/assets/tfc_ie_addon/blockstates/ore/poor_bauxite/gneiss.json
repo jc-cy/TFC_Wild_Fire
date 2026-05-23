@@ -1,0 +1,16 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc_ie_addon:block/ore/poor_bauxite_1/gneiss"
+      },
+      {
+        "model": "tfc_ie_addon:block/ore/poor_bauxite_2/gneiss"
+      },
+      {
+        "model": "tfc_ie_addon:block/ore/poor_bauxite_3/gneiss"
+      }
+    ]
+  }
+}

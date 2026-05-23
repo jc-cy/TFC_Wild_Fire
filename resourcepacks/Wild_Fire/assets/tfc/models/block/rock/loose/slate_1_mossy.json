@@ -1,1 +1,7 @@
-{"parent":"tfc:block/rock/loose_metamorphic_moss_1","textures":{"texture":"tfc:block/rock/mossy_cobble/slate"},"particle":{"texture":"tfc:block/rock/mossy_cobble/slate"}}
+{
+    "parent": "tfc:block/rock/loose_metamorphic_moss_1",
+    "textures": {
+        "texture": "tfc:block/rock/mossy_cobble/slate",
+        "particle": "tfc:block/rock/mossy_cobble/slate"
+    }
+}

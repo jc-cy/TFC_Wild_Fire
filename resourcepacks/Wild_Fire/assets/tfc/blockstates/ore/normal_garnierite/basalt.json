@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_garnierite/basalt"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_garnierite_1/basalt"
+      },
+      {
+        "model": "tfc:block/ore/normal_garnierite_2/basalt"
+      },
+      {
+        "model": "tfc:block/ore/normal_garnierite_3/basalt"
+      }
+    ]
   }
 }

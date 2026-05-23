@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_native_copper/andesite"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_native_copper_1/andesite"
+      },
+      {
+        "model": "tfc:block/ore/normal_native_copper_2/andesite"
+      },
+      {
+        "model": "tfc:block/ore/normal_native_copper_3/andesite"
+      }
+    ]
   }
 }

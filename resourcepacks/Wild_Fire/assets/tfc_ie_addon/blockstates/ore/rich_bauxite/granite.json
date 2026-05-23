@@ -1,0 +1,16 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc_ie_addon:block/ore/rich_bauxite_1/granite"
+      },
+      {
+        "model": "tfc_ie_addon:block/ore/rich_bauxite_2/granite"
+      },
+      {
+        "model": "tfc_ie_addon:block/ore/rich_bauxite_3/granite"
+      }
+    ]
+  }
+}

@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_malachite/dacite"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_malachite_1/dacite"
+      },
+      {
+        "model": "tfc:block/ore/normal_malachite_2/dacite"
+      },
+      {
+        "model": "tfc:block/ore/normal_malachite_3/dacite"
+      }
+    ]
   }
 }

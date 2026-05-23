@@ -1,1 +1,16 @@
-{"variants":{"":{"model":"tfc:block/ore/poor_limonite/gabbro"}}}
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+      {
+        "model": "tfc:block/ore/poor_limonite_1/gabbro"
+      },
+      {
+        "model": "tfc:block/ore/poor_limonite_2/gabbro"
+      },
+      {
+        "model": "tfc:block/ore/poor_limonite_3/gabbro"
+      }
+    ]
+  }
+}

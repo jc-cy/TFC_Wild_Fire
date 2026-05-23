@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "tfc:block/ore_alt",
+  "textures": {
+    "all": "tfc:block/rock/raw/granite",
+    "carve": "tfc:block/ore/ore_carve_A/poor_ore_3/granite",
+    "overlay": "tfc_ie_addon:block/ore/galena/poor_galena_3_dark"
+  }
+}

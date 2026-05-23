@@ -1,8 +1,16 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "variants": {
-    "": {
-      "model": "tfc:block/ore/normal_limonite/phyllite"
-    }
+    "": [
+      {
+        "model": "tfc:block/ore/normal_limonite_1/phyllite"
+      },
+      {
+        "model": "tfc:block/ore/normal_limonite_2/phyllite"
+      },
+      {
+        "model": "tfc:block/ore/normal_limonite_3/phyllite"
+      }
+    ]
   }
 }

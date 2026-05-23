@@ -1,1 +1,7 @@
-{"parent":"tfc:block/rock/loose_metamorphic_3","textures":{"texture":"tfc:block/rock/cobble/gneiss"},"particle":{"texture":"tfc:block/rock/cobble/gneiss"}}
+{
+    "parent": "tfc:block/rock/loose_metamorphic_3",
+    "textures": {
+        "texture": "tfc:block/rock/cobble/gneiss",
+        "particle": "tfc:block/rock/cobble/gneiss"
+    }
+}
