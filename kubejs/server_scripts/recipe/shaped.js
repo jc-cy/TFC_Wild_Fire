@@ -1041,7 +1041,7 @@ ServerEvents.recipes(event => {
             c: '#kubejs:shaft'
 
         })
-//流体泵
+    //流体泵
 
     event.shaped('fluidlogistics:fluid_transporter', [
 
@@ -1053,10 +1053,10 @@ ServerEvents.recipes(event => {
             a: 'create:smart_fluid_pipe',
             b: 'create:copper_casing',
             c: 'create:electron_tube',
-            d:'fluidlogistics:fluid_pump'
+            d: 'fluidlogistics:fluid_pump'
 
         })
-//流体传输器
+    //流体传输器
 
     event.shaped('2x fluidlogistics:multi_fluid_tank', [
 
@@ -1067,10 +1067,39 @@ ServerEvents.recipes(event => {
         {
             a: 'create:electron_tube',
             b: 'create:fluid_tank',
-            d:'tfc:metal/sheet/brass'
-
+            d: 'tfc:metal/sheet/brass'
         })
-//多流体储罐
+    //多流体储罐
+
+    event.shaped('create:packager', [
+
+        'aea',
+        'aba',
+        'dcd'
+    ],
+        {
+            a: 'tfc:metal/rod/wrought_iron',
+            b: 'create:cardboard_block',
+            d: 'minecraft:redstone',
+            c: 'tfc:metal/sheet/wrought_iron',
+            e: 'create:transmitter'
+        })
+    //打包机
+    
+    event.shaped('fluidlogistics:fluid_packager', [
+
+        'aea',
+        'aba',
+        'dcd'
+    ],
+        {
+            a: 'tfc:metal/rod/brass',
+            b: 'fluidlogistics:fluid_transporter',
+            d: 'minecraft:redstone',
+            c: 'tfc:metal/sheet/wrought_iron',
+            e: 'create:transmitter'
+        })
+    //流体打包机
     //=============================================================
     //=======================功能性存储配方==========================
     //=============================================================

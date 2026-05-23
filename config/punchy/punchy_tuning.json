@@ -1,58 +1,44 @@
 {
-  "item": {
-    "EMPTY_HAND": {
-      "armTransforms": {
+  "itemSpecific": {
+    "tfc:food/carrot": {
+      "transforms": {
         "right": {
-          "scale": 1.0,
-          "offX": 0.005681753,
-          "offY": -0.019886374,
-          "offZ": -0.09659088,
-          "rotX": -15.85228,
-          "rotY": 0.0,
-          "rotZ": 0.0,
+          "scale": 0.9815342,
+          "offX": -0.19602275,
+          "offY": -0.14488637,
+          "offZ": 0.2017045,
+          "rotX": -37.84091,
+          "rotY": -125.795456,
+          "rotZ": -106.107956,
           "pivotX": 0.0,
           "pivotY": 0.0,
           "pivotZ": 0.0
         },
         "left": {
-          "scale": 1.0,
-          "offX": -0.005681753,
-          "offY": -0.019886374,
-          "offZ": -0.09659088,
-          "rotX": -15.85228,
-          "rotY": -0.0,
-          "rotZ": -0.0,
-          "pivotX": 0.0,
+          "scale": 0.9815342,
+          "offX": 0.19602275,
+          "offY": -0.14488637,
+          "offZ": 0.2017045,
+          "rotX": -37.84091,
+          "rotY": 125.795456,
+          "rotZ": 106.107956,
+          "pivotX": -0.0,
           "pivotY": 0.0,
           "pivotZ": 0.0
         }
-      }
-    }
-  },
-  "itemSpecific": {
-    "minecraft:wheat": {
-      "armKind": "FOOD"
-    },
-    "minecraft:carrot": {
-      "armKind": "FOOD"
-    },
-    "minecraft:wheat_seeds": {
-      "armKind": "BLOCK"
-    },
-    "minecraft:lantern": {
-      "transforms": {
+      },
+      "armTransforms": {
         "right": {
-          "scale": 1.01,
-          "offX": 0.105113745,
-          "offY": -0.46590912,
-          "offZ": 0.16761374,
-          "rotX": -37.84091,
-          "rotY": 35.0,
-          "rotZ": 10.738647,
-          "pivotX": -0.109999955,
-          "pivotY": -0.00999999,
-          "pivotZ": -0.01999998,
-          "physics": "FULL_PENDULUM"
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.0,
+          "offZ": 0.0,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
         }
       }
     }
