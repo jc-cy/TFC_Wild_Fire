@@ -50,10 +50,22 @@
         "maxCount": 5
       },
       {
-        "type": "tfc:leopard_seal",
-        "weight": 1,
+        "type": "alexsmobs:seal",
+        "weight": 5,
         "minCount": 2,
-        "maxCount": 4
+        "maxCount": 5
+      },
+      {
+        "type": "alexsmobs:bald_eagle",
+        "weight": 2,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "alexsmobs:seagull",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 3
       }
     ],
     "water_ambient": [
@@ -94,66 +106,6 @@
         "maxCount": 6
       },
       {
-        "type": "alexsmobs:triops",
-        "weight": 1,
-        "minCount": 1,
-        "maxCount": 3
-      },
-      {
-        "type": "alexsmobs:mantis_shrimp",
-        "weight": 2,
-        "minCount": 1,
-        "maxCount": 2
-      },
-      {
-        "type": "alexsmobs:mimic_octopus",
-        "weight": 3,
-        "minCount": 1,
-        "maxCount": 1
-      },
-      {
-        "type": "alexsmobs:hammerhead_shark",
-        "weight": 1,
-        "minCount": 1,
-        "maxCount": 1
-      },
-      {
-        "type": "alexsmobs:comb_jelly",
-        "weight": 5,
-        "minCount": 1,
-        "maxCount": 3
-      },
-      {
-        "type": "alexsmobs:blobfish",
-        "weight": 2,
-        "minCount": 1,
-        "maxCount": 3
-      },
-      {
-        "type": "alexsmobs:frilled_shark",
-        "weight": 1,
-        "minCount": 1,
-        "maxCount": 1
-      },
-      {
-        "type": "alexsmobs:flying_fish",
-        "weight": 4,
-        "minCount": 1,
-        "maxCount": 3
-      },
-      {
-        "type": "alexsmobs:bald_eagle",
-        "weight": 2,
-        "minCount": 1,
-        "maxCount": 2
-      },
-      {
-        "type": "alexsmobs:seagull",
-        "weight": 5,
-        "minCount": 1,
-        "maxCount": 3
-      },
-      {
         "type": "tfc:jellyfish",
         "weight": 1,
         "minCount": 2,
@@ -170,6 +122,54 @@
       {
         "type": "tfc:dolphin",
         "weight": 1,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "type": "alexsmobs:triops",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "type": "alexsmobs:mantis_shrimp",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "alexsmobs:mimic_octopus",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "alexsmobs:hammerhead_shark",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "alexsmobs:comb_jelly",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "type": "alexsmobs:blobfish",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "type": "alexsmobs:frilled_shark",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "alexsmobs:flying_fish",
+        "weight": 2,
         "minCount": 1,
         "maxCount": 3
       },

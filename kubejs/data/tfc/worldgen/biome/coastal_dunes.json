@@ -66,12 +66,6 @@
         "weight": 5,
         "minCount": 2,
         "maxCount": 5
-      },
-      {
-        "type": "tfc:leopard_seal",
-        "weight": 1,
-        "minCount": 2,
-        "maxCount": 4
       }
     ],
     "water_ambient": [

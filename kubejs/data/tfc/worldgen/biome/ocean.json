@@ -50,10 +50,16 @@
         "maxCount": 5
       },
       {
-        "type": "tfc:leopard_seal",
-        "weight": 1,
+        "type": "alexsmobs:seal",
+        "weight": 5,
         "minCount": 2,
-        "maxCount": 4
+        "maxCount": 5
+      },
+      {
+        "type": "alexsmobs:seagull",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 3
       }
     ],
     "water_ambient": [
@@ -94,6 +100,20 @@
         "maxCount": 6
       },
       {
+        "type": "tfc:jellyfish",
+        "weight": 1,
+        "minCount": 2,
+        "maxCount": 6
+      }
+    ],
+    "water_creature": [
+      {
+        "type": "alexsmobs:orca",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
         "type": "alexsmobs:triops",
         "weight": 1,
         "minCount": 1,
@@ -101,13 +121,13 @@
       },
       {
         "type": "alexsmobs:mantis_shrimp",
-        "weight": 2,
+        "weight": 1,
         "minCount": 1,
         "maxCount": 2
       },
       {
         "type": "alexsmobs:mimic_octopus",
-        "weight": 3,
+        "weight": 1,
         "minCount": 1,
         "maxCount": 1
       },
@@ -119,13 +139,13 @@
       },
       {
         "type": "alexsmobs:comb_jelly",
-        "weight": 5,
+        "weight": 1,
         "minCount": 1,
         "maxCount": 3
       },
       {
         "type": "alexsmobs:blobfish",
-        "weight": 2,
+        "weight": 1,
         "minCount": 1,
         "maxCount": 3
       },
@@ -137,27 +157,7 @@
       },
       {
         "type": "alexsmobs:flying_fish",
-        "weight": 4,
-        "minCount": 1,
-        "maxCount": 3
-      },
-      {
-        "type": "alexsmobs:seagull",
-        "weight": 5,
-        "minCount": 1,
-        "maxCount": 3
-      },
-      {
-        "type": "tfc:jellyfish",
-        "weight": 1,
-        "minCount": 2,
-        "maxCount": 6
-      }
-    ],
-    "water_creature": [
-      {
-        "type": "alexsmobs:orca",
-        "weight": 1,
+        "weight": 2,
         "minCount": 1,
         "maxCount": 3
       },

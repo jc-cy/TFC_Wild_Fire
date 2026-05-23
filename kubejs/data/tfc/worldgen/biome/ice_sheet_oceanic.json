@@ -62,7 +62,7 @@
         "maxCount": 5
       },
       {
-        "type": "tfc:leopard_seal",
+        "type": "alexsmobs:seal",
         "weight": 1,
         "minCount": 1,
         "maxCount": 2
