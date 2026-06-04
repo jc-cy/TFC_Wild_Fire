@@ -21,8 +21,104 @@ event.custom(
 )
 */
 ServerEvents.recipes(event => {
+ event.custom(//红石工程块
+        {
+            "type": "siegemachines:siege_workbench",
+            "pattern": [
+                "aba",
+                "bcb",
+                "aba"
+            ],
+            "key": {
+              
+                "a": {
+                    "item": "tfc:metal/sheet/black_steel",
+                    "count": 1
+                },
+                "b": {
+                    "item": "immersiveengineering:wirecoil_redstone",
+                    "count": 1
+                },
+                "c": {
+                    "item": "create:electron_tube",
+                    "count": 5
+                }
+
+            },
+            "result": {
+                "item": "immersiveengineering:rs_engineering",
+                "count": 2
+            }
+        }
+    )
+    event.custom(//重型工程块
+        {
+            "type": "siegemachines:siege_workbench",
+            "pattern": [
+                "ada",
+                "bcb",
+                "ada"
+            ],
+            "key": {
+              
+                "a": {
+                    "item": "tfc:metal/sheet/black_steel",
+                    "count": 1
+                },
+                "b": {
+                    "item": "kubejs:high_manganese_steel_bolt",
+                    "count": 1
+                },
+                "c": {
+                    "item": "kubejs:material_component_black_steel",
+                    "count": 5
+                },
+                "d": {
+                    "item": "tfc:metal/double_sheet/black_steel",
+                    "count": 1
+                }
+
+            },
+            "result": {
+                "item": "immersiveengineering:heavy_engineering",
+                "count": 2
+            }
+        }
+    )
+ event.custom(//轻型工程块
+        {
+            "type": "siegemachines:siege_workbench",
+            "pattern": [
+                "aaa",
+                "bcb",
+                "aaa"
+            ],
+            "key": {
+              
+                "a": {
+                    "item": "tfc:metal/sheet/steel",
+                    "count": 1
+                },
+                "b": {
+                    "item": "kubejs:steel_bolt",
+                    "count": 1
+                },
+                "c": {
+                    "item": "kubejs:material_component_steel",
+                    "count": 5
+                }
+
+            },
+            "result": {
+                "item": "immersiveengineering:light_engineering",
+                "count": 3
+            }
+        }
+    )
+
+
     
-    event.custom(
+    event.custom(//木梁支架
         {
             "type": "siegemachines:siege_workbench",
             "pattern": [
@@ -47,7 +143,7 @@ ServerEvents.recipes(event => {
             }
         }
     ).id('siegemachines:turret_base')
-    //木梁支架
+    
     
     
     //飞机配方
@@ -173,7 +269,7 @@ ServerEvents.recipes(event => {
         }
     ).id('immersive_aircraft:warship')
     //战斗飞艇
-    event.custom(
+   /* event.custom( //手动旋翼机
         {
             "type": "siegemachines:siege_workbench",
             "pattern": [
@@ -208,9 +304,9 @@ ServerEvents.recipes(event => {
                 "count": 1
             }
         }
-    ).id('immersive_aircraft:gyrodyne')
-    //手动旋翼机
-    event.custom(
+    ).id('immersive_aircraft:gyrodyne')*/
+   
+   event.custom(
         {
             "type": "siegemachines:siege_workbench",
             "pattern": [
