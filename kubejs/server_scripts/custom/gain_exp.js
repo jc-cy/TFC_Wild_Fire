@@ -209,7 +209,7 @@ PlayerEvents.tick(e => {
             endCurrentExp += endExpGain
             setExp(player, 'endurance_exp', endCurrentExp)
             tryLevelUp(player, "endurance", 'endurance_exp', enduranceUpExp)
-            // console.log("体力走路", endCurrentExp)
+             console.log("体力走路", endCurrentExp)
 
         }
 

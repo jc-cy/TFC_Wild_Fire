@@ -1,6 +1,82 @@
 ServerEvents.recipes(event => {
 
     const id_in = "kubejs:recipe/shaped/"
+
+
+    event.shaped("2x kubejs:gear_blank/cogwheel/warped", [' a ', 'aba', ' a '], {
+        a: '#tfc:lumber',
+        b: '#minecraft:planks'
+    })//同轴木齿轮
+    event.shaped("2x kubejs:gear_blank/large_cogwheel/warped", ['aba', 'bcb', 'aba'], {
+        a: '#tfc:lumber',
+        b: '#minecraft:wooden_slabs',
+        c: '#minecraft:planks'
+    })//同轴大木齿轮
+
+   // ========== 铜齿轮 ==========
+event.shaped("2x kubejs:gear_blank/cogwheel/acacia", [' b ', 'bab', ' be'], {
+    a: TFC.ingredient.heatable("tfc:metal/ingot/copper", 600, null),
+    b: "kubejs:copper_fragments",
+    e: '#tfc:hammers',
+}).damageIngredient({ tag: '#tfc:hammers' }, 2)//铜小齿轮
+
+event.shaped("kubejs:gear_blank/large_cogwheel/acacia", [' b ', 'bab', ' be'], {
+    a: TFC.ingredient.heatable("tfc:metal/sheet/copper", 600, null),
+    b: "kubejs:copper_fragments",
+    e: '#tfc:hammers',
+}).damageIngredient({ tag: '#tfc:hammers' }, 2)//铜大齿轮
+
+// ========== 铸铁齿轮 ==========
+event.shaped("2x kubejs:gear_blank/cogwheel/bamboo", [' b ', 'bab', ' be'], {
+    a: TFC.ingredient.heatable("tfc:metal/ingot/cast_iron", 600, null),
+    b: "kubejs:cast_iron_fragments",
+    e: '#tfc:hammers',
+}).damageIngredient({ tag: '#tfc:hammers' }, 2)//铸铁小齿轮
+
+event.shaped("kubejs:gear_blank/large_cogwheel/bamboo", [' b ', 'bab', ' be'], {
+    a: TFC.ingredient.heatable("tfc:metal/sheet/cast_iron", 600, null),
+    b: "kubejs:cast_iron_fragments",
+    e: '#tfc:hammers',
+}).damageIngredient({ tag: '#tfc:hammers' }, 2)//铸铁大齿轮
+
+// ========== 锻铁齿轮 ==========
+event.shaped("2x kubejs:gear_blank/cogwheel/crimson", [' b ', 'bab', ' be'], {
+    a: TFC.ingredient.heatable("tfc:metal/ingot/wrought_iron", 700, null),
+    b: "kubejs:wrought_iron_fragments",
+    e: '#tfc:hammers',
+}).damageIngredient({ tag: '#tfc:hammers' }, 2)//锻铁小齿轮
+
+event.shaped("kubejs:gear_blank/large_cogwheel/crimson", [' b ', 'bab', ' be'], {
+    a: TFC.ingredient.heatable("tfc:metal/sheet/wrought_iron", 700, null),
+    b: "kubejs:wrought_iron_fragments",
+    e: '#tfc:hammers',
+}).damageIngredient({ tag: '#tfc:hammers' }, 2)//锻铁大齿轮
+
+// ========== 钢齿轮 ==========
+event.shaped("2x kubejs:gear_blank/cogwheel/jungle", [' b ', 'bab', ' be'], {
+    a: TFC.ingredient.heatable("tfc:metal/ingot/steel", 800, null),
+    b: "kubejs:steel_fragments",
+    e: '#tfc:hammers',
+}).damageIngredient({ tag: '#tfc:hammers' }, 2)//钢小齿轮
+
+event.shaped("kubejs:gear_blank/large_cogwheel/jungle", [' b ', 'bab', ' be'], {
+    a: TFC.ingredient.heatable("tfc:metal/sheet/steel", 800, null),
+    b: "kubejs:steel_fragments",
+    e: '#tfc:hammers',
+}).damageIngredient({ tag: '#tfc:hammers' }, 2)//钢大齿轮
+
+// ========== 高锰钢 / 黑钢齿轮 ==========
+event.shaped("2x kubejs:gear_blank/cogwheel/oak", [' b ', 'bab', ' be'], {
+    a: TFC.ingredient.heatable("tfc:metal/ingot/black_steel", 900, null),
+    b: "kubejs:black_steel_fragments",
+    e: '#tfc:hammers',
+}).damageIngredient({ tag: '#tfc:hammers' }, 2)//高锰钢小齿轮
+
+event.shaped("kubejs:gear_blank/large_cogwheel/oak", [' b ', 'bab', ' be'], {
+    a: TFC.ingredient.heatable("tfc:metal/sheet/black_steel", 900, null),
+    b: "kubejs:black_steel_fragments",
+    e: '#tfc:hammers',
+}).damageIngredient({ tag: '#tfc:hammers' }, 2)//高锰钢大齿轮
     event.shaped('minecraft:anvil', ['aaa', ' a ', 'aaa'], { a: 'tfc:metal/double_ingot/cast_iron' })//铁砧
 
 
@@ -1085,7 +1161,7 @@ ServerEvents.recipes(event => {
             e: 'create:transmitter'
         })
     //打包机
-    
+
     event.shaped('fluidlogistics:fluid_packager', [
 
         'aea',

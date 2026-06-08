@@ -42,10 +42,10 @@ ServerEvents.recipes(event => {
     event.shapeless("createcasing:dark_oak_shaft", ['#kubejs:shaft', "kubejs:wrought_iron_fragments"]).keepIngredient({ item: "kubejs:wrought_iron_fragments" });//铁壳传动杆
 
     //金属齿轮半成品
-
+/*
     event.shapeless("kubejs:gear_blank/cogwheel/warped", ['#tfc:saws', '#tfc:lumber']).damageIngredient({ tag: '#tfc:saws' }, 1)//木齿轮半成品
     event.shapeless("kubejs:gear_blank/large_cogwheel/warped", ['#tfc:saws', '2x #tfc:lumber']).damageIngredient({ tag: '#tfc:saws' }, 1)//大木齿轮半成品
-
+*/
     event.shapeless("createcasing:acacia_large_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/large_cogwheel/acacia"]);//铜大齿轮
     event.shapeless("createcasing:birch_large_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/large_cogwheel/birch"]);//铜壳大齿轮
     event.shapeless("createcasing:dark_oak_large_cogwheel", ['#kubejs:shaft', "kubejs:gear_blank/large_cogwheel/dark_oak"]);//铁壳大齿轮
