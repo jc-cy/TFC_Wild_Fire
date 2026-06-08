@@ -201,6 +201,10 @@
     "millstone": true,
     "enamel_basin": true
   },
+  "tfcelectriccooking": {
+    "electric_oven": true,
+    "electric_soup_pot": true
+  },
   "supplementaries": {
     "hat_stand": true
   },

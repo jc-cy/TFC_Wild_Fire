@@ -20,4 +20,8 @@ startingRarity = "RARE"
 invertDefaultSpells = false
 #The spells listed in the excludeRandomLearntSpells, will instead be the only spells that can be learnt from the Unfinished Manuscript
 invertUnfinishedManuscript = false
+#If true, to use a spell on an imbued item, the rarity of the spell must be gained
+imbuedItemsRequireRarity = false
+#If true, the spell on an imbued item will be obfuscated, if the user doesnt know it
+ImbuedItemsObfuscate = true
 
