@@ -104,6 +104,11 @@
   "kaleidoscopetfctavern": {
     "grape_climate": true
   },
+  "ktfcc": {
+    "decaying": true,
+    "stove": true,
+    "tea_tree": true
+  },
   "mbd2thread": {
     "long_fe_energy_hud": true,
     "recipe_thread_hud": true
