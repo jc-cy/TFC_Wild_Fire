@@ -946,7 +946,7 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'fluidlogistics:fluid_transporter' })
   e.remove({ id: 'fluidlogistics:fluid_packager' })
   e.remove({ id: 'create:crafting/logistics/packager' })
-  e.remove({ id: '1111111111111111111111111111111111' })
+  e.remove({ id: 'fluidlogistics:faucet' })
   e.remove({ id: '1111111111111111111111111111111111' })
   e.remove({ id: '1111111111111111111111111111111111' })
   e.remove({ id: '1111111111111111111111111111111111' })

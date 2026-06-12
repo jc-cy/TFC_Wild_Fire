@@ -1,1 +1,6 @@
-{"parent":"item/trident_in_hand","textures":{"particle":"tfc:item/metal/javelin/steel"}}
+{
+"parent":"tfc:item/metal/javelin/normal_javelin_in_hand",
+"textures":{
+"particle":"tfc:item/metal/javelin/steel_javelin"
+}
+}

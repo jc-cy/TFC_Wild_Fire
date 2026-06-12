@@ -856,8 +856,16 @@ event.shaped("kubejs:gear_blank/large_cogwheel/oak", [' b ', 'bab', ' be'], {
         b: '#tfc:leather_knapping',
         c: 'tfc:metal/sheet/steel',
         d: 'create:electron_tube'
-    })//钢龙头
+    })//智能钢龙头
 
+    event.shaped('fluidlogistics:faucet', [
+        'ab ',
+        'c  '
+    ], {
+        a: 'kubejs:material_component_steel',
+        b: '#tfc:leather_knapping',
+        c: 'tfc:metal/sheet/steel'
+    })//钢龙头
     event.shaped('createmetallurgy:faucet', [
         'a a',
         ' b '
