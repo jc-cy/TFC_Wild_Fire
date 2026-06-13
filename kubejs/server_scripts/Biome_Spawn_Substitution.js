@@ -15,6 +15,12 @@ TFCEvents.data(event => {
         climate.minTemp(5);
     }, fauna => { }, 'alexsmobs:catfish');
 
+    // 鳄鱼：150-500mm降雨，>5°C，1-3只（整合1-2只与1-3只范围）
+    event.fauna(climate => {
+        climate.minRain(150);
+        climate.minTemp(10);
+    }, fauna => { }, 'alexsmobs:crocodile');
+
     // 水龟：100-300mm降雨，5-10°C，1-3只
     event.fauna(climate => {
         climate.minRain(100);
