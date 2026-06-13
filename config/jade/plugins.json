@@ -104,6 +104,11 @@
   "kaleidoscopetfctavern": {
     "grape_climate": true
   },
+  "ktfcc": {
+    "decaying": true,
+    "stove": true,
+    "tea_tree": true
+  },
   "mbd2thread": {
     "long_fe_energy_hud": true,
     "recipe_thread_hud": true
@@ -200,6 +205,10 @@
     "recipe_block": true,
     "millstone": true,
     "enamel_basin": true
+  },
+  "tfcelectriccooking": {
+    "electric_oven": true,
+    "electric_soup_pot": true
   },
   "supplementaries": {
     "hat_stand": true

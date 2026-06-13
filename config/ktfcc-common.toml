@@ -9,21 +9,11 @@ stoveTemperature = 450.0
 #Range: 0.0 ~ 0.75
 flatulenceAddFlyMovement = 0.0
 # 
-#A damage amount modifier during satiated shield effect. The lower the value, the higher the damage. (default 2)
-#饱腹代偿时的伤害修改器，值越小伤害越高
-#Range: 0.25 ~ 4.0
-satiatedShieldModifier = 1.0
-# 
 #Turn on or turn off food tooltips
-#开启或关闭工具提示
+#开启或关闭食物tooltip
 foodTooltips = false
 # 
 #Turn on or turn off Farmer's Delight Compat
 #开关农夫乐事兼容
-farmersdelightCompat = false
-# 
-#Nutrients ratio when eat food block (default 0.8)
-#食用食物方块时的营养倍率
-#Range: 0.0 ~ 1.0
-eatFoodBlockNutrientsRatio = 0.8
+farmersDelightCompat = true
 

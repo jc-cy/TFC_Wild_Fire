@@ -1,0 +1,9 @@
+
+[automation]
+
+	[automation.firmalifeJarringStation]
+		#Items or item tags allowed to be inserted into FirmaLife jarring stations by automation. Use item ids like 'minecraft:apple' or tags like '#tfc:empty_jar_with_lid'.
+		insertWhitelist = ["tfc:empty_jar_with_lid"]
+		#Items or item tags blocked from automation extraction from FirmaLife jarring stations. Use item ids like 'minecraft:apple' or tags like '#tfc:empty_jar_with_lid'.
+		extractBlacklist = ["#tfc:empty_jar_with_lid"]
+

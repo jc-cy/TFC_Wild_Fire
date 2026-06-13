@@ -1,6 +1,6 @@
 {
-    "parent": "item/trident_throwing",
-    "textures": {
-        "particle": "tfc:item/metal/javelin/bismuth_bronze"
-    }
+"parent":"item/trident_throwing",
+"textures":{
+"particle":"tfc:item/metal/javelin/bismuth_bronze"
+}
 }

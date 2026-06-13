@@ -24,7 +24,7 @@
   "enableCustomWalk": false,
   "enableSprintArmSwing": false,
   "enableFallArmAnimation": true,
-  "sprintArmSwingIntensity": 1.0,
+  "sprintArmSwingIntensity": 0.52,
   "sprintArmSwingSpeed": 0.0,
   "enableFreezeShake": true,
   "enableFreezeArmOverlay": true,

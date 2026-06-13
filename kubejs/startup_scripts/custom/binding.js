@@ -111,6 +111,7 @@ TFCEvents.registerItemStackModifier(event => {
             }
         });
 
+        
         // 如果有破损材料，标记输出物品为破损
         if (broken) {
             output.getOrCreateTag().putBoolean("Broken", true);

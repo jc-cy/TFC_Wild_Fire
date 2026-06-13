@@ -179,6 +179,7 @@
         "minCount": 1,
         "maxCount": 1
       },
+      
       {
         "type": "alexsmobs:tiger",
         "weight": 1,

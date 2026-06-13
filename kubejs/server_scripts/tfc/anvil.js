@@ -12,25 +12,31 @@ ServerEvents.recipes(e => {
     { name: "wrought_iron", number: 3 }
   ];
 
- tfc.anvil(//安山大齿轮
-    "4x kubejs:gear_blank/large_cogwheel/cogwheel",
-    "vintageimprovements:andesite_sheet",
-    [
-      'draw_any',
-      'hit_any'
-    ]
-  ).tier(1).bonus(false)
+  /*tfc.anvil(//安山大齿轮
+     "kubejs:gear_blank/large_cogwheel/cogwheel",
+     "vintageimprovements:andesite_sheet",
+     [
+       'draw_any',
+       'hit_any'
+     ]
+   ).tier(1).bonus(false)*/
 
   tfc.anvil(//安山小齿轮
-    "8x kubejs:gear_blank/cogwheel/cogwheel",
+    "kubejs:gear_blank/cogwheel/cogwheel",
     "vintageimprovements:andesite_sheet",
     [
       'draw_any',
       'hit_any'
     ]
-  ).tier(1).bonus(false)
+  ).tier(1).bonus(false)//安山大齿轮
+  tfc.welding(
+    "kubejs:gear_blank/large_cogwheel/cogwheel",       // 输出
+    "kubejs:gear_blank/cogwheel/cogwheel",
+    "vintageimprovements:andesite_sheet",
+    0 // 砧等级 0是石头 1铜 2铜合金 3锻铁 4钢 5高锰钢 6精金秘银
+  )
 
-  tfc.anvil(//铜大齿轮
+  /*tfc.anvil(//铜大齿轮
     "8x kubejs:gear_blank/large_cogwheel/acacia",
     "tfc:metal/double_sheet/copper",
     [
@@ -119,7 +125,7 @@ ServerEvents.recipes(e => {
       'hit_any'
     ]
   ).tier(5).bonus(false)
-
+*/
 
 
 
@@ -153,7 +159,7 @@ ServerEvents.recipes(e => {
     ]
   ).tier(2).bonus(false)//镍锭
 
-   tfc.anvil(
+  tfc.anvil(
     "minecraft:hopper",
     "tfc:metal/double_sheet/copper",
     [
@@ -163,7 +169,7 @@ ServerEvents.recipes(e => {
     ]
   ).tier(1).bonus(false)//漏斗
 
-  
+
   tfc.anvil(
     "scguns:stone_gun_barrel",
     "tfc:metal/sheet/cast_iron",

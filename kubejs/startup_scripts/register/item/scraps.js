@@ -12,7 +12,8 @@ StartupEvents.registry('item', event => {
         { name: "blue_steel", temperature: 1538, metal: "blue_steel" },
         { name: "red_steel", temperature: 1538, metal: "red_steel" },
         { name: "steel", temperature: 1540, metal: "steel" },
-        { name: "wrought_iron", temperature: 1535, metal: 'cast_iron' }
+        { name: "wrought_iron", temperature: 1535, metal: 'cast_iron' },
+          { name: "cast_iron", temperature: 1535, metal: 'cast_iron' }
     ];
     metal.forEach(metal => {
         event.create(`kubejs:${metal.name}_fragments`)
