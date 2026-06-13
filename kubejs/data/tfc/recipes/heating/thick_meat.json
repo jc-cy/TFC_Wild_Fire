@@ -1,8 +1,11 @@
 {
     "type": "tfc:heating",
     "ingredient": {
-        "item": "wildfire:thick_meat"
-    },
+    "type": "tfc:not_rotten",
+    "ingredient": {
+      "item": "wildfire:thick_meat"
+    }
+  },
     "result_item": {
         "item": "wildfire:cooked_thick_meat"
     },

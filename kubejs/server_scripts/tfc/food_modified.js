@@ -397,6 +397,40 @@ TFCEvents.data(event => {
     f.vegetables(0.5)
     f.decayModifier(0.95)
   })
+  event.foodItem('wildfire:ancient_can', f => { // 南瓜面包片
+    f.decayModifier(0.0)
+  })
+  event.foodItem('wildfire:opened_ancient_can', f => { // 南瓜面包片
+    f.hunger(10)
+    f.saturation(0.25)
+    f.grain(0.15)
+    f.vegetables(0.15)
+    f.decayModifier(1.55)
+  })
+  event.foodItem('wildfire:canned_beetroots', f => { // 南瓜面包片
+    f.decayModifier(0.0)
+  })
+  event.foodItem('wildfire:canned_tomatoes', f => { // 南瓜面包片
+    f.decayModifier(0.0)
+  })
+  event.foodItem('wildfire:canned_mutton', f => { // 南瓜面包片
+    f.decayModifier(0.0)
+  })
+  event.foodItem('wildfire:canned_salmon', f => { // 南瓜面包片
+    f.decayModifier(0.0)
+  })
+  event.foodItem('wildfire:canned_peaches', f => { // 南瓜面包片
+    f.decayModifier(0.0)
+  })
+  event.foodItem('wildfire:canned_cherries', f => { // 南瓜面包片
+    f.decayModifier(0.0)
+  })
+  event.foodItem('wildfire:canned_bread', f => { // 南瓜面包片
+    f.decayModifier(0.0)
+  })
+  event.foodItem('wildfire:canned_lentil', f => { // 南瓜面包片
+    f.decayModifier(0.0)
+  })
   
   event.foodItem('farmersdelight:glow_berry_custard', f => { // 蛋奶沙司
     f.hunger(5 / 5); f.saturation(2 / 5); f.dairy(3); f.fruit(3); f.water(15); f.decayModifier(0.9)

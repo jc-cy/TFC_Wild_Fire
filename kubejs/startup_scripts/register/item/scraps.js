@@ -90,14 +90,59 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:leather_plate')
         .texture('kubejs:item/scraps/leather_plate'); // 皮板
 
-    event.create('kubejs:leather_scrap')
-        .texture('kubejs:item/scraps/leather_scrap'); // 缝制皮护板
+    event.create('kubejs:leather_scales')
+        .texture('kubejs:item/scraps/leather_scales'); // 缝制皮护板
 
     event.create('kubejs:rags', 'heal_item')
         .texture('kubejs:item/scraps/rags') // 破布
         .tooltip(Text.gray('一些破布条和烂线')) // 物品提示文本
         .useDuration(itemstack => 30) // 使用时长30游戏刻（1.5秒）
         .useAnimation("bow"); // 使用动画为拉弓动画
+
+    event.create('kubejs:leather_scraps')
+        .texture('kubejs:item/scraps/leather_scraps'); // 碎皮
+
+    event.create('wildfire:bison_fur')
+        .texture('kubejs:item/scraps/bison_fur'); // 野牛皮
+
+/*    event.create('wildfire:bison_haat')
+        .texture('kubejs:item/scraps/bison_fur'); // 野牛皮帽
+
+    event.create('wildfire:bison_shirt')
+        .texture('kubejs:item/scraps/bison_fur'); // 野牛皮衬衫
+
+    event.create('wildfire:bison_pants')
+        .texture('kubejs:item/scraps/bison_fur'); // 野牛皮裤子
+
+    event.create('wildfire:bison_boots')
+        .texture('kubejs:item/scraps/bison_fur'); // 野牛皮靴子*/
+
+
+    // 动物战利品
+    event.create('kubejs:deer_antler')
+        .texture('kubejs:item/scraps/deer_antler'); // 鹿角
+
+    event.create('kubejs:tusklin_tusks')
+        .texture('kubejs:item/scraps/tusklin_tusks'); // 獠牙兽牙
+
+    event.create('kubejs:crocodile_teeth')
+        .texture('kubejs:item/scraps/crocodile_teeth'); // 鳄鱼牙
+
+    event.create('kubejs:rhinoceros_horn')
+        .texture('kubejs:item/scraps/rhinoceros_horn'); // 犀牛角
+
+    event.create('kubejs:ivory')
+        .texture('kubejs:item/scraps/ivory'); // 象牙
+
+    event.create('kubejs:bison_horn')
+        .texture('kubejs:item/scraps/bison_horn'); // 野牛角
+
+    event.create('kubejs:ravager_horn')
+        .texture('kubejs:item/scraps/ravager_horn'); // 劫掠兽角
+
+    event.create('kubejs:caribou_antler')
+        .texture('kubejs:item/scraps/caribou_antler'); // 驯鹿角
+
 
     // 氧化铝砖
     event.create('kubejs:alumina_dioxide')

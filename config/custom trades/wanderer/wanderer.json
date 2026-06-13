@@ -1918,7 +1918,7 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "kubejs:leather_scrap",
+        "itemKey": "kubejs:leather_scales",
         "amount": 3,
         "priceModifier": 0
       },

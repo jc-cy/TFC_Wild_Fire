@@ -27,6 +27,7 @@ ServerEvents.recipes(event => {
     event.shapeless("2x kubejs:high_manganese_steel_nail", ["tfc:metal/rod/high_manganese_steel", '#tfc:saws']).damageIngredient({ tag: '#tfc:saws' }, 1);
     // 钛合金钉
     event.shapeless("2x kubejs:titanium_alloy_nail", ["tfc:metal/rod/titanium", '#tfc:saws']).damageIngredient({ tag: '#tfc:saws' }, 1);
+    
 
 
     //传动杆
@@ -121,6 +122,7 @@ ServerEvents.recipes(event => {
 
     event.shapeless("3x scguns:powder_and_ball", ["2x minecraft:flint", "minecraft:gunpowder", "farmersdelight:canvas"]);//草布包火药弹
     event.shapeless("3x scguns:grapeshot", ["3x minecraft:flint", "2x minecraft:gunpowder", "farmersdelight:canvas"]);//草布包葡萄弹
+    event.shapeless("minecraft:leather", ['#tfc:sewing_needles', '3x kubejs:leather_scraps', '#forge:string']).damageIngredient({ tag: '#tfc:saws' }, 1)//碎片缝纫
 
 
 

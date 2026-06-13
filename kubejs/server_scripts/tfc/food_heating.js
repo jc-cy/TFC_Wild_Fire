@@ -140,4 +140,34 @@ ServerEvents.recipes(event => {
     "result_item": { "item": "wildfire:pumpkin_bread" },
     "temperature": 200
   })
+  event.custom({//食物：老鼠
+    "type": "tfc:heating",
+    "ingredient": { "item": 'wildfire:rat' },
+    "result_item": { "item": "wildfire:cooked_rat" },
+    "temperature": 200
+  })
+  event.custom({//食物：厚皮动物肉
+    "type": "tfc:heating",
+    "ingredient": { "item": 'wildfire:thick_meat' },
+    "result_item": { "item": "wildfire:cooked_thick_meat" },
+    "temperature": 200
+  })
+  event.custom({//食物：蛇肉
+    "type": "tfc:heating",
+    "ingredient": { "item": 'wildfire:snake' },
+    "result_item": { "item": "wildfire:cooked_snake" },
+    "temperature": 200
+  })
+  event.custom({//食物：棕色蘑菇
+    "type": "tfc:heating",
+    "ingredient": { "item": 'minecraft:brown_mushroom' },
+    "result_item": { "item": "wildfire:cooked_brown_mushroom" },
+    "temperature": 200
+  })
+  event.custom({//食物：红色蘑菇
+    "type": "tfc:heating",
+    "ingredient": { "item": 'minecraft:red_mushroom' },
+    "result_item": { "item": "wildfire:cooked_red_mushroom" },
+    "temperature": 200
+  })
 })

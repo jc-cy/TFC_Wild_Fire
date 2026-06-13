@@ -1,0 +1,38 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:extra_products_shapeless_crafting",
+  "extra_products": [
+    {
+      "item": "artisanal:metal/dirty_tin_can"
+    }
+  ],
+  "recipe": {
+    "type": "tfc:damage_inputs_shapeless_crafting",
+    "recipe": {
+      "type": "tfc:advanced_shapeless_crafting",
+      "ingredients": [
+        {
+          "type": "tfc:not_rotten",
+          "ingredient": {
+            "item": "wildfire:canned_bread"
+          }
+        },
+        {
+          "tag": "artisanal:can_openers"
+        }
+      ],
+      "primary_ingredient": {
+        "item": "wildfire:canned_bread"
+      },
+      "result": {
+        "stack": {
+          "item": "firmalife:food/barley_slice",
+          "count": 4
+        },
+        "modifiers": [
+          "tfc:copy_food"
+        ]
+      }
+    }
+  }
+}

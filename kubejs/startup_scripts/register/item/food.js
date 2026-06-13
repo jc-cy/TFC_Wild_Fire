@@ -118,6 +118,20 @@ StartupEvents.registry('item', event => {
 		foodBuilder.hunger(12)
 		foodBuilder.saturation(0.2)
 	})
+	//食物：鸟肉
+	event.create("wildfire:bird_meat")
+    .texture("kubejs:item/food/bird_meat")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(8)
+		foodBuilder.saturation(0.15)
+	})
+	//食物：熟鸟肉
+	event.create("wildfire:cooked_bird")
+    .texture("kubejs:item/food/cooked_bird")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(12)
+		foodBuilder.saturation(0.2)
+	})
 	//食物：生蛇肉
 	event.create("wildfire:snake")
     .texture("kubejs:item/food/snake")
@@ -210,10 +224,6 @@ StartupEvents.registry('item', event => {
 	//食物：生肉肠
 	event.create("wildfire:raw_sausage")
     .texture("kubejs:item/food/raw_sausage")
-	.food(foodBuilder=>{
-		foodBuilder.hunger(6)
-		foodBuilder.saturation(0.1)
-	})
 	//食物：熟肉肠
 	event.create("wildfire:cooked_sausage")
     .texture("kubejs:item/food/cooked_sausage")
@@ -367,5 +377,53 @@ StartupEvents.registry('item', event => {
 		foodBuilder.hunger(2)
 		foodBuilder.saturation(0.2)
 	})
+	
+	//食物：古老罐头
+	event.create("wildfire:ancient_can")
+    .texture("kubejs:item/food/ancient_can")
 
+	//食物：打开的古老罐头
+	event.create("wildfire:opened_ancient_can")
+    .texture("kubejs:item/food/opened_ancient_can")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(2)
+		foodBuilder.saturation(0.2)
+	})
+
+	//食物：甜菜罐头
+	event.create("wildfire:canned_beetroots")
+    .texture("kubejs:item/food/canned_beetroots")
+
+	//食物：番茄罐头
+	event.create("wildfire:canned_tomatoes")
+    .texture("kubejs:item/food/canned_tomatoes")
+
+	//食物：羊肉罐头
+	event.create("wildfire:canned_mutton")
+    .texture("kubejs:item/food/canned_mutton")
+
+	//食物：鲑鱼罐头
+	event.create("wildfire:canned_salmon")
+    .texture("kubejs:item/food/canned_salmon")
+
+	//食物：桃子罐头
+	event.create("wildfire:canned_peaches")
+    .texture("kubejs:item/food/canned_peaches")
+
+	//食物：樱桃罐头
+	event.create("wildfire:canned_cherries")
+    .texture("kubejs:item/food/canned_cherries")
+
+	//食物：面包罐头
+	event.create("wildfire:canned_bread")
+    .texture("kubejs:item/food/canned_bread")
+
+	//食物：扁豆罐头
+	event.create("wildfire:canned_lentil")
+    .texture("kubejs:item/food/canned_lentil")
+
+	//食物：包装生存食品
+	event.create("wildfire:package_survival_meal")
+    .texture("kubejs:item/food/package_survival_meal")
+	
 })

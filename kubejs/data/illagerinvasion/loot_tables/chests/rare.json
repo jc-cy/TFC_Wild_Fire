@@ -672,7 +672,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "kubejs:leather_scrap",
+          "name": "kubejs:leather_scraps",
           "weight": 2
         }
       ],

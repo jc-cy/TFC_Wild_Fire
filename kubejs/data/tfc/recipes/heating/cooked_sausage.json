@@ -1,0 +1,19 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:heating",
+  "ingredient": {
+    "type": "tfc:not_rotten",
+    "ingredient": {
+      "item": "wildfire:raw_sausage"
+    }
+  },
+  "result_item": {
+    "stack": {
+      "item": "wildfire:cooked_sausage"
+    },
+    "modifiers": [
+      "firmalife:copy_dynamic_food"
+    ]
+  },
+  "temperature": 200
+}

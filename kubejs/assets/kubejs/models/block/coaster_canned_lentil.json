@@ -1,0 +1,7 @@
+{
+  "parent": "kubejs:block/coaster_sealed_tin_can",
+  "textures": {
+		"0": "kubejs:block/canned_lentil",
+		"particle": "kubejs:block/canned_lentil"
+  }
+}

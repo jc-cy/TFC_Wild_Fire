@@ -17,7 +17,6 @@
     "tfc:vein/surface_native_silver",
     "tfc:vein/normal_native_silver",
     "tfc:vein/surface_cassiterite",
-    "tfc:vein/poor_cassiterite",
     "tfc:vein/surface_bismuthinite",
     "tfc:vein/normal_bismuthinite",
     "tfc:vein/surface_sphalerite",
@@ -31,6 +30,7 @@
     "tfc:vein/lignite",
     "tfc:vein/bituminous_coal",
     "tfc:vein/sulfur",
+    "tfc:vein/tuff_sulfur",
     "tfc:vein/cryolite",
     "tfc:vein/cinnabar",
     "tfc:vein/saltpeter",
@@ -43,12 +43,17 @@
     "tfc:vein/emerald",
     "tfc:vein/amethyst",
     "tfc:vein/opal",
+
     "tfc:vein/ocean_floor_manganese",
     "tfc:vein/volcanic_ocean_manganese",
     "tfc:vein/normal_ilmenite",
     "tfc:vein/poor_ilmenite",
     "tfc:vein/normal_vanadium",
-    "tfc:vein/surface_malachite_alt",
+    "tfc:vein/surface_malachite_sphalerite",
+    "tfc:vein/normal_native_gold_fake_gold",
+    "tfc:vein/poor_cassiterite",
+    "tfc:vein/sapphire",
+    "tfc:vein/topaz",
     "tfc:geode"
   ]
 }

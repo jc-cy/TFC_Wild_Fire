@@ -20,12 +20,35 @@
           "tag": "artisanal:foods/can_be_canned"
         }
       },
-      "a": {
+      "a": [
+      {
         "type": "tfc:not_rotten",
         "ingredient": {
           "item": "firmalife:food/butter"
         }
+      },
+      {
+          "item": "artisanal:poultry_fat"
+      },
+      {
+          "item": "artisanal:bear_fat"
+      },
+      {
+          "item": "artisanal:animal_fat"
+      },
+      {
+          "item": "artisanal:suet"
+      },
+      {
+          "item": "artisanal:pork_fat"
+      },
+      {
+          "item": "tfc:blubber"
+      },
+      {
+          "item": "kaleidoscope_cookery:oil"
       }
+      ]
     },
     "result": {
       "stack": {
