@@ -19,13 +19,13 @@ function setExp(player, key, val) {
 // ---- 升级公式 ----
 // MoreAttributes.getLevel(player, attrName) — 获取属性等级
 // MoreAttributes.upgrade(player, attrName, amount) — 提升属性等级
-function strengthUpExp(lv) { return 1.7 * lv * lv + 11 * lv + 36 }
-function skillUpExp(lv) { return 1.5 * lv * lv + 10 * lv + 30 }
-function enduranceUpExp(lv) { return 70 * lv * lv }
-function healthUpExp(lv) { return 0.5 * lv * lv + 17 * lv + 15 }
-function focusUpExp(lv) { return 0.5 * lv * lv + 17 * lv + 15 }
-function agilityUpExp(lv) { return 1.7 * lv * lv + 11 * lv + 36 }
-function staminaUpExp(lv) { return 1.5 * lv * lv + 10 * lv + 30 }
+function strengthUpExp(lv) { return 1.7 * lv * lv + 11 * lv + 736 }
+function skillUpExp(lv) { return 1.5 * lv * lv + 10 * lv + 730 }
+function enduranceUpExp(lv) { return 70 * lv * lv+700 }
+function healthUpExp(lv) { return 0.5 * lv * lv + 17 * lv + 715 }
+function focusUpExp(lv) { return 0.5 * lv * lv + 17 * lv + 715 }
+function agilityUpExp(lv) { return 1.7 * lv * lv + 11 * lv + 736 }
+function staminaUpExp(lv) { return 1.5 * lv * lv + 10 * lv + 730 }
 
 // 通用升级检查
 function tryLevelUp(player, attrName, expKey, upExpFn) {
@@ -131,14 +131,14 @@ EntityEvents.hurt(e => {
     tryLevelUp(entity, "stamina", 'stamina_exp', staminaUpExp)
     // 设置冷却：20 tick = 1 秒
     entity.persistentData.putInt("stamina_hurt_exp_cd", nowTick + 20)
-    //console.log(`耐力受伤 +${staExpGain}，当前经验：${staCurrentExp}`)
+    console.log(`耐力受伤 +${staExpGain}，当前经验：${staCurrentExp}`)
 })
 
 
 
 // ---- 玩家登录：初始化位置和食物记录 ----
 // PlayerEvents.loggedIn — 玩家登录事件
-PlayerEvents.loggedIn(e => {
+/*PlayerEvents.loggedIn(e => {
     const player = e.player
     const initPos = new NbtCompound()
     initPos.putDouble('x', player.x)
@@ -147,7 +147,7 @@ PlayerEvents.loggedIn(e => {
     player.persistentData.putInt('endurance_last_food', player.foodLevel)
     player.persistentData.putInt('stamina_last_food', player.foodLevel)
     player.persistentData.putDouble('health_last_hp', player.health)
-})
+})*/
 
 // ---- 技艺：合成物品经验 ----
 // ItemEvents.crafted — 物品合成事件
@@ -216,7 +216,7 @@ PlayerEvents.tick(e => {
         if (!player.isPassenger() && endWeightRatio < 1 && endSpeed > 0 && lastPos && !player.isFallFlying()&&player.isSprinting()) {
 
             const distance = Math.sqrt(Math.pow((currentPos.x - lastPos.x), 2) + Math.pow((currentPos.z - lastPos.z), 2))//水平移动距离
-            let endExpGain = distance * Math.max(1 - endWeightRatio, 0)
+            let endExpGain = distance * Math.max(1 - endWeightRatio, 0)/2
     
             let endCurrentExp = getExp(player, 'agility_exp')
             endCurrentExp += endExpGain
@@ -242,7 +242,7 @@ PlayerEvents.tick(e => {
 
             setExp(player, 'endurance_exp', enduranceExp)
             tryLevelUp(player, "endurance", 'endurance_exp', enduranceUpExp)
-            console.log("饿了", enduranceExp)
+            //console.log("饿了", enduranceExp)
         }
 
         player.persistentData.putInt('endurance_last_food', currentFood)
