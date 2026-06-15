@@ -1,0 +1,25 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "textures": {
+        "particle": "artisanal:item/ceramic/dirty_small_pot"
+    },
+    "base": {
+        "parent": "artisanal:item_model/coaster_dirty_small_pot"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "item/generated",
+            "textures": {
+                "layer0": "artisanal:item/ceramic/dirty_small_pot"
+            }
+        },
+        "ground": {
+            "parent": "artisanal:item_model/coaster_dirty_small_pot"
+        },
+        "fixed": {
+            "parent": "artisanal:item_model/coaster_dirty_small_pot"
+            
+        }
+    }
+}

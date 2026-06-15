@@ -1,0 +1,7 @@
+{
+	"parent": "artisanal:item_model/coaster_sealed_tin_can",
+	"textures": {
+		"1": "artisanal:item/models/dirty_small_pot",
+		"particle": "artisanal:item/models/dirty_small_pot"
+	}
+}

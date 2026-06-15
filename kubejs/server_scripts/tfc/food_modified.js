@@ -624,7 +624,7 @@ TFCEvents.data(event => {
       food.decayModifier(0.7)
     })
   
-    event.foodItem('cuisinedelight:scrambled_egg_and_tomato', food => { // 炒锅乐事-西红柿炒鸡蛋
+    event.foodItem('cuisinedelight:scrambled_egg_and_tomato', food => { // 炒锅乐事-番茄炒鸡蛋
       food.hunger(4)
       food.protein(2.3)
       food.vegetables(0.3)

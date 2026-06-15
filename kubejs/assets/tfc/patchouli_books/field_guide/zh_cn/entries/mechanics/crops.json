@@ -2846,8 +2846,8 @@
     {
       "type": "patchouli:text",
       "anchor": "tomatoes",
-      "text": "$(bold)$(l:the_world/climate#temperature)温度$()：0 - 36 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：30 - 95 %$(br)$(bold)营养物质$()：钾$(br2)西红柿是一种攀爬作物。如果耕地上插有木棍，西红柿能长到两格高。种植西红柿会产出$(thing)西红柿$()和$(thing)西红柿种子$()。",
-      "title": "西红柿"
+      "text": "$(bold)$(l:the_world/climate#temperature)温度$()：0 - 36 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：30 - 95 %$(br)$(bold)营养物质$()：钾$(br2)番茄是一种攀爬作物。如果耕地上插有木棍，番茄能长到两格高。种植番茄会产出$(thing)番茄$()和$(thing)番茄种子$()。",
+      "title": "番茄"
     },
     {
       "type": "tfc:multimultiblock",

@@ -1,1 +1,69 @@
-{"parent":"tfc:block/crop_cross","textures":{"crop":"tfc:block/crop/cabbage_3"}}
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"2": "tfc:block/crop/cabbage_3",
+		"particle":"brewinandchewin:block/cabbage"
+	},
+	"elements": [
+		{
+			"from": [6, 0, 6],
+			"to": [10, 4, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [5, 0, 4]},
+			"faces": {
+				"north": {"uv": [0, 5, 4, 9], "texture": "#2"},
+				"east": {"uv": [4, 5, 8, 9], "texture": "#2"},
+				"south": {"uv": [7, 0, 11, 4], "texture": "#2"},
+				"west": {"uv": [8, 4, 12, 8], "texture": "#2"},
+				"up": {"uv": [12, 12, 8, 8], "texture": "#2"},
+				"down": {"uv": [4, 9, 0, 13], "texture": "#2"}
+			}
+		},
+		{
+			"from": [9.49954, 0.00038, 4.50046],
+			"to": [9.49954, 5.00038, 11.50046],
+			"rotation": {"angle": -45, "axis": "z", "origin": [9.49954, 0.00038, 12.50046]},
+			"faces": {
+				"east": {"uv": [0, 0, 7, 5], "texture": "#2"},
+				"west": {"uv": [7, 0, 0, 5], "texture": "#2"}
+			}
+		},
+		{
+			"from": [4.50046, 0, 6.50046],
+			"to": [11.50046, 5, 6.50046],
+			"rotation": {"angle": -45, "axis": "x", "origin": [5.50046, 0, 6.50046]},
+			"faces": {
+				"north": {"uv": [0, 0, 7, 5], "texture": "#2"},
+				"south": {"uv": [7, 0, 0, 5], "texture": "#2"}
+			}
+		},
+		{
+			"from": [6.50046, 0, 4.50046],
+			"to": [6.50046, 5, 11.50046],
+			"rotation": {"angle": 45, "axis": "z", "origin": [6.50046, 0, 9.50046]},
+			"faces": {
+				"east": {"uv": [7, 0, 0, 5], "texture": "#2"},
+				"west": {"uv": [0, 0, 7, 5], "texture": "#2"}
+			}
+		},
+		{
+			"from": [4.50046, 0.00038, 9.49954],
+			"to": [11.50046, 5.00038, 9.49954],
+			"rotation": {"angle": 45, "axis": "x", "origin": [3.50046, 0.00038, 9.49954]},
+			"faces": {
+				"north": {"uv": [7, 0, 0, 5], "texture": "#2"},
+				"south": {"uv": [0, 0, 7, 5], "texture": "#2"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "cabbage",
+			"origin": [5, 0, 5],
+			"scope": 0,
+			"color": 0,
+			"children": [0, 1, 2, 3, 4]
+		}
+	]
+}

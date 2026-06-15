@@ -1,0 +1,25 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "textures": {
+        "particle": "artisanal:item/metal/sealed_tin_can"
+    },
+    "base": {
+        "parent": "artisanal:item_model/coaster_sealed_tin_can"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "item/generated",
+            "textures": {
+                "layer0": "artisanal:item/metal/sealed_tin_can"
+            }
+        },
+        "ground": {
+            "parent": "artisanal:item_model/coaster_sealed_tin_can"
+        },
+        "fixed": {
+            "parent": "artisanal:item_model/coaster_sealed_tin_can"
+            
+        }
+    }
+}

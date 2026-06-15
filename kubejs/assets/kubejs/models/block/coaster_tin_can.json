@@ -1,7 +1,0 @@
-{
-  "parent": "kubejs:block/coaster_sealed_tin_can",
-  "textures": {
-		"0": "kubejs:block/tin_can",
-		"particle": "kubejs:block/tin_can"
-  }
-}
