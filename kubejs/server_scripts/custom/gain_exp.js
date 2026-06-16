@@ -16,6 +16,9 @@ function setExp(player, key, val) {
     player.persistentData.putDouble(key, (val !== val) ? 0 : val)
 }
 
+const showExpGainMessages = true
+const expGainFlushTicks = 100
+
 // ---- 升级公式 ----
 // MoreAttributes.getLevel(player, attrName) — 获取属性等级
 // MoreAttributes.upgrade(player, attrName, amount) — 提升属性等级
@@ -27,14 +30,75 @@ function focusUpExp(lv) { return 0.5 * lv * lv + 17 * lv + 715 }
 function agilityUpExp(lv) { return 1.7 * lv * lv + 11 * lv + 736 }
 function staminaUpExp(lv) { return 1.5 * lv * lv + 10 * lv + 730 }
 
+const attrNames = {
+    strength: '力量',
+    skill: '技艺',
+    endurance: '体力',
+    health: '生命',
+    focus: '集中',
+    agility: '敏捷',
+    stamina: '耐力'
+}
+
+const upExpFns = {
+    strength: strengthUpExp,
+    skill: skillUpExp,
+    endurance: enduranceUpExp,
+    health: healthUpExp,
+    focus: focusUpExp,
+    agility: agilityUpExp,
+    stamina: staminaUpExp
+}
+
+function notifyLevelUp(player, attrName, oldLevel, newLevel) {
+    const name = attrNames[attrName] || attrName
+    player.tell(`§6§l${name}升级! §eLv.${oldLevel} -> Lv.${newLevel}`)
+}
+
+function roundExp(val) {
+    return Math.round(val * 100) / 100
+}
+
+function notifyExpGain(player, attrName, expGain, currentExp) {
+    if (!showExpGainMessages || expGain <= 0) return
+    const name = attrNames[attrName] || attrName
+    const upExpFn = upExpFns[attrName]
+    const currentLevel = MoreAttributes.getLevel(player, attrName) || 10
+    const upExp = upExpFn ? upExpFn(currentLevel) : 0
+    const remaining = Math.max(0, upExp - currentExp)
+    const progressText = upExp > 0 ? `§7(当前: ${roundExp(currentExp)}/${roundExp(upExp)}, 距离升级: ${roundExp(remaining)})` : `§7(当前: ${roundExp(currentExp)})`
+    player.tell(`§a+${roundExp(expGain)} §2${name}经验 ${progressText}`)
+}
+
+function addBufferedExpGain(player, attrName, expGain) {
+    if (!showExpGainMessages || expGain <= 0) return
+    const amountKey = `${attrName}_exp_gain_buffer`
+    const tickKey = `${attrName}_exp_gain_last_flush`
+    const buffered = player.persistentData.getDouble(amountKey)
+    player.persistentData.putDouble(amountKey, ((buffered !== buffered) ? 0 : buffered) + expGain)
+    const lastFlush = player.persistentData.getInt(tickKey)
+    if (player.age - lastFlush < expGainFlushTicks) return
+    const total = player.persistentData.getDouble(amountKey)
+    if (total > 0) {
+        notifyExpGain(player, attrName, total, getExp(player, `${attrName}_exp`))
+        player.persistentData.putDouble(amountKey, 0)
+    }
+    player.persistentData.putInt(tickKey, player.age)
+}
+
 // 通用升级检查
 function tryLevelUp(player, attrName, expKey, upExpFn) {
     let currentExp = getExp(player, expKey)
-    const currentLevel = MoreAttributes.getLevel(player, attrName) || 10
-    const upExp = upExpFn(currentLevel)
-    if (currentExp >= upExp) {
+    let currentLevel = MoreAttributes.getLevel(player, attrName) || 10
+    let safety = 0
+    while (currentExp >= upExpFn(currentLevel) && safety < 100) {
+        const upExp = upExpFn(currentLevel)
         MoreAttributes.upgrade(player, attrName, 1)
-        setExp(player, expKey, currentExp - upExp)
+        currentExp -= upExp
+        setExp(player, expKey, currentExp)
+        notifyLevelUp(player, attrName, currentLevel, currentLevel + 1)
+        currentLevel++
+        safety++
     }
 }
 
@@ -72,6 +136,7 @@ EntityEvents.hurt(e => {
             let strCurrentExp = getExp(source.player, 'strength_exp')
             strCurrentExp += strExpGain
             setExp(source.player, 'strength_exp', strCurrentExp)
+            notifyExpGain(source.player, "strength", strExpGain, strCurrentExp)
             tryLevelUp(source.player, "strength", 'strength_exp', strengthUpExp)
             console.log("力量打怪", strCurrentExp)
         }
@@ -95,6 +160,7 @@ BlockEvents.broken(e => {
     let currentExp = getExp(player, 'strength_exp')
     currentExp += expGain
     setExp(player, 'strength_exp', currentExp)
+    notifyExpGain(player, "strength", expGain, currentExp)
     tryLevelUp(player, "strength", 'strength_exp', strengthUpExp)
 
 
@@ -128,6 +194,7 @@ EntityEvents.hurt(e => {
     staCurrentExp += staExpGain
 
     setExp(entity, 'stamina_exp', staCurrentExp)
+    notifyExpGain(entity, "stamina", staExpGain, staCurrentExp)
     tryLevelUp(entity, "stamina", 'stamina_exp', staminaUpExp)
     // 设置冷却：20 tick = 1 秒
     entity.persistentData.putInt("stamina_hurt_exp_cd", nowTick + 20)
@@ -138,7 +205,7 @@ EntityEvents.hurt(e => {
 
 // ---- 玩家登录：初始化位置和食物记录 ----
 // PlayerEvents.loggedIn — 玩家登录事件
-/*PlayerEvents.loggedIn(e => {
+PlayerEvents.loggedIn(e => {
     const player = e.player
     const initPos = new NbtCompound()
     initPos.putDouble('x', player.x)
@@ -147,7 +214,7 @@ EntityEvents.hurt(e => {
     player.persistentData.putInt('endurance_last_food', player.foodLevel)
     player.persistentData.putInt('stamina_last_food', player.foodLevel)
     player.persistentData.putDouble('health_last_hp', player.health)
-})*/
+})
 
 // ---- 技艺：合成物品经验 ----
 // ItemEvents.crafted — 物品合成事件
@@ -177,6 +244,7 @@ ItemEvents.crafted(e => {
     currentExp += expGain
 
     setExp(player, 'skill_exp', currentExp)
+    notifyExpGain(player, "skill", expGain, currentExp)
     tryLevelUp(player, "skill", 'skill_exp', skillUpExp)
 
     console.log(`技巧合成 +${expGain}，当前经验：${currentExp}，物品：${id} x${count}`)
@@ -208,6 +276,7 @@ PlayerEvents.tick(e => {
             let endCurrentExp = getExp(player, 'endurance_exp')
             endCurrentExp += endExpGain
             setExp(player, 'endurance_exp', endCurrentExp)
+            addBufferedExpGain(player, "endurance", endExpGain)
             tryLevelUp(player, "endurance", 'endurance_exp', enduranceUpExp)
              console.log("体力走路", endCurrentExp)
 
@@ -221,7 +290,8 @@ PlayerEvents.tick(e => {
             let endCurrentExp = getExp(player, 'agility_exp')
             endCurrentExp += endExpGain
             setExp(player, 'agility_exp', endCurrentExp)
-            tryLevelUp(player, "agility", 'agility_exp', enduranceUpExp)
+            addBufferedExpGain(player, "agility", endExpGain)
+            tryLevelUp(player, "agility", 'agility_exp', agilityUpExp)
             console.log("敏捷走路", endCurrentExp)
 
         }
@@ -241,6 +311,7 @@ PlayerEvents.tick(e => {
             enduranceExp += foodConsumed
 
             setExp(player, 'endurance_exp', enduranceExp)
+            notifyExpGain(player, "endurance", foodConsumed, enduranceExp)
             tryLevelUp(player, "endurance", 'endurance_exp', enduranceUpExp)
             //console.log("饿了", enduranceExp)
         }
@@ -266,6 +337,7 @@ PlayerEvents.tick(e => {
             hpCurrentExp += hpExpGain
 
             setExp(player, 'health_exp', hpCurrentExp)
+            notifyExpGain(player, "health", hpExpGain, hpCurrentExp)
             tryLevelUp(player, "health", 'health_exp', healthUpExp)
 
              console.log("生命回血", hpCurrentExp)
@@ -306,6 +378,7 @@ ItemEvents.foodEaten(e => {
     let currentExp = getExp(player, 'health_exp')
     currentExp += expGain
     setExp(player, 'health_exp', currentExp)
+    notifyExpGain(player, "health", expGain, currentExp)
     tryLevelUp(player, "health", 'health_exp', healthUpExp)
     console.log(`吃东西生命 +${expGain}，当前经验：${currentExp}`)
 })
@@ -372,6 +445,7 @@ EntityEvents.hurt(e => {
     currentExp += expGain
 
     setExp(player, 'focus_exp', currentExp)
+    notifyExpGain(player, "focus", expGain, currentExp)
     tryLevelUp(player, "focus", 'focus_exp', focusUpExp)
 
     console.log(`弓箭远距离命中，距离:${distance.toFixed(2)}，集中经验 +${expGain}`)
