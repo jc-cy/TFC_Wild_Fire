@@ -1,0 +1,7 @@
+{
+	"parent": "artisanal:item_model/coaster_dented_tin_can",
+	"textures": {
+		"1": "artisanal:item/models/dirty_dented_tin_can",
+		"particle": "artisanal:item/models/dirty_dented_tin_can"
+	}
+}

@@ -4,10 +4,10 @@
       "armTransforms": {
         "right": {
           "scale": 1.0,
-          "offX": 0.005681753,
-          "offY": -0.019886374,
-          "offZ": -0.09659088,
-          "rotX": -15.85228,
+          "offX": 0.0,
+          "offY": 0.0,
+          "offZ": 0.0,
+          "rotX": 0.0,
           "rotY": 0.0,
           "rotZ": 0.0,
           "pivotX": 0.0,

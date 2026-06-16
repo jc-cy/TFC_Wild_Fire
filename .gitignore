@@ -16,6 +16,8 @@
 !/pack.toml
 !/README.txt
 !/release_guide.md
+!/server_mode_off.bat
+!/server_mode_on.bat
 !/start.bat
 !/start.ps1
 !/start.sh

@@ -120,7 +120,7 @@
         "tfc:rock_knapping/javelin_head_igneous_extrusive",
         "tfc:rock_knapping/javelin_head_igneous_intrusive"
       ],
-      "text": "$(thing)标枪$()是一种原始的一次性远程武器，也可以当作近战武器使用（造成$(l:mechanics/damage_types)突刺伤害$()）。"
+      "text": "$(thing)投矛$()是一种原始的一次性远程武器，也可以当作近战武器使用（造成$(l:mechanics/damage_types)突刺伤害$()）。"
     }
   ],
   "read_by_default": true,

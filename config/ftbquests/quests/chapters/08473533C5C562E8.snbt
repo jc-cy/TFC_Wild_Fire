@@ -1499,10 +1499,10 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:javelins)"
 					}
 				}
-				title: "制作单根标枪"
+				title: "制作投矛"
 				type: "item"
 			}]
-			title: "武器类型：标枪"
+			title: "武器类型：投矛"
 			x: 4.0d
 			y: 0.5d
 		}

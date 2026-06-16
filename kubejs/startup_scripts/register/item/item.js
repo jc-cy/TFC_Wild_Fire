@@ -290,12 +290,12 @@ StartupEvents.registry('item', event => {
     const gearBlankConfigs = [
         { id: "warped", material: "木齿轮", type: "basic" },
         { id: "cogwheel", material: "安山合金齿轮", type: "basic" }, // 原生create前缀，无casing
-        { id: "birch", material: "铜壳齿轮", type: "basic" },
+        { id: "birch", material: "铜壳齿轮", casing: "铜齿轮壳", type: "basic" },
         { id: "acacia", material: "铜齿轮", type: "basic" },
         { id: "bamboo", material: "铸铁齿轮", type: "basic" },
-        { id: "dark_oak", material: "铁壳齿轮", type: "basic" },
+        { id: "dark_oak", material: "铁壳齿轮", casing: "铁齿轮壳", type: "basic" },
         { id: "crimson", material: "锻铁齿轮", type: "basic" },
-        { id: "mangrove", material: "钢壳齿轮", type: "basic" },
+        { id: "mangrove", material: "钢壳齿轮", casing: "钢齿轮壳", type: "basic" },
         { id: "jungle", material: "钢齿轮", type: "basic" },
         { id: "oak", material: "高锰钢齿轮", type: "basic" }
     ];
@@ -303,34 +303,20 @@ StartupEvents.registry('item', event => {
 
         let itemId = `kubejs:gear_blank/cogwheel/${config.id}`;
         let largeItemId = `kubejs:gear_blank/large_cogwheel/${config.id}`;
+        let casingItemId = `kubejs:gear_casing/${config.id}`;
 
+        event.create(itemId, config.type)
+            .maxStackSize(16) // 堆叠数量
+            .tag('kubejs:gear_blanks')
+        event.create(largeItemId, config.type)
+            .maxStackSize(16) // 堆叠数量
+            .tag('kubejs:large_gear_blanks')
 
-        if (config.id != "cogwheel" || config.id != "warped") {
-
-            event.create(itemId, config.type)
-
+        if (config.casing) {
+            event.create(casingItemId, config.type)
                 .maxStackSize(16) // 堆叠数量
-                .tag('kubejs:gear_blanks')
-            event.create(largeItemId, config.type)
-
-                .maxStackSize(16) // 堆叠数量
-                .tag('kubejs:large_gear_blanks')
-        } else {
-            event.create(itemId, 'tfc:mold')
-
-                .maxStackSize(16) // 堆叠数量
-                .tag('kubejs:gear_blanks')
-                .capacity(10)
-            event.create(largeItemId, 'tfc:mold')
-
-                .maxStackSize(16) // 堆叠数量
-                .tag('kubejs:large_gear_blanks')
-                .capacity(20)
-
+                .tag('kubejs:gear_casings')
         }
-
-
-
 
 
     });
