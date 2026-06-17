@@ -24,6 +24,32 @@ function forgeSetExp(player, key, val) {
     player.persistentData.putDouble(key, (val !== val) ? 0 : val)
 }
 
+const forgeShowExpGainMessages = true
+
+function forgeNotifyLevelUp(player, attrName, oldLevel, newLevel) {
+    const name = forgeAttrNames[attrName] || attrName
+    player.tell(`§6§l${name}升级! §eLv.${oldLevel} -> Lv.${newLevel}`)
+}
+
+function forgeRoundExp(val) {
+    return Math.round(val * 100) / 100
+}
+
+function forgeTryLevelUp(player, attrName, expKey, upExpFn) {
+    let currentExp = forgeGetExp(player, expKey)
+    let currentLevel = MoreAttributes.getLevel(player, attrName) || 10
+    let safety = 0
+    while (currentExp >= upExpFn(currentLevel) && safety < 100) {
+        const upExp = upExpFn(currentLevel)
+        MoreAttributes.upgrade(player, attrName, 1)
+        currentExp -= upExp
+        forgeSetExp(player, expKey, currentExp)
+        forgeNotifyLevelUp(player, attrName, currentLevel, currentLevel + 1)
+        currentLevel++
+        safety++
+    }
+}
+
 // ---- 经验获取提示收集器（按玩家分别收集） ----
 // 与 gain_exp.js 中的 expGainMap 独立，因为 startup_scripts 和 server_scripts 作用域隔离
 // player.uuid.toString() — 玩家UUID转字符串，用作Map key
@@ -32,6 +58,7 @@ const forgeExpGainMap = {}
 
 // 添加一条经验获取提示到收集器
 function forgeAddExpGain(player, attrName, expGain, upExp) {
+    if (!forgeShowExpGainMessages || expGain <= 0) return
     const uuid = player.uuid.toString()
     if (!forgeExpGainMap[uuid]) forgeExpGainMap[uuid] = []
     const name = forgeAttrNames[attrName] || attrName
@@ -39,8 +66,9 @@ function forgeAddExpGain(player, attrName, expGain, upExp) {
     // NaN保护：显示时如果expGain或currentExp为NaN则显示0
     const safeExpGain = (expGain !== expGain) ? 0 : expGain
     const safeCurrentExp = (currentExp !== currentExp) ? 0 : currentExp
-    const upExpText = upExp ? `/${Math.round(upExp * 100) / 100}` : ''
-   // forgeExpGainMap[uuid].push(`§a+${Math.round(safeExpGain * 100) / 100} §2${name}经验 §7(${Math.round(safeCurrentExp * 100) / 100}${upExpText})`)
+    const remaining = upExp ? Math.max(0, upExp - safeCurrentExp) : 0
+    const progressText = upExp ? `§7(当前: ${forgeRoundExp(safeCurrentExp)}/${forgeRoundExp(upExp)}, 距离升级: ${forgeRoundExp(remaining)})` : `§7(当前: ${forgeRoundExp(safeCurrentExp)})`
+    player.tell(`§a+${forgeRoundExp(safeExpGain)} §2${name}经验 ${progressText}`)
 }
 
 // 将收集到的所有提示一次性显示在玩家动作栏上
@@ -94,14 +122,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEvent$LivingJu
     const currentLevel = MoreAttributes.getLevel(player, "agility") || 10
     const upExp = 1.7 * currentLevel * currentLevel + 11 * currentLevel + 36
     forgeAddExpGain(player, "agility", expGain, upExp)
-    // 升级检查（此处未使用 tryLevelUp 因为跨文件无法调用）
-    // MoreAttributes.upgrade(player, attrName, amount) — 提升属性等级
-    if (currentExp >= upExp) {
-        MoreAttributes.upgrade(player, "agility", 1)
-        forgeSetExp(player, 'agility_exp', currentExp - upExp)
-        const uuid = player.uuid.toString()
-        //if (forgeExpGainMap[uuid]) forgeExpGainMap[uuid].push(`§6§l敏捷升级! §eLv.${currentLevel} → Lv.${currentLevel + 1}`)
-    }
+    forgeTryLevelUp(player, "agility", 'agility_exp', lv => 1.7 * lv * lv + 11 * lv + 36)
     forgeFlushExpGains(player)
 })
 
@@ -120,12 +141,7 @@ ForgeEvents.onEvent('io.redspace.ironsspellbooks.api.events.SpellPreCastEvent', 
     const currentLevel = MoreAttributes.getLevel(player, "focus") || 10
     const upExp = 0.5 * currentLevel * currentLevel + 17 * currentLevel + 15
     forgeAddExpGain(player, "focus", 5, upExp)
-    if (currentExp >= upExp) {
-        MoreAttributes.upgrade(player, "focus", 1)
-        forgeSetExp(player, 'focus_exp', currentExp - upExp)
-        const uuid = player.uuid.toString()
-        //if (forgeExpGainMap[uuid]) forgeExpGainMap[uuid].push(`§6§l集中升级! §eLv.${currentLevel} → Lv.${currentLevel + 1}`)
-    }
+    forgeTryLevelUp(player, "focus", 'focus_exp', lv => 0.5 * lv * lv + 17 * lv + 15)
     forgeFlushExpGains(player)
 })
 
@@ -153,12 +169,7 @@ ForgeEvents.onEvent('top.ribs.scguns.event.GunFireEvent$Post', e => {
         const currentLevel = MoreAttributes.getLevel(player, "focus") || 10
         const upExp = 0.5 * currentLevel * currentLevel + 17 * currentLevel + 15
         forgeAddExpGain(player, "focus", 8, upExp)
-        if (currentExp >= upExp) {
-            MoreAttributes.upgrade(player, "focus", 1)
-            forgeSetExp(player, 'focus_exp', currentExp - upExp)
-            const uuid = player.uuid.toString()
-            //if (forgeExpGainMap[uuid]) forgeExpGainMap[uuid].push(`§6§l集中升级! §eLv.${currentLevel} → Lv.${currentLevel + 1}`)
-        }
+        forgeTryLevelUp(player, "focus", 'focus_exp', lv => 0.5 * lv * lv + 17 * lv + 15)
         forgeFlushExpGains(player)
     }
 })
