@@ -82,22 +82,22 @@
       "required_game_stage": "normal"
     },
     "creeper_chain_reaction": {
-      "is_enabled": true,
+      "is_enabled": false,
       "required_game_stage": "expert"
     },
     "creeper_explode_behind_wall": {
-      "is_enabled": true,
+      "is_enabled": false,
       "required_game_stage": "expert",
       "chance": 1.0,
       "is_scaled_by_crd": false
     },
     "creeper_explosion_immunity": {
-      "is_enabled": true,
+      "is_enabled": false,
       "required_game_stage": "expert",
       "damage_multiplier": 0.2
     },
     "creeper_spawn_charged": {
-      "is_enabled": true,
+      "is_enabled": false,
       "required_game_stage": "normal",
       "chance": 0.125,
       "is_scaled_by_crd": true
@@ -105,7 +105,7 @@
     "creeper_spawn_debuffed": {
       "is_enabled": true,
       "required_game_stage": "normal",
-      "chance": 0.375,
+      "chance": 0.1,
       "is_scaled_by_crd": true,
       "effects": [
         {
@@ -124,7 +124,7 @@
           "duration": 60.0
         },
         {
-          "id": "minecraft:saturation",
+          "id": "minecraft:hunger",
           "amplifier": 0,
           "duration": 60.0
         }
@@ -133,17 +133,17 @@
     "creeper_split_into_creeperlings": {
       "is_enabled": true,
       "count": {
-        "__default": 2,
-        "expert": 4,
-        "master": 6
+        "__default": 1,
+        "expert": 2,
+        "master": 3
       },
-      "chance": 0.666,
+      "chance": 0.2,
       "is_scaled_by_crd": true
     },
     "deadlier_explosions": {
       "is_enabled": true,
-      "required_game_stage": "normal",
-      "radius_multiplier": 1.2599,
+      "required_game_stage": "expert",
+      "radius_multiplier": 1.5599,
       "fire_chance": 0.75,
       "is_scaled_by_crd": true
     },
@@ -194,7 +194,7 @@
     "mob_groups": {
       "piglins": {
         "required_game_stage": "expert",
-        "chance": 0.25,
+        "chance": 0.35,
         "is_scaled_by_crd": true,
         "leader_types": [
           {
@@ -351,20 +351,20 @@
       "is_enabled": true,
       "health_bonus": {
         "__default": 0.0,
-        "expert": 0.15,
-        "master": 0.3
+        "expert": 0.0,
+        "master": 0.0
       },
       "damage_bonus": {
         "__default": 0.0,
-        "expert": 0.1,
-        "master": 0.2
+        "expert": 0.25,
+        "master": 0.5
       },
       "excluded_mobs": []
     },
     "pillager_with_fireworks": {
       "is_enabled": true,
       "required_game_stage": "master",
-      "chance": 0.15,
+      "chance": 0.01,
       "is_scaled_by_crd": true,
       "crossbow_multishot_chance": 0.25,
       "firework_drop_chance": 0.25,
@@ -392,10 +392,10 @@
     "spawn_player_zombie": {
       "is_enabled": true,
       "required_game_stage": "expert",
-      "chance": 1.0,
+      "chance": 0.25,
       "is_scaled_by_crd": false,
       "head_chance": 1.0,
-      "head_drop_chance": 0.1
+      "head_drop_chance": 0.25
     },
     "spawn_rate_increaser": {
       "is_enabled": true,
@@ -418,18 +418,32 @@
     "wave_duration": 1200.0,
     "preparing_duration": 10.0,
     "highlight_delay": 300.0,
-    "extra_size_ratio_per_player": 0.5,
+    "extra_size_ratio_per_player": 0.3,
     "area_radius": 70,
-    "kill_requirement": 100,
-    "kill_requirement_first": 25,
-    "kill_requirement_warning": 3,
+    "kill_requirement": 250,
+    "kill_requirement_first": 75,
+    "kill_requirement_warning": 15,
     "waves": [
       {
         "mobs": [
           {
             "type": "minecraft:zombie",
             "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
+            "count": 1
+          },
+          {
+            "type": "minecraft:zombie",
+            "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
             "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:decrepit_skeleton",
+            "count": 1
+          },
+          {
+            "type": "minecraft:zombie",
+            "equipment": "majruszsdifficulty:undead_army/wave_3_mob",
+            "count": 1
           },
           {
             "type": "minecraft:skeleton",
@@ -439,12 +453,21 @@
           {
             "type": "minecraft:zombie",
             "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
-            "count": 2
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:decaying_zombie",
+            "count": 1
+          },
+          {
+            "type": "minecraft:zombie",
+            "equipment": "majruszsdifficulty:undead_army/wave_3_mob",
+            "count": 1
           },
           {
             "type": "minecraft:skeleton",
             "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
-            "count": 2
+            "count": 1
           }
         ],
         "game_stage": "normal",
@@ -458,19 +481,41 @@
             "count": 2
           },
           {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
-            "count": 3
+            "type": "born_in_chaos_v1:decaying_zombie",
+            "count": 1
           },
           {
             "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
-            "count": 3
+            "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
+            "count": 1
           },
           {
             "type": "minecraft:skeleton",
             "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
             "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:decrepit_skeleton",
+            "count": 2
+          },
+          {
+            "type": "minecraft:zombie",
+            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+            "count": 2
+          },
+          {
+            "type": "minecraft:zombie",
+            "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
+            "count": 1
+          },
+          {
+            "type": "minecraft:skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:door_knight",
+            "count": 1
           }
         ],
         "game_stage": "normal",
@@ -481,6 +526,83 @@
           {
             "type": "minecraft:zombie",
             "equipment": "majruszsdifficulty:undead_army/wave_3_mob",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:decrepit_skeleton",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:decaying_zombie",
+            "count": 2
+          },
+          {
+            "type": "minecraft:skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+            "count": 2
+          },
+          {
+            "type": "minecraft:zombie",
+            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:baby_skeleton",
+            "count": 2
+          },
+          {
+            "type": "minecraft:skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_lumberjack",
+            "count": 2
+          }
+        ],
+        "game_stage": "normal",
+        "exp": 20
+      },
+      {
+        "mobs": [
+          {
+            "type": "minecraft:zombie",
+            "equipment": "majruszsdifficulty:undead_army/wave_3_mob",
+            "count": 2
+          },
+          {
+            "type": "minecraft:zombie",
+            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+            "count": 2
+          },
+          {
+            "type": "minecraft:skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+            "count": 3
+          },
+          {
+            "type": "minecraft:zombie",
+            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:skeleton_demoman",
+            "count": 1
+          },
+          {
+            "type": "minecraft:skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+            "count": 2
+          }
+        ],
+        "game_stage": "normal",
+        "exp": 20
+      },
+      {
+        "mobs": [
+          {
+            "type": "minecraft:zombie",
+            "equipment": "majruszsdifficulty:undead_army/wave_3_mob",
             "count": 3
           },
           {
@@ -489,18 +611,44 @@
             "count": 3
           },
           {
+            "type": "born_in_chaos_v1:skeleton_demoman",
+            "count": 1
+          },
+          {
+            "type": "minecraft:wither_skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "count": 2
+          },
+          {
+            "type": "minecraft:wither_skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "count": 1
+          },
+          {
             "type": "minecraft:husk",
             "equipment": "majruszsdifficulty:undead_army/wave_3_mob",
-            "count": 3
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_bruiser",
+            "count": 1
           },
           {
             "type": "minecraft:stray",
             "equipment": "majruszsdifficulty:undead_army/wave_3_skeleton",
-            "count": 3
+            "count": 1
+          },
+          {
+            "type": "irons_spellbooks:necromancer",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:skeleton_demoman",
+            "count": 1
           }
         ],
         "boss": {
-          "type": "majruszsdifficulty:tank",
+          "type": "born_in_chaos_v1:skeleton_thrasher",
           "count": 1
         },
         "game_stage": "normal",
@@ -511,12 +659,20 @@
           {
             "type": "minecraft:zombie",
             "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
-            "count": 2
+            "count": 1
           },
           {
             "type": "minecraft:wither_skeleton",
             "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
             "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_bruiser",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:decaying_zombie",
+            "count": 3
           },
           {
             "type": "minecraft:skeleton",
@@ -529,13 +685,12 @@
             "count": 1
           },
           {
-            "type": "majruszsdifficulty:tank",
+            "type": "born_in_chaos_v1:door_knight",
             "count": 1
           },
           {
-            "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
-            "count": 3
+            "type": "born_in_chaos_v1:zombie_lumberjack",
+            "count": 1
           },
           {
             "type": "minecraft:wither_skeleton",
@@ -543,13 +698,16 @@
             "count": 1
           },
           {
-            "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_skeleton",
-            "count": 3
+            "type": "born_in_chaos_v1:zombie_lumberjack",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_fisherman",
+            "count": 1
           },
           {
             "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
             "count": 1
           }
         ],
@@ -560,45 +718,71 @@
         "mobs": [
           {
             "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "count": 1
+          },
+          {
+            "type": "minecraft:wither_skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_bruiser",
             "count": 1
           },
           {
             "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_4_skeleton",
             "count": 1
           },
           {
-            "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton",
-            "count": 3
-          },
-          {
             "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
-            "count": 2
+            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "count": 1
           },
           {
-            "type": "majruszsdifficulty:tank",
+            "type": "irons_spellbooks:necromancer",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:door_knight",
             "count": 1
           },
           {
             "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
-            "count": 3
+            "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:swarmer",
+            "count": 1
           },
           {
             "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:restless_spirit",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_lumberjack",
+            "count": 1
+          },
+          {
+            "type": "minecraft:stray",
+            "equipment": "majruszsdifficulty:undead_army/wave_4_skeleton",
+            "count": 1
+          },
+          {
+            "type": "minecraft:wither_skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
             "count": 2
           }
         ],
-        "boss": {
-          "type": "majruszsdifficulty:cerberus",
-          "count": 1
-        },
         "game_stage": "expert",
-        "exp": 40
+        "exp": 32
       },
       {
         "mobs": [
@@ -609,11 +793,203 @@
           },
           {
             "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton",
             "count": 1
           },
           {
-            "type": "majruszsdifficulty:tank",
+            "type": "born_in_chaos_v1:zombie_lumberjack",
+            "count": 1
+          },
+          {
+            "type": "irons_spellbooks:necromancer",
+            "count": 1
+          },
+          {
+            "type": "minecraft:stray",
+            "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:restless_spirit",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:spiritof_chaos",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_bruiser",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:skeleton_thrasher",
+            "count": 1
+          },
+          {
+            "type": "minecraft:wither_skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "count": 2
+          },
+          {
+            "type": "irons_spellbooks:necromancer",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:bonescaller",
+            "count": 1
+          },
+          {
+            "type": "minecraft:husk",
+            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:restless_spirit",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:spiritof_chaos",
+            "count": 2
+          }
+        ],
+        "boss": {
+          "type": "irons_spellbooks:citadel_keeper",
+          "count": 1
+        },
+        "game_stage": "expert",
+        "exp": 40
+      },
+      {
+        "mobs": [
+          {
+            "type": "minecraft:husk",
+            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "count": 1
+          },
+          {
+            "type": "minecraft:wither_skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:scarlet_persecutor",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_clown",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:spiritof_chaos",
+            "count": 2
+          },
+          {
+            "type": "minecraft:stray",
+            "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:spiritof_chaos",
+            "count": 2
+          },
+          {
+            "type": "irons_spellbooks:citadel_keeper",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:door_knight",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:scarlet_persecutor",
+            "count": 1
+          },
+          {
+            "type": "majruszsdifficulty:cursed_armor",
+            "count": 2
+          },
+          {
+            "type": "irons_spellbooks:citadel_keeper",
+            "count": 1
+          }
+        ],
+        "game_stage": "master",
+        "exp": 48
+      },
+      {
+        "mobs": [
+          {
+            "type": "minecraft:husk",
+            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "count": 1
+          },
+          {
+            "type": "minecraft:wither_skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_clown",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:spiritof_chaos",
+            "count": 2
+          },
+          {
+            "type": "minecraft:stray",
+            "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
+            "count": 2
+          },
+          {
+            "type": "majruszsdifficulty:cursed_armor",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:dark_vortex",
+            "count": 1
+          },
+          {
+            "type": "irons_spellbooks:necromancer",
+            "count": 2
+          },
+          {
+            "type": "majruszsdifficulty:cursed_armor",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:skeleton_thrasher",
+            "count": 1
+          },
+          {
+            "type": "irons_spellbooks:citadel_keeper",
+            "count": 1
+          },
+          {
+            "type": "majruszsdifficulty:cursed_armor",
+            "count": 1
+          },
+          {
+            "type": "irons_spellbooks:citadel_keeper",
+            "count": 1
+          }
+        ],
+        "game_stage": "master",
+        "exp": 96
+      },
+      {
+        "mobs": [
+          {
+            "type": "minecraft:wither_skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:skeleton_thrasher",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:skeleton_demoman",
             "count": 1
           },
           {
@@ -622,36 +998,186 @@
             "count": 1
           },
           {
-            "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
+            "type": "born_in_chaos_v1:fallen_chaos_knight",
             "count": 1
           },
           {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_wither_skeleton",
+            "type": "born_in_chaos_v1:dark_vortex",
             "count": 1
           },
           {
-            "type": "majruszsdifficulty:cerberus",
+            "type": "minecraft:stray",
+            "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
+            "count": 1
+          },
+          {
+            "type": "irons_spellbooks:necromancer",
+            "count": 1
+          },
+          {
+            "type": "majruszsdifficulty:cursed_armor",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:spiritof_chaos",
+            "count": 1
+          },
+          {
+            "type": "irons_spellbooks:citadel_keeper",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:fallen_chaos_knight",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:spiritof_chaos",
+            "count": 1
+          },
+          {
+            "type": "irons_spellbooks:citadel_keeper",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:fallen_chaos_knight",
+            "count": 1
+          },
+          {
+            "type": "irons_spellbooks:citadel_keeper",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:spiritof_chaos",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:spiritof_chaos",
             "count": 1
           }
         ],
         "boss": {
-          "type": "majruszsdifficulty:giant",
-          "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
+          "type": "born_in_chaos_v1:supreme_bonescaller",
           "count": 1
         },
         "game_stage": "master",
-        "exp": 48
+        "exp": 90
+      },
+      {
+        "mobs": [
+          {
+            "type": "irons_spellbooks:citadel_keeper",
+            "count": 1
+          },
+          {
+            "type": "minecraft:wither_skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:skeleton_demoman",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:bonescaller",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:dark_vortex",
+            "count": 1
+          },
+          {
+            "type": "majruszsdifficulty:cursed_armor",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:door_knight",
+            "count": 1
+          },
+          {
+            "type": "majruszsdifficulty:cursed_armor",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:scarlet_persecutor",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:fallen_chaos_knight",
+            "count": 1
+          },
+          {
+            "type": "irons_spellbooks:necromancer",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:door_knight",
+            "count": 1
+          },
+          {
+            "type": "irons_spellbooks:necromancer",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:barrel_zombie",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:scarlet_persecutor",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_bruiser",
+            "count": 3
+          },
+          {
+            "type": "irons_spellbooks:citadel_keeper",
+            "count": 2
+          },
+          {
+            "type": "irons_spellbooks:necromancer",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:scarlet_persecutor",
+            "count": 1
+          },
+          {
+            "type": "irons_spellbooks:citadel_keeper",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:fallen_chaos_knight",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:spiritof_chaos",
+            "count": 3
+          },
+          {
+            "type": "majruszsdifficulty:giant",
+            "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
+            "count": 2
+          }
+        ],
+        "boss": {
+          "type": "born_in_chaos_v1:lifestealer_true_form",
+          "count": 1
+        },
+        "game_stage": "master",
+        "exp": 512
       }
     ]
   },
   "mobs": {
     "cursed_armor": {
-      "item_drop_chance": 0.2,
-      "custom_name_chance": 0.025,
+      "item_drop_chance": 0.1,
+      "custom_name_chance": 0.01,
       "custom_names": [
-        "Freshah"
+        "awhites",
+        "Hanabi_Ren",
+        "Witzig_Heidi",
+        "Tunmou",
+        "jccy"
       ],
       "locations": [
         {
@@ -659,34 +1185,37 @@
           "chests": [
             "minecraft:chests/simple_dungeon"
           ],
-          "chance": 0.5
+          "chance": 0.1
         },
         {
           "loot": "majruszsdifficulty:gameplay/cursed_armor_stronghold",
           "chests": [
             "minecraft:chests/stronghold_corridor",
             "minecraft:chests/stronghold_crossing",
+            "illagerinvasion:chests/uncommon",
+            "illagerinvasion:chests/rare",
             "minecraft:chests/stronghold_library"
           ],
-          "chance": 0.4
+          "chance": 0.1
         },
         {
           "loot": "majruszsdifficulty:gameplay/cursed_armor_portal",
           "chests": [
             "minecraft:chests/ruined_portal"
           ],
-          "chance": 1.0
+          "chance": 0.1
         },
         {
           "loot": "majruszsdifficulty:gameplay/cursed_armor_nether",
           "chests": [
             "minecraft:chests/bastion_bridge",
+            "illagerinvasion:chests/epic",
             "minecraft:chests/bastion_hoglin_stable",
             "minecraft:chests/bastion_other",
             "minecraft:chests/bastion_treasure",
             "minecraft:chests/nether_bridge"
           ],
-          "chance": 0.25
+          "chance": 0.1
         },
         {
           "loot": "majruszsdifficulty:gameplay/cursed_armor_end",
@@ -743,7 +1272,7 @@
     }
   },
   "bleeding": {
-    "chance_multiplier_base": 0.09,
+    "chance_multiplier_base": 0.05,
     "chance_multiplier_per_armor": 0.03,
     "chance_multiplier_per_armor_toughness": 0.03,
     "is_enabled": true,
@@ -761,11 +1290,11 @@
     "effect": {
       "__default": {
         "amplifier": 0,
-        "duration": 24.0
+        "duration": 7.0
       },
       "expert": {
         "amplifier": 1,
-        "duration": 24.0
+        "duration": 12.0
       },
       "master": {
         "amplifier": 2,
@@ -775,11 +1304,11 @@
     "sources": {
       "arrows": {
         "is_enabled": true,
-        "chance": 0.333
+        "chance": 0.1
       },
       "bite": {
         "is_enabled": true,
-        "chance": 0.5,
+        "chance": 0.15,
         "blacklisted_animals": [
           "minecraft:llama"
         ]
@@ -803,6 +1332,118 @@
           },
           {
             "id": "{regex}.*_sword",
+            "chance": 0.28,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*/sword/.*",
+            "chance": 0.28,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*/axe/.*",
+            "chance": 0.25,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*/javelin/.*",
+            "chance": 0.13,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*/scythe/.*",
+            "chance": 0.25,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_spear",
+            "chance": 0.15,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_greatsword",
+            "chance": 0.32,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_halberd",
+            "chance": 0.25,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_scythe",
             "chance": 0.3,
             "enchantments": [
               {
@@ -811,13 +1452,13 @@
               },
               {
                 "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
-                "extra_chance_per_level": 0.02
+                "extra_chance_per_level": 0.01
               }
             ]
           },
           {
-            "id": "{regex}.*_axe",
-            "chance": 0.26,
+            "id": "{regex}.*_battleaxe",
+            "chance": 0.25,
             "enchantments": [
               {
                 "id": "minecraft:sharpness",
@@ -825,24 +1466,209 @@
               },
               {
                 "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
-                "extra_chance_per_level": 0.02
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_lance",
+            "chance": 0.18,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_longsword",
+            "chance": 0.28,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_katana",
+            "chance": 0.35,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_saber",
+            "chance": 0.3,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_glaive",
+            "chance": 0.28,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_rapier",
+            "chance": 0.12,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_pike",
+            "chance": 0.13,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_tomahawk",
+            "chance": 0.2,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_javelin",
+            "chance": 0.15,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_axe",
+            "chance": 0.25,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
               }
             ]
           },
           {
             "id": "{regex}(.*_pickaxe)|minecraft:shears",
-            "chance": 0.22,
+            "chance": 0.1,
             "enchantments": []
           },
           {
             "id": "{regex}.*_shovel",
-            "chance": 0.18,
+            "chance": 0.03,
             "enchantments": []
           },
           {
             "id": "{regex}.*_hoe",
-            "chance": 0.14,
+            "chance": 0.02,
             "enchantments": []
+          },
+          {
+            "id": "{regex}.*_knife",
+            "chance": 0.3,
+            "enchantments": []
+          },
+          {
+            "id": "{regex}.*/knife/.*",
+            "chance": 0.3,
+            "enchantments": []
+          },
+          {
+            "id": "{regex}.*flint",
+            "chance": 0.4,
+            "enchantments": []
+          },
+          {
+            "id": "{regex}^(?!.*_parrying_dagger$).*_dagger$",
+            "chance": 0.5,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.08
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_parrying_dagger",
+            "chance": 0.35,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              }
+            ]
+          },
+          {
+            "id": "warriorsofpastepoch:surgical_saw",
+            "chance": 0.6,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.08
+              }
+            ]
           }
         ]
       }
