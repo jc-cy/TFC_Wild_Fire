@@ -102,7 +102,30 @@ function addLockpickSkillExp(player, lockPickId) {
   if (expGain <= 0) return
 
   let currentExp = player.persistentData.getDouble('skill_exp')
-  skillLevelUp(player, currentExp, expGain)
+  if (currentExp !== currentExp) currentExp = 0
+  currentExp += expGain
+  player.persistentData.putDouble('skill_exp', currentExp)
+
+  const currentLevel = MoreAttributes.getLevel(player, "skill") || 10
+  const upExp = 1.5 * currentLevel * currentLevel + 10 * currentLevel + 730
+  if (typeof notifyExpGain === 'function') {
+    notifyExpGain(player, "skill", expGain, currentExp)
+  } else {
+    const remaining = Math.max(0, upExp - currentExp)
+    player.tell(`§a+${Math.round(expGain * 100) / 100} §2技巧经验 §7(当前: ${Math.round(currentExp * 100) / 100}/${Math.round(upExp * 100) / 100}, 距离升级: ${Math.round(remaining * 100) / 100})`)
+  }
+
+  let level = currentLevel
+  let safety = 0
+  while (currentExp >= (1.5 * level * level + 10 * level + 730) && safety < 100) {
+    const needExp = 1.5 * level * level + 10 * level + 730
+    MoreAttributes.upgrade(player, "skill", 1)
+    currentExp -= needExp
+    player.persistentData.putDouble('skill_exp', currentExp)
+    player.setStatusMessage(Component.literal(`§6§l技巧升级! §eLv.${level} -> Lv.${level + 1}`))
+    level++
+    safety++
+  }
 
   // 调试用
   // console.log(`开锁技巧经验 +${expGain}`)
@@ -215,7 +238,7 @@ BlockEvents.rightClicked(e => {
           volume: 2.0,
           pitch: 1.2
         })
-
+        e.cancel()
         // 技巧经验获取
         // 基础10经验：
         // 开锁器 x0.4 = 4
@@ -223,7 +246,7 @@ BlockEvents.rightClicked(e => {
         // 钥匙 x0 = 0
         addLockpickSkillExp(player, lockPick.id)
 
-        e.cancel()
+      
       }
     }
   }

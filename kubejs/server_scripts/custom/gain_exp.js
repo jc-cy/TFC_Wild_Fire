@@ -25,7 +25,7 @@ const expGainFlushTicks = 100
 function strengthUpExp(lv) { return 1.7 * lv * lv + 11 * lv + 736 }
 function skillUpExp(lv) { return 1.5 * lv * lv + 10 * lv + 730 }
 function enduranceUpExp(lv) { return 70 * lv * lv+700 }
-function healthUpExp(lv) { return 0.5 * lv * lv + 17 * lv + 715 }
+function healthUpExp(lv) { return 0.5 * lv * lv + 17 * lv + 120 }
 function focusUpExp(lv) { return 0.5 * lv * lv + 17 * lv + 715 }
 function agilityUpExp(lv) { return 1.7 * lv * lv + 11 * lv + 736 }
 function staminaUpExp(lv) { return 1.5 * lv * lv + 10 * lv + 730 }
@@ -52,11 +52,18 @@ const upExpFns = {
 
 function notifyLevelUp(player, attrName, oldLevel, newLevel) {
     const name = attrNames[attrName] || attrName
-    player.tell(`§6§l${name}升级! §eLv.${oldLevel} -> Lv.${newLevel}`)
+    player.setStatusMessage(Component.literal(`§6§l${name}升级! §eLv.${oldLevel} -> Lv.${newLevel}`))
 }
 
 function roundExp(val) {
     return Math.round(val * 100) / 100
+}
+
+function getDamageAmount(event) {
+    let damage = event.damage
+    if (damage === undefined || damage === null) damage = event.amount
+    if ((damage === undefined || damage === null) && typeof event.getDamage === 'function') damage = event.getDamage()
+    return (damage !== damage || damage === undefined || damage === null) ? 0 : damage
 }
 
 function notifyExpGain(player, attrName, expGain, currentExp) {
@@ -70,20 +77,30 @@ function notifyExpGain(player, attrName, expGain, currentExp) {
     player.tell(`§a+${roundExp(expGain)} §2${name}经验 ${progressText}`)
 }
 
+function getExpNotifyTick(player) {
+    if (player.level && player.level.time !== undefined) return player.level.time
+    return player.age
+}
+
 function addBufferedExpGain(player, attrName, expGain) {
     if (!showExpGainMessages || expGain <= 0) return
     const amountKey = `${attrName}_exp_gain_buffer`
     const tickKey = `${attrName}_exp_gain_last_flush`
     const buffered = player.persistentData.getDouble(amountKey)
     player.persistentData.putDouble(amountKey, ((buffered !== buffered) ? 0 : buffered) + expGain)
+    const currentTick = getExpNotifyTick(player)
     const lastFlush = player.persistentData.getInt(tickKey)
-    if (player.age - lastFlush < expGainFlushTicks) return
+    if (lastFlush <= 0 || currentTick < lastFlush) {
+        player.persistentData.putInt(tickKey, currentTick)
+        return
+    }
+    if (currentTick - lastFlush < expGainFlushTicks) return
     const total = player.persistentData.getDouble(amountKey)
     if (total > 0) {
         notifyExpGain(player, attrName, total, getExp(player, `${attrName}_exp`))
         player.persistentData.putDouble(amountKey, 0)
     }
-    player.persistentData.putInt(tickKey, player.age)
+    player.persistentData.putInt(tickKey, currentTick)
 }
 
 // 通用升级检查
@@ -130,7 +147,7 @@ EntityEvents.hurt(e => {
     // ---- 力量：玩家攻击造成伤害 ----
     // 经验值 = 伤害值 × 3
     {
-        const strDamage = e.damage
+        const strDamage = getDamageAmount(e)
         if (strDamage > 0) {
             let strExpGain = strDamage * 3
             let strCurrentExp = getExp(source.player, 'strength_exp')
@@ -156,7 +173,7 @@ BlockEvents.broken(e => {
     // NaN检查：destroySpeed可能返回NaN
     const safeHardness = (hardness !== hardness) ? 0 : hardness
     if (safeHardness < 0) return
-    let expGain = safeHardness > 0 ? Math.min(safeHardness * 2, 30) : 1
+    let expGain = safeHardness > 0 ? Math.min(safeHardness * 2, 30) / 3 : 1 / 3
     let currentExp = getExp(player, 'strength_exp')
     currentExp += expGain
     setExp(player, 'strength_exp', currentExp)
@@ -180,10 +197,10 @@ EntityEvents.hurt(e => {
     if (source && source.player) {
         if (entity.uuid.toString() === source.player.uuid.toString()) return
     }
-    const staDamage = e.damage
+    const staDamage = getDamageAmount(e)
     if (staDamage <= 0) return
     // 当前游戏 tick
-    const nowTick = entity.age
+    const nowTick = e.server.tickCount
     // 读取受伤经验冷却
     const nextHurtExpTick = entity.persistentData.getInt("stamina_hurt_exp_cd")
     // 冷却期间不触发经验
@@ -207,12 +224,9 @@ EntityEvents.hurt(e => {
 // PlayerEvents.loggedIn — 玩家登录事件
 PlayerEvents.loggedIn(e => {
     const player = e.player
-    const initPos = new NbtCompound()
-    initPos.putDouble('x', player.x)
-    initPos.putDouble('z', player.z)
-    player.persistentData.put('agility_last_pos', initPos)
     player.persistentData.putInt('endurance_last_food', player.foodLevel)
     player.persistentData.putInt('stamina_last_food', player.foodLevel)
+    player.persistentData.putInt('stamina_hurt_exp_cd', 0)
     player.persistentData.putDouble('health_last_hp', player.health)
 })
 
@@ -269,6 +283,30 @@ PlayerEvents.tick(e => {
         const currentPos = { x: player.getX(), y: player.getY(), z: player.getZ() }//当前位置
         //const speedRounded = Math.round(speed * 100) / 100//限制小数
 
+        const wasOnGround = player.persistentData.getInt('agility_last_on_ground') === 1
+        const isOnGround = player.onGround()
+        const lastJumpY = player.persistentData.getDouble('agility_last_y')
+
+        if (!player.isPassenger() && wasOnGround && !isOnGround && currentPos.y > lastJumpY + 0.01) {
+            const ratio = endMaxWeight > 0 ? endCurrentWeight / endMaxWeight : 0
+            if (ratio <= 1.0) {
+                let penalty = 1.0
+                if (ratio > 0.4) {
+                    const overPercent = Math.ceil((ratio - 0.4) * 10)
+                    penalty = Math.max(0, 1 - overPercent * 0.1)
+                }
+                if (penalty > 0) {
+                    const expGain = 1.5 * penalty / 4
+                    let currentExp = getExp(player, 'agility_exp')
+                    currentExp += expGain
+                    setExp(player, 'agility_exp', currentExp)
+                    notifyExpGain(player, "agility", expGain, currentExp)
+                    tryLevelUp(player, "agility", 'agility_exp', agilityUpExp)
+                    player.persistentData.putInt('agility_jump_move_ignore_until', player.age + 10)
+                }
+            }
+        }
+
         if (!player.isPassenger() && endWeightRatio > 1 && endSpeed > 0 && lastPos && !player.isFallFlying()) {
 
             const distance = Math.sqrt(Math.pow((currentPos.x - lastPos.x), 2) + Math.pow((currentPos.z - lastPos.z), 2))//水平移动距离
@@ -278,21 +316,22 @@ PlayerEvents.tick(e => {
             setExp(player, 'endurance_exp', endCurrentExp)
             addBufferedExpGain(player, "endurance", endExpGain)
             tryLevelUp(player, "endurance", 'endurance_exp', enduranceUpExp)
-             console.log("体力走路", endCurrentExp)
+             //console.log("体力走路", endCurrentExp)
 
         }
 
-        if (!player.isPassenger() && endWeightRatio < 1 && endSpeed > 0 && lastPos && !player.isFallFlying()&&player.isSprinting()) {
+        const ignoreMoveAgilityUntil = player.persistentData.getInt('agility_jump_move_ignore_until')
+        if (!player.isPassenger() && player.age >= ignoreMoveAgilityUntil && endWeightRatio < 1 && endSpeed > 0 && lastPos && !player.isFallFlying()) {
 
             const distance = Math.sqrt(Math.pow((currentPos.x - lastPos.x), 2) + Math.pow((currentPos.z - lastPos.z), 2))//水平移动距离
-            let endExpGain = distance * Math.max(1 - endWeightRatio, 0)/2
+            let endExpGain = distance * Math.max(1 - endWeightRatio, 0) / 4
     
             let endCurrentExp = getExp(player, 'agility_exp')
             endCurrentExp += endExpGain
             setExp(player, 'agility_exp', endCurrentExp)
             addBufferedExpGain(player, "agility", endExpGain)
             tryLevelUp(player, "agility", 'agility_exp', agilityUpExp)
-            console.log("敏捷走路", endCurrentExp)
+            //console.log("敏捷移动", endCurrentExp)
 
         }
 
@@ -300,6 +339,8 @@ PlayerEvents.tick(e => {
 
 
         lastPos = currentPos
+        player.persistentData.putInt('agility_last_on_ground', isOnGround ? 1 : 0)
+        player.persistentData.putDouble('agility_last_y', currentPos.y)
         // 饥饿消耗经验
         const lastFood = player.persistentData.getInt('endurance_last_food')
         const currentFood = player.foodLevel

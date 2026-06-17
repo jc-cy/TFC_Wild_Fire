@@ -12,6 +12,14 @@ ServerEvents.recipes(e => {
  e.replaceInput({}, "create:shaft",'#kubejs:shaft')
  
   const iddd = [
+    'firmalife:crafting/vat',
+'tfc:alloy/weak_red_steel',
+    'tfc_ie_addon:arc_furnace/alloy_weak_red_steel',
+'tfc:alloy/weak_blue_steel',
+    'tfc_ie_addon:arc_furnace/alloy_weak_blue_steel',
+'tfc_ie_addon:arc_furnace/alloy_weak_steel',
+'tfc:alloy/weak_steel',
+
     'tfc:handle',
     "vintageimprovements:turning/convex_curving_head1",
     'woodencog:crafting/appliances/copper_diving_boots',

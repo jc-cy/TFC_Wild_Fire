@@ -28,11 +28,18 @@ const forgeShowExpGainMessages = true
 
 function forgeNotifyLevelUp(player, attrName, oldLevel, newLevel) {
     const name = forgeAttrNames[attrName] || attrName
-    player.tell(`§6§l${name}升级! §eLv.${oldLevel} -> Lv.${newLevel}`)
+    player.setStatusMessage(Component.literal(`§6§l${name}升级! §eLv.${oldLevel} -> Lv.${newLevel}`))
 }
 
 function forgeRoundExp(val) {
     return Math.round(val * 100) / 100
+}
+
+function forgeGetDamageAmount(event) {
+    let damage = event.amount
+    if (damage === undefined || damage === null) damage = event.damage
+    if ((damage === undefined || damage === null) && typeof event.getAmount === 'function') damage = event.getAmount()
+    return (damage !== damage || damage === undefined || damage === null) ? 0 : damage
 }
 
 function forgeTryLevelUp(player, attrName, expKey, upExpFn) {
@@ -80,6 +87,31 @@ function forgeFlushExpGains(player) {
     delete forgeExpGainMap[uuid]
 }
 
+// ---- 耐力：玩家实际受伤经验兜底 ----
+ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDamageEvent', e => {
+    const player = e.entity
+    if (!player || !player.isPlayer()) return
+
+    const damage = forgeGetDamageAmount(e)
+    if (damage <= 0) return
+
+    const nowTick = e.server.tickCount
+    const nextHurtExpTick = player.persistentData.getInt("stamina_hurt_exp_cd")
+    if (nowTick < nextHurtExpTick) return
+
+    const expGain = Math.min(damage * 0.5, 25)
+    let currentExp = forgeGetExp(player, 'stamina_exp')
+    currentExp += expGain
+
+    forgeSetExp(player, 'stamina_exp', currentExp)
+    const currentLevel = MoreAttributes.getLevel(player, "stamina") || 10
+    const upExp = 1.5 * currentLevel * currentLevel + 10 * currentLevel + 730
+    forgeAddExpGain(player, "stamina", expGain, upExp)
+    forgeTryLevelUp(player, "stamina", 'stamina_exp', lv => 1.5 * lv * lv + 10 * lv + 730)
+    player.persistentData.putInt("stamina_hurt_exp_cd", nowTick + 20)
+    forgeFlushExpGains(player)
+})
+
 // ---- 敏捷：跳跃经验 1.5点 ----
 // ForgeEvents.onEvent(eventClassName, callback) — 注册 Forge 原生事件监听
 //   参数是完整的 Java 类名（含内部类用 $ 分隔）
@@ -87,7 +119,7 @@ function forgeFlushExpGains(player) {
 //     — 玩家/生物跳跃时触发的事件（LivingJumpEvent 是 LivingEvent 的内部类）
 // 每次跳跃获得1.5点敏捷经验（受负重惩罚影响）
 // 负重>90%时经验递减，>100%时不获得经验
-ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEvent$LivingJumpEvent', e => {
+/* ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEvent$LivingJumpEvent', e => {
     // e.entity — 触发跳跃事件的实体
     const { entity } = e
     if (!entity.isPlayer()) return
@@ -95,6 +127,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEvent$LivingJu
 
     // player.isPassenger() — 判断是否在骑乘，骑乘时跳跃不获得经验
     if (player.isPassenger()) return
+    player.persistentData.putInt('agility_jump_move_ignore_until', player.age + 10)
 
     // player.getAttributeValue(attributeId) — 获取属性值
     //   "more_attributes:equip_load_max" — 最大负重
@@ -114,17 +147,17 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEvent$LivingJu
     if (penalty <= 0) return
 
     // 基础1.5点经验 × 负重惩罚
-    let expGain = 1.5 * penalty
+    let expGain = 1.5 * penalty / 4
     let currentExp = forgeGetExp(player, 'agility_exp')
     currentExp += expGain
     forgeSetExp(player, 'agility_exp', currentExp)
 
     const currentLevel = MoreAttributes.getLevel(player, "agility") || 10
-    const upExp = 1.7 * currentLevel * currentLevel + 11 * currentLevel + 36
+    const upExp = 1.7 * currentLevel * currentLevel + 11 * currentLevel + 736
     forgeAddExpGain(player, "agility", expGain, upExp)
-    forgeTryLevelUp(player, "agility", 'agility_exp', lv => 1.7 * lv * lv + 11 * lv + 36)
+    forgeTryLevelUp(player, "agility", 'agility_exp', lv => 1.7 * lv * lv + 11 * lv + 736)
     forgeFlushExpGains(player)
-})
+}) */
 
 // ---- 集中：法杖施法经验 5点 — Iron's Spells mod ----
 // 'io.redspace.ironsspellbooks.api.events.SpellPreCastEvent'

@@ -48,7 +48,7 @@ ServerEvents.recipes((event) => {
       results: [{ amount: 40, fluid: 'tfc:metal/black_bronze' }],
       id: `${id_prefix}black_bronze`
     },
-    {
+    /*{
       ingredients: [{ amount: 50, fluid: 'tfc:metal/black_steel' }, { amount: 20, fluid: 'tfc:metal/steel' }, { amount: 10, fluid: 'tfc:metal/brass' }, { amount: 10, fluid: 'tfc:metal/rose_gold' }],
       heatRequirement: 'superheated',
       processingTime: 40,
@@ -68,7 +68,7 @@ ServerEvents.recipes((event) => {
       processingTime: 40,
       results: [{ amount: 90, fluid: 'tfc:metal/weak_steel' }],
       id: `${id_prefix}weak_steel`
-    },
+    },*/
     {
       ingredients: [{ amount: 10, fluid: 'tfc:metal/gold' }, { amount: 10, fluid: 'tfc:metal/silver' }],
       heatRequirement: 'superheated',
