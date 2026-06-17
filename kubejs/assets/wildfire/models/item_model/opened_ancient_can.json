@@ -1,0 +1,7 @@
+{
+	"parent":  "wildfire:item_model/ancient_can",
+	"textures": {
+		"1": "wildfire:item/item_model/opened_ancient_can",
+		"particle": "wildfire:item/item_model/opened_ancient_can"
+	}
+}

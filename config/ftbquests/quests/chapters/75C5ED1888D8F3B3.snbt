@@ -2949,18 +2949,11 @@
 			description: ["经过升级的高级齿轮，能承载更高的转速以及更高的应力输入"]
 			id: "78C01497DB13B244"
 			shape: "circle"
-			tasks: [
-				{
-					id: "39072FB23E4AE522"
-					item: "design_decor:industrial_gear"
-					type: "item"
-				}
-				{
-					id: "45590A70DE685EA0"
-					item: "createcasing:acacia_cogwheel"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "45590A70DE685EA0"
+				item: "createcasing:acacia_cogwheel"
+				type: "item"
+			}]
 			x: 83.5d
 			y: -3.0d
 		}

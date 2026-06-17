@@ -4,13 +4,13 @@
   "fluid_type.brewinandchewin.vodka_type": "伏特加",
   "fluid_type.brewinandchewin.mead_type": "蜜酒",
   "fluid_type.brewinandchewin.egg_grog_type": "蛋酒",
-  "fluid_type.brewinandchewin.strongroot_ale_type": "强根麦酒",
+  "fluid_type.brewinandchewin.strongroot_ale_type": "强根麦芽酒",
   "fluid_type.brewinandchewin.rice_wine_type": "米酒",
   "fluid_type.brewinandchewin.glittering_grenadine_type": "闪光甜酒",
   "fluid_type.brewinandchewin.steel_toe_stout_type": "钢趾黑啤",
-  "fluid_type.brewinandchewin.dread_nog_type": "惊怖酿",
+  "fluid_type.brewinandchewin.dread_nog_type": "惊怖诡酿",
   "fluid_type.brewinandchewin.kombucha_type": "康普茶",
-  "fluid_type.brewinandchewin.saccharine_rum_type": "甜口朗姆",
+  "fluid_type.brewinandchewin.saccharine_rum_type": "甜朗姆",
   "fluid_type.brewinandchewin.pale_jane_type": "苍白的简",
   "fluid_type.brewinandchewin.salty_folly_type": "盐港伏特加",
   "fluid_type.brewinandchewin.bloody_mary_type": "猩红玛丽",
@@ -22,7 +22,7 @@
   "block.brewinandchewin.keg": "小酒桶",
   "block.brewinandchewin.heating_cask": "热炭板条箱",
   "block.brewinandchewin.ice_crate": "冰块板条箱",
-  "block.brewinandchewin.coaster": "放置垫",
+  "block.brewinandchewin.coaster": "展示垫",
 
   "item.brewinandchewin.tankard": "啤酒杯",
   "item.brewinandchewin.beer": "啤酒",
@@ -128,12 +128,13 @@
   "brewinandchewin.emi.incorrect_fluid": "错误的流体",
   "brewinandchewin.emi.cant_empty": "无法清空桶内的流体",
 
-  "tag.item.brewinandchewin.fermented_drinks": "Fermented Drinks",
-  "tag.item.brewinandchewin.horror_meats": "Horror Meats",
-  "tag.item.brewinandchewin.raw_meats": "Raw Meats",
-  "tag.item.brewinandchewin.pizza_toppings": "Pizza Toppings",
-  "tag.item.brewinandchewin.cheese_wedges": "Cheese Wedges",
+  "tag.item.brewinandchewin.fermented_drinks": "发酵饮料",
+  "tag.item.brewinandchewin.horror_meats": "恐怖恶肉",
+  "tag.item.brewinandchewin.raw_meats": "生肉",
+  "tag.item.brewinandchewin.pizza_toppings": "披萨装饰",
+  "tag.item.brewinandchewin.cheese_wedges": "芝士锲",
 
   "tag.mob_effect.brewinandchewin.low_priority.milk_bottle": "Low Priority for Milk Bottle",
-  "tag.mob_effect.brewinandchewin.low_priority.hot_cocoa": "Low Priority for Hot Cocoa"
+  "tag.mob_effect.brewinandchewin.low_priority.hot_cocoa": "Low Priority for Hot Cocoa",
+  "farmersdelight.tooltip.cooking_pot.empty":"一个专门用来酿酒的酒桶"
 }

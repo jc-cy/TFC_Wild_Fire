@@ -1709,18 +1709,11 @@
 				xp: 25
 			}]
 			subtitle: "没有想象的那么糟糕"
-			tasks: [
-				{
-					id: "6C0F10F03D46825C"
-					item: "farmersdelight:organic_compost"
-					type: "item"
-				}
-				{
-					id: "7A409785418CCB9C"
-					item: "farmersdelight:rich_soil"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7A409785418CCB9C"
+				item: "farmersdelight:rich_soil"
+				type: "item"
+			}]
 			x: -14.5d
 			y: -4.0d
 		}
@@ -3388,29 +3381,6 @@
 			title: "制皮术"
 			x: -13.5d
 			y: 1.0d
-		}
-		{
-			dependencies: ["1EE460638F892AB5"]
-			id: "50255A3D0E3C4394"
-			invisible: true
-			rewards: [{
-				id: "6E656103123A2EB7"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "4C5CD40B4D7B389B"
-				item: {
-					Count: 1
-					id: "vc_gliders:paraglider_wood"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -12.0d
-			y: 2.5d
 		}
 		{
 			dependencies: ["0D6D7D4274FAB7AF"]

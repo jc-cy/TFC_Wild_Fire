@@ -9,13 +9,16 @@
     },
     "perspectives": {
         "gui": {
-            "parent": "wildfire:item/beer_oat_item"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "kubejs:item/food/beer_oat"
+  }
         },
         "ground": {
             "parent": "kubejs:block/coaster_oat_beer"
         },
         "fixed": {
-            "parent": "wildfire:item/beer_oat_item"
+            "parent": "kubejs:block/coaster_oat_beer"
         }
     }
 }

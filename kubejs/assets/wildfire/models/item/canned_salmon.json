@@ -1,0 +1,24 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "textures": {
+        "particle": "kubejs:item/food/canned_salmon"
+    },
+    "base": {
+        "parent": "wildfire:item_model/canned_salmon"
+    },
+    "perspectives": {
+        "gui": {
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "kubejs:item/food/canned_salmon"
+  }
+        },
+        "ground": {
+            "parent": "wildfire:item_model/canned_salmon"
+        },
+        "fixed": {
+            "parent": "wildfire:item_model/canned_salmon"
+        }
+    }
+}

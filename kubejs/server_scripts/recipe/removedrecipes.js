@@ -1385,7 +1385,6 @@ ServerEvents.recipes(e => {
 
   e.remove({ id: 'brewery:brewing/dark_brew' })
   e.remove({ id: 'brewery:brewing/whiskey_hadarilabel' })
-  e.remove({ id: 'bakery:jam_roll' })
   e.remove({ id: 'farm_and_charm:stove/improved_bread' })
   e.remove({ id: 'farm_and_charm:mincer/minced_beef' })
   e.remove({ id: 'farm_and_charm:drying/fertilizer_from_rotten_flesh' })

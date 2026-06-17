@@ -3,16 +3,7 @@
 	default_quest_shape: ""
 	filename: "5107160B56AEDD15"
 	group: "257B93C8F82BA053"
-	icon: {
-		Count: 1
-		ForgeCaps: {
-			"tfc:item_heat": {
-				heat: 0.0f
-				ticks: 0L
-			}
-		}
-		id: "design_decor:gear_sign"
-	}
+	icon: "createdeco:decal_creeper"
 	id: "5107160B56AEDD15"
 	order_index: 1
 	quest_links: [ ]

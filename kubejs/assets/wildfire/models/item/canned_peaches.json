@@ -1,0 +1,24 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "textures": {
+        "particle": "kubejs:item/food/canned_peaches"
+    },
+    "base": {
+        "parent": "wildfire:item_model/canned_peaches"
+    },
+    "perspectives": {
+        "gui": {
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "kubejs:item/food/canned_peaches"
+  }
+        },
+        "ground": {
+            "parent": "wildfire:item_model/canned_peaches"
+        },
+        "fixed": {
+            "parent": "wildfire:item_model/canned_peaches"
+        }
+    }
+}

@@ -1686,40 +1686,6 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["22D0B839C9E27B02"]
-			description: [
-				"&l你现在可以通过用屠刀击杀普通掠夺者获得他们的尸体&r"
-				""
-				"首先用剥皮刀去除他们身上穿的装备，再通过正常&e屠宰&r流程&e肢解&r他们，最后获得他们的头之后，用剥皮刀把脸皮扒下来，这样你就获得了一整套掠夺者伪装装备了，"
-				""
-				"虽然非常残忍，但是穿着该装备可以使掠夺者无法&l察觉&r你的存在,也不会视你为你敌人，毕竟他们也无法认出来面前的人是&7&m&o一个套着人皮的狼&r&r&r"
-			]
-			hide_until_deps_complete: true
-			icon: {
-				Count: 1
-				id: "butcher:pillagerdisguise_helmet"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "4707B36EA81D518A"
-			rewards: [{
-				id: "6A4C4E6ED2E513A6"
-				type: "xp"
-				xp: 25
-			}]
-			subtitle: "放心……他们无法认出你"
-			tasks: [{
-				advancement: "butcher:pillagersdisguise"
-				criterion: ""
-				id: "6E5DED0931490157"
-				type: "advancement"
-			}]
-			title: "&e“皮 肤”"
-			x: -2.0d
-			y: -1.0d
-		}
-		{
 			dependencies: ["05E29E0D8A02857D"]
 			description: [
 				"&o双翼机是你可以获取到的最快速的空中交通工具&r"
@@ -1903,7 +1869,7 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(butcher:animalfat)item(artisanal:bear_fat)item(artisanal:suet)item(artisanal:pork_fat)item(artisanal:poultry_fat)item(tfc:blubber))"
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(artisanal:fats)"
 					}
 				}
 				title: "任意脂肪"

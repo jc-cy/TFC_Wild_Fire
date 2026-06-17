@@ -3,16 +3,7 @@
 	default_quest_shape: ""
 	filename: "40A81BF428404B5A"
 	group: "257B93C8F82BA053"
-	icon: {
-		Count: 1
-		ForgeCaps: {
-			"tfc:item_heat": {
-				heat: 0.0f
-				ticks: 0L
-			}
-		}
-		id: "design_decor:capitalism_warning_sign"
-	}
+	icon: "createdeco:decal_flow"
 	id: "40A81BF428404B5A"
 	order_index: 2
 	quest_links: [ ]

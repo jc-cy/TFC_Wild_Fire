@@ -1,0 +1,7 @@
+{
+	"parent": "artisanal:item_model/coaster_sealed_tin_can",
+	"textures": {
+		"1": "wildfire:item/item_model/canned_tomatoes",
+		"particle": "wildfire:item/item_model/canned_tomatoes"
+	}
+}

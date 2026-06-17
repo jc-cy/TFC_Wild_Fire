@@ -4,16 +4,7 @@
 	default_quest_shape: ""
 	filename: "1"
 	group: "257B93C8F82BA053"
-	icon: {
-		Count: 1
-		ForgeCaps: {
-			"tfc:item_heat": {
-				heat: 0.0f
-				ticks: 0L
-			}
-		}
-		id: "design_decor:warning_sign"
-	}
+	icon: "createdeco:decal_warning"
 	id: "21A6B461EC9F0A5B"
 	images: [{
 		click: "#606E9CE3B7411694"

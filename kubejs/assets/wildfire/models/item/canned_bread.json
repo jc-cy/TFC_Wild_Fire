@@ -1,0 +1,24 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "textures": {
+        "particle": "kubejs:item/food/canned_bread"
+    },
+    "base": {
+        "parent": "wildfire:item_model/canned_bread"
+    },
+    "perspectives": {
+        "gui": {
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "kubejs:item/food/canned_bread"
+  }
+        },
+        "ground": {
+            "parent": "wildfire:item_model/canned_bread"
+        },
+        "fixed": {
+            "parent": "wildfire:item_model/canned_bread"
+        }
+    }
+}

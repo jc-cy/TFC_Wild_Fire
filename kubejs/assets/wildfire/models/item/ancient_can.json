@@ -1,0 +1,24 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "textures": {
+        "particle": "kubejs:item/food/ancient_can"
+    },
+    "base": {
+        "parent": "wildfire:item_model/ancient_can"
+    },
+    "perspectives": {
+        "gui": {
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "kubejs:item/food/ancient_can"
+  }
+        },
+        "ground": {
+            "parent": "wildfire:item_model/ancient_can"
+        },
+        "fixed": {
+            "parent": "wildfire:item_model/ancient_can"
+        }
+    }
+}

@@ -9,13 +9,16 @@
     },
     "perspectives": {
         "gui": {
-            "parent": "wildfire:item/beer_hops_item"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "kubejs:item/food/beer_hops"
+  }
         },
         "ground": {
             "parent": "kubejs:block/coaster_hops_beer"
         },
         "fixed": {
-            "parent": "wildfire:item/beer_hops_item"
+            "parent": "kubejs:block/coaster_hops_beer"
         }
     }
 }

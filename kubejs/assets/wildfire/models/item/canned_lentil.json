@@ -1,0 +1,24 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "textures": {
+        "particle": "kubejs:item/food/canned_lentil"
+    },
+    "base": {
+        "parent": "wildfire:item_model/canned_lentil"
+    },
+    "perspectives": {
+        "gui": {
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "kubejs:item/food/canned_lentil"
+  }
+        },
+        "ground": {
+            "parent": "wildfire:item_model/canned_lentil"
+        },
+        "fixed": {
+            "parent": "wildfire:item_model/canned_lentil"
+        }
+    }
+}

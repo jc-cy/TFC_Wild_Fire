@@ -9,7 +9,10 @@
     },
     "perspectives": {
         "gui": {
-            "parent": "wildfire:item/baked_green_apple_item"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "kubejs:item/food/baked_green_apple"
+  }
         },
         "ground": {
             "parent": "kubejs:block/coaster_baked_green_apple"
