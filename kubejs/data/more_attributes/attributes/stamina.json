@@ -6,7 +6,7 @@
       "attribute": "generic.armor_toughness",
       "mod": "minecraft",
       "type": "base",
-      "value": 0.02
+      "value": 0.01
     },
     {
       "attribute": "hunger_consumption",

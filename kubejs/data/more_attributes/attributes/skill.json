@@ -18,7 +18,7 @@
       "attribute": "generic.attack_speed",
       "mod": "minecraft",
       "type": "base",
-      "value": 0.02
+      "value": 0.01
     }
   ],
   "baseLevel": 10

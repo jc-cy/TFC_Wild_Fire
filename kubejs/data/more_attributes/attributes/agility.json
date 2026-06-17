@@ -6,7 +6,7 @@
       "attribute": "generic.movement_speed",
       "mod": "minecraft",
       "type": "base",
-      "value": 0.05
+      "value": 0.02
     },
     {
       "attribute": "jump_force",

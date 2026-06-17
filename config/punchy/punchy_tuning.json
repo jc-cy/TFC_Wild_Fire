@@ -1,4 +1,11 @@
 {
+  "item": {},
+  "armMesh": {},
+  "chestProxy": {},
+  "fluidProxy": {},
+  "enchantParticleProxy": {},
+  "paddleProxy": {},
+  "fishingLineProxy": {},
   "itemSpecific": {
     "tfc:food/maize": {
       "transforms": {

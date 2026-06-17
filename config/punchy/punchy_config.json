@@ -33,7 +33,7 @@
   "enableBurn": true,
   "enableParticles": false,
   "firstPersonModelHideEnabled": false,
-  "firstPersonModelHidePitch": 74.0,
+  "firstPersonModelHidePitch": 75.0,
   "itemBlacklist": [
     "scguns",
     "ktfcc:cold_cut_ham_slices",

@@ -12,7 +12,7 @@
       "attribute": "equip_load_max",
       "mod": "more_attributes",
       "type": "addition",
-      "value": 100
+      "value": 85
     }
   ],
   "baseLevel": 10

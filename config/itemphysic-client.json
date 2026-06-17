@@ -4,10 +4,10 @@
     "vanillaRendering": false,
     "rotateSpeed": 1.0,
     "showPickupTooltip": true,
-    "showPickupTooltipOnlyOnGround": false,
-    "showPickupTooltipExtended": false,
-    "showPickupTooltipKeybind": false,
-    "disableThrowHUD": false,
+    "showPickupTooltipOnlyOnGround": true,
+    "showPickupTooltipExtended": true,
+    "showPickupTooltipKeybind": true,
+    "disableThrowHUD": true,
     "vanillaRendered": {
       "entries": [],
       "isWhitelist": true

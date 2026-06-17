@@ -6,7 +6,7 @@
       "attribute": "generic.max_health",
       "mod": "minecraft",
       "type": "addition",
-      "value": 0.5
+      "value": 0.25
     },
     {
       "attribute": "max_mana",
