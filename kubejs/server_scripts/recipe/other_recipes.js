@@ -875,14 +875,14 @@ ServerEvents.recipes(event => {
       .inputs(Item.of(`wildfire:pumpkin_rough_dough`), Fluid.of('firmalife:yeast_starter', 5))
       .id(`tfc:barrel_instant/food/yeast_dough/pumpkin_dough`);
   event.recipes.tfc.barrel_sealed(5000)
-      .inputItem(TFC.ingredient.notRotten(`wildfire:pumpkin_rough_dough`))
-      .outputItem(`wildfire:pumpkin_yeast_dough`)
+      .inputItem(TFC.ingredient.notRotten(`wildfire:pumpkin_yeast_dough`))
+      .outputItem(`wildfire:pumpkin_dough`)
       .id(`tfc:barrel_sealed/food/pumpkin_dough`);
-create.mixing(`3x wildfire:pumpkin_rough_dough`, [`#tfc:foods/flour`, `tfc:food/pumpkin_chunks`, Fluid.of('minecraft:water', 100)])
+  create.mixing(`3x wildfire:pumpkin_rough_dough`, [`#tfc:foods/flour`, `tfc:food/pumpkin_chunks`, Fluid.of('minecraft:water', 100)])
       .id(`create:mixing/food/dough/pumpkin_dough`)
-create.mixing(`3x wildfire:pumpkin_yeast_dough`, [`#tfc:foods/flour`, `tfc:food/pumpkin_chunks`, Fluid.of('minecraft:water', 100), Fluid.of('firmalife:yeast_starter', 15)])
+  create.mixing(`3x wildfire:pumpkin_yeast_dough`, [`#tfc:foods/flour`, `tfc:food/pumpkin_chunks`, Fluid.of('minecraft:water', 100), Fluid.of('firmalife:yeast_starter', 15)])
       .id(`create:mixing/food/yeast_dough/pumpkin_dough`)
-create.filling(`wildfire:pumpkin_yeast_dough`, [`wildfire:pumpkin_rough_dough`, Fluid.of('firmalife:yeast_starter', 5)])
+  create.filling(`wildfire:pumpkin_yeast_dough`, [`wildfire:pumpkin_rough_dough`, Fluid.of('firmalife:yeast_starter', 5)])
       .id(`create:filling/food/yeast_dough/pumpkin_dough`)
   event.custom({
       "type": "createdieselgenerators:basin_fermenting",
