@@ -173,12 +173,6 @@
         "minCount": 1,
         "maxCount": 1
       },
-      {
-        "type": "alexsmobs:crocodile",
-        "weight":10,
-        "minCount": 1,
-        "maxCount": 1
-      },
       
       {
         "type": "alexsmobs:tiger",

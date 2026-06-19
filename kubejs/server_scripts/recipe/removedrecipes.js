@@ -12,6 +12,17 @@ ServerEvents.recipes(e => {
  e.replaceInput({}, "create:shaft",'#kubejs:shaft')
  
   const iddd = [
+'immersive_aircraft_cruise:cruise_module',
+
+    'liquidfuels:large_fuel_tank_from_tfc_red_steel',
+    'liquidfuels:large_fuel_tank_from_tfc_blue_steel',
+'liquidfuels:fuel_tank_from_tfc_blue_steel',
+
+'liquidfuels:fuel_tank_from_tfc_red_steel',
+
+
+    'liquidfuels:small_fuel_tank_from_tfc_red_steel',
+    'liquidfuels:small_fuel_tank_from_tfc_blue_steel',
     'firmalife:crafting/vat',
 'tfc:alloy/weak_red_steel',
     'tfc_ie_addon:arc_furnace/alloy_weak_red_steel',

@@ -21,6 +21,44 @@ event.custom(
 )
 */
 ServerEvents.recipes(event => {
+    event.custom(//超频巡航
+        {
+            "type": "siegemachines:siege_workbench",
+            "pattern": [
+                " a ",
+                "bcb",
+                "ded"
+            ],
+            "key": {
+              
+                "a": {
+                    "item": "immersive_aircraft:gyroscope",
+                    "count": 1
+                },
+                "b": {
+                    "item": "immersiveengineering:component_electronic_adv",
+                    "count": 1
+                },
+                "c": {
+                    "item": "immersive_aircraft:eco_engine",
+                    "count": 1
+                },
+                "d": {
+                    "item": "immersive_aircraft:sturdy_pipes",
+                    "count": 3
+                },
+                "e": {
+                    "item": "immersive_aircraft:nether_engine",
+                    "count": 1
+                }
+
+            },
+            "result": {
+                "item": "immersive_aircraft_cruise:cruise_module",
+                "count": 1
+            }
+        }
+    )
  event.custom(//红石工程块
         {
             "type": "siegemachines:siege_workbench",

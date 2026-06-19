@@ -9,11 +9,11 @@ TFCEvents.data(event => {
 
     // 其他水生生物
     // 鲶鱼：150-500mm降雨，>5°C，1-3只（整合1-2只与1-3只范围）
-    event.fauna(climate => {
-        climate.minRain(150);
-        climate.maxRain(500);
-        climate.minTemp(5);
-    }, fauna => { }, 'alexsmobs:catfish');
+    // event.fauna(climate => {
+    //     climate.minRain(150);
+    //     climate.maxRain(500);
+    //     climate.minTemp(5);
+    // }, fauna => { }, 'alexsmobs:catfish');
 
     // 鳄鱼：150-500mm降雨，>5°C，1-3只（整合1-2只与1-3只范围）
     event.fauna(climate => {

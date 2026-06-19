@@ -11,9 +11,7 @@ TFCEvents.registerFaunas(event => {
     // 骷髅剑鱼（水中）→ 海洋表面
     event.replace('alexsmobs:skelewag', 'in_water', 'world_surface');
     // 鲶鱼（水中）→ 世界表面（河流/湖泊水面下用 world_surface）
-    event.replace('alexsmobs:catfish', 'in_water', 'world_surface_wg');
-    // 鳄鱼（水中）→ 世界表面（河流/湖泊水面下用 world_surface）
-    event.replace('alexsmobs:crocodile', 'on_ground', 'world_surface_wg');
+    // event.replace('alexsmobs:crocodile', 'in_water', 'world_surface_wg');
     // 水龟（水中）→ 世界表面（河岸浅水区）
     event.replace('alexsmobs:terrapin', 'in_water', 'world_surface');
     // 鲈鱼（水中）→ 世界表面（湖泊/河流）
