@@ -282,6 +282,12 @@ PlayerEvents.tick(e => {
         const endCurrentWeight = player.getAttributeValue("more_attributes:equip_load_current")
         const endWeightRatio = Math.min(endMaxWeight > 0 ? endCurrentWeight / endMaxWeight : 0, 3)
         const currentPos = { x: player.getX(), y: player.getY(), z: player.getZ() }//当前位置
+        const hasLastMovePos = player.persistentData.getInt('movement_last_pos_ready') === 1
+        const lastPos = hasLastMovePos ? {
+            x: player.persistentData.getDouble('movement_last_x'),
+            y: player.persistentData.getDouble('movement_last_y'),
+            z: player.persistentData.getDouble('movement_last_z')
+        } : null
         //const speedRounded = Math.round(speed * 100) / 100//限制小数
 
         const wasOnGround = player.persistentData.getInt('agility_last_on_ground') === 1
@@ -311,13 +317,15 @@ PlayerEvents.tick(e => {
         if (!player.isPassenger() && endWeightRatio > 1 && endSpeed > 0 && lastPos && !player.isFallFlying()) {
 
             const distance = Math.sqrt(Math.pow((currentPos.x - lastPos.x), 2) + Math.pow((currentPos.z - lastPos.z), 2))//水平移动距离
-            let endExpGain = distance * 5 * endWeightRatio
-            let endCurrentExp = getExp(player, 'endurance_exp')
-            endCurrentExp += endExpGain
-            setExp(player, 'endurance_exp', endCurrentExp)
-            addBufferedExpGain(player, "endurance", endExpGain)
-            tryLevelUp(player, "endurance", 'endurance_exp', enduranceUpExp)
-             //console.log("体力走路", endCurrentExp)
+            if (distance <= 10) {
+                let endExpGain = distance * 5 * endWeightRatio
+                let endCurrentExp = getExp(player, 'endurance_exp')
+                endCurrentExp += endExpGain
+                setExp(player, 'endurance_exp', endCurrentExp)
+                addBufferedExpGain(player, "endurance", endExpGain)
+                tryLevelUp(player, "endurance", 'endurance_exp', enduranceUpExp)
+                 //console.log("体力走路", endCurrentExp)
+            }
 
         }
 
@@ -325,21 +333,26 @@ PlayerEvents.tick(e => {
         if (!player.isPassenger() && player.age >= ignoreMoveAgilityUntil && endWeightRatio < 2 && endSpeed > 0 && lastPos && !player.isFallFlying()) {
 
             const distance = Math.sqrt(Math.pow((currentPos.x - lastPos.x), 2) + Math.pow((currentPos.z - lastPos.z), 2))//水平移动距离
-            let endExpGain = distance * Math.max(1 - endWeightRatio / 2, 0) / 4
-    
-            let endCurrentExp = getExp(player, 'agility_exp')
-            endCurrentExp += endExpGain
-            setExp(player, 'agility_exp', endCurrentExp)
-            addBufferedExpGain(player, "agility", endExpGain)
-            tryLevelUp(player, "agility", 'agility_exp', agilityUpExp)
-            //console.log("敏捷移动", endCurrentExp)
+            if (distance <= 10) {
+                let endExpGain = distance * Math.max(1 - endWeightRatio / 2, 0) / 4
+        
+                let endCurrentExp = getExp(player, 'agility_exp')
+                endCurrentExp += endExpGain
+                setExp(player, 'agility_exp', endCurrentExp)
+                addBufferedExpGain(player, "agility", endExpGain)
+                tryLevelUp(player, "agility", 'agility_exp', agilityUpExp)
+                //console.log("敏捷移动", endCurrentExp)
+            }
 
         }
 
 
 
 
-        lastPos = currentPos
+        player.persistentData.putInt('movement_last_pos_ready', 1)
+        player.persistentData.putDouble('movement_last_x', currentPos.x)
+        player.persistentData.putDouble('movement_last_y', currentPos.y)
+        player.persistentData.putDouble('movement_last_z', currentPos.z)
         player.persistentData.putInt('agility_last_on_ground', isOnGround ? 1 : 0)
         player.persistentData.putDouble('agility_last_y', currentPos.y)
         // 饥饿消耗经验
