@@ -16,8 +16,15 @@ function setExp(player, key, val) {
     player.persistentData.putDouble(key, (val !== val) ? 0 : val)
 }
 
-const defaultShowExpGainMessages = true
+function canGainAttributeExp(player) {
+    return player && player.isPlayer && player.isPlayer() && !player.isCreative() && !player.isSpectator()
+}
+
+const showExpGainMessages = true
 const expGainFlushTicks = 100
+const maxAttributeLevel = 50
+const dailyCraftSkillExpLimit = 200
+const dailyMiningStrengthExpLimit = 500
 
 // ---- 升级公式 ----
 // MoreAttributes.getLevel(player, attrName) — 获取属性等级
@@ -59,15 +66,49 @@ function roundExp(val) {
     return Math.round(val * 100) / 100
 }
 
-function isExpGainMessageEnabled(player) {
-    if (!player || !player.persistentData) return defaultShowExpGainMessages
-    if (player.persistentData.getInt('exp_gain_message_set') !== 1) return defaultShowExpGainMessages
-    return player.persistentData.getInt('exp_gain_message_enabled') === 1
+function limitSingleExpGain(expGain) {
+    if (expGain !== expGain || expGain === undefined || expGain === null) return 0
+    return expGain > 500 ? 0 : expGain
 }
 
-function setExpGainMessageEnabled(player, enabled) {
-    player.persistentData.putInt('exp_gain_message_set', 1)
-    player.persistentData.putInt('exp_gain_message_enabled', enabled ? 1 : 0)
+function getWorldDay(player) {
+    const time = player.level && player.level.time !== undefined ? player.level.time : player.age
+    return Math.floor(time / 24000)
+}
+
+function limitDailyCraftSkillExp(player, expGain) {
+    if (expGain <= 0) return 0
+    const day = getWorldDay(player)
+    const dayKey = 'skill_craft_exp_day'
+    const amountKey = 'skill_craft_exp_day_amount'
+    const savedDay = player.persistentData.getInt(dayKey)
+    let gainedToday = player.persistentData.getDouble(amountKey)
+    if (savedDay !== day) {
+        player.persistentData.putInt(dayKey, day)
+        gainedToday = 0
+    }
+    const remaining = Math.max(0, dailyCraftSkillExpLimit - ((gainedToday !== gainedToday) ? 0 : gainedToday))
+    const limitedGain = Math.min(expGain, remaining)
+    player.persistentData.putDouble(amountKey, ((gainedToday !== gainedToday) ? 0 : gainedToday) + limitedGain)
+    return limitedGain
+}
+
+function limitDailyMiningStrengthExp(player, expGain) {
+    if (expGain <= 0) return 0
+    const day = getWorldDay(player)
+    const dayKey = 'strength_mining_exp_day'
+    const amountKey = 'strength_mining_exp_day_amount'
+    const savedDay = player.persistentData.getInt(dayKey)
+    let gainedToday = player.persistentData.getDouble(amountKey)
+    if (savedDay !== day) {
+        player.persistentData.putInt(dayKey, day)
+        gainedToday = 0
+    }
+    const safeGainedToday = (gainedToday !== gainedToday) ? 0 : gainedToday
+    const remaining = Math.max(0, dailyMiningStrengthExpLimit - safeGainedToday)
+    const limitedGain = Math.min(expGain, remaining)
+    player.persistentData.putDouble(amountKey, safeGainedToday + limitedGain)
+    return limitedGain
 }
 
 function getDamageAmount(event) {
@@ -78,7 +119,7 @@ function getDamageAmount(event) {
 }
 
 function notifyExpGain(player, attrName, expGain, currentExp) {
-    if (!isExpGainMessageEnabled(player) || expGain <= 0) return
+    if (!showExpGainMessages || expGain <= 0) return
     const name = attrNames[attrName] || attrName
     const upExpFn = upExpFns[attrName]
     const currentLevel = MoreAttributes.getLevel(player, attrName) || 10
@@ -95,7 +136,7 @@ function getExpNotifyTick(player) {
 }
 
 function addBufferedExpGain(player, attrName, expGain) {
-    if (!isExpGainMessageEnabled(player) || expGain <= 0) return
+    if (!showExpGainMessages || expGain <= 0) return
     const amountKey = `${attrName}_exp_gain_buffer`
     const tickKey = `${attrName}_exp_gain_last_flush`
     const buffered = player.persistentData.getDouble(amountKey)
@@ -115,34 +156,18 @@ function addBufferedExpGain(player, attrName, expGain) {
     player.persistentData.putInt(tickKey, currentTick)
 }
 
-ServerEvents.commandRegistry(event => {
-    const { commands: Commands } = event
-    event.register(
-        Commands.literal('expmsg')
-            .requires(source => source.player)
-            .executes(ctx => {
-                const player = ctx.source.player
-                const enabled = !isExpGainMessageEnabled(player)
-                setExpGainMessageEnabled(player, enabled)
-                player.tell(`经验获取提示已${enabled ? '开启' : '关闭'}`)
-                return 1
-            })
-    )
-})
-
 // 通用升级检查
 function tryLevelUp(player, attrName, expKey, upExpFn) {
     let currentExp = getExp(player, expKey)
     let currentLevel = MoreAttributes.getLevel(player, attrName) || 10
-    let safety = 0
-    while (currentExp >= upExpFn(currentLevel) && safety < 100) {
-        const upExp = upExpFn(currentLevel)
+    if (currentLevel >= maxAttributeLevel) {
+        setExp(player, expKey, Math.min(currentExp, upExpFn(maxAttributeLevel)))
+        return
+    }
+    if (currentExp >= upExpFn(currentLevel)) {
         MoreAttributes.upgrade(player, attrName, 1)
-        currentExp -= upExp
-        setExp(player, expKey, currentExp)
+        setExp(player, expKey, 0)
         notifyLevelUp(player, attrName, currentLevel, currentLevel + 1)
-        currentLevel++
-        safety++
     }
 }
 
@@ -170,6 +195,7 @@ function getWeightRatio(player) {
 EntityEvents.hurt(e => {
     const { entity, source } = e
     if (!source || !source.player) return
+    if (!canGainAttributeExp(source.player)) return
 
     // ---- 力量：玩家攻击造成伤害 ----
     // 经验值 = 伤害值 × 3
@@ -177,6 +203,7 @@ EntityEvents.hurt(e => {
         const strDamage = getDamageAmount(e)
         if (strDamage > 0) {
             let strExpGain = strDamage * 3
+            strExpGain = limitSingleExpGain(strExpGain)
             let strCurrentExp = getExp(source.player, 'strength_exp')
             strCurrentExp += strExpGain
             setExp(source.player, 'strength_exp', strCurrentExp)
@@ -195,12 +222,15 @@ EntityEvents.hurt(e => {
 BlockEvents.broken(e => {
     const player = e.entity
     if (!player || !player.isPlayer()) return
+    if (!canGainAttributeExp(player)) return
     const block = e.block
     const hardness = block.blockState.getDestroySpeed(block.level, block.pos)
     // NaN检查：destroySpeed可能返回NaN
     const safeHardness = (hardness !== hardness) ? 0 : hardness
     if (safeHardness < 0) return
-    let expGain = safeHardness > 0 ? Math.min(safeHardness * 2, 30) / 3 : 1 / 3
+    let expGain = safeHardness > 0 ? Math.min(safeHardness * 2, 30) / 4 : 1 / 4
+    expGain = limitSingleExpGain(expGain)
+    expGain = limitDailyMiningStrengthExp(player, expGain)
     let currentExp = getExp(player, 'strength_exp')
     currentExp += expGain
     setExp(player, 'strength_exp', currentExp)
@@ -220,6 +250,7 @@ EntityEvents.hurt(e => {
     const { entity, source } = e
     // 只处理玩家
     if (!entity.isPlayer()) return
+    if (!canGainAttributeExp(entity)) return
     // 排除自己造成的伤害
     if (source && source.player) {
         if (entity.uuid.toString() === source.player.uuid.toString()) return
@@ -234,6 +265,7 @@ EntityEvents.hurt(e => {
     if (nowTick < nextHurtExpTick) return
     // 每点伤害获得 0.5 经验，单次最多 25
     let staExpGain = Math.min(staDamage * 0.5, 25)
+    staExpGain = limitSingleExpGain(staExpGain)
     let staCurrentExp = getExp(entity, 'stamina_exp')
     staCurrentExp += staExpGain
 
@@ -267,6 +299,7 @@ PlayerEvents.loggedIn(e => {
 ItemEvents.crafted(e => {
     const player = e.player || e.entity
     if (!player || !player.isPlayer()) return
+    if (!canGainAttributeExp(player)) return
 
     // 合成产物，优先用 e.item
     const result = e.item
@@ -280,6 +313,8 @@ ItemEvents.crafted(e => {
     if (id.includes('tfc:')) {
         expGain *= 3
     }
+    expGain = limitSingleExpGain(expGain)
+    expGain = limitDailyCraftSkillExp(player, expGain)
 
     let currentExp = getExp(player, 'skill_exp')
     currentExp += expGain
@@ -297,6 +332,7 @@ ItemEvents.crafted(e => {
 //   player.age — 玩家已存在的tick数
 PlayerEvents.tick(e => {
     const { player } = e
+    if (!canGainAttributeExp(player)) return
 
     // ---- 体力：行走 + 饥饿消耗 ----
     // 行走：每秒根据速度获得体力经验
@@ -329,7 +365,7 @@ PlayerEvents.tick(e => {
                     penalty = Math.max(0, 1 - overPercent * 0.1)
                 }
                 if (penalty > 0) {
-                    const expGain = 1.5 * penalty / 4
+                    const expGain = limitSingleExpGain(1.5 * penalty / 4)
                     let currentExp = getExp(player, 'agility_exp')
                     currentExp += expGain
                     setExp(player, 'agility_exp', currentExp)
@@ -345,6 +381,7 @@ PlayerEvents.tick(e => {
             const distance = Math.sqrt(Math.pow((currentPos.x - lastPos.x), 2) + Math.pow((currentPos.z - lastPos.z), 2))//水平移动距离
             if (distance <= 10) {
                 let endExpGain = distance * 5 * endWeightRatio
+                endExpGain = limitSingleExpGain(endExpGain)
                 let endCurrentExp = getExp(player, 'endurance_exp')
                 endCurrentExp += endExpGain
                 setExp(player, 'endurance_exp', endCurrentExp)
@@ -361,6 +398,7 @@ PlayerEvents.tick(e => {
             const distance = Math.sqrt(Math.pow((currentPos.x - lastPos.x), 2) + Math.pow((currentPos.z - lastPos.z), 2))//水平移动距离
             if (distance <= 10) {
                 let endExpGain = distance * Math.max(1 - endWeightRatio / 2, 0) / 4
+                endExpGain = limitSingleExpGain(endExpGain)
         
                 let endCurrentExp = getExp(player, 'agility_exp')
                 endCurrentExp += endExpGain
@@ -386,7 +424,7 @@ PlayerEvents.tick(e => {
         const currentFood = player.foodLevel
 
         if (lastFood > 0 && currentFood < lastFood) {
-            const foodConsumed = lastFood - currentFood
+            const foodConsumed = limitSingleExpGain(lastFood - currentFood)
 
             let enduranceExp = getExp(player, 'endurance_exp')
             enduranceExp += foodConsumed
@@ -413,6 +451,7 @@ PlayerEvents.tick(e => {
 
         if (hpHealed >= 0.1) {
             let hpExpGain = Math.max(1, Math.round(hpHealed * 2))
+            hpExpGain = limitSingleExpGain(hpExpGain)
 
             let hpCurrentExp = getExp(player, 'health_exp')
             hpCurrentExp += hpExpGain
@@ -444,6 +483,7 @@ PlayerEvents.tick(e => {
 // 经验值 = (饱食值 + 平均营养值) × 最大生命值 / 10
 ItemEvents.foodEaten(e => {
     const { player, item } = e
+    if (!canGainAttributeExp(player)) return
     const $FoodCapability = Java.loadClass('net.dries007.tfc.common.capabilities.food.FoodCapability')
     const $Nutrient = Java.loadClass('net.dries007.tfc.common.capabilities.food.Nutrient')
     let foodData
@@ -456,6 +496,7 @@ ItemEvents.foodEaten(e => {
     let foodProperties = item.getItem().foodProperties
     let saturation = Math.round(foodProperties.getSaturationModifier() * foodProperties.nutrition * 2 * 10) / 10
     let expGain = (saturation + avgNutrition) * player.getMaxHealth() / 10
+    expGain = limitSingleExpGain(expGain)
     let currentExp = getExp(player, 'health_exp')
     currentExp += expGain
     setExp(player, 'health_exp', currentExp)
@@ -492,6 +533,7 @@ EntityEvents.hurt(e => {
     const player = source.player || source.entity || source.actual
 
     if (!player || !player.isPlayer()) return
+    if (!canGainAttributeExp(player)) return
 
     // 防止自己打自己刷经验
     if (
