@@ -1,6 +1,39 @@
 ServerEvents.recipes(event => {
 
     const id_in = "kubejs:recipe/shaped/"
+ event.shaped("tfcelectriccooking:electric_oven", ['abb', 'cdc','cec'], {
+        a: "immersiveengineering:logic_circuit",
+        b: '#minecraft:buttons',
+        c:"firmalife:metal/sheet/stainless_steel",
+        d:"moreburners:copper_coil",
+        e:"firmalife:reinforced_glass"
+    })//电烤箱
+ event.shaped("tfcelectriccooking:electric_soup_pot", [' a ', 'fcb','ded'], {
+        a: "kaleidoscope_cookery:stockpot_lid",
+        b: '#minecraft:buttons',
+        c:"kaleidoscope_cookery:stockpot",
+        d:"firmalife:metal/sheet/stainless_steel",
+        e:"moreburners:copper_coil",
+        f:"immersiveengineering:logic_circuit"
+    })//电压锅
+
+  
+    event.shaped("liquidfuels:small_fuel_tank", ['ab', ' c'], {
+        a: "createmetallurgy:faucet",
+        b: "tfc:metal/sheet/wrought_iron",
+        c:"tfc:wooden_bucket"
+    })//小油桶
+  event.shaped("liquidfuels:fuel_tank", ['ab', ' c'], {
+        a: "createmetallurgy:faucet",
+        b: "tfc:metal/sheet/steel",
+        c:"create:fluid_tank"
+    })//中油桶
+
+  event.shaped("liquidfuels:large_fuel_tank", ['ab', ' c'], {
+        a: "createmetallurgy:faucet",
+        b: "firmalife:metal/sheet/stainless_steel",
+        c:"createdieselgenerators:oil_barrel"
+    })//大油桶
 
 
     event.shaped("2x kubejs:gear_blank/cogwheel/warped", [' a ', 'aba', ' a '], {

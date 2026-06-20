@@ -1,4 +1,4 @@
-// ============================================
+﻿// ============================================
 // 七属性经验系统 — gain_exp.js
 // 属性：力量(strength)、技艺(skill)、体力(endurance)
 //       生命(health)、集中(focus)、敏捷(agility)、耐力(stamina)
@@ -24,7 +24,7 @@ const expGainFlushTicks = 100
 // MoreAttributes.upgrade(player, attrName, amount) — 提升属性等级
 function strengthUpExp(lv) { return 1.7 * lv * lv + 11 * lv + 736 }
 function skillUpExp(lv) { return 1.5 * lv * lv + 10 * lv + 730 }
-function enduranceUpExp(lv) { return 70 * lv * lv+700 }
+function enduranceUpExp(lv) { return 35 * lv * lv+700 }
 function healthUpExp(lv) { return 0.5 * lv * lv + 17 * lv + 120 }
 function focusUpExp(lv) { return 0.5 * lv * lv + 17 * lv + 715 }
 function agilityUpExp(lv) { return 1.7 * lv * lv + 11 * lv + 736 }
@@ -73,8 +73,9 @@ function notifyExpGain(player, attrName, expGain, currentExp) {
     const currentLevel = MoreAttributes.getLevel(player, attrName) || 10
     const upExp = upExpFn ? upExpFn(currentLevel) : 0
     const remaining = Math.max(0, upExp - currentExp)
-    const progressText = upExp > 0 ? `§7(当前: ${roundExp(currentExp)}/${roundExp(upExp)}, 距离升级: ${roundExp(remaining)})` : `§7(当前: ${roundExp(currentExp)})`
-    player.tell(`§a+${roundExp(expGain)} §2${name}经验 ${progressText}`)
+    const progressPercent = upExp > 0 ? roundExp(Math.min(100, Math.max(0, currentExp / upExp * 100))) : 0
+    const progressText = upExp > 0 ? `(当前: ${roundExp(currentExp)}/${roundExp(upExp)}, 距离升级: ${roundExp(remaining)})` : `(当前: ${roundExp(currentExp)})`
+    player.tell(`+${roundExp(expGain)} ${name}经验 ${progressText} [${progressPercent}%]`)
 }
 
 function getExpNotifyTick(player) {
@@ -248,7 +249,7 @@ ItemEvents.crafted(e => {
     const count = result.count || 1
     const id = String(result.id)
 
-    let expGain = count * 2
+    let expGain = count
 
     if (id.includes('tfc:')) {
         expGain *= 3
@@ -281,6 +282,12 @@ PlayerEvents.tick(e => {
         const endCurrentWeight = player.getAttributeValue("more_attributes:equip_load_current")
         const endWeightRatio = Math.min(endMaxWeight > 0 ? endCurrentWeight / endMaxWeight : 0, 3)
         const currentPos = { x: player.getX(), y: player.getY(), z: player.getZ() }//当前位置
+        const hasLastMovePos = player.persistentData.getInt('movement_last_pos_ready') === 1
+        const lastPos = hasLastMovePos ? {
+            x: player.persistentData.getDouble('movement_last_x'),
+            y: player.persistentData.getDouble('movement_last_y'),
+            z: player.persistentData.getDouble('movement_last_z')
+        } : null
         //const speedRounded = Math.round(speed * 100) / 100//限制小数
 
         const wasOnGround = player.persistentData.getInt('agility_last_on_ground') === 1
@@ -310,35 +317,42 @@ PlayerEvents.tick(e => {
         if (!player.isPassenger() && endWeightRatio > 1 && endSpeed > 0 && lastPos && !player.isFallFlying()) {
 
             const distance = Math.sqrt(Math.pow((currentPos.x - lastPos.x), 2) + Math.pow((currentPos.z - lastPos.z), 2))//水平移动距离
-            let endExpGain = distance * 5 * endWeightRatio
-            let endCurrentExp = getExp(player, 'endurance_exp')
-            endCurrentExp += endExpGain
-            setExp(player, 'endurance_exp', endCurrentExp)
-            addBufferedExpGain(player, "endurance", endExpGain)
-            tryLevelUp(player, "endurance", 'endurance_exp', enduranceUpExp)
-             //console.log("体力走路", endCurrentExp)
+            if (distance <= 10) {
+                let endExpGain = distance * 5 * endWeightRatio
+                let endCurrentExp = getExp(player, 'endurance_exp')
+                endCurrentExp += endExpGain
+                setExp(player, 'endurance_exp', endCurrentExp)
+                addBufferedExpGain(player, "endurance", endExpGain)
+                tryLevelUp(player, "endurance", 'endurance_exp', enduranceUpExp)
+                 //console.log("体力走路", endCurrentExp)
+            }
 
         }
 
         const ignoreMoveAgilityUntil = player.persistentData.getInt('agility_jump_move_ignore_until')
-        if (!player.isPassenger() && player.age >= ignoreMoveAgilityUntil && endWeightRatio < 1 && endSpeed > 0 && lastPos && !player.isFallFlying()) {
+        if (!player.isPassenger() && player.age >= ignoreMoveAgilityUntil && endWeightRatio < 2 && endSpeed > 0 && lastPos && !player.isFallFlying()) {
 
             const distance = Math.sqrt(Math.pow((currentPos.x - lastPos.x), 2) + Math.pow((currentPos.z - lastPos.z), 2))//水平移动距离
-            let endExpGain = distance * Math.max(1 - endWeightRatio, 0) / 4
-    
-            let endCurrentExp = getExp(player, 'agility_exp')
-            endCurrentExp += endExpGain
-            setExp(player, 'agility_exp', endCurrentExp)
-            addBufferedExpGain(player, "agility", endExpGain)
-            tryLevelUp(player, "agility", 'agility_exp', agilityUpExp)
-            //console.log("敏捷移动", endCurrentExp)
+            if (distance <= 10) {
+                let endExpGain = distance * Math.max(1 - endWeightRatio / 2, 0) / 4
+        
+                let endCurrentExp = getExp(player, 'agility_exp')
+                endCurrentExp += endExpGain
+                setExp(player, 'agility_exp', endCurrentExp)
+                addBufferedExpGain(player, "agility", endExpGain)
+                tryLevelUp(player, "agility", 'agility_exp', agilityUpExp)
+                //console.log("敏捷移动", endCurrentExp)
+            }
 
         }
 
 
 
 
-        lastPos = currentPos
+        player.persistentData.putInt('movement_last_pos_ready', 1)
+        player.persistentData.putDouble('movement_last_x', currentPos.x)
+        player.persistentData.putDouble('movement_last_y', currentPos.y)
+        player.persistentData.putDouble('movement_last_z', currentPos.z)
         player.persistentData.putInt('agility_last_on_ground', isOnGround ? 1 : 0)
         player.persistentData.putDouble('agility_last_y', currentPos.y)
         // 饥饿消耗经验

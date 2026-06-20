@@ -66,12 +66,6 @@
                                  ],
                      "creature":  [
                                       {
-                                          "type":  "alexsmobs:crocodile",
-                                          "weight":  20,
-                                          "minCount":  1,
-                                          "maxCount":  1
-                                      },
-                                      {
                                           "type":  "tfc:pig",
                                           "weight":  1,
                                           "minCount":  1,
