@@ -101,7 +101,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "tfc:large_raw_hide",
+          "name": "kubejs:bison_fur",
           "weight": 1,
           "functions": [
             {
@@ -139,6 +139,47 @@
     {
       "name": "bison",
       "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+        {
+          "chance": 0.25,
+          "condition": "minecraft:random_chance_with_looting",
+          "looting_multiplier": 0.1
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "kubejs:bison_horn",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:furnace_smelt",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "predicate": {
+                    "flags": {
+                      "is_on_fire": true
+                    }
+                  },
+                  "entity": "this"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bison",
+      "rolls": 1,
       "entries": [
         {
           "type": "item",
@@ -148,7 +189,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 0,
+                "min": 1,
                 "max": 3
               }
             },
@@ -156,7 +197,7 @@
               "function": "looting_enchant",
               "count": {
                 "min": 0,
-                "max": 2
+                "max": 1
               }
             },
             {

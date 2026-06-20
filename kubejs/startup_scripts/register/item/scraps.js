@@ -103,7 +103,7 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:leather_scraps')
         .texture('kubejs:item/scraps/leather_scraps'); // 碎皮
 
-    event.create('wildfire:bison_fur')
+    event.create('kubejs:bison_fur')
         .texture('kubejs:item/scraps/bison_fur'); // 野牛皮
 
 /*    event.create('wildfire:bison_haat')

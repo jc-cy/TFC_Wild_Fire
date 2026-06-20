@@ -338,6 +338,7 @@ ServerEvents.recipes(event => {
     { furid: 'caribou_fur', fur: 'caribou_fur', modid: 'textile', size: 'large' },
     { furid: 'grizzly_bear_fur', fur: 'grizzly_bear_fur', modid: 'textile', size: 'large' },
     { furid: 'black_bear_fur', fur: 'black_bear_fur', modid: 'textile', size: 'large' },
+    { furid: 'bison_fur', fur: 'bison_fur', modid: 'kubejs', size: 'large' },
     //屠宰的
 
 
