@@ -16,7 +16,7 @@ function setExp(player, key, val) {
     player.persistentData.putDouble(key, (val !== val) ? 0 : val)
 }
 
-const showExpGainMessages = true
+const defaultShowExpGainMessages = true
 const expGainFlushTicks = 100
 
 // ---- 升级公式 ----
@@ -59,6 +59,17 @@ function roundExp(val) {
     return Math.round(val * 100) / 100
 }
 
+function isExpGainMessageEnabled(player) {
+    if (!player || !player.persistentData) return defaultShowExpGainMessages
+    if (player.persistentData.getInt('exp_gain_message_set') !== 1) return defaultShowExpGainMessages
+    return player.persistentData.getInt('exp_gain_message_enabled') === 1
+}
+
+function setExpGainMessageEnabled(player, enabled) {
+    player.persistentData.putInt('exp_gain_message_set', 1)
+    player.persistentData.putInt('exp_gain_message_enabled', enabled ? 1 : 0)
+}
+
 function getDamageAmount(event) {
     let damage = event.damage
     if (damage === undefined || damage === null) damage = event.amount
@@ -67,7 +78,7 @@ function getDamageAmount(event) {
 }
 
 function notifyExpGain(player, attrName, expGain, currentExp) {
-    if (!showExpGainMessages || expGain <= 0) return
+    if (!isExpGainMessageEnabled(player) || expGain <= 0) return
     const name = attrNames[attrName] || attrName
     const upExpFn = upExpFns[attrName]
     const currentLevel = MoreAttributes.getLevel(player, attrName) || 10
@@ -84,7 +95,7 @@ function getExpNotifyTick(player) {
 }
 
 function addBufferedExpGain(player, attrName, expGain) {
-    if (!showExpGainMessages || expGain <= 0) return
+    if (!isExpGainMessageEnabled(player) || expGain <= 0) return
     const amountKey = `${attrName}_exp_gain_buffer`
     const tickKey = `${attrName}_exp_gain_last_flush`
     const buffered = player.persistentData.getDouble(amountKey)
@@ -103,6 +114,21 @@ function addBufferedExpGain(player, attrName, expGain) {
     }
     player.persistentData.putInt(tickKey, currentTick)
 }
+
+ServerEvents.commandRegistry(event => {
+    const { commands: Commands } = event
+    event.register(
+        Commands.literal('expmsg')
+            .requires(source => source.player)
+            .executes(ctx => {
+                const player = ctx.source.player
+                const enabled = !isExpGainMessageEnabled(player)
+                setExpGainMessageEnabled(player, enabled)
+                player.tell(`经验获取提示已${enabled ? '开启' : '关闭'}`)
+                return 1
+            })
+    )
+})
 
 // 通用升级检查
 function tryLevelUp(player, attrName, expKey, upExpFn) {
