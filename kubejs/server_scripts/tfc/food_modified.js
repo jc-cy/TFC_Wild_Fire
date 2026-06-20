@@ -376,7 +376,7 @@ TFCEvents.data(event => {
     f.fruit(1)
     f.decayModifier(3)
   })
-  event.foodItem('wildfire:pumpkin_bread', f => { // 南瓜粗饼
+  event.foodItem('wildfire:pumpkin_flatbread', f => { // 南瓜粗饼
     f.hunger(4)
     f.saturation(0.75)
     f.grain(0.25)

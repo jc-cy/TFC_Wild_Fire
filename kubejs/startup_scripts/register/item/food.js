@@ -312,6 +312,9 @@ StartupEvents.registry('item', event => {
 	//食物：南瓜生面团
 	event.create("wildfire:pumpkin_rough_dough")
     .texture("kubejs:item/food/pumpkin_rough_dough")
+	.tag("tfc:foods/dough")
+	.tag("bakery:hardened_dough")
+	.tag("bakery:dough")
 	.food(foodBuilder=>{
 		foodBuilder.hunger(1)
 		foodBuilder.saturation(0.1)
@@ -319,6 +322,8 @@ StartupEvents.registry('item', event => {
 	//食物：南瓜酵母面团
 	event.create("wildfire:pumpkin_yeast_dough")
     .texture("kubejs:item/food/pumpkin_yeast_dough")
+	.tag("tfc:foods/dough")
+	.tag("bakery:dough")
 	.food(foodBuilder=>{
 		foodBuilder.hunger(1)
 		foodBuilder.saturation(0.1)
@@ -326,6 +331,8 @@ StartupEvents.registry('item', event => {
 	//食物：南瓜面团
 	event.create("wildfire:pumpkin_dough")
     .texture("kubejs:item/food/pumpkin_dough")
+	.tag("tfc:foods/dough")
+	.tag("bakery:dough")
 	.food(foodBuilder=>{
 		foodBuilder.hunger(1)
 		foodBuilder.saturation(0.1)
@@ -334,7 +341,6 @@ StartupEvents.registry('item', event => {
 	event.create("wildfire:pumpkin_flatbread")
     .texture("kubejs:item/food/pumpkin_flatbread")
 	.tag("wildfire:pumpkin_bread")
-	.tag("tfc_farm_charm:bread")
 	.tag("tfc:foods/breads")
 	.tag("loot:breads")
 	.food(foodBuilder=>{
@@ -355,6 +361,7 @@ StartupEvents.registry('item', event => {
 	//食物：南瓜面包三明治
 	event.create("wildfire:pumpkin_bread_sandwich")
     .texture("kubejs:item/food/pumpkin_bread_sandwich")
+	.tag("tfc:foods")
 	.food(foodBuilder=>{
 		foodBuilder.hunger(4)
 		foodBuilder.saturation(0.4)
@@ -362,6 +369,7 @@ StartupEvents.registry('item', event => {
 	//食物：南瓜面包果酱三明治
 	event.create("wildfire:pumpkin_bread_jam_sandwich")
     .texture("kubejs:item/food/pumpkin_bread_jam_sandwich")
+	.tag("tfc:foods")
 	.food(foodBuilder=>{
 		foodBuilder.hunger(4)
 		foodBuilder.saturation(0.4)
@@ -370,7 +378,6 @@ StartupEvents.registry('item', event => {
 	event.create("wildfire:pumpkin_bread_slice")
     .texture("kubejs:item/food/pumpkin_bread_slice")
 	.tag("wildfire:pumpkin_bread")
-	.tag("tfc_farm_charm:bread")
 	.tag("tfc:foods/breads")
 	.tag("loot:breads")
 	.food(foodBuilder=>{

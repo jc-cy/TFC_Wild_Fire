@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 85
+          "weight": 25
         }
       ],
       "rolls": 8.0
@@ -18,7 +18,7 @@
           "type": "minecraft:loot_table",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -46,7 +46,7 @@
           "type": "minecraft:loot_table",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -108,7 +108,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.03,
+              "chance": 0.15,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -136,7 +136,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.03,
+              "chance": 0.15,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -164,7 +164,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.03,
+              "chance": 0.15,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -388,7 +388,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -416,7 +416,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -444,7 +444,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -472,7 +472,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -500,7 +500,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -528,7 +528,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -556,7 +556,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -584,7 +584,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -612,7 +612,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -640,7 +640,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -668,7 +668,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -696,7 +696,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -724,7 +724,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -752,7 +752,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -780,7 +780,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -808,7 +808,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -836,7 +836,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -864,7 +864,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -892,7 +892,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -948,7 +948,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.03,
+              "chance": 0.15,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -1004,7 +1004,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -1060,7 +1060,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -1088,7 +1088,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -1340,7 +1340,7 @@
           "type": "minecraft:loot_table",
           "conditions": [
             {
-              "chance": 0.03,
+              "chance": 0.15,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -1368,7 +1368,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.03,
+              "chance": 0.15,
               "condition": "minecraft:random_chance"
             }
           ],
@@ -1396,7 +1396,7 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "chance": 0.05,
+              "chance": 0.25,
               "condition": "minecraft:random_chance"
             }
           ],

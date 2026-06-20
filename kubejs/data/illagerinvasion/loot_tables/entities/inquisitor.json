@@ -36,7 +36,7 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1.0,
+                "max": 3.0,
                 "min": 0.0
               },
               "function": "minecraft:set_count"
@@ -44,7 +44,7 @@
             {
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1.0,
+                "max": 2.0,
                 "min": 0.0
               },
               "function": "minecraft:looting_enchant"
@@ -129,6 +129,66 @@
             }
           ],
           "name": "kubejs:leather_plate"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "chance": 0.5,
+              "condition": "minecraft:random_chance_with_looting",
+              "looting_multiplier": 0.0625
+            },
+            {
+              "condition": "minecraft:killed_by_player"
+            }
+          ],
+          "name": "kubejs:weak_bandage"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "chance": 0.5,
+              "condition": "minecraft:random_chance_with_looting",
+              "looting_multiplier": 0.0625
+            },
+            {
+              "condition": "minecraft:killed_by_player"
+            }
+          ],
+          "name": "firmalife:food/rye_flatbread"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "chance": 0.15,
+              "condition": "minecraft:random_chance_with_looting",
+              "looting_multiplier": 0.0625
+            },
+            {
+              "condition": "minecraft:killed_by_player"
+            }
+          ],
+          "name": "legendarysurvivaloverhaul:bandage"
         }
       ],
       "rolls": 1.0
