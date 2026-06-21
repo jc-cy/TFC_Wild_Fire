@@ -1,0 +1,75 @@
+
+#Held item outline feature toggle.
+[shader_features]
+	#Enable the held item outline renderer.
+	held_item_outline = false
+
+#Held item outline settings.
+[held_item_outline]
+	#Render the outline for the main-hand item.
+	main_hand = true
+	#Render the outline for the off-hand item.
+	off_hand = true
+	#Render bloom around the outline.
+	bloom = false
+	#Color mode for the outline and bloom.
+	#Allowed Values: SINGLE, DUAL_SCROLL, RAINBOW_FLOW
+	color_mode = "SINGLE"
+	#Internal bloom render resolution.
+	#Allowed Values: FULL, HALF, QUARTER
+	bloom_resolution = "QUARTER"
+	#Maximum number of blur passes.
+	#Range: 1 ~ 6
+	bloom_max_passes = 4
+	#Bloom strength multiplier.
+	#Range: 0.0 ~ 8.0
+	bloom_strength = 2.495798349380493
+	#Bloom blur radius multiplier.
+	#Range: 0.25 ~ 12.0
+	bloom_radius = 10.50656509399414
+	#Outline width in pixels.
+	#Range: 0.25 ~ 8.0
+	width = 8.0
+	#Outline softness.
+	#Range: 0.10000000149011612 ~ 4.0
+	softness = 0.10000000149011612
+	#Alpha threshold for the held-item mask.
+	#Range: 0.0 ~ 0.949999988079071
+	alpha_threshold = 0.949999988079071
+	#Outline opacity.
+	#Range: 0.0 ~ 1.0
+	opacity = 1.0
+	#Primary red channel.
+	#Range: 0.0 ~ 1.0
+	red = 0.9372549057006836
+	#Primary green channel.
+	#Range: 0.0 ~ 1.0
+	green = 0.250980406999588
+	#Primary blue channel.
+	#Range: 0.0 ~ 1.0
+	blue = 0.8392156958580017
+	#Secondary red channel.
+	#Range: 0.0 ~ 1.0
+	secondary_red = 0.9333333373069763
+	#Secondary green channel.
+	#Range: 0.0 ~ 1.0
+	secondary_green = 0.26274511218070984
+	#Secondary blue channel.
+	#Range: 0.0 ~ 1.0
+	secondary_blue = 1.0
+	#Color scroll speed.
+	#Range: 0.0 ~ 10.0
+	color_scroll_speed = 1.4495798349380493
+	#Depth weighting applied to the outline.
+	#Range: 0.0 ~ 4.0
+	depth_weight = 3.894958019256592
+	#Extra glow strength.
+	#Range: 0.0 ~ 2.0
+	glow_strength = 1.1554621458053589
+	#Pulse animation speed.
+	#Range: 0.0 ~ 10.0
+	pulse_speed = 3.6764705181121826
+	#Pulse animation amount.
+	#Range: 0.0 ~ 1.0
+	pulse_amount = 0.07999999821186066
+

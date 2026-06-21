@@ -1,0 +1,30 @@
+{
+  "disableScanning": false,
+  "disableLootDisplay": false,
+  "disableBiomeDisplay": true,
+  "disableEditingDescriptions": false,
+  "disableEditingNames": false,
+  "disableVariants": false,
+  "keepSilhouetteWhenUnlocked": false,
+  "unlockAllVariants": false,
+  "enableFieldGuideItem": true,
+  "requireItemToOpen": false,
+  "enableCopyingPages": false,
+  "hideTabsUntilUnlocked": false,
+  "enableSpyglassScanning": true,
+  "spyglassScanDistance": 64.0,
+  "enableNakedEyeScanning": true,
+  "nakedEyeScanDistance": 10.0,
+  "showUndiscoveredNames": false,
+  "hideUndiscoveredFromSearch": false,
+  "scanSpeed": 0.3,
+  "grantXpOnScan": true,
+  "xpAmountOnScan": 5,
+  "enableReliableRemover": true,
+  "exposureUnlockViaPhotograph": true,
+  "globalScanCommands": [
+    ""
+  ],
+  "categoryScanCommands": {},
+  "entryScanCommands": {}
+}

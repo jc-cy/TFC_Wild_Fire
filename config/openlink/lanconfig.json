@@ -1,0 +1,7 @@
+{
+  "use_frp": true,
+  "allow_pvp": true,
+  "allow_commands": true,
+  "auth_mode": "OFFLINE_FIXUUID",
+  "last_port_value": ""
+}

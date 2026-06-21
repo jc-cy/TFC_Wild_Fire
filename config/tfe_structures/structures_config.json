@@ -1,0 +1,790 @@
+{
+  "structures": {
+    "ad_astra:lunar_tower": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "ad_astra:lunarian_village": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "ad_astra:mars_temple": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "ad_astra:moon_dungeon": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "ad_astra:oil_well": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "ad_astra:pygro_tower": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "ad_astra:pygro_village": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "ad_astra:venus_bullet": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "ae2:meteorite": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "alexscaves:abyssal_ruins": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "alexscaves:acid_pit": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "alexscaves:cake_cave": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "alexscaves:dino_bowl": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "alexscaves:donut_arch": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "alexscaves:ferrocave": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "alexscaves:forlorn_bridge": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "alexscaves:forlorn_canyon": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "alexscaves:gingerbread_town": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "alexscaves:licowitch_tower": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "alexscaves:ocean_trench": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "alexscaves:soda_bottle": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "alexscaves:underground_cabin": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "alexscaves:volcano": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "bakery:bakery": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:clown_caravan_plains": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:clown_caravan_savanna": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:clown_caravan_taiga": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:dark_tower_forest": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:dark_tower_plain": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:dark_tower_taiga": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:farm": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:firewell": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:grave_2003wise": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:grave_2_dling": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:grave_d_4rk_devil_x": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:grave_darktitan": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:grave_derivas": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:grave_euthymia": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:grave_feral": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:grave_fubuki_banzai": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:grave_memesus": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:grave_mike_and_rory": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:grave_nino_4416": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:grave_orion": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:grave_petasi": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:grave_plug": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:grave_rotborne": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:grave_somfunambulist": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:grave_tem_187": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:grave_the_gentleman_frog": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:gravecarrionexe": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:infernal_pumpkin": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:mound_of_hounds": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:observation_tower_forest": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "born_in_chaos_v1:observation_tower_plains": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "call_of_yucutan:deadly_crypt": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "call_of_yucutan:overgrown_temple": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "eidolon:catacomb": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "eidolon:lab": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "eidolon:stray_tower": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "illagerinvasion:firecaller_hut": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "illagerinvasion:illager_fort": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "illagerinvasion:illusioner_tower": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "illagerinvasion:labyrinth": {
+      "generate": true,
+      "replacementPreset": "normal-common",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "illagerinvasion:sorcerer_hut": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "irons_spellbooks:ancient_battleground": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "irons_spellbooks:catacombs": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "irons_spellbooks:citadel": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "irons_spellbooks:evoker_fort": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "irons_spellbooks:ice_spider_den": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "irons_spellbooks:impaled_icebreaker": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "irons_spellbooks:mangrove_hut": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "irons_spellbooks:mountain_tower": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "irons_spellbooks:pyromancer_tower": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:ancient_city": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:bastion_remnant": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:buried_treasure": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:desert_pyramid": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:end_city": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:fortress": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:igloo": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:jungle_pyramid": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:mansion": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:mineshaft": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "illagerinvasion:chests/minery",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:mineshaft_mesa": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "illagerinvasion:chests/minery",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:monument": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:nether_fossil": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:ocean_ruin_cold": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:ocean_ruin_warm": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:pillager_outpost": {
+      "generate": true,
+      "replacementPreset": "normal-common",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:ruined_portal": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:ruined_portal_desert": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:ruined_portal_jungle": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:ruined_portal_mountain": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:ruined_portal_nether": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:ruined_portal_ocean": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:ruined_portal_swamp": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:shipwreck": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:shipwreck_beached": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:stronghold": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:swamp_hut": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:trail_ruins": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:village_desert": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:village_plains": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:village_savanna": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:village_snowy": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "minecraft:village_taiga": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "scguns:asgharian_citadel": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "scguns:asgharian_tower": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "scguns:cog_chambers": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "scguns:osgood_lab": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "scguns:osgood_lab_outpost": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "scguns:trench": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "supplementaries:way_sign": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "takesapillage:bastille": {
+      "generate": true,
+      "replacementPreset": "normal-common",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "takesapillage:pillager_camp": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "valhelsia_structures:big_tree": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "valhelsia_structures:castle": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "valhelsia_structures:castle_ruin": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "valhelsia_structures:deep_spawner_room": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "valhelsia_structures:desert_house": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "valhelsia_structures:forge": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "valhelsia_structures:player_house": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "valhelsia_structures:spawner_dungeon": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "valhelsia_structures:spawner_room": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "valhelsia_structures:tower_ruin": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "valhelsia_structures:witch_hut": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "warriorsofpastepoch:musketeer_fort": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "warriorsofpastepoch:plague_village": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "wildfire:geothermal_vent": {
+      "generate": true,
+      "replacementPreset": "tfe-safe-default",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    },
+    "wildfire:mineshaft": {
+      "generate": true,
+      "replacementPreset": "mineshaft-common",
+      "emptyChestLootTable": "",
+      "lootTablesOverrideMap": {}
+    }
+  }
+}

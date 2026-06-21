@@ -1,0 +1,54 @@
+{
+  "directReplacements": [],
+  "randomReplacements": [],
+  "tfcWorldReplacements": [
+    {
+      "original": "tfc:grass_path/loam",
+      "type": "SOIL"
+    },
+    {
+      "original": "tfc:grass_path/sandy_loam",
+      "type": "SOIL"
+    },
+    {
+      "original": "tfc:grass_path/silty_loam",
+      "type": "SOIL"
+    },
+    {
+      "original": "tfc:grass_path/silt",
+      "type": "SOIL"
+    },
+    {
+      "original": "tfc:grass/loam",
+      "type": "SOIL"
+    },
+    {
+      "original": "tfc:grass/sandy_loam",
+      "type": "SOIL"
+    },
+    {
+      "original": "tfc:grass/silty_loam",
+      "type": "SOIL"
+    },
+    {
+      "original": "tfc:grass/silt",
+      "type": "SOIL"
+    },
+    {
+      "original": "tfc:dirt/loam",
+      "type": "SOIL"
+    },
+    {
+      "original": "tfc:dirt/sandy_loam",
+      "type": "SOIL"
+    },
+    {
+      "original": "tfc:dirt/silty_loam",
+      "type": "SOIL"
+    },
+    {
+      "original": "tfc:dirt/silt",
+      "type": "SOIL"
+    }
+  ]
+}

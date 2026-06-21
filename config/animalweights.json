@@ -1,0 +1,21 @@
+{
+  "dropScalingMode": "MULTIPLICATIVE",
+  "xpScalingMode": "MULTIPLICATIVE",
+  "minWeight": 0,
+  "defaultWeight": 1,
+  "maxWeight": 8,
+  "weightTickIntervalTicks": 8000,
+  "weightGainChance": 0.5,
+  "weightMinorLossChance": 0.25,
+  "weightSevereLossChance": 0.5,
+  "lightThreshold": 14,
+  "habitatScanRadius": 4,
+  "crowdRadius": 2,
+  "crowdLimit": 6,
+  "enableProximityBonus": true,
+  "proximityRadius": 6,
+  "enableSickTint": true,
+  "enableSickParticles": true,
+  "enableOverlay": true,
+  "sickTintColor": -8339344
+}

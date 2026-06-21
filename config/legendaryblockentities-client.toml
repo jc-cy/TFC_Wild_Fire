@@ -1,0 +1,20 @@
+
+#Toggle which block entities to optimize. Changes require restart.
+[optimizations]
+	#Optimize chests, trapped chests, and ender chests.
+	chests = true
+	#Optimize all 16 bed colors.
+	beds = true
+	#Optimize bells.
+	bells = true
+	#Optimize all shulker box variants (17 colors).
+	shulker_boxes = true
+	#Optimize Quark variant chests (requires Quark to be installed).
+	quark_chests = true
+	#Optimize BetterEnd chests (requires BetterEnd + BCLib).
+	better_end_chests = true
+	#Optimize BetterNether chests (requires BetterNether + BCLib).
+	better_nether_chests = true
+	#Optimize Iron Chests (requires Iron Chests). Crystal chests are excluded.
+	iron_chests = true
+

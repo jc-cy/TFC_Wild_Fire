@@ -1,0 +1,11 @@
+#Whether to make item drop locations predictable
+predictable_item_drops = true
+#Whether to optimize structure locate progress, also fixes MC-249136
+structure_locate_speedup = true
+#Whether to optimize resource looking up in compressed pack(GAME RESTART REQUIRED)，automatically disabled if Quick Pack is installed
+optimize_pack_lookup = true
+#Whether to fix boat fall damage
+fix_boat_fall_damage = true
+#Whether to delay the load of DFU
+lazy_dfu = true
+

@@ -1,0 +1,16 @@
+
+[fuels]
+	#Fluid fuel definitions. Value is burn ticks for 1000 mB. 200 ticks = 1 smelted item.
+	#Use an exact fluid id: modid:fluid=burn_ticks_for_1000mb, for example minecraft:lava=20000.
+	#Use a fluid tag with #: #namespace:tag=burn_ticks_for_1000mb, for example #forge:diesel=12000.
+	#Exact fluid ids take priority over tags. If multiple matching tags exist, the later config entry wins.
+	#The tank consumes 100 mB each time, so each use burns for one tenth of the configured value.
+	#Unknown exact fluids are ignored until their owning mod is loaded. Unknown tags are allowed and only match when a loaded fluid has that tag.
+	#液体燃料配置。右侧数值是每 1000 mB 的燃烧 tick，200 tick = 1 个物品。
+	#精确流体 ID 写法: modid:fluid=每1000mB燃烧tick，例如 minecraft:lava=20000。
+	#流体标签写法需要以 # 开头: #namespace:tag=每1000mB燃烧tick，例如 #forge:diesel=12000。
+	#精确流体 ID 优先于标签；如果多个标签同时匹配同一种流体，靠后的配置项生效。
+	#油桶每次作为燃料消耗 100 mB，所以单次燃烧时间是配置值的十分之一。
+	#未加载的精确流体会被忽略；未加载的标签可以保留，只有实际加载的流体带有该标签时才会匹配。
+	burn_times_for_1000mb = ["minecraft:lava=20000", "immersiveengineering:ethanol=1600", "#forge:diesel=12000"]
+

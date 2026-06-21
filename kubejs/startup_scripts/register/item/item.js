@@ -238,6 +238,9 @@ StartupEvents.registry('item', event => {
     event.create('paper_film', 'basic').texture('kubejs:item/paper_film'); // 纸膜
 
     event.create('air', 'basic').texture('kubejs:item/air'); // 透明物品
+    
+    event.create('kubejs:firestarter_stick')
+
     const dough = [
         { name1: "barley_dough", name2: "barley_flatbread_dough" },
         { name1: "maize_dough", name2: "maize_flatbread_dough" },
@@ -495,6 +498,8 @@ StartupEvents.registry("item", event => {  //半成品
         .tag('tfc_ie_addon:molds')
     event.create('tfc:arm_clip').texture('kubejs:item/arm_clip'); //动力臂夹子
 })
+
+
 
 StartupEvents.registry("item", event => {   //新金属
     //太空金属锭
