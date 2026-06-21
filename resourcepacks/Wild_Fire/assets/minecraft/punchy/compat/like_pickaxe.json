@@ -58,11 +58,11 @@
             "customAnimation": [
                 {
                     "type": "useItem",
-                    "name": "mining_foward"
+                    "name": "mining_slow_foward"
                 },
                 {
                     "type": "mining",
-                    "name": "mining_foward"
+                    "name": "mining_slow_foward"
                 },
                 {
                     "type": "attack",

@@ -1,0 +1,20 @@
+{
+  "customGroups": [
+    {
+      "name": "firing_up",
+      "items": [
+        "tfc:firestarter"
+      ]
+    }
+  ],
+  "item": {
+    "firing_up": {
+      "customAnimation": [
+        {
+          "type": "useItem",
+          "name": "firing_up_1"
+        }
+      ]
+    }
+  }
+}

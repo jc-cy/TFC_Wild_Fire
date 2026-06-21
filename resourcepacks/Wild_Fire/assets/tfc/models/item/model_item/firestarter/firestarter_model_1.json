@@ -1,0 +1,6 @@
+{
+        "parent": "tfc:item/model_item/firestarter/firestarter_model",
+        "textures": {
+            "2": "tfc:item/model_item/firestarter/firestarter1"
+        }
+	}

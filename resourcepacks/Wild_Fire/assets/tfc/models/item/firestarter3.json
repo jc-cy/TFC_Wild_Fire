@@ -1,1 +1,24 @@
-{"parent":"item/handheld","textures":{"layer0":"tfc:item/firestarter3"}}
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "textures": {
+        "particle": "tfc:item/firestarter3"
+    },
+    "base": {
+        "parent": "tfc:item/model_item/firestarter/firestarter_model_3"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "item/generated",
+            "textures": {
+                "layer0": "tfc:item/firestarter3"
+            }
+        },
+        "ground": {
+            "parent": "tfc:item/model_item/firestarter/all_firestarter_model_3"
+        },
+        "fixed": {
+            "parent": "tfc:item/model_item/firestarter/all_firestarter_model_3"
+        }
+    }
+}
