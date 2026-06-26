@@ -41,6 +41,9 @@ ServerEvents.recipes(event => {
     "uranium": { temp: 747, fluid: "tfc_ie_addon:metal/uranium" },
     "chromium": { temp: 1907, fluid: "firmalife:bucket/metal/chromium" },
     "stainless_steel": { temp: 1400, fluid: "firmalife:bucket/metal/stainless_steel" },
+    "manganese": { temp: 1246, fluid: "tfc:metal/manganese" },
+    "ferromanganese": { temp: 1200, fluid: "tfc:metal/ferromanganese" },
+    "raw_ferromanganese": { temp: 1200, fluid: "tfc:metal/raw_ferromanganese" },
     "unknown": { temp: 400, fluid: "tfc:metal/unknown" }
   };
 
@@ -277,6 +280,7 @@ ServerEvents.recipes(e => {
     { mod: 'artisanal:metal/', tool: 'can_opener/', number: 100 },  // 开罐刀片
     { mod: 'tfc_hammer_time:metal/', tool: 'excavator_head/', number: 200 },   // 挖掘器
     { mod: 'tfc_hammer_time:metal/', tool: 'sledgehammer_head/', number: 300 },   // 大锤
+    { mod: 'tfcsuperhammer:metal/', tool: 'superhammer_head/', number: 300 },   // 超级大锤
     { mod: 'precisionprospecting:metal/', tool: 'mineral_prospector_head/', number: 200 }, // 矿物勘探仪
     { mod: 'precisionprospecting:metal/', tool: 'prospector_drill_head/', number: 400 },   // 勘探钻头
     { mod: 'precisionprospecting:metal/', tool: 'prospector_hammer_head/', number: 200 }   // 勘探锤
@@ -859,6 +863,9 @@ ServerEvents.recipes(e => {
     { name: "kubejs:refined_nickel_bloom", temperature: 1453, metal: "tfc:metal/nickel", number: 100 },
     { name: "kubejs:hot_raw_nickel_bloom", temperature: 1453, metal: "tfc:metal/nickel", number: 100 },
     { name: "kubejs:hot_raw_iron_bloom", temperature: 1535, metal: "tfc:metal/cast_iron", number: 100 },
+    { name: "kubejs:raw_ferromanganese_bloom", temperature: 1200, metal: "raw_ferromanganese", number: 100 },
+    { name: "kubejs:hot_raw_ferromanganese_bloom", temperature: 1200, metal: "raw_ferromanganese", number: 100 },
+    { name: "kubejs:raw_ferromanganese_ingot", temperature: 1200, metal: "raw_ferromanganese", number: 100 },
     { name: "immersiveengineering:slab_storage_steel", temperature: 1540, metal: "tfc:metal/steel", number: 500 },
     { name: "immersiveengineering:slab_storage_constantan", temperature: 750, metal: "tfc_ie_addon:metal/constantan", number: 500 },
     { name: "immersiveengineering:slab_storage_electrum", temperature: 900, metal: "tfc_ie_addon:metal/electrum", number: 500 },
@@ -1130,4 +1137,18 @@ ServerEvents.recipes(e => {
     .resultItem(Item.of('kubejs:metal_hot_water_bag'))
   tfc.heating('kubejs:heating_warmer', 60)
     .resultItem(Item.of('kubejs:heating_warmer'))
+
+  // ========== tfcsuperhammer 成品融化 ==========
+  metal.forEach(metala => {
+      // 超级大锤成品 350mb
+      tfc.heating(`tfcsuperhammer:metal/superhammer/${metala.name}`, metala.temperature)
+          .resultFluid(Fluid.of(`tfc:metal/${metala.metal}`, 350))
+          .useDurability(true)
+      crucible(`tfcsuperhammer:metal/superhammer/${metala.name}`, `tfc:metal/${metala.metal}`, 350, metala.temperature)
+      // 超级开掘铲成品 250mb
+      tfc.heating(`tfcsuperhammer:metal/supershovel/${metala.name}`, metala.temperature)
+          .resultFluid(Fluid.of(`tfc:metal/${metala.metal}`, 250))
+          .useDurability(true)
+      crucible(`tfcsuperhammer:metal/supershovel/${metala.name}`, `tfc:metal/${metala.metal}`, 250, metala.temperature)
+  })
 });

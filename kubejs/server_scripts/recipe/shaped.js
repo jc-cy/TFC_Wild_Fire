@@ -1,6 +1,26 @@
 ServerEvents.recipes(event => {
 
     const id_in = "kubejs:recipe/shaped/"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
  event.shaped("tfcelectriccooking:electric_oven", ['abb', 'cdc','cec'], {
         a: "immersiveengineering:logic_circuit",
         b: '#minecraft:buttons',
@@ -1658,6 +1678,52 @@ event.shaped("kubejs:gear_blank/large_cogwheel/oak", [' b ', 'bab', ' be'], {
             d: "kubejs:hardened_leather",
             e: "kubejs:leather_plate"
         })//背包合成困难
+
+    // ========== 超级大锤 ==========
+    tfc_metals.forEach(metal => {
+        event.custom({
+            type: "tfc:advanced_shaped_crafting",
+            result: {
+                stack: {
+                    item: `tfcsuperhammer:metal/superhammer/${metal}`,
+                    count: 1,
+                    nbt: "{Damage:0}"
+                },
+                modifiers: [{ type: "tfc:copy_forging_bonus" }]
+            },
+            pattern: ['  a', ' b ', 'c  '],
+            key: {
+                a: { item: `tfcsuperhammer:metal/superhammer_head/${metal}` },
+                b: { item: `tfc:metal/rod/${metal}` },
+                c: { tag: 'forge:rods/wooden' }
+            },
+            input_row: 0,
+            input_column: 0
+        }).id(`kubejs:recipe/shaped/superhammer_${metal}`)
+    })//超级大锤（全金属）
+
+    // ========== 超级开掘铲 ==========
+    tfc_metals.forEach(metal => {
+        event.custom({
+            type: "tfc:advanced_shaped_crafting",
+            result: {
+                stack: {
+                    item: `tfcsuperhammer:metal/supershovel/${metal}`,
+                    count: 1,
+                    nbt: "{Damage:0}"
+                },
+                modifiers: [{ type: "tfc:copy_forging_bonus" }]
+            },
+            pattern: ['  a', ' b ', 'c  '],
+            key: {
+                a: { item: `tfcsuperhammer:metal/supershovel_head/${metal}` },
+                b: { item: `tfc:metal/rod/${metal}` },
+                c: { tag: 'forge:rods/wooden' }
+            },
+            input_row: 0,
+            input_column: 0
+        }).id(`kubejs:recipe/shaped/supershovel_${metal}`)
+    })//超级开掘铲（全金属）
 })
 
 

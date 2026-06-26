@@ -151,6 +151,16 @@ StartupEvents.registry("fluid", event => {
         .flowingTexture('kubejs:fluid/molten/molten_manganese_flowing')
     //熔融锰
 
+    event.create("tfc:metal/ferromanganese")
+        .stillTexture('kubejs:fluid/molten/molten_ferromanganese_still')
+        .flowingTexture('kubejs:fluid/molten/molten_ferromanganese_flowing')
+    //熔融锰铁
+
+    event.create("tfc:metal/raw_ferromanganese")
+        .stillTexture('kubejs:fluid/molten/molten_raw_ferromanganese_still')
+        .flowingTexture('kubejs:fluid/molten/molten_raw_ferromanganese_flowing')
+    //粗锰铁液
+
     event.create("tfc:metal/titanium")
         .stillTexture('kubejs:fluid/molten/molten_titanium_still')
         .flowingTexture('kubejs:fluid/molten/molten_titanium_flowing')

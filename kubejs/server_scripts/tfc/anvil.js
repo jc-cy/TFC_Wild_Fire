@@ -139,6 +139,32 @@ ServerEvents.recipes(e => {
     ).id(`kubejs:tfc/anvil/triple_${item.name}`);;
   });
 
+  // ========== 超级大锤锤头 ==========
+  metal.forEach(item => {
+    tfc.anvil(
+      `tfcsuperhammer:metal/superhammer_head/${item.name}`,
+      `kubejs:triple_${item.name}`,
+      [
+        'punch_last',
+        'shrink_second_last',
+        'upset_third_last'
+      ]
+    ).tier(item.number).bonus(true).id(`kubejs:tfc/anvil/superhammer_head/${item.name}`)
+  })
+
+  // ========== 超级开掘铲铲头 ==========
+  metal.forEach(item => {
+    tfc.anvil(
+      `tfcsuperhammer:metal/supershovel_head/${item.name}`,
+      `tfc:metal/double_sheet/${item.name}`,
+      [
+        'punch_last',
+        'hit_second_last',
+        'upset_third_last'
+      ]
+    ).tier(item.number).bonus(true).id(`kubejs:tfc/anvil/supershovel_head/${item.name}`)
+  })
+
   tfc.anvil(
     "kubejs:refined_nickel_bloom",
     "kubejs:raw_nickel_bloom",

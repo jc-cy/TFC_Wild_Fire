@@ -42,6 +42,15 @@ ServerEvents.recipes((event) => {
       result: { item: 'firmalife:reinforced_glass' },
       id: `${id_prefix}reinforced_glass`
     },
+    /*{
+      ingredients: [
+        { item: 'createmetallurgy:graphite_ingot_mold' },
+        { amount: 100, fluid: 'tfc:metal/raw_ferromanganese' }
+      ],
+      processingTime: 200,
+      result: { item: 'kubejs:raw_ferromanganese_ingot' },
+      id: `${id_prefix}raw_ferromanganese_ingot`
+    },*/
   ];
 
   const metals = [

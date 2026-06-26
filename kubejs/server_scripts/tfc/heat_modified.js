@@ -108,6 +108,7 @@ TFCEvents.data(event => {
     steel: 1540,
     wrought_iron: 1535,
     nickel: 1453,
+    manganese: 1246,
   };
   const triplemetaltp = 3 * 2.857
   //铋铜三层锭
@@ -216,6 +217,18 @@ TFCEvents.data(event => {
   event.itemHeat('kubejs:hot_raw_nickel_bloom', 2.857,
     Math.floor(metaltp.nickel * 0.6),
     Math.floor(metaltp.nickel * 0.8)
+  );
+
+  //粗锰铁方坯
+  event.itemHeat('kubejs:raw_ferromanganese_bloom', 2.857,
+    Math.floor(metaltp.manganese * 0.6),
+    Math.floor(metaltp.manganese * 0.8)
+  );
+
+  //炽融粗锰铁方坯
+  event.itemHeat('kubejs:hot_raw_ferromanganese_bloom', 2.857,
+    Math.floor(metaltp.manganese * 0.6),
+    Math.floor(metaltp.manganese * 0.8)
   );
   
   //炽熔铁方坯

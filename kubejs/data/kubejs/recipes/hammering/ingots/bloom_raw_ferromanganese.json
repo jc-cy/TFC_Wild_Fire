@@ -1,0 +1,23 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "vintageimprovements"
+    }
+  ],
+  "type": "vintageimprovements:hammering",
+  "hammerBlows": 3,
+  "ingredients": [
+    {
+      "type": "tfc:heatable",
+      "ingredient": {
+        "item": "kubejs:raw_ferromanganese_bloom"
+      }
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:raw_ferromanganese_ingot"
+    }
+  ]
+}

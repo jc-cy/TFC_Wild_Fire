@@ -24,7 +24,7 @@ let wash_ore = [
     { mod: 'tfc:ore', type: '/', ore: 'cinnabar', color: 0xFF0000 },
     
     { mod: 'tfc:ore', type: '/', ore: 'ilmenite', color: 0xFF0000 },//钛铁
-    { mod: 'tfc:ore', type: '/', ore: 'manganese', color: 0xFF0000 },///锰
+    { mod: 'tfc:ore', type: '/type_', ore: 'manganese', color: 0xFF0000, temperature: 1246, out: 'tfc:metal/manganese', metal: 'manganese' },///锰
     { mod: 'tfc:ore', type: '/', ore: 'native_vanadium', color: 0xFF0000 },//钒
 
 ];
@@ -48,6 +48,7 @@ StartupEvents.registry("item", event => {
         }
     })
     event.create(`firmalife:powder/chromite`).tag("kubejs:ore"); //铬矿粉
+     event.create(`tfc:powder/manganese`); //锰矿粉
 })
 StartupEvents.registry("fluid", event => {
     wash_ore.forEach(ore => {

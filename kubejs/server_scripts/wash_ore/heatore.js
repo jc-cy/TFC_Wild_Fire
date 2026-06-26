@@ -22,7 +22,7 @@ let wash_ore = [
     { mod: 'tfc:ore', type: '/', ore: 'cinnabar', color: 0xFF0000 },
 
     { mod: 'tfc:ore', type: '/', ore: 'ilmenite', color: 0xFF0000 },//钛铁
-    { mod: 'tfc:ore', type: '/', ore: 'manganese', color: 0xFF0000 },///锰
+    { mod: 'tfc:ore', type: '/type_', ore: 'manganese', color: 0xFF0000, temperature: 1246, out: 'tfc:metal/raw_ferromanganese', metal: 'manganese' },///锰
     { mod: 'tfc:ore', type: '/', ore: 'native_vanadium', color: 0xFF0000 },//钒
 ];
 const washoretype = [
@@ -59,12 +59,21 @@ ServerEvents.recipes(event => {
                 tfc.heating(`firmalife:ore/normal_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 15)).id(`${recipedid}heating/normal_${ore.ore}`)//普通
                 tfc.heating(`firmalife:ore/rich_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 25)).id(`${recipedid}heating/rich_${ore.ore}`)//富集
             }
-            if (ore.mod == 'tfc:ore') {
+            if (ore.mod == 'tfc:ore' && ore.type == '/type_' && ore.ore != 'manganese') {
                 tfc.heating(`tfc:powder/${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 5)).id(`${recipedid}heating/powder_${ore.ore}`)//粉末
                 tfc.heating(`tfc:ore/small_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 5)).id(`${recipedid}heating/small_${ore.ore}`)//粒
                 tfc.heating(`tfc:ore/poor_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 10)).id(`${recipedid}heating/poor_${ore.ore}`)//贫瘠
                 tfc.heating(`tfc:ore/normal_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 15)).id(`${recipedid}heating/normal_${ore.ore}`)//普通
                 tfc.heating(`tfc:ore/rich_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 25)).id(`${recipedid}heating/rich_${ore.ore}`)//富集
+            } else if (ore.mod == 'tfc:ore' && ore.type == '/type_' && ore.ore == 'manganese') {
+                tfc.heating(`tfc:powder/${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 5)).id(`${recipedid}heating/powder_${ore.ore}`)//粉末
+                tfc.heating(`kubejs:ore/small_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 5)).id(`${recipedid}heating/small_${ore.ore}`)//粒
+                tfc.heating(`tfc:ore/poor_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 10)).id(`${recipedid}heating/poor_${ore.ore}`)//贫瘠
+                tfc.heating(`tfc:ore/normal_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 15)).id(`${recipedid}heating/normal_${ore.ore}`)//普通
+                tfc.heating(`tfc:ore/rich_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 25)).id(`${recipedid}heating/rich_${ore.ore}`)//富集
+
+
+
             }
 
 
@@ -121,31 +130,31 @@ ServerEvents.recipes(event => {
             }).id(`${recipedid}mixing/heatslurry/${ore.ore}`);
 
 
-          /*  washoretype.forEach(ore1 => {
-                if (ore1.type != "dirty_dust") {
-                    event.custom({//加热搅拌矿石融化
-                        "type": "woodencog:heated_mixing",
-                        "heatRequirement": ore.temperature,
-                        "processingTime": 100,
-                        "ingredients": [
-                            {
-                                "type": "woodencog:heated",
-                                "ingredient": {
-                                    "item": `kubejs:item/ore/${ore1.type}/${ore.ore}`
-                                },
-
-
-                            }
-                        ],
-                        "results": [
-                            {
-                                "amount": ore1.num,
-                                "fluid": ore.out
-                            }
-                        ]
-                    }).id(`${recipedid}mixing/${ore1.type}/${ore.ore}`);
-                }
-            })*/
+            /*  washoretype.forEach(ore1 => {
+                  if (ore1.type != "dirty_dust") {
+                      event.custom({//加热搅拌矿石融化
+                          "type": "woodencog:heated_mixing",
+                          "heatRequirement": ore.temperature,
+                          "processingTime": 100,
+                          "ingredients": [
+                              {
+                                  "type": "woodencog:heated",
+                                  "ingredient": {
+                                      "item": `kubejs:item/ore/${ore1.type}/${ore.ore}`
+                                  },
+  
+  
+                              }
+                          ],
+                          "results": [
+                              {
+                                  "amount": ore1.num,
+                                  "fluid": ore.out
+                              }
+                          ]
+                      }).id(`${recipedid}mixing/${ore1.type}/${ore.ore}`);
+                  }
+              })*/
 
 
 

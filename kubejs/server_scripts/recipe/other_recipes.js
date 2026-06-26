@@ -481,7 +481,9 @@ ServerEvents.recipes(event => {
       { metal1: 'tfc:metal/ingot/high_carbon_steel', metal2: 'tfc:metal/ingot/steel', },
       { metal1: 'tfc:metal/ingot/high_carbon_black_steel', metal2: 'tfc:metal/ingot/black_steel', },
       { metal1: 'tfc:metal/ingot/high_carbon_blue_steel', metal2: 'tfc:metal/ingot/blue_steel', },
-      { metal1: 'tfc:metal/ingot/high_carbon_red_steel  ', metal2: 'tfc:metal/ingot/red_steel', }
+      { metal1: 'tfc:metal/ingot/high_carbon_red_steel  ', metal2: 'tfc:metal/ingot/red_steel', },
+      { metal1: 'kubejs:raw_ferromanganese_bloom', metal2: 'kubejs:raw_ferromanganese_ingot', },
+      { metal1: 'kubejs:hot_raw_ferromanganese_bloom', metal2: 'kubejs:raw_ferromanganese_ingot', },
     ];
   high_carbon_metal.forEach(high_carbon_metal => {
     event.custom({

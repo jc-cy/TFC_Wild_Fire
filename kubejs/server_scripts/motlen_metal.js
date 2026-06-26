@@ -6,6 +6,7 @@ const molten_metal = [
     { id: 'titanium', Temperature: 1668, tier: 3 },
     { id: 'vanadium', Temperature: 1910, tier: 2 },
     { id: 'manganese', Temperature: 1246, tier: 3 },
+    { id: 'ferromanganese', Temperature: 1200, tier: 3 },
     { id: 'refined_nickel', Temperature: 1453, tier: 2 }
 ]
 

@@ -1046,7 +1046,20 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'precisionprospecting:heating/metal/prospector_hammer_head/red_steel' })
   e.remove({ id: 'tfc_hammer_time:heating/excavator_head/red_steel' })
 
-
+  //删除tfcsuperhammer加热配方（全金属）
+  const superhammer_metals = ['bismuth_bronze', 'black_bronze', 'bronze', 'copper', 'wrought_iron', 'steel', 'black_steel', 'blue_steel', 'red_steel'];
+  superhammer_metals.forEach(metal => {
+      // heating
+      e.remove({ id: `tfcsuperhammer:heating/${metal}_superhammer` })
+      e.remove({ id: `tfcsuperhammer:heating/${metal}_superhammer_head` })
+      e.remove({ id: `tfcsuperhammer:heating/${metal}_supershovel` })
+      // 原版合成配方
+      e.remove({ id: `tfcsuperhammer:${metal}_superhammer` })
+      e.remove({ id: `tfcsuperhammer:${metal}_supershovel` })
+      // 原版砧配方
+      e.remove({ id: `tfcsuperhammer:anvil/${metal}_superhammer_head` })
+      e.remove({ id: `tfcsuperhammer:anvil/${metal}_supershovel_head` })
+  })
 
   //删除原版9粒=1锭的配方
   e.remove({ id: 'minecraft:iron_ingot_from_nuggets' })

@@ -336,6 +336,9 @@ StartupEvents.registry('item', event => {
     event.create('hot_raw_nickel_bloom', 'basic')//炽熔生镍方胚
     event.create('raw_nickel_bloom', 'basic')//生镍方胚
     event.create('refined_nickel_bloom', 'basic')//精镍方胚
+    event.create('raw_ferromanganese_bloom', 'basic')//粗锰铁方坯
+    event.create('hot_raw_ferromanganese_bloom', 'basic')//炽融粗锰铁方坯
+    event.create('raw_ferromanganese_ingot', 'basic')//粗锰铁锭
 
     event.create('wooden_slat_grid', 'basic').tag("vintageimprovements:curving_heads");//木条编网
     //硅以及相关材料注册
@@ -547,7 +550,7 @@ StartupEvents.registry("item", event => {   //新金属
     ore.forEach(ore => {
         event.create(`tfc:ore/rich_${ore}`).texture(`kubejs:item/ore/rich_${ore}`)
             .tag('tfc:ore_pieces');
-        event.create(`tfc:ore/${ore}`).texture(`kubejs:item/ore/${ore}`)
+        event.create(`tfc:ore/normal_${ore}`).texture(`kubejs:item/ore/${ore}`)
             .tag('tfc:ore_pieces');
         event.create(`tfc:ore/poor_${ore}`).texture(`kubejs:item/ore/poor_${ore}`)
             .tag('tfc:ore_pieces');
