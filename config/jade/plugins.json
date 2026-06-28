@@ -113,6 +113,11 @@
     "long_fe_energy_hud": true,
     "recipe_thread_hud": true
   },
+  "dragnlivestock": {
+    "age_time": true,
+    "dry_time": true,
+    "o_tooltips": true
+  },
   "functionalstorage": {
     "armory": true
   },
